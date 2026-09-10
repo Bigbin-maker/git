@@ -1,0 +1,20 @@
+﻿local_id,name,type,package,metaclass,stereotype,documentation,source_requirement,status
+REQ-001,100颗低轨卫星星座,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,系统应设计并部署一个由100颗卫星组成的低轨道星座，实现全球连续覆盖。本需求为顶级需求，假设任务类型为通信。,REQ-001,candidate
+REQ-002,星座构型需求,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,星座构型应满足100颗卫星的均匀分布，最佳覆盖性能，假定采用Walker Delta构型。,REQ-001,candidate
+REQ-003,单星能力需求,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,每颗卫星应提供通信有效载荷、电源、推进、测控等基本功能，满足在轨寿命至少5年。,REQ-001,candidate
+REQ-004,星间链路需求,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,星座应具备星间链路能力，支持在轨路由和数据中继。,REQ-001,candidate
+REQ-005,地面段需求,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,地面段应包括测控中心、信关站等，支持星座运行管理。,REQ-001,candidate
+BLK-001,低轨卫星星座系统,Block,02_Blocks,Class,SysML::Blocks::Block,代表整个100颗卫星星座系统，包含空间段和地面段。,,candidate
+BLK-002,空间段,Block,02_Blocks,Class,SysML::Blocks::Block,由100颗低轨卫星组成的空间网络。,,candidate
+BLK-003,单颗卫星,Block,02_Blocks,Class,SysML::Blocks::Block,单一低轨卫星平台，包含有效载荷、电源、姿轨控等。,,candidate
+BLK-004,地面段,Block,02_Blocks,Class,SysML::Blocks::Block,地面控制中心及信关站。,,candidate
+UC-001,执行全球通信任务,UseCase,03_UseCases,UseCase,,用户通过星座系统进行全球宽带通信。,REQ-001,candidate
+UC-002,星座部署与维护,UseCase,03_UseCases,UseCase,,发射和部署100颗卫星，并进行在轨维护。,REQ-001,candidate
+IF-001,星间激光链路接口,Interface,04_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,卫星之间通信的物理和数据链路接口，假设采用激光通信。,REQ-004,candidate
+IF-002,星地馈电链路接口,Interface,04_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,卫星与地面信关站的射频链路。,REQ-005,candidate
+IF-003,星上数据总线,Interface,04_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,单星内部各分系统间的数据接口。,REQ-003,candidate
+ACT-001,星座部署流程,Activity,05_Activities,Activity,,描述将100颗卫星部署至预定轨道的活动步骤。,REQ-002,candidate
+ACT-002,日常运营活动,Activity,05_Activities,Activity,,包括测控、站网调度、故障处理等活动。,REQ-005,candidate
+CON-001,成本约束,ConstraintBlock,06_Constraints,Class,SysML::ConstraintBlocks::ConstraintBlock,整个星座总研制和部署成本不得超过X亿美元（假设待定）。,REQ-001,candidate
+CON-002,轨道高度约束,ConstraintBlock,06_Constraints,Class,SysML::ConstraintBlocks::ConstraintBlock,卫星轨道高度应保持在500～600km之间，以满足低轨要求。,REQ-002,candidate
+CON-003,覆盖约束,ConstraintBlock,06_Constraints,Class,SysML::ConstraintBlocks::ConstraintBlock,星座应实现全球任何地点最小仰角10度的覆盖。,REQ-001,candidate

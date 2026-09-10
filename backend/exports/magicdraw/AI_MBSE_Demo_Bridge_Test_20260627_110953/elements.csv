@@ -1,0 +1,3 @@
+﻿local_id,name,type,metaclass,stereotype,documentation,source_requirement,status
+REQ-BRIDGE-001,Bridge??????,Requirement,Class,SysML::Requirements::Requirement,?AI-MBSE???Bridge??MagicDraw?????,REQ-BRIDGE-001,candidate
+BLK-BRIDGE-001,Bridge??????,Block,Class,SysML::Blocks::Block,?AI-MBSE???Bridge??MagicDraw?????,REQ-BRIDGE-001,candidate

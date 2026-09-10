@@ -1,0 +1,2 @@
+﻿local_id,name,type,metaclass,stereotype,source,source_name,target,target_name,documentation
+REL-CONNECT-001,REL-CONNECT-001,Trace,Dependency,SysML::Requirements::Trace,REQ-CONNECT-001,ConnectedRequirement,BLK-CONNECT-001,ConnectedBlock,Connected bridge trace

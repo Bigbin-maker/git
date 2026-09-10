@@ -1,0 +1,3 @@
+﻿local_id,name,type,metaclass,stereotype,documentation,source_requirement,status
+REQ-FINAL-001,FinalRequirement,Requirement,Class,SysML::Requirements::Requirement,Final bridge import test,REQ-FINAL-001,candidate
+BLK-FINAL-001,FinalBlock,Block,Class,SysML::Blocks::Block,Final bridge import test,REQ-FINAL-001,candidate

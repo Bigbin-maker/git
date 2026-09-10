@@ -1,0 +1,9 @@
+{
+  "schema": "ai-mbse.magicdraw.exchange.v1",
+  "root_package": "LEO_Satellite_Internet_MBSE",
+  "project_path": "",
+  "payload": "magicdraw_exchange.json",
+  "diagram_layout": "diagram_layout.json",
+  "elements": "elements.csv",
+  "relationships": "relationships.csv"
+}

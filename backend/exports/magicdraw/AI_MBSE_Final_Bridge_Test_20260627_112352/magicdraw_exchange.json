@@ -1,0 +1,56 @@
+{
+  "schema": "ai-mbse.magicdraw.exchange.v1",
+  "generated_at": "2026-06-27T03:23:52Z",
+  "project_path": "",
+  "root_package": "AI_MBSE_Final_Bridge_Test",
+  "instructions": [
+    "Create or reuse root package.",
+    "Create SysML/UML elements by local_id and stereotype.",
+    "Create relationships after all element ids are resolved.",
+    "Store ai_mbse_id and source_requirement as tagged values when available."
+  ],
+  "elements": [
+    {
+      "local_id": "REQ-FINAL-001",
+      "name": "FinalRequirement",
+      "type": "Requirement",
+      "metaclass": "Class",
+      "stereotype": "SysML::Requirements::Requirement",
+      "documentation": "Final bridge import test",
+      "source_requirement": "REQ-FINAL-001",
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "REQ-FINAL-001",
+        "external_id": null
+      }
+    },
+    {
+      "local_id": "BLK-FINAL-001",
+      "name": "FinalBlock",
+      "type": "Block",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "Final bridge import test",
+      "source_requirement": "REQ-FINAL-001",
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "BLK-FINAL-001",
+        "external_id": null
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "local_id": "REL-FINAL-001",
+      "name": "REL-FINAL-001",
+      "type": "Trace",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Trace",
+      "source": "REQ-FINAL-001",
+      "source_name": "FinalRequirement",
+      "target": "BLK-FINAL-001",
+      "target_name": "FinalBlock",
+      "documentation": "Final bridge trace"
+    }
+  ]
+}

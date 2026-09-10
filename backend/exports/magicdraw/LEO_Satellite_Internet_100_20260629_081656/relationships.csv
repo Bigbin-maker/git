@@ -1,0 +1,19 @@
+﻿local_id,name,type,package,metaclass,stereotype,source,source_name,target,target_name,documentation
+REL-001,REL-001,satisfy,06_Traceability,Dependency,SysML::Requirements::Satisfy,REQ-001,星座覆盖与轨道要求,BLK-001,卫星平台,卫星平台实现星座构型、轨道高度和倾角要求
+REL-002,REL-002,satisfy,06_Traceability,Dependency,SysML::Requirements::Satisfy,REQ-002,系统总容量要求,BLK-006,用户链路相控阵天线,相控阵天线每星提供>20 Gbps吞吐，100颗星满足总容量2 Tbps
+REL-003,REL-003,satisfy,06_Traceability,Dependency,SysML::Requirements::Satisfy,REQ-003,端到端时延要求,BLK-005,星间激光通信终端,星间激光链路和Mesh路由实现低时延端到端通信
+REL-004,REL-004,trace,06_Traceability,Dependency,SysML::Requirements::Trace,REQ-004,单用户峰值速率要求,UC-001,提供互联网接入服务,互联网接入服务用例必须满足单用户速率要求
+REL-005,REL-005,trace,06_Traceability,Dependency,SysML::Requirements::Trace,REQ-005,系统可用性要求,UC-004,星座管理与轨道控制,星座管理与网络重路由保障系统可用性
+REL-006,REL-006,refine,06_Traceability,Dependency,SysML::Requirements::Refine,REQ-006,单星质量约束,CON-001,单星质量预算约束,质量约束细化
+REL-007,REL-007,allocate,06_Traceability,Dependency,SysML::Allocations::Allocate,CON-001,单星质量预算约束,BLK-001,卫星平台,质量预算约束分配给卫星平台
+REL-008,REL-008,refine,06_Traceability,Dependency,SysML::Requirements::Refine,REQ-007,单星功耗约束,CON-002,单星功率预算约束,功耗约束细化
+REL-009,REL-009,allocate,06_Traceability,Dependency,SysML::Allocations::Allocate,CON-002,单星功率预算约束,BLK-001,卫星平台,功耗预算约束分配给卫星平台
+REL-010,REL-010,satisfy,06_Traceability,Dependency,SysML::Requirements::Satisfy,REQ-008,设计寿命要求,BLK-001,卫星平台,卫星平台设计满足7年寿命与离轨要求
+REL-011,REL-011,dependency,06_Traceability,Dependency,Dependency,IF-001,星间激光链路接口,BLK-005,星间激光通信终端,星间链路接口由激光终端实现
+REL-012,REL-012,dependency,06_Traceability,Dependency,Dependency,IF-002,用户链路射频接口,BLK-006,用户链路相控阵天线,用户链路接口由相控阵天线实现
+REL-013,REL-013,dependency,06_Traceability,Dependency,Dependency,IF-003,馈电链路射频接口,BLK-007,馈电链路天线,馈电链路接口由Q/V天线实现
+REL-014,REL-014,refine,06_Traceability,Dependency,SysML::Requirements::Refine,ACT-001,用户入网与认证流程,UC-005,用户终端自动入网,入网流程细化自动入网用例
+REL-015,REL-015,refine,06_Traceability,Dependency,SysML::Requirements::Refine,ACT-002,动态路由与星间切换流程,UC-001,提供互联网接入服务,动态路由活动支持互联网接入服务连续性
+REL-016,REL-016,contains,06_Traceability,Association,CompositeAssociation,BLK-001,卫星平台,BLK-005,星间激光通信终端,卫星平台包含星间激光通信终端
+REL-017,REL-017,contains,06_Traceability,Association,CompositeAssociation,BLK-001,卫星平台,BLK-006,用户链路相控阵天线,卫星平台包含用户链路相控阵天线
+REL-018,REL-018,contains,06_Traceability,Association,CompositeAssociation,BLK-001,卫星平台,BLK-007,馈电链路天线,卫星平台包含馈电链路天线

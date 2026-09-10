@@ -1,0 +1,2739 @@
+{
+  "schema": "ai-mbse.diagram-layout.v1",
+  "diagram_name": "AI_MBSE_Trace_View",
+  "layout_source": "backend",
+  "width": 1500,
+  "height": 1648,
+  "nodes": [
+    {
+      "id": "REQ-001",
+      "element_id": "REQ-001",
+      "name": "工作频段支持",
+      "label": "REQ-001 - 工作频段支持",
+      "type": "Requirement",
+      "stereotype_label": "«requirement»",
+      "shape": "rect",
+      "column": 0,
+      "row": 0,
+      "x": 70,
+      "y": 80,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "REQ-002",
+      "element_id": "REQ-002",
+      "name": "宽带吞吐能力",
+      "label": "REQ-002 - 宽带吞吐能力",
+      "type": "Requirement",
+      "stereotype_label": "«requirement»",
+      "shape": "rect",
+      "column": 0,
+      "row": 1,
+      "x": 70,
+      "y": 198,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "REQ-003",
+      "element_id": "REQ-003",
+      "name": "星间链路能力",
+      "label": "REQ-003 - 星间链路能力",
+      "type": "Requirement",
+      "stereotype_label": "«requirement»",
+      "shape": "rect",
+      "column": 0,
+      "row": 2,
+      "x": 70,
+      "y": 316,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "REQ-004",
+      "element_id": "REQ-004",
+      "name": "星上处理与路由",
+      "label": "REQ-004 - 星上处理与路由",
+      "type": "Requirement",
+      "stereotype_label": "«requirement»",
+      "shape": "rect",
+      "column": 0,
+      "row": 3,
+      "x": 70,
+      "y": 434,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "REQ-008",
+      "element_id": "REQ-008",
+      "name": "在轨可重构",
+      "label": "REQ-008 - 在轨可重构",
+      "type": "Requirement",
+      "stereotype_label": "«requirement»",
+      "shape": "rect",
+      "column": 0,
+      "row": 4,
+      "x": 70,
+      "y": 552,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "REQ-007",
+      "element_id": "REQ-007",
+      "name": "遥测与健康管理",
+      "label": "REQ-007 - 遥测与健康管理",
+      "type": "Requirement",
+      "stereotype_label": "«requirement»",
+      "shape": "rect",
+      "column": 0,
+      "row": 5,
+      "x": 70,
+      "y": 670,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "REQ-013",
+      "element_id": "REQ-013",
+      "name": "运维管理能力",
+      "label": "REQ-013 - 运维管理能力",
+      "type": "Requirement",
+      "stereotype_label": "«requirement»",
+      "shape": "rect",
+      "column": 0,
+      "row": 6,
+      "x": 70,
+      "y": 788,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "REQ-010",
+      "element_id": "REQ-010",
+      "name": "全球覆盖能力",
+      "label": "REQ-010 - 全球覆盖能力",
+      "type": "Requirement",
+      "stereotype_label": "«requirement»",
+      "shape": "rect",
+      "column": 0,
+      "row": 7,
+      "x": 70,
+      "y": 906,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "REQ-005",
+      "element_id": "REQ-005",
+      "name": "低时延服务",
+      "label": "REQ-005 - 低时延服务",
+      "type": "Requirement",
+      "stereotype_label": "«requirement»",
+      "shape": "rect",
+      "column": 0,
+      "row": 8,
+      "x": 70,
+      "y": 1024,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "REQ-006",
+      "element_id": "REQ-006",
+      "name": "高可靠性",
+      "label": "REQ-006 - 高可靠性",
+      "type": "Requirement",
+      "stereotype_label": "«requirement»",
+      "shape": "rect",
+      "column": 0,
+      "row": 9,
+      "x": 70,
+      "y": 1142,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "REQ-009",
+      "element_id": "REQ-009",
+      "name": "星座规模与轨道",
+      "label": "REQ-009 - 星座规模与轨道",
+      "type": "Requirement",
+      "stereotype_label": "«requirement»",
+      "shape": "rect",
+      "column": 0,
+      "row": 10,
+      "x": 70,
+      "y": 1260,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "REQ-011",
+      "element_id": "REQ-011",
+      "name": "并发用户容量",
+      "label": "REQ-011 - 并发用户容量",
+      "type": "Requirement",
+      "stereotype_label": "«requirement»",
+      "shape": "rect",
+      "column": 0,
+      "row": 11,
+      "x": 70,
+      "y": 1378,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "REQ-012",
+      "element_id": "REQ-012",
+      "name": "端到端时延",
+      "label": "REQ-012 - 端到端时延",
+      "type": "Requirement",
+      "stereotype_label": "«requirement»",
+      "shape": "rect",
+      "column": 0,
+      "row": 12,
+      "x": 70,
+      "y": 1496,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "BLK-001",
+      "element_id": "BLK-001",
+      "name": "低轨通信卫星系统",
+      "label": "BLK-001 - 低轨通信卫星系统",
+      "type": "Block",
+      "stereotype_label": "«block»",
+      "shape": "rect",
+      "column": 1,
+      "row": 0,
+      "x": 355,
+      "y": 80,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "BLK-002",
+      "element_id": "BLK-002",
+      "name": "宽带通信载荷分系统",
+      "label": "BLK-002 - 宽带通信载荷分系统",
+      "type": "Block",
+      "stereotype_label": "«block»",
+      "shape": "rect",
+      "column": 1,
+      "row": 1,
+      "x": 355,
+      "y": 198,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "BLK-004",
+      "element_id": "BLK-004",
+      "name": "星间链路终端",
+      "label": "BLK-004 - 星间链路终端",
+      "type": "Block",
+      "stereotype_label": "«block»",
+      "shape": "rect",
+      "column": 1,
+      "row": 2,
+      "x": 355,
+      "y": 316,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "BLK-003",
+      "element_id": "BLK-003",
+      "name": "卫星平台分系统",
+      "label": "BLK-003 - 卫星平台分系统",
+      "type": "Block",
+      "stereotype_label": "«block»",
+      "shape": "rect",
+      "column": 1,
+      "row": 3,
+      "x": 355,
+      "y": 434,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "BLK-005",
+      "element_id": "BLK-005",
+      "name": "地面网关站",
+      "label": "BLK-005 - 地面网关站",
+      "type": "Block",
+      "stereotype_label": "«block»",
+      "shape": "rect",
+      "column": 1,
+      "row": 4,
+      "x": 355,
+      "y": 552,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "BLK-006",
+      "element_id": "BLK-006",
+      "name": "用户终端",
+      "label": "BLK-006 - 用户终端",
+      "type": "Block",
+      "stereotype_label": "«block»",
+      "shape": "rect",
+      "column": 1,
+      "row": 5,
+      "x": 355,
+      "y": 670,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "BLK-007",
+      "element_id": "BLK-007",
+      "name": "运控管理系统",
+      "label": "BLK-007 - 运控管理系统",
+      "type": "Block",
+      "stereotype_label": "«block»",
+      "shape": "rect",
+      "column": 1,
+      "row": 6,
+      "x": 355,
+      "y": 788,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "UC-001",
+      "element_id": "UC-001",
+      "name": "宽带用户接入",
+      "label": "UC-001 - 宽带用户接入",
+      "type": "UseCase",
+      "stereotype_label": "«use case»",
+      "shape": "ellipse",
+      "column": 2,
+      "row": 0,
+      "x": 640,
+      "y": 80,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "UC-002",
+      "element_id": "UC-002",
+      "name": "跨星业务转发",
+      "label": "UC-002 - 跨星业务转发",
+      "type": "UseCase",
+      "stereotype_label": "«use case»",
+      "shape": "ellipse",
+      "column": 2,
+      "row": 1,
+      "x": 640,
+      "y": 198,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "UC-006",
+      "element_id": "UC-006",
+      "name": "星上路由配置",
+      "label": "UC-006 - 星上路由配置",
+      "type": "UseCase",
+      "stereotype_label": "«use case»",
+      "shape": "ellipse",
+      "column": 2,
+      "row": 2,
+      "x": 640,
+      "y": 316,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "UC-008",
+      "element_id": "UC-008",
+      "name": "在轨重构执行",
+      "label": "UC-008 - 在轨重构执行",
+      "type": "UseCase",
+      "stereotype_label": "«use case»",
+      "shape": "ellipse",
+      "column": 2,
+      "row": 3,
+      "x": 640,
+      "y": 434,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "UC-007",
+      "element_id": "UC-007",
+      "name": "遥测数据上报",
+      "label": "UC-007 - 遥测数据上报",
+      "type": "UseCase",
+      "stereotype_label": "«use case»",
+      "shape": "ellipse",
+      "column": 2,
+      "row": 4,
+      "x": 640,
+      "y": 552,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "UC-004",
+      "element_id": "UC-004",
+      "name": "星座健康监测",
+      "label": "UC-004 - 星座健康监测",
+      "type": "UseCase",
+      "stereotype_label": "«use case»",
+      "shape": "ellipse",
+      "column": 2,
+      "row": 5,
+      "x": 640,
+      "y": 670,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "UC-003",
+      "element_id": "UC-003",
+      "name": "应急通信保障",
+      "label": "UC-003 - 应急通信保障",
+      "type": "UseCase",
+      "stereotype_label": "«use case»",
+      "shape": "ellipse",
+      "column": 2,
+      "row": 6,
+      "x": 640,
+      "y": 788,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "UC-005",
+      "element_id": "UC-005",
+      "name": "链路带宽升级评估",
+      "label": "UC-005 - 链路带宽升级评估",
+      "type": "UseCase",
+      "stereotype_label": "«use case»",
+      "shape": "ellipse",
+      "column": 2,
+      "row": 7,
+      "x": 640,
+      "y": 906,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "ACT-001",
+      "element_id": "ACT-001",
+      "name": "宽带用户接入与数据转发活动",
+      "label": "ACT-001 - 宽带用户接入与数据转发活动",
+      "type": "Activity",
+      "stereotype_label": "«activity»",
+      "shape": "rect",
+      "column": 3,
+      "row": 0,
+      "x": 925,
+      "y": 80,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "ACT-002",
+      "element_id": "ACT-002",
+      "name": "在轨重构流程",
+      "label": "ACT-002 - 在轨重构流程",
+      "type": "Activity",
+      "stereotype_label": "«activity»",
+      "shape": "rect",
+      "column": 3,
+      "row": 1,
+      "x": 925,
+      "y": 198,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "IF-001",
+      "element_id": "IF-001",
+      "name": "用户链路接口",
+      "label": "IF-001 - 用户链路接口",
+      "type": "Interface",
+      "stereotype_label": "«interface»",
+      "shape": "soft",
+      "column": 4,
+      "row": 0,
+      "x": 1210,
+      "y": 80,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "IF-002",
+      "element_id": "IF-002",
+      "name": "馈电链路接口",
+      "label": "IF-002 - 馈电链路接口",
+      "type": "Interface",
+      "stereotype_label": "«interface»",
+      "shape": "soft",
+      "column": 4,
+      "row": 1,
+      "x": 1210,
+      "y": 198,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "IF-003",
+      "element_id": "IF-003",
+      "name": "星间链路接口",
+      "label": "IF-003 - 星间链路接口",
+      "type": "Interface",
+      "stereotype_label": "«interface»",
+      "shape": "soft",
+      "column": 4,
+      "row": 2,
+      "x": 1210,
+      "y": 316,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "IF-004",
+      "element_id": "IF-004",
+      "name": "供配电接口",
+      "label": "IF-004 - 供配电接口",
+      "type": "Interface",
+      "stereotype_label": "«interface»",
+      "shape": "soft",
+      "column": 4,
+      "row": 3,
+      "x": 1210,
+      "y": 434,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "IF-005",
+      "element_id": "IF-005",
+      "name": "热控接口",
+      "label": "IF-005 - 热控接口",
+      "type": "Interface",
+      "stereotype_label": "«interface»",
+      "shape": "soft",
+      "column": 4,
+      "row": 4,
+      "x": 1210,
+      "y": 552,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "IF-006",
+      "element_id": "IF-006",
+      "name": "测控管理接口",
+      "label": "IF-006 - 测控管理接口",
+      "type": "Interface",
+      "stereotype_label": "«interface»",
+      "shape": "soft",
+      "column": 4,
+      "row": 5,
+      "x": 1210,
+      "y": 670,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "CON-001",
+      "element_id": "CON-001",
+      "name": "单星转发吞吐量约束",
+      "label": "CON-001 - 单星转发吞吐量约束",
+      "type": "ConstraintBlock",
+      "stereotype_label": "«constraint»",
+      "shape": "rect",
+      "column": 4,
+      "row": 6,
+      "x": 1210,
+      "y": 788,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "CON-002",
+      "element_id": "CON-002",
+      "name": "馈电链路峰值约束",
+      "label": "CON-002 - 馈电链路峰值约束",
+      "type": "ConstraintBlock",
+      "stereotype_label": "«constraint»",
+      "shape": "rect",
+      "column": 4,
+      "row": 7,
+      "x": 1210,
+      "y": 906,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "CON-003",
+      "element_id": "CON-003",
+      "name": "星间链路带宽约束",
+      "label": "CON-003 - 星间链路带宽约束",
+      "type": "ConstraintBlock",
+      "stereotype_label": "«constraint»",
+      "shape": "rect",
+      "column": 4,
+      "row": 8,
+      "x": 1210,
+      "y": 1024,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "CON-004",
+      "element_id": "CON-004",
+      "name": "端到端时延约束",
+      "label": "CON-004 - 端到端时延约束",
+      "type": "ConstraintBlock",
+      "stereotype_label": "«constraint»",
+      "shape": "rect",
+      "column": 4,
+      "row": 9,
+      "x": 1210,
+      "y": 1142,
+      "width": 220,
+      "height": 72
+    }
+  ],
+  "edges": [
+    {
+      "id": "REL-001",
+      "relationship_id": "REL-001",
+      "source": "BLK-001",
+      "target": "BLK-002",
+      "type": "contains",
+      "label": "contains",
+      "points": [
+        {
+          "x": 447,
+          "y": 152
+        },
+        {
+          "x": 447,
+          "y": 175
+        },
+        {
+          "x": 483,
+          "y": 175
+        },
+        {
+          "x": 483,
+          "y": 198
+        }
+      ],
+      "label_x": 465,
+      "label_y": 169
+    },
+    {
+      "id": "REL-002",
+      "relationship_id": "REL-002",
+      "source": "BLK-001",
+      "target": "BLK-004",
+      "type": "contains",
+      "label": "contains",
+      "points": [
+        {
+          "x": 453,
+          "y": 152
+        },
+        {
+          "x": 453,
+          "y": 234
+        },
+        {
+          "x": 477,
+          "y": 234
+        },
+        {
+          "x": 477,
+          "y": 316
+        }
+      ],
+      "label_x": 465,
+      "label_y": 228
+    },
+    {
+      "id": "REL-003",
+      "relationship_id": "REL-003",
+      "source": "BLK-001",
+      "target": "BLK-003",
+      "type": "contains",
+      "label": "contains",
+      "points": [
+        {
+          "x": 459,
+          "y": 152
+        },
+        {
+          "x": 459,
+          "y": 293
+        },
+        {
+          "x": 471,
+          "y": 293
+        },
+        {
+          "x": 471,
+          "y": 434
+        }
+      ],
+      "label_x": 465,
+      "label_y": 287
+    },
+    {
+      "id": "REL-004",
+      "relationship_id": "REL-004",
+      "source": "BLK-002",
+      "target": "IF-001",
+      "type": "allocate",
+      "label": "allocate",
+      "points": [
+        {
+          "x": 575,
+          "y": 234
+        },
+        {
+          "x": 892,
+          "y": 234
+        },
+        {
+          "x": 892,
+          "y": 116
+        },
+        {
+          "x": 1210,
+          "y": 116
+        }
+      ],
+      "label_x": 892,
+      "label_y": 169
+    },
+    {
+      "id": "REL-005",
+      "relationship_id": "REL-005",
+      "source": "BLK-002",
+      "target": "IF-002",
+      "type": "allocate",
+      "label": "allocate",
+      "points": [
+        {
+          "x": 575,
+          "y": 240
+        },
+        {
+          "x": 892,
+          "y": 240
+        },
+        {
+          "x": 892,
+          "y": 228
+        },
+        {
+          "x": 1210,
+          "y": 228
+        }
+      ],
+      "label_x": 892,
+      "label_y": 228
+    },
+    {
+      "id": "REL-006",
+      "relationship_id": "REL-006",
+      "source": "BLK-002",
+      "target": "IF-003",
+      "type": "allocate",
+      "label": "allocate",
+      "points": [
+        {
+          "x": 575,
+          "y": 246
+        },
+        {
+          "x": 892,
+          "y": 246
+        },
+        {
+          "x": 892,
+          "y": 340
+        },
+        {
+          "x": 1210,
+          "y": 340
+        }
+      ],
+      "label_x": 892,
+      "label_y": 287
+    },
+    {
+      "id": "REL-007",
+      "relationship_id": "REL-007",
+      "source": "BLK-002",
+      "target": "IF-004",
+      "type": "allocate",
+      "label": "allocate",
+      "points": [
+        {
+          "x": 575,
+          "y": 252
+        },
+        {
+          "x": 892,
+          "y": 252
+        },
+        {
+          "x": 892,
+          "y": 452
+        },
+        {
+          "x": 1210,
+          "y": 452
+        }
+      ],
+      "label_x": 892,
+      "label_y": 346
+    },
+    {
+      "id": "REL-008",
+      "relationship_id": "REL-008",
+      "source": "BLK-002",
+      "target": "IF-005",
+      "type": "allocate",
+      "label": "allocate",
+      "points": [
+        {
+          "x": 575,
+          "y": 216
+        },
+        {
+          "x": 892,
+          "y": 216
+        },
+        {
+          "x": 892,
+          "y": 606
+        },
+        {
+          "x": 1210,
+          "y": 606
+        }
+      ],
+      "label_x": 892,
+      "label_y": 405
+    },
+    {
+      "id": "REL-009",
+      "relationship_id": "REL-009",
+      "source": "BLK-002",
+      "target": "IF-006",
+      "type": "allocate",
+      "label": "allocate",
+      "points": [
+        {
+          "x": 575,
+          "y": 222
+        },
+        {
+          "x": 892,
+          "y": 222
+        },
+        {
+          "x": 892,
+          "y": 718
+        },
+        {
+          "x": 1210,
+          "y": 718
+        }
+      ],
+      "label_x": 892,
+      "label_y": 464
+    },
+    {
+      "id": "REL-010",
+      "relationship_id": "REL-010",
+      "source": "UC-001",
+      "target": "REQ-001",
+      "type": "satisfy",
+      "label": "satisfy",
+      "points": [
+        {
+          "x": 640,
+          "y": 110
+        },
+        {
+          "x": 465,
+          "y": 110
+        },
+        {
+          "x": 465,
+          "y": 122
+        },
+        {
+          "x": 290,
+          "y": 122
+        }
+      ],
+      "label_x": 465,
+      "label_y": 110
+    },
+    {
+      "id": "REL-011",
+      "relationship_id": "REL-011",
+      "source": "UC-001",
+      "target": "REQ-002",
+      "type": "satisfy",
+      "label": "satisfy",
+      "points": [
+        {
+          "x": 640,
+          "y": 116
+        },
+        {
+          "x": 465,
+          "y": 116
+        },
+        {
+          "x": 465,
+          "y": 234
+        },
+        {
+          "x": 290,
+          "y": 234
+        }
+      ],
+      "label_x": 465,
+      "label_y": 169
+    },
+    {
+      "id": "REL-012",
+      "relationship_id": "REL-012",
+      "source": "UC-002",
+      "target": "REQ-003",
+      "type": "satisfy",
+      "label": "satisfy",
+      "points": [
+        {
+          "x": 640,
+          "y": 240
+        },
+        {
+          "x": 465,
+          "y": 240
+        },
+        {
+          "x": 465,
+          "y": 346
+        },
+        {
+          "x": 290,
+          "y": 346
+        }
+      ],
+      "label_x": 465,
+      "label_y": 287
+    },
+    {
+      "id": "REL-013",
+      "relationship_id": "REL-013",
+      "source": "UC-006",
+      "target": "REQ-004",
+      "type": "satisfy",
+      "label": "satisfy",
+      "points": [
+        {
+          "x": 640,
+          "y": 364
+        },
+        {
+          "x": 465,
+          "y": 364
+        },
+        {
+          "x": 465,
+          "y": 458
+        },
+        {
+          "x": 290,
+          "y": 458
+        }
+      ],
+      "label_x": 465,
+      "label_y": 405
+    },
+    {
+      "id": "REL-014",
+      "relationship_id": "REL-014",
+      "source": "UC-008",
+      "target": "REQ-008",
+      "type": "satisfy",
+      "label": "satisfy",
+      "points": [
+        {
+          "x": 640,
+          "y": 488
+        },
+        {
+          "x": 465,
+          "y": 488
+        },
+        {
+          "x": 465,
+          "y": 570
+        },
+        {
+          "x": 290,
+          "y": 570
+        }
+      ],
+      "label_x": 465,
+      "label_y": 523
+    },
+    {
+      "id": "REL-015",
+      "relationship_id": "REL-015",
+      "source": "UC-007",
+      "target": "REQ-007",
+      "type": "satisfy",
+      "label": "satisfy",
+      "points": [
+        {
+          "x": 640,
+          "y": 570
+        },
+        {
+          "x": 465,
+          "y": 570
+        },
+        {
+          "x": 465,
+          "y": 724
+        },
+        {
+          "x": 290,
+          "y": 724
+        }
+      ],
+      "label_x": 465,
+      "label_y": 641
+    },
+    {
+      "id": "REL-016",
+      "relationship_id": "REL-016",
+      "source": "UC-004",
+      "target": "REQ-013",
+      "type": "satisfy",
+      "label": "satisfy",
+      "points": [
+        {
+          "x": 640,
+          "y": 694
+        },
+        {
+          "x": 465,
+          "y": 694
+        },
+        {
+          "x": 465,
+          "y": 836
+        },
+        {
+          "x": 290,
+          "y": 836
+        }
+      ],
+      "label_x": 465,
+      "label_y": 759
+    },
+    {
+      "id": "REL-017",
+      "relationship_id": "REL-017",
+      "source": "UC-003",
+      "target": "REQ-010",
+      "type": "trace",
+      "label": "trace",
+      "points": [
+        {
+          "x": 640,
+          "y": 818
+        },
+        {
+          "x": 465,
+          "y": 818
+        },
+        {
+          "x": 465,
+          "y": 948
+        },
+        {
+          "x": 290,
+          "y": 948
+        }
+      ],
+      "label_x": 465,
+      "label_y": 877
+    },
+    {
+      "id": "REL-018",
+      "relationship_id": "REL-018",
+      "source": "CON-001",
+      "target": "IF-001",
+      "type": "dependency",
+      "label": "dependency",
+      "points": [
+        {
+          "x": 1320,
+          "y": 788
+        },
+        {
+          "x": 1320,
+          "y": 470
+        },
+        {
+          "x": 1320,
+          "y": 470
+        },
+        {
+          "x": 1320,
+          "y": 152
+        }
+      ],
+      "label_x": 1320,
+      "label_y": 464
+    },
+    {
+      "id": "REL-019",
+      "relationship_id": "REL-019",
+      "source": "CON-002",
+      "target": "IF-002",
+      "type": "dependency",
+      "label": "dependency",
+      "points": [
+        {
+          "x": 1326,
+          "y": 906
+        },
+        {
+          "x": 1326,
+          "y": 588
+        },
+        {
+          "x": 1314,
+          "y": 588
+        },
+        {
+          "x": 1314,
+          "y": 270
+        }
+      ],
+      "label_x": 1320,
+      "label_y": 582
+    },
+    {
+      "id": "REL-020",
+      "relationship_id": "REL-020",
+      "source": "CON-003",
+      "target": "IF-003",
+      "type": "dependency",
+      "label": "dependency",
+      "points": [
+        {
+          "x": 1332,
+          "y": 1024
+        },
+        {
+          "x": 1332,
+          "y": 706
+        },
+        {
+          "x": 1308,
+          "y": 706
+        },
+        {
+          "x": 1308,
+          "y": 388
+        }
+      ],
+      "label_x": 1320,
+      "label_y": 700
+    },
+    {
+      "id": "REL-021",
+      "relationship_id": "REL-021",
+      "source": "CON-004",
+      "target": "ACT-001",
+      "type": "dependency",
+      "label": "dependency",
+      "points": [
+        {
+          "x": 1338,
+          "y": 1142
+        },
+        {
+          "x": 1338,
+          "y": 647
+        },
+        {
+          "x": 1017,
+          "y": 647
+        },
+        {
+          "x": 1017,
+          "y": 152
+        }
+      ],
+      "label_x": 1177,
+      "label_y": 641
+    },
+    {
+      "id": "REL-022",
+      "relationship_id": "REL-022",
+      "source": "ACT-001",
+      "target": "UC-001",
+      "type": "refine",
+      "label": "refine",
+      "points": [
+        {
+          "x": 925,
+          "y": 98
+        },
+        {
+          "x": 892,
+          "y": 98
+        },
+        {
+          "x": 892,
+          "y": 134
+        },
+        {
+          "x": 860,
+          "y": 134
+        }
+      ],
+      "label_x": 892,
+      "label_y": 110
+    },
+    {
+      "id": "REL-023",
+      "relationship_id": "REL-023",
+      "source": "ACT-002",
+      "target": "UC-008",
+      "type": "refine",
+      "label": "refine",
+      "points": [
+        {
+          "x": 925,
+          "y": 222
+        },
+        {
+          "x": 892,
+          "y": 222
+        },
+        {
+          "x": 892,
+          "y": 482
+        },
+        {
+          "x": 860,
+          "y": 482
+        }
+      ],
+      "label_x": 892,
+      "label_y": 346
+    },
+    {
+      "id": "REL-024",
+      "relationship_id": "REL-024",
+      "source": "BLK-001",
+      "target": "BLK-005",
+      "type": "contains",
+      "label": "contains",
+      "points": [
+        {
+          "x": 459,
+          "y": 152
+        },
+        {
+          "x": 459,
+          "y": 352
+        },
+        {
+          "x": 471,
+          "y": 352
+        },
+        {
+          "x": 471,
+          "y": 552
+        }
+      ],
+      "label_x": 465,
+      "label_y": 346
+    },
+    {
+      "id": "REL-025",
+      "relationship_id": "REL-025",
+      "source": "BLK-001",
+      "target": "BLK-006",
+      "type": "contains",
+      "label": "contains",
+      "points": [
+        {
+          "x": 465,
+          "y": 152
+        },
+        {
+          "x": 465,
+          "y": 411
+        },
+        {
+          "x": 465,
+          "y": 411
+        },
+        {
+          "x": 465,
+          "y": 670
+        }
+      ],
+      "label_x": 465,
+      "label_y": 405
+    },
+    {
+      "id": "REL-026",
+      "relationship_id": "REL-026",
+      "source": "BLK-001",
+      "target": "BLK-007",
+      "type": "contains",
+      "label": "contains",
+      "points": [
+        {
+          "x": 471,
+          "y": 152
+        },
+        {
+          "x": 471,
+          "y": 470
+        },
+        {
+          "x": 459,
+          "y": 470
+        },
+        {
+          "x": 459,
+          "y": 788
+        }
+      ],
+      "label_x": 465,
+      "label_y": 464
+    },
+    {
+      "id": "REL-027",
+      "relationship_id": "REL-027",
+      "source": "BLK-001",
+      "target": "BLK-002",
+      "type": "connector",
+      "label": "connector",
+      "points": [
+        {
+          "x": 477,
+          "y": 152
+        },
+        {
+          "x": 477,
+          "y": 175
+        },
+        {
+          "x": 453,
+          "y": 175
+        },
+        {
+          "x": 453,
+          "y": 198
+        }
+      ],
+      "label_x": 465,
+      "label_y": 169
+    },
+    {
+      "id": "REL-028",
+      "relationship_id": "REL-028",
+      "source": "BLK-002",
+      "target": "BLK-003",
+      "type": "connector",
+      "label": "connector",
+      "points": [
+        {
+          "x": 483,
+          "y": 270
+        },
+        {
+          "x": 483,
+          "y": 352
+        },
+        {
+          "x": 447,
+          "y": 352
+        },
+        {
+          "x": 447,
+          "y": 434
+        }
+      ],
+      "label_x": 465,
+      "label_y": 346
+    },
+    {
+      "id": "REL-029",
+      "relationship_id": "REL-029",
+      "source": "BLK-003",
+      "target": "BLK-004",
+      "type": "connector",
+      "label": "connector",
+      "points": [
+        {
+          "x": 447,
+          "y": 434
+        },
+        {
+          "x": 447,
+          "y": 411
+        },
+        {
+          "x": 483,
+          "y": 411
+        },
+        {
+          "x": 483,
+          "y": 388
+        }
+      ],
+      "label_x": 465,
+      "label_y": 405
+    },
+    {
+      "id": "REL-030",
+      "relationship_id": "REL-030",
+      "source": "BLK-004",
+      "target": "BLK-005",
+      "type": "connector",
+      "label": "connector",
+      "points": [
+        {
+          "x": 453,
+          "y": 388
+        },
+        {
+          "x": 453,
+          "y": 470
+        },
+        {
+          "x": 477,
+          "y": 470
+        },
+        {
+          "x": 477,
+          "y": 552
+        }
+      ],
+      "label_x": 465,
+      "label_y": 464
+    },
+    {
+      "id": "REL-031",
+      "relationship_id": "REL-031",
+      "source": "BLK-005",
+      "target": "BLK-006",
+      "type": "connector",
+      "label": "connector",
+      "points": [
+        {
+          "x": 459,
+          "y": 624
+        },
+        {
+          "x": 459,
+          "y": 647
+        },
+        {
+          "x": 471,
+          "y": 647
+        },
+        {
+          "x": 471,
+          "y": 670
+        }
+      ],
+      "label_x": 465,
+      "label_y": 641
+    },
+    {
+      "id": "REL-032",
+      "relationship_id": "REL-032",
+      "source": "BLK-006",
+      "target": "BLK-007",
+      "type": "connector",
+      "label": "connector",
+      "points": [
+        {
+          "x": 465,
+          "y": 742
+        },
+        {
+          "x": 465,
+          "y": 765
+        },
+        {
+          "x": 465,
+          "y": 765
+        },
+        {
+          "x": 465,
+          "y": 788
+        }
+      ],
+      "label_x": 465,
+      "label_y": 759
+    },
+    {
+      "id": "REL-033",
+      "relationship_id": "REL-033",
+      "source": "REQ-001",
+      "target": "UC-001",
+      "type": "trace",
+      "label": "trace",
+      "points": [
+        {
+          "x": 290,
+          "y": 122
+        },
+        {
+          "x": 465,
+          "y": 122
+        },
+        {
+          "x": 465,
+          "y": 110
+        },
+        {
+          "x": 640,
+          "y": 110
+        }
+      ],
+      "label_x": 465,
+      "label_y": 110
+    },
+    {
+      "id": "REL-034",
+      "relationship_id": "REL-034",
+      "source": "REQ-002",
+      "target": "UC-002",
+      "type": "trace",
+      "label": "trace",
+      "points": [
+        {
+          "x": 290,
+          "y": 246
+        },
+        {
+          "x": 465,
+          "y": 246
+        },
+        {
+          "x": 465,
+          "y": 222
+        },
+        {
+          "x": 640,
+          "y": 222
+        }
+      ],
+      "label_x": 465,
+      "label_y": 228
+    },
+    {
+      "id": "REL-035",
+      "relationship_id": "REL-035",
+      "source": "REQ-003",
+      "target": "UC-003",
+      "type": "trace",
+      "label": "trace",
+      "points": [
+        {
+          "x": 290,
+          "y": 370
+        },
+        {
+          "x": 465,
+          "y": 370
+        },
+        {
+          "x": 465,
+          "y": 806
+        },
+        {
+          "x": 640,
+          "y": 806
+        }
+      ],
+      "label_x": 465,
+      "label_y": 582
+    },
+    {
+      "id": "REL-036",
+      "relationship_id": "REL-036",
+      "source": "REQ-004",
+      "target": "UC-004",
+      "type": "trace",
+      "label": "trace",
+      "points": [
+        {
+          "x": 290,
+          "y": 452
+        },
+        {
+          "x": 465,
+          "y": 452
+        },
+        {
+          "x": 465,
+          "y": 724
+        },
+        {
+          "x": 640,
+          "y": 724
+        }
+      ],
+      "label_x": 465,
+      "label_y": 582
+    },
+    {
+      "id": "REL-037",
+      "relationship_id": "REL-037",
+      "source": "BLK-005",
+      "target": "REQ-005",
+      "type": "satisfy",
+      "label": "satisfy",
+      "points": [
+        {
+          "x": 453,
+          "y": 624
+        },
+        {
+          "x": 453,
+          "y": 824
+        },
+        {
+          "x": 192,
+          "y": 824
+        },
+        {
+          "x": 192,
+          "y": 1024
+        }
+      ],
+      "label_x": 322,
+      "label_y": 818
+    },
+    {
+      "id": "REL-038",
+      "relationship_id": "REL-038",
+      "source": "REQ-005",
+      "target": "UC-005",
+      "type": "trace",
+      "label": "trace",
+      "points": [
+        {
+          "x": 290,
+          "y": 1054
+        },
+        {
+          "x": 465,
+          "y": 1054
+        },
+        {
+          "x": 465,
+          "y": 948
+        },
+        {
+          "x": 640,
+          "y": 948
+        }
+      ],
+      "label_x": 465,
+      "label_y": 995
+    },
+    {
+      "id": "REL-039",
+      "relationship_id": "REL-039",
+      "source": "BLK-006",
+      "target": "REQ-006",
+      "type": "satisfy",
+      "label": "satisfy",
+      "points": [
+        {
+          "x": 465,
+          "y": 742
+        },
+        {
+          "x": 465,
+          "y": 942
+        },
+        {
+          "x": 180,
+          "y": 942
+        },
+        {
+          "x": 180,
+          "y": 1142
+        }
+      ],
+      "label_x": 322,
+      "label_y": 936
+    },
+    {
+      "id": "REL-040",
+      "relationship_id": "REL-040",
+      "source": "REQ-006",
+      "target": "UC-006",
+      "type": "trace",
+      "label": "trace",
+      "points": [
+        {
+          "x": 186,
+          "y": 1142
+        },
+        {
+          "x": 186,
+          "y": 765
+        },
+        {
+          "x": 744,
+          "y": 765
+        },
+        {
+          "x": 744,
+          "y": 388
+        }
+      ],
+      "label_x": 465,
+      "label_y": 759
+    },
+    {
+      "id": "REL-041",
+      "relationship_id": "REL-041",
+      "source": "REQ-007",
+      "target": "UC-007",
+      "type": "trace",
+      "label": "trace",
+      "points": [
+        {
+          "x": 290,
+          "y": 718
+        },
+        {
+          "x": 465,
+          "y": 718
+        },
+        {
+          "x": 465,
+          "y": 576
+        },
+        {
+          "x": 640,
+          "y": 576
+        }
+      ],
+      "label_x": 465,
+      "label_y": 641
+    },
+    {
+      "id": "REL-042",
+      "relationship_id": "REL-042",
+      "source": "REQ-008",
+      "target": "UC-008",
+      "type": "trace",
+      "label": "trace",
+      "points": [
+        {
+          "x": 290,
+          "y": 606
+        },
+        {
+          "x": 465,
+          "y": 606
+        },
+        {
+          "x": 465,
+          "y": 452
+        },
+        {
+          "x": 640,
+          "y": 452
+        }
+      ],
+      "label_x": 465,
+      "label_y": 523
+    },
+    {
+      "id": "REL-043",
+      "relationship_id": "REL-043",
+      "source": "BLK-002",
+      "target": "REQ-009",
+      "type": "satisfy",
+      "label": "satisfy",
+      "points": [
+        {
+          "x": 447,
+          "y": 270
+        },
+        {
+          "x": 447,
+          "y": 765
+        },
+        {
+          "x": 198,
+          "y": 765
+        },
+        {
+          "x": 198,
+          "y": 1260
+        }
+      ],
+      "label_x": 322,
+      "label_y": 759
+    },
+    {
+      "id": "REL-044",
+      "relationship_id": "REL-044",
+      "source": "REQ-009",
+      "target": "UC-001",
+      "type": "trace",
+      "label": "trace",
+      "points": [
+        {
+          "x": 168,
+          "y": 1260
+        },
+        {
+          "x": 168,
+          "y": 706
+        },
+        {
+          "x": 762,
+          "y": 706
+        },
+        {
+          "x": 762,
+          "y": 152
+        }
+      ],
+      "label_x": 465,
+      "label_y": 700
+    },
+    {
+      "id": "REL-045",
+      "relationship_id": "REL-045",
+      "source": "BLK-003",
+      "target": "REQ-010",
+      "type": "satisfy",
+      "label": "satisfy",
+      "points": [
+        {
+          "x": 459,
+          "y": 506
+        },
+        {
+          "x": 459,
+          "y": 706
+        },
+        {
+          "x": 186,
+          "y": 706
+        },
+        {
+          "x": 186,
+          "y": 906
+        }
+      ],
+      "label_x": 322,
+      "label_y": 700
+    },
+    {
+      "id": "REL-046",
+      "relationship_id": "REL-046",
+      "source": "REQ-010",
+      "target": "UC-002",
+      "type": "trace",
+      "label": "trace",
+      "points": [
+        {
+          "x": 180,
+          "y": 906
+        },
+        {
+          "x": 180,
+          "y": 588
+        },
+        {
+          "x": 750,
+          "y": 588
+        },
+        {
+          "x": 750,
+          "y": 270
+        }
+      ],
+      "label_x": 465,
+      "label_y": 582
+    },
+    {
+      "id": "REL-047",
+      "relationship_id": "REL-047",
+      "source": "BLK-004",
+      "target": "REQ-011",
+      "type": "satisfy",
+      "label": "satisfy",
+      "points": [
+        {
+          "x": 471,
+          "y": 388
+        },
+        {
+          "x": 471,
+          "y": 883
+        },
+        {
+          "x": 174,
+          "y": 883
+        },
+        {
+          "x": 174,
+          "y": 1378
+        }
+      ],
+      "label_x": 322,
+      "label_y": 877
+    },
+    {
+      "id": "REL-048",
+      "relationship_id": "REL-048",
+      "source": "REQ-011",
+      "target": "UC-003",
+      "type": "trace",
+      "label": "trace",
+      "points": [
+        {
+          "x": 192,
+          "y": 1378
+        },
+        {
+          "x": 192,
+          "y": 1119
+        },
+        {
+          "x": 738,
+          "y": 1119
+        },
+        {
+          "x": 738,
+          "y": 860
+        }
+      ],
+      "label_x": 465,
+      "label_y": 1113
+    },
+    {
+      "id": "REL-049",
+      "relationship_id": "REL-049",
+      "source": "BLK-005",
+      "target": "REQ-012",
+      "type": "satisfy",
+      "label": "satisfy",
+      "points": [
+        {
+          "x": 483,
+          "y": 624
+        },
+        {
+          "x": 483,
+          "y": 1060
+        },
+        {
+          "x": 162,
+          "y": 1060
+        },
+        {
+          "x": 162,
+          "y": 1496
+        }
+      ],
+      "label_x": 322,
+      "label_y": 1054
+    },
+    {
+      "id": "REL-050",
+      "relationship_id": "REL-050",
+      "source": "REQ-012",
+      "target": "UC-004",
+      "type": "trace",
+      "label": "trace",
+      "points": [
+        {
+          "x": 162,
+          "y": 1496
+        },
+        {
+          "x": 162,
+          "y": 1119
+        },
+        {
+          "x": 768,
+          "y": 1119
+        },
+        {
+          "x": 768,
+          "y": 742
+        }
+      ],
+      "label_x": 465,
+      "label_y": 1113
+    },
+    {
+      "id": "REL-051",
+      "relationship_id": "REL-051",
+      "source": "REQ-013",
+      "target": "UC-005",
+      "type": "trace",
+      "label": "trace",
+      "points": [
+        {
+          "x": 290,
+          "y": 812
+        },
+        {
+          "x": 465,
+          "y": 812
+        },
+        {
+          "x": 465,
+          "y": 954
+        },
+        {
+          "x": 640,
+          "y": 954
+        }
+      ],
+      "label_x": 465,
+      "label_y": 877
+    },
+    {
+      "id": "REL-052",
+      "relationship_id": "REL-052",
+      "source": "BLK-001",
+      "target": "UC-001",
+      "type": "trace",
+      "label": "trace",
+      "points": [
+        {
+          "x": 575,
+          "y": 110
+        },
+        {
+          "x": 607,
+          "y": 110
+        },
+        {
+          "x": 607,
+          "y": 122
+        },
+        {
+          "x": 640,
+          "y": 122
+        }
+      ],
+      "label_x": 607,
+      "label_y": 110
+    },
+    {
+      "id": "REL-053",
+      "relationship_id": "REL-053",
+      "source": "UC-001",
+      "target": "ACT-001",
+      "type": "trace",
+      "label": "trace",
+      "points": [
+        {
+          "x": 860,
+          "y": 116
+        },
+        {
+          "x": 892,
+          "y": 116
+        },
+        {
+          "x": 892,
+          "y": 116
+        },
+        {
+          "x": 925,
+          "y": 116
+        }
+      ],
+      "label_x": 892,
+      "label_y": 110
+    },
+    {
+      "id": "REL-054",
+      "relationship_id": "REL-054",
+      "source": "BLK-002",
+      "target": "UC-002",
+      "type": "trace",
+      "label": "trace",
+      "points": [
+        {
+          "x": 575,
+          "y": 240
+        },
+        {
+          "x": 607,
+          "y": 240
+        },
+        {
+          "x": 607,
+          "y": 228
+        },
+        {
+          "x": 640,
+          "y": 228
+        }
+      ],
+      "label_x": 607,
+      "label_y": 228
+    },
+    {
+      "id": "REL-055",
+      "relationship_id": "REL-055",
+      "source": "UC-002",
+      "target": "ACT-002",
+      "type": "trace",
+      "label": "trace",
+      "points": [
+        {
+          "x": 860,
+          "y": 246
+        },
+        {
+          "x": 892,
+          "y": 246
+        },
+        {
+          "x": 892,
+          "y": 222
+        },
+        {
+          "x": 925,
+          "y": 222
+        }
+      ],
+      "label_x": 892,
+      "label_y": 228
+    },
+    {
+      "id": "REL-056",
+      "relationship_id": "REL-056",
+      "source": "BLK-003",
+      "target": "UC-003",
+      "type": "trace",
+      "label": "trace",
+      "points": [
+        {
+          "x": 483,
+          "y": 506
+        },
+        {
+          "x": 483,
+          "y": 647
+        },
+        {
+          "x": 732,
+          "y": 647
+        },
+        {
+          "x": 732,
+          "y": 788
+        }
+      ],
+      "label_x": 607,
+      "label_y": 641
+    },
+    {
+      "id": "REL-057",
+      "relationship_id": "REL-057",
+      "source": "BLK-004",
+      "target": "UC-004",
+      "type": "trace",
+      "label": "trace",
+      "points": [
+        {
+          "x": 447,
+          "y": 388
+        },
+        {
+          "x": 447,
+          "y": 529
+        },
+        {
+          "x": 768,
+          "y": 529
+        },
+        {
+          "x": 768,
+          "y": 670
+        }
+      ],
+      "label_x": 607,
+      "label_y": 523
+    },
+    {
+      "id": "REL-058",
+      "relationship_id": "REL-058",
+      "source": "UC-004",
+      "target": "ACT-002",
+      "type": "trace",
+      "label": "trace",
+      "points": [
+        {
+          "x": 738,
+          "y": 670
+        },
+        {
+          "x": 738,
+          "y": 470
+        },
+        {
+          "x": 1047,
+          "y": 470
+        },
+        {
+          "x": 1047,
+          "y": 270
+        }
+      ],
+      "label_x": 892,
+      "label_y": 464
+    },
+    {
+      "id": "REL-059",
+      "relationship_id": "REL-059",
+      "source": "BLK-005",
+      "target": "UC-005",
+      "type": "trace",
+      "label": "trace",
+      "points": [
+        {
+          "x": 459,
+          "y": 624
+        },
+        {
+          "x": 459,
+          "y": 765
+        },
+        {
+          "x": 756,
+          "y": 765
+        },
+        {
+          "x": 756,
+          "y": 906
+        }
+      ],
+      "label_x": 607,
+      "label_y": 759
+    },
+    {
+      "id": "REL-060",
+      "relationship_id": "REL-060",
+      "source": "UC-005",
+      "target": "ACT-001",
+      "type": "trace",
+      "label": "trace",
+      "points": [
+        {
+          "x": 750,
+          "y": 906
+        },
+        {
+          "x": 750,
+          "y": 529
+        },
+        {
+          "x": 1035,
+          "y": 529
+        },
+        {
+          "x": 1035,
+          "y": 152
+        }
+      ],
+      "label_x": 892,
+      "label_y": 523
+    },
+    {
+      "id": "REL-061",
+      "relationship_id": "REL-061",
+      "source": "BLK-006",
+      "target": "UC-006",
+      "type": "trace",
+      "label": "trace",
+      "points": [
+        {
+          "x": 471,
+          "y": 670
+        },
+        {
+          "x": 471,
+          "y": 529
+        },
+        {
+          "x": 744,
+          "y": 529
+        },
+        {
+          "x": 744,
+          "y": 388
+        }
+      ],
+      "label_x": 607,
+      "label_y": 523
+    },
+    {
+      "id": "REL-062",
+      "relationship_id": "REL-062",
+      "source": "UC-006",
+      "target": "ACT-002",
+      "type": "trace",
+      "label": "trace",
+      "points": [
+        {
+          "x": 860,
+          "y": 364
+        },
+        {
+          "x": 892,
+          "y": 364
+        },
+        {
+          "x": 892,
+          "y": 222
+        },
+        {
+          "x": 925,
+          "y": 222
+        }
+      ],
+      "label_x": 892,
+      "label_y": 287
+    },
+    {
+      "id": "REL-063",
+      "relationship_id": "REL-063",
+      "source": "BLK-007",
+      "target": "UC-007",
+      "type": "trace",
+      "label": "trace",
+      "points": [
+        {
+          "x": 575,
+          "y": 842
+        },
+        {
+          "x": 607,
+          "y": 842
+        },
+        {
+          "x": 607,
+          "y": 570
+        },
+        {
+          "x": 640,
+          "y": 570
+        }
+      ],
+      "label_x": 607,
+      "label_y": 700
+    },
+    {
+      "id": "REL-064",
+      "relationship_id": "REL-064",
+      "source": "UC-007",
+      "target": "ACT-001",
+      "type": "trace",
+      "label": "trace",
+      "points": [
+        {
+          "x": 732,
+          "y": 552
+        },
+        {
+          "x": 732,
+          "y": 352
+        },
+        {
+          "x": 1053,
+          "y": 352
+        },
+        {
+          "x": 1053,
+          "y": 152
+        }
+      ],
+      "label_x": 892,
+      "label_y": 346
+    },
+    {
+      "id": "REL-065",
+      "relationship_id": "REL-065",
+      "source": "BLK-001",
+      "target": "UC-008",
+      "type": "trace",
+      "label": "trace",
+      "points": [
+        {
+          "x": 453,
+          "y": 152
+        },
+        {
+          "x": 453,
+          "y": 293
+        },
+        {
+          "x": 762,
+          "y": 293
+        },
+        {
+          "x": 762,
+          "y": 434
+        }
+      ],
+      "label_x": 607,
+      "label_y": 287
+    },
+    {
+      "id": "REL-066",
+      "relationship_id": "REL-066",
+      "source": "UC-008",
+      "target": "ACT-002",
+      "type": "trace",
+      "label": "trace",
+      "points": [
+        {
+          "x": 860,
+          "y": 464
+        },
+        {
+          "x": 892,
+          "y": 464
+        },
+        {
+          "x": 892,
+          "y": 240
+        },
+        {
+          "x": 925,
+          "y": 240
+        }
+      ],
+      "label_x": 892,
+      "label_y": 346
+    },
+    {
+      "id": "REL-067",
+      "relationship_id": "REL-067",
+      "source": "UC-001",
+      "target": "IF-001",
+      "type": "trace",
+      "label": "trace",
+      "points": [
+        {
+          "x": 860,
+          "y": 116
+        },
+        {
+          "x": 1035,
+          "y": 116
+        },
+        {
+          "x": 1035,
+          "y": 116
+        },
+        {
+          "x": 1210,
+          "y": 116
+        }
+      ],
+      "label_x": 1035,
+      "label_y": 110
+    },
+    {
+      "id": "REL-068",
+      "relationship_id": "REL-068",
+      "source": "UC-002",
+      "target": "IF-002",
+      "type": "trace",
+      "label": "trace",
+      "points": [
+        {
+          "x": 860,
+          "y": 240
+        },
+        {
+          "x": 1035,
+          "y": 240
+        },
+        {
+          "x": 1035,
+          "y": 228
+        },
+        {
+          "x": 1210,
+          "y": 228
+        }
+      ],
+      "label_x": 1035,
+      "label_y": 228
+    },
+    {
+      "id": "REL-069",
+      "relationship_id": "REL-069",
+      "source": "UC-003",
+      "target": "IF-003",
+      "type": "trace",
+      "label": "trace",
+      "points": [
+        {
+          "x": 860,
+          "y": 836
+        },
+        {
+          "x": 1035,
+          "y": 836
+        },
+        {
+          "x": 1035,
+          "y": 340
+        },
+        {
+          "x": 1210,
+          "y": 340
+        }
+      ],
+      "label_x": 1035,
+      "label_y": 582
+    },
+    {
+      "id": "REL-070",
+      "relationship_id": "REL-070",
+      "source": "UC-004",
+      "target": "IF-004",
+      "type": "trace",
+      "label": "trace",
+      "points": [
+        {
+          "x": 860,
+          "y": 724
+        },
+        {
+          "x": 1035,
+          "y": 724
+        },
+        {
+          "x": 1035,
+          "y": 452
+        },
+        {
+          "x": 1210,
+          "y": 452
+        }
+      ],
+      "label_x": 1035,
+      "label_y": 582
+    },
+    {
+      "id": "REL-071",
+      "relationship_id": "REL-071",
+      "source": "UC-005",
+      "target": "IF-005",
+      "type": "trace",
+      "label": "trace",
+      "points": [
+        {
+          "x": 860,
+          "y": 924
+        },
+        {
+          "x": 1035,
+          "y": 924
+        },
+        {
+          "x": 1035,
+          "y": 606
+        },
+        {
+          "x": 1210,
+          "y": 606
+        }
+      ],
+      "label_x": 1035,
+      "label_y": 759
+    },
+    {
+      "id": "REL-072",
+      "relationship_id": "REL-072",
+      "source": "UC-006",
+      "target": "IF-006",
+      "type": "trace",
+      "label": "trace",
+      "points": [
+        {
+          "x": 860,
+          "y": 340
+        },
+        {
+          "x": 1035,
+          "y": 340
+        },
+        {
+          "x": 1035,
+          "y": 718
+        },
+        {
+          "x": 1210,
+          "y": 718
+        }
+      ],
+      "label_x": 1035,
+      "label_y": 523
+    },
+    {
+      "id": "REL-073",
+      "relationship_id": "REL-073",
+      "source": "CON-001",
+      "target": "REQ-001",
+      "type": "verify",
+      "label": "verify",
+      "points": [
+        {
+          "x": 1210,
+          "y": 818
+        },
+        {
+          "x": 750,
+          "y": 818
+        },
+        {
+          "x": 750,
+          "y": 122
+        },
+        {
+          "x": 290,
+          "y": 122
+        }
+      ],
+      "label_x": 750,
+      "label_y": 464
+    },
+    {
+      "id": "REL-074",
+      "relationship_id": "REL-074",
+      "source": "CON-002",
+      "target": "REQ-002",
+      "type": "verify",
+      "label": "verify",
+      "points": [
+        {
+          "x": 1210,
+          "y": 942
+        },
+        {
+          "x": 750,
+          "y": 942
+        },
+        {
+          "x": 750,
+          "y": 234
+        },
+        {
+          "x": 290,
+          "y": 234
+        }
+      ],
+      "label_x": 750,
+      "label_y": 582
+    },
+    {
+      "id": "REL-075",
+      "relationship_id": "REL-075",
+      "source": "CON-003",
+      "target": "REQ-003",
+      "type": "verify",
+      "label": "verify",
+      "points": [
+        {
+          "x": 1210,
+          "y": 1066
+        },
+        {
+          "x": 750,
+          "y": 1066
+        },
+        {
+          "x": 750,
+          "y": 346
+        },
+        {
+          "x": 290,
+          "y": 346
+        }
+      ],
+      "label_x": 750,
+      "label_y": 700
+    },
+    {
+      "id": "REL-076",
+      "relationship_id": "REL-076",
+      "source": "CON-004",
+      "target": "REQ-004",
+      "type": "verify",
+      "label": "verify",
+      "points": [
+        {
+          "x": 1210,
+          "y": 1190
+        },
+        {
+          "x": 750,
+          "y": 1190
+        },
+        {
+          "x": 750,
+          "y": 458
+        },
+        {
+          "x": 290,
+          "y": 458
+        }
+      ],
+      "label_x": 750,
+      "label_y": 818
+    }
+  ]
+}

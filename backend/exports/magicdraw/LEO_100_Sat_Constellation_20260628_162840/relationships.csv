@@ -1,0 +1,12 @@
+﻿local_id,name,type,package,metaclass,stereotype,source,source_name,target,target_name,documentation
+REL-001,REL-001,contains,06_Traceability,Association,CompositeAssociation,BLK-001,LEO卫星星座系统,BLK-002,单颗通信卫星,星座系统包含100颗通信卫星
+REL-002,REL-002,contains,06_Traceability,Association,CompositeAssociation,BLK-001,LEO卫星星座系统,BLK-003,地面用户终端,星座服务的对象包含地面用户终端
+REL-003,REL-003,contains,06_Traceability,Association,CompositeAssociation,BLK-001,LEO卫星星座系统,BLK-004,地面运行控制中心,星座运营依赖地面运行控制中心
+REL-004,REL-004,satisfy,06_Traceability,Dependency,SysML::Requirements::Satisfy,UC-001,提供全球通信接入,REQ-002,全球覆盖与服务可用性,提供全球通信接入用例满足全球覆盖可用性需求
+REL-005,REL-005,satisfy,06_Traceability,Dependency,SysML::Requirements::Satisfy,UC-002,星座运行监控,REQ-006,地面测控与运行管理,星座运行监控用例满足地面测控与运行管理需求
+REL-006,REL-006,satisfy,06_Traceability,Dependency,SysML::Requirements::Satisfy,IF-002,星间链路接口,REQ-003,星间链路通信能力,星间链路接口实现星间通信能力需求
+REL-007,REL-007,refine,06_Traceability,Dependency,SysML::Requirements::Refine,CON-002,卫星质量约束,REQ-004,卫星平台质量约束,质量约束细化卫星平台质量要求，限制湿重不超过250kg
+REL-008,REL-008,verify,06_Traceability,Dependency,SysML::Requirements::Verify,CON-001,链路预算约束,REQ-002,全球覆盖与服务可用性,链路预算约束用于验证全球覆盖需求中的星地链路可行性
+REL-009,REL-009,allocate,06_Traceability,Dependency,SysML::Allocations::Allocate,ACT-001,端到端通信服务建立,UC-001,提供全球通信接入,端到端通信服务建立活动分配给通信接入用例的实现
+REL-010,REL-010,trace,06_Traceability,Dependency,SysML::Requirements::Trace,BLK-002,单颗通信卫星,IF-001,星地馈电链路接口,单颗卫星具备星地馈电链路接口
+REL-011,REL-011,trace,06_Traceability,Dependency,SysML::Requirements::Trace,BLK-002,单颗通信卫星,IF-002,星间链路接口,单颗卫星具备星间链路接口

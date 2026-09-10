@@ -1,0 +1,2548 @@
+{
+  "schema": "ai-mbse.magicdraw.exchange.v1",
+  "generated_at": "2026-06-28T06:23:26Z",
+  "project_path": "",
+  "root_package": "SmartCrossDomainSystem",
+  "diagram_name": "AI_MBSE_Trace_View",
+  "instructions": [
+    "Create or reuse root package.",
+    "Create nested packages from each element or relationship package field when provided.",
+    "Create SysML/UML elements by local_id and stereotype.",
+    "Create relationships after all element ids are resolved.",
+    "Use diagram_layout as the single source of truth for MagicDraw and frontend canvas placement.",
+    "Store ai_mbse_id and source_requirement as tagged values when available."
+  ],
+  "elements": [
+    {
+      "local_id": "BLK-001",
+      "name": "SmartCrossDomainSystemModel",
+      "type": "Block",
+      "package": "02_Structure",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "跨域智能装备系统顶层模型，作为所有模型元素的命名空间和根包。",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "BLK-001",
+        "external_id": null,
+        "package": "02_Structure"
+      }
+    },
+    {
+      "local_id": "BLK-002",
+      "name": "01_Requirements",
+      "type": "Block",
+      "package": "SmartCrossDomainSystemModel",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "需求包，存放所有系统需求。",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "BLK-002",
+        "external_id": null,
+        "package": "SmartCrossDomainSystemModel"
+      }
+    },
+    {
+      "local_id": "BLK-003",
+      "name": "02_Blocks",
+      "type": "Block",
+      "package": "SmartCrossDomainSystemModel",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "系统组成块包，定义系统结构及关键组件。",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "BLK-003",
+        "external_id": null,
+        "package": "SmartCrossDomainSystemModel"
+      }
+    },
+    {
+      "local_id": "BLK-004",
+      "name": "03_UseCases",
+      "type": "Block",
+      "package": "SmartCrossDomainSystemModel",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "用例包，描述系统功能与用户交互。",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "BLK-004",
+        "external_id": null,
+        "package": "SmartCrossDomainSystemModel"
+      }
+    },
+    {
+      "local_id": "BLK-005",
+      "name": "04_Interfaces",
+      "type": "Block",
+      "package": "SmartCrossDomainSystemModel",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "接口包，定义系统内外部信息与控制接口。",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "BLK-005",
+        "external_id": null,
+        "package": "SmartCrossDomainSystemModel"
+      }
+    },
+    {
+      "local_id": "BLK-006",
+      "name": "05_Activities",
+      "type": "Block",
+      "package": "SmartCrossDomainSystemModel",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "活动包，描述系统行为流程。",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "BLK-006",
+        "external_id": null,
+        "package": "SmartCrossDomainSystemModel"
+      }
+    },
+    {
+      "local_id": "BLK-007",
+      "name": "06_Constraints",
+      "type": "Block",
+      "package": "SmartCrossDomainSystemModel",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "约束包，定义系统性能与设计约束。",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "BLK-007",
+        "external_id": null,
+        "package": "SmartCrossDomainSystemModel"
+      }
+    },
+    {
+      "local_id": "REQ-001",
+      "name": "CrossDomainMissionCoordination",
+      "type": "Requirement",
+      "package": "01_Requirements",
+      "metaclass": "Class",
+      "stereotype": "SysML::Requirements::Requirement",
+      "documentation": "系统应能协调空中、地面与海上无人装备，完成跨域联合侦察、打击与评估任务。",
+      "source_requirement": "REQ-001",
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "REQ-001",
+        "external_id": null,
+        "package": "01_Requirements"
+      }
+    },
+    {
+      "local_id": "REQ-002",
+      "name": "CommunicationLatency",
+      "type": "Requirement",
+      "package": "01_Requirements",
+      "metaclass": "Class",
+      "stereotype": "SysML::Requirements::Requirement",
+      "documentation": "关键跨域指令与状态数据端到端通信延迟不超过100ms。",
+      "source_requirement": "REQ-002",
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "REQ-002",
+        "external_id": null,
+        "package": "01_Requirements"
+      }
+    },
+    {
+      "local_id": "REQ-003",
+      "name": "SecureAuthentication",
+      "type": "Requirement",
+      "package": "01_Requirements",
+      "metaclass": "Class",
+      "stereotype": "SysML::Requirements::Requirement",
+      "documentation": "所有域间交互须进行身份认证与数据加密，防止非授权访问与篡改。",
+      "source_requirement": "REQ-003",
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "REQ-003",
+        "external_id": null,
+        "package": "01_Requirements"
+      }
+    },
+    {
+      "local_id": "REQ-004",
+      "name": "RealTimeSituationalAwareness",
+      "type": "Requirement",
+      "package": "01_Requirements",
+      "metaclass": "Class",
+      "stereotype": "SysML::Requirements::Requirement",
+      "documentation": "系统应提供统一的跨域战术态势图，更新频率不低于1Hz。",
+      "source_requirement": "REQ-004",
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "REQ-004",
+        "external_id": null,
+        "package": "01_Requirements"
+      }
+    },
+    {
+      "local_id": "BLK-001-2",
+      "name": "CrossDomainIntelligentEquipmentSystem",
+      "type": "Block",
+      "package": "02_Blocks",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "跨域智能装备系统整体，作为上下文中的系统边界块。",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "BLK-001-2",
+        "external_id": null,
+        "package": "02_Blocks"
+      }
+    },
+    {
+      "local_id": "BLK-002-2",
+      "name": "CommandControlCenter",
+      "type": "Block",
+      "package": "02_Blocks",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "指挥控制中心，负责全局任务规划、态势融合、决策与指令下达。",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "BLK-002-2",
+        "external_id": null,
+        "package": "02_Blocks"
+      }
+    },
+    {
+      "local_id": "BLK-003-2",
+      "name": "AerialUnmannedPlatform",
+      "type": "Block",
+      "package": "02_Blocks",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "空中无人平台（如无人机），提供长航时侦察、精确打击能力。",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "BLK-003-2",
+        "external_id": null,
+        "package": "02_Blocks"
+      }
+    },
+    {
+      "local_id": "BLK-004-2",
+      "name": "GroundUnmannedPlatform",
+      "type": "Block",
+      "package": "02_Blocks",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "地面无人平台（如无人战车），执行地面突击、排爆、侦察任务。",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "BLK-004-2",
+        "external_id": null,
+        "package": "02_Blocks"
+      }
+    },
+    {
+      "local_id": "BLK-005-2",
+      "name": "MarineUnmannedPlatform",
+      "type": "Block",
+      "package": "02_Blocks",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "海上无人平台（如无人艇），承担海上巡逻、反潜、支援任务。",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "BLK-005-2",
+        "external_id": null,
+        "package": "02_Blocks"
+      }
+    },
+    {
+      "local_id": "BLK-006-2",
+      "name": "CommunicationNetwork",
+      "type": "Block",
+      "package": "02_Blocks",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "跨域通信网络，提供域间数据链路与网络传输服务。",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "BLK-006-2",
+        "external_id": null,
+        "package": "02_Blocks"
+      }
+    },
+    {
+      "local_id": "UC-001",
+      "name": "PerformCrossDomainMission",
+      "type": "UseCase",
+      "package": "03_UseCases",
+      "metaclass": "UseCase",
+      "stereotype": "",
+      "documentation": "操作员通过执行跨域任务用例，发起并监控多域协同作战行动。",
+      "source_requirement": "REQ-001",
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "UC-001",
+        "external_id": null,
+        "package": "03_UseCases"
+      }
+    },
+    {
+      "local_id": "UC-002",
+      "name": "ShareSituationalAwareness",
+      "type": "UseCase",
+      "package": "03_UseCases",
+      "metaclass": "UseCase",
+      "stereotype": "",
+      "documentation": "系统汇聚各域传感器数据，生成统一态势图并实时共享。",
+      "source_requirement": "REQ-004",
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "UC-002",
+        "external_id": null,
+        "package": "03_UseCases"
+      }
+    },
+    {
+      "local_id": "UC-003",
+      "name": "CollaborativeDecisionMaking",
+      "type": "UseCase",
+      "package": "03_UseCases",
+      "metaclass": "UseCase",
+      "stereotype": "",
+      "documentation": "基于共享态势，辅助指挥员进行跨域协同决策与动态任务分配。",
+      "source_requirement": "REQ-001",
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "UC-003",
+        "external_id": null,
+        "package": "03_UseCases"
+      }
+    },
+    {
+      "local_id": "UC-004",
+      "name": "MonitorExecution",
+      "type": "UseCase",
+      "package": "03_UseCases",
+      "metaclass": "UseCase",
+      "stereotype": "",
+      "documentation": "实时监控跨域任务执行状态，支持战术调整与效果评估。",
+      "source_requirement": "REQ-001",
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "UC-004",
+        "external_id": null,
+        "package": "03_UseCases"
+      }
+    },
+    {
+      "local_id": "IF-001",
+      "name": "C2Interface",
+      "type": "Interface",
+      "package": "04_Interfaces",
+      "metaclass": "Interface",
+      "stereotype": "SysML::PortsAndFlows::InterfaceBlock",
+      "documentation": "指挥控制接口，定义指挥中心与各无人平台之间的命令、状态遥测与控制数据格式与协议。",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "IF-001",
+        "external_id": null,
+        "package": "04_Interfaces"
+      }
+    },
+    {
+      "local_id": "IF-002",
+      "name": "InterDomainDataLink",
+      "type": "Interface",
+      "package": "04_Interfaces",
+      "metaclass": "Interface",
+      "stereotype": "SysML::PortsAndFlows::InterfaceBlock",
+      "documentation": "域间数据链接口，支持不同域平台间的传感器数据、协同信息与任务同步流的交换。",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "IF-002",
+        "external_id": null,
+        "package": "04_Interfaces"
+      }
+    },
+    {
+      "local_id": "IF-003",
+      "name": "SensorDataStream",
+      "type": "Interface",
+      "package": "04_Interfaces",
+      "metaclass": "Interface",
+      "stereotype": "SysML::PortsAndFlows::InterfaceBlock",
+      "documentation": "传感器数据流接口，定义各平台传感器到融合中心的元数据格式。",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "IF-003",
+        "external_id": null,
+        "package": "04_Interfaces"
+      }
+    },
+    {
+      "local_id": "ACT-001",
+      "name": "CrossDomainMissionProcess",
+      "type": "Activity",
+      "package": "05_Activities",
+      "metaclass": "Activity",
+      "stereotype": "",
+      "documentation": "跨域任务执行的主要行为流程：态势感知→数据融合→协同决策→任务分配→平台执行→效果评估。",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "ACT-001",
+        "external_id": null,
+        "package": "05_Activities"
+      }
+    },
+    {
+      "local_id": "CON-001",
+      "name": "LatencyConstraintBlock",
+      "type": "ConstraintBlock",
+      "package": "06_Constraints",
+      "metaclass": "Class",
+      "stereotype": "SysML::ConstraintBlocks::ConstraintBlock",
+      "documentation": "端到端通信延迟约束，强制关键路径延迟≤100ms。",
+      "source_requirement": "REQ-002",
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "CON-001",
+        "external_id": null,
+        "package": "06_Constraints"
+      }
+    },
+    {
+      "local_id": "CON-002",
+      "name": "BandwidthConstraintBlock",
+      "type": "ConstraintBlock",
+      "package": "06_Constraints",
+      "metaclass": "Class",
+      "stereotype": "SysML::ConstraintBlocks::ConstraintBlock",
+      "documentation": "域间主干链路带宽约束，要求≥10Mbps以满足态势视频与数据融合需求。",
+      "source_requirement": "REQ-004",
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "CON-002",
+        "external_id": null,
+        "package": "06_Constraints"
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "local_id": "REL-001",
+      "name": "REL-001",
+      "type": "contains",
+      "package": "06_Traceability",
+      "metaclass": "Association",
+      "stereotype": "CompositeAssociation",
+      "source": "BLK-001",
+      "source_name": "SmartCrossDomainSystemModel",
+      "target": "BLK-002",
+      "target_name": "01_Requirements",
+      "documentation": "顶层模型包含需求包"
+    },
+    {
+      "local_id": "REL-002",
+      "name": "REL-002",
+      "type": "contains",
+      "package": "06_Traceability",
+      "metaclass": "Association",
+      "stereotype": "CompositeAssociation",
+      "source": "BLK-001",
+      "source_name": "SmartCrossDomainSystemModel",
+      "target": "BLK-003",
+      "target_name": "02_Blocks",
+      "documentation": "顶层模型包含系统组成块包"
+    },
+    {
+      "local_id": "REL-003",
+      "name": "REL-003",
+      "type": "contains",
+      "package": "06_Traceability",
+      "metaclass": "Association",
+      "stereotype": "CompositeAssociation",
+      "source": "BLK-001",
+      "source_name": "SmartCrossDomainSystemModel",
+      "target": "BLK-004",
+      "target_name": "03_UseCases",
+      "documentation": "顶层模型包含用例包"
+    },
+    {
+      "local_id": "REL-004",
+      "name": "REL-004",
+      "type": "contains",
+      "package": "06_Traceability",
+      "metaclass": "Association",
+      "stereotype": "CompositeAssociation",
+      "source": "BLK-001",
+      "source_name": "SmartCrossDomainSystemModel",
+      "target": "BLK-005",
+      "target_name": "04_Interfaces",
+      "documentation": "顶层模型包含接口包"
+    },
+    {
+      "local_id": "REL-005",
+      "name": "REL-005",
+      "type": "contains",
+      "package": "06_Traceability",
+      "metaclass": "Association",
+      "stereotype": "CompositeAssociation",
+      "source": "BLK-001",
+      "source_name": "SmartCrossDomainSystemModel",
+      "target": "BLK-006",
+      "target_name": "05_Activities",
+      "documentation": "顶层模型包含活动包"
+    },
+    {
+      "local_id": "REL-006",
+      "name": "REL-006",
+      "type": "contains",
+      "package": "06_Traceability",
+      "metaclass": "Association",
+      "stereotype": "CompositeAssociation",
+      "source": "BLK-001",
+      "source_name": "SmartCrossDomainSystemModel",
+      "target": "BLK-007",
+      "target_name": "06_Constraints",
+      "documentation": "顶层模型包含约束包"
+    },
+    {
+      "local_id": "REL-007",
+      "name": "REL-007",
+      "type": "contains",
+      "package": "06_Traceability",
+      "metaclass": "Association",
+      "stereotype": "CompositeAssociation",
+      "source": "BLK-002",
+      "source_name": "01_Requirements",
+      "target": "REQ-001",
+      "target_name": "CrossDomainMissionCoordination",
+      "documentation": "需求包包含跨域协同需求"
+    },
+    {
+      "local_id": "REL-008",
+      "name": "REL-008",
+      "type": "contains",
+      "package": "06_Traceability",
+      "metaclass": "Association",
+      "stereotype": "CompositeAssociation",
+      "source": "BLK-002",
+      "source_name": "01_Requirements",
+      "target": "REQ-002",
+      "target_name": "CommunicationLatency",
+      "documentation": "需求包包含通信延迟需求"
+    },
+    {
+      "local_id": "REL-009",
+      "name": "REL-009",
+      "type": "contains",
+      "package": "06_Traceability",
+      "metaclass": "Association",
+      "stereotype": "CompositeAssociation",
+      "source": "BLK-002",
+      "source_name": "01_Requirements",
+      "target": "REQ-003",
+      "target_name": "SecureAuthentication",
+      "documentation": "需求包包含安全认证需求"
+    },
+    {
+      "local_id": "REL-010",
+      "name": "REL-010",
+      "type": "contains",
+      "package": "06_Traceability",
+      "metaclass": "Association",
+      "stereotype": "CompositeAssociation",
+      "source": "BLK-002",
+      "source_name": "01_Requirements",
+      "target": "REQ-004",
+      "target_name": "RealTimeSituationalAwareness",
+      "documentation": "需求包包含实时态势共享需求"
+    },
+    {
+      "local_id": "REL-011",
+      "name": "REL-011",
+      "type": "contains",
+      "package": "06_Traceability",
+      "metaclass": "Association",
+      "stereotype": "CompositeAssociation",
+      "source": "BLK-003",
+      "source_name": "02_Blocks",
+      "target": "BLK-001-2",
+      "target_name": "CrossDomainIntelligentEquipmentSystem",
+      "documentation": "块包包含系统整体块"
+    },
+    {
+      "local_id": "REL-012",
+      "name": "REL-012",
+      "type": "contains",
+      "package": "06_Traceability",
+      "metaclass": "Association",
+      "stereotype": "CompositeAssociation",
+      "source": "BLK-003",
+      "source_name": "02_Blocks",
+      "target": "BLK-002-2",
+      "target_name": "CommandControlCenter",
+      "documentation": "块包包含指挥控制中心"
+    },
+    {
+      "local_id": "REL-013",
+      "name": "REL-013",
+      "type": "contains",
+      "package": "06_Traceability",
+      "metaclass": "Association",
+      "stereotype": "CompositeAssociation",
+      "source": "BLK-003",
+      "source_name": "02_Blocks",
+      "target": "BLK-003-2",
+      "target_name": "AerialUnmannedPlatform",
+      "documentation": "块包包含空中无人平台"
+    },
+    {
+      "local_id": "REL-014",
+      "name": "REL-014",
+      "type": "contains",
+      "package": "06_Traceability",
+      "metaclass": "Association",
+      "stereotype": "CompositeAssociation",
+      "source": "BLK-003",
+      "source_name": "02_Blocks",
+      "target": "BLK-004-2",
+      "target_name": "GroundUnmannedPlatform",
+      "documentation": "块包包含地面无人平台"
+    },
+    {
+      "local_id": "REL-015",
+      "name": "REL-015",
+      "type": "contains",
+      "package": "06_Traceability",
+      "metaclass": "Association",
+      "stereotype": "CompositeAssociation",
+      "source": "BLK-003",
+      "source_name": "02_Blocks",
+      "target": "BLK-005-2",
+      "target_name": "MarineUnmannedPlatform",
+      "documentation": "块包包含海上无人平台"
+    },
+    {
+      "local_id": "REL-016",
+      "name": "REL-016",
+      "type": "contains",
+      "package": "06_Traceability",
+      "metaclass": "Association",
+      "stereotype": "CompositeAssociation",
+      "source": "BLK-003",
+      "source_name": "02_Blocks",
+      "target": "BLK-006-2",
+      "target_name": "CommunicationNetwork",
+      "documentation": "块包包含通信网络"
+    },
+    {
+      "local_id": "REL-017",
+      "name": "REL-017",
+      "type": "contains",
+      "package": "06_Traceability",
+      "metaclass": "Association",
+      "stereotype": "CompositeAssociation",
+      "source": "BLK-004",
+      "source_name": "03_UseCases",
+      "target": "UC-001",
+      "target_name": "PerformCrossDomainMission",
+      "documentation": "用例包包含执行跨域任务"
+    },
+    {
+      "local_id": "REL-018",
+      "name": "REL-018",
+      "type": "contains",
+      "package": "06_Traceability",
+      "metaclass": "Association",
+      "stereotype": "CompositeAssociation",
+      "source": "BLK-004",
+      "source_name": "03_UseCases",
+      "target": "UC-002",
+      "target_name": "ShareSituationalAwareness",
+      "documentation": "用例包包含态势感知与共享"
+    },
+    {
+      "local_id": "REL-019",
+      "name": "REL-019",
+      "type": "contains",
+      "package": "06_Traceability",
+      "metaclass": "Association",
+      "stereotype": "CompositeAssociation",
+      "source": "BLK-004",
+      "source_name": "03_UseCases",
+      "target": "UC-003",
+      "target_name": "CollaborativeDecisionMaking",
+      "documentation": "用例包包含协同决策"
+    },
+    {
+      "local_id": "REL-020",
+      "name": "REL-020",
+      "type": "contains",
+      "package": "06_Traceability",
+      "metaclass": "Association",
+      "stereotype": "CompositeAssociation",
+      "source": "BLK-004",
+      "source_name": "03_UseCases",
+      "target": "UC-004",
+      "target_name": "MonitorExecution",
+      "documentation": "用例包包含任务执行监控"
+    },
+    {
+      "local_id": "REL-021",
+      "name": "REL-021",
+      "type": "contains",
+      "package": "06_Traceability",
+      "metaclass": "Association",
+      "stereotype": "CompositeAssociation",
+      "source": "BLK-005",
+      "source_name": "04_Interfaces",
+      "target": "IF-001",
+      "target_name": "C2Interface",
+      "documentation": "接口包包含指挥控制接口"
+    },
+    {
+      "local_id": "REL-022",
+      "name": "REL-022",
+      "type": "contains",
+      "package": "06_Traceability",
+      "metaclass": "Association",
+      "stereotype": "CompositeAssociation",
+      "source": "BLK-005",
+      "source_name": "04_Interfaces",
+      "target": "IF-002",
+      "target_name": "InterDomainDataLink",
+      "documentation": "接口包包含域间数据链"
+    },
+    {
+      "local_id": "REL-023",
+      "name": "REL-023",
+      "type": "contains",
+      "package": "06_Traceability",
+      "metaclass": "Association",
+      "stereotype": "CompositeAssociation",
+      "source": "BLK-005",
+      "source_name": "04_Interfaces",
+      "target": "IF-003",
+      "target_name": "SensorDataStream",
+      "documentation": "接口包包含传感器数据流"
+    },
+    {
+      "local_id": "REL-024",
+      "name": "REL-024",
+      "type": "contains",
+      "package": "06_Traceability",
+      "metaclass": "Association",
+      "stereotype": "CompositeAssociation",
+      "source": "BLK-006",
+      "source_name": "05_Activities",
+      "target": "ACT-001",
+      "target_name": "CrossDomainMissionProcess",
+      "documentation": "活动包包含跨域任务流程"
+    },
+    {
+      "local_id": "REL-025",
+      "name": "REL-025",
+      "type": "contains",
+      "package": "06_Traceability",
+      "metaclass": "Association",
+      "stereotype": "CompositeAssociation",
+      "source": "BLK-007",
+      "source_name": "06_Constraints",
+      "target": "CON-001",
+      "target_name": "LatencyConstraintBlock",
+      "documentation": "约束包包含延迟约束块"
+    },
+    {
+      "local_id": "REL-026",
+      "name": "REL-026",
+      "type": "contains",
+      "package": "06_Traceability",
+      "metaclass": "Association",
+      "stereotype": "CompositeAssociation",
+      "source": "BLK-007",
+      "source_name": "06_Constraints",
+      "target": "CON-002",
+      "target_name": "BandwidthConstraintBlock",
+      "documentation": "约束包包含带宽约束块"
+    },
+    {
+      "local_id": "REL-027",
+      "name": "REL-027",
+      "type": "trace",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Trace",
+      "source": "REQ-001",
+      "source_name": "CrossDomainMissionCoordination",
+      "target": "UC-001",
+      "target_name": "PerformCrossDomainMission",
+      "documentation": "跨域协同需求由执行跨域任务用例追踪实现"
+    },
+    {
+      "local_id": "REL-028",
+      "name": "REL-028",
+      "type": "trace",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Trace",
+      "source": "REQ-004",
+      "source_name": "RealTimeSituationalAwareness",
+      "target": "UC-002",
+      "target_name": "ShareSituationalAwareness",
+      "documentation": "实时态势需求由态势共享用例追踪"
+    },
+    {
+      "local_id": "REL-029",
+      "name": "REL-029",
+      "type": "trace",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Trace",
+      "source": "REQ-001",
+      "source_name": "CrossDomainMissionCoordination",
+      "target": "UC-003",
+      "target_name": "CollaborativeDecisionMaking",
+      "documentation": "协同需求同样映射到协同决策用例"
+    },
+    {
+      "local_id": "REL-030",
+      "name": "REL-030",
+      "type": "satisfy",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Satisfy",
+      "source": "BLK-002-2",
+      "source_name": "CommandControlCenter",
+      "target": "REQ-001",
+      "target_name": "CrossDomainMissionCoordination",
+      "documentation": "指挥控制中心满足跨域协同需求"
+    },
+    {
+      "local_id": "REL-031",
+      "name": "REL-031",
+      "type": "satisfy",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Satisfy",
+      "source": "BLK-006-2",
+      "source_name": "CommunicationNetwork",
+      "target": "REQ-002",
+      "target_name": "CommunicationLatency",
+      "documentation": "通信网络满足低延迟需求"
+    },
+    {
+      "local_id": "REL-032",
+      "name": "REL-032",
+      "type": "derivereqt",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Trace",
+      "source": "CON-001",
+      "source_name": "LatencyConstraintBlock",
+      "target": "REQ-002",
+      "target_name": "CommunicationLatency",
+      "documentation": "延迟约束块由通信延迟需求派生"
+    },
+    {
+      "local_id": "REL-033",
+      "name": "REL-033",
+      "type": "derivereqt",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Trace",
+      "source": "CON-002",
+      "source_name": "BandwidthConstraintBlock",
+      "target": "REQ-004",
+      "target_name": "RealTimeSituationalAwareness",
+      "documentation": "带宽约束块由实时态势需求派生，保障数据吞吐"
+    },
+    {
+      "local_id": "REL-034",
+      "name": "REL-034",
+      "type": "refine",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Refine",
+      "source": "ACT-001",
+      "source_name": "CrossDomainMissionProcess",
+      "target": "UC-001",
+      "target_name": "PerformCrossDomainMission",
+      "documentation": "跨域任务流程精细化了执行跨域任务用例的行为"
+    },
+    {
+      "local_id": "REL-035",
+      "name": "REL-035",
+      "type": "dependency",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "Dependency",
+      "source": "BLK-002-2",
+      "source_name": "CommandControlCenter",
+      "target": "IF-001",
+      "target_name": "C2Interface",
+      "documentation": "指挥控制中心使用指挥控制接口对外交互"
+    },
+    {
+      "local_id": "REL-036",
+      "name": "REL-036",
+      "type": "dependency",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "Dependency",
+      "source": "BLK-003-2",
+      "source_name": "AerialUnmannedPlatform",
+      "target": "IF-001",
+      "target_name": "C2Interface",
+      "documentation": "空中平台通过指挥控制接口接收指令"
+    },
+    {
+      "local_id": "REL-037",
+      "name": "REL-037",
+      "type": "dependency",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "Dependency",
+      "source": "BLK-004-2",
+      "source_name": "GroundUnmannedPlatform",
+      "target": "IF-001",
+      "target_name": "C2Interface",
+      "documentation": "地面平台通过指挥控制接口接收指令"
+    },
+    {
+      "local_id": "REL-038",
+      "name": "REL-038",
+      "type": "dependency",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "Dependency",
+      "source": "BLK-005-2",
+      "source_name": "MarineUnmannedPlatform",
+      "target": "IF-001",
+      "target_name": "C2Interface",
+      "documentation": "海上平台通过指挥控制接口接收指令"
+    },
+    {
+      "local_id": "REL-039",
+      "name": "REL-039",
+      "type": "dependency",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "Dependency",
+      "source": "BLK-003-2",
+      "source_name": "AerialUnmannedPlatform",
+      "target": "IF-002",
+      "target_name": "InterDomainDataLink",
+      "documentation": "空中平台使用域间数据链共享态势"
+    },
+    {
+      "local_id": "REL-040",
+      "name": "REL-040",
+      "type": "dependency",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "Dependency",
+      "source": "BLK-004-2",
+      "source_name": "GroundUnmannedPlatform",
+      "target": "IF-002",
+      "target_name": "InterDomainDataLink",
+      "documentation": "地面平台使用域间数据链共享态势"
+    },
+    {
+      "local_id": "REL-041",
+      "name": "REL-041",
+      "type": "dependency",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "Dependency",
+      "source": "BLK-005-2",
+      "source_name": "MarineUnmannedPlatform",
+      "target": "IF-002",
+      "target_name": "InterDomainDataLink",
+      "documentation": "海上平台使用域间数据链共享态势"
+    }
+  ],
+  "diagram_layout": {
+    "schema": "ai-mbse.diagram-layout.v1",
+    "diagram_name": "AI_MBSE_Trace_View",
+    "layout_source": "backend",
+    "width": 1660,
+    "height": 1732,
+    "nodes": [
+      {
+        "id": "ACT-001",
+        "element_id": "ACT-001",
+        "name": "CrossDomainMissionProcess",
+        "label": "ACT-001 - CrossDomainMissionProcess",
+        "type": "Activity",
+        "stereotype_label": "«activity»",
+        "shape": "rect",
+        "column": 0,
+        "row": 0,
+        "x": 70,
+        "y": 80,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "BLK-001",
+        "element_id": "BLK-001",
+        "name": "SmartCrossDomainSystemModel",
+        "label": "BLK-001 - SmartCrossDomainSystemModel",
+        "type": "Block",
+        "stereotype_label": "«block»",
+        "shape": "rect",
+        "column": 1,
+        "row": 0,
+        "x": 330,
+        "y": 80,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "BLK-001-2",
+        "element_id": "BLK-001-2",
+        "name": "CrossDomainIntelligentEquipmentSystem",
+        "label": "BLK-001-2 - CrossDomainIntelligentEquipmentSystem",
+        "type": "Block",
+        "stereotype_label": "«block»",
+        "shape": "rect",
+        "column": 1,
+        "row": 1,
+        "x": 330,
+        "y": 205,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "BLK-002",
+        "element_id": "BLK-002",
+        "name": "01_Requirements",
+        "label": "BLK-002 - 01_Requirements",
+        "type": "Block",
+        "stereotype_label": "«block»",
+        "shape": "rect",
+        "column": 1,
+        "row": 2,
+        "x": 330,
+        "y": 330,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "BLK-002-2",
+        "element_id": "BLK-002-2",
+        "name": "CommandControlCenter",
+        "label": "BLK-002-2 - CommandControlCenter",
+        "type": "Block",
+        "stereotype_label": "«block»",
+        "shape": "rect",
+        "column": 1,
+        "row": 3,
+        "x": 330,
+        "y": 455,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "BLK-003",
+        "element_id": "BLK-003",
+        "name": "02_Blocks",
+        "label": "BLK-003 - 02_Blocks",
+        "type": "Block",
+        "stereotype_label": "«block»",
+        "shape": "rect",
+        "column": 1,
+        "row": 4,
+        "x": 330,
+        "y": 580,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "BLK-003-2",
+        "element_id": "BLK-003-2",
+        "name": "AerialUnmannedPlatform",
+        "label": "BLK-003-2 - AerialUnmannedPlatform",
+        "type": "Block",
+        "stereotype_label": "«block»",
+        "shape": "rect",
+        "column": 1,
+        "row": 5,
+        "x": 330,
+        "y": 705,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "BLK-004",
+        "element_id": "BLK-004",
+        "name": "03_UseCases",
+        "label": "BLK-004 - 03_UseCases",
+        "type": "Block",
+        "stereotype_label": "«block»",
+        "shape": "rect",
+        "column": 1,
+        "row": 6,
+        "x": 330,
+        "y": 830,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "BLK-004-2",
+        "element_id": "BLK-004-2",
+        "name": "GroundUnmannedPlatform",
+        "label": "BLK-004-2 - GroundUnmannedPlatform",
+        "type": "Block",
+        "stereotype_label": "«block»",
+        "shape": "rect",
+        "column": 1,
+        "row": 7,
+        "x": 330,
+        "y": 955,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "BLK-005",
+        "element_id": "BLK-005",
+        "name": "04_Interfaces",
+        "label": "BLK-005 - 04_Interfaces",
+        "type": "Block",
+        "stereotype_label": "«block»",
+        "shape": "rect",
+        "column": 1,
+        "row": 8,
+        "x": 330,
+        "y": 1080,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "BLK-005-2",
+        "element_id": "BLK-005-2",
+        "name": "MarineUnmannedPlatform",
+        "label": "BLK-005-2 - MarineUnmannedPlatform",
+        "type": "Block",
+        "stereotype_label": "«block»",
+        "shape": "rect",
+        "column": 1,
+        "row": 9,
+        "x": 330,
+        "y": 1205,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "BLK-006",
+        "element_id": "BLK-006",
+        "name": "05_Activities",
+        "label": "BLK-006 - 05_Activities",
+        "type": "Block",
+        "stereotype_label": "«block»",
+        "shape": "rect",
+        "column": 1,
+        "row": 10,
+        "x": 330,
+        "y": 1330,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "BLK-006-2",
+        "element_id": "BLK-006-2",
+        "name": "CommunicationNetwork",
+        "label": "BLK-006-2 - CommunicationNetwork",
+        "type": "Block",
+        "stereotype_label": "«block»",
+        "shape": "rect",
+        "column": 1,
+        "row": 11,
+        "x": 330,
+        "y": 1455,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "BLK-007",
+        "element_id": "BLK-007",
+        "name": "06_Constraints",
+        "label": "BLK-007 - 06_Constraints",
+        "type": "Block",
+        "stereotype_label": "«block»",
+        "shape": "rect",
+        "column": 1,
+        "row": 12,
+        "x": 330,
+        "y": 1580,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "REQ-001",
+        "element_id": "REQ-001",
+        "name": "CrossDomainMissionCoordination",
+        "label": "REQ-001 - CrossDomainMissionCoordination",
+        "type": "Requirement",
+        "stereotype_label": "«requirement»",
+        "shape": "rect",
+        "column": 2,
+        "row": 0,
+        "x": 590,
+        "y": 80,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "REQ-002",
+        "element_id": "REQ-002",
+        "name": "CommunicationLatency",
+        "label": "REQ-002 - CommunicationLatency",
+        "type": "Requirement",
+        "stereotype_label": "«requirement»",
+        "shape": "rect",
+        "column": 2,
+        "row": 1,
+        "x": 590,
+        "y": 205,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "REQ-003",
+        "element_id": "REQ-003",
+        "name": "SecureAuthentication",
+        "label": "REQ-003 - SecureAuthentication",
+        "type": "Requirement",
+        "stereotype_label": "«requirement»",
+        "shape": "rect",
+        "column": 2,
+        "row": 2,
+        "x": 590,
+        "y": 330,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "REQ-004",
+        "element_id": "REQ-004",
+        "name": "RealTimeSituationalAwareness",
+        "label": "REQ-004 - RealTimeSituationalAwareness",
+        "type": "Requirement",
+        "stereotype_label": "«requirement»",
+        "shape": "rect",
+        "column": 2,
+        "row": 3,
+        "x": 590,
+        "y": 455,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "UC-001",
+        "element_id": "UC-001",
+        "name": "PerformCrossDomainMission",
+        "label": "UC-001 - PerformCrossDomainMission",
+        "type": "UseCase",
+        "stereotype_label": "«use case»",
+        "shape": "ellipse",
+        "column": 3,
+        "row": 0,
+        "x": 850,
+        "y": 80,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "UC-002",
+        "element_id": "UC-002",
+        "name": "ShareSituationalAwareness",
+        "label": "UC-002 - ShareSituationalAwareness",
+        "type": "UseCase",
+        "stereotype_label": "«use case»",
+        "shape": "ellipse",
+        "column": 3,
+        "row": 1,
+        "x": 850,
+        "y": 205,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "UC-003",
+        "element_id": "UC-003",
+        "name": "CollaborativeDecisionMaking",
+        "label": "UC-003 - CollaborativeDecisionMaking",
+        "type": "UseCase",
+        "stereotype_label": "«use case»",
+        "shape": "ellipse",
+        "column": 3,
+        "row": 2,
+        "x": 850,
+        "y": 330,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "UC-004",
+        "element_id": "UC-004",
+        "name": "MonitorExecution",
+        "label": "UC-004 - MonitorExecution",
+        "type": "UseCase",
+        "stereotype_label": "«use case»",
+        "shape": "ellipse",
+        "column": 3,
+        "row": 3,
+        "x": 850,
+        "y": 455,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "IF-001",
+        "element_id": "IF-001",
+        "name": "C2Interface",
+        "label": "IF-001 - C2Interface",
+        "type": "Interface",
+        "stereotype_label": "«interface»",
+        "shape": "soft",
+        "column": 4,
+        "row": 0,
+        "x": 1110,
+        "y": 80,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "IF-002",
+        "element_id": "IF-002",
+        "name": "InterDomainDataLink",
+        "label": "IF-002 - InterDomainDataLink",
+        "type": "Interface",
+        "stereotype_label": "«interface»",
+        "shape": "soft",
+        "column": 4,
+        "row": 1,
+        "x": 1110,
+        "y": 205,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "IF-003",
+        "element_id": "IF-003",
+        "name": "SensorDataStream",
+        "label": "IF-003 - SensorDataStream",
+        "type": "Interface",
+        "stereotype_label": "«interface»",
+        "shape": "soft",
+        "column": 4,
+        "row": 2,
+        "x": 1110,
+        "y": 330,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "CON-001",
+        "element_id": "CON-001",
+        "name": "LatencyConstraintBlock",
+        "label": "CON-001 - LatencyConstraintBlock",
+        "type": "ConstraintBlock",
+        "stereotype_label": "«constraint»",
+        "shape": "rect",
+        "column": 5,
+        "row": 0,
+        "x": 1370,
+        "y": 80,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "CON-002",
+        "element_id": "CON-002",
+        "name": "BandwidthConstraintBlock",
+        "label": "CON-002 - BandwidthConstraintBlock",
+        "type": "ConstraintBlock",
+        "stereotype_label": "«constraint»",
+        "shape": "rect",
+        "column": 5,
+        "row": 1,
+        "x": 1370,
+        "y": 205,
+        "width": 220,
+        "height": 72
+      }
+    ],
+    "edges": [
+      {
+        "id": "REL-001",
+        "relationship_id": "REL-001",
+        "source": "BLK-001",
+        "target": "BLK-002",
+        "type": "contains",
+        "label": "contains",
+        "points": [
+          {
+            "x": 426,
+            "y": 152
+          },
+          {
+            "x": 474,
+            "y": 152
+          },
+          {
+            "x": 406,
+            "y": 330
+          },
+          {
+            "x": 454,
+            "y": 330
+          }
+        ],
+        "label_x": 440,
+        "label_y": 235
+      },
+      {
+        "id": "REL-002",
+        "relationship_id": "REL-002",
+        "source": "BLK-001",
+        "target": "BLK-003",
+        "type": "contains",
+        "label": "contains",
+        "points": [
+          {
+            "x": 433,
+            "y": 152
+          },
+          {
+            "x": 481,
+            "y": 152
+          },
+          {
+            "x": 399,
+            "y": 580
+          },
+          {
+            "x": 447,
+            "y": 580
+          }
+        ],
+        "label_x": 440,
+        "label_y": 360
+      },
+      {
+        "id": "REL-003",
+        "relationship_id": "REL-003",
+        "source": "BLK-001",
+        "target": "BLK-004",
+        "type": "contains",
+        "label": "contains",
+        "points": [
+          {
+            "x": 440,
+            "y": 152
+          },
+          {
+            "x": 488,
+            "y": 152
+          },
+          {
+            "x": 392,
+            "y": 830
+          },
+          {
+            "x": 440,
+            "y": 830
+          }
+        ],
+        "label_x": 440,
+        "label_y": 485
+      },
+      {
+        "id": "REL-004",
+        "relationship_id": "REL-004",
+        "source": "BLK-001",
+        "target": "BLK-005",
+        "type": "contains",
+        "label": "contains",
+        "points": [
+          {
+            "x": 447,
+            "y": 152
+          },
+          {
+            "x": 399,
+            "y": 152
+          },
+          {
+            "x": 481,
+            "y": 1080
+          },
+          {
+            "x": 433,
+            "y": 1080
+          }
+        ],
+        "label_x": 440,
+        "label_y": 610
+      },
+      {
+        "id": "REL-005",
+        "relationship_id": "REL-005",
+        "source": "BLK-001",
+        "target": "BLK-006",
+        "type": "contains",
+        "label": "contains",
+        "points": [
+          {
+            "x": 454,
+            "y": 152
+          },
+          {
+            "x": 406,
+            "y": 152
+          },
+          {
+            "x": 474,
+            "y": 1330
+          },
+          {
+            "x": 426,
+            "y": 1330
+          }
+        ],
+        "label_x": 440,
+        "label_y": 735
+      },
+      {
+        "id": "REL-006",
+        "relationship_id": "REL-006",
+        "source": "BLK-001",
+        "target": "BLK-007",
+        "type": "contains",
+        "label": "contains",
+        "points": [
+          {
+            "x": 426,
+            "y": 152
+          },
+          {
+            "x": 474,
+            "y": 152
+          },
+          {
+            "x": 406,
+            "y": 1580
+          },
+          {
+            "x": 454,
+            "y": 1580
+          }
+        ],
+        "label_x": 440,
+        "label_y": 860
+      },
+      {
+        "id": "REL-007",
+        "relationship_id": "REL-007",
+        "source": "BLK-002",
+        "target": "REQ-001",
+        "type": "contains",
+        "label": "contains",
+        "points": [
+          {
+            "x": 550,
+            "y": 359
+          },
+          {
+            "x": 598,
+            "y": 359
+          },
+          {
+            "x": 542,
+            "y": 123
+          },
+          {
+            "x": 590,
+            "y": 123
+          }
+        ],
+        "label_x": 570,
+        "label_y": 235
+      },
+      {
+        "id": "REL-008",
+        "relationship_id": "REL-008",
+        "source": "BLK-002",
+        "target": "REQ-002",
+        "type": "contains",
+        "label": "contains",
+        "points": [
+          {
+            "x": 550,
+            "y": 366
+          },
+          {
+            "x": 598,
+            "y": 366
+          },
+          {
+            "x": 542,
+            "y": 241
+          },
+          {
+            "x": 590,
+            "y": 241
+          }
+        ],
+        "label_x": 570,
+        "label_y": 297
+      },
+      {
+        "id": "REL-009",
+        "relationship_id": "REL-009",
+        "source": "BLK-002",
+        "target": "REQ-003",
+        "type": "contains",
+        "label": "contains",
+        "points": [
+          {
+            "x": 550,
+            "y": 373
+          },
+          {
+            "x": 598,
+            "y": 373
+          },
+          {
+            "x": 542,
+            "y": 359
+          },
+          {
+            "x": 590,
+            "y": 359
+          }
+        ],
+        "label_x": 570,
+        "label_y": 360
+      },
+      {
+        "id": "REL-010",
+        "relationship_id": "REL-010",
+        "source": "BLK-002",
+        "target": "REQ-004",
+        "type": "contains",
+        "label": "contains",
+        "points": [
+          {
+            "x": 550,
+            "y": 380
+          },
+          {
+            "x": 598,
+            "y": 380
+          },
+          {
+            "x": 542,
+            "y": 477
+          },
+          {
+            "x": 590,
+            "y": 477
+          }
+        ],
+        "label_x": 570,
+        "label_y": 422
+      },
+      {
+        "id": "REL-011",
+        "relationship_id": "REL-011",
+        "source": "BLK-003",
+        "target": "BLK-001-2",
+        "type": "contains",
+        "label": "contains",
+        "points": [
+          {
+            "x": 426,
+            "y": 580
+          },
+          {
+            "x": 474,
+            "y": 580
+          },
+          {
+            "x": 406,
+            "y": 277
+          },
+          {
+            "x": 454,
+            "y": 277
+          }
+        ],
+        "label_x": 440,
+        "label_y": 422
+      },
+      {
+        "id": "REL-012",
+        "relationship_id": "REL-012",
+        "source": "BLK-003",
+        "target": "BLK-002-2",
+        "type": "contains",
+        "label": "contains",
+        "points": [
+          {
+            "x": 433,
+            "y": 580
+          },
+          {
+            "x": 481,
+            "y": 580
+          },
+          {
+            "x": 399,
+            "y": 527
+          },
+          {
+            "x": 447,
+            "y": 527
+          }
+        ],
+        "label_x": 440,
+        "label_y": 547
+      },
+      {
+        "id": "REL-013",
+        "relationship_id": "REL-013",
+        "source": "BLK-003",
+        "target": "BLK-003-2",
+        "type": "contains",
+        "label": "contains",
+        "points": [
+          {
+            "x": 440,
+            "y": 652
+          },
+          {
+            "x": 488,
+            "y": 652
+          },
+          {
+            "x": 392,
+            "y": 705
+          },
+          {
+            "x": 440,
+            "y": 705
+          }
+        ],
+        "label_x": 440,
+        "label_y": 672
+      },
+      {
+        "id": "REL-014",
+        "relationship_id": "REL-014",
+        "source": "BLK-003",
+        "target": "BLK-004-2",
+        "type": "contains",
+        "label": "contains",
+        "points": [
+          {
+            "x": 447,
+            "y": 652
+          },
+          {
+            "x": 399,
+            "y": 652
+          },
+          {
+            "x": 481,
+            "y": 955
+          },
+          {
+            "x": 433,
+            "y": 955
+          }
+        ],
+        "label_x": 440,
+        "label_y": 797
+      },
+      {
+        "id": "REL-015",
+        "relationship_id": "REL-015",
+        "source": "BLK-003",
+        "target": "BLK-005-2",
+        "type": "contains",
+        "label": "contains",
+        "points": [
+          {
+            "x": 454,
+            "y": 652
+          },
+          {
+            "x": 406,
+            "y": 652
+          },
+          {
+            "x": 474,
+            "y": 1205
+          },
+          {
+            "x": 426,
+            "y": 1205
+          }
+        ],
+        "label_x": 440,
+        "label_y": 922
+      },
+      {
+        "id": "REL-016",
+        "relationship_id": "REL-016",
+        "source": "BLK-003",
+        "target": "BLK-006-2",
+        "type": "contains",
+        "label": "contains",
+        "points": [
+          {
+            "x": 426,
+            "y": 652
+          },
+          {
+            "x": 474,
+            "y": 652
+          },
+          {
+            "x": 406,
+            "y": 1455
+          },
+          {
+            "x": 454,
+            "y": 1455
+          }
+        ],
+        "label_x": 440,
+        "label_y": 1047
+      },
+      {
+        "id": "REL-017",
+        "relationship_id": "REL-017",
+        "source": "BLK-004",
+        "target": "UC-001",
+        "type": "contains",
+        "label": "contains",
+        "points": [
+          {
+            "x": 550,
+            "y": 859
+          },
+          {
+            "x": 676,
+            "y": 859
+          },
+          {
+            "x": 724,
+            "y": 123
+          },
+          {
+            "x": 850,
+            "y": 123
+          }
+        ],
+        "label_x": 700,
+        "label_y": 485
+      },
+      {
+        "id": "REL-018",
+        "relationship_id": "REL-018",
+        "source": "BLK-004",
+        "target": "UC-002",
+        "type": "contains",
+        "label": "contains",
+        "points": [
+          {
+            "x": 550,
+            "y": 866
+          },
+          {
+            "x": 676,
+            "y": 866
+          },
+          {
+            "x": 724,
+            "y": 241
+          },
+          {
+            "x": 850,
+            "y": 241
+          }
+        ],
+        "label_x": 700,
+        "label_y": 547
+      },
+      {
+        "id": "REL-019",
+        "relationship_id": "REL-019",
+        "source": "BLK-004",
+        "target": "UC-003",
+        "type": "contains",
+        "label": "contains",
+        "points": [
+          {
+            "x": 550,
+            "y": 873
+          },
+          {
+            "x": 676,
+            "y": 873
+          },
+          {
+            "x": 724,
+            "y": 359
+          },
+          {
+            "x": 850,
+            "y": 359
+          }
+        ],
+        "label_x": 700,
+        "label_y": 610
+      },
+      {
+        "id": "REL-020",
+        "relationship_id": "REL-020",
+        "source": "BLK-004",
+        "target": "UC-004",
+        "type": "contains",
+        "label": "contains",
+        "points": [
+          {
+            "x": 550,
+            "y": 880
+          },
+          {
+            "x": 676,
+            "y": 880
+          },
+          {
+            "x": 724,
+            "y": 477
+          },
+          {
+            "x": 850,
+            "y": 477
+          }
+        ],
+        "label_x": 700,
+        "label_y": 672
+      },
+      {
+        "id": "REL-021",
+        "relationship_id": "REL-021",
+        "source": "BLK-005",
+        "target": "IF-001",
+        "type": "contains",
+        "label": "contains",
+        "points": [
+          {
+            "x": 550,
+            "y": 1102
+          },
+          {
+            "x": 785,
+            "y": 1102
+          },
+          {
+            "x": 875,
+            "y": 130
+          },
+          {
+            "x": 1110,
+            "y": 130
+          }
+        ],
+        "label_x": 830,
+        "label_y": 610
+      },
+      {
+        "id": "REL-022",
+        "relationship_id": "REL-022",
+        "source": "BLK-005",
+        "target": "IF-002",
+        "type": "contains",
+        "label": "contains",
+        "points": [
+          {
+            "x": 550,
+            "y": 1109
+          },
+          {
+            "x": 785,
+            "y": 1109
+          },
+          {
+            "x": 875,
+            "y": 248
+          },
+          {
+            "x": 1110,
+            "y": 248
+          }
+        ],
+        "label_x": 830,
+        "label_y": 672
+      },
+      {
+        "id": "REL-023",
+        "relationship_id": "REL-023",
+        "source": "BLK-005",
+        "target": "IF-003",
+        "type": "contains",
+        "label": "contains",
+        "points": [
+          {
+            "x": 550,
+            "y": 1116
+          },
+          {
+            "x": 785,
+            "y": 1116
+          },
+          {
+            "x": 875,
+            "y": 366
+          },
+          {
+            "x": 1110,
+            "y": 366
+          }
+        ],
+        "label_x": 830,
+        "label_y": 735
+      },
+      {
+        "id": "REL-024",
+        "relationship_id": "REL-024",
+        "source": "BLK-006",
+        "target": "ACT-001",
+        "type": "contains",
+        "label": "contains",
+        "points": [
+          {
+            "x": 330,
+            "y": 1373
+          },
+          {
+            "x": 282,
+            "y": 1373
+          },
+          {
+            "x": 338,
+            "y": 109
+          },
+          {
+            "x": 290,
+            "y": 109
+          }
+        ],
+        "label_x": 310,
+        "label_y": 735
+      },
+      {
+        "id": "REL-025",
+        "relationship_id": "REL-025",
+        "source": "BLK-007",
+        "target": "CON-001",
+        "type": "contains",
+        "label": "contains",
+        "points": [
+          {
+            "x": 550,
+            "y": 1630
+          },
+          {
+            "x": 894,
+            "y": 1630
+          },
+          {
+            "x": 1026,
+            "y": 102
+          },
+          {
+            "x": 1370,
+            "y": 102
+          }
+        ],
+        "label_x": 960,
+        "label_y": 860
+      },
+      {
+        "id": "REL-026",
+        "relationship_id": "REL-026",
+        "source": "BLK-007",
+        "target": "CON-002",
+        "type": "contains",
+        "label": "contains",
+        "points": [
+          {
+            "x": 550,
+            "y": 1602
+          },
+          {
+            "x": 894,
+            "y": 1602
+          },
+          {
+            "x": 1026,
+            "y": 255
+          },
+          {
+            "x": 1370,
+            "y": 255
+          }
+        ],
+        "label_x": 960,
+        "label_y": 922
+      },
+      {
+        "id": "REL-027",
+        "relationship_id": "REL-027",
+        "source": "REQ-001",
+        "target": "UC-001",
+        "type": "trace",
+        "label": "trace",
+        "points": [
+          {
+            "x": 810,
+            "y": 109
+          },
+          {
+            "x": 858,
+            "y": 109
+          },
+          {
+            "x": 802,
+            "y": 123
+          },
+          {
+            "x": 850,
+            "y": 123
+          }
+        ],
+        "label_x": 830,
+        "label_y": 110
+      },
+      {
+        "id": "REL-028",
+        "relationship_id": "REL-028",
+        "source": "REQ-004",
+        "target": "UC-002",
+        "type": "trace",
+        "label": "trace",
+        "points": [
+          {
+            "x": 810,
+            "y": 491
+          },
+          {
+            "x": 858,
+            "y": 491
+          },
+          {
+            "x": 802,
+            "y": 241
+          },
+          {
+            "x": 850,
+            "y": 241
+          }
+        ],
+        "label_x": 830,
+        "label_y": 360
+      },
+      {
+        "id": "REL-029",
+        "relationship_id": "REL-029",
+        "source": "REQ-001",
+        "target": "UC-003",
+        "type": "trace",
+        "label": "trace",
+        "points": [
+          {
+            "x": 810,
+            "y": 123
+          },
+          {
+            "x": 858,
+            "y": 123
+          },
+          {
+            "x": 802,
+            "y": 359
+          },
+          {
+            "x": 850,
+            "y": 359
+          }
+        ],
+        "label_x": 830,
+        "label_y": 235
+      },
+      {
+        "id": "REL-030",
+        "relationship_id": "REL-030",
+        "source": "BLK-002-2",
+        "target": "REQ-001",
+        "type": "satisfy",
+        "label": "satisfy",
+        "points": [
+          {
+            "x": 550,
+            "y": 505
+          },
+          {
+            "x": 598,
+            "y": 505
+          },
+          {
+            "x": 542,
+            "y": 102
+          },
+          {
+            "x": 590,
+            "y": 102
+          }
+        ],
+        "label_x": 570,
+        "label_y": 297
+      },
+      {
+        "id": "REL-031",
+        "relationship_id": "REL-031",
+        "source": "BLK-006-2",
+        "target": "REQ-002",
+        "type": "satisfy",
+        "label": "satisfy",
+        "points": [
+          {
+            "x": 550,
+            "y": 1477
+          },
+          {
+            "x": 598,
+            "y": 1477
+          },
+          {
+            "x": 542,
+            "y": 255
+          },
+          {
+            "x": 590,
+            "y": 255
+          }
+        ],
+        "label_x": 570,
+        "label_y": 860
+      },
+      {
+        "id": "REL-032",
+        "relationship_id": "REL-032",
+        "source": "CON-001",
+        "target": "REQ-002",
+        "type": "derivereqt",
+        "label": "derivereqt",
+        "points": [
+          {
+            "x": 1370,
+            "y": 109
+          },
+          {
+            "x": 1135,
+            "y": 109
+          },
+          {
+            "x": 1045,
+            "y": 248
+          },
+          {
+            "x": 810,
+            "y": 248
+          }
+        ],
+        "label_x": 1090,
+        "label_y": 172
+      },
+      {
+        "id": "REL-033",
+        "relationship_id": "REL-033",
+        "source": "CON-002",
+        "target": "REQ-004",
+        "type": "derivereqt",
+        "label": "derivereqt",
+        "points": [
+          {
+            "x": 1370,
+            "y": 241
+          },
+          {
+            "x": 1135,
+            "y": 241
+          },
+          {
+            "x": 1045,
+            "y": 491
+          },
+          {
+            "x": 810,
+            "y": 491
+          }
+        ],
+        "label_x": 1090,
+        "label_y": 360
+      },
+      {
+        "id": "REL-034",
+        "relationship_id": "REL-034",
+        "source": "ACT-001",
+        "target": "UC-001",
+        "type": "refine",
+        "label": "refine",
+        "points": [
+          {
+            "x": 290,
+            "y": 123
+          },
+          {
+            "x": 525,
+            "y": 123
+          },
+          {
+            "x": 615,
+            "y": 109
+          },
+          {
+            "x": 850,
+            "y": 109
+          }
+        ],
+        "label_x": 570,
+        "label_y": 110
+      },
+      {
+        "id": "REL-035",
+        "relationship_id": "REL-035",
+        "source": "BLK-002-2",
+        "target": "IF-001",
+        "type": "dependency",
+        "label": "dependency",
+        "points": [
+          {
+            "x": 550,
+            "y": 505
+          },
+          {
+            "x": 785,
+            "y": 505
+          },
+          {
+            "x": 875,
+            "y": 102
+          },
+          {
+            "x": 1110,
+            "y": 102
+          }
+        ],
+        "label_x": 830,
+        "label_y": 297
+      },
+      {
+        "id": "REL-036",
+        "relationship_id": "REL-036",
+        "source": "BLK-003-2",
+        "target": "IF-001",
+        "type": "dependency",
+        "label": "dependency",
+        "points": [
+          {
+            "x": 550,
+            "y": 727
+          },
+          {
+            "x": 785,
+            "y": 727
+          },
+          {
+            "x": 875,
+            "y": 130
+          },
+          {
+            "x": 1110,
+            "y": 130
+          }
+        ],
+        "label_x": 830,
+        "label_y": 422
+      },
+      {
+        "id": "REL-037",
+        "relationship_id": "REL-037",
+        "source": "BLK-004-2",
+        "target": "IF-001",
+        "type": "dependency",
+        "label": "dependency",
+        "points": [
+          {
+            "x": 550,
+            "y": 984
+          },
+          {
+            "x": 785,
+            "y": 984
+          },
+          {
+            "x": 875,
+            "y": 123
+          },
+          {
+            "x": 1110,
+            "y": 123
+          }
+        ],
+        "label_x": 830,
+        "label_y": 547
+      },
+      {
+        "id": "REL-038",
+        "relationship_id": "REL-038",
+        "source": "BLK-005-2",
+        "target": "IF-001",
+        "type": "dependency",
+        "label": "dependency",
+        "points": [
+          {
+            "x": 550,
+            "y": 1241
+          },
+          {
+            "x": 785,
+            "y": 1241
+          },
+          {
+            "x": 875,
+            "y": 116
+          },
+          {
+            "x": 1110,
+            "y": 116
+          }
+        ],
+        "label_x": 830,
+        "label_y": 672
+      },
+      {
+        "id": "REL-039",
+        "relationship_id": "REL-039",
+        "source": "BLK-003-2",
+        "target": "IF-002",
+        "type": "dependency",
+        "label": "dependency",
+        "points": [
+          {
+            "x": 550,
+            "y": 748
+          },
+          {
+            "x": 785,
+            "y": 748
+          },
+          {
+            "x": 875,
+            "y": 234
+          },
+          {
+            "x": 1110,
+            "y": 234
+          }
+        ],
+        "label_x": 830,
+        "label_y": 485
+      },
+      {
+        "id": "REL-040",
+        "relationship_id": "REL-040",
+        "source": "BLK-004-2",
+        "target": "IF-002",
+        "type": "dependency",
+        "label": "dependency",
+        "points": [
+          {
+            "x": 550,
+            "y": 1005
+          },
+          {
+            "x": 785,
+            "y": 1005
+          },
+          {
+            "x": 875,
+            "y": 227
+          },
+          {
+            "x": 1110,
+            "y": 227
+          }
+        ],
+        "label_x": 830,
+        "label_y": 610
+      },
+      {
+        "id": "REL-041",
+        "relationship_id": "REL-041",
+        "source": "BLK-005-2",
+        "target": "IF-002",
+        "type": "dependency",
+        "label": "dependency",
+        "points": [
+          {
+            "x": 550,
+            "y": 1227
+          },
+          {
+            "x": 785,
+            "y": 1227
+          },
+          {
+            "x": 875,
+            "y": 255
+          },
+          {
+            "x": 1110,
+            "y": 255
+          }
+        ],
+        "label_x": 830,
+        "label_y": 735
+      }
+    ]
+  }
+}

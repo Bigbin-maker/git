@@ -1,0 +1,121 @@
+﻿local_id,name,type,package,metaclass,stereotype,source,source_name,target,target_name,documentation
+REL-001,REL-001,trace,06_Traceability,Dependency,SysML::Requirements::Trace,REQ-001,总系统容量需求,UC-001,Provide Internet Connectivity,提供互联网接入用例应满足系统总容量需求。
+REL-002,REL-002,trace,06_Traceability,Dependency,SysML::Requirements::Trace,REQ-002,全球实时覆盖需求,UC-004,Perform Coverage Optimization,覆盖优化用例实现全球实时覆盖需求。
+REL-003,REL-003,satisfy,06_Traceability,Dependency,SysML::Requirements::Satisfy,REQ-003,轨道构型需求,BLK-001,LEO Constellation,星座构型设计满足轨道构型需求。
+REL-004,REL-004,contains,06_Traceability,Association,CompositeAssociation,BLK-001,LEO Constellation,BLK-002,Satellite,星座由多颗卫星组成。
+REL-005,REL-005,contains,06_Traceability,Association,CompositeAssociation,BLK-001,LEO Constellation,BLK-004,Gateway Station,星座系统包含分布全球的信关站。
+REL-006,REL-006,contains,06_Traceability,Association,CompositeAssociation,BLK-001,LEO Constellation,BLK-005,TT&C Station,星座系统包含测控站。
+REL-007,REL-007,contains,06_Traceability,Association,CompositeAssociation,BLK-002,Satellite,BLK-007,Communication Payload,卫星包含通信有效载荷。
+REL-008,REL-008,contains,06_Traceability,Association,CompositeAssociation,BLK-002,Satellite,BLK-008,ISL Terminal,卫星包含星间激光终端。
+REL-009,REL-009,contains,06_Traceability,Association,CompositeAssociation,BLK-007,Communication Payload,BLK-010,Phased Array Antenna,通信载荷包含用户相控阵天线。
+REL-010,REL-010,contains,06_Traceability,Association,CompositeAssociation,BLK-007,Communication Payload,BLK-009,Feeder Link Antenna,通信载荷包含馈电天线。
+REL-011,REL-011,dependency,06_Traceability,Dependency,Dependency,BLK-002,Satellite,IF-001,User Link Interface,卫星通过用户链路接口与用户终端通信。
+REL-012,REL-012,dependency,06_Traceability,Dependency,Dependency,BLK-003,User Terminal,IF-001,User Link Interface,用户终端实现用户链路接口。
+REL-013,REL-013,dependency,06_Traceability,Dependency,Dependency,BLK-002,Satellite,IF-002,Feeder Link Interface,卫星通过馈电链路接口连接信关站。
+REL-014,REL-014,dependency,06_Traceability,Dependency,Dependency,BLK-004,Gateway Station,IF-002,Feeder Link Interface,信关站实现馈电链路接口。
+REL-015,REL-015,dependency,06_Traceability,Dependency,Dependency,BLK-002,Satellite,IF-003,Inter-Satellite Link Interface,卫星使用星间链路接口与其他卫星互联。
+REL-016,REL-016,dependency,06_Traceability,Dependency,Dependency,BLK-008,ISL Terminal,IF-003,Inter-Satellite Link Interface,ISL终端实现星间链路接口。
+REL-017,REL-017,dependency,06_Traceability,Dependency,Dependency,BLK-002,Satellite,IF-004,TT&C Interface,卫星具备TT&C接口与测控站通信。
+REL-018,REL-018,dependency,06_Traceability,Dependency,Dependency,BLK-005,TT&C Station,IF-004,TT&C Interface,测控站使用TT&C接口。
+REL-019,REL-019,allocate,06_Traceability,Dependency,SysML::Allocations::Allocate,CON-001,Link Budget Constraint,BLK-007,Communication Payload,链路预算约束分配至通信载荷设计。
+REL-020,REL-020,allocate,06_Traceability,Dependency,SysML::Allocations::Allocate,CON-002,MassPower Constraint,BLK-002,Satellite,质量与功率约束分配至卫星平台总体设计。
+REL-021,REL-021,refine,06_Traceability,Dependency,SysML::Requirements::Refine,ACT-001,User Data Transmission Flow,UC-001,Provide Internet Connectivity,用户数据传输活动细化了互联网接入用例。
+REL-022,REL-022,refine,06_Traceability,Dependency,SysML::Requirements::Refine,ACT-002,Beam Switching and Handover,UC-004,Perform Coverage Optimization,波束切换活动细化了覆盖优化用例。
+REL-023,REL-023,refine,06_Traceability,Dependency,SysML::Requirements::Refine,ACT-003,ISL Routing with SR-MPLS,UC-003,Route Data via ISL,ISL路由活动细化了星间路由用例。
+REL-024,REL-024,trace,06_Traceability,Dependency,SysML::Requirements::Trace,REQ-006,用户链路性能需求,IF-001,User Link Interface,用户链路性能需求可追溯至用户链路接口规范。
+REL-025,REL-025,trace,06_Traceability,Dependency,SysML::Requirements::Trace,REQ-007,星间链路需求,IF-003,Inter-Satellite Link Interface,星间链路需求追溯至ISL接口定义。
+REL-026,REL-026,trace,06_Traceability,Dependency,SysML::Requirements::Trace,REQ-008,馈电链路需求,IF-002,Feeder Link Interface,馈电链路需求追溯至馈电链路接口规范。
+REL-027,REL-027,trace,06_Traceability,Dependency,SysML::Requirements::Trace,REQ-010,测控与自主运行需求,IF-004,TT&C Interface,测控需求可追溯至TT&C接口。
+REL-028,REL-028,contains,06_Traceability,Association,CompositeAssociation,BLK-001,LEO Constellation,BLK-003,User Terminal,System architecture contains this Block.
+REL-029,REL-029,contains,06_Traceability,Association,CompositeAssociation,BLK-001,LEO Constellation,BLK-006,Network Core,System architecture contains this Block.
+REL-030,REL-030,contains,06_Traceability,Association,CompositeAssociation,BLK-001,LEO Constellation,BLK-007,Communication Payload,System architecture contains this Block.
+REL-031,REL-031,contains,06_Traceability,Association,CompositeAssociation,BLK-001,LEO Constellation,BLK-008,ISL Terminal,System architecture contains this Block.
+REL-032,REL-032,contains,06_Traceability,Association,CompositeAssociation,BLK-001,LEO Constellation,BLK-009,Feeder Link Antenna,System architecture contains this Block.
+REL-033,REL-033,contains,06_Traceability,Association,CompositeAssociation,BLK-001,LEO Constellation,BLK-010,Phased Array Antenna,System architecture contains this Block.
+REL-034,REL-034,connector,06_Traceability,Dependency,Dependency,BLK-001,LEO Constellation,BLK-002,Satellite,Main architecture flow between adjacent Blocks.
+REL-035,REL-035,connector,06_Traceability,Dependency,Dependency,BLK-002,Satellite,BLK-003,User Terminal,Main architecture flow between adjacent Blocks.
+REL-036,REL-036,connector,06_Traceability,Dependency,Dependency,BLK-003,User Terminal,BLK-004,Gateway Station,Main architecture flow between adjacent Blocks.
+REL-037,REL-037,connector,06_Traceability,Dependency,Dependency,BLK-004,Gateway Station,BLK-005,TT&C Station,Main architecture flow between adjacent Blocks.
+REL-038,REL-038,connector,06_Traceability,Dependency,Dependency,BLK-005,TT&C Station,BLK-006,Network Core,Main architecture flow between adjacent Blocks.
+REL-039,REL-039,connector,06_Traceability,Dependency,Dependency,BLK-006,Network Core,BLK-007,Communication Payload,Main architecture flow between adjacent Blocks.
+REL-040,REL-040,connector,06_Traceability,Dependency,Dependency,BLK-007,Communication Payload,BLK-008,ISL Terminal,Main architecture flow between adjacent Blocks.
+REL-041,REL-041,connector,06_Traceability,Dependency,Dependency,BLK-008,ISL Terminal,BLK-009,Feeder Link Antenna,Main architecture flow between adjacent Blocks.
+REL-042,REL-042,connector,06_Traceability,Dependency,Dependency,BLK-009,Feeder Link Antenna,BLK-010,Phased Array Antenna,Main architecture flow between adjacent Blocks.
+REL-043,REL-043,satisfy,06_Traceability,Dependency,SysML::Requirements::Satisfy,BLK-001,LEO Constellation,REQ-001,总系统容量需求,Block satisfies the requirement.
+REL-044,REL-044,satisfy,06_Traceability,Dependency,SysML::Requirements::Satisfy,BLK-002,Satellite,REQ-002,全球实时覆盖需求,Block satisfies the requirement.
+REL-045,REL-045,satisfy,06_Traceability,Dependency,SysML::Requirements::Satisfy,BLK-003,User Terminal,REQ-003,轨道构型需求,Block satisfies the requirement.
+REL-046,REL-046,trace,06_Traceability,Dependency,SysML::Requirements::Trace,REQ-003,轨道构型需求,UC-003,Route Data via ISL,Requirement traces to the related use case.
+REL-047,REL-047,satisfy,06_Traceability,Dependency,SysML::Requirements::Satisfy,BLK-004,Gateway Station,REQ-004,单星质量与功率约束,Block satisfies the requirement.
+REL-048,REL-048,trace,06_Traceability,Dependency,SysML::Requirements::Trace,REQ-004,单星质量与功率约束,UC-004,Perform Coverage Optimization,Requirement traces to the related use case.
+REL-049,REL-049,satisfy,06_Traceability,Dependency,SysML::Requirements::Satisfy,BLK-005,TT&C Station,REQ-005,卫星寿命与离轨需求,Block satisfies the requirement.
+REL-050,REL-050,trace,06_Traceability,Dependency,SysML::Requirements::Trace,REQ-005,卫星寿命与离轨需求,UC-001,Provide Internet Connectivity,Requirement traces to the related use case.
+REL-051,REL-051,satisfy,06_Traceability,Dependency,SysML::Requirements::Satisfy,BLK-006,Network Core,REQ-006,用户链路性能需求,Block satisfies the requirement.
+REL-052,REL-052,satisfy,06_Traceability,Dependency,SysML::Requirements::Satisfy,BLK-007,Communication Payload,REQ-007,星间链路需求,Block satisfies the requirement.
+REL-053,REL-053,satisfy,06_Traceability,Dependency,SysML::Requirements::Satisfy,BLK-008,ISL Terminal,REQ-008,馈电链路需求,Block satisfies the requirement.
+REL-054,REL-054,satisfy,06_Traceability,Dependency,SysML::Requirements::Satisfy,BLK-009,Feeder Link Antenna,REQ-009,端到端时延需求,Block satisfies the requirement.
+REL-055,REL-055,trace,06_Traceability,Dependency,SysML::Requirements::Trace,REQ-009,端到端时延需求,UC-001,Provide Internet Connectivity,Requirement traces to the related use case.
+REL-056,REL-056,satisfy,06_Traceability,Dependency,SysML::Requirements::Satisfy,BLK-010,Phased Array Antenna,REQ-010,测控与自主运行需求,Block satisfies the requirement.
+REL-057,REL-057,trace,06_Traceability,Dependency,SysML::Requirements::Trace,BLK-001,LEO Constellation,UC-001,Provide Internet Connectivity,Block realizes the use case capability.
+REL-058,REL-058,trace,06_Traceability,Dependency,SysML::Requirements::Trace,UC-001,Provide Internet Connectivity,ACT-001,User Data Transmission Flow,Use case is refined by the activity flow.
+REL-059,REL-059,trace,06_Traceability,Dependency,SysML::Requirements::Trace,BLK-002,Satellite,UC-002,Manage Constellation,Block realizes the use case capability.
+REL-060,REL-060,trace,06_Traceability,Dependency,SysML::Requirements::Trace,UC-002,Manage Constellation,ACT-002,Beam Switching and Handover,Use case is refined by the activity flow.
+REL-061,REL-061,trace,06_Traceability,Dependency,SysML::Requirements::Trace,BLK-003,User Terminal,UC-003,Route Data via ISL,Block realizes the use case capability.
+REL-062,REL-062,trace,06_Traceability,Dependency,SysML::Requirements::Trace,UC-003,Route Data via ISL,ACT-003,ISL Routing with SR-MPLS,Use case is refined by the activity flow.
+REL-063,REL-063,trace,06_Traceability,Dependency,SysML::Requirements::Trace,BLK-004,Gateway Station,UC-004,Perform Coverage Optimization,Block realizes the use case capability.
+REL-064,REL-064,trace,06_Traceability,Dependency,SysML::Requirements::Trace,UC-004,Perform Coverage Optimization,ACT-001,User Data Transmission Flow,Use case is refined by the activity flow.
+REL-065,REL-065,trace,06_Traceability,Dependency,SysML::Requirements::Trace,UC-001,Provide Internet Connectivity,IF-001,User Link Interface,Use case consumes or exposes this interface.
+REL-066,REL-066,trace,06_Traceability,Dependency,SysML::Requirements::Trace,UC-002,Manage Constellation,IF-002,Feeder Link Interface,Use case consumes or exposes this interface.
+REL-067,REL-067,trace,06_Traceability,Dependency,SysML::Requirements::Trace,UC-003,Route Data via ISL,IF-003,Inter-Satellite Link Interface,Use case consumes or exposes this interface.
+REL-068,REL-068,trace,06_Traceability,Dependency,SysML::Requirements::Trace,UC-004,Perform Coverage Optimization,IF-004,TT&C Interface,Use case consumes or exposes this interface.
+REL-069,REL-069,allocate,06_Traceability,Dependency,SysML::Allocations::Allocate,IF-005,Ground Network Interface,BLK-006,Network Core,InterfaceBlock is allocated to the related Block.
+REL-070,REL-070,trace,06_Traceability,Dependency,SysML::Requirements::Trace,UC-001,Provide Internet Connectivity,IF-005,Ground Network Interface,Use case consumes or exposes this interface.
+REL-071,REL-071,verify,06_Traceability,Dependency,SysML::Requirements::Verify,CON-001,Link Budget Constraint,REQ-001,总系统容量需求,Constraint verifies the related requirement.
+REL-072,REL-072,verify,06_Traceability,Dependency,SysML::Requirements::Verify,CON-002,MassPower Constraint,REQ-002,全球实时覆盖需求,Constraint verifies the related requirement.
+DREL-UC-001,DREL-UC-001,association,06_Traceability,Dependency,Dependency,ACTOR-001,Subscriber,UC-001,Provide Internet Connectivity,Subscriber使用互联网接入服务
+DREL-UC-002,DREL-UC-002,association,06_Traceability,Dependency,Dependency,ACTOR-002,Network Operator,UC-002,Manage Constellation,Network Operator管理星座系统
+DREL-UC-003,DREL-UC-003,association,06_Traceability,Dependency,Dependency,ACTOR-003,Internet Backbone,UC-001,Provide Internet Connectivity,Internet Backbone与系统交互以提供互联网回传
+DTRACE-UC-001-IBD-BLK-001,DTRACE-UC-001-IBD-BLK-001,realize,06_Traceability,Dependency,Dependency,UC-001,Provide Internet Connectivity,IBD-BLK-001,Satellite,Provide Internet Connectivity用例由卫星、用户终端、信关站和网络核心网及其接口共同实现
+DTRACE-UC-001-IBD-BLK-002,DTRACE-UC-001-IBD-BLK-002,realize,06_Traceability,Dependency,Dependency,UC-001,Provide Internet Connectivity,IBD-BLK-002,User Terminal,Provide Internet Connectivity用例由卫星、用户终端、信关站和网络核心网及其接口共同实现
+DTRACE-UC-001-IBD-BLK-003,DTRACE-UC-001-IBD-BLK-003,realize,06_Traceability,Dependency,Dependency,UC-001,Provide Internet Connectivity,IBD-BLK-003,Gateway Station,Provide Internet Connectivity用例由卫星、用户终端、信关站和网络核心网及其接口共同实现
+DTRACE-UC-001-IBD-BLK-005,DTRACE-UC-001-IBD-BLK-005,realize,06_Traceability,Dependency,Dependency,UC-001,Provide Internet Connectivity,IBD-BLK-005,Network Core,Provide Internet Connectivity用例由卫星、用户终端、信关站和网络核心网及其接口共同实现
+DTRACE-UC-001-IBD-IF-001,DTRACE-UC-001-IBD-IF-001,realize,06_Traceability,Dependency,Dependency,UC-001,Provide Internet Connectivity,IBD-IF-001,User Link Interface,Provide Internet Connectivity用例由卫星、用户终端、信关站和网络核心网及其接口共同实现
+DTRACE-UC-001-IBD-IF-002,DTRACE-UC-001-IBD-IF-002,realize,06_Traceability,Dependency,Dependency,UC-001,Provide Internet Connectivity,IBD-IF-002,Feeder Link Interface,Provide Internet Connectivity用例由卫星、用户终端、信关站和网络核心网及其接口共同实现
+DTRACE-UC-001-IBD-IF-005,DTRACE-UC-001-IBD-IF-005,realize,06_Traceability,Dependency,Dependency,UC-001,Provide Internet Connectivity,IBD-IF-005,Ground Network Interface,Provide Internet Connectivity用例由卫星、用户终端、信关站和网络核心网及其接口共同实现
+DTRACE-UC-002-IBD-BLK-001,DTRACE-UC-002-IBD-BLK-001,realize,06_Traceability,Dependency,Dependency,UC-002,Manage Constellation,IBD-BLK-001,Satellite,Manage Constellation用例依靠卫星平台和TT&C测控链路实现
+DTRACE-UC-002-IBD-BLK-004,DTRACE-UC-002-IBD-BLK-004,realize,06_Traceability,Dependency,Dependency,UC-002,Manage Constellation,IBD-BLK-004,TT&C Station,Manage Constellation用例依靠卫星平台和TT&C测控链路实现
+DTRACE-UC-002-IBD-IF-004,DTRACE-UC-002-IBD-IF-004,realize,06_Traceability,Dependency,Dependency,UC-002,Manage Constellation,IBD-IF-004,TT&C Interface,Manage Constellation用例依靠卫星平台和TT&C测控链路实现
+DREL-IBD-001,DREL-IBD-001,connector,06_Traceability,Dependency,Dependency,IBD-BLK-001,Satellite,IBD-IF-001,User Link Interface,卫星通过用户链路接口与用户终端通信
+DREL-IBD-002,DREL-IBD-002,connector,06_Traceability,Dependency,Dependency,IBD-BLK-002,User Terminal,IBD-IF-001,User Link Interface,用户终端实现用户链路接口
+DREL-IBD-003,DREL-IBD-003,connector,06_Traceability,Dependency,Dependency,IBD-BLK-001,Satellite,IBD-IF-002,Feeder Link Interface,卫星通过馈电链路接口连接信关站
+DREL-IBD-004,DREL-IBD-004,connector,06_Traceability,Dependency,Dependency,IBD-BLK-003,Gateway Station,IBD-IF-002,Feeder Link Interface,信关站实现馈电链路接口
+DREL-IBD-005,DREL-IBD-005,connector,06_Traceability,Dependency,Dependency,IBD-BLK-001,Satellite,IBD-IF-003,Inter-Satellite Link Interface,卫星利用星间链路接口与其他卫星互联
+DREL-IBD-006,DREL-IBD-006,connector,06_Traceability,Dependency,Dependency,IBD-BLK-001,Satellite,IBD-IF-004,TT&C Interface,卫星通过TT&C接口与测控站通信
+DREL-IBD-007,DREL-IBD-007,connector,06_Traceability,Dependency,Dependency,IBD-BLK-004,TT&C Station,IBD-IF-004,TT&C Interface,测控站使用TT&C接口
+DREL-IBD-008,DREL-IBD-008,connector,06_Traceability,Dependency,Dependency,IBD-BLK-003,Gateway Station,IBD-IF-005,Ground Network Interface,信关站通过地面网络接口连接核心网
+DREL-IBD-009,DREL-IBD-009,connector,06_Traceability,Dependency,Dependency,IBD-BLK-005,Network Core,IBD-IF-005,Ground Network Interface,核心网实现地面网络接口
+DREL-BLK-002-IBD-016,DREL-BLK-002-IBD-016,connector,06_Traceability,Dependency,Dependency,BLK-008,ISL Terminal,IF-003,Inter-Satellite Link Interface,ISL终端实现星间链路接口。
+DREL-BLK-002-IBD-040,DREL-BLK-002-IBD-040,connector,06_Traceability,Dependency,Dependency,BLK-007,Communication Payload,BLK-008,ISL Terminal,Main architecture flow between adjacent Blocks.
+DREL-BLK-004-IBD-001,DREL-BLK-004-IBD-001,connector,06_Traceability,Dependency,Dependency,IBD-IF-BLK-004-001,Gateway Station输入接口,IBD-BLK-BLK-004-001,地面信关站接入与整形单元,输入边界到接入整形链路
+DREL-BLK-004-IBD-002,DREL-BLK-004-IBD-002,connector,06_Traceability,Dependency,Dependency,IBD-BLK-BLK-004-001,地面信关站接入与整形单元,IBD-BLK-BLK-004-002,配备多面Q/V频段天处理单元,接入整形结果进入核心处理
+DREL-BLK-004-IBD-003,DREL-BLK-004-IBD-003,connector,06_Traceability,Dependency,Dependency,IBD-BLK-BLK-004-002,配备多面Q/V频段天处理单元,IBD-BLK-BLK-004-003,连接星座控制管理单元,处理状态与控制管理交互
+DREL-BLK-004-IBD-004,DREL-BLK-004-IBD-004,connector,06_Traceability,Dependency,Dependency,IBD-BLK-BLK-004-003,连接星座控制管理单元,IBD-BLK-BLK-004-004,地面核心网执行输出单元,控制参数驱动执行输出
+DREL-BLK-004-IBD-005,DREL-BLK-004-IBD-005,connector,06_Traceability,Dependency,Dependency,IBD-BLK-BLK-004-004,地面核心网执行输出单元,IBD-IF-BLK-004-002,Gateway Station输出接口,执行输出交付到外部接口
+DREL-BLK-004-IBD-006,DREL-BLK-004-IBD-006,connector,06_Traceability,Dependency,Dependency,IBD-BLK-BLK-004-005,状态监测与保护单元,IBD-BLK-BLK-004-002,配备多面Q/V频段天处理单元,健康状态反馈到核心处理
+DREL-BLK-004-IBD-007,DREL-BLK-004-IBD-007,connector,06_Traceability,Dependency,Dependency,IBD-BLK-BLK-004-005,状态监测与保护单元,IBD-BLK-BLK-004-003,连接星座控制管理单元,告警与保护策略反馈到控制管理
+DREL-BLK-004-IBD-008,DREL-BLK-004-IBD-008,connector,06_Traceability,Dependency,Dependency,IBD-IF-BLK-004-003,平台资源接口,IBD-BLK-BLK-004-005,状态监测与保护单元,平台资源和遥测支撑状态监测
+DREL-BLK-005-IBD-001,DREL-BLK-005-IBD-001,connector,06_Traceability,Dependency,Dependency,IBD-IF-BLK-005-001,TT&C Station输入接口,IBD-BLK-BLK-005-001,S频段测控站接入与整形单元,输入边界到接入整形链路
+DREL-BLK-005-IBD-002,DREL-BLK-005-IBD-002,connector,06_Traceability,Dependency,Dependency,IBD-BLK-BLK-005-001,S频段测控站接入与整形单元,IBD-BLK-BLK-005-002,用于卫星指令上注处理单元,接入整形结果进入核心处理
+DREL-BLK-005-IBD-003,DREL-BLK-005-IBD-003,connector,06_Traceability,Dependency,Dependency,IBD-BLK-BLK-005-002,用于卫星指令上注处理单元,IBD-BLK-BLK-005-003,遥测接收控制管理单元,处理状态与控制管理交互
+DREL-BLK-005-IBD-004,DREL-BLK-005-IBD-004,connector,06_Traceability,Dependency,Dependency,IBD-BLK-BLK-005-003,遥测接收控制管理单元,IBD-BLK-BLK-005-004,轨道测定执行输出单元,控制参数驱动执行输出
+DREL-BLK-005-IBD-005,DREL-BLK-005-IBD-005,connector,06_Traceability,Dependency,Dependency,IBD-BLK-BLK-005-004,轨道测定执行输出单元,IBD-IF-BLK-005-002,TT&C Station输出接口,执行输出交付到外部接口
+DREL-BLK-005-IBD-006,DREL-BLK-005-IBD-006,connector,06_Traceability,Dependency,Dependency,IBD-BLK-BLK-005-005,状态监测与保护单元,IBD-BLK-BLK-005-002,用于卫星指令上注处理单元,健康状态反馈到核心处理
+DREL-BLK-005-IBD-007,DREL-BLK-005-IBD-007,connector,06_Traceability,Dependency,Dependency,IBD-BLK-BLK-005-005,状态监测与保护单元,IBD-BLK-BLK-005-003,遥测接收控制管理单元,告警与保护策略反馈到控制管理
+DREL-BLK-005-IBD-008,DREL-BLK-005-IBD-008,connector,06_Traceability,Dependency,Dependency,IBD-IF-BLK-005-003,平台资源接口,IBD-BLK-BLK-005-005,状态监测与保护单元,平台资源和遥测支撑状态监测
+DREL-BLK-003-IBD-001,DREL-BLK-003-IBD-001,connector,06_Traceability,Dependency,Dependency,IBD-IF-BLK-003-001,User Terminal输入接口,IBD-BLK-BLK-003-001,固定或移动用户终端接入与整形单元,输入边界到接入整形链路
+DREL-BLK-003-IBD-002,DREL-BLK-003-IBD-002,connector,06_Traceability,Dependency,Dependency,IBD-BLK-BLK-003-001,固定或移动用户终端接入与整形单元,IBD-BLK-BLK-003-002,配备相控阵天线处理单元,接入整形结果进入核心处理
+DREL-BLK-003-IBD-003,DREL-BLK-003-IBD-003,connector,06_Traceability,Dependency,Dependency,IBD-BLK-BLK-003-002,配备相控阵天线处理单元,IBD-BLK-BLK-003-003,Ka频段控制管理单元,处理状态与控制管理交互
+DREL-BLK-003-IBD-004,DREL-BLK-003-IBD-004,connector,06_Traceability,Dependency,Dependency,IBD-BLK-BLK-003-003,Ka频段控制管理单元,IBD-BLK-BLK-003-004,卫星通信执行输出单元,控制参数驱动执行输出
+DREL-BLK-003-IBD-005,DREL-BLK-003-IBD-005,connector,06_Traceability,Dependency,Dependency,IBD-BLK-BLK-003-004,卫星通信执行输出单元,IBD-IF-BLK-003-002,User Terminal输出接口,执行输出交付到外部接口
+DREL-BLK-003-IBD-006,DREL-BLK-003-IBD-006,connector,06_Traceability,Dependency,Dependency,IBD-BLK-BLK-003-005,状态监测与保护单元,IBD-BLK-BLK-003-002,配备相控阵天线处理单元,健康状态反馈到核心处理
+DREL-BLK-003-IBD-007,DREL-BLK-003-IBD-007,connector,06_Traceability,Dependency,Dependency,IBD-BLK-BLK-003-005,状态监测与保护单元,IBD-BLK-BLK-003-003,Ka频段控制管理单元,告警与保护策略反馈到控制管理
+DREL-BLK-003-IBD-008,DREL-BLK-003-IBD-008,connector,06_Traceability,Dependency,Dependency,IBD-IF-BLK-003-003,平台资源接口,IBD-BLK-BLK-003-005,状态监测与保护单元,平台资源和遥测支撑状态监测

@@ -1,0 +1,15 @@
+﻿local_id,name,type,package,metaclass,stereotype,source,source_name,target,target_name,documentation
+REL-001,REL-001,contains,06_Traceability,Association,CompositeAssociation,BLK-001,低轨宽带卫星星座系统,BLK-002,空间段_LEO_Satellite,系统包含100个LEO卫星实例
+REL-002,REL-002,contains,06_Traceability,Association,CompositeAssociation,BLK-001,低轨宽带卫星星座系统,BLK-003,地面段_Ground_Segment,系统包含地面段
+REL-003,REL-003,contains,06_Traceability,Association,CompositeAssociation,BLK-001,低轨宽带卫星星座系统,BLK-004,用户段_User_Terminal,系统包含用户段
+REL-004,REL-004,satisfy,06_Traceability,Dependency,SysML::Requirements::Satisfy,REQ-001,星座规模与轨道要求,BLK-002,空间段_LEO_Satellite,规模与轨道要求由空间段满足
+REL-005,REL-005,satisfy,06_Traceability,Dependency,SysML::Requirements::Satisfy,REQ-002,通信服务性能,UC-001,全球宽带通信服务,通信性能由全球宽带通信服务用例实现
+REL-006,REL-006,satisfy,06_Traceability,Dependency,SysML::Requirements::Satisfy,REQ-003,卫星平台通用能力,BLK-002,空间段_LEO_Satellite,平台通用能力分配到卫星平台块
+REL-007,REL-007,allocate,06_Traceability,Dependency,SysML::Allocations::Allocate,REQ-004,星间链路要求,IF-001,星间激光链路接口,星间链路要求分配给星间激光链路接口
+REL-008,REL-008,dependency,06_Traceability,Dependency,Dependency,IF-001,星间激光链路接口,IF-002,星地Ka馈电链路接口,星间链路需与馈电链路协同完成星空地路由
+REL-009,REL-009,verify,06_Traceability,Dependency,SysML::Requirements::Verify,CON-001,链路预算与功率约束,IF-001,星间激光链路接口,链路预算约束用于验证星间接口设计
+REL-010,REL-010,verify,06_Traceability,Dependency,SysML::Requirements::Verify,CON-001,链路预算与功率约束,IF-002,星地Ka馈电链路接口,链路预算约束用于验证馈电接口设计
+REL-011,REL-011,verify,06_Traceability,Dependency,SysML::Requirements::Verify,CON-001,链路预算与功率约束,IF-003,用户链路接口,链路预算约束用于验证用户链路接口设计
+REL-012,REL-012,derivereqt,06_Traceability,Dependency,SysML::Requirements::Trace,CON-002,轨道覆盖与几何约束,REQ-001,星座规模与轨道要求,覆盖约束衍生自轨道需求
+REL-013,REL-013,allocate,06_Traceability,Dependency,SysML::Allocations::Allocate,ACT-001,星座部署与初始化活动,BLK-002,空间段_LEO_Satellite,部署活动最终将卫星送入工作轨道
+REL-014,REL-014,trace,06_Traceability,Dependency,SysML::Requirements::Trace,UC-002,星座运维管理,BLK-003,地面段_Ground_Segment,运维用例关联地面段

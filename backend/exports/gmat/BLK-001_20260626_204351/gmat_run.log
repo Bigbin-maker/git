@@ -1,0 +1,37 @@
+GMAT Build Date: Mar 26 2026 15:02:55
+
+GMAT Log file set to E:\ai_mbse1\AI-MBSE-Demo\backend\exports\gmat\BLK-001_20260626_204351\gmat_run.log
+The log file mode is create
+Moderator is updating data files...
+Moderator is creating core engine...
+*** Library "..\plugins\libMatlabInterface" did not open.
+*** Library "..\plugins\libFminconOptimizer" did not open.
+Successfully set Planetary Source to use: DE405
+Successfully set Planetary Source to use: DE405
+Successfully set Planetary Source to use: DE405
+Setting nutation file to E:\tools\GMAT-R2026a\bin\..\data\planetary_coeff\NUTATION.DAT
+Setting leap seconds file to E:\tools\GMAT-R2026a\bin\..\data\time\tai-utc.dat
+2026-06-26 20:43:51 GMAT Moderator successfully created core engine
+
+Interpreting scripts from the file.
+***** file: E:\ai_mbse1\AI-MBSE-Demo\backend\exports\gmat\BLK-001_20260626_204351\ai_mbse_leo_propagation.script
+Successfully set Planetary Source to use: DE405
+Successfully set Planetary Source to use: DE405
+Successfully interpreted the script
+Running mission...
+Successfully set Planetary Source to use: DE405
+Successfully set Planetary Source to use: DE405
+Kernel E:/tools/GMAT-R2026a/bin/../data/planetary_ephem/spk/DE405AllPlanets.bsp has been loaded.
+Kernel E:\tools\GMAT-R2026a\bin\..\data\planetary_coeff\SPICEPlanetaryConstantsKernel.tpc has been loaded.
+Kernel E:\tools\GMAT-R2026a\bin\..\data\time\SPICELeapSecondKernel.tls has been loaded.
+Kernel E:\tools\GMAT-R2026a\bin\..\data\planetary_coeff\SPICEEarthPredictedKernel.bpc has been loaded.
+Kernel E:\tools\GMAT-R2026a\bin\..\data\planetary_coeff\SPICEEarthCurrentKernel.bpc has been loaded.
+Kernel E:\tools\GMAT-R2026a\bin\..\data\planetary_coeff\earth_latest_high_prec.bpc has been loaded.
+Kernel E:\tools\GMAT-R2026a\bin\..\data\planetary_coeff\SPICELunaCurrentKernel.bpc has been loaded.
+Kernel E:\tools\GMAT-R2026a\bin\..\data\planetary_coeff\SPICELunaFrameKernel.tf has been loaded.
+
+Mission run completed.
+===> Total Run Time: 0.221 seconds
+
+========================================
+Moderator is deleting core engine...

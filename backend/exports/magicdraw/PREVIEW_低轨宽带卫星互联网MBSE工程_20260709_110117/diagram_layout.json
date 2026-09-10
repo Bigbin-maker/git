@@ -1,0 +1,2690 @@
+{
+  "schema": "ai-mbse.diagram-layout.v1",
+  "diagram_name": "AI_MBSE_Trace_View",
+  "layout_source": "backend",
+  "width": 1500,
+  "height": 1294,
+  "nodes": [
+    {
+      "id": "REQ-001",
+      "element_id": "REQ-001",
+      "name": "星座规模要求",
+      "label": "REQ-001 - 星座规模要求",
+      "type": "Requirement",
+      "stereotype_label": "«requirement»",
+      "shape": "rect",
+      "column": 0,
+      "row": 0,
+      "x": 70,
+      "y": 80,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "REQ-002",
+      "element_id": "REQ-002",
+      "name": "轨道参数要求",
+      "label": "REQ-002 - 轨道参数要求",
+      "type": "Requirement",
+      "stereotype_label": "«requirement»",
+      "shape": "rect",
+      "column": 0,
+      "row": 1,
+      "x": 70,
+      "y": 198,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "REQ-003",
+      "element_id": "REQ-003",
+      "name": "星间链路带宽要求",
+      "label": "REQ-003 - 星间链路带宽要求",
+      "type": "Requirement",
+      "stereotype_label": "«requirement»",
+      "shape": "rect",
+      "column": 0,
+      "row": 2,
+      "x": 70,
+      "y": 316,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "REQ-004",
+      "element_id": "REQ-004",
+      "name": "端到端时延要求",
+      "label": "REQ-004 - 端到端时延要求",
+      "type": "Requirement",
+      "stereotype_label": "«requirement»",
+      "shape": "rect",
+      "column": 0,
+      "row": 3,
+      "x": 70,
+      "y": 434,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "REQ-005",
+      "element_id": "REQ-005",
+      "name": "用户容量要求",
+      "label": "REQ-005 - 用户容量要求",
+      "type": "Requirement",
+      "stereotype_label": "«requirement»",
+      "shape": "rect",
+      "column": 0,
+      "row": 4,
+      "x": 70,
+      "y": 552,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "REQ-006",
+      "element_id": "REQ-006",
+      "name": "外部接口要求",
+      "label": "REQ-006 - 外部接口要求",
+      "type": "Requirement",
+      "stereotype_label": "«requirement»",
+      "shape": "rect",
+      "column": 0,
+      "row": 5,
+      "x": 70,
+      "y": 670,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "REQ-007",
+      "element_id": "REQ-007",
+      "name": "故障与降级处理要求",
+      "label": "REQ-007 - 故障与降级处理要求",
+      "type": "Requirement",
+      "stereotype_label": "«requirement»",
+      "shape": "rect",
+      "column": 0,
+      "row": 6,
+      "x": 70,
+      "y": 788,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "REQ-008",
+      "element_id": "REQ-008",
+      "name": "典型用例支撑要求",
+      "label": "REQ-008 - 典型用例支撑要求",
+      "type": "Requirement",
+      "stereotype_label": "«requirement»",
+      "shape": "rect",
+      "column": 0,
+      "row": 7,
+      "x": 70,
+      "y": 906,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "BLK-001",
+      "element_id": "BLK-001",
+      "name": "低轨卫星互联网星座系统",
+      "label": "BLK-001 - 低轨卫星互联网星座系统",
+      "type": "Block",
+      "stereotype_label": "«block»",
+      "shape": "rect",
+      "column": 1,
+      "row": 0,
+      "x": 355,
+      "y": 80,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "BLK-002",
+      "element_id": "BLK-002",
+      "name": "通信卫星",
+      "label": "BLK-002 - 通信卫星",
+      "type": "Block",
+      "stereotype_label": "«block»",
+      "shape": "rect",
+      "column": 1,
+      "row": 1,
+      "x": 355,
+      "y": 198,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "BLK-006",
+      "element_id": "BLK-006",
+      "name": "地面网关",
+      "label": "BLK-006 - 地面网关",
+      "type": "Block",
+      "stereotype_label": "«block»",
+      "shape": "rect",
+      "column": 1,
+      "row": 2,
+      "x": 355,
+      "y": 316,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "BLK-007",
+      "element_id": "BLK-007",
+      "name": "运控管理系统",
+      "label": "BLK-007 - 运控管理系统",
+      "type": "Block",
+      "stereotype_label": "«block»",
+      "shape": "rect",
+      "column": 1,
+      "row": 3,
+      "x": 355,
+      "y": 434,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "BLK-008",
+      "element_id": "BLK-008",
+      "name": "业务管理系统",
+      "label": "BLK-008 - 业务管理系统",
+      "type": "Block",
+      "stereotype_label": "«block»",
+      "shape": "rect",
+      "column": 1,
+      "row": 4,
+      "x": 355,
+      "y": 552,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "BLK-003",
+      "element_id": "BLK-003",
+      "name": "宽带通信载荷",
+      "label": "BLK-003 - 宽带通信载荷",
+      "type": "Block",
+      "stereotype_label": "«block»",
+      "shape": "rect",
+      "column": 1,
+      "row": 5,
+      "x": 355,
+      "y": 670,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "BLK-004",
+      "element_id": "BLK-004",
+      "name": "星间链路终端",
+      "label": "BLK-004 - 星间链路终端",
+      "type": "Block",
+      "stereotype_label": "«block»",
+      "shape": "rect",
+      "column": 1,
+      "row": 6,
+      "x": 355,
+      "y": 788,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "BLK-005",
+      "element_id": "BLK-005",
+      "name": "卫星平台",
+      "label": "BLK-005 - 卫星平台",
+      "type": "Block",
+      "stereotype_label": "«block»",
+      "shape": "rect",
+      "column": 1,
+      "row": 7,
+      "x": 355,
+      "y": 906,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "BLK-009",
+      "element_id": "BLK-009",
+      "name": "用户终端",
+      "label": "BLK-009 - 用户终端",
+      "type": "Block",
+      "stereotype_label": "«block»",
+      "shape": "rect",
+      "column": 1,
+      "row": 8,
+      "x": 355,
+      "y": 1024,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "BLK-010",
+      "element_id": "BLK-010",
+      "name": "设计师",
+      "label": "BLK-010 - 设计师",
+      "type": "Block",
+      "stereotype_label": "«block»",
+      "shape": "rect",
+      "column": 1,
+      "row": 9,
+      "x": 355,
+      "y": 1142,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "UC-001",
+      "element_id": "UC-001",
+      "name": "普通用户宽带接入",
+      "label": "UC-001 - 普通用户宽带接入",
+      "type": "UseCase",
+      "stereotype_label": "«use case»",
+      "shape": "ellipse",
+      "column": 2,
+      "row": 0,
+      "x": 640,
+      "y": 80,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "UC-002",
+      "element_id": "UC-002",
+      "name": "跨星数据转发",
+      "label": "UC-002 - 跨星数据转发",
+      "type": "UseCase",
+      "stereotype_label": "«use case»",
+      "shape": "ellipse",
+      "column": 2,
+      "row": 1,
+      "x": 640,
+      "y": 198,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "UC-003",
+      "element_id": "UC-003",
+      "name": "应急通信保障",
+      "label": "UC-003 - 应急通信保障",
+      "type": "UseCase",
+      "stereotype_label": "«use case»",
+      "shape": "ellipse",
+      "column": 2,
+      "row": 2,
+      "x": 640,
+      "y": 316,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "UC-004",
+      "element_id": "UC-004",
+      "name": "卫星健康监测",
+      "label": "UC-004 - 卫星健康监测",
+      "type": "UseCase",
+      "stereotype_label": "«use case»",
+      "shape": "ellipse",
+      "column": 2,
+      "row": 3,
+      "x": 640,
+      "y": 434,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "UC-005",
+      "element_id": "UC-005",
+      "name": "带宽升级评估",
+      "label": "UC-005 - 带宽升级评估",
+      "type": "UseCase",
+      "stereotype_label": "«use case»",
+      "shape": "ellipse",
+      "column": 2,
+      "row": 4,
+      "x": 640,
+      "y": 552,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "ACT-001",
+      "element_id": "ACT-001",
+      "name": "用户接入业务流程",
+      "label": "ACT-001 - 用户接入业务流程",
+      "type": "Activity",
+      "stereotype_label": "«activity»",
+      "shape": "rect",
+      "column": 3,
+      "row": 0,
+      "x": 925,
+      "y": 80,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "ACT-002",
+      "element_id": "ACT-002",
+      "name": "跨星数据转发流程",
+      "label": "ACT-002 - 跨星数据转发流程",
+      "type": "Activity",
+      "stereotype_label": "«activity»",
+      "shape": "rect",
+      "column": 3,
+      "row": 1,
+      "x": 925,
+      "y": 198,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "ACT-003",
+      "element_id": "ACT-003",
+      "name": "带宽升级变更影响分析流程",
+      "label": "ACT-003 - 带宽升级变更影响分析流程",
+      "type": "Activity",
+      "stereotype_label": "«activity»",
+      "shape": "rect",
+      "column": 3,
+      "row": 2,
+      "x": 925,
+      "y": 316,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "IF-001",
+      "element_id": "IF-001",
+      "name": "用户接入链路接口",
+      "label": "IF-001 - 用户接入链路接口",
+      "type": "Interface",
+      "stereotype_label": "«interface»",
+      "shape": "soft",
+      "column": 4,
+      "row": 0,
+      "x": 1210,
+      "y": 80,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "IF-002",
+      "element_id": "IF-002",
+      "name": "馈电链路接口",
+      "label": "IF-002 - 馈电链路接口",
+      "type": "Interface",
+      "stereotype_label": "«interface»",
+      "shape": "soft",
+      "column": 4,
+      "row": 1,
+      "x": 1210,
+      "y": 198,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "IF-003",
+      "element_id": "IF-003",
+      "name": "星间链路接口",
+      "label": "IF-003 - 星间链路接口",
+      "type": "Interface",
+      "stereotype_label": "«interface»",
+      "shape": "soft",
+      "column": 4,
+      "row": 2,
+      "x": 1210,
+      "y": 316,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "IF-004",
+      "element_id": "IF-004",
+      "name": "运控管理接口",
+      "label": "IF-004 - 运控管理接口",
+      "type": "Interface",
+      "stereotype_label": "«interface»",
+      "shape": "soft",
+      "column": 4,
+      "row": 3,
+      "x": 1210,
+      "y": 434,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "IF-005",
+      "element_id": "IF-005",
+      "name": "服务管理接口",
+      "label": "IF-005 - 服务管理接口",
+      "type": "Interface",
+      "stereotype_label": "«interface»",
+      "shape": "soft",
+      "column": 4,
+      "row": 4,
+      "x": 1210,
+      "y": 552,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "CON-001",
+      "element_id": "CON-001",
+      "name": "覆盖能力约束",
+      "label": "CON-001 - 覆盖能力约束",
+      "type": "ConstraintBlock",
+      "stereotype_label": "«constraint»",
+      "shape": "rect",
+      "column": 4,
+      "row": 5,
+      "x": 1210,
+      "y": 670,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "CON-002",
+      "element_id": "CON-002",
+      "name": "星间链路可升级性约束",
+      "label": "CON-002 - 星间链路可升级性约束",
+      "type": "ConstraintBlock",
+      "stereotype_label": "«constraint»",
+      "shape": "rect",
+      "column": 4,
+      "row": 6,
+      "x": 1210,
+      "y": 788,
+      "width": 220,
+      "height": 72
+    }
+  ],
+  "edges": [
+    {
+      "id": "REL-001",
+      "relationship_id": "REL-001",
+      "source": "BLK-001",
+      "target": "BLK-002",
+      "type": "contains",
+      "label": "contains",
+      "points": [
+        {
+          "x": 447,
+          "y": 152
+        },
+        {
+          "x": 447,
+          "y": 175
+        },
+        {
+          "x": 483,
+          "y": 175
+        },
+        {
+          "x": 483,
+          "y": 198
+        }
+      ],
+      "label_x": 465,
+      "label_y": 169
+    },
+    {
+      "id": "REL-002",
+      "relationship_id": "REL-002",
+      "source": "BLK-001",
+      "target": "BLK-006",
+      "type": "contains",
+      "label": "contains",
+      "points": [
+        {
+          "x": 453,
+          "y": 152
+        },
+        {
+          "x": 453,
+          "y": 234
+        },
+        {
+          "x": 477,
+          "y": 234
+        },
+        {
+          "x": 477,
+          "y": 316
+        }
+      ],
+      "label_x": 465,
+      "label_y": 228
+    },
+    {
+      "id": "REL-003",
+      "relationship_id": "REL-003",
+      "source": "BLK-001",
+      "target": "BLK-007",
+      "type": "contains",
+      "label": "contains",
+      "points": [
+        {
+          "x": 459,
+          "y": 152
+        },
+        {
+          "x": 459,
+          "y": 293
+        },
+        {
+          "x": 471,
+          "y": 293
+        },
+        {
+          "x": 471,
+          "y": 434
+        }
+      ],
+      "label_x": 465,
+      "label_y": 287
+    },
+    {
+      "id": "REL-004",
+      "relationship_id": "REL-004",
+      "source": "BLK-001",
+      "target": "BLK-008",
+      "type": "contains",
+      "label": "contains",
+      "points": [
+        {
+          "x": 465,
+          "y": 152
+        },
+        {
+          "x": 465,
+          "y": 352
+        },
+        {
+          "x": 465,
+          "y": 352
+        },
+        {
+          "x": 465,
+          "y": 552
+        }
+      ],
+      "label_x": 465,
+      "label_y": 346
+    },
+    {
+      "id": "REL-005",
+      "relationship_id": "REL-005",
+      "source": "BLK-002",
+      "target": "BLK-003",
+      "type": "contains",
+      "label": "contains",
+      "points": [
+        {
+          "x": 471,
+          "y": 270
+        },
+        {
+          "x": 471,
+          "y": 470
+        },
+        {
+          "x": 459,
+          "y": 470
+        },
+        {
+          "x": 459,
+          "y": 670
+        }
+      ],
+      "label_x": 465,
+      "label_y": 464
+    },
+    {
+      "id": "REL-006",
+      "relationship_id": "REL-006",
+      "source": "BLK-002",
+      "target": "BLK-004",
+      "type": "contains",
+      "label": "contains",
+      "points": [
+        {
+          "x": 477,
+          "y": 270
+        },
+        {
+          "x": 477,
+          "y": 529
+        },
+        {
+          "x": 453,
+          "y": 529
+        },
+        {
+          "x": 453,
+          "y": 788
+        }
+      ],
+      "label_x": 465,
+      "label_y": 523
+    },
+    {
+      "id": "REL-007",
+      "relationship_id": "REL-007",
+      "source": "BLK-002",
+      "target": "BLK-005",
+      "type": "contains",
+      "label": "contains",
+      "points": [
+        {
+          "x": 483,
+          "y": 270
+        },
+        {
+          "x": 483,
+          "y": 588
+        },
+        {
+          "x": 447,
+          "y": 588
+        },
+        {
+          "x": 447,
+          "y": 906
+        }
+      ],
+      "label_x": 465,
+      "label_y": 582
+    },
+    {
+      "id": "REL-008",
+      "relationship_id": "REL-008",
+      "source": "REQ-001",
+      "target": "BLK-001",
+      "type": "satisfy",
+      "label": "satisfy",
+      "points": [
+        {
+          "x": 290,
+          "y": 98
+        },
+        {
+          "x": 322,
+          "y": 98
+        },
+        {
+          "x": 322,
+          "y": 134
+        },
+        {
+          "x": 355,
+          "y": 134
+        }
+      ],
+      "label_x": 322,
+      "label_y": 110
+    },
+    {
+      "id": "REL-009",
+      "relationship_id": "REL-009",
+      "source": "REQ-002",
+      "target": "BLK-002",
+      "type": "satisfy",
+      "label": "satisfy",
+      "points": [
+        {
+          "x": 290,
+          "y": 222
+        },
+        {
+          "x": 322,
+          "y": 222
+        },
+        {
+          "x": 322,
+          "y": 246
+        },
+        {
+          "x": 355,
+          "y": 246
+        }
+      ],
+      "label_x": 322,
+      "label_y": 228
+    },
+    {
+      "id": "REL-010",
+      "relationship_id": "REL-010",
+      "source": "REQ-003",
+      "target": "BLK-004",
+      "type": "satisfy",
+      "label": "satisfy",
+      "points": [
+        {
+          "x": 174,
+          "y": 388
+        },
+        {
+          "x": 174,
+          "y": 588
+        },
+        {
+          "x": 471,
+          "y": 588
+        },
+        {
+          "x": 471,
+          "y": 788
+        }
+      ],
+      "label_x": 322,
+      "label_y": 582
+    },
+    {
+      "id": "REL-011",
+      "relationship_id": "REL-011",
+      "source": "REQ-004",
+      "target": "BLK-003",
+      "type": "satisfy",
+      "label": "satisfy",
+      "points": [
+        {
+          "x": 290,
+          "y": 470
+        },
+        {
+          "x": 322,
+          "y": 470
+        },
+        {
+          "x": 322,
+          "y": 706
+        },
+        {
+          "x": 355,
+          "y": 706
+        }
+      ],
+      "label_x": 322,
+      "label_y": 582
+    },
+    {
+      "id": "REL-012",
+      "relationship_id": "REL-012",
+      "source": "REQ-005",
+      "target": "BLK-003",
+      "type": "satisfy",
+      "label": "satisfy",
+      "points": [
+        {
+          "x": 290,
+          "y": 594
+        },
+        {
+          "x": 322,
+          "y": 594
+        },
+        {
+          "x": 322,
+          "y": 700
+        },
+        {
+          "x": 355,
+          "y": 700
+        }
+      ],
+      "label_x": 322,
+      "label_y": 641
+    },
+    {
+      "id": "REL-013",
+      "relationship_id": "REL-013",
+      "source": "REQ-006",
+      "target": "IF-001",
+      "type": "allocate",
+      "label": "allocate",
+      "points": [
+        {
+          "x": 290,
+          "y": 718
+        },
+        {
+          "x": 750,
+          "y": 718
+        },
+        {
+          "x": 750,
+          "y": 104
+        },
+        {
+          "x": 1210,
+          "y": 104
+        }
+      ],
+      "label_x": 750,
+      "label_y": 405
+    },
+    {
+      "id": "REL-014",
+      "relationship_id": "REL-014",
+      "source": "REQ-006",
+      "target": "IF-002",
+      "type": "allocate",
+      "label": "allocate",
+      "points": [
+        {
+          "x": 290,
+          "y": 724
+        },
+        {
+          "x": 750,
+          "y": 724
+        },
+        {
+          "x": 750,
+          "y": 216
+        },
+        {
+          "x": 1210,
+          "y": 216
+        }
+      ],
+      "label_x": 750,
+      "label_y": 464
+    },
+    {
+      "id": "REL-015",
+      "relationship_id": "REL-015",
+      "source": "REQ-006",
+      "target": "IF-003",
+      "type": "allocate",
+      "label": "allocate",
+      "points": [
+        {
+          "x": 290,
+          "y": 688
+        },
+        {
+          "x": 750,
+          "y": 688
+        },
+        {
+          "x": 750,
+          "y": 370
+        },
+        {
+          "x": 1210,
+          "y": 370
+        }
+      ],
+      "label_x": 750,
+      "label_y": 523
+    },
+    {
+      "id": "REL-016",
+      "relationship_id": "REL-016",
+      "source": "REQ-006",
+      "target": "IF-004",
+      "type": "allocate",
+      "label": "allocate",
+      "points": [
+        {
+          "x": 290,
+          "y": 694
+        },
+        {
+          "x": 750,
+          "y": 694
+        },
+        {
+          "x": 750,
+          "y": 482
+        },
+        {
+          "x": 1210,
+          "y": 482
+        }
+      ],
+      "label_x": 750,
+      "label_y": 582
+    },
+    {
+      "id": "REL-017",
+      "relationship_id": "REL-017",
+      "source": "REQ-006",
+      "target": "IF-005",
+      "type": "allocate",
+      "label": "allocate",
+      "points": [
+        {
+          "x": 290,
+          "y": 700
+        },
+        {
+          "x": 750,
+          "y": 700
+        },
+        {
+          "x": 750,
+          "y": 594
+        },
+        {
+          "x": 1210,
+          "y": 594
+        }
+      ],
+      "label_x": 750,
+      "label_y": 641
+    },
+    {
+      "id": "REL-018",
+      "relationship_id": "REL-018",
+      "source": "REQ-007",
+      "target": "BLK-007",
+      "type": "satisfy",
+      "label": "satisfy",
+      "points": [
+        {
+          "x": 180,
+          "y": 788
+        },
+        {
+          "x": 180,
+          "y": 647
+        },
+        {
+          "x": 465,
+          "y": 647
+        },
+        {
+          "x": 465,
+          "y": 506
+        }
+      ],
+      "label_x": 322,
+      "label_y": 641
+    },
+    {
+      "id": "REL-019",
+      "relationship_id": "REL-019",
+      "source": "REQ-007",
+      "target": "BLK-003",
+      "type": "satisfy",
+      "label": "satisfy",
+      "points": [
+        {
+          "x": 290,
+          "y": 830
+        },
+        {
+          "x": 322,
+          "y": 830
+        },
+        {
+          "x": 322,
+          "y": 700
+        },
+        {
+          "x": 355,
+          "y": 700
+        }
+      ],
+      "label_x": 322,
+      "label_y": 759
+    },
+    {
+      "id": "REL-020",
+      "relationship_id": "REL-020",
+      "source": "REQ-008",
+      "target": "UC-001",
+      "type": "trace",
+      "label": "trace",
+      "points": [
+        {
+          "x": 192,
+          "y": 906
+        },
+        {
+          "x": 192,
+          "y": 529
+        },
+        {
+          "x": 738,
+          "y": 529
+        },
+        {
+          "x": 738,
+          "y": 152
+        }
+      ],
+      "label_x": 465,
+      "label_y": 523
+    },
+    {
+      "id": "REL-021",
+      "relationship_id": "REL-021",
+      "source": "REQ-008",
+      "target": "UC-002",
+      "type": "trace",
+      "label": "trace",
+      "points": [
+        {
+          "x": 198,
+          "y": 906
+        },
+        {
+          "x": 198,
+          "y": 588
+        },
+        {
+          "x": 732,
+          "y": 588
+        },
+        {
+          "x": 732,
+          "y": 270
+        }
+      ],
+      "label_x": 465,
+      "label_y": 582
+    },
+    {
+      "id": "REL-022",
+      "relationship_id": "REL-022",
+      "source": "REQ-008",
+      "target": "UC-003",
+      "type": "trace",
+      "label": "trace",
+      "points": [
+        {
+          "x": 162,
+          "y": 906
+        },
+        {
+          "x": 162,
+          "y": 647
+        },
+        {
+          "x": 768,
+          "y": 647
+        },
+        {
+          "x": 768,
+          "y": 388
+        }
+      ],
+      "label_x": 465,
+      "label_y": 641
+    },
+    {
+      "id": "REL-023",
+      "relationship_id": "REL-023",
+      "source": "REQ-008",
+      "target": "UC-004",
+      "type": "trace",
+      "label": "trace",
+      "points": [
+        {
+          "x": 290,
+          "y": 930
+        },
+        {
+          "x": 465,
+          "y": 930
+        },
+        {
+          "x": 465,
+          "y": 482
+        },
+        {
+          "x": 640,
+          "y": 482
+        }
+      ],
+      "label_x": 465,
+      "label_y": 700
+    },
+    {
+      "id": "REL-024",
+      "relationship_id": "REL-024",
+      "source": "REQ-008",
+      "target": "UC-005",
+      "type": "trace",
+      "label": "trace",
+      "points": [
+        {
+          "x": 290,
+          "y": 936
+        },
+        {
+          "x": 465,
+          "y": 936
+        },
+        {
+          "x": 465,
+          "y": 594
+        },
+        {
+          "x": 640,
+          "y": 594
+        }
+      ],
+      "label_x": 465,
+      "label_y": 759
+    },
+    {
+      "id": "REL-025",
+      "relationship_id": "REL-025",
+      "source": "UC-001",
+      "target": "BLK-009",
+      "type": "dependency",
+      "label": "dependency",
+      "points": [
+        {
+          "x": 750,
+          "y": 152
+        },
+        {
+          "x": 750,
+          "y": 588
+        },
+        {
+          "x": 465,
+          "y": 588
+        },
+        {
+          "x": 465,
+          "y": 1024
+        }
+      ],
+      "label_x": 607,
+      "label_y": 582
+    },
+    {
+      "id": "REL-026",
+      "relationship_id": "REL-026",
+      "source": "UC-001",
+      "target": "BLK-003",
+      "type": "trace",
+      "label": "trace",
+      "points": [
+        {
+          "x": 756,
+          "y": 152
+        },
+        {
+          "x": 756,
+          "y": 411
+        },
+        {
+          "x": 459,
+          "y": 411
+        },
+        {
+          "x": 459,
+          "y": 670
+        }
+      ],
+      "label_x": 607,
+      "label_y": 405
+    },
+    {
+      "id": "REL-027",
+      "relationship_id": "REL-027",
+      "source": "UC-002",
+      "target": "BLK-004",
+      "type": "trace",
+      "label": "trace",
+      "points": [
+        {
+          "x": 762,
+          "y": 270
+        },
+        {
+          "x": 762,
+          "y": 529
+        },
+        {
+          "x": 453,
+          "y": 529
+        },
+        {
+          "x": 453,
+          "y": 788
+        }
+      ],
+      "label_x": 607,
+      "label_y": 523
+    },
+    {
+      "id": "REL-028",
+      "relationship_id": "REL-028",
+      "source": "UC-004",
+      "target": "BLK-007",
+      "type": "trace",
+      "label": "trace",
+      "points": [
+        {
+          "x": 640,
+          "y": 488
+        },
+        {
+          "x": 607,
+          "y": 488
+        },
+        {
+          "x": 607,
+          "y": 452
+        },
+        {
+          "x": 575,
+          "y": 452
+        }
+      ],
+      "label_x": 607,
+      "label_y": 464
+    },
+    {
+      "id": "REL-029",
+      "relationship_id": "REL-029",
+      "source": "UC-005",
+      "target": "BLK-010",
+      "type": "dependency",
+      "label": "dependency",
+      "points": [
+        {
+          "x": 732,
+          "y": 624
+        },
+        {
+          "x": 732,
+          "y": 883
+        },
+        {
+          "x": 483,
+          "y": 883
+        },
+        {
+          "x": 483,
+          "y": 1142
+        }
+      ],
+      "label_x": 607,
+      "label_y": 877
+    },
+    {
+      "id": "REL-030",
+      "relationship_id": "REL-030",
+      "source": "ACT-001",
+      "target": "UC-001",
+      "type": "refine",
+      "label": "refine",
+      "points": [
+        {
+          "x": 925,
+          "y": 104
+        },
+        {
+          "x": 892,
+          "y": 104
+        },
+        {
+          "x": 892,
+          "y": 128
+        },
+        {
+          "x": 860,
+          "y": 128
+        }
+      ],
+      "label_x": 892,
+      "label_y": 110
+    },
+    {
+      "id": "REL-031",
+      "relationship_id": "REL-031",
+      "source": "ACT-002",
+      "target": "UC-002",
+      "type": "refine",
+      "label": "refine",
+      "points": [
+        {
+          "x": 925,
+          "y": 228
+        },
+        {
+          "x": 892,
+          "y": 228
+        },
+        {
+          "x": 892,
+          "y": 240
+        },
+        {
+          "x": 860,
+          "y": 240
+        }
+      ],
+      "label_x": 892,
+      "label_y": 228
+    },
+    {
+      "id": "REL-032",
+      "relationship_id": "REL-032",
+      "source": "ACT-003",
+      "target": "UC-005",
+      "type": "refine",
+      "label": "refine",
+      "points": [
+        {
+          "x": 925,
+          "y": 352
+        },
+        {
+          "x": 892,
+          "y": 352
+        },
+        {
+          "x": 892,
+          "y": 588
+        },
+        {
+          "x": 860,
+          "y": 588
+        }
+      ],
+      "label_x": 892,
+      "label_y": 464
+    },
+    {
+      "id": "REL-033",
+      "relationship_id": "REL-033",
+      "source": "CON-001",
+      "target": "REQ-002",
+      "type": "derivereqt",
+      "label": "derivereqt",
+      "points": [
+        {
+          "x": 1210,
+          "y": 712
+        },
+        {
+          "x": 750,
+          "y": 712
+        },
+        {
+          "x": 750,
+          "y": 228
+        },
+        {
+          "x": 290,
+          "y": 228
+        }
+      ],
+      "label_x": 750,
+      "label_y": 464
+    },
+    {
+      "id": "REL-034",
+      "relationship_id": "REL-034",
+      "source": "CON-002",
+      "target": "REQ-003",
+      "type": "derivereqt",
+      "label": "derivereqt",
+      "points": [
+        {
+          "x": 1210,
+          "y": 836
+        },
+        {
+          "x": 750,
+          "y": 836
+        },
+        {
+          "x": 750,
+          "y": 340
+        },
+        {
+          "x": 290,
+          "y": 340
+        }
+      ],
+      "label_x": 750,
+      "label_y": 582
+    },
+    {
+      "id": "REL-035",
+      "relationship_id": "REL-035",
+      "source": "CON-002",
+      "target": "BLK-005",
+      "type": "trace",
+      "label": "trace",
+      "points": [
+        {
+          "x": 1210,
+          "y": 842
+        },
+        {
+          "x": 892,
+          "y": 842
+        },
+        {
+          "x": 892,
+          "y": 924
+        },
+        {
+          "x": 575,
+          "y": 924
+        }
+      ],
+      "label_x": 892,
+      "label_y": 877
+    },
+    {
+      "id": "REL-036",
+      "relationship_id": "REL-036",
+      "source": "BLK-001",
+      "target": "BLK-003",
+      "type": "contains",
+      "label": "contains",
+      "points": [
+        {
+          "x": 447,
+          "y": 152
+        },
+        {
+          "x": 447,
+          "y": 411
+        },
+        {
+          "x": 483,
+          "y": 411
+        },
+        {
+          "x": 483,
+          "y": 670
+        }
+      ],
+      "label_x": 465,
+      "label_y": 405
+    },
+    {
+      "id": "REL-037",
+      "relationship_id": "REL-037",
+      "source": "BLK-001",
+      "target": "BLK-004",
+      "type": "contains",
+      "label": "contains",
+      "points": [
+        {
+          "x": 453,
+          "y": 152
+        },
+        {
+          "x": 453,
+          "y": 470
+        },
+        {
+          "x": 477,
+          "y": 470
+        },
+        {
+          "x": 477,
+          "y": 788
+        }
+      ],
+      "label_x": 465,
+      "label_y": 464
+    },
+    {
+      "id": "REL-038",
+      "relationship_id": "REL-038",
+      "source": "BLK-001",
+      "target": "BLK-005",
+      "type": "contains",
+      "label": "contains",
+      "points": [
+        {
+          "x": 459,
+          "y": 152
+        },
+        {
+          "x": 459,
+          "y": 529
+        },
+        {
+          "x": 471,
+          "y": 529
+        },
+        {
+          "x": 471,
+          "y": 906
+        }
+      ],
+      "label_x": 465,
+      "label_y": 523
+    },
+    {
+      "id": "REL-039",
+      "relationship_id": "REL-039",
+      "source": "BLK-001",
+      "target": "BLK-009",
+      "type": "contains",
+      "label": "contains",
+      "points": [
+        {
+          "x": 465,
+          "y": 152
+        },
+        {
+          "x": 465,
+          "y": 588
+        },
+        {
+          "x": 465,
+          "y": 588
+        },
+        {
+          "x": 465,
+          "y": 1024
+        }
+      ],
+      "label_x": 465,
+      "label_y": 582
+    },
+    {
+      "id": "REL-040",
+      "relationship_id": "REL-040",
+      "source": "BLK-001",
+      "target": "BLK-010",
+      "type": "contains",
+      "label": "contains",
+      "points": [
+        {
+          "x": 471,
+          "y": 152
+        },
+        {
+          "x": 471,
+          "y": 647
+        },
+        {
+          "x": 459,
+          "y": 647
+        },
+        {
+          "x": 459,
+          "y": 1142
+        }
+      ],
+      "label_x": 465,
+      "label_y": 641
+    },
+    {
+      "id": "REL-041",
+      "relationship_id": "REL-041",
+      "source": "BLK-001",
+      "target": "BLK-002",
+      "type": "connector",
+      "label": "connector",
+      "points": [
+        {
+          "x": 477,
+          "y": 152
+        },
+        {
+          "x": 477,
+          "y": 175
+        },
+        {
+          "x": 453,
+          "y": 175
+        },
+        {
+          "x": 453,
+          "y": 198
+        }
+      ],
+      "label_x": 465,
+      "label_y": 169
+    },
+    {
+      "id": "REL-042",
+      "relationship_id": "REL-042",
+      "source": "BLK-002",
+      "target": "BLK-003",
+      "type": "connector",
+      "label": "connector",
+      "points": [
+        {
+          "x": 483,
+          "y": 270
+        },
+        {
+          "x": 483,
+          "y": 470
+        },
+        {
+          "x": 447,
+          "y": 470
+        },
+        {
+          "x": 447,
+          "y": 670
+        }
+      ],
+      "label_x": 465,
+      "label_y": 464
+    },
+    {
+      "id": "REL-043",
+      "relationship_id": "REL-043",
+      "source": "BLK-003",
+      "target": "BLK-004",
+      "type": "connector",
+      "label": "connector",
+      "points": [
+        {
+          "x": 447,
+          "y": 742
+        },
+        {
+          "x": 447,
+          "y": 765
+        },
+        {
+          "x": 483,
+          "y": 765
+        },
+        {
+          "x": 483,
+          "y": 788
+        }
+      ],
+      "label_x": 465,
+      "label_y": 759
+    },
+    {
+      "id": "REL-044",
+      "relationship_id": "REL-044",
+      "source": "BLK-004",
+      "target": "BLK-005",
+      "type": "connector",
+      "label": "connector",
+      "points": [
+        {
+          "x": 453,
+          "y": 860
+        },
+        {
+          "x": 453,
+          "y": 883
+        },
+        {
+          "x": 477,
+          "y": 883
+        },
+        {
+          "x": 477,
+          "y": 906
+        }
+      ],
+      "label_x": 465,
+      "label_y": 877
+    },
+    {
+      "id": "REL-045",
+      "relationship_id": "REL-045",
+      "source": "BLK-005",
+      "target": "BLK-006",
+      "type": "connector",
+      "label": "connector",
+      "points": [
+        {
+          "x": 459,
+          "y": 906
+        },
+        {
+          "x": 459,
+          "y": 647
+        },
+        {
+          "x": 471,
+          "y": 647
+        },
+        {
+          "x": 471,
+          "y": 388
+        }
+      ],
+      "label_x": 465,
+      "label_y": 641
+    },
+    {
+      "id": "REL-046",
+      "relationship_id": "REL-046",
+      "source": "BLK-006",
+      "target": "BLK-007",
+      "type": "connector",
+      "label": "connector",
+      "points": [
+        {
+          "x": 465,
+          "y": 388
+        },
+        {
+          "x": 465,
+          "y": 411
+        },
+        {
+          "x": 465,
+          "y": 411
+        },
+        {
+          "x": 465,
+          "y": 434
+        }
+      ],
+      "label_x": 465,
+      "label_y": 405
+    },
+    {
+      "id": "REL-047",
+      "relationship_id": "REL-047",
+      "source": "BLK-007",
+      "target": "BLK-008",
+      "type": "connector",
+      "label": "connector",
+      "points": [
+        {
+          "x": 471,
+          "y": 506
+        },
+        {
+          "x": 471,
+          "y": 529
+        },
+        {
+          "x": 459,
+          "y": 529
+        },
+        {
+          "x": 459,
+          "y": 552
+        }
+      ],
+      "label_x": 465,
+      "label_y": 523
+    },
+    {
+      "id": "REL-048",
+      "relationship_id": "REL-048",
+      "source": "BLK-008",
+      "target": "BLK-009",
+      "type": "connector",
+      "label": "connector",
+      "points": [
+        {
+          "x": 477,
+          "y": 624
+        },
+        {
+          "x": 477,
+          "y": 824
+        },
+        {
+          "x": 453,
+          "y": 824
+        },
+        {
+          "x": 453,
+          "y": 1024
+        }
+      ],
+      "label_x": 465,
+      "label_y": 818
+    },
+    {
+      "id": "REL-049",
+      "relationship_id": "REL-049",
+      "source": "BLK-009",
+      "target": "BLK-010",
+      "type": "connector",
+      "label": "connector",
+      "points": [
+        {
+          "x": 483,
+          "y": 1096
+        },
+        {
+          "x": 483,
+          "y": 1119
+        },
+        {
+          "x": 447,
+          "y": 1119
+        },
+        {
+          "x": 447,
+          "y": 1142
+        }
+      ],
+      "label_x": 465,
+      "label_y": 1113
+    },
+    {
+      "id": "REL-050",
+      "relationship_id": "REL-050",
+      "source": "BLK-001",
+      "target": "REQ-001",
+      "type": "satisfy",
+      "label": "satisfy",
+      "points": [
+        {
+          "x": 355,
+          "y": 98
+        },
+        {
+          "x": 322,
+          "y": 98
+        },
+        {
+          "x": 322,
+          "y": 134
+        },
+        {
+          "x": 290,
+          "y": 134
+        }
+      ],
+      "label_x": 322,
+      "label_y": 110
+    },
+    {
+      "id": "REL-051",
+      "relationship_id": "REL-051",
+      "source": "REQ-001",
+      "target": "UC-001",
+      "type": "trace",
+      "label": "trace",
+      "points": [
+        {
+          "x": 290,
+          "y": 104
+        },
+        {
+          "x": 465,
+          "y": 104
+        },
+        {
+          "x": 465,
+          "y": 128
+        },
+        {
+          "x": 640,
+          "y": 128
+        }
+      ],
+      "label_x": 465,
+      "label_y": 110
+    },
+    {
+      "id": "REL-052",
+      "relationship_id": "REL-052",
+      "source": "BLK-002",
+      "target": "REQ-002",
+      "type": "satisfy",
+      "label": "satisfy",
+      "points": [
+        {
+          "x": 355,
+          "y": 228
+        },
+        {
+          "x": 322,
+          "y": 228
+        },
+        {
+          "x": 322,
+          "y": 240
+        },
+        {
+          "x": 290,
+          "y": 240
+        }
+      ],
+      "label_x": 322,
+      "label_y": 228
+    },
+    {
+      "id": "REL-053",
+      "relationship_id": "REL-053",
+      "source": "REQ-002",
+      "target": "UC-002",
+      "type": "trace",
+      "label": "trace",
+      "points": [
+        {
+          "x": 290,
+          "y": 234
+        },
+        {
+          "x": 465,
+          "y": 234
+        },
+        {
+          "x": 465,
+          "y": 234
+        },
+        {
+          "x": 640,
+          "y": 234
+        }
+      ],
+      "label_x": 465,
+      "label_y": 228
+    },
+    {
+      "id": "REL-054",
+      "relationship_id": "REL-054",
+      "source": "BLK-003",
+      "target": "REQ-003",
+      "type": "satisfy",
+      "label": "satisfy",
+      "points": [
+        {
+          "x": 471,
+          "y": 670
+        },
+        {
+          "x": 471,
+          "y": 529
+        },
+        {
+          "x": 174,
+          "y": 529
+        },
+        {
+          "x": 174,
+          "y": 388
+        }
+      ],
+      "label_x": 322,
+      "label_y": 523
+    },
+    {
+      "id": "REL-055",
+      "relationship_id": "REL-055",
+      "source": "REQ-003",
+      "target": "UC-003",
+      "type": "trace",
+      "label": "trace",
+      "points": [
+        {
+          "x": 290,
+          "y": 364
+        },
+        {
+          "x": 465,
+          "y": 364
+        },
+        {
+          "x": 465,
+          "y": 340
+        },
+        {
+          "x": 640,
+          "y": 340
+        }
+      ],
+      "label_x": 465,
+      "label_y": 346
+    },
+    {
+      "id": "REL-056",
+      "relationship_id": "REL-056",
+      "source": "BLK-004",
+      "target": "REQ-004",
+      "type": "satisfy",
+      "label": "satisfy",
+      "points": [
+        {
+          "x": 483,
+          "y": 788
+        },
+        {
+          "x": 483,
+          "y": 647
+        },
+        {
+          "x": 162,
+          "y": 647
+        },
+        {
+          "x": 162,
+          "y": 506
+        }
+      ],
+      "label_x": 322,
+      "label_y": 641
+    },
+    {
+      "id": "REL-057",
+      "relationship_id": "REL-057",
+      "source": "REQ-004",
+      "target": "UC-004",
+      "type": "trace",
+      "label": "trace",
+      "points": [
+        {
+          "x": 290,
+          "y": 452
+        },
+        {
+          "x": 465,
+          "y": 452
+        },
+        {
+          "x": 465,
+          "y": 488
+        },
+        {
+          "x": 640,
+          "y": 488
+        }
+      ],
+      "label_x": 465,
+      "label_y": 464
+    },
+    {
+      "id": "REL-058",
+      "relationship_id": "REL-058",
+      "source": "BLK-005",
+      "target": "REQ-005",
+      "type": "satisfy",
+      "label": "satisfy",
+      "points": [
+        {
+          "x": 453,
+          "y": 906
+        },
+        {
+          "x": 453,
+          "y": 765
+        },
+        {
+          "x": 192,
+          "y": 765
+        },
+        {
+          "x": 192,
+          "y": 624
+        }
+      ],
+      "label_x": 322,
+      "label_y": 759
+    },
+    {
+      "id": "REL-059",
+      "relationship_id": "REL-059",
+      "source": "REQ-005",
+      "target": "UC-005",
+      "type": "trace",
+      "label": "trace",
+      "points": [
+        {
+          "x": 290,
+          "y": 582
+        },
+        {
+          "x": 465,
+          "y": 582
+        },
+        {
+          "x": 465,
+          "y": 594
+        },
+        {
+          "x": 640,
+          "y": 594
+        }
+      ],
+      "label_x": 465,
+      "label_y": 582
+    },
+    {
+      "id": "REL-060",
+      "relationship_id": "REL-060",
+      "source": "BLK-006",
+      "target": "REQ-006",
+      "type": "satisfy",
+      "label": "satisfy",
+      "points": [
+        {
+          "x": 465,
+          "y": 388
+        },
+        {
+          "x": 465,
+          "y": 529
+        },
+        {
+          "x": 180,
+          "y": 529
+        },
+        {
+          "x": 180,
+          "y": 670
+        }
+      ],
+      "label_x": 322,
+      "label_y": 523
+    },
+    {
+      "id": "REL-061",
+      "relationship_id": "REL-061",
+      "source": "REQ-006",
+      "target": "UC-001",
+      "type": "trace",
+      "label": "trace",
+      "points": [
+        {
+          "x": 186,
+          "y": 670
+        },
+        {
+          "x": 186,
+          "y": 411
+        },
+        {
+          "x": 744,
+          "y": 411
+        },
+        {
+          "x": 744,
+          "y": 152
+        }
+      ],
+      "label_x": 465,
+      "label_y": 405
+    },
+    {
+      "id": "REL-062",
+      "relationship_id": "REL-062",
+      "source": "BLK-007",
+      "target": "REQ-007",
+      "type": "satisfy",
+      "label": "satisfy",
+      "points": [
+        {
+          "x": 477,
+          "y": 506
+        },
+        {
+          "x": 477,
+          "y": 647
+        },
+        {
+          "x": 168,
+          "y": 647
+        },
+        {
+          "x": 168,
+          "y": 788
+        }
+      ],
+      "label_x": 322,
+      "label_y": 641
+    },
+    {
+      "id": "REL-063",
+      "relationship_id": "REL-063",
+      "source": "REQ-007",
+      "target": "UC-002",
+      "type": "trace",
+      "label": "trace",
+      "points": [
+        {
+          "x": 198,
+          "y": 788
+        },
+        {
+          "x": 198,
+          "y": 529
+        },
+        {
+          "x": 732,
+          "y": 529
+        },
+        {
+          "x": 732,
+          "y": 270
+        }
+      ],
+      "label_x": 465,
+      "label_y": 523
+    },
+    {
+      "id": "REL-064",
+      "relationship_id": "REL-064",
+      "source": "BLK-008",
+      "target": "REQ-008",
+      "type": "satisfy",
+      "label": "satisfy",
+      "points": [
+        {
+          "x": 447,
+          "y": 624
+        },
+        {
+          "x": 447,
+          "y": 765
+        },
+        {
+          "x": 198,
+          "y": 765
+        },
+        {
+          "x": 198,
+          "y": 906
+        }
+      ],
+      "label_x": 322,
+      "label_y": 759
+    },
+    {
+      "id": "REL-065",
+      "relationship_id": "REL-065",
+      "source": "BLK-001",
+      "target": "UC-001",
+      "type": "trace",
+      "label": "trace",
+      "points": [
+        {
+          "x": 575,
+          "y": 104
+        },
+        {
+          "x": 607,
+          "y": 104
+        },
+        {
+          "x": 607,
+          "y": 128
+        },
+        {
+          "x": 640,
+          "y": 128
+        }
+      ],
+      "label_x": 607,
+      "label_y": 110
+    },
+    {
+      "id": "REL-066",
+      "relationship_id": "REL-066",
+      "source": "BLK-002",
+      "target": "UC-002",
+      "type": "trace",
+      "label": "trace",
+      "points": [
+        {
+          "x": 575,
+          "y": 228
+        },
+        {
+          "x": 607,
+          "y": 228
+        },
+        {
+          "x": 607,
+          "y": 240
+        },
+        {
+          "x": 640,
+          "y": 240
+        }
+      ],
+      "label_x": 607,
+      "label_y": 228
+    },
+    {
+      "id": "REL-067",
+      "relationship_id": "REL-067",
+      "source": "BLK-003",
+      "target": "UC-003",
+      "type": "trace",
+      "label": "trace",
+      "points": [
+        {
+          "x": 465,
+          "y": 670
+        },
+        {
+          "x": 465,
+          "y": 529
+        },
+        {
+          "x": 750,
+          "y": 529
+        },
+        {
+          "x": 750,
+          "y": 388
+        }
+      ],
+      "label_x": 607,
+      "label_y": 523
+    },
+    {
+      "id": "REL-068",
+      "relationship_id": "REL-068",
+      "source": "UC-003",
+      "target": "ACT-003",
+      "type": "trace",
+      "label": "trace",
+      "points": [
+        {
+          "x": 860,
+          "y": 358
+        },
+        {
+          "x": 892,
+          "y": 358
+        },
+        {
+          "x": 892,
+          "y": 346
+        },
+        {
+          "x": 925,
+          "y": 346
+        }
+      ],
+      "label_x": 892,
+      "label_y": 346
+    },
+    {
+      "id": "REL-069",
+      "relationship_id": "REL-069",
+      "source": "BLK-004",
+      "target": "UC-004",
+      "type": "trace",
+      "label": "trace",
+      "points": [
+        {
+          "x": 477,
+          "y": 788
+        },
+        {
+          "x": 477,
+          "y": 647
+        },
+        {
+          "x": 738,
+          "y": 647
+        },
+        {
+          "x": 738,
+          "y": 506
+        }
+      ],
+      "label_x": 607,
+      "label_y": 641
+    },
+    {
+      "id": "REL-070",
+      "relationship_id": "REL-070",
+      "source": "BLK-005",
+      "target": "UC-005",
+      "type": "trace",
+      "label": "trace",
+      "points": [
+        {
+          "x": 483,
+          "y": 906
+        },
+        {
+          "x": 483,
+          "y": 765
+        },
+        {
+          "x": 732,
+          "y": 765
+        },
+        {
+          "x": 732,
+          "y": 624
+        }
+      ],
+      "label_x": 607,
+      "label_y": 759
+    },
+    {
+      "id": "REL-071",
+      "relationship_id": "REL-071",
+      "source": "UC-005",
+      "target": "ACT-002",
+      "type": "trace",
+      "label": "trace",
+      "points": [
+        {
+          "x": 732,
+          "y": 552
+        },
+        {
+          "x": 732,
+          "y": 411
+        },
+        {
+          "x": 1053,
+          "y": 411
+        },
+        {
+          "x": 1053,
+          "y": 270
+        }
+      ],
+      "label_x": 892,
+      "label_y": 405
+    },
+    {
+      "id": "REL-072",
+      "relationship_id": "REL-072",
+      "source": "UC-001",
+      "target": "IF-001",
+      "type": "trace",
+      "label": "trace",
+      "points": [
+        {
+          "x": 860,
+          "y": 104
+        },
+        {
+          "x": 1035,
+          "y": 104
+        },
+        {
+          "x": 1035,
+          "y": 128
+        },
+        {
+          "x": 1210,
+          "y": 128
+        }
+      ],
+      "label_x": 1035,
+      "label_y": 110
+    },
+    {
+      "id": "REL-073",
+      "relationship_id": "REL-073",
+      "source": "UC-002",
+      "target": "IF-002",
+      "type": "trace",
+      "label": "trace",
+      "points": [
+        {
+          "x": 860,
+          "y": 228
+        },
+        {
+          "x": 1035,
+          "y": 228
+        },
+        {
+          "x": 1035,
+          "y": 240
+        },
+        {
+          "x": 1210,
+          "y": 240
+        }
+      ],
+      "label_x": 1035,
+      "label_y": 228
+    },
+    {
+      "id": "REL-074",
+      "relationship_id": "REL-074",
+      "source": "UC-003",
+      "target": "IF-003",
+      "type": "trace",
+      "label": "trace",
+      "points": [
+        {
+          "x": 860,
+          "y": 352
+        },
+        {
+          "x": 1035,
+          "y": 352
+        },
+        {
+          "x": 1035,
+          "y": 352
+        },
+        {
+          "x": 1210,
+          "y": 352
+        }
+      ],
+      "label_x": 1035,
+      "label_y": 346
+    },
+    {
+      "id": "REL-075",
+      "relationship_id": "REL-075",
+      "source": "UC-004",
+      "target": "IF-004",
+      "type": "trace",
+      "label": "trace",
+      "points": [
+        {
+          "x": 860,
+          "y": 476
+        },
+        {
+          "x": 1035,
+          "y": 476
+        },
+        {
+          "x": 1035,
+          "y": 464
+        },
+        {
+          "x": 1210,
+          "y": 464
+        }
+      ],
+      "label_x": 1035,
+      "label_y": 464
+    },
+    {
+      "id": "REL-076",
+      "relationship_id": "REL-076",
+      "source": "UC-005",
+      "target": "IF-005",
+      "type": "trace",
+      "label": "trace",
+      "points": [
+        {
+          "x": 860,
+          "y": 600
+        },
+        {
+          "x": 1035,
+          "y": 600
+        },
+        {
+          "x": 1035,
+          "y": 576
+        },
+        {
+          "x": 1210,
+          "y": 576
+        }
+      ],
+      "label_x": 1035,
+      "label_y": 582
+    },
+    {
+      "id": "REL-077",
+      "relationship_id": "REL-077",
+      "source": "CON-001",
+      "target": "REQ-001",
+      "type": "verify",
+      "label": "verify",
+      "points": [
+        {
+          "x": 1210,
+          "y": 724
+        },
+        {
+          "x": 750,
+          "y": 724
+        },
+        {
+          "x": 750,
+          "y": 98
+        },
+        {
+          "x": 290,
+          "y": 98
+        }
+      ],
+      "label_x": 750,
+      "label_y": 405
+    },
+    {
+      "id": "REL-078",
+      "relationship_id": "REL-078",
+      "source": "CON-002",
+      "target": "REQ-002",
+      "type": "verify",
+      "label": "verify",
+      "points": [
+        {
+          "x": 1210,
+          "y": 806
+        },
+        {
+          "x": 750,
+          "y": 806
+        },
+        {
+          "x": 750,
+          "y": 252
+        },
+        {
+          "x": 290,
+          "y": 252
+        }
+      ],
+      "label_x": 750,
+      "label_y": 523
+    }
+  ]
+}

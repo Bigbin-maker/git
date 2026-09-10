@@ -1,0 +1,3 @@
+﻿local_id,name,type,metaclass,stereotype,documentation,source_requirement,status
+REQ-BACKEND-FAST-001,BackendFastRequirement,Requirement,Class,SysML::Requirements::Requirement,Backend fast bridge import test,REQ-BACKEND-FAST-001,candidate
+BLK-BACKEND-FAST-001,BackendFastBlock,Block,Class,SysML::Blocks::Block,Backend fast bridge import test,REQ-BACKEND-FAST-001,candidate

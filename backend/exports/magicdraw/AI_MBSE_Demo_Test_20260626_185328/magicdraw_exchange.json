@@ -1,0 +1,56 @@
+{
+  "schema": "ai-mbse.magicdraw.exchange.v1",
+  "generated_at": "2026-06-26T10:53:28Z",
+  "project_path": "",
+  "root_package": "AI_MBSE_Demo_Test",
+  "instructions": [
+    "Create or reuse root package.",
+    "Create SysML/UML elements by local_id and stereotype.",
+    "Create relationships after all element ids are resolved.",
+    "Store ai_mbse_id and source_requirement as tagged values when available."
+  ],
+  "elements": [
+    {
+      "local_id": "REQ-MD-001",
+      "name": "卫星任务需求",
+      "type": "Requirement",
+      "metaclass": "Class",
+      "stereotype": "SysML::Requirements::Requirement",
+      "documentation": "支持卫星总体设计演示",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "REQ-MD-001",
+        "external_id": null
+      }
+    },
+    {
+      "local_id": "BLK-MD-001",
+      "name": "卫星系统",
+      "type": "Block",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "MagicDraw 导入测试块",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "BLK-MD-001",
+        "external_id": null
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "local_id": "REL-MD-001",
+      "name": "REL-MD-001",
+      "type": "satisfy",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Satisfy",
+      "source": "REQ-MD-001",
+      "source_name": "卫星任务需求",
+      "target": "BLK-MD-001",
+      "target_name": "卫星系统",
+      "documentation": "系统满足任务需求"
+    }
+  ]
+}

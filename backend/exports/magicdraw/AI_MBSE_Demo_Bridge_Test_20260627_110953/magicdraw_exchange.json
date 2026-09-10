@@ -1,0 +1,56 @@
+{
+  "schema": "ai-mbse.magicdraw.exchange.v1",
+  "generated_at": "2026-06-27T03:09:53Z",
+  "project_path": "",
+  "root_package": "AI_MBSE_Demo_Bridge_Test",
+  "instructions": [
+    "Create or reuse root package.",
+    "Create SysML/UML elements by local_id and stereotype.",
+    "Create relationships after all element ids are resolved.",
+    "Store ai_mbse_id and source_requirement as tagged values when available."
+  ],
+  "elements": [
+    {
+      "local_id": "REQ-BRIDGE-001",
+      "name": "Bridge??????",
+      "type": "Requirement",
+      "metaclass": "Class",
+      "stereotype": "SysML::Requirements::Requirement",
+      "documentation": "?AI-MBSE???Bridge??MagicDraw?????",
+      "source_requirement": "REQ-BRIDGE-001",
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "REQ-BRIDGE-001",
+        "external_id": null
+      }
+    },
+    {
+      "local_id": "BLK-BRIDGE-001",
+      "name": "Bridge??????",
+      "type": "Block",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "?AI-MBSE???Bridge??MagicDraw?????",
+      "source_requirement": "REQ-BRIDGE-001",
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "BLK-BRIDGE-001",
+        "external_id": null
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "local_id": "REL-BRIDGE-001",
+      "name": "REL-BRIDGE-001",
+      "type": "Trace",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Trace",
+      "source": "REQ-BRIDGE-001",
+      "source_name": "Bridge??????",
+      "target": "BLK-BRIDGE-001",
+      "target_name": "Bridge??????",
+      "documentation": "Bridge????????"
+    }
+  ]
+}

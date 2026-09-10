@@ -1,0 +1,4854 @@
+{
+  "schema": "ai-mbse.magicdraw.exchange.v1",
+  "generated_at": "2026-07-01T02:45:05Z",
+  "project_path": "",
+  "root_package": "PREVIEW_LEO_Satellite_Internet_100_Sat",
+  "diagram_name": "AI_MBSE_Trace_View",
+  "instructions": [
+    "Create or reuse root package.",
+    "Create nested packages from each element or relationship package field when provided.",
+    "Create SysML/UML elements by local_id and stereotype.",
+    "Create relationships after all element ids are resolved.",
+    "Use diagram_layout as the single source of truth for MagicDraw and frontend canvas placement.",
+    "Create additional diagrams from diagram_views when present; each view layout is scoped to its own nodes.",
+    "Store ai_mbse_id and source_requirement as tagged values when available."
+  ],
+  "elements": [
+    {
+      "local_id": "REQ-001",
+      "name": "轨道高度与倾角",
+      "type": "Requirement",
+      "package": "01_Requirements",
+      "metaclass": "Class",
+      "stereotype": "SysML::Requirements::Requirement",
+      "documentation": "卫星轨道高度应在500-1200 km范围内，倾角类型（极轨/倾斜轨道）待定。",
+      "source_requirement": "REQ-001",
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "REQ-001",
+        "external_id": null,
+        "package": "01_Requirements"
+      }
+    },
+    {
+      "local_id": "REQ-002",
+      "name": "星座规模与分布",
+      "type": "Requirement",
+      "package": "01_Requirements",
+      "metaclass": "Class",
+      "stereotype": "SysML::Requirements::Requirement",
+      "documentation": "空间段由100颗卫星组成；是否采用多层、每个轨道面卫星数量及覆盖重数（如全球≥2重覆盖）待确认。",
+      "source_requirement": "REQ-002",
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "REQ-002",
+        "external_id": null,
+        "package": "01_Requirements"
+      }
+    },
+    {
+      "local_id": "REQ-003",
+      "name": "通信频段与链路类型",
+      "type": "Requirement",
+      "package": "01_Requirements",
+      "metaclass": "Class",
+      "stereotype": "SysML::Requirements::Requirement",
+      "documentation": "应确定使用频段（Ka/Ku/Q/V），并明确星地用户链路及是否包含星间链路。",
+      "source_requirement": "REQ-003",
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "REQ-003",
+        "external_id": null,
+        "package": "01_Requirements"
+      }
+    },
+    {
+      "local_id": "REQ-004",
+      "name": "系统容量与时延",
+      "type": "Requirement",
+      "package": "01_Requirements",
+      "metaclass": "Class",
+      "stereotype": "SysML::Requirements::Requirement",
+      "documentation": "需定义单星吞吐量、系统总容量目标，以及端到端时延目标（如30ms或50ms）和系统可用度（如99.5%）。",
+      "source_requirement": "REQ-004",
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "REQ-004",
+        "external_id": null,
+        "package": "01_Requirements"
+      }
+    },
+    {
+      "local_id": "REQ-005",
+      "name": "系统边界与外部接口",
+      "type": "Requirement",
+      "package": "01_Requirements",
+      "metaclass": "Class",
+      "stereotype": "SysML::Requirements::Requirement",
+      "documentation": "系统是否仅包含空间段，还是也包含地面信关站、运营支撑系统；需明确与互联网骨干网、导航增强、遥测遥控网等外部系统的接口关系。",
+      "source_requirement": "REQ-005",
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "REQ-005",
+        "external_id": null,
+        "package": "01_Requirements"
+      }
+    },
+    {
+      "local_id": "REQ-006",
+      "name": "通信标准兼容",
+      "type": "Requirement",
+      "package": "01_Requirements",
+      "metaclass": "Class",
+      "stereotype": "SysML::Requirements::Requirement",
+      "documentation": "应考虑是否兼容5G NTN、DVB-S2X等已有通信标准。",
+      "source_requirement": "REQ-006",
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "REQ-006",
+        "external_id": null,
+        "package": "01_Requirements"
+      }
+    },
+    {
+      "local_id": "REQ-007",
+      "name": "业务链路模式",
+      "type": "Requirement",
+      "package": "01_Requirements",
+      "metaclass": "Class",
+      "stereotype": "SysML::Requirements::Requirement",
+      "documentation": "主要业务链路应为：用户终端→卫星→信关站→互联网；并需澄清星间路由、星上处理/透明转发选择及是否支持应急通信、广播/多播等。",
+      "source_requirement": "REQ-007",
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "REQ-007",
+        "external_id": null,
+        "package": "01_Requirements"
+      }
+    },
+    {
+      "local_id": "REQ-008",
+      "name": "卫星平台约束",
+      "type": "Requirement",
+      "package": "01_Requirements",
+      "metaclass": "Class",
+      "stereotype": "SysML::Requirements::Requirement",
+      "documentation": "单星质量、功耗、成本、部署方式（如一箭多星）等约束需确定。",
+      "source_requirement": "REQ-008",
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "REQ-008",
+        "external_id": null,
+        "package": "01_Requirements"
+      }
+    },
+    {
+      "local_id": "REQ-009",
+      "name": "验收标准",
+      "type": "Requirement",
+      "package": "01_Requirements",
+      "metaclass": "Class",
+      "stereotype": "SysML::Requirements::Requirement",
+      "documentation": "覆盖区域、终端仰角、最低速率等验收准则待明确。",
+      "source_requirement": "REQ-009",
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "REQ-009",
+        "external_id": null,
+        "package": "01_Requirements"
+      }
+    },
+    {
+      "local_id": "BLK-001",
+      "name": "低轨卫星互联网系统",
+      "type": "Block",
+      "package": "02_System_Structure",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "系统顶层上下文，包含空间段（100颗卫星）、地面信关站、用户终端及运营支撑系统（依据REQ-005）。",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "BLK-001",
+        "external_id": null,
+        "package": "02_System_Structure"
+      }
+    },
+    {
+      "local_id": "BLK-002",
+      "name": "卫星",
+      "type": "Block",
+      "package": "02_System_Structure",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "低轨道通信卫星，携带通信载荷、星间链路终端、星地链路终端，参与路由与波束管理。",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "BLK-002",
+        "external_id": null,
+        "package": "02_System_Structure"
+      }
+    },
+    {
+      "local_id": "BLK-003",
+      "name": "信关站",
+      "type": "Block",
+      "package": "02_System_Structure",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "地面关口站，连接卫星与地面骨干网，处理馈电链路。",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "BLK-003",
+        "external_id": null,
+        "package": "02_System_Structure"
+      }
+    },
+    {
+      "local_id": "BLK-004",
+      "name": "用户终端",
+      "type": "Block",
+      "package": "02_System_Structure",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "各种类型终端：动中通、固定站、手持终端等。",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "BLK-004",
+        "external_id": null,
+        "package": "02_System_Structure"
+      }
+    },
+    {
+      "local_id": "IF-001",
+      "name": "星地用户链路接口",
+      "type": "Interface",
+      "package": "03_Interfaces",
+      "metaclass": "Interface",
+      "stereotype": "SysML::PortsAndFlows::InterfaceBlock",
+      "documentation": "卫星与用户终端之间的通信接口，承载用户数据与信令，频段待定。",
+      "source_requirement": "REQ-003",
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "IF-001",
+        "external_id": null,
+        "package": "03_Interfaces"
+      }
+    },
+    {
+      "local_id": "IF-002",
+      "name": "星间链路接口",
+      "type": "Interface",
+      "package": "03_Interfaces",
+      "metaclass": "Interface",
+      "stereotype": "SysML::PortsAndFlows::InterfaceBlock",
+      "documentation": "卫星之间的通信接口，用于星间路由与数据中继，待确认是否实施。",
+      "source_requirement": "REQ-003",
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "IF-002",
+        "external_id": null,
+        "package": "03_Interfaces"
+      }
+    },
+    {
+      "local_id": "IF-003",
+      "name": "馈电链路接口",
+      "type": "Interface",
+      "package": "03_Interfaces",
+      "metaclass": "Interface",
+      "stereotype": "SysML::PortsAndFlows::InterfaceBlock",
+      "documentation": "卫星与信关站之间的通信接口，传输汇聚业务数据。",
+      "source_requirement": "REQ-005",
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "IF-003",
+        "external_id": null,
+        "package": "03_Interfaces"
+      }
+    },
+    {
+      "local_id": "UC-001",
+      "name": "配置星座参数",
+      "type": "UseCase",
+      "package": "04_UseCases",
+      "metaclass": "UseCase",
+      "stereotype": "",
+      "documentation": "系统运营者根据轨道高度、倾角、卫星分布等设定星座配置。",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "UC-001",
+        "external_id": null,
+        "package": "04_UseCases"
+      }
+    },
+    {
+      "local_id": "UC-002",
+      "name": "提供全球通信服务",
+      "type": "UseCase",
+      "package": "04_UseCases",
+      "metaclass": "UseCase",
+      "stereotype": "",
+      "documentation": "为用户终端提供宽带接入，包括端到端数据传输，满足覆盖和容量需求。",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "UC-002",
+        "external_id": null,
+        "package": "04_UseCases"
+      }
+    },
+    {
+      "local_id": "UC-003",
+      "name": "管理星间路由",
+      "type": "UseCase",
+      "package": "04_UseCases",
+      "metaclass": "UseCase",
+      "stereotype": "",
+      "documentation": "当存在星间链路时，系统执行数据包路由与切换。",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "UC-003",
+        "external_id": null,
+        "package": "04_UseCases"
+      }
+    },
+    {
+      "local_id": "ACT-001",
+      "name": "用户终端到互联网的通信流程",
+      "type": "Activity",
+      "package": "05_Activities",
+      "metaclass": "Activity",
+      "stereotype": "",
+      "documentation": "典型业务行为：用户终端发送数据→卫星接收→（可能星间转发）→信关站→地面骨干网→互联网；反向亦然。根据目前澄清，假设透明转发模式。",
+      "source_requirement": "REQ-007",
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "ACT-001",
+        "external_id": null,
+        "package": "05_Activities"
+      }
+    },
+    {
+      "local_id": "CON-001",
+      "name": "端到端时延约束",
+      "type": "ConstraintBlock",
+      "package": "06_Constraints",
+      "metaclass": "Class",
+      "stereotype": "SysML::ConstraintBlocks::ConstraintBlock",
+      "documentation": "系统端到端通信时延应不超过待定值（如30ms或50ms），需考虑传播与处理时延。",
+      "source_requirement": "REQ-004",
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "CON-001",
+        "external_id": null,
+        "package": "06_Constraints"
+      }
+    },
+    {
+      "local_id": "CON-002",
+      "name": "单星质量功耗约束",
+      "type": "ConstraintBlock",
+      "package": "06_Constraints",
+      "metaclass": "Class",
+      "stereotype": "SysML::ConstraintBlocks::ConstraintBlock",
+      "documentation": "单星质量、功耗、成本等限制，数值待用户提供。",
+      "source_requirement": "REQ-008",
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "CON-002",
+        "external_id": null,
+        "package": "06_Constraints"
+      }
+    },
+    {
+      "local_id": "ACTOR-001",
+      "name": "用户",
+      "type": "Actor",
+      "package": "00_Actors",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "最终用户通过终端使用互联网接入服务。",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "ACTOR-001",
+        "external_id": null,
+        "package": "00_Actors"
+      }
+    },
+    {
+      "local_id": "ACTOR-002",
+      "name": "星座运营者",
+      "type": "Actor",
+      "package": "00_Actors",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "负责配置和监督星座运行。",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "ACTOR-002",
+        "external_id": null,
+        "package": "00_Actors"
+      }
+    },
+    {
+      "local_id": "ACTOR-003",
+      "name": "互联网骨干网",
+      "type": "Actor",
+      "package": "00_Actors",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "外部互联网基础设施，提供上连接入。",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "ACTOR-003",
+        "external_id": null,
+        "package": "00_Actors"
+      }
+    },
+    {
+      "local_id": "ACTOR-004",
+      "name": "导航增强系统",
+      "type": "Actor",
+      "package": "00_Actors",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "外部导航增强信号源或服务。",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "ACTOR-004",
+        "external_id": null,
+        "package": "00_Actors"
+      }
+    },
+    {
+      "local_id": "ACTOR-005",
+      "name": "遥测遥控网",
+      "type": "Actor",
+      "package": "00_Actors",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "地面TT&C网络，用于卫星状态监测与控制。",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "ACTOR-005",
+        "external_id": null,
+        "package": "00_Actors"
+      }
+    },
+    {
+      "local_id": "IBD-BLK-001",
+      "name": "卫星",
+      "type": "Block",
+      "package": "02_Structure",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "低轨道通信卫星，包含通信载荷、星间/星地终端，数量100颗。",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "IBD-BLK-001",
+        "external_id": null,
+        "package": "02_Structure"
+      }
+    },
+    {
+      "local_id": "IBD-BLK-002",
+      "name": "信关站",
+      "type": "Block",
+      "package": "02_Structure",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "地面关口站，连接卫星与地面骨干网，负责馈电链路。",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "IBD-BLK-002",
+        "external_id": null,
+        "package": "02_Structure"
+      }
+    },
+    {
+      "local_id": "IBD-BLK-003",
+      "name": "用户终端",
+      "type": "Block",
+      "package": "02_Structure",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "各类用户接入设备（动中通、固定、手持等），通过星地链路接入卫星。",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "IBD-BLK-003",
+        "external_id": null,
+        "package": "02_Structure"
+      }
+    },
+    {
+      "local_id": "IBD-BLK-004",
+      "name": "运营支撑系统",
+      "type": "Block",
+      "package": "02_Structure",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "地面运营控制中心，负责星座管理、路由配置、性能监控等。",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "IBD-BLK-004",
+        "external_id": null,
+        "package": "02_Structure"
+      }
+    },
+    {
+      "local_id": "IBD-IF-001",
+      "name": "星地用户链路接口",
+      "type": "Interface",
+      "package": "04_Interfaces",
+      "metaclass": "Interface",
+      "stereotype": "SysML::PortsAndFlows::InterfaceBlock",
+      "documentation": "卫星与用户终端之间的射频/基带接口。",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "IBD-IF-001",
+        "external_id": null,
+        "package": "04_Interfaces"
+      }
+    },
+    {
+      "local_id": "IBD-IF-002",
+      "name": "星间链路接口",
+      "type": "Interface",
+      "package": "04_Interfaces",
+      "metaclass": "Interface",
+      "stereotype": "SysML::PortsAndFlows::InterfaceBlock",
+      "documentation": "卫星之间的激光/微波接口，用于互联。",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "IBD-IF-002",
+        "external_id": null,
+        "package": "04_Interfaces"
+      }
+    },
+    {
+      "local_id": "IBD-IF-003",
+      "name": "馈电链路接口",
+      "type": "Interface",
+      "package": "04_Interfaces",
+      "metaclass": "Interface",
+      "stereotype": "SysML::PortsAndFlows::InterfaceBlock",
+      "documentation": "卫星与信关站之间的高速链路。",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "IBD-IF-003",
+        "external_id": null,
+        "package": "04_Interfaces"
+      }
+    },
+    {
+      "local_id": "IBD-IF-004",
+      "name": "互联网接入接口",
+      "type": "Interface",
+      "package": "04_Interfaces",
+      "metaclass": "Interface",
+      "stereotype": "SysML::PortsAndFlows::InterfaceBlock",
+      "documentation": "信关站与互联网骨干网的外部接口。",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "IBD-IF-004",
+        "external_id": null,
+        "package": "04_Interfaces"
+      }
+    },
+    {
+      "local_id": "IBD-IF-005",
+      "name": "导航增强接口",
+      "type": "Interface",
+      "package": "04_Interfaces",
+      "metaclass": "Interface",
+      "stereotype": "SysML::PortsAndFlows::InterfaceBlock",
+      "documentation": "系统与导航增强系统的接口（可能通过星上载荷或信关站）。",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "IBD-IF-005",
+        "external_id": null,
+        "package": "04_Interfaces"
+      }
+    },
+    {
+      "local_id": "IBD-IF-006",
+      "name": "遥测遥控接口",
+      "type": "Interface",
+      "package": "04_Interfaces",
+      "metaclass": "Interface",
+      "stereotype": "SysML::PortsAndFlows::InterfaceBlock",
+      "documentation": "与地面TT&C网络的接口，通常通过专用频段或信关站。",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "IBD-IF-006",
+        "external_id": null,
+        "package": "04_Interfaces"
+      }
+    },
+    {
+      "local_id": "IBD-IF-BLK-002-001",
+      "name": "卫星输入接口",
+      "type": "Interface",
+      "package": "04_Interfaces",
+      "metaclass": "Interface",
+      "stereotype": "SysML::PortsAndFlows::InterfaceBlock",
+      "documentation": "接入 卫星 的外部任务、数据、信号、控制或资源输入。",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "IBD-IF-BLK-002-001",
+        "external_id": null,
+        "package": "04_Interfaces"
+      }
+    },
+    {
+      "local_id": "IBD-BLK-BLK-002-001",
+      "name": "携带通信载荷接入与整形单元",
+      "type": "Block",
+      "package": "02_Structure",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "完成 携带通信载荷 相关输入接入、格式整形、初步校核或信号调理。",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "IBD-BLK-BLK-002-001",
+        "external_id": null,
+        "package": "02_Structure"
+      }
+    },
+    {
+      "local_id": "IBD-BLK-BLK-002-002",
+      "name": "星间链路终端处理单元",
+      "type": "Block",
+      "package": "02_Structure",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "承担 星间链路终端 相关核心处理、转换、分析或计算职责。",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "IBD-BLK-BLK-002-002",
+        "external_id": null,
+        "package": "02_Structure"
+      }
+    },
+    {
+      "local_id": "IBD-BLK-BLK-002-003",
+      "name": "星地链路终端控制管理单元",
+      "type": "Block",
+      "package": "02_Structure",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "执行 星地链路终端 相关模式控制、参数配置、调度或策略管理。",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "IBD-BLK-BLK-002-003",
+        "external_id": null,
+        "package": "02_Structure"
+      }
+    },
+    {
+      "local_id": "IBD-BLK-BLK-002-004",
+      "name": "路由执行输出单元",
+      "type": "Block",
+      "package": "02_Structure",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "将内部处理结果转换为 路由 相关输出、转发、执行或服务交付。",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "IBD-BLK-BLK-002-004",
+        "external_id": null,
+        "package": "02_Structure"
+      }
+    },
+    {
+      "local_id": "IBD-IF-BLK-002-002",
+      "name": "卫星输出接口",
+      "type": "Interface",
+      "package": "04_Interfaces",
+      "metaclass": "Interface",
+      "stereotype": "SysML::PortsAndFlows::InterfaceBlock",
+      "documentation": "对外交付 卫星 的处理结果、业务数据、状态或服务输出。",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "IBD-IF-BLK-002-002",
+        "external_id": null,
+        "package": "04_Interfaces"
+      }
+    },
+    {
+      "local_id": "IBD-BLK-BLK-002-005",
+      "name": "状态监测与保护单元",
+      "type": "Block",
+      "package": "02_Structure",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "采集 卫星 内部状态、健康遥测、告警和保护动作。",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "IBD-BLK-BLK-002-005",
+        "external_id": null,
+        "package": "02_Structure"
+      }
+    },
+    {
+      "local_id": "IBD-IF-BLK-002-003",
+      "name": "平台资源接口",
+      "type": "Interface",
+      "package": "04_Interfaces",
+      "metaclass": "Interface",
+      "stereotype": "SysML::PortsAndFlows::InterfaceBlock",
+      "documentation": "连接供电、热控、时间同步、遥测遥控或平台支撑资源。",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "IBD-IF-BLK-002-003",
+        "external_id": null,
+        "package": "04_Interfaces"
+      }
+    },
+    {
+      "local_id": "IBD-IF-BLK-003-001",
+      "name": "信关站输入接口",
+      "type": "Interface",
+      "package": "04_Interfaces",
+      "metaclass": "Interface",
+      "stereotype": "SysML::PortsAndFlows::InterfaceBlock",
+      "documentation": "接入 信关站 的外部任务、数据、信号、控制或资源输入。",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "IBD-IF-BLK-003-001",
+        "external_id": null,
+        "package": "04_Interfaces"
+      }
+    },
+    {
+      "local_id": "IBD-BLK-BLK-003-001",
+      "name": "地面关口站接入与整形单元",
+      "type": "Block",
+      "package": "02_Structure",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "完成 地面关口站 相关输入接入、格式整形、初步校核或信号调理。",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "IBD-BLK-BLK-003-001",
+        "external_id": null,
+        "package": "02_Structure"
+      }
+    },
+    {
+      "local_id": "IBD-BLK-BLK-003-002",
+      "name": "连接卫星处理单元",
+      "type": "Block",
+      "package": "02_Structure",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "承担 连接卫星 相关核心处理、转换、分析或计算职责。",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "IBD-BLK-BLK-003-002",
+        "external_id": null,
+        "package": "02_Structure"
+      }
+    },
+    {
+      "local_id": "IBD-BLK-BLK-003-003",
+      "name": "地面骨干网控制管理单元",
+      "type": "Block",
+      "package": "02_Structure",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "执行 地面骨干网 相关模式控制、参数配置、调度或策略管理。",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "IBD-BLK-BLK-003-003",
+        "external_id": null,
+        "package": "02_Structure"
+      }
+    },
+    {
+      "local_id": "IBD-BLK-BLK-003-004",
+      "name": "处理馈电链路执行输出单元",
+      "type": "Block",
+      "package": "02_Structure",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "将内部处理结果转换为 处理馈电链路 相关输出、转发、执行或服务交付。",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "IBD-BLK-BLK-003-004",
+        "external_id": null,
+        "package": "02_Structure"
+      }
+    },
+    {
+      "local_id": "IBD-IF-BLK-003-002",
+      "name": "信关站输出接口",
+      "type": "Interface",
+      "package": "04_Interfaces",
+      "metaclass": "Interface",
+      "stereotype": "SysML::PortsAndFlows::InterfaceBlock",
+      "documentation": "对外交付 信关站 的处理结果、业务数据、状态或服务输出。",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "IBD-IF-BLK-003-002",
+        "external_id": null,
+        "package": "04_Interfaces"
+      }
+    },
+    {
+      "local_id": "IBD-BLK-BLK-003-005",
+      "name": "状态监测与保护单元",
+      "type": "Block",
+      "package": "02_Structure",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "采集 信关站 内部状态、健康遥测、告警和保护动作。",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "IBD-BLK-BLK-003-005",
+        "external_id": null,
+        "package": "02_Structure"
+      }
+    },
+    {
+      "local_id": "IBD-IF-BLK-003-003",
+      "name": "平台资源接口",
+      "type": "Interface",
+      "package": "04_Interfaces",
+      "metaclass": "Interface",
+      "stereotype": "SysML::PortsAndFlows::InterfaceBlock",
+      "documentation": "连接供电、热控、时间同步、遥测遥控或平台支撑资源。",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "IBD-IF-BLK-003-003",
+        "external_id": null,
+        "package": "04_Interfaces"
+      }
+    },
+    {
+      "local_id": "IBD-IF-BLK-004-001",
+      "name": "用户终端输入接口",
+      "type": "Interface",
+      "package": "04_Interfaces",
+      "metaclass": "Interface",
+      "stereotype": "SysML::PortsAndFlows::InterfaceBlock",
+      "documentation": "接入 用户终端 的外部任务、数据、信号、控制或资源输入。",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "IBD-IF-BLK-004-001",
+        "external_id": null,
+        "package": "04_Interfaces"
+      }
+    },
+    {
+      "local_id": "IBD-BLK-BLK-004-001",
+      "name": "各种类型终端接入与整形单元",
+      "type": "Block",
+      "package": "02_Structure",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "完成 各种类型终端 相关输入接入、格式整形、初步校核或信号调理。",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "IBD-BLK-BLK-004-001",
+        "external_id": null,
+        "package": "02_Structure"
+      }
+    },
+    {
+      "local_id": "IBD-BLK-BLK-004-002",
+      "name": "动中通处理单元",
+      "type": "Block",
+      "package": "02_Structure",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "承担 动中通 相关核心处理、转换、分析或计算职责。",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "IBD-BLK-BLK-004-002",
+        "external_id": null,
+        "package": "02_Structure"
+      }
+    },
+    {
+      "local_id": "IBD-BLK-BLK-004-003",
+      "name": "固定站控制管理单元",
+      "type": "Block",
+      "package": "02_Structure",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "执行 固定站 相关模式控制、参数配置、调度或策略管理。",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "IBD-BLK-BLK-004-003",
+        "external_id": null,
+        "package": "02_Structure"
+      }
+    },
+    {
+      "local_id": "IBD-BLK-BLK-004-004",
+      "name": "手持终端等执行输出单元",
+      "type": "Block",
+      "package": "02_Structure",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "将内部处理结果转换为 手持终端等 相关输出、转发、执行或服务交付。",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "IBD-BLK-BLK-004-004",
+        "external_id": null,
+        "package": "02_Structure"
+      }
+    },
+    {
+      "local_id": "IBD-IF-BLK-004-002",
+      "name": "用户终端输出接口",
+      "type": "Interface",
+      "package": "04_Interfaces",
+      "metaclass": "Interface",
+      "stereotype": "SysML::PortsAndFlows::InterfaceBlock",
+      "documentation": "对外交付 用户终端 的处理结果、业务数据、状态或服务输出。",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "IBD-IF-BLK-004-002",
+        "external_id": null,
+        "package": "04_Interfaces"
+      }
+    },
+    {
+      "local_id": "IBD-BLK-BLK-004-005",
+      "name": "状态监测与保护单元",
+      "type": "Block",
+      "package": "02_Structure",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "采集 用户终端 内部状态、健康遥测、告警和保护动作。",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "IBD-BLK-BLK-004-005",
+        "external_id": null,
+        "package": "02_Structure"
+      }
+    },
+    {
+      "local_id": "IBD-IF-BLK-004-003",
+      "name": "平台资源接口",
+      "type": "Interface",
+      "package": "04_Interfaces",
+      "metaclass": "Interface",
+      "stereotype": "SysML::PortsAndFlows::InterfaceBlock",
+      "documentation": "连接供电、热控、时间同步、遥测遥控或平台支撑资源。",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "IBD-IF-BLK-004-003",
+        "external_id": null,
+        "package": "04_Interfaces"
+      }
+    },
+    {
+      "local_id": "IBD-BLK-SAT-CONST",
+      "name": "空间段（100颗卫星）",
+      "type": "Block",
+      "package": "02_System_Structure",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "由100颗低轨通信卫星组成的星座，每颗卫星具备通信载荷、星间链路终端和星地链路终端，共同提供全球覆盖。",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "IBD-BLK-SAT-CONST",
+        "external_id": null,
+        "package": "02_System_Structure"
+      }
+    },
+    {
+      "local_id": "IBD-BLK-GW",
+      "name": "地面信关站",
+      "type": "Block",
+      "package": "02_System_Structure",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "地面关口站，通过馈电链路与卫星连接，将用户业务接入地面骨干网。",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "IBD-BLK-GW",
+        "external_id": null,
+        "package": "02_System_Structure"
+      }
+    },
+    {
+      "local_id": "IBD-BLK-UT",
+      "name": "用户终端",
+      "type": "Block",
+      "package": "02_System_Structure",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "多种用户终端类型（动中通、固定站、手持终端等），通过星地用户链路接入卫星网络。",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "IBD-BLK-UT",
+        "external_id": null,
+        "package": "02_System_Structure"
+      }
+    },
+    {
+      "local_id": "IBD-BLK-OSS",
+      "name": "运营支撑系统",
+      "type": "Block",
+      "package": "02_System_Structure",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "系统运营管理核心，负责星座控制、网络管理、计费、安全等功能。",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "IBD-BLK-OSS",
+        "external_id": null,
+        "package": "02_System_Structure"
+      }
+    },
+    {
+      "local_id": "IBD-BLK-EXTNET",
+      "name": "外部网络（互联网骨干网等）",
+      "type": "Block",
+      "package": "02_System_Structure",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "外部系统，包括互联网骨干网、导航增强系统、遥测遥控网络等，与信关站互联。",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "IBD-BLK-EXTNET",
+        "external_id": null,
+        "package": "02_System_Structure"
+      }
+    },
+    {
+      "local_id": "IBD-IF-FEEDER",
+      "name": "馈电链路接口",
+      "type": "Interface",
+      "package": "03_Interfaces",
+      "metaclass": "Interface",
+      "stereotype": "SysML::PortsAndFlows::InterfaceBlock",
+      "documentation": "卫星与信关站之间的通信接口，承载汇聚业务数据。",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "IBD-IF-FEEDER",
+        "external_id": null,
+        "package": "03_Interfaces"
+      }
+    },
+    {
+      "local_id": "IBD-IF-USER",
+      "name": "星地用户链路接口",
+      "type": "Interface",
+      "package": "03_Interfaces",
+      "metaclass": "Interface",
+      "stereotype": "SysML::PortsAndFlows::InterfaceBlock",
+      "documentation": "卫星与用户终端之间的通信接口，提供宽带接入。",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "IBD-IF-USER",
+        "external_id": null,
+        "package": "03_Interfaces"
+      }
+    },
+    {
+      "local_id": "IBD-IF-MGMT",
+      "name": "管理接口",
+      "type": "Interface",
+      "package": "03_Interfaces",
+      "metaclass": "Interface",
+      "stereotype": "SysML::PortsAndFlows::InterfaceBlock",
+      "documentation": "运营支撑系统与信关站、卫星星座之间的监控与管理接口。",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "IBD-IF-MGMT",
+        "external_id": null,
+        "package": "03_Interfaces"
+      }
+    },
+    {
+      "local_id": "IBD-IF-EXT",
+      "name": "外部网络接口",
+      "type": "Interface",
+      "package": "03_Interfaces",
+      "metaclass": "Interface",
+      "stereotype": "SysML::PortsAndFlows::InterfaceBlock",
+      "documentation": "信关站与外部互联网骨干网等外部系统的连接接口。",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "IBD-IF-EXT",
+        "external_id": null,
+        "package": "03_Interfaces"
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "local_id": "REL-001",
+      "name": "REL-001",
+      "type": "contains",
+      "package": "06_Traceability",
+      "metaclass": "Association",
+      "stereotype": "CompositeAssociation",
+      "source": "BLK-001",
+      "source_name": "低轨卫星互联网系统",
+      "target": "BLK-002",
+      "target_name": "卫星",
+      "documentation": "系统包含100颗卫星"
+    },
+    {
+      "local_id": "REL-002",
+      "name": "REL-002",
+      "type": "contains",
+      "package": "06_Traceability",
+      "metaclass": "Association",
+      "stereotype": "CompositeAssociation",
+      "source": "BLK-001",
+      "source_name": "低轨卫星互联网系统",
+      "target": "BLK-003",
+      "target_name": "信关站",
+      "documentation": "系统包含地面信关站"
+    },
+    {
+      "local_id": "REL-003",
+      "name": "REL-003",
+      "type": "contains",
+      "package": "06_Traceability",
+      "metaclass": "Association",
+      "stereotype": "CompositeAssociation",
+      "source": "BLK-001",
+      "source_name": "低轨卫星互联网系统",
+      "target": "BLK-004",
+      "target_name": "用户终端",
+      "documentation": "系统支持多种用户终端"
+    },
+    {
+      "local_id": "REL-004",
+      "name": "REL-004",
+      "type": "trace",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Trace",
+      "source": "REQ-003",
+      "source_name": "通信频段与链路类型",
+      "target": "IF-001",
+      "target_name": "星地用户链路接口",
+      "documentation": "通信频段与链路需求对应星地用户链路接口"
+    },
+    {
+      "local_id": "REL-005",
+      "name": "REL-005",
+      "type": "trace",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Trace",
+      "source": "REQ-003",
+      "source_name": "通信频段与链路类型",
+      "target": "IF-002",
+      "target_name": "星间链路接口",
+      "documentation": "星间链路需求对应星间链路接口"
+    },
+    {
+      "local_id": "REL-006",
+      "name": "REL-006",
+      "type": "trace",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Trace",
+      "source": "REQ-005",
+      "source_name": "系统边界与外部接口",
+      "target": "IF-003",
+      "target_name": "馈电链路接口",
+      "documentation": "系统边界需求包含馈电链路接口"
+    },
+    {
+      "local_id": "REL-007",
+      "name": "REL-007",
+      "type": "trace",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Trace",
+      "source": "REQ-007",
+      "source_name": "业务链路模式",
+      "target": "ACT-001",
+      "target_name": "用户终端到互联网的通信流程",
+      "documentation": "业务链路模式需求由通信流程活动实现"
+    },
+    {
+      "local_id": "REL-008",
+      "name": "REL-008",
+      "type": "refine",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Refine",
+      "source": "REQ-004",
+      "source_name": "系统容量与时延",
+      "target": "CON-001",
+      "target_name": "端到端时延约束",
+      "documentation": "时延指标细化为约束块"
+    },
+    {
+      "local_id": "REL-009",
+      "name": "REL-009",
+      "type": "refine",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Refine",
+      "source": "REQ-008",
+      "source_name": "卫星平台约束",
+      "target": "CON-002",
+      "target_name": "单星质量功耗约束",
+      "documentation": "卫星平台约束细化为质量功耗约束块"
+    },
+    {
+      "local_id": "REL-010",
+      "name": "REL-010",
+      "type": "satisfy",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Satisfy",
+      "source": "UC-002",
+      "source_name": "提供全球通信服务",
+      "target": "REQ-004",
+      "target_name": "系统容量与时延",
+      "documentation": "提供全球通信服务用例满足容量与时延需求"
+    },
+    {
+      "local_id": "REL-011",
+      "name": "REL-011",
+      "type": "trace",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Trace",
+      "source": "UC-003",
+      "source_name": "管理星间路由",
+      "target": "IF-002",
+      "target_name": "星间链路接口",
+      "documentation": "星间路由用例依赖星间链路接口"
+    },
+    {
+      "local_id": "REL-012",
+      "name": "REL-012",
+      "type": "trace",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Trace",
+      "source": "REQ-001",
+      "source_name": "轨道高度与倾角",
+      "target": "UC-001",
+      "target_name": "配置星座参数",
+      "documentation": "轨道需求驱动星座配置用例"
+    },
+    {
+      "local_id": "DREL-UC-001",
+      "name": "DREL-UC-001",
+      "type": "association",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "Dependency",
+      "source": "ACTOR-001",
+      "source_name": "用户",
+      "target": "UC-002",
+      "target_name": "提供全球通信服务",
+      "documentation": "用户发起通信，使用接入服务。"
+    },
+    {
+      "local_id": "DREL-UC-002",
+      "name": "DREL-UC-002",
+      "type": "association",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "Dependency",
+      "source": "ACTOR-002",
+      "source_name": "星座运营者",
+      "target": "UC-001",
+      "target_name": "配置星座参数",
+      "documentation": "运营者配置星座。"
+    },
+    {
+      "local_id": "DREL-UC-003",
+      "name": "DREL-UC-003",
+      "type": "association",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "Dependency",
+      "source": "ACTOR-002",
+      "source_name": "星座运营者",
+      "target": "UC-003",
+      "target_name": "管理星间路由",
+      "documentation": "运营者管理路由策略。"
+    },
+    {
+      "local_id": "DREL-UC-004",
+      "name": "DREL-UC-004",
+      "type": "association",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "Dependency",
+      "source": "ACTOR-003",
+      "source_name": "互联网骨干网",
+      "target": "UC-002",
+      "target_name": "提供全球通信服务",
+      "documentation": "系统需连接互联网骨干网完成全球接入。"
+    },
+    {
+      "local_id": "DREL-UC-005",
+      "name": "DREL-UC-005",
+      "type": "association",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "Dependency",
+      "source": "ACTOR-004",
+      "source_name": "导航增强系统",
+      "target": "UC-002",
+      "target_name": "提供全球通信服务",
+      "documentation": "系统可能利用导航增强信息提升服务。"
+    },
+    {
+      "local_id": "DREL-UC-006",
+      "name": "DREL-UC-006",
+      "type": "association",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "Dependency",
+      "source": "ACTOR-005",
+      "source_name": "遥测遥控网",
+      "target": "UC-001",
+      "target_name": "配置星座参数",
+      "documentation": "配置操作依赖遥测遥控网反馈。"
+    },
+    {
+      "local_id": "DREL-UC-007",
+      "name": "DREL-UC-007",
+      "type": "include",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "Dependency",
+      "source": "UC-002",
+      "source_name": "提供全球通信服务",
+      "target": "UC-003",
+      "target_name": "管理星间路由",
+      "documentation": "全球接入可能依赖星间路由实现广域覆盖。"
+    },
+    {
+      "local_id": "DTRACE-UC-002-IBD-BLK-001",
+      "name": "DTRACE-UC-002-IBD-BLK-001",
+      "type": "realize",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "Dependency",
+      "source": "UC-002",
+      "source_name": "提供全球通信服务",
+      "target": "IBD-BLK-001",
+      "target_name": "卫星",
+      "documentation": "该用例由空间段卫星、信关站、用户终端和运营支撑系统共同实现。"
+    },
+    {
+      "local_id": "DTRACE-UC-002-IBD-BLK-002",
+      "name": "DTRACE-UC-002-IBD-BLK-002",
+      "type": "realize",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "Dependency",
+      "source": "UC-002",
+      "source_name": "提供全球通信服务",
+      "target": "IBD-BLK-002",
+      "target_name": "信关站",
+      "documentation": "该用例由空间段卫星、信关站、用户终端和运营支撑系统共同实现。"
+    },
+    {
+      "local_id": "DTRACE-UC-002-IBD-BLK-003",
+      "name": "DTRACE-UC-002-IBD-BLK-003",
+      "type": "realize",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "Dependency",
+      "source": "UC-002",
+      "source_name": "提供全球通信服务",
+      "target": "IBD-BLK-003",
+      "target_name": "用户终端",
+      "documentation": "该用例由空间段卫星、信关站、用户终端和运营支撑系统共同实现。"
+    },
+    {
+      "local_id": "DTRACE-UC-002-IBD-BLK-004",
+      "name": "DTRACE-UC-002-IBD-BLK-004",
+      "type": "realize",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "Dependency",
+      "source": "UC-002",
+      "source_name": "提供全球通信服务",
+      "target": "IBD-BLK-004",
+      "target_name": "运营支撑系统",
+      "documentation": "该用例由空间段卫星、信关站、用户终端和运营支撑系统共同实现。"
+    },
+    {
+      "local_id": "DTRACE-UC-001-IBD-BLK-001",
+      "name": "DTRACE-UC-001-IBD-BLK-001",
+      "type": "realize",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "Dependency",
+      "source": "UC-001",
+      "source_name": "配置星座参数",
+      "target": "IBD-BLK-001",
+      "target_name": "卫星",
+      "documentation": "星座配置涉及卫星平台和运营支撑，信关站辅助。"
+    },
+    {
+      "local_id": "DTRACE-UC-001-IBD-BLK-002",
+      "name": "DTRACE-UC-001-IBD-BLK-002",
+      "type": "realize",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "Dependency",
+      "source": "UC-001",
+      "source_name": "配置星座参数",
+      "target": "IBD-BLK-002",
+      "target_name": "信关站",
+      "documentation": "星座配置涉及卫星平台和运营支撑，信关站辅助。"
+    },
+    {
+      "local_id": "DTRACE-UC-001-IBD-BLK-004",
+      "name": "DTRACE-UC-001-IBD-BLK-004",
+      "type": "realize",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "Dependency",
+      "source": "UC-001",
+      "source_name": "配置星座参数",
+      "target": "IBD-BLK-004",
+      "target_name": "运营支撑系统",
+      "documentation": "星座配置涉及卫星平台和运营支撑，信关站辅助。"
+    },
+    {
+      "local_id": "DTRACE-UC-003-IBD-BLK-001",
+      "name": "DTRACE-UC-003-IBD-BLK-001",
+      "type": "realize",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "Dependency",
+      "source": "UC-003",
+      "source_name": "管理星间路由",
+      "target": "IBD-BLK-001",
+      "target_name": "卫星",
+      "documentation": "星间路由主要依靠卫星上的星间链路终端和路由功能。"
+    },
+    {
+      "local_id": "DTRACE-UC-003-IBD-BLK-002",
+      "name": "DTRACE-UC-003-IBD-BLK-002",
+      "type": "realize",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "Dependency",
+      "source": "UC-003",
+      "source_name": "管理星间路由",
+      "target": "IBD-BLK-002",
+      "target_name": "信关站",
+      "documentation": "星间路由主要依靠卫星上的星间链路终端和路由功能。"
+    },
+    {
+      "local_id": "DREL-IBD-001",
+      "name": "DREL-IBD-001",
+      "type": "connector",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "Dependency",
+      "source": "IBD-BLK-001",
+      "source_name": "卫星",
+      "target": "IBD-IF-001",
+      "target_name": "星地用户链路接口",
+      "documentation": "卫星通过星地用户链路接口连接用户终端。"
+    },
+    {
+      "local_id": "DREL-IBD-002",
+      "name": "DREL-IBD-002",
+      "type": "connector",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "Dependency",
+      "source": "IBD-BLK-003",
+      "source_name": "用户终端",
+      "target": "IBD-IF-001",
+      "target_name": "星地用户链路接口",
+      "documentation": "用户终端连接到同一接口。"
+    },
+    {
+      "local_id": "DREL-IBD-003",
+      "name": "DREL-IBD-003",
+      "type": "connector",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "Dependency",
+      "source": "IBD-BLK-001",
+      "source_name": "卫星",
+      "target": "IBD-IF-002",
+      "target_name": "星间链路接口",
+      "documentation": "卫星之间通过星间链路接口互联。"
+    },
+    {
+      "local_id": "DREL-IBD-004",
+      "name": "DREL-IBD-004",
+      "type": "connector",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "Dependency",
+      "source": "IBD-BLK-001",
+      "source_name": "卫星",
+      "target": "IBD-IF-003",
+      "target_name": "馈电链路接口",
+      "documentation": "卫星与信关站通过馈电链路接口连接。"
+    },
+    {
+      "local_id": "DREL-IBD-005",
+      "name": "DREL-IBD-005",
+      "type": "connector",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "Dependency",
+      "source": "IBD-BLK-002",
+      "source_name": "信关站",
+      "target": "IBD-IF-003",
+      "target_name": "馈电链路接口",
+      "documentation": "信关站侧馈电接口。"
+    },
+    {
+      "local_id": "DREL-IBD-006",
+      "name": "DREL-IBD-006",
+      "type": "connector",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "Dependency",
+      "source": "IBD-BLK-002",
+      "source_name": "信关站",
+      "target": "IBD-IF-004",
+      "target_name": "互联网接入接口",
+      "documentation": "信关站连接到互联网接入接口。"
+    },
+    {
+      "local_id": "DREL-IBD-007",
+      "name": "DREL-IBD-007",
+      "type": "connector",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "Dependency",
+      "source": "IBD-BLK-004",
+      "source_name": "运营支撑系统",
+      "target": "IBD-IF-006",
+      "target_name": "遥测遥控接口",
+      "documentation": "运营支撑系统通过遥测遥控接口与TT&C网络相连。"
+    },
+    {
+      "local_id": "DREL-IBD-008",
+      "name": "DREL-IBD-008",
+      "type": "connector",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "Dependency",
+      "source": "IBD-BLK-001",
+      "source_name": "卫星",
+      "target": "IBD-IF-006",
+      "target_name": "遥测遥控接口",
+      "documentation": "卫星也需通过遥测遥控接口接收指令。"
+    },
+    {
+      "local_id": "DREL-IBD-009",
+      "name": "DREL-IBD-009",
+      "type": "connector",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "Dependency",
+      "source": "IBD-BLK-004",
+      "source_name": "运营支撑系统",
+      "target": "IBD-IF-005",
+      "target_name": "导航增强接口",
+      "documentation": "运营支撑系统处理导航增强数据。"
+    },
+    {
+      "local_id": "DREL-IBD-010",
+      "name": "DREL-IBD-010",
+      "type": "connector",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "Dependency",
+      "source": "IBD-BLK-001",
+      "source_name": "卫星",
+      "target": "IBD-IF-005",
+      "target_name": "导航增强接口",
+      "documentation": "卫星载荷可能接收导航增强信号。"
+    },
+    {
+      "local_id": "DREL-BLK-002-IBD-001",
+      "name": "DREL-BLK-002-IBD-001",
+      "type": "connector",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "Dependency",
+      "source": "IBD-IF-BLK-002-001",
+      "source_name": "卫星输入接口",
+      "target": "IBD-BLK-BLK-002-001",
+      "target_name": "携带通信载荷接入与整形单元",
+      "documentation": "输入边界到接入整形链路"
+    },
+    {
+      "local_id": "DREL-BLK-002-IBD-002",
+      "name": "DREL-BLK-002-IBD-002",
+      "type": "connector",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "Dependency",
+      "source": "IBD-BLK-BLK-002-001",
+      "source_name": "携带通信载荷接入与整形单元",
+      "target": "IBD-BLK-BLK-002-002",
+      "target_name": "星间链路终端处理单元",
+      "documentation": "接入整形结果进入核心处理"
+    },
+    {
+      "local_id": "DREL-BLK-002-IBD-003",
+      "name": "DREL-BLK-002-IBD-003",
+      "type": "connector",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "Dependency",
+      "source": "IBD-BLK-BLK-002-002",
+      "source_name": "星间链路终端处理单元",
+      "target": "IBD-BLK-BLK-002-003",
+      "target_name": "星地链路终端控制管理单元",
+      "documentation": "处理状态与控制管理交互"
+    },
+    {
+      "local_id": "DREL-BLK-002-IBD-004",
+      "name": "DREL-BLK-002-IBD-004",
+      "type": "connector",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "Dependency",
+      "source": "IBD-BLK-BLK-002-003",
+      "source_name": "星地链路终端控制管理单元",
+      "target": "IBD-BLK-BLK-002-004",
+      "target_name": "路由执行输出单元",
+      "documentation": "控制参数驱动执行输出"
+    },
+    {
+      "local_id": "DREL-BLK-002-IBD-005",
+      "name": "DREL-BLK-002-IBD-005",
+      "type": "connector",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "Dependency",
+      "source": "IBD-BLK-BLK-002-004",
+      "source_name": "路由执行输出单元",
+      "target": "IBD-IF-BLK-002-002",
+      "target_name": "卫星输出接口",
+      "documentation": "执行输出交付到外部接口"
+    },
+    {
+      "local_id": "DREL-BLK-002-IBD-006",
+      "name": "DREL-BLK-002-IBD-006",
+      "type": "connector",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "Dependency",
+      "source": "IBD-BLK-BLK-002-005",
+      "source_name": "状态监测与保护单元",
+      "target": "IBD-BLK-BLK-002-002",
+      "target_name": "星间链路终端处理单元",
+      "documentation": "健康状态反馈到核心处理"
+    },
+    {
+      "local_id": "DREL-BLK-002-IBD-007",
+      "name": "DREL-BLK-002-IBD-007",
+      "type": "connector",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "Dependency",
+      "source": "IBD-BLK-BLK-002-005",
+      "source_name": "状态监测与保护单元",
+      "target": "IBD-BLK-BLK-002-003",
+      "target_name": "星地链路终端控制管理单元",
+      "documentation": "告警与保护策略反馈到控制管理"
+    },
+    {
+      "local_id": "DREL-BLK-002-IBD-008",
+      "name": "DREL-BLK-002-IBD-008",
+      "type": "connector",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "Dependency",
+      "source": "IBD-IF-BLK-002-003",
+      "source_name": "平台资源接口",
+      "target": "IBD-BLK-BLK-002-005",
+      "target_name": "状态监测与保护单元",
+      "documentation": "平台资源和遥测支撑状态监测"
+    },
+    {
+      "local_id": "DREL-BLK-003-IBD-001",
+      "name": "DREL-BLK-003-IBD-001",
+      "type": "connector",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "Dependency",
+      "source": "IBD-IF-BLK-003-001",
+      "source_name": "信关站输入接口",
+      "target": "IBD-BLK-BLK-003-001",
+      "target_name": "地面关口站接入与整形单元",
+      "documentation": "输入边界到接入整形链路"
+    },
+    {
+      "local_id": "DREL-BLK-003-IBD-002",
+      "name": "DREL-BLK-003-IBD-002",
+      "type": "connector",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "Dependency",
+      "source": "IBD-BLK-BLK-003-001",
+      "source_name": "地面关口站接入与整形单元",
+      "target": "IBD-BLK-BLK-003-002",
+      "target_name": "连接卫星处理单元",
+      "documentation": "接入整形结果进入核心处理"
+    },
+    {
+      "local_id": "DREL-BLK-003-IBD-003",
+      "name": "DREL-BLK-003-IBD-003",
+      "type": "connector",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "Dependency",
+      "source": "IBD-BLK-BLK-003-002",
+      "source_name": "连接卫星处理单元",
+      "target": "IBD-BLK-BLK-003-003",
+      "target_name": "地面骨干网控制管理单元",
+      "documentation": "处理状态与控制管理交互"
+    },
+    {
+      "local_id": "DREL-BLK-003-IBD-004",
+      "name": "DREL-BLK-003-IBD-004",
+      "type": "connector",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "Dependency",
+      "source": "IBD-BLK-BLK-003-003",
+      "source_name": "地面骨干网控制管理单元",
+      "target": "IBD-BLK-BLK-003-004",
+      "target_name": "处理馈电链路执行输出单元",
+      "documentation": "控制参数驱动执行输出"
+    },
+    {
+      "local_id": "DREL-BLK-003-IBD-005",
+      "name": "DREL-BLK-003-IBD-005",
+      "type": "connector",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "Dependency",
+      "source": "IBD-BLK-BLK-003-004",
+      "source_name": "处理馈电链路执行输出单元",
+      "target": "IBD-IF-BLK-003-002",
+      "target_name": "信关站输出接口",
+      "documentation": "执行输出交付到外部接口"
+    },
+    {
+      "local_id": "DREL-BLK-003-IBD-006",
+      "name": "DREL-BLK-003-IBD-006",
+      "type": "connector",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "Dependency",
+      "source": "IBD-BLK-BLK-003-005",
+      "source_name": "状态监测与保护单元",
+      "target": "IBD-BLK-BLK-003-002",
+      "target_name": "连接卫星处理单元",
+      "documentation": "健康状态反馈到核心处理"
+    },
+    {
+      "local_id": "DREL-BLK-003-IBD-007",
+      "name": "DREL-BLK-003-IBD-007",
+      "type": "connector",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "Dependency",
+      "source": "IBD-BLK-BLK-003-005",
+      "source_name": "状态监测与保护单元",
+      "target": "IBD-BLK-BLK-003-003",
+      "target_name": "地面骨干网控制管理单元",
+      "documentation": "告警与保护策略反馈到控制管理"
+    },
+    {
+      "local_id": "DREL-BLK-003-IBD-008",
+      "name": "DREL-BLK-003-IBD-008",
+      "type": "connector",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "Dependency",
+      "source": "IBD-IF-BLK-003-003",
+      "source_name": "平台资源接口",
+      "target": "IBD-BLK-BLK-003-005",
+      "target_name": "状态监测与保护单元",
+      "documentation": "平台资源和遥测支撑状态监测"
+    },
+    {
+      "local_id": "DREL-BLK-004-IBD-001",
+      "name": "DREL-BLK-004-IBD-001",
+      "type": "connector",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "Dependency",
+      "source": "IBD-IF-BLK-004-001",
+      "source_name": "用户终端输入接口",
+      "target": "IBD-BLK-BLK-004-001",
+      "target_name": "各种类型终端接入与整形单元",
+      "documentation": "输入边界到接入整形链路"
+    },
+    {
+      "local_id": "DREL-BLK-004-IBD-002",
+      "name": "DREL-BLK-004-IBD-002",
+      "type": "connector",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "Dependency",
+      "source": "IBD-BLK-BLK-004-001",
+      "source_name": "各种类型终端接入与整形单元",
+      "target": "IBD-BLK-BLK-004-002",
+      "target_name": "动中通处理单元",
+      "documentation": "接入整形结果进入核心处理"
+    },
+    {
+      "local_id": "DREL-BLK-004-IBD-003",
+      "name": "DREL-BLK-004-IBD-003",
+      "type": "connector",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "Dependency",
+      "source": "IBD-BLK-BLK-004-002",
+      "source_name": "动中通处理单元",
+      "target": "IBD-BLK-BLK-004-003",
+      "target_name": "固定站控制管理单元",
+      "documentation": "处理状态与控制管理交互"
+    },
+    {
+      "local_id": "DREL-BLK-004-IBD-004",
+      "name": "DREL-BLK-004-IBD-004",
+      "type": "connector",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "Dependency",
+      "source": "IBD-BLK-BLK-004-003",
+      "source_name": "固定站控制管理单元",
+      "target": "IBD-BLK-BLK-004-004",
+      "target_name": "手持终端等执行输出单元",
+      "documentation": "控制参数驱动执行输出"
+    },
+    {
+      "local_id": "DREL-BLK-004-IBD-005",
+      "name": "DREL-BLK-004-IBD-005",
+      "type": "connector",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "Dependency",
+      "source": "IBD-BLK-BLK-004-004",
+      "source_name": "手持终端等执行输出单元",
+      "target": "IBD-IF-BLK-004-002",
+      "target_name": "用户终端输出接口",
+      "documentation": "执行输出交付到外部接口"
+    },
+    {
+      "local_id": "DREL-BLK-004-IBD-006",
+      "name": "DREL-BLK-004-IBD-006",
+      "type": "connector",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "Dependency",
+      "source": "IBD-BLK-BLK-004-005",
+      "source_name": "状态监测与保护单元",
+      "target": "IBD-BLK-BLK-004-002",
+      "target_name": "动中通处理单元",
+      "documentation": "健康状态反馈到核心处理"
+    },
+    {
+      "local_id": "DREL-BLK-004-IBD-007",
+      "name": "DREL-BLK-004-IBD-007",
+      "type": "connector",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "Dependency",
+      "source": "IBD-BLK-BLK-004-005",
+      "source_name": "状态监测与保护单元",
+      "target": "IBD-BLK-BLK-004-003",
+      "target_name": "固定站控制管理单元",
+      "documentation": "告警与保护策略反馈到控制管理"
+    },
+    {
+      "local_id": "DREL-BLK-004-IBD-008",
+      "name": "DREL-BLK-004-IBD-008",
+      "type": "connector",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "Dependency",
+      "source": "IBD-IF-BLK-004-003",
+      "source_name": "平台资源接口",
+      "target": "IBD-BLK-BLK-004-005",
+      "target_name": "状态监测与保护单元",
+      "documentation": "平台资源和遥测支撑状态监测"
+    }
+  ],
+  "diagram_layout": {
+    "schema": "ai-mbse.diagram-layout.v1",
+    "diagram_name": "AI_MBSE_Trace_View",
+    "layout_source": "backend",
+    "width": 1660,
+    "height": 1232,
+    "nodes": [
+      {
+        "id": "ACT-001",
+        "element_id": "ACT-001",
+        "name": "用户终端到互联网的通信流程",
+        "label": "ACT-001 - 用户终端到互联网的通信流程",
+        "type": "Activity",
+        "stereotype_label": "«activity»",
+        "shape": "rect",
+        "column": 0,
+        "row": 0,
+        "x": 70,
+        "y": 80,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "BLK-001",
+        "element_id": "BLK-001",
+        "name": "低轨卫星互联网系统",
+        "label": "BLK-001 - 低轨卫星互联网系统",
+        "type": "Block",
+        "stereotype_label": "«block»",
+        "shape": "rect",
+        "column": 1,
+        "row": 0,
+        "x": 330,
+        "y": 80,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "BLK-002",
+        "element_id": "BLK-002",
+        "name": "卫星",
+        "label": "BLK-002 - 卫星",
+        "type": "Block",
+        "stereotype_label": "«block»",
+        "shape": "rect",
+        "column": 1,
+        "row": 1,
+        "x": 330,
+        "y": 205,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "BLK-003",
+        "element_id": "BLK-003",
+        "name": "信关站",
+        "label": "BLK-003 - 信关站",
+        "type": "Block",
+        "stereotype_label": "«block»",
+        "shape": "rect",
+        "column": 1,
+        "row": 2,
+        "x": 330,
+        "y": 330,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "BLK-004",
+        "element_id": "BLK-004",
+        "name": "用户终端",
+        "label": "BLK-004 - 用户终端",
+        "type": "Block",
+        "stereotype_label": "«block»",
+        "shape": "rect",
+        "column": 1,
+        "row": 3,
+        "x": 330,
+        "y": 455,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "REQ-001",
+        "element_id": "REQ-001",
+        "name": "轨道高度与倾角",
+        "label": "REQ-001 - 轨道高度与倾角",
+        "type": "Requirement",
+        "stereotype_label": "«requirement»",
+        "shape": "rect",
+        "column": 2,
+        "row": 0,
+        "x": 590,
+        "y": 80,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "REQ-002",
+        "element_id": "REQ-002",
+        "name": "星座规模与分布",
+        "label": "REQ-002 - 星座规模与分布",
+        "type": "Requirement",
+        "stereotype_label": "«requirement»",
+        "shape": "rect",
+        "column": 2,
+        "row": 1,
+        "x": 590,
+        "y": 205,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "REQ-003",
+        "element_id": "REQ-003",
+        "name": "通信频段与链路类型",
+        "label": "REQ-003 - 通信频段与链路类型",
+        "type": "Requirement",
+        "stereotype_label": "«requirement»",
+        "shape": "rect",
+        "column": 2,
+        "row": 2,
+        "x": 590,
+        "y": 330,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "REQ-004",
+        "element_id": "REQ-004",
+        "name": "系统容量与时延",
+        "label": "REQ-004 - 系统容量与时延",
+        "type": "Requirement",
+        "stereotype_label": "«requirement»",
+        "shape": "rect",
+        "column": 2,
+        "row": 3,
+        "x": 590,
+        "y": 455,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "REQ-005",
+        "element_id": "REQ-005",
+        "name": "系统边界与外部接口",
+        "label": "REQ-005 - 系统边界与外部接口",
+        "type": "Requirement",
+        "stereotype_label": "«requirement»",
+        "shape": "rect",
+        "column": 2,
+        "row": 4,
+        "x": 590,
+        "y": 580,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "REQ-006",
+        "element_id": "REQ-006",
+        "name": "通信标准兼容",
+        "label": "REQ-006 - 通信标准兼容",
+        "type": "Requirement",
+        "stereotype_label": "«requirement»",
+        "shape": "rect",
+        "column": 2,
+        "row": 5,
+        "x": 590,
+        "y": 705,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "REQ-007",
+        "element_id": "REQ-007",
+        "name": "业务链路模式",
+        "label": "REQ-007 - 业务链路模式",
+        "type": "Requirement",
+        "stereotype_label": "«requirement»",
+        "shape": "rect",
+        "column": 2,
+        "row": 6,
+        "x": 590,
+        "y": 830,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "REQ-008",
+        "element_id": "REQ-008",
+        "name": "卫星平台约束",
+        "label": "REQ-008 - 卫星平台约束",
+        "type": "Requirement",
+        "stereotype_label": "«requirement»",
+        "shape": "rect",
+        "column": 2,
+        "row": 7,
+        "x": 590,
+        "y": 955,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "REQ-009",
+        "element_id": "REQ-009",
+        "name": "验收标准",
+        "label": "REQ-009 - 验收标准",
+        "type": "Requirement",
+        "stereotype_label": "«requirement»",
+        "shape": "rect",
+        "column": 2,
+        "row": 8,
+        "x": 590,
+        "y": 1080,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "UC-001",
+        "element_id": "UC-001",
+        "name": "配置星座参数",
+        "label": "UC-001 - 配置星座参数",
+        "type": "UseCase",
+        "stereotype_label": "«use case»",
+        "shape": "ellipse",
+        "column": 3,
+        "row": 0,
+        "x": 850,
+        "y": 80,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "UC-002",
+        "element_id": "UC-002",
+        "name": "提供全球通信服务",
+        "label": "UC-002 - 提供全球通信服务",
+        "type": "UseCase",
+        "stereotype_label": "«use case»",
+        "shape": "ellipse",
+        "column": 3,
+        "row": 1,
+        "x": 850,
+        "y": 205,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "UC-003",
+        "element_id": "UC-003",
+        "name": "管理星间路由",
+        "label": "UC-003 - 管理星间路由",
+        "type": "UseCase",
+        "stereotype_label": "«use case»",
+        "shape": "ellipse",
+        "column": 3,
+        "row": 2,
+        "x": 850,
+        "y": 330,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "IF-001",
+        "element_id": "IF-001",
+        "name": "星地用户链路接口",
+        "label": "IF-001 - 星地用户链路接口",
+        "type": "Interface",
+        "stereotype_label": "«interface»",
+        "shape": "soft",
+        "column": 4,
+        "row": 0,
+        "x": 1110,
+        "y": 80,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "IF-002",
+        "element_id": "IF-002",
+        "name": "星间链路接口",
+        "label": "IF-002 - 星间链路接口",
+        "type": "Interface",
+        "stereotype_label": "«interface»",
+        "shape": "soft",
+        "column": 4,
+        "row": 1,
+        "x": 1110,
+        "y": 205,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "IF-003",
+        "element_id": "IF-003",
+        "name": "馈电链路接口",
+        "label": "IF-003 - 馈电链路接口",
+        "type": "Interface",
+        "stereotype_label": "«interface»",
+        "shape": "soft",
+        "column": 4,
+        "row": 2,
+        "x": 1110,
+        "y": 330,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "CON-001",
+        "element_id": "CON-001",
+        "name": "端到端时延约束",
+        "label": "CON-001 - 端到端时延约束",
+        "type": "ConstraintBlock",
+        "stereotype_label": "«constraint»",
+        "shape": "rect",
+        "column": 5,
+        "row": 0,
+        "x": 1370,
+        "y": 80,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "CON-002",
+        "element_id": "CON-002",
+        "name": "单星质量功耗约束",
+        "label": "CON-002 - 单星质量功耗约束",
+        "type": "ConstraintBlock",
+        "stereotype_label": "«constraint»",
+        "shape": "rect",
+        "column": 5,
+        "row": 1,
+        "x": 1370,
+        "y": 205,
+        "width": 220,
+        "height": 72
+      }
+    ],
+    "edges": [
+      {
+        "id": "REL-001",
+        "relationship_id": "REL-001",
+        "source": "BLK-001",
+        "target": "BLK-002",
+        "type": "contains",
+        "label": "contains",
+        "points": [
+          {
+            "x": 426,
+            "y": 152
+          },
+          {
+            "x": 474,
+            "y": 152
+          },
+          {
+            "x": 406,
+            "y": 205
+          },
+          {
+            "x": 454,
+            "y": 205
+          }
+        ],
+        "label_x": 440,
+        "label_y": 172
+      },
+      {
+        "id": "REL-002",
+        "relationship_id": "REL-002",
+        "source": "BLK-001",
+        "target": "BLK-003",
+        "type": "contains",
+        "label": "contains",
+        "points": [
+          {
+            "x": 433,
+            "y": 152
+          },
+          {
+            "x": 481,
+            "y": 152
+          },
+          {
+            "x": 399,
+            "y": 330
+          },
+          {
+            "x": 447,
+            "y": 330
+          }
+        ],
+        "label_x": 440,
+        "label_y": 235
+      },
+      {
+        "id": "REL-003",
+        "relationship_id": "REL-003",
+        "source": "BLK-001",
+        "target": "BLK-004",
+        "type": "contains",
+        "label": "contains",
+        "points": [
+          {
+            "x": 440,
+            "y": 152
+          },
+          {
+            "x": 488,
+            "y": 152
+          },
+          {
+            "x": 392,
+            "y": 455
+          },
+          {
+            "x": 440,
+            "y": 455
+          }
+        ],
+        "label_x": 440,
+        "label_y": 297
+      },
+      {
+        "id": "REL-004",
+        "relationship_id": "REL-004",
+        "source": "REQ-003",
+        "target": "IF-001",
+        "type": "trace",
+        "label": "trace",
+        "points": [
+          {
+            "x": 810,
+            "y": 373
+          },
+          {
+            "x": 936,
+            "y": 373
+          },
+          {
+            "x": 984,
+            "y": 109
+          },
+          {
+            "x": 1110,
+            "y": 109
+          }
+        ],
+        "label_x": 960,
+        "label_y": 235
+      },
+      {
+        "id": "REL-005",
+        "relationship_id": "REL-005",
+        "source": "REQ-003",
+        "target": "IF-002",
+        "type": "trace",
+        "label": "trace",
+        "points": [
+          {
+            "x": 810,
+            "y": 380
+          },
+          {
+            "x": 936,
+            "y": 380
+          },
+          {
+            "x": 984,
+            "y": 227
+          },
+          {
+            "x": 1110,
+            "y": 227
+          }
+        ],
+        "label_x": 960,
+        "label_y": 297
+      },
+      {
+        "id": "REL-006",
+        "relationship_id": "REL-006",
+        "source": "REQ-005",
+        "target": "IF-003",
+        "type": "trace",
+        "label": "trace",
+        "points": [
+          {
+            "x": 810,
+            "y": 602
+          },
+          {
+            "x": 936,
+            "y": 602
+          },
+          {
+            "x": 984,
+            "y": 380
+          },
+          {
+            "x": 1110,
+            "y": 380
+          }
+        ],
+        "label_x": 960,
+        "label_y": 485
+      },
+      {
+        "id": "REL-007",
+        "relationship_id": "REL-007",
+        "source": "REQ-007",
+        "target": "ACT-001",
+        "type": "trace",
+        "label": "trace",
+        "points": [
+          {
+            "x": 590,
+            "y": 859
+          },
+          {
+            "x": 464,
+            "y": 859
+          },
+          {
+            "x": 416,
+            "y": 123
+          },
+          {
+            "x": 290,
+            "y": 123
+          }
+        ],
+        "label_x": 440,
+        "label_y": 485
+      },
+      {
+        "id": "REL-008",
+        "relationship_id": "REL-008",
+        "source": "REQ-004",
+        "target": "CON-001",
+        "type": "refine",
+        "label": "refine",
+        "points": [
+          {
+            "x": 810,
+            "y": 491
+          },
+          {
+            "x": 1045,
+            "y": 491
+          },
+          {
+            "x": 1135,
+            "y": 116
+          },
+          {
+            "x": 1370,
+            "y": 116
+          }
+        ],
+        "label_x": 1090,
+        "label_y": 297
+      },
+      {
+        "id": "REL-009",
+        "relationship_id": "REL-009",
+        "source": "REQ-008",
+        "target": "CON-002",
+        "type": "refine",
+        "label": "refine",
+        "points": [
+          {
+            "x": 810,
+            "y": 998
+          },
+          {
+            "x": 1045,
+            "y": 998
+          },
+          {
+            "x": 1135,
+            "y": 234
+          },
+          {
+            "x": 1370,
+            "y": 234
+          }
+        ],
+        "label_x": 1090,
+        "label_y": 610
+      },
+      {
+        "id": "REL-010",
+        "relationship_id": "REL-010",
+        "source": "UC-002",
+        "target": "REQ-004",
+        "type": "satisfy",
+        "label": "satisfy",
+        "points": [
+          {
+            "x": 850,
+            "y": 255
+          },
+          {
+            "x": 802,
+            "y": 255
+          },
+          {
+            "x": 858,
+            "y": 477
+          },
+          {
+            "x": 810,
+            "y": 477
+          }
+        ],
+        "label_x": 830,
+        "label_y": 360
+      },
+      {
+        "id": "REL-011",
+        "relationship_id": "REL-011",
+        "source": "UC-003",
+        "target": "IF-002",
+        "type": "trace",
+        "label": "trace",
+        "points": [
+          {
+            "x": 1070,
+            "y": 352
+          },
+          {
+            "x": 1118,
+            "y": 352
+          },
+          {
+            "x": 1062,
+            "y": 255
+          },
+          {
+            "x": 1110,
+            "y": 255
+          }
+        ],
+        "label_x": 1090,
+        "label_y": 297
+      },
+      {
+        "id": "REL-012",
+        "relationship_id": "REL-012",
+        "source": "REQ-001",
+        "target": "UC-001",
+        "type": "trace",
+        "label": "trace",
+        "points": [
+          {
+            "x": 810,
+            "y": 109
+          },
+          {
+            "x": 858,
+            "y": 109
+          },
+          {
+            "x": 802,
+            "y": 123
+          },
+          {
+            "x": 850,
+            "y": 123
+          }
+        ],
+        "label_x": 830,
+        "label_y": 110
+      }
+    ]
+  },
+  "diagram_views": [
+    {
+      "id": "AI-USECASE",
+      "name": "低轨卫星互联网系统用例图",
+      "diagram_type": "use_case",
+      "focus_element_id": "",
+      "variant_id": "BASELINE",
+      "variant_name": "低轨卫星互联网总体方案基线",
+      "description": "展示低轨卫星互联网系统与外部参与者（用户、运营者、外部系统接口）的交互能力，涵盖通信服务、星座配置与星间路由管理。",
+      "element_ids": [
+        "ACTOR-001",
+        "ACTOR-002",
+        "ACTOR-003",
+        "ACTOR-004",
+        "ACTOR-005",
+        "UC-002",
+        "UC-001",
+        "UC-003"
+      ],
+      "relationship_ids": [
+        "DREL-UC-001",
+        "DREL-UC-002",
+        "DREL-UC-003",
+        "DREL-UC-004",
+        "DREL-UC-005",
+        "DREL-UC-006",
+        "DREL-UC-007"
+      ],
+      "trace_links": [
+        {
+          "usecase_id": "UC-002",
+          "element_ids": [
+            "IBD-BLK-001",
+            "IBD-BLK-002",
+            "IBD-BLK-003",
+            "IBD-BLK-004"
+          ],
+          "relation": "realize",
+          "description": "该用例由空间段卫星、信关站、用户终端和运营支撑系统共同实现。"
+        },
+        {
+          "usecase_id": "UC-001",
+          "element_ids": [
+            "IBD-BLK-001",
+            "IBD-BLK-002",
+            "IBD-BLK-004"
+          ],
+          "relation": "realize",
+          "description": "星座配置涉及卫星平台和运营支撑，信关站辅助。"
+        },
+        {
+          "usecase_id": "UC-003",
+          "element_ids": [
+            "IBD-BLK-001",
+            "IBD-BLK-002"
+          ],
+          "relation": "realize",
+          "description": "星间路由主要依靠卫星上的星间链路终端和路由功能。"
+        }
+      ],
+      "layout": {
+        "schema": "ai-mbse.diagram-view-layout.v1",
+        "diagram_name": "低轨卫星互联网系统用例图",
+        "layout_source": "backend",
+        "width": 1080,
+        "height": 560,
+        "nodes": [
+          {
+            "id": "ACTOR-001",
+            "element_id": "ACTOR-001",
+            "name": "用户",
+            "label": "用户",
+            "type": "Actor",
+            "stereotype_label": "actor",
+            "shape": "actor",
+            "x": 70,
+            "y": 110,
+            "width": 170,
+            "height": 105
+          },
+          {
+            "id": "ACTOR-002",
+            "element_id": "ACTOR-002",
+            "name": "星座运营者",
+            "label": "星座运营者",
+            "type": "Actor",
+            "stereotype_label": "actor",
+            "shape": "actor",
+            "x": 820,
+            "y": 110,
+            "width": 170,
+            "height": 105
+          },
+          {
+            "id": "ACTOR-003",
+            "element_id": "ACTOR-003",
+            "name": "互联网骨干网",
+            "label": "互联网骨干网",
+            "type": "Actor",
+            "stereotype_label": "actor",
+            "shape": "actor",
+            "x": 70,
+            "y": 270,
+            "width": 170,
+            "height": 105
+          },
+          {
+            "id": "ACTOR-004",
+            "element_id": "ACTOR-004",
+            "name": "导航增强系统",
+            "label": "导航增强系统",
+            "type": "Actor",
+            "stereotype_label": "actor",
+            "shape": "actor",
+            "x": 820,
+            "y": 270,
+            "width": 170,
+            "height": 105
+          },
+          {
+            "id": "ACTOR-005",
+            "element_id": "ACTOR-005",
+            "name": "遥测遥控网",
+            "label": "遥测遥控网",
+            "type": "Actor",
+            "stereotype_label": "actor",
+            "shape": "actor",
+            "x": 70,
+            "y": 430,
+            "width": 170,
+            "height": 105
+          },
+          {
+            "id": "UC-002",
+            "element_id": "UC-002",
+            "name": "提供全球互联网接入",
+            "label": "提供全球互联网接入",
+            "type": "UseCase",
+            "stereotype_label": "use case",
+            "shape": "ellipse",
+            "x": 395,
+            "y": 80,
+            "width": 270,
+            "height": 72
+          },
+          {
+            "id": "UC-001",
+            "element_id": "UC-001",
+            "name": "配置星座",
+            "label": "配置星座",
+            "type": "UseCase",
+            "stereotype_label": "use case",
+            "shape": "ellipse",
+            "x": 395,
+            "y": 180,
+            "width": 270,
+            "height": 72
+          },
+          {
+            "id": "UC-003",
+            "element_id": "UC-003",
+            "name": "管理星间路由",
+            "label": "管理星间路由",
+            "type": "UseCase",
+            "stereotype_label": "use case",
+            "shape": "ellipse",
+            "x": 395,
+            "y": 280,
+            "width": 270,
+            "height": 72
+          }
+        ],
+        "edges": [
+          {
+            "id": "DREL-UC-001",
+            "relationship_id": "DREL-UC-001",
+            "source": "ACTOR-001",
+            "target": "UC-002",
+            "type": "association",
+            "label": "association",
+            "points": [
+              {
+                "x": 240,
+                "y": 162.5
+              },
+              {
+                "x": 317.5,
+                "y": 162.5
+              },
+              {
+                "x": 317.5,
+                "y": 116
+              },
+              {
+                "x": 395,
+                "y": 116
+              }
+            ],
+            "label_x": 317.5,
+            "label_y": 131.25
+          },
+          {
+            "id": "DREL-UC-002",
+            "relationship_id": "DREL-UC-002",
+            "source": "ACTOR-002",
+            "target": "UC-001",
+            "type": "association",
+            "label": "association",
+            "points": [
+              {
+                "x": 820,
+                "y": 162.5
+              },
+              {
+                "x": 742.5,
+                "y": 162.5
+              },
+              {
+                "x": 742.5,
+                "y": 216
+              },
+              {
+                "x": 665,
+                "y": 216
+              }
+            ],
+            "label_x": 742.5,
+            "label_y": 181.25
+          },
+          {
+            "id": "DREL-UC-003",
+            "relationship_id": "DREL-UC-003",
+            "source": "ACTOR-002",
+            "target": "UC-003",
+            "type": "association",
+            "label": "association",
+            "points": [
+              {
+                "x": 820,
+                "y": 162.5
+              },
+              {
+                "x": 742.5,
+                "y": 162.5
+              },
+              {
+                "x": 742.5,
+                "y": 316
+              },
+              {
+                "x": 665,
+                "y": 316
+              }
+            ],
+            "label_x": 742.5,
+            "label_y": 231.25
+          },
+          {
+            "id": "DREL-UC-004",
+            "relationship_id": "DREL-UC-004",
+            "source": "ACTOR-003",
+            "target": "UC-002",
+            "type": "association",
+            "label": "association",
+            "points": [
+              {
+                "x": 240,
+                "y": 322.5
+              },
+              {
+                "x": 317.5,
+                "y": 322.5
+              },
+              {
+                "x": 317.5,
+                "y": 116
+              },
+              {
+                "x": 395,
+                "y": 116
+              }
+            ],
+            "label_x": 317.5,
+            "label_y": 211.25
+          },
+          {
+            "id": "DREL-UC-005",
+            "relationship_id": "DREL-UC-005",
+            "source": "ACTOR-004",
+            "target": "UC-002",
+            "type": "association",
+            "label": "association",
+            "points": [
+              {
+                "x": 820,
+                "y": 322.5
+              },
+              {
+                "x": 742.5,
+                "y": 322.5
+              },
+              {
+                "x": 742.5,
+                "y": 116
+              },
+              {
+                "x": 665,
+                "y": 116
+              }
+            ],
+            "label_x": 742.5,
+            "label_y": 211.25
+          },
+          {
+            "id": "DREL-UC-006",
+            "relationship_id": "DREL-UC-006",
+            "source": "ACTOR-005",
+            "target": "UC-001",
+            "type": "association",
+            "label": "association",
+            "points": [
+              {
+                "x": 240,
+                "y": 482.5
+              },
+              {
+                "x": 317.5,
+                "y": 482.5
+              },
+              {
+                "x": 317.5,
+                "y": 216
+              },
+              {
+                "x": 395,
+                "y": 216
+              }
+            ],
+            "label_x": 317.5,
+            "label_y": 341.25
+          },
+          {
+            "id": "DREL-UC-007",
+            "relationship_id": "DREL-UC-007",
+            "source": "UC-002",
+            "target": "UC-003",
+            "type": "include",
+            "label": "include",
+            "points": [
+              {
+                "x": 665,
+                "y": 116
+              },
+              {
+                "x": 530,
+                "y": 116
+              },
+              {
+                "x": 530,
+                "y": 316
+              },
+              {
+                "x": 395,
+                "y": 316
+              }
+            ],
+            "label_x": 530,
+            "label_y": 208
+          }
+        ]
+      }
+    },
+    {
+      "id": "AI-IBD",
+      "name": "低轨卫星互联网系统内部模块图",
+      "diagram_type": "ibd",
+      "focus_element_id": "",
+      "variant_id": "BASELINE",
+      "variant_name": "低轨卫星互联网总体方案基线",
+      "description": "展示总体系统内部主要组件（卫星、信关站、用户终端、运营支撑）及其通过接口互联，同时体现与外部系统的边界接口。",
+      "element_ids": [
+        "IBD-BLK-001",
+        "IBD-BLK-002",
+        "IBD-BLK-003",
+        "IBD-BLK-004",
+        "IBD-IF-001",
+        "IBD-IF-002",
+        "IBD-IF-003",
+        "IBD-IF-004",
+        "IBD-IF-005",
+        "IBD-IF-006"
+      ],
+      "relationship_ids": [
+        "DREL-IBD-001",
+        "DREL-IBD-002",
+        "DREL-IBD-003",
+        "DREL-IBD-004",
+        "DREL-IBD-005",
+        "DREL-IBD-006",
+        "DREL-IBD-007",
+        "DREL-IBD-008",
+        "DREL-IBD-009",
+        "DREL-IBD-010"
+      ],
+      "trace_links": [],
+      "layout": {
+        "schema": "ai-mbse.diagram-view-layout.v1",
+        "diagram_name": "低轨卫星互联网系统内部模块图",
+        "layout_source": "backend",
+        "width": 1140,
+        "height": 680,
+        "nodes": [
+          {
+            "id": "IBD-BLK-001",
+            "element_id": "IBD-BLK-001",
+            "name": "卫星",
+            "label": "卫星",
+            "type": "Block",
+            "stereotype_label": "part",
+            "shape": "rect",
+            "x": 80,
+            "y": 110,
+            "width": 205,
+            "height": 76
+          },
+          {
+            "id": "IBD-BLK-002",
+            "element_id": "IBD-BLK-002",
+            "name": "信关站",
+            "label": "信关站",
+            "type": "Block",
+            "stereotype_label": "part",
+            "shape": "rect",
+            "x": 340,
+            "y": 110,
+            "width": 205,
+            "height": 76
+          },
+          {
+            "id": "IBD-BLK-003",
+            "element_id": "IBD-BLK-003",
+            "name": "用户终端",
+            "label": "用户终端",
+            "type": "Block",
+            "stereotype_label": "part",
+            "shape": "rect",
+            "x": 600,
+            "y": 110,
+            "width": 205,
+            "height": 76
+          },
+          {
+            "id": "IBD-BLK-004",
+            "element_id": "IBD-BLK-004",
+            "name": "运营支撑系统",
+            "label": "运营支撑系统",
+            "type": "Block",
+            "stereotype_label": "part",
+            "shape": "rect",
+            "x": 860,
+            "y": 110,
+            "width": 205,
+            "height": 76
+          },
+          {
+            "id": "IBD-IF-001",
+            "element_id": "IBD-IF-001",
+            "name": "星地用户链路接口",
+            "label": "星地用户链路接口",
+            "type": "Interface",
+            "stereotype_label": "interface",
+            "shape": "soft",
+            "x": 80,
+            "y": 260,
+            "width": 205,
+            "height": 76
+          },
+          {
+            "id": "IBD-IF-002",
+            "element_id": "IBD-IF-002",
+            "name": "星间链路接口",
+            "label": "星间链路接口",
+            "type": "Interface",
+            "stereotype_label": "interface",
+            "shape": "soft",
+            "x": 340,
+            "y": 260,
+            "width": 205,
+            "height": 76
+          },
+          {
+            "id": "IBD-IF-003",
+            "element_id": "IBD-IF-003",
+            "name": "馈电链路接口",
+            "label": "馈电链路接口",
+            "type": "Interface",
+            "stereotype_label": "interface",
+            "shape": "soft",
+            "x": 600,
+            "y": 260,
+            "width": 205,
+            "height": 76
+          },
+          {
+            "id": "IBD-IF-004",
+            "element_id": "IBD-IF-004",
+            "name": "互联网接入接口",
+            "label": "互联网接入接口",
+            "type": "Interface",
+            "stereotype_label": "interface",
+            "shape": "soft",
+            "x": 860,
+            "y": 260,
+            "width": 205,
+            "height": 76
+          },
+          {
+            "id": "IBD-IF-005",
+            "element_id": "IBD-IF-005",
+            "name": "导航增强接口",
+            "label": "导航增强接口",
+            "type": "Interface",
+            "stereotype_label": "interface",
+            "shape": "soft",
+            "x": 80,
+            "y": 410,
+            "width": 205,
+            "height": 76
+          },
+          {
+            "id": "IBD-IF-006",
+            "element_id": "IBD-IF-006",
+            "name": "遥测遥控接口",
+            "label": "遥测遥控接口",
+            "type": "Interface",
+            "stereotype_label": "interface",
+            "shape": "soft",
+            "x": 340,
+            "y": 410,
+            "width": 205,
+            "height": 76
+          }
+        ],
+        "edges": [
+          {
+            "id": "DREL-IBD-001",
+            "relationship_id": "DREL-IBD-001",
+            "source": "IBD-BLK-001",
+            "target": "IBD-IF-001",
+            "type": "connector",
+            "label": "connector",
+            "points": [
+              {
+                "x": 285,
+                "y": 148
+              },
+              {
+                "x": 182.5,
+                "y": 148
+              },
+              {
+                "x": 182.5,
+                "y": 298
+              },
+              {
+                "x": 80,
+                "y": 298
+              }
+            ],
+            "label_x": 182.5,
+            "label_y": 215
+          },
+          {
+            "id": "DREL-IBD-002",
+            "relationship_id": "DREL-IBD-002",
+            "source": "IBD-BLK-003",
+            "target": "IBD-IF-001",
+            "type": "connector",
+            "label": "connector",
+            "points": [
+              {
+                "x": 600,
+                "y": 148
+              },
+              {
+                "x": 442.5,
+                "y": 148
+              },
+              {
+                "x": 442.5,
+                "y": 298
+              },
+              {
+                "x": 285,
+                "y": 298
+              }
+            ],
+            "label_x": 442.5,
+            "label_y": 215
+          },
+          {
+            "id": "DREL-IBD-003",
+            "relationship_id": "DREL-IBD-003",
+            "source": "IBD-BLK-001",
+            "target": "IBD-IF-002",
+            "type": "connector",
+            "label": "connector",
+            "points": [
+              {
+                "x": 285,
+                "y": 148
+              },
+              {
+                "x": 312.5,
+                "y": 148
+              },
+              {
+                "x": 312.5,
+                "y": 298
+              },
+              {
+                "x": 340,
+                "y": 298
+              }
+            ],
+            "label_x": 312.5,
+            "label_y": 215
+          },
+          {
+            "id": "DREL-IBD-004",
+            "relationship_id": "DREL-IBD-004",
+            "source": "IBD-BLK-001",
+            "target": "IBD-IF-003",
+            "type": "connector",
+            "label": "connector",
+            "points": [
+              {
+                "x": 285,
+                "y": 148
+              },
+              {
+                "x": 442.5,
+                "y": 148
+              },
+              {
+                "x": 442.5,
+                "y": 298
+              },
+              {
+                "x": 600,
+                "y": 298
+              }
+            ],
+            "label_x": 442.5,
+            "label_y": 215
+          },
+          {
+            "id": "DREL-IBD-005",
+            "relationship_id": "DREL-IBD-005",
+            "source": "IBD-BLK-002",
+            "target": "IBD-IF-003",
+            "type": "connector",
+            "label": "connector",
+            "points": [
+              {
+                "x": 545,
+                "y": 148
+              },
+              {
+                "x": 572.5,
+                "y": 148
+              },
+              {
+                "x": 572.5,
+                "y": 298
+              },
+              {
+                "x": 600,
+                "y": 298
+              }
+            ],
+            "label_x": 572.5,
+            "label_y": 215
+          },
+          {
+            "id": "DREL-IBD-006",
+            "relationship_id": "DREL-IBD-006",
+            "source": "IBD-BLK-002",
+            "target": "IBD-IF-004",
+            "type": "connector",
+            "label": "connector",
+            "points": [
+              {
+                "x": 545,
+                "y": 148
+              },
+              {
+                "x": 702.5,
+                "y": 148
+              },
+              {
+                "x": 702.5,
+                "y": 298
+              },
+              {
+                "x": 860,
+                "y": 298
+              }
+            ],
+            "label_x": 702.5,
+            "label_y": 215
+          },
+          {
+            "id": "DREL-IBD-007",
+            "relationship_id": "DREL-IBD-007",
+            "source": "IBD-BLK-004",
+            "target": "IBD-IF-006",
+            "type": "connector",
+            "label": "connector",
+            "points": [
+              {
+                "x": 860,
+                "y": 148
+              },
+              {
+                "x": 702.5,
+                "y": 148
+              },
+              {
+                "x": 702.5,
+                "y": 448
+              },
+              {
+                "x": 545,
+                "y": 448
+              }
+            ],
+            "label_x": 702.5,
+            "label_y": 290
+          },
+          {
+            "id": "DREL-IBD-008",
+            "relationship_id": "DREL-IBD-008",
+            "source": "IBD-BLK-001",
+            "target": "IBD-IF-006",
+            "type": "connector",
+            "label": "connector",
+            "points": [
+              {
+                "x": 285,
+                "y": 148
+              },
+              {
+                "x": 312.5,
+                "y": 148
+              },
+              {
+                "x": 312.5,
+                "y": 448
+              },
+              {
+                "x": 340,
+                "y": 448
+              }
+            ],
+            "label_x": 312.5,
+            "label_y": 290
+          },
+          {
+            "id": "DREL-IBD-009",
+            "relationship_id": "DREL-IBD-009",
+            "source": "IBD-BLK-004",
+            "target": "IBD-IF-005",
+            "type": "connector",
+            "label": "connector",
+            "points": [
+              {
+                "x": 860,
+                "y": 148
+              },
+              {
+                "x": 572.5,
+                "y": 148
+              },
+              {
+                "x": 572.5,
+                "y": 448
+              },
+              {
+                "x": 285,
+                "y": 448
+              }
+            ],
+            "label_x": 572.5,
+            "label_y": 290
+          },
+          {
+            "id": "DREL-IBD-010",
+            "relationship_id": "DREL-IBD-010",
+            "source": "IBD-BLK-001",
+            "target": "IBD-IF-005",
+            "type": "connector",
+            "label": "connector",
+            "points": [
+              {
+                "x": 285,
+                "y": 148
+              },
+              {
+                "x": 182.5,
+                "y": 148
+              },
+              {
+                "x": 182.5,
+                "y": 448
+              },
+              {
+                "x": 80,
+                "y": 448
+              }
+            ],
+            "label_x": 182.5,
+            "label_y": 290
+          }
+        ]
+      }
+    },
+    {
+      "id": "FOCUS-BLK-002-IBD",
+      "name": "卫星 - 内部模块图（IBD）",
+      "diagram_type": "ibd",
+      "focus_element_id": "BLK-002",
+      "variant_id": "FOCUS-BLK-002",
+      "variant_name": "关键模块预生成：卫星",
+      "description": "系统生成总体模型时预生成的 卫星 内部模块图，双击该模块可直接展示。",
+      "element_ids": [
+        "IBD-IF-BLK-002-001",
+        "IBD-BLK-BLK-002-001",
+        "IBD-BLK-BLK-002-002",
+        "IBD-BLK-BLK-002-003",
+        "IBD-BLK-BLK-002-004",
+        "IBD-IF-BLK-002-002",
+        "IBD-BLK-BLK-002-005",
+        "IBD-IF-BLK-002-003"
+      ],
+      "relationship_ids": [
+        "DREL-BLK-002-IBD-001",
+        "DREL-BLK-002-IBD-002",
+        "DREL-BLK-002-IBD-003",
+        "DREL-BLK-002-IBD-004",
+        "DREL-BLK-002-IBD-005",
+        "DREL-BLK-002-IBD-006",
+        "DREL-BLK-002-IBD-007",
+        "DREL-BLK-002-IBD-008"
+      ],
+      "trace_links": [],
+      "layout": {
+        "schema": "ai-mbse.diagram-view-layout.v1",
+        "diagram_name": "卫星 - 内部模块图（IBD）",
+        "layout_source": "backend",
+        "width": 1140,
+        "height": 530,
+        "nodes": [
+          {
+            "id": "IBD-IF-BLK-002-001",
+            "element_id": "IBD-IF-BLK-002-001",
+            "name": "卫星输入接口",
+            "label": "卫星输入接口",
+            "type": "Interface",
+            "stereotype_label": "interface",
+            "shape": "soft",
+            "x": 80,
+            "y": 110,
+            "width": 205,
+            "height": 76
+          },
+          {
+            "id": "IBD-BLK-BLK-002-001",
+            "element_id": "IBD-BLK-BLK-002-001",
+            "name": "携带通信载荷接入与整形单元",
+            "label": "携带通信载荷接入与整形单元",
+            "type": "Block",
+            "stereotype_label": "part",
+            "shape": "rect",
+            "x": 340,
+            "y": 110,
+            "width": 205,
+            "height": 76
+          },
+          {
+            "id": "IBD-BLK-BLK-002-002",
+            "element_id": "IBD-BLK-BLK-002-002",
+            "name": "星间链路终端处理单元",
+            "label": "星间链路终端处理单元",
+            "type": "Block",
+            "stereotype_label": "part",
+            "shape": "rect",
+            "x": 600,
+            "y": 110,
+            "width": 205,
+            "height": 76
+          },
+          {
+            "id": "IBD-BLK-BLK-002-003",
+            "element_id": "IBD-BLK-BLK-002-003",
+            "name": "星地链路终端控制管理单元",
+            "label": "星地链路终端控制管理单元",
+            "type": "Block",
+            "stereotype_label": "part",
+            "shape": "rect",
+            "x": 860,
+            "y": 110,
+            "width": 205,
+            "height": 76
+          },
+          {
+            "id": "IBD-BLK-BLK-002-004",
+            "element_id": "IBD-BLK-BLK-002-004",
+            "name": "路由执行输出单元",
+            "label": "路由执行输出单元",
+            "type": "Block",
+            "stereotype_label": "part",
+            "shape": "rect",
+            "x": 80,
+            "y": 260,
+            "width": 205,
+            "height": 76
+          },
+          {
+            "id": "IBD-IF-BLK-002-002",
+            "element_id": "IBD-IF-BLK-002-002",
+            "name": "卫星输出接口",
+            "label": "卫星输出接口",
+            "type": "Interface",
+            "stereotype_label": "interface",
+            "shape": "soft",
+            "x": 340,
+            "y": 260,
+            "width": 205,
+            "height": 76
+          },
+          {
+            "id": "IBD-BLK-BLK-002-005",
+            "element_id": "IBD-BLK-BLK-002-005",
+            "name": "状态监测与保护单元",
+            "label": "状态监测与保护单元",
+            "type": "Block",
+            "stereotype_label": "part",
+            "shape": "rect",
+            "x": 600,
+            "y": 260,
+            "width": 205,
+            "height": 76
+          },
+          {
+            "id": "IBD-IF-BLK-002-003",
+            "element_id": "IBD-IF-BLK-002-003",
+            "name": "平台资源接口",
+            "label": "平台资源接口",
+            "type": "Interface",
+            "stereotype_label": "interface",
+            "shape": "soft",
+            "x": 860,
+            "y": 260,
+            "width": 205,
+            "height": 76
+          }
+        ],
+        "edges": [
+          {
+            "id": "DREL-BLK-002-IBD-001",
+            "relationship_id": "DREL-BLK-002-IBD-001",
+            "source": "IBD-IF-BLK-002-001",
+            "target": "IBD-BLK-BLK-002-001",
+            "type": "connector",
+            "label": "connector",
+            "points": [
+              {
+                "x": 285,
+                "y": 148
+              },
+              {
+                "x": 312.5,
+                "y": 148
+              },
+              {
+                "x": 312.5,
+                "y": 148
+              },
+              {
+                "x": 340,
+                "y": 148
+              }
+            ],
+            "label_x": 312.5,
+            "label_y": 140
+          },
+          {
+            "id": "DREL-BLK-002-IBD-002",
+            "relationship_id": "DREL-BLK-002-IBD-002",
+            "source": "IBD-BLK-BLK-002-001",
+            "target": "IBD-BLK-BLK-002-002",
+            "type": "connector",
+            "label": "connector",
+            "points": [
+              {
+                "x": 545,
+                "y": 148
+              },
+              {
+                "x": 572.5,
+                "y": 148
+              },
+              {
+                "x": 572.5,
+                "y": 148
+              },
+              {
+                "x": 600,
+                "y": 148
+              }
+            ],
+            "label_x": 572.5,
+            "label_y": 140
+          },
+          {
+            "id": "DREL-BLK-002-IBD-003",
+            "relationship_id": "DREL-BLK-002-IBD-003",
+            "source": "IBD-BLK-BLK-002-002",
+            "target": "IBD-BLK-BLK-002-003",
+            "type": "connector",
+            "label": "connector",
+            "points": [
+              {
+                "x": 805,
+                "y": 148
+              },
+              {
+                "x": 832.5,
+                "y": 148
+              },
+              {
+                "x": 832.5,
+                "y": 148
+              },
+              {
+                "x": 860,
+                "y": 148
+              }
+            ],
+            "label_x": 832.5,
+            "label_y": 140
+          },
+          {
+            "id": "DREL-BLK-002-IBD-004",
+            "relationship_id": "DREL-BLK-002-IBD-004",
+            "source": "IBD-BLK-BLK-002-003",
+            "target": "IBD-BLK-BLK-002-004",
+            "type": "connector",
+            "label": "connector",
+            "points": [
+              {
+                "x": 860,
+                "y": 148
+              },
+              {
+                "x": 572.5,
+                "y": 148
+              },
+              {
+                "x": 572.5,
+                "y": 298
+              },
+              {
+                "x": 285,
+                "y": 298
+              }
+            ],
+            "label_x": 572.5,
+            "label_y": 215
+          },
+          {
+            "id": "DREL-BLK-002-IBD-005",
+            "relationship_id": "DREL-BLK-002-IBD-005",
+            "source": "IBD-BLK-BLK-002-004",
+            "target": "IBD-IF-BLK-002-002",
+            "type": "connector",
+            "label": "connector",
+            "points": [
+              {
+                "x": 285,
+                "y": 298
+              },
+              {
+                "x": 312.5,
+                "y": 298
+              },
+              {
+                "x": 312.5,
+                "y": 298
+              },
+              {
+                "x": 340,
+                "y": 298
+              }
+            ],
+            "label_x": 312.5,
+            "label_y": 290
+          },
+          {
+            "id": "DREL-BLK-002-IBD-006",
+            "relationship_id": "DREL-BLK-002-IBD-006",
+            "source": "IBD-BLK-BLK-002-005",
+            "target": "IBD-BLK-BLK-002-002",
+            "type": "connector",
+            "label": "connector",
+            "points": [
+              {
+                "x": 805,
+                "y": 298
+              },
+              {
+                "x": 702.5,
+                "y": 298
+              },
+              {
+                "x": 702.5,
+                "y": 148
+              },
+              {
+                "x": 600,
+                "y": 148
+              }
+            ],
+            "label_x": 702.5,
+            "label_y": 215
+          },
+          {
+            "id": "DREL-BLK-002-IBD-007",
+            "relationship_id": "DREL-BLK-002-IBD-007",
+            "source": "IBD-BLK-BLK-002-005",
+            "target": "IBD-BLK-BLK-002-003",
+            "type": "connector",
+            "label": "connector",
+            "points": [
+              {
+                "x": 805,
+                "y": 298
+              },
+              {
+                "x": 832.5,
+                "y": 298
+              },
+              {
+                "x": 832.5,
+                "y": 148
+              },
+              {
+                "x": 860,
+                "y": 148
+              }
+            ],
+            "label_x": 832.5,
+            "label_y": 215
+          },
+          {
+            "id": "DREL-BLK-002-IBD-008",
+            "relationship_id": "DREL-BLK-002-IBD-008",
+            "source": "IBD-IF-BLK-002-003",
+            "target": "IBD-BLK-BLK-002-005",
+            "type": "connector",
+            "label": "connector",
+            "points": [
+              {
+                "x": 860,
+                "y": 298
+              },
+              {
+                "x": 832.5,
+                "y": 298
+              },
+              {
+                "x": 832.5,
+                "y": 298
+              },
+              {
+                "x": 805,
+                "y": 298
+              }
+            ],
+            "label_x": 832.5,
+            "label_y": 290
+          }
+        ]
+      }
+    },
+    {
+      "id": "FOCUS-BLK-003-IBD",
+      "name": "信关站 - 内部模块图（IBD）",
+      "diagram_type": "ibd",
+      "focus_element_id": "BLK-003",
+      "variant_id": "FOCUS-BLK-003",
+      "variant_name": "关键模块预生成：信关站",
+      "description": "系统生成总体模型时预生成的 信关站 内部模块图，双击该模块可直接展示。",
+      "element_ids": [
+        "IBD-IF-BLK-003-001",
+        "IBD-BLK-BLK-003-001",
+        "IBD-BLK-BLK-003-002",
+        "IBD-BLK-BLK-003-003",
+        "IBD-BLK-BLK-003-004",
+        "IBD-IF-BLK-003-002",
+        "IBD-BLK-BLK-003-005",
+        "IBD-IF-BLK-003-003"
+      ],
+      "relationship_ids": [
+        "DREL-BLK-003-IBD-001",
+        "DREL-BLK-003-IBD-002",
+        "DREL-BLK-003-IBD-003",
+        "DREL-BLK-003-IBD-004",
+        "DREL-BLK-003-IBD-005",
+        "DREL-BLK-003-IBD-006",
+        "DREL-BLK-003-IBD-007",
+        "DREL-BLK-003-IBD-008"
+      ],
+      "trace_links": [],
+      "layout": {
+        "schema": "ai-mbse.diagram-view-layout.v1",
+        "diagram_name": "信关站 - 内部模块图（IBD）",
+        "layout_source": "backend",
+        "width": 1140,
+        "height": 530,
+        "nodes": [
+          {
+            "id": "IBD-IF-BLK-003-001",
+            "element_id": "IBD-IF-BLK-003-001",
+            "name": "信关站输入接口",
+            "label": "信关站输入接口",
+            "type": "Interface",
+            "stereotype_label": "interface",
+            "shape": "soft",
+            "x": 80,
+            "y": 110,
+            "width": 205,
+            "height": 76
+          },
+          {
+            "id": "IBD-BLK-BLK-003-001",
+            "element_id": "IBD-BLK-BLK-003-001",
+            "name": "地面关口站接入与整形单元",
+            "label": "地面关口站接入与整形单元",
+            "type": "Block",
+            "stereotype_label": "part",
+            "shape": "rect",
+            "x": 340,
+            "y": 110,
+            "width": 205,
+            "height": 76
+          },
+          {
+            "id": "IBD-BLK-BLK-003-002",
+            "element_id": "IBD-BLK-BLK-003-002",
+            "name": "连接卫星处理单元",
+            "label": "连接卫星处理单元",
+            "type": "Block",
+            "stereotype_label": "part",
+            "shape": "rect",
+            "x": 600,
+            "y": 110,
+            "width": 205,
+            "height": 76
+          },
+          {
+            "id": "IBD-BLK-BLK-003-003",
+            "element_id": "IBD-BLK-BLK-003-003",
+            "name": "地面骨干网控制管理单元",
+            "label": "地面骨干网控制管理单元",
+            "type": "Block",
+            "stereotype_label": "part",
+            "shape": "rect",
+            "x": 860,
+            "y": 110,
+            "width": 205,
+            "height": 76
+          },
+          {
+            "id": "IBD-BLK-BLK-003-004",
+            "element_id": "IBD-BLK-BLK-003-004",
+            "name": "处理馈电链路执行输出单元",
+            "label": "处理馈电链路执行输出单元",
+            "type": "Block",
+            "stereotype_label": "part",
+            "shape": "rect",
+            "x": 80,
+            "y": 260,
+            "width": 205,
+            "height": 76
+          },
+          {
+            "id": "IBD-IF-BLK-003-002",
+            "element_id": "IBD-IF-BLK-003-002",
+            "name": "信关站输出接口",
+            "label": "信关站输出接口",
+            "type": "Interface",
+            "stereotype_label": "interface",
+            "shape": "soft",
+            "x": 340,
+            "y": 260,
+            "width": 205,
+            "height": 76
+          },
+          {
+            "id": "IBD-BLK-BLK-003-005",
+            "element_id": "IBD-BLK-BLK-003-005",
+            "name": "状态监测与保护单元",
+            "label": "状态监测与保护单元",
+            "type": "Block",
+            "stereotype_label": "part",
+            "shape": "rect",
+            "x": 600,
+            "y": 260,
+            "width": 205,
+            "height": 76
+          },
+          {
+            "id": "IBD-IF-BLK-003-003",
+            "element_id": "IBD-IF-BLK-003-003",
+            "name": "平台资源接口",
+            "label": "平台资源接口",
+            "type": "Interface",
+            "stereotype_label": "interface",
+            "shape": "soft",
+            "x": 860,
+            "y": 260,
+            "width": 205,
+            "height": 76
+          }
+        ],
+        "edges": [
+          {
+            "id": "DREL-BLK-003-IBD-001",
+            "relationship_id": "DREL-BLK-003-IBD-001",
+            "source": "IBD-IF-BLK-003-001",
+            "target": "IBD-BLK-BLK-003-001",
+            "type": "connector",
+            "label": "connector",
+            "points": [
+              {
+                "x": 285,
+                "y": 148
+              },
+              {
+                "x": 312.5,
+                "y": 148
+              },
+              {
+                "x": 312.5,
+                "y": 148
+              },
+              {
+                "x": 340,
+                "y": 148
+              }
+            ],
+            "label_x": 312.5,
+            "label_y": 140
+          },
+          {
+            "id": "DREL-BLK-003-IBD-002",
+            "relationship_id": "DREL-BLK-003-IBD-002",
+            "source": "IBD-BLK-BLK-003-001",
+            "target": "IBD-BLK-BLK-003-002",
+            "type": "connector",
+            "label": "connector",
+            "points": [
+              {
+                "x": 545,
+                "y": 148
+              },
+              {
+                "x": 572.5,
+                "y": 148
+              },
+              {
+                "x": 572.5,
+                "y": 148
+              },
+              {
+                "x": 600,
+                "y": 148
+              }
+            ],
+            "label_x": 572.5,
+            "label_y": 140
+          },
+          {
+            "id": "DREL-BLK-003-IBD-003",
+            "relationship_id": "DREL-BLK-003-IBD-003",
+            "source": "IBD-BLK-BLK-003-002",
+            "target": "IBD-BLK-BLK-003-003",
+            "type": "connector",
+            "label": "connector",
+            "points": [
+              {
+                "x": 805,
+                "y": 148
+              },
+              {
+                "x": 832.5,
+                "y": 148
+              },
+              {
+                "x": 832.5,
+                "y": 148
+              },
+              {
+                "x": 860,
+                "y": 148
+              }
+            ],
+            "label_x": 832.5,
+            "label_y": 140
+          },
+          {
+            "id": "DREL-BLK-003-IBD-004",
+            "relationship_id": "DREL-BLK-003-IBD-004",
+            "source": "IBD-BLK-BLK-003-003",
+            "target": "IBD-BLK-BLK-003-004",
+            "type": "connector",
+            "label": "connector",
+            "points": [
+              {
+                "x": 860,
+                "y": 148
+              },
+              {
+                "x": 572.5,
+                "y": 148
+              },
+              {
+                "x": 572.5,
+                "y": 298
+              },
+              {
+                "x": 285,
+                "y": 298
+              }
+            ],
+            "label_x": 572.5,
+            "label_y": 215
+          },
+          {
+            "id": "DREL-BLK-003-IBD-005",
+            "relationship_id": "DREL-BLK-003-IBD-005",
+            "source": "IBD-BLK-BLK-003-004",
+            "target": "IBD-IF-BLK-003-002",
+            "type": "connector",
+            "label": "connector",
+            "points": [
+              {
+                "x": 285,
+                "y": 298
+              },
+              {
+                "x": 312.5,
+                "y": 298
+              },
+              {
+                "x": 312.5,
+                "y": 298
+              },
+              {
+                "x": 340,
+                "y": 298
+              }
+            ],
+            "label_x": 312.5,
+            "label_y": 290
+          },
+          {
+            "id": "DREL-BLK-003-IBD-006",
+            "relationship_id": "DREL-BLK-003-IBD-006",
+            "source": "IBD-BLK-BLK-003-005",
+            "target": "IBD-BLK-BLK-003-002",
+            "type": "connector",
+            "label": "connector",
+            "points": [
+              {
+                "x": 805,
+                "y": 298
+              },
+              {
+                "x": 702.5,
+                "y": 298
+              },
+              {
+                "x": 702.5,
+                "y": 148
+              },
+              {
+                "x": 600,
+                "y": 148
+              }
+            ],
+            "label_x": 702.5,
+            "label_y": 215
+          },
+          {
+            "id": "DREL-BLK-003-IBD-007",
+            "relationship_id": "DREL-BLK-003-IBD-007",
+            "source": "IBD-BLK-BLK-003-005",
+            "target": "IBD-BLK-BLK-003-003",
+            "type": "connector",
+            "label": "connector",
+            "points": [
+              {
+                "x": 805,
+                "y": 298
+              },
+              {
+                "x": 832.5,
+                "y": 298
+              },
+              {
+                "x": 832.5,
+                "y": 148
+              },
+              {
+                "x": 860,
+                "y": 148
+              }
+            ],
+            "label_x": 832.5,
+            "label_y": 215
+          },
+          {
+            "id": "DREL-BLK-003-IBD-008",
+            "relationship_id": "DREL-BLK-003-IBD-008",
+            "source": "IBD-IF-BLK-003-003",
+            "target": "IBD-BLK-BLK-003-005",
+            "type": "connector",
+            "label": "connector",
+            "points": [
+              {
+                "x": 860,
+                "y": 298
+              },
+              {
+                "x": 832.5,
+                "y": 298
+              },
+              {
+                "x": 832.5,
+                "y": 298
+              },
+              {
+                "x": 805,
+                "y": 298
+              }
+            ],
+            "label_x": 832.5,
+            "label_y": 290
+          }
+        ]
+      }
+    },
+    {
+      "id": "FOCUS-BLK-004-IBD",
+      "name": "用户终端 - 内部模块图（IBD）",
+      "diagram_type": "ibd",
+      "focus_element_id": "BLK-004",
+      "variant_id": "FOCUS-BLK-004",
+      "variant_name": "关键模块预生成：用户终端",
+      "description": "系统生成总体模型时预生成的 用户终端 内部模块图，双击该模块可直接展示。",
+      "element_ids": [
+        "IBD-IF-BLK-004-001",
+        "IBD-BLK-BLK-004-001",
+        "IBD-BLK-BLK-004-002",
+        "IBD-BLK-BLK-004-003",
+        "IBD-BLK-BLK-004-004",
+        "IBD-IF-BLK-004-002",
+        "IBD-BLK-BLK-004-005",
+        "IBD-IF-BLK-004-003"
+      ],
+      "relationship_ids": [
+        "DREL-BLK-004-IBD-001",
+        "DREL-BLK-004-IBD-002",
+        "DREL-BLK-004-IBD-003",
+        "DREL-BLK-004-IBD-004",
+        "DREL-BLK-004-IBD-005",
+        "DREL-BLK-004-IBD-006",
+        "DREL-BLK-004-IBD-007",
+        "DREL-BLK-004-IBD-008"
+      ],
+      "trace_links": [],
+      "layout": {
+        "schema": "ai-mbse.diagram-view-layout.v1",
+        "diagram_name": "用户终端 - 内部模块图（IBD）",
+        "layout_source": "backend",
+        "width": 1140,
+        "height": 530,
+        "nodes": [
+          {
+            "id": "IBD-IF-BLK-004-001",
+            "element_id": "IBD-IF-BLK-004-001",
+            "name": "用户终端输入接口",
+            "label": "用户终端输入接口",
+            "type": "Interface",
+            "stereotype_label": "interface",
+            "shape": "soft",
+            "x": 80,
+            "y": 110,
+            "width": 205,
+            "height": 76
+          },
+          {
+            "id": "IBD-BLK-BLK-004-001",
+            "element_id": "IBD-BLK-BLK-004-001",
+            "name": "各种类型终端接入与整形单元",
+            "label": "各种类型终端接入与整形单元",
+            "type": "Block",
+            "stereotype_label": "part",
+            "shape": "rect",
+            "x": 340,
+            "y": 110,
+            "width": 205,
+            "height": 76
+          },
+          {
+            "id": "IBD-BLK-BLK-004-002",
+            "element_id": "IBD-BLK-BLK-004-002",
+            "name": "动中通处理单元",
+            "label": "动中通处理单元",
+            "type": "Block",
+            "stereotype_label": "part",
+            "shape": "rect",
+            "x": 600,
+            "y": 110,
+            "width": 205,
+            "height": 76
+          },
+          {
+            "id": "IBD-BLK-BLK-004-003",
+            "element_id": "IBD-BLK-BLK-004-003",
+            "name": "固定站控制管理单元",
+            "label": "固定站控制管理单元",
+            "type": "Block",
+            "stereotype_label": "part",
+            "shape": "rect",
+            "x": 860,
+            "y": 110,
+            "width": 205,
+            "height": 76
+          },
+          {
+            "id": "IBD-BLK-BLK-004-004",
+            "element_id": "IBD-BLK-BLK-004-004",
+            "name": "手持终端等执行输出单元",
+            "label": "手持终端等执行输出单元",
+            "type": "Block",
+            "stereotype_label": "part",
+            "shape": "rect",
+            "x": 80,
+            "y": 260,
+            "width": 205,
+            "height": 76
+          },
+          {
+            "id": "IBD-IF-BLK-004-002",
+            "element_id": "IBD-IF-BLK-004-002",
+            "name": "用户终端输出接口",
+            "label": "用户终端输出接口",
+            "type": "Interface",
+            "stereotype_label": "interface",
+            "shape": "soft",
+            "x": 340,
+            "y": 260,
+            "width": 205,
+            "height": 76
+          },
+          {
+            "id": "IBD-BLK-BLK-004-005",
+            "element_id": "IBD-BLK-BLK-004-005",
+            "name": "状态监测与保护单元",
+            "label": "状态监测与保护单元",
+            "type": "Block",
+            "stereotype_label": "part",
+            "shape": "rect",
+            "x": 600,
+            "y": 260,
+            "width": 205,
+            "height": 76
+          },
+          {
+            "id": "IBD-IF-BLK-004-003",
+            "element_id": "IBD-IF-BLK-004-003",
+            "name": "平台资源接口",
+            "label": "平台资源接口",
+            "type": "Interface",
+            "stereotype_label": "interface",
+            "shape": "soft",
+            "x": 860,
+            "y": 260,
+            "width": 205,
+            "height": 76
+          }
+        ],
+        "edges": [
+          {
+            "id": "DREL-BLK-004-IBD-001",
+            "relationship_id": "DREL-BLK-004-IBD-001",
+            "source": "IBD-IF-BLK-004-001",
+            "target": "IBD-BLK-BLK-004-001",
+            "type": "connector",
+            "label": "connector",
+            "points": [
+              {
+                "x": 285,
+                "y": 148
+              },
+              {
+                "x": 312.5,
+                "y": 148
+              },
+              {
+                "x": 312.5,
+                "y": 148
+              },
+              {
+                "x": 340,
+                "y": 148
+              }
+            ],
+            "label_x": 312.5,
+            "label_y": 140
+          },
+          {
+            "id": "DREL-BLK-004-IBD-002",
+            "relationship_id": "DREL-BLK-004-IBD-002",
+            "source": "IBD-BLK-BLK-004-001",
+            "target": "IBD-BLK-BLK-004-002",
+            "type": "connector",
+            "label": "connector",
+            "points": [
+              {
+                "x": 545,
+                "y": 148
+              },
+              {
+                "x": 572.5,
+                "y": 148
+              },
+              {
+                "x": 572.5,
+                "y": 148
+              },
+              {
+                "x": 600,
+                "y": 148
+              }
+            ],
+            "label_x": 572.5,
+            "label_y": 140
+          },
+          {
+            "id": "DREL-BLK-004-IBD-003",
+            "relationship_id": "DREL-BLK-004-IBD-003",
+            "source": "IBD-BLK-BLK-004-002",
+            "target": "IBD-BLK-BLK-004-003",
+            "type": "connector",
+            "label": "connector",
+            "points": [
+              {
+                "x": 805,
+                "y": 148
+              },
+              {
+                "x": 832.5,
+                "y": 148
+              },
+              {
+                "x": 832.5,
+                "y": 148
+              },
+              {
+                "x": 860,
+                "y": 148
+              }
+            ],
+            "label_x": 832.5,
+            "label_y": 140
+          },
+          {
+            "id": "DREL-BLK-004-IBD-004",
+            "relationship_id": "DREL-BLK-004-IBD-004",
+            "source": "IBD-BLK-BLK-004-003",
+            "target": "IBD-BLK-BLK-004-004",
+            "type": "connector",
+            "label": "connector",
+            "points": [
+              {
+                "x": 860,
+                "y": 148
+              },
+              {
+                "x": 572.5,
+                "y": 148
+              },
+              {
+                "x": 572.5,
+                "y": 298
+              },
+              {
+                "x": 285,
+                "y": 298
+              }
+            ],
+            "label_x": 572.5,
+            "label_y": 215
+          },
+          {
+            "id": "DREL-BLK-004-IBD-005",
+            "relationship_id": "DREL-BLK-004-IBD-005",
+            "source": "IBD-BLK-BLK-004-004",
+            "target": "IBD-IF-BLK-004-002",
+            "type": "connector",
+            "label": "connector",
+            "points": [
+              {
+                "x": 285,
+                "y": 298
+              },
+              {
+                "x": 312.5,
+                "y": 298
+              },
+              {
+                "x": 312.5,
+                "y": 298
+              },
+              {
+                "x": 340,
+                "y": 298
+              }
+            ],
+            "label_x": 312.5,
+            "label_y": 290
+          },
+          {
+            "id": "DREL-BLK-004-IBD-006",
+            "relationship_id": "DREL-BLK-004-IBD-006",
+            "source": "IBD-BLK-BLK-004-005",
+            "target": "IBD-BLK-BLK-004-002",
+            "type": "connector",
+            "label": "connector",
+            "points": [
+              {
+                "x": 805,
+                "y": 298
+              },
+              {
+                "x": 702.5,
+                "y": 298
+              },
+              {
+                "x": 702.5,
+                "y": 148
+              },
+              {
+                "x": 600,
+                "y": 148
+              }
+            ],
+            "label_x": 702.5,
+            "label_y": 215
+          },
+          {
+            "id": "DREL-BLK-004-IBD-007",
+            "relationship_id": "DREL-BLK-004-IBD-007",
+            "source": "IBD-BLK-BLK-004-005",
+            "target": "IBD-BLK-BLK-004-003",
+            "type": "connector",
+            "label": "connector",
+            "points": [
+              {
+                "x": 805,
+                "y": 298
+              },
+              {
+                "x": 832.5,
+                "y": 298
+              },
+              {
+                "x": 832.5,
+                "y": 148
+              },
+              {
+                "x": 860,
+                "y": 148
+              }
+            ],
+            "label_x": 832.5,
+            "label_y": 215
+          },
+          {
+            "id": "DREL-BLK-004-IBD-008",
+            "relationship_id": "DREL-BLK-004-IBD-008",
+            "source": "IBD-IF-BLK-004-003",
+            "target": "IBD-BLK-BLK-004-005",
+            "type": "connector",
+            "label": "connector",
+            "points": [
+              {
+                "x": 860,
+                "y": 298
+              },
+              {
+                "x": 832.5,
+                "y": 298
+              },
+              {
+                "x": 832.5,
+                "y": 298
+              },
+              {
+                "x": 805,
+                "y": 298
+              }
+            ],
+            "label_x": 832.5,
+            "label_y": 290
+          }
+        ]
+      }
+    },
+    {
+      "id": "FOCUS-IBD",
+      "name": "低轨卫星互联网系统 - 内部模块图（IBD）",
+      "diagram_type": "ibd",
+      "focus_element_id": "BLK-001",
+      "variant_id": "FOCUS-IBD",
+      "variant_name": "低轨卫星互联网系统 AI 内部分解",
+      "description": "展示低轨卫星互联网系统顶层内部组成：空间段（100颗卫星）、地面信关站、用户终端、运营支撑系统，以及通过信关站连接的外部网络接口。",
+      "element_ids": [
+        "IBD-BLK-SAT-CONST",
+        "IBD-BLK-GW",
+        "IBD-BLK-UT",
+        "IBD-BLK-OSS",
+        "IBD-BLK-EXTNET",
+        "IBD-IF-FEEDER",
+        "IBD-IF-USER",
+        "IBD-IF-MGMT",
+        "IBD-IF-EXT"
+      ],
+      "relationship_ids": [
+        "DREL-IBD-001",
+        "DREL-IBD-002",
+        "DREL-IBD-003",
+        "DREL-IBD-004",
+        "DREL-IBD-005"
+      ],
+      "trace_links": [],
+      "layout": {
+        "schema": "ai-mbse.diagram-view-layout.v1",
+        "diagram_name": "低轨卫星互联网系统 - 内部模块图（IBD）",
+        "layout_source": "backend",
+        "width": 1140,
+        "height": 680,
+        "nodes": [
+          {
+            "id": "IBD-BLK-SAT-CONST",
+            "element_id": "IBD-BLK-SAT-CONST",
+            "name": "空间段（100颗卫星）",
+            "label": "空间段（100颗卫星）",
+            "type": "Block",
+            "stereotype_label": "part",
+            "shape": "rect",
+            "x": 80,
+            "y": 110,
+            "width": 205,
+            "height": 76
+          },
+          {
+            "id": "IBD-BLK-GW",
+            "element_id": "IBD-BLK-GW",
+            "name": "地面信关站",
+            "label": "地面信关站",
+            "type": "Block",
+            "stereotype_label": "part",
+            "shape": "rect",
+            "x": 340,
+            "y": 110,
+            "width": 205,
+            "height": 76
+          },
+          {
+            "id": "IBD-BLK-UT",
+            "element_id": "IBD-BLK-UT",
+            "name": "用户终端",
+            "label": "用户终端",
+            "type": "Block",
+            "stereotype_label": "part",
+            "shape": "rect",
+            "x": 600,
+            "y": 110,
+            "width": 205,
+            "height": 76
+          },
+          {
+            "id": "IBD-BLK-OSS",
+            "element_id": "IBD-BLK-OSS",
+            "name": "运营支撑系统",
+            "label": "运营支撑系统",
+            "type": "Block",
+            "stereotype_label": "part",
+            "shape": "rect",
+            "x": 860,
+            "y": 110,
+            "width": 205,
+            "height": 76
+          },
+          {
+            "id": "IBD-BLK-EXTNET",
+            "element_id": "IBD-BLK-EXTNET",
+            "name": "外部网络（互联网骨干网等）",
+            "label": "外部网络（互联网骨干网等）",
+            "type": "Block",
+            "stereotype_label": "part",
+            "shape": "rect",
+            "x": 80,
+            "y": 260,
+            "width": 205,
+            "height": 76
+          },
+          {
+            "id": "IBD-IF-FEEDER",
+            "element_id": "IBD-IF-FEEDER",
+            "name": "馈电链路接口",
+            "label": "馈电链路接口",
+            "type": "Interface",
+            "stereotype_label": "interface",
+            "shape": "soft",
+            "x": 340,
+            "y": 260,
+            "width": 205,
+            "height": 76
+          },
+          {
+            "id": "IBD-IF-USER",
+            "element_id": "IBD-IF-USER",
+            "name": "星地用户链路接口",
+            "label": "星地用户链路接口",
+            "type": "Interface",
+            "stereotype_label": "interface",
+            "shape": "soft",
+            "x": 600,
+            "y": 260,
+            "width": 205,
+            "height": 76
+          },
+          {
+            "id": "IBD-IF-MGMT",
+            "element_id": "IBD-IF-MGMT",
+            "name": "管理接口",
+            "label": "管理接口",
+            "type": "Interface",
+            "stereotype_label": "interface",
+            "shape": "soft",
+            "x": 860,
+            "y": 260,
+            "width": 205,
+            "height": 76
+          },
+          {
+            "id": "IBD-IF-EXT",
+            "element_id": "IBD-IF-EXT",
+            "name": "外部网络接口",
+            "label": "外部网络接口",
+            "type": "Interface",
+            "stereotype_label": "interface",
+            "shape": "soft",
+            "x": 80,
+            "y": 410,
+            "width": 205,
+            "height": 76
+          }
+        ],
+        "edges": [
+          {
+            "id": "DREL-IBD-001",
+            "relationship_id": "DREL-IBD-001",
+            "source": "IBD-BLK-SAT-CONST",
+            "target": "IBD-BLK-GW",
+            "type": "connector",
+            "label": "connector",
+            "points": [
+              {
+                "x": 285,
+                "y": 148
+              },
+              {
+                "x": 312.5,
+                "y": 148
+              },
+              {
+                "x": 312.5,
+                "y": 148
+              },
+              {
+                "x": 340,
+                "y": 148
+              }
+            ],
+            "label_x": 312.5,
+            "label_y": 140
+          },
+          {
+            "id": "DREL-IBD-002",
+            "relationship_id": "DREL-IBD-002",
+            "source": "IBD-BLK-SAT-CONST",
+            "target": "IBD-BLK-UT",
+            "type": "connector",
+            "label": "connector",
+            "points": [
+              {
+                "x": 285,
+                "y": 148
+              },
+              {
+                "x": 442.5,
+                "y": 148
+              },
+              {
+                "x": 442.5,
+                "y": 148
+              },
+              {
+                "x": 600,
+                "y": 148
+              }
+            ],
+            "label_x": 442.5,
+            "label_y": 140
+          },
+          {
+            "id": "DREL-IBD-003",
+            "relationship_id": "DREL-IBD-003",
+            "source": "IBD-BLK-GW",
+            "target": "IBD-BLK-EXTNET",
+            "type": "connector",
+            "label": "connector",
+            "points": [
+              {
+                "x": 340,
+                "y": 148
+              },
+              {
+                "x": 312.5,
+                "y": 148
+              },
+              {
+                "x": 312.5,
+                "y": 298
+              },
+              {
+                "x": 285,
+                "y": 298
+              }
+            ],
+            "label_x": 312.5,
+            "label_y": 215
+          },
+          {
+            "id": "DREL-IBD-004",
+            "relationship_id": "DREL-IBD-004",
+            "source": "IBD-BLK-OSS",
+            "target": "IBD-BLK-GW",
+            "type": "connector",
+            "label": "connector",
+            "points": [
+              {
+                "x": 860,
+                "y": 148
+              },
+              {
+                "x": 702.5,
+                "y": 148
+              },
+              {
+                "x": 702.5,
+                "y": 148
+              },
+              {
+                "x": 545,
+                "y": 148
+              }
+            ],
+            "label_x": 702.5,
+            "label_y": 140
+          },
+          {
+            "id": "DREL-IBD-005",
+            "relationship_id": "DREL-IBD-005",
+            "source": "IBD-BLK-OSS",
+            "target": "IBD-BLK-SAT-CONST",
+            "type": "connector",
+            "label": "connector",
+            "points": [
+              {
+                "x": 860,
+                "y": 148
+              },
+              {
+                "x": 572.5,
+                "y": 148
+              },
+              {
+                "x": 572.5,
+                "y": 148
+              },
+              {
+                "x": 285,
+                "y": 148
+              }
+            ],
+            "label_x": 572.5,
+            "label_y": 140
+          }
+        ]
+      }
+    }
+  ]
+}

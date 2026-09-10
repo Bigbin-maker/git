@@ -1,0 +1,40 @@
+﻿local_id,name,type,package,metaclass,stereotype,documentation,source_requirement,status
+REQ-001,Service Target,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,系统应为全球消费者、航空、航海、农村覆盖等提供宽带互联网接入服务。,REQ-001,candidate
+REQ-002,User Data Rate,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,单用户下行速率不低于100 Mbps。,REQ-002,candidate
+REQ-003,System Capacity,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,系统总容量至少10 Tbps。,REQ-003,candidate
+REQ-004,End-to-End Latency,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,端到端时延不超过30 ms。,REQ-004,candidate
+REQ-005,Orbit Altitude,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,轨道高度应在500-600 km范围内。,REQ-005,candidate
+REQ-006,Orbit Inclination,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,倾角选择极轨或倾斜轨道以满足覆盖要求。,REQ-006,candidate
+REQ-007,Constellation Configuration,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,100颗卫星采用Walker构型，暂定10个轨道面，每面10颗。,REQ-007,candidate
+REQ-008,Inter-Satellite Link,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,卫星间应具备激光星间链路以实现全球实时互联。,REQ-008,candidate
+REQ-009,User Link Frequency Band,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,用户链路应采用Ka频段，并使用多波束相控阵天线。,REQ-009,candidate
+REQ-010,Gateway Distribution,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,信关站需全球分布，并与地面光纤网络互联。,REQ-010,candidate
+REQ-011,Satellite Platform Constraints,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,卫星质量不超过200 kg，功耗不超过1 kW，设计寿命至少5年。,REQ-011,candidate
+REQ-012,On-Board Processing,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,卫星应采用再生式处理架构，支持星上路由与交换。,REQ-012,candidate
+REQ-013,5G NTN Compatibility,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,网络架构应兼容5G NTN标准。,REQ-013,candidate
+REQ-014,Deployment and Cost,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,卫星分批发射，整体成本控制在预算范围内。,REQ-014,candidate
+REQ-015,Verification Method,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,通过仿真验证、链路预算分析和在轨测试进行验收。,REQ-015,candidate
+BLK-001,LEO Constellation System,Block,03_Structural,Class,SysML::Blocks::Block,100颗卫星的低轨星座互联网系统顶层块。,,candidate
+BLK-002,Space Segment,Block,03_Structural,Class,SysML::Blocks::Block,包含所有卫星及其载荷的太空部分。,,candidate
+BLK-003,Satellite,Block,03_Structural,Class,SysML::Blocks::Block,单颗低轨通信卫星，含平台与载荷。,,candidate
+BLK-004,Payload,Block,03_Structural,Class,SysML::Blocks::Block,卫星载荷，包括相控阵天线、星上处理器、激光终端等。,,candidate
+BLK-005,Ground Segment,Block,03_Structural,Class,SysML::Blocks::Block,地面段，含信关站和网络控制中心。,,candidate
+BLK-006,Gateway Station,Block,03_Structural,Class,SysML::Blocks::Block,信关站，提供馈电链路和地面网络接口。,,candidate
+BLK-007,User Terminal,Block,03_Structural,Class,SysML::Blocks::Block,用户终端，如电扫平板天线。,,candidate
+BLK-008,Network Control Center,Block,03_Structural,Class,SysML::Blocks::Block,网络管控中心，负责星座管理、路由、计费等。,,candidate
+UC-001,Provide Broadband Internet Access,UseCase,02_UseCases,UseCase,,用户通过卫星接入互联网，实现数据上下行。,,candidate
+UC-002,Inter-Satellite Routing,UseCase,02_UseCases,UseCase,,利用星间链路在卫星之间转发数据包。,,candidate
+UC-003,Constellation Management,UseCase,02_UseCases,UseCase,,星座运营管理，包括轨道维持、碰撞规避等。,,candidate
+UC-004,User Authentication and Billing,UseCase,02_UseCases,UseCase,,用户接入认证与计费管理。,,candidate
+UC-005,"Telemetry, Tracking and Command",UseCase,02_UseCases,UseCase,,卫星遥测、跟踪与指令控制。,,candidate
+IF-001,User Link Interface,Interface,04_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,用户终端与卫星之间的Ka频段链路接口。,,candidate
+IF-002,Feeder Link Interface,Interface,04_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,卫星与信关站之间的馈电链路接口。,,candidate
+IF-003,Inter-Satellite Link Interface,Interface,04_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,卫星之间的激光星间链路接口。,,candidate
+IF-004,Ground Network Interface,Interface,04_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,信关站与地面互联网/5G核心网的接口。,,candidate
+ACT-001,User Registration and Beam Handover,Activity,05_Activities,Activity,,用户终端注册入网及波束切换的活动流程。,,candidate
+ACT-002,Route Update and Data Forwarding,Activity,05_Activities,Activity,,星座拓扑变化时的路由更新与数据转发活动。,,candidate
+ACT-003,Constellation Maintenance Activity,Activity,05_Activities,Activity,,轨道维持、碰撞规避等星座维护操作活动。,,candidate
+CON-001,Mass and Power Budget,ConstraintBlock,06_Constraints,Class,SysML::ConstraintBlocks::ConstraintBlock,约束卫星质量≤200kg，功耗≤1kW。,,candidate
+CON-002,Orbit and Coverage Constraint,ConstraintBlock,06_Constraints,Class,SysML::ConstraintBlocks::ConstraintBlock,轨道高度、倾角需满足全球覆盖要求。,,candidate
+CON-003,Frequency Coordination Constraint,ConstraintBlock,06_Constraints,Class,SysML::ConstraintBlocks::ConstraintBlock,频率使用需遵循ITU规则，完成协调。,,candidate
+CON-004,End-to-End Latency Budget,ConstraintBlock,06_Constraints,Class,SysML::ConstraintBlocks::ConstraintBlock,端到端时延分解至各段链路，总和≤30ms。,,candidate

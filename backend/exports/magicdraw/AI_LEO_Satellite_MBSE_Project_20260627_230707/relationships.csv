@@ -1,0 +1,85 @@
+﻿local_id,name,type,package,metaclass,stereotype,source,source_name,target,target_name,documentation
+REL-001,REL-001,contains,06_Traceability,Association,CompositeAssociation,BLK-001,ä½è½¨å®½å¸¦å«æäºèç½ç³»ç»,BLK-002,ç©ºé´æ®µ,ç³»ç»è¾¹çåå«ç©ºé´æ®µ
+REL-002,REL-002,contains,06_Traceability,Association,CompositeAssociation,BLK-001,ä½è½¨å®½å¸¦å«æäºèç½ç³»ç»,BLK-012,å°é¢æ®µ,ç³»ç»è¾¹çåå«å°é¢æ®µ
+REL-003,REL-003,contains,06_Traceability,Association,CompositeAssociation,BLK-001,ä½è½¨å®½å¸¦å«æäºèç½ç³»ç»,BLK-016,ç¨æ·æ®µ,ç³»ç»è¾¹çåå«ç¨æ·æ®µ
+REL-004,REL-004,contains,06_Traceability,Association,CompositeAssociation,BLK-001,ä½è½¨å®½å¸¦å«æäºèç½ç³»ç»,BLK-018,å¤é¨äºèç½ä¸æ ¸å¿ç½,ç³»ç»è¾¹çè¿æ¥å¤é¨äºèç½ä¸æ ¸å¿ç½
+REL-005,REL-005,contains,06_Traceability,Association,CompositeAssociation,BLK-002,ç©ºé´æ®µ,BLK-003,100é¢ä½è½¨éä¿¡æåº§,ç©ºé´æ®µåå«100é¢ä½è½¨éä¿¡æåº§
+REL-006,REL-006,contains,06_Traceability,Association,CompositeAssociation,BLK-003,100é¢ä½è½¨éä¿¡æåº§,BLK-004,è½¨éé¢ä¸æåº§æå,æåº§åå«è½¨éé¢ä¸æåå®ä¹
+REL-007,REL-007,contains,06_Traceability,Association,CompositeAssociation,BLK-003,100é¢ä½è½¨éä¿¡æåº§,BLK-005,ä½è½¨éä¿¡å«æ,æåº§ç±ä½è½¨éä¿¡å«æç»æ
+REL-008,REL-008,contains,06_Traceability,Association,CompositeAssociation,BLK-005,ä½è½¨éä¿¡å«æ,BLK-006,å®½å¸¦éä¿¡è½½è·,åæåå«å®½å¸¦éä¿¡è½½è·
+REL-009,REL-009,contains,06_Traceability,Association,CompositeAssociation,BLK-005,ä½è½¨éä¿¡å«æ,BLK-007,æä¸æ°å­å¤çå¨,åæåå«æä¸æ°å­å¤çå¨
+REL-010,REL-010,contains,06_Traceability,Association,CompositeAssociation,BLK-005,ä½è½¨éä¿¡å«æ,BLK-008,ç¨æ·æå¡é¾è·¯å¤©çº¿,åæåå«ç¨æ·æå¡é¾è·¯å¤©çº¿
+REL-011,REL-011,contains,06_Traceability,Association,CompositeAssociation,BLK-005,ä½è½¨éä¿¡å«æ,BLK-009,é¦çµé¾è·¯ç»ç«¯,åæåå«é¦çµé¾è·¯ç»ç«¯
+REL-012,REL-012,contains,06_Traceability,Association,CompositeAssociation,BLK-005,ä½è½¨éä¿¡å«æ,BLK-010,æé´é¾è·¯ç»ç«¯,åæåå«æé´é¾è·¯ç»ç«¯
+REL-013,REL-013,contains,06_Traceability,Association,CompositeAssociation,BLK-005,ä½è½¨éä¿¡å«æ,BLK-011,å«æå¹³å°ä¸æå¡åç³»ç»,åæåå«å¹³å°ä¸æå¡åç³»ç»
+REL-014,REL-014,contains,06_Traceability,Association,CompositeAssociation,BLK-012,å°é¢æ®µ,BLK-013,é¦çµç½å³ç«,å°é¢æ®µåå«é¦çµç½å³ç«
+REL-015,REL-015,contains,06_Traceability,Association,CompositeAssociation,BLK-012,å°é¢æ®µ,BLK-014,ç½ç»è¿è¥æ§å¶ä¸­å¿,å°é¢æ®µåå«ç½ç»è¿è¥æ§å¶ä¸­å¿
+REL-016,REL-016,contains,06_Traceability,Association,CompositeAssociation,BLK-012,å°é¢æ®µ,BLK-015,ä»»å¡è¿æ§ä¸­å¿,å°é¢æ®µåå«ä»»å¡è¿æ§ä¸­å¿
+REL-017,REL-017,contains,06_Traceability,Association,CompositeAssociation,BLK-016,ç¨æ·æ®µ,BLK-017,å®½å¸¦ç¨æ·ç»ç«¯,ç¨æ·æ®µåå«å®½å¸¦ç¨æ·ç»ç«¯
+REL-018,REL-018,satisfy,06_Traceability,Dependency,SysML::Requirements::Satisfy,BLK-001,ä½è½¨å®½å¸¦å«æäºèç½ç³»ç»,REQ-001,æåº§ä»»å¡ä¸æå¡ç®æ ,ç³»ç»æ»¡è¶³æåº§ä»»å¡ä¸æå¡ç®æ 
+REL-019,REL-019,satisfy,06_Traceability,Dependency,SysML::Requirements::Satisfy,BLK-001,ä½è½¨å®½å¸¦å«æäºèç½ç³»ç»,REQ-002,ç³»ç»è¾¹çä¸å¤é¨åä¸æ¹,ç³»ç»æ ¹æ¨¡åçå®æ»ä½è¾¹çä¸å¤é¨åä¸æ¹
+REL-020,REL-020,satisfy,06_Traceability,Dependency,SysML::Requirements::Satisfy,BLK-003,100é¢ä½è½¨éä¿¡æåº§,REQ-003,100é¢å«ææåº§è§æ¨¡,100é¢ä½è½¨éä¿¡æåº§æ»¡è¶³è§æ¨¡éæ±
+REL-021,REL-021,satisfy,06_Traceability,Dependency,SysML::Requirements::Satisfy,BLK-004,è½¨éé¢ä¸æåº§æå,REQ-004,è½¨éè¦çä¸æå¡è¿ç»­æ§,è½¨éæåæ»¡è¶³è¦çä¸æå¡è¿ç»­æ§éæ±
+REL-022,REL-022,satisfy,06_Traceability,Dependency,SysML::Requirements::Satisfy,BLK-006,å®½å¸¦éä¿¡è½½è·,REQ-005,ç¨æ·é¾è·¯å®¹éä¸æå¡è´¨é,å®½å¸¦éä¿¡è½½è·æ»¡è¶³ç¨æ·å®¹éä¸QoSéæ±
+REL-023,REL-023,satisfy,06_Traceability,Dependency,SysML::Requirements::Satisfy,BLK-013,é¦çµç½å³ç«,REQ-006,é¦çµé¾è·¯ä¸ç½å³æ¥å¥,é¦çµç½å³ç«æ»¡è¶³é¦çµé¾è·¯ä¸ç½å³æ¥å¥éæ±
+REL-024,REL-024,satisfy,06_Traceability,Dependency,SysML::Requirements::Satisfy,BLK-010,æé´é¾è·¯ç»ç«¯,REQ-007,æé´é¾è·¯ä¸ç©ºé´è·¯ç±,æé´é¾è·¯ç»ç«¯æ»¡è¶³ç©ºé´è·¯ç±éæ±
+REL-025,REL-025,satisfy,06_Traceability,Dependency,SysML::Requirements::Satisfy,BLK-017,å®½å¸¦ç¨æ·ç»ç«¯,REQ-008,ç¨æ·ç»ç«¯æ¥å¥ä¸é´æ,ç¨æ·ç»ç«¯æ»¡è¶³æ¥å¥ä¸é´æéæ±
+REL-026,REL-026,satisfy,06_Traceability,Dependency,SysML::Requirements::Satisfy,BLK-014,ç½ç»è¿è¥æ§å¶ä¸­å¿,REQ-009,ç½ç»ç®¡çä¸èµæºè°åº¦,ç½ç»è¿è¥æ§å¶ä¸­å¿æ»¡è¶³èµæºè°åº¦éæ±
+REL-027,REL-027,satisfy,06_Traceability,Dependency,SysML::Requirements::Satisfy,BLK-015,ä»»å¡è¿æ§ä¸­å¿,REQ-010,é¥æµé¥æ§ä¸å¨è½¨è¿ç»´,ä»»å¡è¿æ§ä¸­å¿æ»¡è¶³é¥æµé¥æ§ä¸å¨è½¨è¿ç»´éæ±
+REL-028,REL-028,satisfy,06_Traceability,Dependency,SysML::Requirements::Satisfy,BLK-015,ä»»å¡è¿æ§ä¸­å¿,REQ-011,æéå¤ç½®ä¸å®å¨éç¦»,ä»»å¡è¿æ§ä¸­å¿çµå¼æéå¤ç½®ä¸å®å¨éç¦»é­ç¯
+REL-029,REL-029,satisfy,06_Traceability,Dependency,SysML::Requirements::Satisfy,BLK-014,ç½ç»è¿è¥æ§å¶ä¸­å¿,REQ-012,ä¿¡æ¯å®å¨ä¸ä¸å¡éç¦»,ç½ç»è¿è¥æ§å¶ä¸­å¿æ»¡è¶³ä¿¡æ¯å®å¨ä¸ä¸å¡éç¦»éæ±
+REL-030,REL-030,satisfy,06_Traceability,Dependency,SysML::Requirements::Satisfy,BLK-006,å®½å¸¦éä¿¡è½½è·,REQ-013,é¢è°±åè§ä¸çµç£å¼å®¹,éä¿¡è½½è·è®¾è®¡æ»¡è¶³é¢è°±åè§ä¸çµç£å¼å®¹éæ±
+REL-031,REL-031,satisfy,06_Traceability,Dependency,SysML::Requirements::Satisfy,IF-009,MagicDraw Bridgeæ¥å£,REQ-014,æ¨¡åä¸è´æ§ä¸MagicDrawäº¤ä»,Bridgeæ¥å£æ»¡è¶³æ¨¡åä¸è´æ§ä¸MagicDrawäº¤ä»éæ±
+REL-032,REL-032,trace,06_Traceability,Dependency,SysML::Requirements::Trace,REQ-001,æåº§ä»»å¡ä¸æå¡ç®æ ,UC-001,å¼å¯¼æ»ä½éæ±æ¾æ¸,ä»»å¡ç®æ è¿½æº¯å°æ»ä½éæ±æ¾æ¸ç¨ä¾
+REL-033,REL-033,trace,06_Traceability,Dependency,SysML::Requirements::Trace,REQ-002,ç³»ç»è¾¹çä¸å¤é¨åä¸æ¹,UC-001,å¼å¯¼æ»ä½éæ±æ¾æ¸,ç³»ç»è¾¹çè¿½æº¯å°æ»ä½éæ±æ¾æ¸ç¨ä¾
+REL-034,REL-034,trace,06_Traceability,Dependency,SysML::Requirements::Trace,REQ-003,100é¢å«ææåº§è§æ¨¡,UC-002,å¼å±æåº§è¦çä¸å®¹éè®¾è®¡,100é¢æåº§è§æ¨¡è¿½æº¯å°è¦çå®¹éè®¾è®¡ç¨ä¾
+REL-035,REL-035,trace,06_Traceability,Dependency,SysML::Requirements::Trace,REQ-004,è½¨éè¦çä¸æå¡è¿ç»­æ§,UC-002,å¼å±æåº§è¦çä¸å®¹éè®¾è®¡,è¦çè¿ç»­æ§è¿½æº¯å°è¦çå®¹éè®¾è®¡ç¨ä¾
+REL-036,REL-036,trace,06_Traceability,Dependency,SysML::Requirements::Trace,REQ-005,ç¨æ·é¾è·¯å®¹éä¸æå¡è´¨é,UC-003,å»ºç«ç¨æ·å®½å¸¦ä¼è¯,ç¨æ·é¾è·¯å®¹éè¿½æº¯å°ç¨æ·å®½å¸¦ä¼è¯ç¨ä¾
+REL-037,REL-037,trace,06_Traceability,Dependency,SysML::Requirements::Trace,REQ-005,ç¨æ·é¾è·¯å®¹éä¸æå¡è´¨é,UC-004,æ§è¡å«æåæ¢ä¸ä¸å¡ä¿æ,QoSåä¸å¡ä¿æè¿½æº¯å°åæ¢ç¨ä¾
+REL-038,REL-038,trace,06_Traceability,Dependency,SysML::Requirements::Trace,REQ-006,é¦çµé¾è·¯ä¸ç½å³æ¥å¥,UC-005,å®æé¦çµåä¼ ä¸æ ¸å¿ç½äºè,é¦çµé¾è·¯éæ±è¿½æº¯å°é¦çµåä¼ ç¨ä¾
+REL-039,REL-039,trace,06_Traceability,Dependency,SysML::Requirements::Trace,REQ-007,æé´é¾è·¯ä¸ç©ºé´è·¯ç±,UC-006,æ§è¡æé´è·¯ç±è½¬å,æé´é¾è·¯éæ±è¿½æº¯å°ç©ºé´è·¯ç±ç¨ä¾
+REL-040,REL-040,trace,06_Traceability,Dependency,SysML::Requirements::Trace,REQ-008,ç¨æ·ç»ç«¯æ¥å¥ä¸é´æ,UC-003,å»ºç«ç¨æ·å®½å¸¦ä¼è¯,ç¨æ·æ¥å¥é´æè¿½æº¯å°ç¨æ·å®½å¸¦ä¼è¯ç¨ä¾
+REL-041,REL-041,trace,06_Traceability,Dependency,SysML::Requirements::Trace,REQ-009,ç½ç»ç®¡çä¸èµæºè°åº¦,UC-007,è°åº¦æ³¢æé¢è°±ç½å³èµæº,ç½ç»è°åº¦éæ±è¿½æº¯å°èµæºè°åº¦ç¨ä¾
+REL-042,REL-042,trace,06_Traceability,Dependency,SysML::Requirements::Trace,REQ-010,é¥æµé¥æ§ä¸å¨è½¨è¿ç»´,UC-008,å¤ç½®æéåè­¦ä¸ç½ç»éæ,å¨è½¨è¿ç»´éæ±è¿½æº¯å°æéåè­¦ä¸éæç¨ä¾
+REL-043,REL-043,trace,06_Traceability,Dependency,SysML::Requirements::Trace,REQ-011,æéå¤ç½®ä¸å®å¨éç¦»,UC-008,å¤ç½®æéåè­¦ä¸ç½ç»éæ,æéå¤ç½®éæ±è¿½æº¯å°æéåè­¦ä¸éæç¨ä¾
+REL-044,REL-044,trace,06_Traceability,Dependency,SysML::Requirements::Trace,REQ-012,ä¿¡æ¯å®å¨ä¸ä¸å¡éç¦»,UC-007,è°åº¦æ³¢æé¢è°±ç½å³èµæº,å®å¨éç¦»éæ±è¿½æº¯å°èµæºè°åº¦åç­ç¥æ§å¶ç¨ä¾
+REL-045,REL-045,trace,06_Traceability,Dependency,SysML::Requirements::Trace,REQ-013,é¢è°±åè§ä¸çµç£å¼å®¹,UC-002,å¼å±æåº§è¦çä¸å®¹éè®¾è®¡,é¢è°±åè§éæ±è¿½æº¯å°è¦çå®¹éè®¾è®¡ç¨ä¾
+REL-046,REL-046,trace,06_Traceability,Dependency,SysML::Requirements::Trace,REQ-014,æ¨¡åä¸è´æ§ä¸MagicDrawäº¤ä»,UC-009,åæ­¥MagicDrawå·¥ç¨,æ¨¡åäº¤ä»éæ±è¿½æº¯å°MagicDrawåæ­¥ç¨ä¾
+REL-047,REL-047,refine,06_Traceability,Dependency,SysML::Requirements::Refine,UC-001,å¼å¯¼æ»ä½éæ±æ¾æ¸,ACT-001,æ»ä½éæ±æ¾æ¸ä¸åºçº¿ç¡®è®¤æµç¨,éæ±æ¾æ¸ç¨ä¾ç»åä¸ºåºçº¿ç¡®è®¤æµç¨
+REL-048,REL-048,refine,06_Traceability,Dependency,SysML::Requirements::Refine,UC-002,å¼å±æåº§è¦çä¸å®¹éè®¾è®¡,ACT-002,æåº§æåä¸è¦çåææµç¨,è¦çå®¹éè®¾è®¡ç¨ä¾ç»åä¸ºæåº§æåä¸è¦çåææµç¨
+REL-049,REL-049,refine,06_Traceability,Dependency,SysML::Requirements::Refine,UC-002,å¼å±æåº§è¦çä¸å®¹éè®¾è®¡,ACT-003,é¾è·¯é¢ç®ä¸å®¹éæ ¡æ ¸æµç¨,è¦çå®¹éè®¾è®¡ç¨ä¾ç»åä¸ºé¾è·¯é¢ç®ä¸å®¹éæ ¡æ ¸æµç¨
+REL-050,REL-050,refine,06_Traceability,Dependency,SysML::Requirements::Refine,UC-003,å»ºç«ç¨æ·å®½å¸¦ä¼è¯,ACT-004,ç¨æ·æ¥å¥ä¸ä¼è¯å»ºç«æµç¨,ç¨æ·å®½å¸¦ä¼è¯ç¨ä¾ç»åä¸ºç¨æ·æ¥å¥æµç¨
+REL-051,REL-051,refine,06_Traceability,Dependency,SysML::Requirements::Refine,UC-004,æ§è¡å«æåæ¢ä¸ä¸å¡ä¿æ,ACT-005,æé´è·¯ç±ä¸åæ¢æµç¨,åæ¢ä¸ä¸å¡ä¿æç¨ä¾ç»åä¸ºæé´è·¯ç±ä¸åæ¢æµç¨
+REL-052,REL-052,refine,06_Traceability,Dependency,SysML::Requirements::Refine,UC-005,å®æé¦çµåä¼ ä¸æ ¸å¿ç½äºè,ACT-006,ç½å³éæ©ä¸é¦çµåä¼ æµç¨,é¦çµåä¼ ç¨ä¾ç»åä¸ºç½å³éæ©ä¸é¦çµæµç¨
+REL-053,REL-053,refine,06_Traceability,Dependency,SysML::Requirements::Refine,UC-006,æ§è¡æé´è·¯ç±è½¬å,ACT-005,æé´è·¯ç±ä¸åæ¢æµç¨,æé´è·¯ç±ç¨ä¾ç»åä¸ºç©ºé´è·¯ç±ä¸åæ¢æµç¨
+REL-054,REL-054,refine,06_Traceability,Dependency,SysML::Requirements::Refine,UC-007,è°åº¦æ³¢æé¢è°±ç½å³èµæº,ACT-007,ç½ç»èµæºè°åº¦æµç¨,èµæºè°åº¦ç¨ä¾ç»åä¸ºç½ç»èµæºè°åº¦æµç¨
+REL-055,REL-055,refine,06_Traceability,Dependency,SysML::Requirements::Refine,UC-008,å¤ç½®æéåè­¦ä¸ç½ç»éæ,ACT-008,æéæ£æµéç¦»æ¢å¤æµç¨,æéåè­¦ä¸éæç¨ä¾ç»åä¸ºæ£æµéç¦»æ¢å¤æµç¨
+REL-056,REL-056,refine,06_Traceability,Dependency,SysML::Requirements::Refine,UC-009,åæ­¥MagicDrawå·¥ç¨,ACT-009,MagicDrawå·¥ç¨åæ­¥æµç¨,MagicDrawåæ­¥ç¨ä¾ç»åä¸ºå·¥ç¨åæ­¥æµç¨
+REL-057,REL-057,allocate,06_Traceability,Dependency,SysML::Allocations::Allocate,IF-001,ç¨æ·æå¡é¾è·¯æ¥å£,BLK-008,ç¨æ·æå¡é¾è·¯å¤©çº¿,ç¨æ·æå¡é¾è·¯æ¥å£åéå°ç¨æ·æå¡é¾è·¯å¤©çº¿
+REL-058,REL-058,allocate,06_Traceability,Dependency,SysML::Allocations::Allocate,IF-001,ç¨æ·æå¡é¾è·¯æ¥å£,BLK-017,å®½å¸¦ç¨æ·ç»ç«¯,ç¨æ·æå¡é¾è·¯æ¥å£åéå°å®½å¸¦ç¨æ·ç»ç«¯
+REL-059,REL-059,allocate,06_Traceability,Dependency,SysML::Allocations::Allocate,IF-002,é¦çµé¾è·¯æ¥å£,BLK-009,é¦çµé¾è·¯ç»ç«¯,é¦çµé¾è·¯æ¥å£åéå°é¦çµé¾è·¯ç»ç«¯
+REL-060,REL-060,allocate,06_Traceability,Dependency,SysML::Allocations::Allocate,IF-002,é¦çµé¾è·¯æ¥å£,BLK-013,é¦çµç½å³ç«,é¦çµé¾è·¯æ¥å£åéå°é¦çµç½å³ç«
+REL-061,REL-061,allocate,06_Traceability,Dependency,SysML::Allocations::Allocate,IF-003,æé´é¾è·¯æ¥å£,BLK-010,æé´é¾è·¯ç»ç«¯,æé´é¾è·¯æ¥å£åéå°æé´é¾è·¯ç»ç«¯
+REL-062,REL-062,allocate,06_Traceability,Dependency,SysML::Allocations::Allocate,IF-004,é¥æµé¥æ§æ¥å£,BLK-011,å«æå¹³å°ä¸æå¡åç³»ç»,é¥æµé¥æ§æ¥å£åéå°å«æå¹³å°ä¸æå¡åç³»ç»
+REL-063,REL-063,allocate,06_Traceability,Dependency,SysML::Allocations::Allocate,IF-004,é¥æµé¥æ§æ¥å£,BLK-015,ä»»å¡è¿æ§ä¸­å¿,é¥æµé¥æ§æ¥å£åéå°ä»»å¡è¿æ§ä¸­å¿
+REL-064,REL-064,allocate,06_Traceability,Dependency,SysML::Allocations::Allocate,IF-005,ç½ç»ç®¡çååæ¥å£,BLK-014,ç½ç»è¿è¥æ§å¶ä¸­å¿,ç½ç»ç®¡çååæ¥å£åéå°ç½ç»è¿è¥æ§å¶ä¸­å¿
+REL-065,REL-065,allocate,06_Traceability,Dependency,SysML::Allocations::Allocate,IF-005,ç½ç»ç®¡çååæ¥å£,BLK-006,å®½å¸¦éä¿¡è½½è·,ç½ç»ç®¡çååæ¥å£åéå°éä¿¡è½½è·èµæºæ§å¶
+REL-066,REL-066,allocate,06_Traceability,Dependency,SysML::Allocations::Allocate,IF-006,ç½å³æ ¸å¿ç½æ¥å£,BLK-013,é¦çµç½å³ç«,ç½å³æ ¸å¿ç½æ¥å£åéå°é¦çµç½å³ç«
+REL-067,REL-067,allocate,06_Traceability,Dependency,SysML::Allocations::Allocate,IF-006,ç½å³æ ¸å¿ç½æ¥å£,BLK-018,å¤é¨äºèç½ä¸æ ¸å¿ç½,ç½å³æ ¸å¿ç½æ¥å£è¿æ¥å¤é¨äºèç½ä¸æ ¸å¿ç½
+REL-068,REL-068,allocate,06_Traceability,Dependency,SysML::Allocations::Allocate,IF-007,æ¶é´é¢çä¸æåæ¥å£,BLK-015,ä»»å¡è¿æ§ä¸­å¿,æ¶é´é¢çä¸æåæ¥å£åéå°ä»»å¡è¿æ§ä¸­å¿
+REL-069,REL-069,allocate,06_Traceability,Dependency,SysML::Allocations::Allocate,IF-007,æ¶é´é¢çä¸æåæ¥å£,BLK-011,å«æå¹³å°ä¸æå¡åç³»ç»,æ¶é´é¢çä¸æåæ¥å£åéå°å«æå¹³å°
+REL-070,REL-070,allocate,06_Traceability,Dependency,SysML::Allocations::Allocate,IF-008,å®å¨è®¤è¯ä¸å¯é¥æ¥å£,BLK-014,ç½ç»è¿è¥æ§å¶ä¸­å¿,å®å¨è®¤è¯ä¸å¯é¥æ¥å£åéå°ç½ç»è¿è¥æ§å¶ä¸­å¿
+REL-071,REL-071,allocate,06_Traceability,Dependency,SysML::Allocations::Allocate,IF-008,å®å¨è®¤è¯ä¸å¯é¥æ¥å£,BLK-017,å®½å¸¦ç¨æ·ç»ç«¯,å®å¨è®¤è¯ä¸å¯é¥æ¥å£åéå°ç¨æ·ç»ç«¯
+REL-072,REL-072,allocate,06_Traceability,Dependency,SysML::Allocations::Allocate,IF-009,MagicDraw Bridgeæ¥å£,BLK-001,ä½è½¨å®½å¸¦å«æäºèç½ç³»ç»,Bridgeæ¥å£åéå°SysMLå·¥ç¨æ ¹æ¨¡å
+REL-073,REL-073,verify,06_Traceability,Dependency,SysML::Requirements::Verify,CON-001,æåº§è§æ¨¡çº¦æ,REQ-003,100é¢å«ææåº§è§æ¨¡,æåº§è§æ¨¡çº¦æéªè¯100é¢å«æéæ±
+REL-074,REL-074,verify,06_Traceability,Dependency,SysML::Requirements::Verify,CON-002,è½¨éå£³å±ä¸è¦ççº¦æ,REQ-004,è½¨éè¦çä¸æå¡è¿ç»­æ§,è½¨éå£³å±ä¸è¦ççº¦æéªè¯è¦çè¿ç»­æ§éæ±
+REL-075,REL-075,verify,06_Traceability,Dependency,SysML::Requirements::Verify,CON-003,å®¹éååçº¦æ,REQ-005,ç¨æ·é¾è·¯å®¹éä¸æå¡è´¨é,å®¹éååçº¦æéªè¯ç¨æ·é¾è·¯å®¹ééæ±
+REL-076,REL-076,verify,06_Traceability,Dependency,SysML::Requirements::Verify,CON-004,ä¸å¡æ¶å»¶çº¦æ,REQ-005,ç¨æ·é¾è·¯å®¹éä¸æå¡è´¨é,ä¸å¡æ¶å»¶çº¦æéªè¯QoSéæ±
+REL-077,REL-077,verify,06_Traceability,Dependency,SysML::Requirements::Verify,CON-005,é¾è·¯é¢ç®çº¦æ,REQ-005,ç¨æ·é¾è·¯å®¹éä¸æå¡è´¨é,é¾è·¯é¢ç®çº¦æéªè¯ç¨æ·é¾è·¯è´¨ééæ±
+REL-078,REL-078,verify,06_Traceability,Dependency,SysML::Requirements::Verify,CON-005,é¾è·¯é¢ç®çº¦æ,REQ-006,é¦çµé¾è·¯ä¸ç½å³æ¥å¥,é¾è·¯é¢ç®çº¦æéªè¯é¦çµé¾è·¯éæ±
+REL-079,REL-079,verify,06_Traceability,Dependency,SysML::Requirements::Verify,CON-005,é¾è·¯é¢ç®çº¦æ,REQ-007,æé´é¾è·¯ä¸ç©ºé´è·¯ç±,é¾è·¯é¢ç®çº¦æéªè¯æé´é¾è·¯éæ±
+REL-080,REL-080,verify,06_Traceability,Dependency,SysML::Requirements::Verify,CON-006,ç½å³å¯è§ä¸åæ¢çº¦æ,REQ-006,é¦çµé¾è·¯ä¸ç½å³æ¥å¥,ç½å³å¯è§ä¸åæ¢çº¦æéªè¯ç½å³æ¥å¥éæ±
+REL-081,REL-081,verify,06_Traceability,Dependency,SysML::Requirements::Verify,CON-007,å¯ç¨æ§å¯é æ§çº¦æ,REQ-010,é¥æµé¥æ§ä¸å¨è½¨è¿ç»´,å¯ç¨æ§å¯é æ§çº¦æéªè¯å¨è½¨è¿ç»´éæ±
+REL-082,REL-082,verify,06_Traceability,Dependency,SysML::Requirements::Verify,CON-007,å¯ç¨æ§å¯é æ§çº¦æ,REQ-011,æéå¤ç½®ä¸å®å¨éç¦»,å¯ç¨æ§å¯é æ§çº¦æéªè¯æéå¤ç½®éæ±
+REL-083,REL-083,verify,06_Traceability,Dependency,SysML::Requirements::Verify,CON-008,é¢è°±å®å¨åè§çº¦æ,REQ-012,ä¿¡æ¯å®å¨ä¸ä¸å¡éç¦»,é¢è°±å®å¨åè§çº¦æéªè¯ä¿¡æ¯å®å¨éæ±
+REL-084,REL-084,verify,06_Traceability,Dependency,SysML::Requirements::Verify,CON-008,é¢è°±å®å¨åè§çº¦æ,REQ-013,é¢è°±åè§ä¸çµç£å¼å®¹,é¢è°±å®å¨åè§çº¦æéªè¯é¢è°±åè§éæ±

@@ -1,0 +1,11 @@
+﻿local_id,name,type,metaclass,stereotype,source,source_name,target,target_name,documentation
+REL-001,REL-001,trace,Dependency,SysML::Requirements::Trace,REQ-001,用户接入能力,UC-001,用户接入,需求追溯到用例
+REL-002,REL-002,allocate,Dependency,SysML::Allocations::Allocate,UC-001,用户接入,BLK-001,宽带通信系统,用例分配到系统模块
+REL-003,REL-003,trace,Dependency,SysML::Requirements::Trace,UC-001,用户接入,IF-001,用户接入接口,用例追溯到接口
+REL-004,REL-004,connect,Dependency,SysML::Requirements::Trace,IF-001,用户接入接口,BLK-001,宽带通信系统,接口关联到系统模块
+REL-005,REL-005,refine,Dependency,SysML::Requirements::Trace,UC-001,用户接入,ACT-001,用户接入流程,用例细化为活动流程
+REL-006,REL-006,trace,Dependency,SysML::Requirements::Trace,REQ-002,链路资源管理能力,UC-002,链路资源管理,需求追溯到用例
+REL-007,REL-007,allocate,Dependency,SysML::Allocations::Allocate,UC-002,链路资源管理,BLK-001,宽带通信系统,用例分配到系统模块
+REL-008,REL-008,trace,Dependency,SysML::Requirements::Trace,UC-002,链路资源管理,IF-002,链路资源管理接口,用例追溯到接口
+REL-009,REL-009,connect,Dependency,SysML::Requirements::Trace,IF-002,链路资源管理接口,BLK-001,宽带通信系统,接口关联到系统模块
+REL-010,REL-010,refine,Dependency,SysML::Requirements::Trace,UC-002,链路资源管理,ACT-002,链路资源管理流程,用例细化为活动流程

@@ -1,0 +1,35 @@
+﻿local_id,name,type,metaclass,stereotype,source,source_name,target,target_name,documentation
+REL-001,REL-001,contains,Association,CompositeAssociation,BLK-001,Aircraft,BLK-002,Airframe,飞机包含机体结构。
+REL-002,REL-002,contains,Association,CompositeAssociation,BLK-001,Aircraft,BLK-005,PropulsionSystem,飞机包含推进系统。
+REL-003,REL-003,contains,Association,CompositeAssociation,BLK-001,Aircraft,BLK-006,LandingGear,飞机包含起落架。
+REL-004,REL-004,contains,Association,CompositeAssociation,BLK-001,Aircraft,BLK-007,FlightControlSystem,飞机包含飞控系统。
+REL-005,REL-005,contains,Association,CompositeAssociation,BLK-001,Aircraft,BLK-008,AvionicsSystem,飞机包含航电系统。
+REL-006,REL-006,contains,Association,CompositeAssociation,BLK-001,Aircraft,BLK-009,APU,飞机包含APU。
+REL-007,REL-007,contains,Association,CompositeAssociation,BLK-001,Aircraft,BLK-010,CabinAndECS,飞机包含客舱与环控。
+REL-008,REL-008,contains,Association,CompositeAssociation,BLK-002,Airframe,BLK-003,Wing,机体包含机翼。
+REL-009,REL-009,contains,Association,CompositeAssociation,BLK-002,Airframe,BLK-004,Empennage,机体包含尾翼。
+REL-010,REL-010,allocate,Dependency,SysML::Allocations::Allocate,BLK-003,Wing,BLK-005,PropulsionSystem,机翼提供发动机安装接口，通过IF-001连接。
+REL-011,REL-011,allocate,Dependency,SysML::Allocations::Allocate,BLK-001,Aircraft,BLK-011,Wing-Engine Interface,飞机设计需要实现翼-发接口规范。
+REL-012,REL-012,allocate,Dependency,SysML::Allocations::Allocate,BLK-001,Aircraft,BLK-012,Engine-Fuel System Interface,推进系统与燃油系统的接口在飞机级定义。
+REL-013,REL-013,allocate,Dependency,SysML::Allocations::Allocate,BLK-007,FlightControlSystem,BLK-013,FlightControl-Actuator Interface,飞控系统通过作动器接口控制舵面。
+REL-014,REL-014,allocate,Dependency,SysML::Allocations::Allocate,BLK-010,CabinAndECS,BLK-014,Cabin-Passenger Service Interface,客舱设计需满足旅客服务接口要求。
+REL-015,REL-015,satisfy,Dependency,SysML::Requirements::Satisfy,REQ-001,Passenger Capacity,BLK-010,CabinAndECS,客舱布局满足载客数量需求。
+REL-016,REL-016,satisfy,Dependency,SysML::Requirements::Satisfy,REQ-002,Design Range,BLK-001,Aircraft,飞机整体设计通过气动和燃油容量满足航程要求。
+REL-017,REL-017,satisfy,Dependency,SysML::Requirements::Satisfy,REQ-003,Cruise Speed,BLK-003,Wing,超临界机翼和推进系统共同实现巡航速度指标。
+REL-018,REL-018,satisfy,Dependency,SysML::Requirements::Satisfy,REQ-004,Takeoff Field Length,BLK-003,Wing,高升力装置和推力/重量比满足起飞场长。
+REL-019,REL-019,satisfy,Dependency,SysML::Requirements::Satisfy,REQ-005,Landing Field Length,BLK-003,Wing,高升力系统和刹车性能满足着陆场长。
+REL-020,REL-020,satisfy,Dependency,SysML::Requirements::Satisfy,REQ-006,Maximum Payload,BLK-001,Aircraft,结构强度和商载设计满足最大商载。
+REL-021,REL-021,satisfy,Dependency,SysML::Requirements::Satisfy,REQ-007,Maximum Takeoff Weight,BLK-001,Aircraft,重量控制保证MTOW不超过52000 kg。
+REL-022,REL-022,satisfy,Dependency,SysML::Requirements::Satisfy,REQ-008,Service Ceiling,BLK-001,Aircraft,气动和发动机高空性能满足升限。
+REL-023,REL-023,satisfy,Dependency,SysML::Requirements::Satisfy,REQ-009,Fuselage Diameter,BLK-002,Airframe,机身设计满足直径和座椅布置。
+REL-024,REL-024,satisfy,Dependency,SysML::Requirements::Satisfy,REQ-010,Wingspan,BLK-003,Wing,机翼展长满足36 m限制。
+REL-025,REL-025,satisfy,Dependency,SysML::Requirements::Satisfy,REQ-011,Engine Thrust,BLK-005,PropulsionSystem,选定发动机提供所需推力级。
+REL-026,REL-026,satisfy,Dependency,SysML::Requirements::Satisfy,REQ-012,Noise Certification,BLK-005,PropulsionSystem,短舱声学处理和风扇设计满足噪声要求。
+REL-027,REL-027,refine,Dependency,SysML::Requirements::Trace,REQ-013,Fuel Efficiency Improvement,CON-003,Fuel Efficiency Improvement,燃油效率提升通过参数约束细化到气动、结构和发动机改进。
+REL-028,REL-028,satisfy,Dependency,SysML::Requirements::Satisfy,REQ-014,Airframe Weight Fraction,BLK-002,Airframe,复合材料应用使结构重量分数低于28%。
+REL-029,REL-029,trace,Dependency,SysML::Requirements::Trace,UC-001,Provide Regional Air Transport,BLK-001,Aircraft,区域运输用例由飞机系统实现。
+REL-030,REL-030,trace,Dependency,SysML::Requirements::Trace,UC-002,Perform High-Speed Cruise,BLK-003,Wing,高速巡航能力依赖机翼和发动机性能。
+REL-031,REL-031,trace,Dependency,SysML::Requirements::Trace,UC-003,Operate from Short/Medium Runways,BLK-003,Wing,短跑道起降能力依赖高升力系统。
+REL-032,REL-032,allocate,Dependency,SysML::Allocations::Allocate,CON-001,Weight and Balance Constraint,BLK-001,Aircraft,重量与重心约束适用于全机。
+REL-033,REL-033,allocate,Dependency,SysML::Allocations::Allocate,CON-002,Takeoff and Landing Performance,BLK-003,Wing,起降性能约束主要与机翼和动力相关。
+REL-034,REL-034,refine,Dependency,SysML::Requirements::Trace,ACT-001,Full Flight Mission,UC-001,Provide Regional Air Transport,飞行任务活动细化了区域运输用例的操作流程。

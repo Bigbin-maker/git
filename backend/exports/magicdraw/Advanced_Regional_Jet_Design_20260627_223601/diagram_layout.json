@@ -1,0 +1,1488 @@
+{
+  "schema": "ai-mbse.diagram-layout.v1",
+  "diagram_name": "AI_MBSE_Trace_View",
+  "layout_source": "backend",
+  "width": 1660,
+  "height": 1857,
+  "nodes": [
+    {
+      "id": "ACT-001",
+      "element_id": "ACT-001",
+      "name": "Full Flight Mission",
+      "label": "ACT-001 - Full Flight Mission",
+      "type": "Activity",
+      "stereotype_label": "«activity»",
+      "shape": "rect",
+      "column": 0,
+      "row": 0,
+      "x": 70,
+      "y": 80,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "BLK-001",
+      "element_id": "BLK-001",
+      "name": "Aircraft",
+      "label": "BLK-001 - Aircraft",
+      "type": "Block",
+      "stereotype_label": "«block»",
+      "shape": "rect",
+      "column": 1,
+      "row": 0,
+      "x": 330,
+      "y": 80,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "BLK-002",
+      "element_id": "BLK-002",
+      "name": "Airframe",
+      "label": "BLK-002 - Airframe",
+      "type": "Block",
+      "stereotype_label": "«block»",
+      "shape": "rect",
+      "column": 1,
+      "row": 1,
+      "x": 330,
+      "y": 205,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "BLK-003",
+      "element_id": "BLK-003",
+      "name": "Wing",
+      "label": "BLK-003 - Wing",
+      "type": "Block",
+      "stereotype_label": "«block»",
+      "shape": "rect",
+      "column": 1,
+      "row": 2,
+      "x": 330,
+      "y": 330,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "BLK-004",
+      "element_id": "BLK-004",
+      "name": "Empennage",
+      "label": "BLK-004 - Empennage",
+      "type": "Block",
+      "stereotype_label": "«block»",
+      "shape": "rect",
+      "column": 1,
+      "row": 3,
+      "x": 330,
+      "y": 455,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "BLK-005",
+      "element_id": "BLK-005",
+      "name": "PropulsionSystem",
+      "label": "BLK-005 - PropulsionSystem",
+      "type": "Block",
+      "stereotype_label": "«block»",
+      "shape": "rect",
+      "column": 1,
+      "row": 4,
+      "x": 330,
+      "y": 580,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "BLK-006",
+      "element_id": "BLK-006",
+      "name": "LandingGear",
+      "label": "BLK-006 - LandingGear",
+      "type": "Block",
+      "stereotype_label": "«block»",
+      "shape": "rect",
+      "column": 1,
+      "row": 5,
+      "x": 330,
+      "y": 705,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "BLK-007",
+      "element_id": "BLK-007",
+      "name": "FlightControlSystem",
+      "label": "BLK-007 - FlightControlSystem",
+      "type": "Block",
+      "stereotype_label": "«block»",
+      "shape": "rect",
+      "column": 1,
+      "row": 6,
+      "x": 330,
+      "y": 830,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "BLK-008",
+      "element_id": "BLK-008",
+      "name": "AvionicsSystem",
+      "label": "BLK-008 - AvionicsSystem",
+      "type": "Block",
+      "stereotype_label": "«block»",
+      "shape": "rect",
+      "column": 1,
+      "row": 7,
+      "x": 330,
+      "y": 955,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "BLK-009",
+      "element_id": "BLK-009",
+      "name": "APU",
+      "label": "BLK-009 - APU",
+      "type": "Block",
+      "stereotype_label": "«block»",
+      "shape": "rect",
+      "column": 1,
+      "row": 8,
+      "x": 330,
+      "y": 1080,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "BLK-010",
+      "element_id": "BLK-010",
+      "name": "CabinAndECS",
+      "label": "BLK-010 - CabinAndECS",
+      "type": "Block",
+      "stereotype_label": "«block»",
+      "shape": "rect",
+      "column": 1,
+      "row": 9,
+      "x": 330,
+      "y": 1205,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "BLK-011",
+      "element_id": "BLK-011",
+      "name": "Wing-Engine Interface",
+      "label": "BLK-011 - Wing-Engine Interface",
+      "type": "Block",
+      "stereotype_label": "«block»",
+      "shape": "rect",
+      "column": 1,
+      "row": 10,
+      "x": 330,
+      "y": 1330,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "BLK-012",
+      "element_id": "BLK-012",
+      "name": "Engine-Fuel System Interface",
+      "label": "BLK-012 - Engine-Fuel System Interface",
+      "type": "Block",
+      "stereotype_label": "«block»",
+      "shape": "rect",
+      "column": 1,
+      "row": 11,
+      "x": 330,
+      "y": 1455,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "BLK-013",
+      "element_id": "BLK-013",
+      "name": "FlightControl-Actuator Interface",
+      "label": "BLK-013 - FlightControl-Actuator Interface",
+      "type": "Block",
+      "stereotype_label": "«block»",
+      "shape": "rect",
+      "column": 1,
+      "row": 12,
+      "x": 330,
+      "y": 1580,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "BLK-014",
+      "element_id": "BLK-014",
+      "name": "Cabin-Passenger Service Interface",
+      "label": "BLK-014 - Cabin-Passenger Service Interface",
+      "type": "Block",
+      "stereotype_label": "«block»",
+      "shape": "rect",
+      "column": 1,
+      "row": 13,
+      "x": 330,
+      "y": 1705,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "REQ-001",
+      "element_id": "REQ-001",
+      "name": "Passenger Capacity",
+      "label": "REQ-001 - Passenger Capacity",
+      "type": "Requirement",
+      "stereotype_label": "«requirement»",
+      "shape": "rect",
+      "column": 2,
+      "row": 0,
+      "x": 590,
+      "y": 80,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "REQ-002",
+      "element_id": "REQ-002",
+      "name": "Design Range",
+      "label": "REQ-002 - Design Range",
+      "type": "Requirement",
+      "stereotype_label": "«requirement»",
+      "shape": "rect",
+      "column": 2,
+      "row": 1,
+      "x": 590,
+      "y": 205,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "REQ-003",
+      "element_id": "REQ-003",
+      "name": "Cruise Speed",
+      "label": "REQ-003 - Cruise Speed",
+      "type": "Requirement",
+      "stereotype_label": "«requirement»",
+      "shape": "rect",
+      "column": 2,
+      "row": 2,
+      "x": 590,
+      "y": 330,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "REQ-004",
+      "element_id": "REQ-004",
+      "name": "Takeoff Field Length",
+      "label": "REQ-004 - Takeoff Field Length",
+      "type": "Requirement",
+      "stereotype_label": "«requirement»",
+      "shape": "rect",
+      "column": 2,
+      "row": 3,
+      "x": 590,
+      "y": 455,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "REQ-005",
+      "element_id": "REQ-005",
+      "name": "Landing Field Length",
+      "label": "REQ-005 - Landing Field Length",
+      "type": "Requirement",
+      "stereotype_label": "«requirement»",
+      "shape": "rect",
+      "column": 2,
+      "row": 4,
+      "x": 590,
+      "y": 580,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "REQ-006",
+      "element_id": "REQ-006",
+      "name": "Maximum Payload",
+      "label": "REQ-006 - Maximum Payload",
+      "type": "Requirement",
+      "stereotype_label": "«requirement»",
+      "shape": "rect",
+      "column": 2,
+      "row": 5,
+      "x": 590,
+      "y": 705,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "REQ-007",
+      "element_id": "REQ-007",
+      "name": "Maximum Takeoff Weight",
+      "label": "REQ-007 - Maximum Takeoff Weight",
+      "type": "Requirement",
+      "stereotype_label": "«requirement»",
+      "shape": "rect",
+      "column": 2,
+      "row": 6,
+      "x": 590,
+      "y": 830,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "REQ-008",
+      "element_id": "REQ-008",
+      "name": "Service Ceiling",
+      "label": "REQ-008 - Service Ceiling",
+      "type": "Requirement",
+      "stereotype_label": "«requirement»",
+      "shape": "rect",
+      "column": 2,
+      "row": 7,
+      "x": 590,
+      "y": 955,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "REQ-009",
+      "element_id": "REQ-009",
+      "name": "Fuselage Diameter",
+      "label": "REQ-009 - Fuselage Diameter",
+      "type": "Requirement",
+      "stereotype_label": "«requirement»",
+      "shape": "rect",
+      "column": 2,
+      "row": 8,
+      "x": 590,
+      "y": 1080,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "REQ-010",
+      "element_id": "REQ-010",
+      "name": "Wingspan",
+      "label": "REQ-010 - Wingspan",
+      "type": "Requirement",
+      "stereotype_label": "«requirement»",
+      "shape": "rect",
+      "column": 2,
+      "row": 9,
+      "x": 590,
+      "y": 1205,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "REQ-011",
+      "element_id": "REQ-011",
+      "name": "Engine Thrust",
+      "label": "REQ-011 - Engine Thrust",
+      "type": "Requirement",
+      "stereotype_label": "«requirement»",
+      "shape": "rect",
+      "column": 2,
+      "row": 10,
+      "x": 590,
+      "y": 1330,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "REQ-012",
+      "element_id": "REQ-012",
+      "name": "Noise Certification",
+      "label": "REQ-012 - Noise Certification",
+      "type": "Requirement",
+      "stereotype_label": "«requirement»",
+      "shape": "rect",
+      "column": 2,
+      "row": 11,
+      "x": 590,
+      "y": 1455,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "REQ-013",
+      "element_id": "REQ-013",
+      "name": "Fuel Efficiency Improvement",
+      "label": "REQ-013 - Fuel Efficiency Improvement",
+      "type": "Requirement",
+      "stereotype_label": "«requirement»",
+      "shape": "rect",
+      "column": 2,
+      "row": 12,
+      "x": 590,
+      "y": 1580,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "REQ-014",
+      "element_id": "REQ-014",
+      "name": "Airframe Weight Fraction",
+      "label": "REQ-014 - Airframe Weight Fraction",
+      "type": "Requirement",
+      "stereotype_label": "«requirement»",
+      "shape": "rect",
+      "column": 2,
+      "row": 13,
+      "x": 590,
+      "y": 1705,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "UC-001",
+      "element_id": "UC-001",
+      "name": "Provide Regional Air Transport",
+      "label": "UC-001 - Provide Regional Air Transport",
+      "type": "UseCase",
+      "stereotype_label": "«use case»",
+      "shape": "ellipse",
+      "column": 3,
+      "row": 0,
+      "x": 850,
+      "y": 80,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "UC-002",
+      "element_id": "UC-002",
+      "name": "Perform High-Speed Cruise",
+      "label": "UC-002 - Perform High-Speed Cruise",
+      "type": "UseCase",
+      "stereotype_label": "«use case»",
+      "shape": "ellipse",
+      "column": 3,
+      "row": 1,
+      "x": 850,
+      "y": 205,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "UC-003",
+      "element_id": "UC-003",
+      "name": "Operate from Short/Medium Runways",
+      "label": "UC-003 - Operate from Short/Medium Runways",
+      "type": "UseCase",
+      "stereotype_label": "«use case»",
+      "shape": "ellipse",
+      "column": 3,
+      "row": 2,
+      "x": 850,
+      "y": 330,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "CON-001",
+      "element_id": "CON-001",
+      "name": "Weight and Balance Constraint",
+      "label": "CON-001 - Weight and Balance Constraint",
+      "type": "ConstraintBlock",
+      "stereotype_label": "«constraint»",
+      "shape": "rect",
+      "column": 5,
+      "row": 0,
+      "x": 1370,
+      "y": 80,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "CON-002",
+      "element_id": "CON-002",
+      "name": "Takeoff and Landing Performance",
+      "label": "CON-002 - Takeoff and Landing Performance",
+      "type": "ConstraintBlock",
+      "stereotype_label": "«constraint»",
+      "shape": "rect",
+      "column": 5,
+      "row": 1,
+      "x": 1370,
+      "y": 205,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "CON-003",
+      "element_id": "CON-003",
+      "name": "Fuel Efficiency Improvement",
+      "label": "CON-003 - Fuel Efficiency Improvement",
+      "type": "ConstraintBlock",
+      "stereotype_label": "«constraint»",
+      "shape": "rect",
+      "column": 5,
+      "row": 2,
+      "x": 1370,
+      "y": 330,
+      "width": 220,
+      "height": 72
+    }
+  ],
+  "edges": [
+    {
+      "id": "REL-001",
+      "relationship_id": "REL-001",
+      "source": "BLK-001",
+      "target": "BLK-002",
+      "type": "contains",
+      "label": "contains",
+      "points": [
+        {
+          "x": 426,
+          "y": 152
+        },
+        {
+          "x": 474,
+          "y": 152
+        },
+        {
+          "x": 406,
+          "y": 205
+        },
+        {
+          "x": 454,
+          "y": 205
+        }
+      ],
+      "label_x": 440,
+      "label_y": 172
+    },
+    {
+      "id": "REL-002",
+      "relationship_id": "REL-002",
+      "source": "BLK-001",
+      "target": "BLK-005",
+      "type": "contains",
+      "label": "contains",
+      "points": [
+        {
+          "x": 433,
+          "y": 152
+        },
+        {
+          "x": 481,
+          "y": 152
+        },
+        {
+          "x": 399,
+          "y": 580
+        },
+        {
+          "x": 447,
+          "y": 580
+        }
+      ],
+      "label_x": 440,
+      "label_y": 360
+    },
+    {
+      "id": "REL-003",
+      "relationship_id": "REL-003",
+      "source": "BLK-001",
+      "target": "BLK-006",
+      "type": "contains",
+      "label": "contains",
+      "points": [
+        {
+          "x": 440,
+          "y": 152
+        },
+        {
+          "x": 488,
+          "y": 152
+        },
+        {
+          "x": 392,
+          "y": 705
+        },
+        {
+          "x": 440,
+          "y": 705
+        }
+      ],
+      "label_x": 440,
+      "label_y": 422
+    },
+    {
+      "id": "REL-004",
+      "relationship_id": "REL-004",
+      "source": "BLK-001",
+      "target": "BLK-007",
+      "type": "contains",
+      "label": "contains",
+      "points": [
+        {
+          "x": 447,
+          "y": 152
+        },
+        {
+          "x": 399,
+          "y": 152
+        },
+        {
+          "x": 481,
+          "y": 830
+        },
+        {
+          "x": 433,
+          "y": 830
+        }
+      ],
+      "label_x": 440,
+      "label_y": 485
+    },
+    {
+      "id": "REL-005",
+      "relationship_id": "REL-005",
+      "source": "BLK-001",
+      "target": "BLK-008",
+      "type": "contains",
+      "label": "contains",
+      "points": [
+        {
+          "x": 454,
+          "y": 152
+        },
+        {
+          "x": 406,
+          "y": 152
+        },
+        {
+          "x": 474,
+          "y": 955
+        },
+        {
+          "x": 426,
+          "y": 955
+        }
+      ],
+      "label_x": 440,
+      "label_y": 547
+    },
+    {
+      "id": "REL-006",
+      "relationship_id": "REL-006",
+      "source": "BLK-001",
+      "target": "BLK-009",
+      "type": "contains",
+      "label": "contains",
+      "points": [
+        {
+          "x": 426,
+          "y": 152
+        },
+        {
+          "x": 474,
+          "y": 152
+        },
+        {
+          "x": 406,
+          "y": 1080
+        },
+        {
+          "x": 454,
+          "y": 1080
+        }
+      ],
+      "label_x": 440,
+      "label_y": 610
+    },
+    {
+      "id": "REL-007",
+      "relationship_id": "REL-007",
+      "source": "BLK-001",
+      "target": "BLK-010",
+      "type": "contains",
+      "label": "contains",
+      "points": [
+        {
+          "x": 433,
+          "y": 152
+        },
+        {
+          "x": 481,
+          "y": 152
+        },
+        {
+          "x": 399,
+          "y": 1205
+        },
+        {
+          "x": 447,
+          "y": 1205
+        }
+      ],
+      "label_x": 440,
+      "label_y": 672
+    },
+    {
+      "id": "REL-008",
+      "relationship_id": "REL-008",
+      "source": "BLK-002",
+      "target": "BLK-003",
+      "type": "contains",
+      "label": "contains",
+      "points": [
+        {
+          "x": 440,
+          "y": 277
+        },
+        {
+          "x": 488,
+          "y": 277
+        },
+        {
+          "x": 392,
+          "y": 330
+        },
+        {
+          "x": 440,
+          "y": 330
+        }
+      ],
+      "label_x": 440,
+      "label_y": 297
+    },
+    {
+      "id": "REL-009",
+      "relationship_id": "REL-009",
+      "source": "BLK-002",
+      "target": "BLK-004",
+      "type": "contains",
+      "label": "contains",
+      "points": [
+        {
+          "x": 447,
+          "y": 277
+        },
+        {
+          "x": 399,
+          "y": 277
+        },
+        {
+          "x": 481,
+          "y": 455
+        },
+        {
+          "x": 433,
+          "y": 455
+        }
+      ],
+      "label_x": 440,
+      "label_y": 360
+    },
+    {
+      "id": "REL-010",
+      "relationship_id": "REL-010",
+      "source": "BLK-003",
+      "target": "BLK-005",
+      "type": "allocate",
+      "label": "allocate",
+      "points": [
+        {
+          "x": 454,
+          "y": 402
+        },
+        {
+          "x": 406,
+          "y": 402
+        },
+        {
+          "x": 474,
+          "y": 580
+        },
+        {
+          "x": 426,
+          "y": 580
+        }
+      ],
+      "label_x": 440,
+      "label_y": 485
+    },
+    {
+      "id": "REL-011",
+      "relationship_id": "REL-011",
+      "source": "BLK-001",
+      "target": "BLK-011",
+      "type": "allocate",
+      "label": "allocate",
+      "points": [
+        {
+          "x": 426,
+          "y": 152
+        },
+        {
+          "x": 474,
+          "y": 152
+        },
+        {
+          "x": 406,
+          "y": 1330
+        },
+        {
+          "x": 454,
+          "y": 1330
+        }
+      ],
+      "label_x": 440,
+      "label_y": 735
+    },
+    {
+      "id": "REL-012",
+      "relationship_id": "REL-012",
+      "source": "BLK-001",
+      "target": "BLK-012",
+      "type": "allocate",
+      "label": "allocate",
+      "points": [
+        {
+          "x": 433,
+          "y": 152
+        },
+        {
+          "x": 481,
+          "y": 152
+        },
+        {
+          "x": 399,
+          "y": 1455
+        },
+        {
+          "x": 447,
+          "y": 1455
+        }
+      ],
+      "label_x": 440,
+      "label_y": 797
+    },
+    {
+      "id": "REL-013",
+      "relationship_id": "REL-013",
+      "source": "BLK-007",
+      "target": "BLK-013",
+      "type": "allocate",
+      "label": "allocate",
+      "points": [
+        {
+          "x": 440,
+          "y": 902
+        },
+        {
+          "x": 488,
+          "y": 902
+        },
+        {
+          "x": 392,
+          "y": 1580
+        },
+        {
+          "x": 440,
+          "y": 1580
+        }
+      ],
+      "label_x": 440,
+      "label_y": 1235
+    },
+    {
+      "id": "REL-014",
+      "relationship_id": "REL-014",
+      "source": "BLK-010",
+      "target": "BLK-014",
+      "type": "allocate",
+      "label": "allocate",
+      "points": [
+        {
+          "x": 447,
+          "y": 1277
+        },
+        {
+          "x": 399,
+          "y": 1277
+        },
+        {
+          "x": 481,
+          "y": 1705
+        },
+        {
+          "x": 433,
+          "y": 1705
+        }
+      ],
+      "label_x": 440,
+      "label_y": 1485
+    },
+    {
+      "id": "REL-015",
+      "relationship_id": "REL-015",
+      "source": "REQ-001",
+      "target": "BLK-010",
+      "type": "satisfy",
+      "label": "satisfy",
+      "points": [
+        {
+          "x": 590,
+          "y": 130
+        },
+        {
+          "x": 542,
+          "y": 130
+        },
+        {
+          "x": 598,
+          "y": 1227
+        },
+        {
+          "x": 550,
+          "y": 1227
+        }
+      ],
+      "label_x": 570,
+      "label_y": 672
+    },
+    {
+      "id": "REL-016",
+      "relationship_id": "REL-016",
+      "source": "REQ-002",
+      "target": "BLK-001",
+      "type": "satisfy",
+      "label": "satisfy",
+      "points": [
+        {
+          "x": 590,
+          "y": 227
+        },
+        {
+          "x": 542,
+          "y": 227
+        },
+        {
+          "x": 598,
+          "y": 130
+        },
+        {
+          "x": 550,
+          "y": 130
+        }
+      ],
+      "label_x": 570,
+      "label_y": 172
+    },
+    {
+      "id": "REL-017",
+      "relationship_id": "REL-017",
+      "source": "REQ-003",
+      "target": "BLK-003",
+      "type": "satisfy",
+      "label": "satisfy",
+      "points": [
+        {
+          "x": 590,
+          "y": 359
+        },
+        {
+          "x": 542,
+          "y": 359
+        },
+        {
+          "x": 598,
+          "y": 373
+        },
+        {
+          "x": 550,
+          "y": 373
+        }
+      ],
+      "label_x": 570,
+      "label_y": 360
+    },
+    {
+      "id": "REL-018",
+      "relationship_id": "REL-018",
+      "source": "REQ-004",
+      "target": "BLK-003",
+      "type": "satisfy",
+      "label": "satisfy",
+      "points": [
+        {
+          "x": 590,
+          "y": 491
+        },
+        {
+          "x": 542,
+          "y": 491
+        },
+        {
+          "x": 598,
+          "y": 366
+        },
+        {
+          "x": 550,
+          "y": 366
+        }
+      ],
+      "label_x": 570,
+      "label_y": 422
+    },
+    {
+      "id": "REL-019",
+      "relationship_id": "REL-019",
+      "source": "REQ-005",
+      "target": "BLK-003",
+      "type": "satisfy",
+      "label": "satisfy",
+      "points": [
+        {
+          "x": 590,
+          "y": 623
+        },
+        {
+          "x": 542,
+          "y": 623
+        },
+        {
+          "x": 598,
+          "y": 359
+        },
+        {
+          "x": 550,
+          "y": 359
+        }
+      ],
+      "label_x": 570,
+      "label_y": 485
+    },
+    {
+      "id": "REL-020",
+      "relationship_id": "REL-020",
+      "source": "REQ-006",
+      "target": "BLK-001",
+      "type": "satisfy",
+      "label": "satisfy",
+      "points": [
+        {
+          "x": 590,
+          "y": 755
+        },
+        {
+          "x": 542,
+          "y": 755
+        },
+        {
+          "x": 598,
+          "y": 102
+        },
+        {
+          "x": 550,
+          "y": 102
+        }
+      ],
+      "label_x": 570,
+      "label_y": 422
+    },
+    {
+      "id": "REL-021",
+      "relationship_id": "REL-021",
+      "source": "REQ-007",
+      "target": "BLK-001",
+      "type": "satisfy",
+      "label": "satisfy",
+      "points": [
+        {
+          "x": 590,
+          "y": 852
+        },
+        {
+          "x": 542,
+          "y": 852
+        },
+        {
+          "x": 598,
+          "y": 130
+        },
+        {
+          "x": 550,
+          "y": 130
+        }
+      ],
+      "label_x": 570,
+      "label_y": 485
+    },
+    {
+      "id": "REL-022",
+      "relationship_id": "REL-022",
+      "source": "REQ-008",
+      "target": "BLK-001",
+      "type": "satisfy",
+      "label": "satisfy",
+      "points": [
+        {
+          "x": 590,
+          "y": 984
+        },
+        {
+          "x": 542,
+          "y": 984
+        },
+        {
+          "x": 598,
+          "y": 123
+        },
+        {
+          "x": 550,
+          "y": 123
+        }
+      ],
+      "label_x": 570,
+      "label_y": 547
+    },
+    {
+      "id": "REL-023",
+      "relationship_id": "REL-023",
+      "source": "REQ-009",
+      "target": "BLK-002",
+      "type": "satisfy",
+      "label": "satisfy",
+      "points": [
+        {
+          "x": 590,
+          "y": 1116
+        },
+        {
+          "x": 542,
+          "y": 1116
+        },
+        {
+          "x": 598,
+          "y": 241
+        },
+        {
+          "x": 550,
+          "y": 241
+        }
+      ],
+      "label_x": 570,
+      "label_y": 672
+    },
+    {
+      "id": "REL-024",
+      "relationship_id": "REL-024",
+      "source": "REQ-010",
+      "target": "BLK-003",
+      "type": "satisfy",
+      "label": "satisfy",
+      "points": [
+        {
+          "x": 590,
+          "y": 1248
+        },
+        {
+          "x": 542,
+          "y": 1248
+        },
+        {
+          "x": 598,
+          "y": 359
+        },
+        {
+          "x": 550,
+          "y": 359
+        }
+      ],
+      "label_x": 570,
+      "label_y": 797
+    },
+    {
+      "id": "REL-025",
+      "relationship_id": "REL-025",
+      "source": "REQ-011",
+      "target": "BLK-005",
+      "type": "satisfy",
+      "label": "satisfy",
+      "points": [
+        {
+          "x": 590,
+          "y": 1380
+        },
+        {
+          "x": 542,
+          "y": 1380
+        },
+        {
+          "x": 598,
+          "y": 602
+        },
+        {
+          "x": 550,
+          "y": 602
+        }
+      ],
+      "label_x": 570,
+      "label_y": 985
+    },
+    {
+      "id": "REL-026",
+      "relationship_id": "REL-026",
+      "source": "REQ-012",
+      "target": "BLK-005",
+      "type": "satisfy",
+      "label": "satisfy",
+      "points": [
+        {
+          "x": 590,
+          "y": 1477
+        },
+        {
+          "x": 542,
+          "y": 1477
+        },
+        {
+          "x": 598,
+          "y": 630
+        },
+        {
+          "x": 550,
+          "y": 630
+        }
+      ],
+      "label_x": 570,
+      "label_y": 1047
+    },
+    {
+      "id": "REL-027",
+      "relationship_id": "REL-027",
+      "source": "REQ-013",
+      "target": "CON-003",
+      "type": "refine",
+      "label": "refine",
+      "points": [
+        {
+          "x": 810,
+          "y": 1609
+        },
+        {
+          "x": 1045,
+          "y": 1609
+        },
+        {
+          "x": 1135,
+          "y": 373
+        },
+        {
+          "x": 1370,
+          "y": 373
+        }
+      ],
+      "label_x": 1090,
+      "label_y": 985
+    },
+    {
+      "id": "REL-028",
+      "relationship_id": "REL-028",
+      "source": "REQ-014",
+      "target": "BLK-002",
+      "type": "satisfy",
+      "label": "satisfy",
+      "points": [
+        {
+          "x": 590,
+          "y": 1741
+        },
+        {
+          "x": 542,
+          "y": 1741
+        },
+        {
+          "x": 598,
+          "y": 241
+        },
+        {
+          "x": 550,
+          "y": 241
+        }
+      ],
+      "label_x": 570,
+      "label_y": 985
+    },
+    {
+      "id": "REL-029",
+      "relationship_id": "REL-029",
+      "source": "UC-001",
+      "target": "BLK-001",
+      "type": "trace",
+      "label": "trace",
+      "points": [
+        {
+          "x": 850,
+          "y": 123
+        },
+        {
+          "x": 724,
+          "y": 123
+        },
+        {
+          "x": 676,
+          "y": 109
+        },
+        {
+          "x": 550,
+          "y": 109
+        }
+      ],
+      "label_x": 700,
+      "label_y": 110
+    },
+    {
+      "id": "REL-030",
+      "relationship_id": "REL-030",
+      "source": "UC-002",
+      "target": "BLK-003",
+      "type": "trace",
+      "label": "trace",
+      "points": [
+        {
+          "x": 850,
+          "y": 255
+        },
+        {
+          "x": 724,
+          "y": 255
+        },
+        {
+          "x": 676,
+          "y": 352
+        },
+        {
+          "x": 550,
+          "y": 352
+        }
+      ],
+      "label_x": 700,
+      "label_y": 297
+    },
+    {
+      "id": "REL-031",
+      "relationship_id": "REL-031",
+      "source": "UC-003",
+      "target": "BLK-003",
+      "type": "trace",
+      "label": "trace",
+      "points": [
+        {
+          "x": 850,
+          "y": 352
+        },
+        {
+          "x": 724,
+          "y": 352
+        },
+        {
+          "x": 676,
+          "y": 380
+        },
+        {
+          "x": 550,
+          "y": 380
+        }
+      ],
+      "label_x": 700,
+      "label_y": 360
+    },
+    {
+      "id": "REL-032",
+      "relationship_id": "REL-032",
+      "source": "CON-001",
+      "target": "BLK-001",
+      "type": "allocate",
+      "label": "allocate",
+      "points": [
+        {
+          "x": 1370,
+          "y": 109
+        },
+        {
+          "x": 1026,
+          "y": 109
+        },
+        {
+          "x": 894,
+          "y": 123
+        },
+        {
+          "x": 550,
+          "y": 123
+        }
+      ],
+      "label_x": 960,
+      "label_y": 110
+    },
+    {
+      "id": "REL-033",
+      "relationship_id": "REL-033",
+      "source": "CON-002",
+      "target": "BLK-003",
+      "type": "allocate",
+      "label": "allocate",
+      "points": [
+        {
+          "x": 1370,
+          "y": 241
+        },
+        {
+          "x": 1026,
+          "y": 241
+        },
+        {
+          "x": 894,
+          "y": 366
+        },
+        {
+          "x": 550,
+          "y": 366
+        }
+      ],
+      "label_x": 960,
+      "label_y": 297
+    },
+    {
+      "id": "REL-034",
+      "relationship_id": "REL-034",
+      "source": "ACT-001",
+      "target": "UC-001",
+      "type": "refine",
+      "label": "refine",
+      "points": [
+        {
+          "x": 290,
+          "y": 123
+        },
+        {
+          "x": 525,
+          "y": 123
+        },
+        {
+          "x": 615,
+          "y": 109
+        },
+        {
+          "x": 850,
+          "y": 109
+        }
+      ],
+      "label_x": 570,
+      "label_y": 110
+    }
+  ]
+}

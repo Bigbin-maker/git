@@ -1,0 +1,2404 @@
+{
+  "schema": "ai-mbse.magicdraw.exchange.v1",
+  "generated_at": "2026-06-27T14:35:33Z",
+  "project_path": "",
+  "root_package": "Advanced_Regional_Jet_Design",
+  "diagram_name": "AI_MBSE_Trace_View",
+  "instructions": [
+    "Create or reuse root package.",
+    "Create SysML/UML elements by local_id and stereotype.",
+    "Create relationships after all element ids are resolved.",
+    "Use diagram_layout as the single source of truth for MagicDraw and frontend canvas placement.",
+    "Store ai_mbse_id and source_requirement as tagged values when available."
+  ],
+  "elements": [
+    {
+      "local_id": "REQ-001",
+      "name": "Passenger Capacity",
+      "type": "Requirement",
+      "metaclass": "Class",
+      "stereotype": "SysML::Requirements::Requirement",
+      "documentation": "飞机应具备90至110座的单舱全经济舱布局载客能力。",
+      "source_requirement": "REQ-001",
+      "status": "approved",
+      "tags": {
+        "ai_mbse_id": "REQ-001",
+        "external_id": null
+      }
+    },
+    {
+      "local_id": "REQ-002",
+      "name": "Design Range",
+      "type": "Requirement",
+      "metaclass": "Class",
+      "stereotype": "SysML::Requirements::Requirement",
+      "documentation": "在最大商载条件下，航程应不小于3700 km（含备份油）。",
+      "source_requirement": "REQ-002",
+      "status": "approved",
+      "tags": {
+        "ai_mbse_id": "REQ-002",
+        "external_id": null
+      }
+    },
+    {
+      "local_id": "REQ-003",
+      "name": "Cruise Speed",
+      "type": "Requirement",
+      "metaclass": "Class",
+      "stereotype": "SysML::Requirements::Requirement",
+      "documentation": "典型巡航马赫数应为0.78，最大巡航马赫数不超过0.82。",
+      "source_requirement": "REQ-003",
+      "status": "approved",
+      "tags": {
+        "ai_mbse_id": "REQ-003",
+        "external_id": null
+      }
+    },
+    {
+      "local_id": "REQ-004",
+      "name": "Takeoff Field Length",
+      "type": "Requirement",
+      "metaclass": "Class",
+      "stereotype": "SysML::Requirements::Requirement",
+      "documentation": "海平面国际标准大气条件下，最大起飞重量时的起飞场长不应大于1900 m。",
+      "source_requirement": "REQ-004",
+      "status": "approved",
+      "tags": {
+        "ai_mbse_id": "REQ-004",
+        "external_id": null
+      }
+    },
+    {
+      "local_id": "REQ-005",
+      "name": "Landing Field Length",
+      "type": "Requirement",
+      "metaclass": "Class",
+      "stereotype": "SysML::Requirements::Requirement",
+      "documentation": "最大着陆重量时的着陆场长不应大于1500 m。",
+      "source_requirement": "REQ-005",
+      "status": "approved",
+      "tags": {
+        "ai_mbse_id": "REQ-005",
+        "external_id": null
+      }
+    },
+    {
+      "local_id": "REQ-006",
+      "name": "Maximum Payload",
+      "type": "Requirement",
+      "metaclass": "Class",
+      "stereotype": "SysML::Requirements::Requirement",
+      "documentation": "最大商载不小于11200 kg。",
+      "source_requirement": "REQ-006",
+      "status": "approved",
+      "tags": {
+        "ai_mbse_id": "REQ-006",
+        "external_id": null
+      }
+    },
+    {
+      "local_id": "REQ-007",
+      "name": "Maximum Takeoff Weight",
+      "type": "Requirement",
+      "metaclass": "Class",
+      "stereotype": "SysML::Requirements::Requirement",
+      "documentation": "最大起飞重量应不超过52000 kg。",
+      "source_requirement": "REQ-007",
+      "status": "approved",
+      "tags": {
+        "ai_mbse_id": "REQ-007",
+        "external_id": null
+      }
+    },
+    {
+      "local_id": "REQ-008",
+      "name": "Service Ceiling",
+      "type": "Requirement",
+      "metaclass": "Class",
+      "stereotype": "SysML::Requirements::Requirement",
+      "documentation": "最大使用高度应达到12500 m (FL410)。",
+      "source_requirement": "REQ-008",
+      "status": "approved",
+      "tags": {
+        "ai_mbse_id": "REQ-008",
+        "external_id": null
+      }
+    },
+    {
+      "local_id": "REQ-009",
+      "name": "Fuselage Diameter",
+      "type": "Requirement",
+      "metaclass": "Class",
+      "stereotype": "SysML::Requirements::Requirement",
+      "documentation": "机身外径为3.9 m，提供5并排座椅和0.5 m通道。",
+      "source_requirement": "REQ-009",
+      "status": "approved",
+      "tags": {
+        "ai_mbse_id": "REQ-009",
+        "external_id": null
+      }
+    },
+    {
+      "local_id": "REQ-010",
+      "name": "Wingspan",
+      "type": "Requirement",
+      "metaclass": "Class",
+      "stereotype": "SysML::Requirements::Requirement",
+      "documentation": "翼展36 m，满足标准停机坪限制。",
+      "source_requirement": "REQ-010",
+      "status": "approved",
+      "tags": {
+        "ai_mbse_id": "REQ-010",
+        "external_id": null
+      }
+    },
+    {
+      "local_id": "REQ-011",
+      "name": "Engine Thrust",
+      "type": "Requirement",
+      "metaclass": "Class",
+      "stereotype": "SysML::Requirements::Requirement",
+      "documentation": "单台发动机海平面静推力应为95～110 kN级，采用先进齿轮传动或开式转子架构，涵道比约10-12。",
+      "source_requirement": "REQ-011",
+      "status": "approved",
+      "tags": {
+        "ai_mbse_id": "REQ-011",
+        "external_id": null
+      }
+    },
+    {
+      "local_id": "REQ-012",
+      "name": "Noise Certification",
+      "type": "Requirement",
+      "metaclass": "Class",
+      "stereotype": "SysML::Requirements::Requirement",
+      "documentation": "噪声应满足ICAO Annex 16 Stage 5要求，并具备15 EPNdB累积裕度。",
+      "source_requirement": "REQ-012",
+      "status": "approved",
+      "tags": {
+        "ai_mbse_id": "REQ-012",
+        "external_id": null
+      }
+    },
+    {
+      "local_id": "REQ-013",
+      "name": "Fuel Efficiency Improvement",
+      "type": "Requirement",
+      "metaclass": "Class",
+      "stereotype": "SysML::Requirements::Requirement",
+      "documentation": "与当前同级机型相比，燃油效率提升20%。",
+      "source_requirement": "REQ-013",
+      "status": "approved",
+      "tags": {
+        "ai_mbse_id": "REQ-013",
+        "external_id": null
+      }
+    },
+    {
+      "local_id": "REQ-014",
+      "name": "Airframe Weight Fraction",
+      "type": "Requirement",
+      "metaclass": "Class",
+      "stereotype": "SysML::Requirements::Requirement",
+      "documentation": "机体结构重量占最大起飞重量的比例应小于28%。",
+      "source_requirement": "REQ-014",
+      "status": "approved",
+      "tags": {
+        "ai_mbse_id": "REQ-014",
+        "external_id": null
+      }
+    },
+    {
+      "local_id": "BLK-001",
+      "name": "Aircraft",
+      "type": "Block",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "代表完整的先进支线飞机产品，作为系统顶层。",
+      "source_requirement": null,
+      "status": "approved",
+      "tags": {
+        "ai_mbse_id": "BLK-001",
+        "external_id": null
+      }
+    },
+    {
+      "local_id": "BLK-002",
+      "name": "Airframe",
+      "type": "Block",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "包括机身、机翼、尾翼等结构，采用碳纤维(CFRP)与先进铝合金混合设计。",
+      "source_requirement": null,
+      "status": "approved",
+      "tags": {
+        "ai_mbse_id": "BLK-002",
+        "external_id": null
+      }
+    },
+    {
+      "local_id": "BLK-003",
+      "name": "Wing",
+      "type": "Block",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "下单翼，超临界翼型，翼梢融合式小翼，前缘缝翼和双缝后缘襟翼。",
+      "source_requirement": null,
+      "status": "approved",
+      "tags": {
+        "ai_mbse_id": "BLK-003",
+        "external_id": null
+      }
+    },
+    {
+      "local_id": "BLK-004",
+      "name": "Empennage",
+      "type": "Block",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "T型尾翼布局，采用CFRP整体成型。",
+      "source_requirement": null,
+      "status": "approved",
+      "tags": {
+        "ai_mbse_id": "BLK-004",
+        "external_id": null
+      }
+    },
+    {
+      "local_id": "BLK-005",
+      "name": "PropulsionSystem",
+      "type": "Block",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "两台先进涡扇发动机、短舱及附件，提供巡航推力并满足噪声和排放要求。",
+      "source_requirement": null,
+      "status": "approved",
+      "tags": {
+        "ai_mbse_id": "BLK-005",
+        "external_id": null
+      }
+    },
+    {
+      "local_id": "BLK-006",
+      "name": "LandingGear",
+      "type": "Block",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "前三点式起落架，高强度钢和钛合金结构，满足场长和地面载荷要求。",
+      "source_requirement": null,
+      "status": "approved",
+      "tags": {
+        "ai_mbse_id": "BLK-006",
+        "external_id": null
+      }
+    },
+    {
+      "local_id": "BLK-007",
+      "name": "FlightControlSystem",
+      "type": "Block",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "三轴数字电传飞控，放宽静稳定性，主动阵风减缓及机动载荷控制。",
+      "source_requirement": null,
+      "status": "approved",
+      "tags": {
+        "ai_mbse_id": "BLK-007",
+        "external_id": null
+      }
+    },
+    {
+      "local_id": "BLK-008",
+      "name": "AvionicsSystem",
+      "type": "Block",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "综合模块化航电，AFDX网络，大屏驾驶舱，卫星通信和4D航迹运行支持。",
+      "source_requirement": null,
+      "status": "approved",
+      "tags": {
+        "ai_mbse_id": "BLK-008",
+        "external_id": null
+      }
+    },
+    {
+      "local_id": "BLK-009",
+      "name": "APU",
+      "type": "Block",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "辅助动力装置，一体化电起动发电机，提供90 kVA电力，支持地面电动滑行。",
+      "source_requirement": null,
+      "status": "approved",
+      "tags": {
+        "ai_mbse_id": "BLK-009",
+        "external_id": null
+      }
+    },
+    {
+      "local_id": "BLK-010",
+      "name": "CabinAndECS",
+      "type": "Block",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "客舱及空调系统，5并排座椅，通道0.5 m，座舱高度控制在8000 ft以下。",
+      "source_requirement": null,
+      "status": "approved",
+      "tags": {
+        "ai_mbse_id": "BLK-010",
+        "external_id": null
+      }
+    },
+    {
+      "local_id": "UC-001",
+      "name": "Provide Regional Air Transport",
+      "type": "UseCase",
+      "metaclass": "UseCase",
+      "stereotype": "",
+      "documentation": "飞机在区域航线上执行客运任务，覆盖起飞、巡航、着陆全过程。",
+      "source_requirement": "REQ-001",
+      "status": "approved",
+      "tags": {
+        "ai_mbse_id": "UC-001",
+        "external_id": null
+      }
+    },
+    {
+      "local_id": "UC-002",
+      "name": "Perform High-Speed Cruise",
+      "type": "UseCase",
+      "metaclass": "UseCase",
+      "stereotype": "",
+      "documentation": "在M0.78经济巡航状态下完成航段飞行，保证油耗和时延指标。",
+      "source_requirement": "REQ-003",
+      "status": "approved",
+      "tags": {
+        "ai_mbse_id": "UC-002",
+        "external_id": null
+      }
+    },
+    {
+      "local_id": "UC-003",
+      "name": "Operate from Short/Medium Runways",
+      "type": "UseCase",
+      "metaclass": "UseCase",
+      "stereotype": "",
+      "documentation": "在1900 m跑道上完成起飞，并在1500 m跑道着陆，满足二类机场要求。",
+      "source_requirement": "REQ-004",
+      "status": "approved",
+      "tags": {
+        "ai_mbse_id": "UC-003",
+        "external_id": null
+      }
+    },
+    {
+      "local_id": "BLK-011",
+      "name": "Wing-Engine Interface",
+      "type": "Block",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "吊挂/安装点传递推力、燃油、液压、电气和防冰引气；包括机械接口和管路连接。",
+      "source_requirement": null,
+      "status": "approved",
+      "tags": {
+        "ai_mbse_id": "BLK-011",
+        "external_id": null
+      }
+    },
+    {
+      "local_id": "BLK-012",
+      "name": "Engine-Fuel System Interface",
+      "type": "Block",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "燃油供给和计量接口，满足发动机在所有飞行阶段的消耗需求。",
+      "source_requirement": null,
+      "status": "approved",
+      "tags": {
+        "ai_mbse_id": "BLK-012",
+        "external_id": null
+      }
+    },
+    {
+      "local_id": "BLK-013",
+      "name": "FlightControl-Actuator Interface",
+      "type": "Block",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "电传飞控计算机与电驱/液压作动器之间的命令和反馈信号。",
+      "source_requirement": null,
+      "status": "approved",
+      "tags": {
+        "ai_mbse_id": "BLK-013",
+        "external_id": null
+      }
+    },
+    {
+      "local_id": "BLK-014",
+      "name": "Cabin-Passenger Service Interface",
+      "type": "Block",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "客舱座椅、空调、照明、应急设备与乘客空间的物理和功能接口。",
+      "source_requirement": null,
+      "status": "approved",
+      "tags": {
+        "ai_mbse_id": "BLK-014",
+        "external_id": null
+      }
+    },
+    {
+      "local_id": "ACT-001",
+      "name": "Full Flight Mission",
+      "type": "Activity",
+      "metaclass": "Activity",
+      "stereotype": "",
+      "documentation": "从航前准备、发动机起动、滑出、起飞、爬升、巡航、下降、进近、着陆、滑入到关车的完整任务活动流。",
+      "source_requirement": null,
+      "status": "approved",
+      "tags": {
+        "ai_mbse_id": "ACT-001",
+        "external_id": null
+      }
+    },
+    {
+      "local_id": "CON-001",
+      "name": "Weight and Balance Constraint",
+      "type": "ConstraintBlock",
+      "metaclass": "Class",
+      "stereotype": "SysML::ConstraintBlocks::ConstraintBlock",
+      "documentation": "MTOW = OEW + Payload + Fuel; 重心范围限制; 结构重量分数<0.28。",
+      "source_requirement": "REQ-007",
+      "status": "approved",
+      "tags": {
+        "ai_mbse_id": "CON-001",
+        "external_id": null
+      }
+    },
+    {
+      "local_id": "CON-002",
+      "name": "Takeoff and Landing Performance",
+      "type": "ConstraintBlock",
+      "metaclass": "Class",
+      "stereotype": "SysML::ConstraintBlocks::ConstraintBlock",
+      "documentation": "基于气动力、推力和标准大气计算起飞与着陆距离，验证≤1900 m和≤1500 m。",
+      "source_requirement": "REQ-004",
+      "status": "approved",
+      "tags": {
+        "ai_mbse_id": "CON-002",
+        "external_id": null
+      }
+    },
+    {
+      "local_id": "CON-003",
+      "name": "Fuel Efficiency Improvement",
+      "type": "ConstraintBlock",
+      "metaclass": "Class",
+      "stereotype": "SysML::ConstraintBlocks::ConstraintBlock",
+      "documentation": "座公里油耗较基准机型降低20%，需通过气动、结构和发动机综合实现，参数化分析。",
+      "source_requirement": "REQ-013",
+      "status": "approved",
+      "tags": {
+        "ai_mbse_id": "CON-003",
+        "external_id": null
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "local_id": "REL-001",
+      "name": "REL-001",
+      "type": "contains",
+      "metaclass": "Association",
+      "stereotype": "CompositeAssociation",
+      "source": "BLK-001",
+      "source_name": "Aircraft",
+      "target": "BLK-002",
+      "target_name": "Airframe",
+      "documentation": "飞机包含机体结构。"
+    },
+    {
+      "local_id": "REL-002",
+      "name": "REL-002",
+      "type": "contains",
+      "metaclass": "Association",
+      "stereotype": "CompositeAssociation",
+      "source": "BLK-001",
+      "source_name": "Aircraft",
+      "target": "BLK-005",
+      "target_name": "PropulsionSystem",
+      "documentation": "飞机包含推进系统。"
+    },
+    {
+      "local_id": "REL-003",
+      "name": "REL-003",
+      "type": "contains",
+      "metaclass": "Association",
+      "stereotype": "CompositeAssociation",
+      "source": "BLK-001",
+      "source_name": "Aircraft",
+      "target": "BLK-006",
+      "target_name": "LandingGear",
+      "documentation": "飞机包含起落架。"
+    },
+    {
+      "local_id": "REL-004",
+      "name": "REL-004",
+      "type": "contains",
+      "metaclass": "Association",
+      "stereotype": "CompositeAssociation",
+      "source": "BLK-001",
+      "source_name": "Aircraft",
+      "target": "BLK-007",
+      "target_name": "FlightControlSystem",
+      "documentation": "飞机包含飞控系统。"
+    },
+    {
+      "local_id": "REL-005",
+      "name": "REL-005",
+      "type": "contains",
+      "metaclass": "Association",
+      "stereotype": "CompositeAssociation",
+      "source": "BLK-001",
+      "source_name": "Aircraft",
+      "target": "BLK-008",
+      "target_name": "AvionicsSystem",
+      "documentation": "飞机包含航电系统。"
+    },
+    {
+      "local_id": "REL-006",
+      "name": "REL-006",
+      "type": "contains",
+      "metaclass": "Association",
+      "stereotype": "CompositeAssociation",
+      "source": "BLK-001",
+      "source_name": "Aircraft",
+      "target": "BLK-009",
+      "target_name": "APU",
+      "documentation": "飞机包含APU。"
+    },
+    {
+      "local_id": "REL-007",
+      "name": "REL-007",
+      "type": "contains",
+      "metaclass": "Association",
+      "stereotype": "CompositeAssociation",
+      "source": "BLK-001",
+      "source_name": "Aircraft",
+      "target": "BLK-010",
+      "target_name": "CabinAndECS",
+      "documentation": "飞机包含客舱与环控。"
+    },
+    {
+      "local_id": "REL-008",
+      "name": "REL-008",
+      "type": "contains",
+      "metaclass": "Association",
+      "stereotype": "CompositeAssociation",
+      "source": "BLK-002",
+      "source_name": "Airframe",
+      "target": "BLK-003",
+      "target_name": "Wing",
+      "documentation": "机体包含机翼。"
+    },
+    {
+      "local_id": "REL-009",
+      "name": "REL-009",
+      "type": "contains",
+      "metaclass": "Association",
+      "stereotype": "CompositeAssociation",
+      "source": "BLK-002",
+      "source_name": "Airframe",
+      "target": "BLK-004",
+      "target_name": "Empennage",
+      "documentation": "机体包含尾翼。"
+    },
+    {
+      "local_id": "REL-010",
+      "name": "REL-010",
+      "type": "allocate",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Allocations::Allocate",
+      "source": "BLK-003",
+      "source_name": "Wing",
+      "target": "BLK-005",
+      "target_name": "PropulsionSystem",
+      "documentation": "机翼提供发动机安装接口，通过IF-001连接。"
+    },
+    {
+      "local_id": "REL-011",
+      "name": "REL-011",
+      "type": "allocate",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Allocations::Allocate",
+      "source": "BLK-001",
+      "source_name": "Aircraft",
+      "target": "BLK-011",
+      "target_name": "Wing-Engine Interface",
+      "documentation": "飞机设计需要实现翼-发接口规范。"
+    },
+    {
+      "local_id": "REL-012",
+      "name": "REL-012",
+      "type": "allocate",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Allocations::Allocate",
+      "source": "BLK-001",
+      "source_name": "Aircraft",
+      "target": "BLK-012",
+      "target_name": "Engine-Fuel System Interface",
+      "documentation": "推进系统与燃油系统的接口在飞机级定义。"
+    },
+    {
+      "local_id": "REL-013",
+      "name": "REL-013",
+      "type": "allocate",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Allocations::Allocate",
+      "source": "BLK-007",
+      "source_name": "FlightControlSystem",
+      "target": "BLK-013",
+      "target_name": "FlightControl-Actuator Interface",
+      "documentation": "飞控系统通过作动器接口控制舵面。"
+    },
+    {
+      "local_id": "REL-014",
+      "name": "REL-014",
+      "type": "allocate",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Allocations::Allocate",
+      "source": "BLK-010",
+      "source_name": "CabinAndECS",
+      "target": "BLK-014",
+      "target_name": "Cabin-Passenger Service Interface",
+      "documentation": "客舱设计需满足旅客服务接口要求。"
+    },
+    {
+      "local_id": "REL-015",
+      "name": "REL-015",
+      "type": "satisfy",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Satisfy",
+      "source": "REQ-001",
+      "source_name": "Passenger Capacity",
+      "target": "BLK-010",
+      "target_name": "CabinAndECS",
+      "documentation": "客舱布局满足载客数量需求。"
+    },
+    {
+      "local_id": "REL-016",
+      "name": "REL-016",
+      "type": "satisfy",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Satisfy",
+      "source": "REQ-002",
+      "source_name": "Design Range",
+      "target": "BLK-001",
+      "target_name": "Aircraft",
+      "documentation": "飞机整体设计通过气动和燃油容量满足航程要求。"
+    },
+    {
+      "local_id": "REL-017",
+      "name": "REL-017",
+      "type": "satisfy",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Satisfy",
+      "source": "REQ-003",
+      "source_name": "Cruise Speed",
+      "target": "BLK-003",
+      "target_name": "Wing",
+      "documentation": "超临界机翼和推进系统共同实现巡航速度指标。"
+    },
+    {
+      "local_id": "REL-018",
+      "name": "REL-018",
+      "type": "satisfy",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Satisfy",
+      "source": "REQ-004",
+      "source_name": "Takeoff Field Length",
+      "target": "BLK-003",
+      "target_name": "Wing",
+      "documentation": "高升力装置和推力/重量比满足起飞场长。"
+    },
+    {
+      "local_id": "REL-019",
+      "name": "REL-019",
+      "type": "satisfy",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Satisfy",
+      "source": "REQ-005",
+      "source_name": "Landing Field Length",
+      "target": "BLK-003",
+      "target_name": "Wing",
+      "documentation": "高升力系统和刹车性能满足着陆场长。"
+    },
+    {
+      "local_id": "REL-020",
+      "name": "REL-020",
+      "type": "satisfy",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Satisfy",
+      "source": "REQ-006",
+      "source_name": "Maximum Payload",
+      "target": "BLK-001",
+      "target_name": "Aircraft",
+      "documentation": "结构强度和商载设计满足最大商载。"
+    },
+    {
+      "local_id": "REL-021",
+      "name": "REL-021",
+      "type": "satisfy",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Satisfy",
+      "source": "REQ-007",
+      "source_name": "Maximum Takeoff Weight",
+      "target": "BLK-001",
+      "target_name": "Aircraft",
+      "documentation": "重量控制保证MTOW不超过52000 kg。"
+    },
+    {
+      "local_id": "REL-022",
+      "name": "REL-022",
+      "type": "satisfy",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Satisfy",
+      "source": "REQ-008",
+      "source_name": "Service Ceiling",
+      "target": "BLK-001",
+      "target_name": "Aircraft",
+      "documentation": "气动和发动机高空性能满足升限。"
+    },
+    {
+      "local_id": "REL-023",
+      "name": "REL-023",
+      "type": "satisfy",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Satisfy",
+      "source": "REQ-009",
+      "source_name": "Fuselage Diameter",
+      "target": "BLK-002",
+      "target_name": "Airframe",
+      "documentation": "机身设计满足直径和座椅布置。"
+    },
+    {
+      "local_id": "REL-024",
+      "name": "REL-024",
+      "type": "satisfy",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Satisfy",
+      "source": "REQ-010",
+      "source_name": "Wingspan",
+      "target": "BLK-003",
+      "target_name": "Wing",
+      "documentation": "机翼展长满足36 m限制。"
+    },
+    {
+      "local_id": "REL-025",
+      "name": "REL-025",
+      "type": "satisfy",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Satisfy",
+      "source": "REQ-011",
+      "source_name": "Engine Thrust",
+      "target": "BLK-005",
+      "target_name": "PropulsionSystem",
+      "documentation": "选定发动机提供所需推力级。"
+    },
+    {
+      "local_id": "REL-026",
+      "name": "REL-026",
+      "type": "satisfy",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Satisfy",
+      "source": "REQ-012",
+      "source_name": "Noise Certification",
+      "target": "BLK-005",
+      "target_name": "PropulsionSystem",
+      "documentation": "短舱声学处理和风扇设计满足噪声要求。"
+    },
+    {
+      "local_id": "REL-027",
+      "name": "REL-027",
+      "type": "refine",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Trace",
+      "source": "REQ-013",
+      "source_name": "Fuel Efficiency Improvement",
+      "target": "CON-003",
+      "target_name": "Fuel Efficiency Improvement",
+      "documentation": "燃油效率提升通过参数约束细化到气动、结构和发动机改进。"
+    },
+    {
+      "local_id": "REL-028",
+      "name": "REL-028",
+      "type": "satisfy",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Satisfy",
+      "source": "REQ-014",
+      "source_name": "Airframe Weight Fraction",
+      "target": "BLK-002",
+      "target_name": "Airframe",
+      "documentation": "复合材料应用使结构重量分数低于28%。"
+    },
+    {
+      "local_id": "REL-029",
+      "name": "REL-029",
+      "type": "trace",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Trace",
+      "source": "UC-001",
+      "source_name": "Provide Regional Air Transport",
+      "target": "BLK-001",
+      "target_name": "Aircraft",
+      "documentation": "区域运输用例由飞机系统实现。"
+    },
+    {
+      "local_id": "REL-030",
+      "name": "REL-030",
+      "type": "trace",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Trace",
+      "source": "UC-002",
+      "source_name": "Perform High-Speed Cruise",
+      "target": "BLK-003",
+      "target_name": "Wing",
+      "documentation": "高速巡航能力依赖机翼和发动机性能。"
+    },
+    {
+      "local_id": "REL-031",
+      "name": "REL-031",
+      "type": "trace",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Trace",
+      "source": "UC-003",
+      "source_name": "Operate from Short/Medium Runways",
+      "target": "BLK-003",
+      "target_name": "Wing",
+      "documentation": "短跑道起降能力依赖高升力系统。"
+    },
+    {
+      "local_id": "REL-032",
+      "name": "REL-032",
+      "type": "allocate",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Allocations::Allocate",
+      "source": "CON-001",
+      "source_name": "Weight and Balance Constraint",
+      "target": "BLK-001",
+      "target_name": "Aircraft",
+      "documentation": "重量与重心约束适用于全机。"
+    },
+    {
+      "local_id": "REL-033",
+      "name": "REL-033",
+      "type": "allocate",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Allocations::Allocate",
+      "source": "CON-002",
+      "source_name": "Takeoff and Landing Performance",
+      "target": "BLK-003",
+      "target_name": "Wing",
+      "documentation": "起降性能约束主要与机翼和动力相关。"
+    },
+    {
+      "local_id": "REL-034",
+      "name": "REL-034",
+      "type": "refine",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Trace",
+      "source": "ACT-001",
+      "source_name": "Full Flight Mission",
+      "target": "UC-001",
+      "target_name": "Provide Regional Air Transport",
+      "documentation": "飞行任务活动细化了区域运输用例的操作流程。"
+    }
+  ],
+  "diagram_layout": {
+    "schema": "ai-mbse.diagram-layout.v1",
+    "diagram_name": "AI_MBSE_Trace_View",
+    "layout_source": "backend",
+    "width": 1660,
+    "height": 1857,
+    "nodes": [
+      {
+        "id": "ACT-001",
+        "element_id": "ACT-001",
+        "name": "Full Flight Mission",
+        "label": "ACT-001 - Full Flight Mission",
+        "type": "Activity",
+        "stereotype_label": "«activity»",
+        "shape": "rect",
+        "column": 0,
+        "row": 0,
+        "x": 70,
+        "y": 80,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "BLK-001",
+        "element_id": "BLK-001",
+        "name": "Aircraft",
+        "label": "BLK-001 - Aircraft",
+        "type": "Block",
+        "stereotype_label": "«block»",
+        "shape": "rect",
+        "column": 1,
+        "row": 0,
+        "x": 330,
+        "y": 80,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "BLK-002",
+        "element_id": "BLK-002",
+        "name": "Airframe",
+        "label": "BLK-002 - Airframe",
+        "type": "Block",
+        "stereotype_label": "«block»",
+        "shape": "rect",
+        "column": 1,
+        "row": 1,
+        "x": 330,
+        "y": 205,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "BLK-003",
+        "element_id": "BLK-003",
+        "name": "Wing",
+        "label": "BLK-003 - Wing",
+        "type": "Block",
+        "stereotype_label": "«block»",
+        "shape": "rect",
+        "column": 1,
+        "row": 2,
+        "x": 330,
+        "y": 330,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "BLK-004",
+        "element_id": "BLK-004",
+        "name": "Empennage",
+        "label": "BLK-004 - Empennage",
+        "type": "Block",
+        "stereotype_label": "«block»",
+        "shape": "rect",
+        "column": 1,
+        "row": 3,
+        "x": 330,
+        "y": 455,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "BLK-005",
+        "element_id": "BLK-005",
+        "name": "PropulsionSystem",
+        "label": "BLK-005 - PropulsionSystem",
+        "type": "Block",
+        "stereotype_label": "«block»",
+        "shape": "rect",
+        "column": 1,
+        "row": 4,
+        "x": 330,
+        "y": 580,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "BLK-006",
+        "element_id": "BLK-006",
+        "name": "LandingGear",
+        "label": "BLK-006 - LandingGear",
+        "type": "Block",
+        "stereotype_label": "«block»",
+        "shape": "rect",
+        "column": 1,
+        "row": 5,
+        "x": 330,
+        "y": 705,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "BLK-007",
+        "element_id": "BLK-007",
+        "name": "FlightControlSystem",
+        "label": "BLK-007 - FlightControlSystem",
+        "type": "Block",
+        "stereotype_label": "«block»",
+        "shape": "rect",
+        "column": 1,
+        "row": 6,
+        "x": 330,
+        "y": 830,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "BLK-008",
+        "element_id": "BLK-008",
+        "name": "AvionicsSystem",
+        "label": "BLK-008 - AvionicsSystem",
+        "type": "Block",
+        "stereotype_label": "«block»",
+        "shape": "rect",
+        "column": 1,
+        "row": 7,
+        "x": 330,
+        "y": 955,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "BLK-009",
+        "element_id": "BLK-009",
+        "name": "APU",
+        "label": "BLK-009 - APU",
+        "type": "Block",
+        "stereotype_label": "«block»",
+        "shape": "rect",
+        "column": 1,
+        "row": 8,
+        "x": 330,
+        "y": 1080,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "BLK-010",
+        "element_id": "BLK-010",
+        "name": "CabinAndECS",
+        "label": "BLK-010 - CabinAndECS",
+        "type": "Block",
+        "stereotype_label": "«block»",
+        "shape": "rect",
+        "column": 1,
+        "row": 9,
+        "x": 330,
+        "y": 1205,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "BLK-011",
+        "element_id": "BLK-011",
+        "name": "Wing-Engine Interface",
+        "label": "BLK-011 - Wing-Engine Interface",
+        "type": "Block",
+        "stereotype_label": "«block»",
+        "shape": "rect",
+        "column": 1,
+        "row": 10,
+        "x": 330,
+        "y": 1330,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "BLK-012",
+        "element_id": "BLK-012",
+        "name": "Engine-Fuel System Interface",
+        "label": "BLK-012 - Engine-Fuel System Interface",
+        "type": "Block",
+        "stereotype_label": "«block»",
+        "shape": "rect",
+        "column": 1,
+        "row": 11,
+        "x": 330,
+        "y": 1455,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "BLK-013",
+        "element_id": "BLK-013",
+        "name": "FlightControl-Actuator Interface",
+        "label": "BLK-013 - FlightControl-Actuator Interface",
+        "type": "Block",
+        "stereotype_label": "«block»",
+        "shape": "rect",
+        "column": 1,
+        "row": 12,
+        "x": 330,
+        "y": 1580,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "BLK-014",
+        "element_id": "BLK-014",
+        "name": "Cabin-Passenger Service Interface",
+        "label": "BLK-014 - Cabin-Passenger Service Interface",
+        "type": "Block",
+        "stereotype_label": "«block»",
+        "shape": "rect",
+        "column": 1,
+        "row": 13,
+        "x": 330,
+        "y": 1705,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "REQ-001",
+        "element_id": "REQ-001",
+        "name": "Passenger Capacity",
+        "label": "REQ-001 - Passenger Capacity",
+        "type": "Requirement",
+        "stereotype_label": "«requirement»",
+        "shape": "rect",
+        "column": 2,
+        "row": 0,
+        "x": 590,
+        "y": 80,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "REQ-002",
+        "element_id": "REQ-002",
+        "name": "Design Range",
+        "label": "REQ-002 - Design Range",
+        "type": "Requirement",
+        "stereotype_label": "«requirement»",
+        "shape": "rect",
+        "column": 2,
+        "row": 1,
+        "x": 590,
+        "y": 205,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "REQ-003",
+        "element_id": "REQ-003",
+        "name": "Cruise Speed",
+        "label": "REQ-003 - Cruise Speed",
+        "type": "Requirement",
+        "stereotype_label": "«requirement»",
+        "shape": "rect",
+        "column": 2,
+        "row": 2,
+        "x": 590,
+        "y": 330,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "REQ-004",
+        "element_id": "REQ-004",
+        "name": "Takeoff Field Length",
+        "label": "REQ-004 - Takeoff Field Length",
+        "type": "Requirement",
+        "stereotype_label": "«requirement»",
+        "shape": "rect",
+        "column": 2,
+        "row": 3,
+        "x": 590,
+        "y": 455,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "REQ-005",
+        "element_id": "REQ-005",
+        "name": "Landing Field Length",
+        "label": "REQ-005 - Landing Field Length",
+        "type": "Requirement",
+        "stereotype_label": "«requirement»",
+        "shape": "rect",
+        "column": 2,
+        "row": 4,
+        "x": 590,
+        "y": 580,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "REQ-006",
+        "element_id": "REQ-006",
+        "name": "Maximum Payload",
+        "label": "REQ-006 - Maximum Payload",
+        "type": "Requirement",
+        "stereotype_label": "«requirement»",
+        "shape": "rect",
+        "column": 2,
+        "row": 5,
+        "x": 590,
+        "y": 705,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "REQ-007",
+        "element_id": "REQ-007",
+        "name": "Maximum Takeoff Weight",
+        "label": "REQ-007 - Maximum Takeoff Weight",
+        "type": "Requirement",
+        "stereotype_label": "«requirement»",
+        "shape": "rect",
+        "column": 2,
+        "row": 6,
+        "x": 590,
+        "y": 830,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "REQ-008",
+        "element_id": "REQ-008",
+        "name": "Service Ceiling",
+        "label": "REQ-008 - Service Ceiling",
+        "type": "Requirement",
+        "stereotype_label": "«requirement»",
+        "shape": "rect",
+        "column": 2,
+        "row": 7,
+        "x": 590,
+        "y": 955,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "REQ-009",
+        "element_id": "REQ-009",
+        "name": "Fuselage Diameter",
+        "label": "REQ-009 - Fuselage Diameter",
+        "type": "Requirement",
+        "stereotype_label": "«requirement»",
+        "shape": "rect",
+        "column": 2,
+        "row": 8,
+        "x": 590,
+        "y": 1080,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "REQ-010",
+        "element_id": "REQ-010",
+        "name": "Wingspan",
+        "label": "REQ-010 - Wingspan",
+        "type": "Requirement",
+        "stereotype_label": "«requirement»",
+        "shape": "rect",
+        "column": 2,
+        "row": 9,
+        "x": 590,
+        "y": 1205,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "REQ-011",
+        "element_id": "REQ-011",
+        "name": "Engine Thrust",
+        "label": "REQ-011 - Engine Thrust",
+        "type": "Requirement",
+        "stereotype_label": "«requirement»",
+        "shape": "rect",
+        "column": 2,
+        "row": 10,
+        "x": 590,
+        "y": 1330,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "REQ-012",
+        "element_id": "REQ-012",
+        "name": "Noise Certification",
+        "label": "REQ-012 - Noise Certification",
+        "type": "Requirement",
+        "stereotype_label": "«requirement»",
+        "shape": "rect",
+        "column": 2,
+        "row": 11,
+        "x": 590,
+        "y": 1455,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "REQ-013",
+        "element_id": "REQ-013",
+        "name": "Fuel Efficiency Improvement",
+        "label": "REQ-013 - Fuel Efficiency Improvement",
+        "type": "Requirement",
+        "stereotype_label": "«requirement»",
+        "shape": "rect",
+        "column": 2,
+        "row": 12,
+        "x": 590,
+        "y": 1580,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "REQ-014",
+        "element_id": "REQ-014",
+        "name": "Airframe Weight Fraction",
+        "label": "REQ-014 - Airframe Weight Fraction",
+        "type": "Requirement",
+        "stereotype_label": "«requirement»",
+        "shape": "rect",
+        "column": 2,
+        "row": 13,
+        "x": 590,
+        "y": 1705,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "UC-001",
+        "element_id": "UC-001",
+        "name": "Provide Regional Air Transport",
+        "label": "UC-001 - Provide Regional Air Transport",
+        "type": "UseCase",
+        "stereotype_label": "«use case»",
+        "shape": "ellipse",
+        "column": 3,
+        "row": 0,
+        "x": 850,
+        "y": 80,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "UC-002",
+        "element_id": "UC-002",
+        "name": "Perform High-Speed Cruise",
+        "label": "UC-002 - Perform High-Speed Cruise",
+        "type": "UseCase",
+        "stereotype_label": "«use case»",
+        "shape": "ellipse",
+        "column": 3,
+        "row": 1,
+        "x": 850,
+        "y": 205,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "UC-003",
+        "element_id": "UC-003",
+        "name": "Operate from Short/Medium Runways",
+        "label": "UC-003 - Operate from Short/Medium Runways",
+        "type": "UseCase",
+        "stereotype_label": "«use case»",
+        "shape": "ellipse",
+        "column": 3,
+        "row": 2,
+        "x": 850,
+        "y": 330,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "CON-001",
+        "element_id": "CON-001",
+        "name": "Weight and Balance Constraint",
+        "label": "CON-001 - Weight and Balance Constraint",
+        "type": "ConstraintBlock",
+        "stereotype_label": "«constraint»",
+        "shape": "rect",
+        "column": 5,
+        "row": 0,
+        "x": 1370,
+        "y": 80,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "CON-002",
+        "element_id": "CON-002",
+        "name": "Takeoff and Landing Performance",
+        "label": "CON-002 - Takeoff and Landing Performance",
+        "type": "ConstraintBlock",
+        "stereotype_label": "«constraint»",
+        "shape": "rect",
+        "column": 5,
+        "row": 1,
+        "x": 1370,
+        "y": 205,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "CON-003",
+        "element_id": "CON-003",
+        "name": "Fuel Efficiency Improvement",
+        "label": "CON-003 - Fuel Efficiency Improvement",
+        "type": "ConstraintBlock",
+        "stereotype_label": "«constraint»",
+        "shape": "rect",
+        "column": 5,
+        "row": 2,
+        "x": 1370,
+        "y": 330,
+        "width": 220,
+        "height": 72
+      }
+    ],
+    "edges": [
+      {
+        "id": "REL-001",
+        "relationship_id": "REL-001",
+        "source": "BLK-001",
+        "target": "BLK-002",
+        "type": "contains",
+        "label": "contains",
+        "points": [
+          {
+            "x": 426,
+            "y": 152
+          },
+          {
+            "x": 474,
+            "y": 152
+          },
+          {
+            "x": 406,
+            "y": 205
+          },
+          {
+            "x": 454,
+            "y": 205
+          }
+        ],
+        "label_x": 440,
+        "label_y": 172
+      },
+      {
+        "id": "REL-002",
+        "relationship_id": "REL-002",
+        "source": "BLK-001",
+        "target": "BLK-005",
+        "type": "contains",
+        "label": "contains",
+        "points": [
+          {
+            "x": 433,
+            "y": 152
+          },
+          {
+            "x": 481,
+            "y": 152
+          },
+          {
+            "x": 399,
+            "y": 580
+          },
+          {
+            "x": 447,
+            "y": 580
+          }
+        ],
+        "label_x": 440,
+        "label_y": 360
+      },
+      {
+        "id": "REL-003",
+        "relationship_id": "REL-003",
+        "source": "BLK-001",
+        "target": "BLK-006",
+        "type": "contains",
+        "label": "contains",
+        "points": [
+          {
+            "x": 440,
+            "y": 152
+          },
+          {
+            "x": 488,
+            "y": 152
+          },
+          {
+            "x": 392,
+            "y": 705
+          },
+          {
+            "x": 440,
+            "y": 705
+          }
+        ],
+        "label_x": 440,
+        "label_y": 422
+      },
+      {
+        "id": "REL-004",
+        "relationship_id": "REL-004",
+        "source": "BLK-001",
+        "target": "BLK-007",
+        "type": "contains",
+        "label": "contains",
+        "points": [
+          {
+            "x": 447,
+            "y": 152
+          },
+          {
+            "x": 399,
+            "y": 152
+          },
+          {
+            "x": 481,
+            "y": 830
+          },
+          {
+            "x": 433,
+            "y": 830
+          }
+        ],
+        "label_x": 440,
+        "label_y": 485
+      },
+      {
+        "id": "REL-005",
+        "relationship_id": "REL-005",
+        "source": "BLK-001",
+        "target": "BLK-008",
+        "type": "contains",
+        "label": "contains",
+        "points": [
+          {
+            "x": 454,
+            "y": 152
+          },
+          {
+            "x": 406,
+            "y": 152
+          },
+          {
+            "x": 474,
+            "y": 955
+          },
+          {
+            "x": 426,
+            "y": 955
+          }
+        ],
+        "label_x": 440,
+        "label_y": 547
+      },
+      {
+        "id": "REL-006",
+        "relationship_id": "REL-006",
+        "source": "BLK-001",
+        "target": "BLK-009",
+        "type": "contains",
+        "label": "contains",
+        "points": [
+          {
+            "x": 426,
+            "y": 152
+          },
+          {
+            "x": 474,
+            "y": 152
+          },
+          {
+            "x": 406,
+            "y": 1080
+          },
+          {
+            "x": 454,
+            "y": 1080
+          }
+        ],
+        "label_x": 440,
+        "label_y": 610
+      },
+      {
+        "id": "REL-007",
+        "relationship_id": "REL-007",
+        "source": "BLK-001",
+        "target": "BLK-010",
+        "type": "contains",
+        "label": "contains",
+        "points": [
+          {
+            "x": 433,
+            "y": 152
+          },
+          {
+            "x": 481,
+            "y": 152
+          },
+          {
+            "x": 399,
+            "y": 1205
+          },
+          {
+            "x": 447,
+            "y": 1205
+          }
+        ],
+        "label_x": 440,
+        "label_y": 672
+      },
+      {
+        "id": "REL-008",
+        "relationship_id": "REL-008",
+        "source": "BLK-002",
+        "target": "BLK-003",
+        "type": "contains",
+        "label": "contains",
+        "points": [
+          {
+            "x": 440,
+            "y": 277
+          },
+          {
+            "x": 488,
+            "y": 277
+          },
+          {
+            "x": 392,
+            "y": 330
+          },
+          {
+            "x": 440,
+            "y": 330
+          }
+        ],
+        "label_x": 440,
+        "label_y": 297
+      },
+      {
+        "id": "REL-009",
+        "relationship_id": "REL-009",
+        "source": "BLK-002",
+        "target": "BLK-004",
+        "type": "contains",
+        "label": "contains",
+        "points": [
+          {
+            "x": 447,
+            "y": 277
+          },
+          {
+            "x": 399,
+            "y": 277
+          },
+          {
+            "x": 481,
+            "y": 455
+          },
+          {
+            "x": 433,
+            "y": 455
+          }
+        ],
+        "label_x": 440,
+        "label_y": 360
+      },
+      {
+        "id": "REL-010",
+        "relationship_id": "REL-010",
+        "source": "BLK-003",
+        "target": "BLK-005",
+        "type": "allocate",
+        "label": "allocate",
+        "points": [
+          {
+            "x": 454,
+            "y": 402
+          },
+          {
+            "x": 406,
+            "y": 402
+          },
+          {
+            "x": 474,
+            "y": 580
+          },
+          {
+            "x": 426,
+            "y": 580
+          }
+        ],
+        "label_x": 440,
+        "label_y": 485
+      },
+      {
+        "id": "REL-011",
+        "relationship_id": "REL-011",
+        "source": "BLK-001",
+        "target": "BLK-011",
+        "type": "allocate",
+        "label": "allocate",
+        "points": [
+          {
+            "x": 426,
+            "y": 152
+          },
+          {
+            "x": 474,
+            "y": 152
+          },
+          {
+            "x": 406,
+            "y": 1330
+          },
+          {
+            "x": 454,
+            "y": 1330
+          }
+        ],
+        "label_x": 440,
+        "label_y": 735
+      },
+      {
+        "id": "REL-012",
+        "relationship_id": "REL-012",
+        "source": "BLK-001",
+        "target": "BLK-012",
+        "type": "allocate",
+        "label": "allocate",
+        "points": [
+          {
+            "x": 433,
+            "y": 152
+          },
+          {
+            "x": 481,
+            "y": 152
+          },
+          {
+            "x": 399,
+            "y": 1455
+          },
+          {
+            "x": 447,
+            "y": 1455
+          }
+        ],
+        "label_x": 440,
+        "label_y": 797
+      },
+      {
+        "id": "REL-013",
+        "relationship_id": "REL-013",
+        "source": "BLK-007",
+        "target": "BLK-013",
+        "type": "allocate",
+        "label": "allocate",
+        "points": [
+          {
+            "x": 440,
+            "y": 902
+          },
+          {
+            "x": 488,
+            "y": 902
+          },
+          {
+            "x": 392,
+            "y": 1580
+          },
+          {
+            "x": 440,
+            "y": 1580
+          }
+        ],
+        "label_x": 440,
+        "label_y": 1235
+      },
+      {
+        "id": "REL-014",
+        "relationship_id": "REL-014",
+        "source": "BLK-010",
+        "target": "BLK-014",
+        "type": "allocate",
+        "label": "allocate",
+        "points": [
+          {
+            "x": 447,
+            "y": 1277
+          },
+          {
+            "x": 399,
+            "y": 1277
+          },
+          {
+            "x": 481,
+            "y": 1705
+          },
+          {
+            "x": 433,
+            "y": 1705
+          }
+        ],
+        "label_x": 440,
+        "label_y": 1485
+      },
+      {
+        "id": "REL-015",
+        "relationship_id": "REL-015",
+        "source": "REQ-001",
+        "target": "BLK-010",
+        "type": "satisfy",
+        "label": "satisfy",
+        "points": [
+          {
+            "x": 590,
+            "y": 130
+          },
+          {
+            "x": 542,
+            "y": 130
+          },
+          {
+            "x": 598,
+            "y": 1227
+          },
+          {
+            "x": 550,
+            "y": 1227
+          }
+        ],
+        "label_x": 570,
+        "label_y": 672
+      },
+      {
+        "id": "REL-016",
+        "relationship_id": "REL-016",
+        "source": "REQ-002",
+        "target": "BLK-001",
+        "type": "satisfy",
+        "label": "satisfy",
+        "points": [
+          {
+            "x": 590,
+            "y": 227
+          },
+          {
+            "x": 542,
+            "y": 227
+          },
+          {
+            "x": 598,
+            "y": 130
+          },
+          {
+            "x": 550,
+            "y": 130
+          }
+        ],
+        "label_x": 570,
+        "label_y": 172
+      },
+      {
+        "id": "REL-017",
+        "relationship_id": "REL-017",
+        "source": "REQ-003",
+        "target": "BLK-003",
+        "type": "satisfy",
+        "label": "satisfy",
+        "points": [
+          {
+            "x": 590,
+            "y": 359
+          },
+          {
+            "x": 542,
+            "y": 359
+          },
+          {
+            "x": 598,
+            "y": 373
+          },
+          {
+            "x": 550,
+            "y": 373
+          }
+        ],
+        "label_x": 570,
+        "label_y": 360
+      },
+      {
+        "id": "REL-018",
+        "relationship_id": "REL-018",
+        "source": "REQ-004",
+        "target": "BLK-003",
+        "type": "satisfy",
+        "label": "satisfy",
+        "points": [
+          {
+            "x": 590,
+            "y": 491
+          },
+          {
+            "x": 542,
+            "y": 491
+          },
+          {
+            "x": 598,
+            "y": 366
+          },
+          {
+            "x": 550,
+            "y": 366
+          }
+        ],
+        "label_x": 570,
+        "label_y": 422
+      },
+      {
+        "id": "REL-019",
+        "relationship_id": "REL-019",
+        "source": "REQ-005",
+        "target": "BLK-003",
+        "type": "satisfy",
+        "label": "satisfy",
+        "points": [
+          {
+            "x": 590,
+            "y": 623
+          },
+          {
+            "x": 542,
+            "y": 623
+          },
+          {
+            "x": 598,
+            "y": 359
+          },
+          {
+            "x": 550,
+            "y": 359
+          }
+        ],
+        "label_x": 570,
+        "label_y": 485
+      },
+      {
+        "id": "REL-020",
+        "relationship_id": "REL-020",
+        "source": "REQ-006",
+        "target": "BLK-001",
+        "type": "satisfy",
+        "label": "satisfy",
+        "points": [
+          {
+            "x": 590,
+            "y": 755
+          },
+          {
+            "x": 542,
+            "y": 755
+          },
+          {
+            "x": 598,
+            "y": 102
+          },
+          {
+            "x": 550,
+            "y": 102
+          }
+        ],
+        "label_x": 570,
+        "label_y": 422
+      },
+      {
+        "id": "REL-021",
+        "relationship_id": "REL-021",
+        "source": "REQ-007",
+        "target": "BLK-001",
+        "type": "satisfy",
+        "label": "satisfy",
+        "points": [
+          {
+            "x": 590,
+            "y": 852
+          },
+          {
+            "x": 542,
+            "y": 852
+          },
+          {
+            "x": 598,
+            "y": 130
+          },
+          {
+            "x": 550,
+            "y": 130
+          }
+        ],
+        "label_x": 570,
+        "label_y": 485
+      },
+      {
+        "id": "REL-022",
+        "relationship_id": "REL-022",
+        "source": "REQ-008",
+        "target": "BLK-001",
+        "type": "satisfy",
+        "label": "satisfy",
+        "points": [
+          {
+            "x": 590,
+            "y": 984
+          },
+          {
+            "x": 542,
+            "y": 984
+          },
+          {
+            "x": 598,
+            "y": 123
+          },
+          {
+            "x": 550,
+            "y": 123
+          }
+        ],
+        "label_x": 570,
+        "label_y": 547
+      },
+      {
+        "id": "REL-023",
+        "relationship_id": "REL-023",
+        "source": "REQ-009",
+        "target": "BLK-002",
+        "type": "satisfy",
+        "label": "satisfy",
+        "points": [
+          {
+            "x": 590,
+            "y": 1116
+          },
+          {
+            "x": 542,
+            "y": 1116
+          },
+          {
+            "x": 598,
+            "y": 241
+          },
+          {
+            "x": 550,
+            "y": 241
+          }
+        ],
+        "label_x": 570,
+        "label_y": 672
+      },
+      {
+        "id": "REL-024",
+        "relationship_id": "REL-024",
+        "source": "REQ-010",
+        "target": "BLK-003",
+        "type": "satisfy",
+        "label": "satisfy",
+        "points": [
+          {
+            "x": 590,
+            "y": 1248
+          },
+          {
+            "x": 542,
+            "y": 1248
+          },
+          {
+            "x": 598,
+            "y": 359
+          },
+          {
+            "x": 550,
+            "y": 359
+          }
+        ],
+        "label_x": 570,
+        "label_y": 797
+      },
+      {
+        "id": "REL-025",
+        "relationship_id": "REL-025",
+        "source": "REQ-011",
+        "target": "BLK-005",
+        "type": "satisfy",
+        "label": "satisfy",
+        "points": [
+          {
+            "x": 590,
+            "y": 1380
+          },
+          {
+            "x": 542,
+            "y": 1380
+          },
+          {
+            "x": 598,
+            "y": 602
+          },
+          {
+            "x": 550,
+            "y": 602
+          }
+        ],
+        "label_x": 570,
+        "label_y": 985
+      },
+      {
+        "id": "REL-026",
+        "relationship_id": "REL-026",
+        "source": "REQ-012",
+        "target": "BLK-005",
+        "type": "satisfy",
+        "label": "satisfy",
+        "points": [
+          {
+            "x": 590,
+            "y": 1477
+          },
+          {
+            "x": 542,
+            "y": 1477
+          },
+          {
+            "x": 598,
+            "y": 630
+          },
+          {
+            "x": 550,
+            "y": 630
+          }
+        ],
+        "label_x": 570,
+        "label_y": 1047
+      },
+      {
+        "id": "REL-027",
+        "relationship_id": "REL-027",
+        "source": "REQ-013",
+        "target": "CON-003",
+        "type": "refine",
+        "label": "refine",
+        "points": [
+          {
+            "x": 810,
+            "y": 1609
+          },
+          {
+            "x": 1045,
+            "y": 1609
+          },
+          {
+            "x": 1135,
+            "y": 373
+          },
+          {
+            "x": 1370,
+            "y": 373
+          }
+        ],
+        "label_x": 1090,
+        "label_y": 985
+      },
+      {
+        "id": "REL-028",
+        "relationship_id": "REL-028",
+        "source": "REQ-014",
+        "target": "BLK-002",
+        "type": "satisfy",
+        "label": "satisfy",
+        "points": [
+          {
+            "x": 590,
+            "y": 1741
+          },
+          {
+            "x": 542,
+            "y": 1741
+          },
+          {
+            "x": 598,
+            "y": 241
+          },
+          {
+            "x": 550,
+            "y": 241
+          }
+        ],
+        "label_x": 570,
+        "label_y": 985
+      },
+      {
+        "id": "REL-029",
+        "relationship_id": "REL-029",
+        "source": "UC-001",
+        "target": "BLK-001",
+        "type": "trace",
+        "label": "trace",
+        "points": [
+          {
+            "x": 850,
+            "y": 123
+          },
+          {
+            "x": 724,
+            "y": 123
+          },
+          {
+            "x": 676,
+            "y": 109
+          },
+          {
+            "x": 550,
+            "y": 109
+          }
+        ],
+        "label_x": 700,
+        "label_y": 110
+      },
+      {
+        "id": "REL-030",
+        "relationship_id": "REL-030",
+        "source": "UC-002",
+        "target": "BLK-003",
+        "type": "trace",
+        "label": "trace",
+        "points": [
+          {
+            "x": 850,
+            "y": 255
+          },
+          {
+            "x": 724,
+            "y": 255
+          },
+          {
+            "x": 676,
+            "y": 352
+          },
+          {
+            "x": 550,
+            "y": 352
+          }
+        ],
+        "label_x": 700,
+        "label_y": 297
+      },
+      {
+        "id": "REL-031",
+        "relationship_id": "REL-031",
+        "source": "UC-003",
+        "target": "BLK-003",
+        "type": "trace",
+        "label": "trace",
+        "points": [
+          {
+            "x": 850,
+            "y": 352
+          },
+          {
+            "x": 724,
+            "y": 352
+          },
+          {
+            "x": 676,
+            "y": 380
+          },
+          {
+            "x": 550,
+            "y": 380
+          }
+        ],
+        "label_x": 700,
+        "label_y": 360
+      },
+      {
+        "id": "REL-032",
+        "relationship_id": "REL-032",
+        "source": "CON-001",
+        "target": "BLK-001",
+        "type": "allocate",
+        "label": "allocate",
+        "points": [
+          {
+            "x": 1370,
+            "y": 109
+          },
+          {
+            "x": 1026,
+            "y": 109
+          },
+          {
+            "x": 894,
+            "y": 123
+          },
+          {
+            "x": 550,
+            "y": 123
+          }
+        ],
+        "label_x": 960,
+        "label_y": 110
+      },
+      {
+        "id": "REL-033",
+        "relationship_id": "REL-033",
+        "source": "CON-002",
+        "target": "BLK-003",
+        "type": "allocate",
+        "label": "allocate",
+        "points": [
+          {
+            "x": 1370,
+            "y": 241
+          },
+          {
+            "x": 1026,
+            "y": 241
+          },
+          {
+            "x": 894,
+            "y": 366
+          },
+          {
+            "x": 550,
+            "y": 366
+          }
+        ],
+        "label_x": 960,
+        "label_y": 297
+      },
+      {
+        "id": "REL-034",
+        "relationship_id": "REL-034",
+        "source": "ACT-001",
+        "target": "UC-001",
+        "type": "refine",
+        "label": "refine",
+        "points": [
+          {
+            "x": 290,
+            "y": 123
+          },
+          {
+            "x": 525,
+            "y": 123
+          },
+          {
+            "x": 615,
+            "y": 109
+          },
+          {
+            "x": 850,
+            "y": 109
+          }
+        ],
+        "label_x": 570,
+        "label_y": 110
+      }
+    ]
+  }
+}

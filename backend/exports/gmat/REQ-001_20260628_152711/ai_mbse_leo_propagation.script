@@ -1,0 +1,61 @@
+%
+% AI-MBSE generated GMAT script
+%
+
+Create Spacecraft Sat;
+Sat.DateFormat = UTCGregorian;
+Sat.Epoch = '26 Jun 2026 00:00:00.000';
+Sat.CoordinateSystem = EarthMJ2000Eq;
+Sat.DisplayStateType = Keplerian;
+Sat.SMA = 7000;
+Sat.ECC = 0.001;
+Sat.INC = 97.8;
+Sat.RAAN = 0;
+Sat.AOP = 0;
+Sat.TA = 0;
+Sat.DryMass = 450;
+Sat.Cd = 2.2;
+Sat.Cr = 1.8;
+Sat.DragArea = 6;
+Sat.SRPArea = 4;
+
+Create ForceModel EarthForce;
+EarthForce.CentralBody = Earth;
+EarthForce.PrimaryBodies = {Earth};
+EarthForce.PointMasses = {Luna, Sun};
+EarthForce.SRP = On;
+EarthForce.RelativisticCorrection = Off;
+EarthForce.ErrorControl = RSSStep;
+EarthForce.GravityField.Earth.Degree = 4;
+EarthForce.GravityField.Earth.Order = 4;
+EarthForce.GravityField.Earth.PotentialFile = 'JGM2.cof';
+EarthForce.GravityField.Earth.TideModel = 'None';
+EarthForce.Drag.AtmosphereModel = 'JacchiaRoberts';
+EarthForce.Drag.F107 = 150;
+EarthForce.Drag.F107A = 150;
+EarthForce.Drag.MagneticIndex = 3;
+EarthForce.SRP.Flux = 1367;
+EarthForce.SRP.Nominal_Sun = 149597870.691;
+
+Create Propagator Prop;
+Prop.FM = EarthForce;
+Prop.Type = RungeKutta89;
+Prop.InitialStepSize = 60;
+Prop.Accuracy = 1e-10;
+Prop.MinStep = 0.001;
+Prop.MaxStep = 600;
+Prop.MaxStepAttempts = 50;
+Prop.StopIfAccuracyIsViolated = true;
+
+Create ReportFile OrbitReport;
+OrbitReport.Filename = 'E:/ai_mbse1/AI-MBSE-Demo/backend/exports/gmat/REQ-001_20260628_152711/gmat_orbit_report.txt';
+OrbitReport.Precision = 16;
+OrbitReport.Add = {Sat.UTCGregorian, Sat.X, Sat.Y, Sat.Z, Sat.VX, Sat.VY, Sat.VZ};
+OrbitReport.WriteHeaders = True;
+OrbitReport.FixedWidth = True;
+OrbitReport.Delimiter = ' ';
+OrbitReport.ColumnWidth = 24;
+OrbitReport.WriteReport = True;
+
+BeginMissionSequence;
+Propagate Prop(Sat) {Sat.ElapsedDays = 1.0};

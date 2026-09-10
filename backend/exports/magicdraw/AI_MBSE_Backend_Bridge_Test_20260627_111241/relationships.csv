@@ -1,0 +1,2 @@
+﻿local_id,name,type,metaclass,stereotype,source,source_name,target,target_name,documentation
+REL-BACKEND-001,REL-BACKEND-001,Trace,Dependency,SysML::Requirements::Trace,REQ-BACKEND-001,BackendRequirement,BLK-BACKEND-001,BackendBlock,Backend bridge trace

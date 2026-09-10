@@ -1,0 +1,3 @@
+﻿local_id,name,type,metaclass,stereotype,documentation,source_requirement,status
+REQ-ACCEPT-001,AcceptedRequirement,Requirement,Class,SysML::Requirements::Requirement,Accepted bridge import test,REQ-ACCEPT-001,candidate
+BLK-ACCEPT-001,AcceptedBlock,Block,Class,SysML::Blocks::Block,Accepted bridge import test,REQ-ACCEPT-001,candidate

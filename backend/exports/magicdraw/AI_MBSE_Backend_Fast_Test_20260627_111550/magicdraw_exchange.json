@@ -1,0 +1,56 @@
+{
+  "schema": "ai-mbse.magicdraw.exchange.v1",
+  "generated_at": "2026-06-27T03:15:50Z",
+  "project_path": "",
+  "root_package": "AI_MBSE_Backend_Fast_Test",
+  "instructions": [
+    "Create or reuse root package.",
+    "Create SysML/UML elements by local_id and stereotype.",
+    "Create relationships after all element ids are resolved.",
+    "Store ai_mbse_id and source_requirement as tagged values when available."
+  ],
+  "elements": [
+    {
+      "local_id": "REQ-BACKEND-FAST-001",
+      "name": "BackendFastRequirement",
+      "type": "Requirement",
+      "metaclass": "Class",
+      "stereotype": "SysML::Requirements::Requirement",
+      "documentation": "Backend fast bridge import test",
+      "source_requirement": "REQ-BACKEND-FAST-001",
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "REQ-BACKEND-FAST-001",
+        "external_id": null
+      }
+    },
+    {
+      "local_id": "BLK-BACKEND-FAST-001",
+      "name": "BackendFastBlock",
+      "type": "Block",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "Backend fast bridge import test",
+      "source_requirement": "REQ-BACKEND-FAST-001",
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "BLK-BACKEND-FAST-001",
+        "external_id": null
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "local_id": "REL-BACKEND-FAST-001",
+      "name": "REL-BACKEND-FAST-001",
+      "type": "Trace",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Trace",
+      "source": "REQ-BACKEND-FAST-001",
+      "source_name": "BackendFastRequirement",
+      "target": "BLK-BACKEND-FAST-001",
+      "target_name": "BackendFastBlock",
+      "documentation": "Backend fast bridge trace"
+    }
+  ]
+}

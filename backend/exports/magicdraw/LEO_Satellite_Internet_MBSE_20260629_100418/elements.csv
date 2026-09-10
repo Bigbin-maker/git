@@ -1,0 +1,27 @@
+﻿local_id,name,type,package,metaclass,stereotype,documentation,source_requirement,status
+REQ-001,全球覆盖需求,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,卫星互联网系统应实现南北纬60°以内的全球覆盖，包括极地航路和海洋区域的连续服务。,REQ-001,accepted
+REQ-002,通信容量需求,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,系统总容量不低于2 Tbps，单星容量不低于20 Gbps（假设值，基于典型低轨宽带星座）。,REQ-002,accepted
+REQ-003,端到端时延需求,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,在卫星-终端-地面网络链路上，端到端单向时延（包括处理和排队）应不超过50ms。,REQ-003,accepted
+REQ-004,链路可用性需求,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,每条用户链路的年可用性不低于99.9%，考虑大气衰减、遮挡和卫星切换影响。,REQ-004,accepted
+REQ-005,星座规模约束,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,一期部署卫星数量不超过100颗工作星，可含少量备份星。,REQ-005,accepted
+REQ-006,卫星寿命约束,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,卫星设计寿命不少于5年，并考虑末期离轨能力。,REQ-006,accepted
+BLK-001,卫星互联网系统,Block,02_Structure,Class,SysML::Blocks::Block,整车系统，由空间段、地面段和用户段组成，提供全球宽带通信服务。,,accepted
+BLK-002,空间段,Block,02_Structure,Class,SysML::Blocks::Block,包含100颗低轨卫星构成的星座，提供覆盖和星上处理。,,accepted
+BLK-003,LEO卫星,Block,02_Structure,Class,SysML::Blocks::Block,单颗卫星，搭载通信载荷、电源、姿控和星间链路终端。,,accepted
+BLK-004,通信载荷,Block,02_Structure,Class,SysML::Blocks::Block,包含相控阵天线、转发器/再生处理单元，支持Ku用户链路、Ka馈电链路和激光星间链路。,,accepted
+BLK-005,地面段,Block,02_Structure,Class,SysML::Blocks::Block,含信关站（10个）、网络控制中心、运营支撑系统，提供馈电连接与核心网功能。,,accepted
+BLK-006,用户段,Block,02_Structure,Class,SysML::Blocks::Block,各种用户终端（固定、移动、IoT等），接入卫星网络。,,accepted
+BLK-007,信关站,Block,02_Structure,Class,SysML::Blocks::Block,每个信关站连接到地面核心网，并通过Ka频段与卫星通信。,,accepted
+BLK-008,用户终端,Block,02_Structure,Class,SysML::Blocks::Block,支持相控阵或机械天线，提供Ku频段接入，可移动或固定安装。,,accepted
+UC-001,提供宽带互联网接入,UseCase,03_Behavior,UseCase,,用户通过用户终端建立与卫星的链路，经星地馈电链路接入互联网，实现数据上下行。,,accepted
+UC-002,支持移动平台通信,UseCase,03_Behavior,UseCase,,对机载、船载或车载终端提供无缝波束切换和服务连续性。,,accepted
+UC-003,星座运维管理,UseCase,03_Behavior,UseCase,,地面控制中心对卫星进行测控、健康管理、轨道维护和软件上注。,,accepted
+UC-004,初始试验验证,UseCase,03_Behavior,UseCase,,通过2～4颗试验星开展端到端业务演示，验证关键指标（覆盖、速率、时延）。,,accepted
+IF-001,馈电链路接口,Interface,04_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,卫星与信关站之间的Ka频段空口，包含波束控制、调制编码等协议。,,accepted
+IF-002,用户链路接口,Interface,04_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,卫星与用户终端之间的Ku频段空口，支持多波束相控阵接入。,,accepted
+IF-003,星间链路接口,Interface,04_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,卫星之间的激光通信链路接口，用于星上组网和路由。,,accepted
+ACT-001,初始接入与认证流程,Activity,03_Behavior,Activity,,描述用户终端开机、波束扫描、卫星捕获、认证与连接建立的序列。,,accepted
+ACT-002,波束切换与移动性管理流程,Activity,03_Behavior,Activity,,终端在移动过程中，卫星波束切换、星间切换以及位置更新过程。,,accepted
+CON-001,轨道高度范围约束,ConstraintBlock,05_Constraints,Class,SysML::ConstraintBlocks::ConstraintBlock,轨道高度限定在500～600 km范围，以保证低时延和覆盖特性。,,accepted
+CON-002,频率使用约束,ConstraintBlock,05_Constraints,Class,SysML::ConstraintBlocks::ConstraintBlock,用户链路使用Ku频段（下行10.7-12.75GHz，上行14.0-14.5GHz），馈电链路使用Ka频段（假设），需符合ITU规定。,,accepted
+CON-003,卫星制造与发射约束,ConstraintBlock,05_Constraints,Class,SysML::ConstraintBlocks::ConstraintBlock,单星质量不超过X kg，成本不超过Y，以适应一箭多星发射和批量制造。,,accepted

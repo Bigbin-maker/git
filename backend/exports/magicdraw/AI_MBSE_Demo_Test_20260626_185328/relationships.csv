@@ -1,0 +1,2 @@
+﻿local_id,name,type,metaclass,stereotype,source,source_name,target,target_name,documentation
+REL-MD-001,REL-MD-001,satisfy,Dependency,SysML::Requirements::Satisfy,REQ-MD-001,卫星任务需求,BLK-MD-001,卫星系统,系统满足任务需求

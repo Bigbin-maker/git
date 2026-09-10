@@ -1,0 +1,36 @@
+﻿local_id,name,type,metaclass,stereotype,documentation,source_requirement,status
+REQ-001,Passenger Capacity,Requirement,Class,SysML::Requirements::Requirement,飞机应具备90至110座的单舱全经济舱布局载客能力。,REQ-001,approved
+REQ-002,Design Range,Requirement,Class,SysML::Requirements::Requirement,在最大商载条件下，航程应不小于3700 km（含备份油）。,REQ-002,approved
+REQ-003,Cruise Speed,Requirement,Class,SysML::Requirements::Requirement,典型巡航马赫数应为0.78，最大巡航马赫数不超过0.82。,REQ-003,approved
+REQ-004,Takeoff Field Length,Requirement,Class,SysML::Requirements::Requirement,海平面国际标准大气条件下，最大起飞重量时的起飞场长不应大于1900 m。,REQ-004,approved
+REQ-005,Landing Field Length,Requirement,Class,SysML::Requirements::Requirement,最大着陆重量时的着陆场长不应大于1500 m。,REQ-005,approved
+REQ-006,Maximum Payload,Requirement,Class,SysML::Requirements::Requirement,最大商载不小于11200 kg。,REQ-006,approved
+REQ-007,Maximum Takeoff Weight,Requirement,Class,SysML::Requirements::Requirement,最大起飞重量应不超过52000 kg。,REQ-007,approved
+REQ-008,Service Ceiling,Requirement,Class,SysML::Requirements::Requirement,最大使用高度应达到12500 m (FL410)。,REQ-008,approved
+REQ-009,Fuselage Diameter,Requirement,Class,SysML::Requirements::Requirement,机身外径为3.9 m，提供5并排座椅和0.5 m通道。,REQ-009,approved
+REQ-010,Wingspan,Requirement,Class,SysML::Requirements::Requirement,翼展36 m，满足标准停机坪限制。,REQ-010,approved
+REQ-011,Engine Thrust,Requirement,Class,SysML::Requirements::Requirement,单台发动机海平面静推力应为95～110 kN级，采用先进齿轮传动或开式转子架构，涵道比约10-12。,REQ-011,approved
+REQ-012,Noise Certification,Requirement,Class,SysML::Requirements::Requirement,噪声应满足ICAO Annex 16 Stage 5要求，并具备15 EPNdB累积裕度。,REQ-012,approved
+REQ-013,Fuel Efficiency Improvement,Requirement,Class,SysML::Requirements::Requirement,与当前同级机型相比，燃油效率提升20%。,REQ-013,approved
+REQ-014,Airframe Weight Fraction,Requirement,Class,SysML::Requirements::Requirement,机体结构重量占最大起飞重量的比例应小于28%。,REQ-014,approved
+BLK-001,Aircraft,Block,Class,SysML::Blocks::Block,代表完整的先进支线飞机产品，作为系统顶层。,,approved
+BLK-002,Airframe,Block,Class,SysML::Blocks::Block,包括机身、机翼、尾翼等结构，采用碳纤维(CFRP)与先进铝合金混合设计。,,approved
+BLK-003,Wing,Block,Class,SysML::Blocks::Block,下单翼，超临界翼型，翼梢融合式小翼，前缘缝翼和双缝后缘襟翼。,,approved
+BLK-004,Empennage,Block,Class,SysML::Blocks::Block,T型尾翼布局，采用CFRP整体成型。,,approved
+BLK-005,PropulsionSystem,Block,Class,SysML::Blocks::Block,两台先进涡扇发动机、短舱及附件，提供巡航推力并满足噪声和排放要求。,,approved
+BLK-006,LandingGear,Block,Class,SysML::Blocks::Block,前三点式起落架，高强度钢和钛合金结构，满足场长和地面载荷要求。,,approved
+BLK-007,FlightControlSystem,Block,Class,SysML::Blocks::Block,三轴数字电传飞控，放宽静稳定性，主动阵风减缓及机动载荷控制。,,approved
+BLK-008,AvionicsSystem,Block,Class,SysML::Blocks::Block,综合模块化航电，AFDX网络，大屏驾驶舱，卫星通信和4D航迹运行支持。,,approved
+BLK-009,APU,Block,Class,SysML::Blocks::Block,辅助动力装置，一体化电起动发电机，提供90 kVA电力，支持地面电动滑行。,,approved
+BLK-010,CabinAndECS,Block,Class,SysML::Blocks::Block,客舱及空调系统，5并排座椅，通道0.5 m，座舱高度控制在8000 ft以下。,,approved
+UC-001,Provide Regional Air Transport,UseCase,UseCase,,飞机在区域航线上执行客运任务，覆盖起飞、巡航、着陆全过程。,REQ-001,approved
+UC-002,Perform High-Speed Cruise,UseCase,UseCase,,在M0.78经济巡航状态下完成航段飞行，保证油耗和时延指标。,REQ-003,approved
+UC-003,Operate from Short/Medium Runways,UseCase,UseCase,,在1900 m跑道上完成起飞，并在1500 m跑道着陆，满足二类机场要求。,REQ-004,approved
+BLK-011,Wing-Engine Interface,Block,Class,SysML::Blocks::Block,吊挂/安装点传递推力、燃油、液压、电气和防冰引气；包括机械接口和管路连接。,,approved
+BLK-012,Engine-Fuel System Interface,Block,Class,SysML::Blocks::Block,燃油供给和计量接口，满足发动机在所有飞行阶段的消耗需求。,,approved
+BLK-013,FlightControl-Actuator Interface,Block,Class,SysML::Blocks::Block,电传飞控计算机与电驱/液压作动器之间的命令和反馈信号。,,approved
+BLK-014,Cabin-Passenger Service Interface,Block,Class,SysML::Blocks::Block,客舱座椅、空调、照明、应急设备与乘客空间的物理和功能接口。,,approved
+ACT-001,Full Flight Mission,Activity,Activity,,从航前准备、发动机起动、滑出、起飞、爬升、巡航、下降、进近、着陆、滑入到关车的完整任务活动流。,,approved
+CON-001,Weight and Balance Constraint,ConstraintBlock,Class,SysML::ConstraintBlocks::ConstraintBlock,MTOW = OEW + Payload + Fuel; 重心范围限制; 结构重量分数<0.28。,REQ-007,approved
+CON-002,Takeoff and Landing Performance,ConstraintBlock,Class,SysML::ConstraintBlocks::ConstraintBlock,基于气动力、推力和标准大气计算起飞与着陆距离，验证≤1900 m和≤1500 m。,REQ-004,approved
+CON-003,Fuel Efficiency Improvement,ConstraintBlock,Class,SysML::ConstraintBlocks::ConstraintBlock,座公里油耗较基准机型降低20%，需通过气动、结构和发动机综合实现，参数化分析。,REQ-013,approved

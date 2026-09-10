@@ -1,0 +1,41 @@
+Port 5173 is in use, trying another one...
+
+  VITE v5.4.21  ready in 246 ms
+
+  ➜  Local:   http://localhost:5174/
+  ➜  Network: http://198.18.0.1:5174/
+  ➜  Network: http://192.168.3.52:5174/
+17:05:03 [vite] hmr update /src/components/DiagramViewCanvas.tsx
+17:05:11 [vite] hmr update /src/pages/SystemModelViews.tsx
+17:06:43 [vite] hmr update /src/styles.css
+17:07:34 [vite] hmr update /src/styles.css
+17:16:38 [vite] hmr update /src/pages/AgentWorkbench.tsx
+17:16:45 [vite] hmr update /src/pages/AgentWorkbench.tsx
+17:17:05 [vite] hmr update /src/pages/AgentWorkbench.tsx
+17:17:13 [vite] hmr update /src/pages/AgentWorkbench.tsx
+17:17:16 [vite] hmr update /src/pages/AgentWorkbench.tsx
+17:17:22 [vite] hmr update /src/pages/AgentWorkbench.tsx
+17:17:30 [vite] hmr update /src/pages/AgentWorkbench.tsx
+17:17:54 [vite] hmr update /src/styles.css
+17:28:45 [vite] hmr update /src/pages/AgentWorkbench.tsx
+17:28:54 [vite] hmr update /src/pages/AgentWorkbench.tsx
+17:29:13 [vite] hmr update /src/pages/AgentWorkbench.tsx
+17:29:27 [vite] hmr update /src/pages/AgentWorkbench.tsx
+17:31:58 [vite] hmr update /src/components/LayoutShell.tsx
+17:31:59 [vite] hmr invalidate /src/components/LayoutShell.tsx Could not Fast Refresh ("getAllowedPages" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+17:31:59 [vite] hmr update /src/App.tsx
+17:32:05 [vite] hmr update /src/App.tsx
+18:59:32 [vite] hmr update /src/App.tsx, /src/pages/Dashboard.tsx, /src/pages/SimulationMock.tsx, /src/pages/SystemModelViews.tsx, /src/pages/ModelGeneration1.tsx, /src/pages/AgentWorkbench.tsx
+18:59:43 [vite] hmr update /src/pages/AgentWorkbench.tsx
+18:59:51 [vite] hmr update /src/pages/AgentWorkbench.tsx
+21:00:49 [vite] hmr update /src/pages/SimulationMock.tsx
+21:02:32 [vite] hmr update /src/pages/SimulationMock.tsx
+21:04:43 [vite] hmr update /src/styles.css
+21:05:06 [vite] hmr update /src/styles.css
+21:06:11 [vite] hmr update /src/pages/SimulationMock.tsx
+21:06:19 [vite] hmr update /src/styles.css
+21:09:55 [vite] hmr update /src/pages/SimulationMock.tsx
+21:10:10 [vite] hmr update /src/pages/SimulationMock.tsx
+21:10:15 [vite] hmr update /src/pages/SimulationMock.tsx
+21:10:21 [vite] hmr update /src/pages/SimulationMock.tsx
+21:10:26 [vite] hmr update /src/pages/SimulationMock.tsx

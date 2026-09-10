@@ -1,0 +1,610 @@
+{
+  "schema": "ai-mbse.magicdraw.exchange.v1",
+  "generated_at": "2026-06-27T01:58:39Z",
+  "project_path": "",
+  "root_package": "AI_MBSE_Demo",
+  "instructions": [
+    "Create or reuse root package.",
+    "Create SysML/UML elements by local_id and stereotype.",
+    "Create relationships after all element ids are resolved.",
+    "Store ai_mbse_id and source_requirement as tagged values when available."
+  ],
+  "elements": [
+    {
+      "local_id": "ACT-001",
+      "name": "用户接入流程",
+      "type": "Activity",
+      "metaclass": "Activity",
+      "stereotype": "",
+      "documentation": "描述“用户接入能力”从触发、处理到反馈的核心流程。",
+      "source_requirement": "REQ-001",
+      "status": "committed",
+      "tags": {
+        "ai_mbse_id": "ACT-001",
+        "external_id": "b08ffd9c-c6aa-4af7-9a3c-dfb195ff3a01"
+      }
+    },
+    {
+      "local_id": "ACT-002",
+      "name": "链路资源管理流程",
+      "type": "Activity",
+      "metaclass": "Activity",
+      "stereotype": "",
+      "documentation": "描述“链路资源管理能力”从触发、处理到反馈的核心流程。",
+      "source_requirement": "REQ-002",
+      "status": "committed",
+      "tags": {
+        "ai_mbse_id": "ACT-002",
+        "external_id": "9cc2c1af-88f5-4cbc-8328-5244fd7336ea"
+      }
+    },
+    {
+      "local_id": "ACT-003",
+      "name": "业务调度流程",
+      "type": "Activity",
+      "metaclass": "Activity",
+      "stereotype": "",
+      "documentation": "描述“业务调度能力”从触发、处理到反馈的核心流程。",
+      "source_requirement": "REQ-003",
+      "status": "committed",
+      "tags": {
+        "ai_mbse_id": "ACT-003",
+        "external_id": "7c8ef600-a967-4a27-ae6b-fb8fffb32de4"
+      }
+    },
+    {
+      "local_id": "ACT-004",
+      "name": "网络状态监测流程",
+      "type": "Activity",
+      "metaclass": "Activity",
+      "stereotype": "",
+      "documentation": "描述“网络状态监测能力”从触发、处理到反馈的核心流程。",
+      "source_requirement": "REQ-004",
+      "status": "committed",
+      "tags": {
+        "ai_mbse_id": "ACT-004",
+        "external_id": "177bd44a-8418-4e2e-8bf4-eb7c07f590fb"
+      }
+    },
+    {
+      "local_id": "ACT-005",
+      "name": "故障告警流程",
+      "type": "Activity",
+      "metaclass": "Activity",
+      "stereotype": "",
+      "documentation": "描述“故障告警能力”从触发、处理到反馈的核心流程。",
+      "source_requirement": "REQ-005",
+      "status": "committed",
+      "tags": {
+        "ai_mbse_id": "ACT-005",
+        "external_id": "cc054540-a5c1-4e86-8190-cf5cc16fa8c5"
+      }
+    },
+    {
+      "local_id": "BLK-001",
+      "name": "宽带通信系统",
+      "type": "Block",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "负责宽带业务接入、链路管理、业务调度和状态监测的系统级模块。",
+      "source_requirement": "REQ-001",
+      "status": "committed",
+      "tags": {
+        "ai_mbse_id": "BLK-001",
+        "external_id": "743efac9-f359-4886-bff5-6a61ea00ef0a"
+      }
+    },
+    {
+      "local_id": "IF-001",
+      "name": "用户接入接口",
+      "type": "Interface",
+      "metaclass": "Interface",
+      "stereotype": "SysML::PortsAndFlows::InterfaceBlock",
+      "documentation": "支撑“用户接入能力”的数据、控制或状态交互接口。",
+      "source_requirement": "REQ-001",
+      "status": "committed",
+      "tags": {
+        "ai_mbse_id": "IF-001",
+        "external_id": "af9fbbed-9e59-4a02-917e-e3845321157d"
+      }
+    },
+    {
+      "local_id": "IF-002",
+      "name": "链路资源管理接口",
+      "type": "Interface",
+      "metaclass": "Interface",
+      "stereotype": "SysML::PortsAndFlows::InterfaceBlock",
+      "documentation": "支撑“链路资源管理能力”的数据、控制或状态交互接口。",
+      "source_requirement": "REQ-002",
+      "status": "committed",
+      "tags": {
+        "ai_mbse_id": "IF-002",
+        "external_id": "948be594-8d02-487e-8396-41fa279d498a"
+      }
+    },
+    {
+      "local_id": "IF-003",
+      "name": "业务调度接口",
+      "type": "Interface",
+      "metaclass": "Interface",
+      "stereotype": "SysML::PortsAndFlows::InterfaceBlock",
+      "documentation": "支撑“业务调度能力”的数据、控制或状态交互接口。",
+      "source_requirement": "REQ-003",
+      "status": "committed",
+      "tags": {
+        "ai_mbse_id": "IF-003",
+        "external_id": "b9d450b7-d3bf-4b84-a275-8310fd873090"
+      }
+    },
+    {
+      "local_id": "IF-004",
+      "name": "网络状态监测接口",
+      "type": "Interface",
+      "metaclass": "Interface",
+      "stereotype": "SysML::PortsAndFlows::InterfaceBlock",
+      "documentation": "支撑“网络状态监测能力”的数据、控制或状态交互接口。",
+      "source_requirement": "REQ-004",
+      "status": "committed",
+      "tags": {
+        "ai_mbse_id": "IF-004",
+        "external_id": "954e60be-abf6-4ac1-aaf1-0864885eb67e"
+      }
+    },
+    {
+      "local_id": "IF-005",
+      "name": "故障告警接口",
+      "type": "Interface",
+      "metaclass": "Interface",
+      "stereotype": "SysML::PortsAndFlows::InterfaceBlock",
+      "documentation": "支撑“故障告警能力”的数据、控制或状态交互接口。",
+      "source_requirement": "REQ-005",
+      "status": "committed",
+      "tags": {
+        "ai_mbse_id": "IF-005",
+        "external_id": "dfa6ad2c-420e-4b5d-be81-900a88b177e3"
+      }
+    },
+    {
+      "local_id": "REQ-001",
+      "name": "用户接入能力",
+      "type": "Requirement",
+      "metaclass": "Class",
+      "stereotype": "SysML::Requirements::Requirement",
+      "documentation": "系统应支持宽带用户终端接入认证、接入状态管理和在线状态监测。",
+      "source_requirement": "REQ-001",
+      "status": "committed",
+      "tags": {
+        "ai_mbse_id": "REQ-001",
+        "external_id": "1af06fc3-e849-4046-94b1-afea5e1d2be9"
+      }
+    },
+    {
+      "local_id": "REQ-002",
+      "name": "链路资源管理能力",
+      "type": "Requirement",
+      "metaclass": "Class",
+      "stereotype": "SysML::Requirements::Requirement",
+      "documentation": "系统应支持链路资源分配、链路质量监测和资源状态维护。",
+      "source_requirement": "REQ-002",
+      "status": "committed",
+      "tags": {
+        "ai_mbse_id": "REQ-002",
+        "external_id": "1f72e425-544c-4d04-a7da-7aeb03bfe084"
+      }
+    },
+    {
+      "local_id": "REQ-003",
+      "name": "业务调度能力",
+      "type": "Requirement",
+      "metaclass": "Class",
+      "stereotype": "SysML::Requirements::Requirement",
+      "documentation": "系统应根据业务优先级进行资源调度，并保障关键业务传输质量。",
+      "source_requirement": "REQ-003",
+      "status": "committed",
+      "tags": {
+        "ai_mbse_id": "REQ-003",
+        "external_id": "6cdb84f1-a007-4c6b-b1bd-6fb1cc740fea"
+      }
+    },
+    {
+      "local_id": "REQ-004",
+      "name": "网络状态监测能力",
+      "type": "Requirement",
+      "metaclass": "Class",
+      "stereotype": "SysML::Requirements::Requirement",
+      "documentation": "系统应对用户接入状态、链路质量和网络运行状态进行实时监测。",
+      "source_requirement": "REQ-004",
+      "status": "committed",
+      "tags": {
+        "ai_mbse_id": "REQ-004",
+        "external_id": "117a2df9-859c-4557-8208-d2569afa94a2"
+      }
+    },
+    {
+      "local_id": "REQ-005",
+      "name": "故障告警能力",
+      "type": "Requirement",
+      "metaclass": "Class",
+      "stereotype": "SysML::Requirements::Requirement",
+      "documentation": "系统应在链路质量下降或关键服务异常时触发告警并支持运维追溯。",
+      "source_requirement": "REQ-005",
+      "status": "committed",
+      "tags": {
+        "ai_mbse_id": "REQ-005",
+        "external_id": "fb06e461-615e-4042-92bc-0902d813be49"
+      }
+    },
+    {
+      "local_id": "UC-001",
+      "name": "用户接入",
+      "type": "UseCase",
+      "metaclass": "UseCase",
+      "stereotype": "",
+      "documentation": "围绕“用户接入能力”展开的用户或系统行为场景。",
+      "source_requirement": "REQ-001",
+      "status": "committed",
+      "tags": {
+        "ai_mbse_id": "UC-001",
+        "external_id": "608a7c60-9da6-4640-bb81-c4f0f1432ef9"
+      }
+    },
+    {
+      "local_id": "UC-002",
+      "name": "链路资源管理",
+      "type": "UseCase",
+      "metaclass": "UseCase",
+      "stereotype": "",
+      "documentation": "围绕“链路资源管理能力”展开的用户或系统行为场景。",
+      "source_requirement": "REQ-002",
+      "status": "committed",
+      "tags": {
+        "ai_mbse_id": "UC-002",
+        "external_id": "0eb4b890-6d9e-423e-97f8-63a6709e7c35"
+      }
+    },
+    {
+      "local_id": "UC-003",
+      "name": "业务调度",
+      "type": "UseCase",
+      "metaclass": "UseCase",
+      "stereotype": "",
+      "documentation": "围绕“业务调度能力”展开的用户或系统行为场景。",
+      "source_requirement": "REQ-003",
+      "status": "committed",
+      "tags": {
+        "ai_mbse_id": "UC-003",
+        "external_id": "3e9af568-80b9-4ffc-a641-ed246f727193"
+      }
+    },
+    {
+      "local_id": "UC-004",
+      "name": "网络状态监测",
+      "type": "UseCase",
+      "metaclass": "UseCase",
+      "stereotype": "",
+      "documentation": "围绕“网络状态监测能力”展开的用户或系统行为场景。",
+      "source_requirement": "REQ-004",
+      "status": "committed",
+      "tags": {
+        "ai_mbse_id": "UC-004",
+        "external_id": "70e17af4-b520-4eff-acdf-03f929c59e93"
+      }
+    },
+    {
+      "local_id": "UC-005",
+      "name": "故障告警",
+      "type": "UseCase",
+      "metaclass": "UseCase",
+      "stereotype": "",
+      "documentation": "围绕“故障告警能力”展开的用户或系统行为场景。",
+      "source_requirement": "REQ-005",
+      "status": "committed",
+      "tags": {
+        "ai_mbse_id": "UC-005",
+        "external_id": "5e0ae439-dd0a-4cef-b25c-0610309b94de"
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "local_id": "REL-001",
+      "name": "REL-001",
+      "type": "trace",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Trace",
+      "source": "REQ-001",
+      "source_name": "用户接入能力",
+      "target": "UC-001",
+      "target_name": "用户接入",
+      "documentation": ""
+    },
+    {
+      "local_id": "REL-002",
+      "name": "REL-002",
+      "type": "allocate",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Allocations::Allocate",
+      "source": "UC-001",
+      "source_name": "用户接入",
+      "target": "BLK-001",
+      "target_name": "宽带通信系统",
+      "documentation": ""
+    },
+    {
+      "local_id": "REL-003",
+      "name": "REL-003",
+      "type": "trace",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Trace",
+      "source": "UC-001",
+      "source_name": "用户接入",
+      "target": "IF-001",
+      "target_name": "用户接入接口",
+      "documentation": ""
+    },
+    {
+      "local_id": "REL-004",
+      "name": "REL-004",
+      "type": "connect",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Trace",
+      "source": "IF-001",
+      "source_name": "用户接入接口",
+      "target": "BLK-001",
+      "target_name": "宽带通信系统",
+      "documentation": ""
+    },
+    {
+      "local_id": "REL-005",
+      "name": "REL-005",
+      "type": "refine",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Trace",
+      "source": "UC-001",
+      "source_name": "用户接入",
+      "target": "ACT-001",
+      "target_name": "用户接入流程",
+      "documentation": ""
+    },
+    {
+      "local_id": "REL-006",
+      "name": "REL-006",
+      "type": "trace",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Trace",
+      "source": "REQ-002",
+      "source_name": "链路资源管理能力",
+      "target": "UC-002",
+      "target_name": "链路资源管理",
+      "documentation": ""
+    },
+    {
+      "local_id": "REL-007",
+      "name": "REL-007",
+      "type": "allocate",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Allocations::Allocate",
+      "source": "UC-002",
+      "source_name": "链路资源管理",
+      "target": "BLK-001",
+      "target_name": "宽带通信系统",
+      "documentation": ""
+    },
+    {
+      "local_id": "REL-008",
+      "name": "REL-008",
+      "type": "trace",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Trace",
+      "source": "UC-002",
+      "source_name": "链路资源管理",
+      "target": "IF-002",
+      "target_name": "链路资源管理接口",
+      "documentation": ""
+    },
+    {
+      "local_id": "REL-009",
+      "name": "REL-009",
+      "type": "connect",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Trace",
+      "source": "IF-002",
+      "source_name": "链路资源管理接口",
+      "target": "BLK-001",
+      "target_name": "宽带通信系统",
+      "documentation": ""
+    },
+    {
+      "local_id": "REL-010",
+      "name": "REL-010",
+      "type": "refine",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Trace",
+      "source": "UC-002",
+      "source_name": "链路资源管理",
+      "target": "ACT-002",
+      "target_name": "链路资源管理流程",
+      "documentation": ""
+    },
+    {
+      "local_id": "REL-011",
+      "name": "REL-011",
+      "type": "trace",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Trace",
+      "source": "REQ-003",
+      "source_name": "业务调度能力",
+      "target": "UC-003",
+      "target_name": "业务调度",
+      "documentation": ""
+    },
+    {
+      "local_id": "REL-012",
+      "name": "REL-012",
+      "type": "allocate",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Allocations::Allocate",
+      "source": "UC-003",
+      "source_name": "业务调度",
+      "target": "BLK-001",
+      "target_name": "宽带通信系统",
+      "documentation": ""
+    },
+    {
+      "local_id": "REL-013",
+      "name": "REL-013",
+      "type": "trace",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Trace",
+      "source": "UC-003",
+      "source_name": "业务调度",
+      "target": "IF-003",
+      "target_name": "业务调度接口",
+      "documentation": ""
+    },
+    {
+      "local_id": "REL-014",
+      "name": "REL-014",
+      "type": "connect",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Trace",
+      "source": "IF-003",
+      "source_name": "业务调度接口",
+      "target": "BLK-001",
+      "target_name": "宽带通信系统",
+      "documentation": ""
+    },
+    {
+      "local_id": "REL-015",
+      "name": "REL-015",
+      "type": "refine",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Trace",
+      "source": "UC-003",
+      "source_name": "业务调度",
+      "target": "ACT-003",
+      "target_name": "业务调度流程",
+      "documentation": ""
+    },
+    {
+      "local_id": "REL-016",
+      "name": "REL-016",
+      "type": "trace",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Trace",
+      "source": "REQ-004",
+      "source_name": "网络状态监测能力",
+      "target": "UC-004",
+      "target_name": "网络状态监测",
+      "documentation": ""
+    },
+    {
+      "local_id": "REL-017",
+      "name": "REL-017",
+      "type": "allocate",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Allocations::Allocate",
+      "source": "UC-004",
+      "source_name": "网络状态监测",
+      "target": "BLK-001",
+      "target_name": "宽带通信系统",
+      "documentation": ""
+    },
+    {
+      "local_id": "REL-018",
+      "name": "REL-018",
+      "type": "trace",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Trace",
+      "source": "UC-004",
+      "source_name": "网络状态监测",
+      "target": "IF-004",
+      "target_name": "网络状态监测接口",
+      "documentation": ""
+    },
+    {
+      "local_id": "REL-019",
+      "name": "REL-019",
+      "type": "connect",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Trace",
+      "source": "IF-004",
+      "source_name": "网络状态监测接口",
+      "target": "BLK-001",
+      "target_name": "宽带通信系统",
+      "documentation": ""
+    },
+    {
+      "local_id": "REL-020",
+      "name": "REL-020",
+      "type": "refine",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Trace",
+      "source": "UC-004",
+      "source_name": "网络状态监测",
+      "target": "ACT-004",
+      "target_name": "网络状态监测流程",
+      "documentation": ""
+    },
+    {
+      "local_id": "REL-021",
+      "name": "REL-021",
+      "type": "trace",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Trace",
+      "source": "REQ-005",
+      "source_name": "故障告警能力",
+      "target": "UC-005",
+      "target_name": "故障告警",
+      "documentation": ""
+    },
+    {
+      "local_id": "REL-022",
+      "name": "REL-022",
+      "type": "allocate",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Allocations::Allocate",
+      "source": "UC-005",
+      "source_name": "故障告警",
+      "target": "BLK-001",
+      "target_name": "宽带通信系统",
+      "documentation": ""
+    },
+    {
+      "local_id": "REL-023",
+      "name": "REL-023",
+      "type": "trace",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Trace",
+      "source": "UC-005",
+      "source_name": "故障告警",
+      "target": "IF-005",
+      "target_name": "故障告警接口",
+      "documentation": ""
+    },
+    {
+      "local_id": "REL-024",
+      "name": "REL-024",
+      "type": "connect",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Trace",
+      "source": "IF-005",
+      "source_name": "故障告警接口",
+      "target": "BLK-001",
+      "target_name": "宽带通信系统",
+      "documentation": ""
+    },
+    {
+      "local_id": "REL-025",
+      "name": "REL-025",
+      "type": "refine",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Trace",
+      "source": "UC-005",
+      "source_name": "故障告警",
+      "target": "ACT-005",
+      "target_name": "故障告警流程",
+      "documentation": ""
+    }
+  ]
+}

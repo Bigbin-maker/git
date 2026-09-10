@@ -1,0 +1,18 @@
+﻿local_id,name,type,package,metaclass,stereotype,documentation,source_requirement,status
+REQ-001,星座规模需求,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,星座应由100颗低地球轨道（LEO）卫星组成。,REQ-001,candidate
+REQ-002,全球覆盖需求,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,星座应提供全球范围（含极地）的连续通信覆盖，任意地点至少同时可见1颗卫星。,REQ-002,candidate
+REQ-003,用户链路性能需求,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,用户终端到卫星的下行速率不低于100 Mbps，上行不低于20 Mbps，链路可用性≥99.5%。,REQ-003,candidate
+REQ-004,星座构建与部署需求,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,星座应在3年内完成全部卫星的发射、入轨和组网。,REQ-004,candidate
+BLK-001,LEO 星座系统,Block,02_Structure,Class,SysML::Blocks::Block,由100颗卫星、多个地面网关和用户终端组成的系统整体，提供全球通信服务。,,candidate
+BLK-002,卫星,Block,02_Structure,Class,SysML::Blocks::Block,组成星座的单一LEO卫星，包含通信载荷、电源、姿控、星间链路等子系统。,,candidate
+BLK-003,地面网关,Block,02_Structure,Class,SysML::Blocks::Block,连接卫星星座与地面互联网的地面站，提供射频接入和网络路由。,,candidate
+BLK-004,用户终端,Block,02_Structure,Class,SysML::Blocks::Block,用户侧相控阵天线及调制解调器，用于接入卫星通信网络。,,candidate
+UC-001,提供全球互联网接入,UseCase,03_UseCases,UseCase,,星座系统为全球范围内的授权用户终端提供宽带互联网接入服务。,REQ-002,candidate
+UC-002,星座自主管理,UseCase,03_UseCases,UseCase,,系统自动执行卫星健康监测、轨道维持、星间路由优化等管理任务。,,candidate
+IF-001,星间链路接口 (ISL),Interface,04_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,卫星与卫星之间的激光或射频通信接口，用于数据中继和组网。,,candidate
+IF-002,馈电链路接口 (GSL),Interface,04_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,卫星与地面网关之间的Ka/Q/V频段射频接口，用于高速回传数据。,,candidate
+IF-003,用户链路接口,Interface,04_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,卫星与用户终端之间的Ku/Ka频段相控阵接口，实现用户接入。,,candidate
+ACT-001,星座部署与在轨组网,Activity,05_Activities,Activity,,从首批卫星发射到全部100颗卫星入轨、展开并建立星间链路的全过程活动。,REQ-004,candidate
+ACT-002,通信服务执行活动,Activity,05_Activities,Activity,,用户终端发起接入请求，经由卫星、星间网络、地面网关到达互联网的端到端通信流程。,REQ-003,candidate
+CON-001,轨道与覆盖约束,ConstraintBlock,06_Constraints,Class,SysML::ConstraintBlocks::ConstraintBlock,轨道高度范围500-600 km，倾角53° 和 97.6° 组合，至少6个轨道面，确保全球覆盖和最小仰角25°。,REQ-002,candidate
+CON-002,链路预算约束,ConstraintBlock,06_Constraints,Class,SysML::ConstraintBlocks::ConstraintBlock,用户链路需满足指定速率阈值所需的C/N和EIRP，约束卫星发射功率、天线增益和雨衰余量。,REQ-003,candidate

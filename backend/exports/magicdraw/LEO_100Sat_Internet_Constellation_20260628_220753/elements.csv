@@ -1,0 +1,28 @@
+﻿local_id,name,type,package,metaclass,stereotype,documentation,source_requirement,status
+REQ-001,星座构型与覆盖,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,由100颗卫星组成LEO星座，轨道高度550km，倾角53°，分布于20个轨道面，每面5颗，采用Walker Star或Delta构型；对±60°纬度带提供连续覆盖，用户仰角不低于25°，单星可视时间约5分钟。,REQ-001,candidate
+REQ-002,用户链路性能,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,用户链路工作于Ku频段（下行10.7-12.7GHz，上行14-14.5GHz）；卫星发射EIRP≥36dBW，G/T≥5dB/K；每星至少支持16个可跳波束；用户终端等效0.5m相控阵天线，EIRP约38dBW，G/T约7dB/K。,REQ-002,candidate
+REQ-003,系统容量与速率,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,单星通信容量大于20Gbps，100颗卫星系统总容量大于2Tbps；用户下行峰值速率150Mbps，上行峰值速率50Mbps；端到端平均时延（无星间链路）低于25ms。,REQ-003,candidate
+REQ-004,地面段架构,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,包含10-15个信关站，采用Ka频段馈电链路（17.7-20.2GHz下行，27.5-30GHz上行）；地面核心网基于SDN/NFV，支持移动性管理与互联网/5G互联；网络控制中心实现资源调度与干扰协调。,REQ-004,candidate
+REQ-005,星间链路可选能力,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,当配置星间链路时，每颗卫星需具备至少4条激光终端（同轨前后、异轨左右），单链路速率≥10Gbps，支持网状组网；基线可暂不包含星间链路，采用弯管转发。,REQ-005,candidate
+REQ-006,星座部署与发射,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,通过一箭多星发射，单次投放10-20颗卫星；总发射次数5-10次，在1.5年内部署完毕；优先建成50颗星的最小可用星座以提供初始服务。,REQ-006,candidate
+REQ-007,可靠性与可用度,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,单条用户/馈电链路可用度≥99.5%，系统端到端可用度≥99.9%（考虑覆盖冗余）；卫星关键部件冗余设计，具备自主故障检测与恢复能力。,REQ-007,candidate
+REQ-008,法规与空间安全约束,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,遵守ITU频率协调和落地国监管要求；空间碎片减缓符合IADC/ISO 24113标准，卫星离轨时间不超过25年；频谱使用避免有害干扰。,REQ-008,candidate
+BLK-001,LEO卫星互联网星座系统,Block,02_Structure,Class,SysML::Blocks::Block,整个100颗低轨道卫星互联网系统，包含空间段、地面段、用户段及运营支撑子系统。,,candidate
+BLK-002,单颗LEO卫星,Block,02_Structure,Class,SysML::Blocks::Block,约250kg级小卫星平台，含电源（2kW太阳翼）、推进（电推轨道维持，化推离轨）、通信载荷、星上处理单元，设计寿命5-7年。,,candidate
+BLK-003,通信载荷,Block,02_Structure,Class,SysML::Blocks::Block,卫星通信有效载荷，包括Ku频段用户链路（16波束相控阵）、Ka频段馈电链路、可选激光星间链路终端，支持弯管转发或再生处理模式。,,candidate
+BLK-004,信关站,Block,02_Structure,Class,SysML::Blocks::Block,地面信关站，配备多幅Ka频段天线跟踪多颗卫星，提供馈电连接，与地面核心网互联。,,candidate
+BLK-005,用户终端,Block,02_Structure,Class,SysML::Blocks::Block,标准型平板相控阵用户终端，等效天线孔径0.5m，支持Ku频段卫星通信，可与地面蜂窝网络多模切换。,,candidate
+BLK-006,地面核心网,Block,02_Structure,Class,SysML::Blocks::Block,基于SDN/NFV的融合核心网，负责移动性管理、用户面锚点、QoS策略以及与Internet/5G的互联。,,candidate
+BLK-007,网络控制中心,Block,02_Structure,Class,SysML::Blocks::Block,综合测控、资源调度、波束管理、干扰协调的中心节点，集成TT&C功能。,,candidate
+UC-001,提供宽带互联网接入服务,UseCase,03_UseCases,UseCase,,用户通过终端经由卫星和信关站访问互联网，获得上下行数据服务，满足速率、时延和可用度要求。,,candidate
+UC-002,管理星座运行,UseCase,03_UseCases,UseCase,,包括卫星遥测遥控、轨道维持、故障处理、星座健康监控等操作，保障星座性能。,,candidate
+UC-003,管理用户接入与移动性,UseCase,03_UseCases,UseCase,,控制用户终端注册、切换（卫星间、波束间）、认证和会话管理，支持跨信关站的移动性。,,candidate
+IF-001,用户链路接口,Interface,04_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,卫星与用户终端之间的Ku频段物理及数据链路层接口，规范频率、极化、调制编码格式、帧结构等，支持跳波束控制信令。,,candidate
+IF-002,馈电链路接口,Interface,04_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,卫星与信关站之间的Ka频段接口，包括双向宽带数据通道和必要的网管信令。,,candidate
+IF-003,星间链路接口（可选）,Interface,04_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,当配置激光星间链路时，卫星之间的激光通信接口，采用高速（≥10Gbps）双向链路，支持路由协议数据交换。,,candidate
+IF-004,地面网络互联接口,Interface,04_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,信关站或核心网与外部地面网络（互联网、5G核心网）之间的IP互联接口，需支持QoS和移动性锚点。,,candidate
+ACT-001,用户通信业务流程,Activity,05_Activities,Activity,,从用户终端发起通信请求，经卫星接入、馈电链路到信关站，再经由核心网访问Internet，并反向传回数据的端到端流程，包含波束分配和链路建立。,,candidate
+ACT-002,波束切换与负载管理,Activity,05_Activities,Activity,,卫星根据用户分布和容量需求，动态调度16个波束的指向和带宽分配，实现跳波束或固定波束的切换，并上报资源使用情况给网络控制中心。,,candidate
+CON-001,轨道维持与高度约束,ConstraintBlock,06_Constraints,Class,SysML::ConstraintBlocks::ConstraintBlock,卫星运行轨道高度须保持在550±20km范围内，由电推进系统定期补偿大气阻力引起的轨道衰减。,,candidate
+CON-002,卫星质量与功率包络,ConstraintBlock,06_Constraints,Class,SysML::ConstraintBlocks::ConstraintBlock,单颗卫星发射质量约束≤280kg（含贮箱残量），太阳翼峰值输出功率≥2kW，满足载荷和平台全周期用电。,,candidate
+CON-003,终端成本约束,ConstraintBlock,06_Constraints,Class,SysML::ConstraintBlocks::ConstraintBlock,用户终端量产成本不超过500美元，保证大规模推广的可行性。,,candidate

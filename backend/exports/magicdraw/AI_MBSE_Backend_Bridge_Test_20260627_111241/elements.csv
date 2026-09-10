@@ -1,0 +1,3 @@
+﻿local_id,name,type,metaclass,stereotype,documentation,source_requirement,status
+REQ-BACKEND-001,BackendRequirement,Requirement,Class,SysML::Requirements::Requirement,Backend bridge import test,REQ-BACKEND-001,candidate
+BLK-BACKEND-001,BackendBlock,Block,Class,SysML::Blocks::Block,Backend bridge import test,REQ-BACKEND-001,candidate

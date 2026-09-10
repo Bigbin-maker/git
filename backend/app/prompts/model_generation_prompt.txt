@@ -1,0 +1,1 @@
+请根据已确认需求生成候选 SysML 模型元素和追溯关系，元素类型包括 Requirement、UseCase、Block、Interface 和 Activity。

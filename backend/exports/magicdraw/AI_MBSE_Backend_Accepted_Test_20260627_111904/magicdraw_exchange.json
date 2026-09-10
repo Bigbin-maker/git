@@ -1,0 +1,56 @@
+{
+  "schema": "ai-mbse.magicdraw.exchange.v1",
+  "generated_at": "2026-06-27T03:19:04Z",
+  "project_path": "",
+  "root_package": "AI_MBSE_Backend_Accepted_Test",
+  "instructions": [
+    "Create or reuse root package.",
+    "Create SysML/UML elements by local_id and stereotype.",
+    "Create relationships after all element ids are resolved.",
+    "Store ai_mbse_id and source_requirement as tagged values when available."
+  ],
+  "elements": [
+    {
+      "local_id": "REQ-ACCEPT-001",
+      "name": "AcceptedRequirement",
+      "type": "Requirement",
+      "metaclass": "Class",
+      "stereotype": "SysML::Requirements::Requirement",
+      "documentation": "Accepted bridge import test",
+      "source_requirement": "REQ-ACCEPT-001",
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "REQ-ACCEPT-001",
+        "external_id": null
+      }
+    },
+    {
+      "local_id": "BLK-ACCEPT-001",
+      "name": "AcceptedBlock",
+      "type": "Block",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "Accepted bridge import test",
+      "source_requirement": "REQ-ACCEPT-001",
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "BLK-ACCEPT-001",
+        "external_id": null
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "local_id": "REL-ACCEPT-001",
+      "name": "REL-ACCEPT-001",
+      "type": "Trace",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Trace",
+      "source": "REQ-ACCEPT-001",
+      "source_name": "AcceptedRequirement",
+      "target": "BLK-ACCEPT-001",
+      "target_name": "AcceptedBlock",
+      "documentation": "Accepted bridge trace"
+    }
+  ]
+}

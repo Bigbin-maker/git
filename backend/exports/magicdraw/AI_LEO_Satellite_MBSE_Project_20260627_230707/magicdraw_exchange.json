@@ -1,0 +1,5551 @@
+{
+  "schema": "ai-mbse.magicdraw.exchange.v1",
+  "generated_at": "2026-06-27T15:07:07Z",
+  "project_path": "",
+  "root_package": "AI_LEO_Satellite_MBSE_Project",
+  "diagram_name": "AI_MBSE_Trace_View",
+  "instructions": [
+    "Create or reuse root package.",
+    "Create nested packages from each element or relationship package field when provided.",
+    "Create SysML/UML elements by local_id and stereotype.",
+    "Create relationships after all element ids are resolved.",
+    "Use diagram_layout as the single source of truth for MagicDraw and frontend canvas placement.",
+    "Store ai_mbse_id and source_requirement as tagged values when available."
+  ],
+  "elements": [
+    {
+      "local_id": "REQ-001",
+      "name": "æåº§ä»»å¡ä¸æå¡ç®æ ",
+      "type": "Requirement",
+      "package": "01_Requirements",
+      "metaclass": "Class",
+      "stereotype": "SysML::Requirements::Requirement",
+      "documentation": "å½¢æé¢åå®½å¸¦äºèç½æ¥å¥çä½è½¨æåº§æ»ä½æ¹æ¡ï¼è¦çä¸å¡ç®æ ãæå¡åºåãå®¹éãæ¶å»¶ãå¯é æ§åè¿ç»´ç®æ ã",
+      "source_requirement": "REQ-001",
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "REQ-001",
+        "external_id": null,
+        "package": "01_Requirements"
+      }
+    },
+    {
+      "local_id": "REQ-002",
+      "name": "ç³»ç»è¾¹çä¸å¤é¨åä¸æ¹",
+      "type": "Requirement",
+      "package": "01_Requirements",
+      "metaclass": "Class",
+      "stereotype": "SysML::Requirements::Requirement",
+      "documentation": "ç³»ç»è¾¹çåºæç¡®ç©ºé´æ®µãå°é¢æ®µãç¨æ·æ®µãå¤é¨äºèç½/æ ¸å¿ç½ãçç®¡é¢è°±ç¯å¢åMagicDrawå·¥ç¨äº¤ä»è¾¹çã",
+      "source_requirement": "REQ-002",
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "REQ-002",
+        "external_id": null,
+        "package": "01_Requirements"
+      }
+    },
+    {
+      "local_id": "REQ-003",
+      "name": "100é¢å«ææåº§è§æ¨¡",
+      "type": "Requirement",
+      "package": "01_Requirements",
+      "metaclass": "Class",
+      "stereotype": "SysML::Requirements::Requirement",
+      "documentation": "æåº§åºçº¿è§æ¨¡ä¸º100é¢ä½è½¨éä¿¡å«æï¼å¹¶æ¯ææè½¨éé¢ãç¸ä½åå¤ä»½ç­ç¥å¼å±æåè®¾è®¡ã",
+      "source_requirement": "REQ-003",
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "REQ-003",
+        "external_id": null,
+        "package": "01_Requirements"
+      }
+    },
+    {
+      "local_id": "REQ-004",
+      "name": "è½¨éè¦çä¸æå¡è¿ç»­æ§",
+      "type": "Requirement",
+      "package": "01_Requirements",
+      "metaclass": "Class",
+      "stereotype": "SysML::Requirements::Requirement",
+      "documentation": "æåº§åºæ¯æç®æ æå¡åºè¿ç»­è¦çãå¯è§æ§è®¡ç®ãåæ¢ç­ç¥ãè¦çç²åºè¯å«åæå¡è¿ç»­æ§è¯ä¼°ã",
+      "source_requirement": "REQ-004",
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "REQ-004",
+        "external_id": null,
+        "package": "01_Requirements"
+      }
+    },
+    {
+      "local_id": "REQ-005",
+      "name": "ç¨æ·é¾è·¯å®¹éä¸æå¡è´¨é",
+      "type": "Requirement",
+      "package": "01_Requirements",
+      "metaclass": "Class",
+      "stereotype": "SysML::Requirements::Requirement",
+      "documentation": "ç¨æ·é¾è·¯åºæ»¡è¶³å®½å¸¦ååãæ³¢æè°åº¦ãQoSç­çº§ãé¾è·¯é¢ç®ãæ¥å¡æ§å¶åä¸å¡ä¿æè¦æ±ã",
+      "source_requirement": "REQ-005",
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "REQ-005",
+        "external_id": null,
+        "package": "01_Requirements"
+      }
+    },
+    {
+      "local_id": "REQ-006",
+      "name": "é¦çµé¾è·¯ä¸ç½å³æ¥å¥",
+      "type": "Requirement",
+      "package": "01_Requirements",
+      "metaclass": "Class",
+      "stereotype": "SysML::Requirements::Requirement",
+      "documentation": "å°é¢æ®µåºæä¾é¦çµç½å³ç«æ¥å¥ãåä¼ é¾è·¯ãç«é´ååãç½å³éæ©åæ ¸å¿ç½äºèè½åã",
+      "source_requirement": "REQ-006",
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "REQ-006",
+        "external_id": null,
+        "package": "01_Requirements"
+      }
+    },
+    {
+      "local_id": "REQ-007",
+      "name": "æé´é¾è·¯ä¸ç©ºé´è·¯ç±",
+      "type": "Requirement",
+      "package": "01_Requirements",
+      "metaclass": "Class",
+      "stereotype": "SysML::Requirements::Requirement",
+      "documentation": "ç©ºé´æ®µåºæ¯ææé´é¾è·¯ç»ç½ãè·¯ç±æ´æ°ãé¾è·¯ç¶æçæµãæ¥å¡ç»è¡åæééæã",
+      "source_requirement": "REQ-007",
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "REQ-007",
+        "external_id": null,
+        "package": "01_Requirements"
+      }
+    },
+    {
+      "local_id": "REQ-008",
+      "name": "ç¨æ·ç»ç«¯æ¥å¥ä¸é´æ",
+      "type": "Requirement",
+      "package": "01_Requirements",
+      "metaclass": "Class",
+      "stereotype": "SysML::Requirements::Requirement",
+      "documentation": "ç¨æ·æ®µåºæ¯æç»ç«¯æ³¨åãè®¤è¯é´æãå«æéæ©ãä¼è¯å»ºç«ãæ¥å¥ç¶æçæµåä¸å¡ä¿æã",
+      "source_requirement": "REQ-008",
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "REQ-008",
+        "external_id": null,
+        "package": "01_Requirements"
+      }
+    },
+    {
+      "local_id": "REQ-009",
+      "name": "ç½ç»ç®¡çä¸èµæºè°åº¦",
+      "type": "Requirement",
+      "package": "01_Requirements",
+      "metaclass": "Class",
+      "stereotype": "SysML::Requirements::Requirement",
+      "documentation": "ç½ç»è¿è¥æ§å¶ä¸­å¿åºæ ¹æ®ä¸å¡ä¼åçº§ãæ³¢æå ç¨ãé¢è°±ãç½å³åæé´é¾è·¯ç¶ææ§è¡å¨æèµæºè°åº¦ã",
+      "source_requirement": "REQ-009",
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "REQ-009",
+        "external_id": null,
+        "package": "01_Requirements"
+      }
+    },
+    {
+      "local_id": "REQ-010",
+      "name": "é¥æµé¥æ§ä¸å¨è½¨è¿ç»´",
+      "type": "Requirement",
+      "package": "01_Requirements",
+      "metaclass": "Class",
+      "stereotype": "SysML::Requirements::Requirement",
+      "documentation": "ä»»å¡è¿æ§ä¸­å¿åºæ¯æé¥æµééãé¥æ§æä»¤ãå¥åº·è¯ä¼°ãè¿è¡è®¡åãæåç»´æ¤åè¿ç»´é­ç¯ã",
+      "source_requirement": "REQ-010",
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "REQ-010",
+        "external_id": null,
+        "package": "01_Requirements"
+      }
+    },
+    {
+      "local_id": "REQ-011",
+      "name": "æéå¤ç½®ä¸å®å¨éç¦»",
+      "type": "Requirement",
+      "package": "01_Requirements",
+      "metaclass": "Class",
+      "stereotype": "SysML::Requirements::Requirement",
+      "documentation": "ç³»ç»åºè¯å«å«æãè½½è·ãé¾è·¯ãç½å³åç½ç»å¼å¸¸ï¼å¹¶æ¯æåè­¦åçº§ãéç¦»ãéæåæ¢å¤ç¡®è®¤ã",
+      "source_requirement": "REQ-011",
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "REQ-011",
+        "external_id": null,
+        "package": "01_Requirements"
+      }
+    },
+    {
+      "local_id": "REQ-012",
+      "name": "ä¿¡æ¯å®å¨ä¸ä¸å¡éç¦»",
+      "type": "Requirement",
+      "package": "01_Requirements",
+      "metaclass": "Class",
+      "stereotype": "SysML::Requirements::Requirement",
+      "documentation": "ç³»ç»åºæ¯æç»ç«¯è®¤è¯ãå¯é¥ç®¡çãä¸å¡éç¦»ãæ§å¶é¢ä¿æ¤åè·¨æ®µæ°æ®å®å¨ç­ç¥ã",
+      "source_requirement": "REQ-012",
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "REQ-012",
+        "external_id": null,
+        "package": "01_Requirements"
+      }
+    },
+    {
+      "local_id": "REQ-013",
+      "name": "é¢è°±åè§ä¸çµç£å¼å®¹",
+      "type": "Requirement",
+      "package": "01_Requirements",
+      "metaclass": "Class",
+      "stereotype": "SysML::Requirements::Requirement",
+      "documentation": "ç³»ç»åºæ»¡è¶³é¢çä½¿ç¨ãå¹²æ°åè°ãåå°åçãæç£åçµç£å¼å®¹çº¦æï¼å¹¶ä¿ççç®¡ç¬¦åæ§è¿½æº¯ã",
+      "source_requirement": "REQ-013",
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "REQ-013",
+        "external_id": null,
+        "package": "01_Requirements"
+      }
+    },
+    {
+      "local_id": "REQ-014",
+      "name": "æ¨¡åä¸è´æ§ä¸MagicDrawäº¤ä»",
+      "type": "Requirement",
+      "package": "01_Requirements",
+      "metaclass": "Class",
+      "stereotype": "SysML::Requirements::Requirement",
+      "documentation": "SysMLå·¥ç¨åºä¿è¯éæ±ãç»æãè¡ä¸ºãæ¥å£ãçº¦æåè¿½æº¯å³ç³»ä¸è´ï¼å¹¶è½éè¿Bridgeåæ­¥å°MagicDrawã",
+      "source_requirement": "REQ-014",
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "REQ-014",
+        "external_id": null,
+        "package": "01_Requirements"
+      }
+    },
+    {
+      "local_id": "BLK-001",
+      "name": "ä½è½¨å®½å¸¦å«æäºèç½ç³»ç»",
+      "type": "Block",
+      "package": "02_Structure",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "ç³»ç»çº§æ ¹æ¨¡åï¼æ¥èªå¯¹è¯è¾å¥ï¼ææ¯å«ææ»ä½è®¾è®¡å¸ï¼è¯·å´ç»ä¸ä¸ª100é¢ä½è½¨å®½å¸¦å«æäºèç½ç³»ç»ï¼å¼å¯¼æå®ææ»ä½éæ±ãç³»ç»è¾¹çãåè½é¾è·¯ãæ¥å£ãè¡ä¸ºæµç¨åçº¦ææ¡ä»¶ï¼å¹¶çæå¯æ¨éå°MagicDrawçå®æ´SysMLå·¥ç¨ã ææ¯å«ææ»ä½è®¾è®¡å¸ï¼è¯·å´ç»ä¸ä¸ª100é¢ä½è½¨å®½å¸¦å«æäºèç½",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "BLK-001",
+        "external_id": null,
+        "package": "02_Structure"
+      }
+    },
+    {
+      "local_id": "BLK-002",
+      "name": "ç©ºé´æ®µ",
+      "type": "Block",
+      "package": "02_Structure",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "ç±100é¢ä½è½¨éä¿¡å«æãæåº§æåãéä¿¡è½½è·ãæé´é¾è·¯ç»ç«¯åå«æå¹³å°ç»æã",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "BLK-002",
+        "external_id": null,
+        "package": "02_Structure"
+      }
+    },
+    {
+      "local_id": "BLK-003",
+      "name": "100é¢ä½è½¨éä¿¡æåº§",
+      "type": "Block",
+      "package": "02_Structure",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "è¡¨ç¤ºç±100é¢å«æç»æçæåº§æ»ä½æåï¼æ¿è½½è½¨éé¢ãç¸ä½ãè¦çåå¤ä»½è®¾è®¡ã",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "BLK-003",
+        "external_id": null,
+        "package": "02_Structure"
+      }
+    },
+    {
+      "local_id": "BLK-004",
+      "name": "è½¨éé¢ä¸æåº§æå",
+      "type": "Block",
+      "package": "02_Structure",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "å®ä¹è½¨éå£³å±ãè½¨éé¢æ°éãé¢åå«ææ°ãç¸ä½å³ç³»ãæä¸ç¹è½¨è¿¹åè¦çå ä½ã",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "BLK-004",
+        "external_id": null,
+        "package": "02_Structure"
+      }
+    },
+    {
+      "local_id": "BLK-005",
+      "name": "ä½è½¨éä¿¡å«æ",
+      "type": "Block",
+      "package": "02_Structure",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "åæç³»ç»ï¼æ¿æè½½è·æ¿è½½ãæä¸å¤çãæé´äºèãå¹³å°èµæºåé¥æµé¥æ§åè½ã",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "BLK-005",
+        "external_id": null,
+        "package": "02_Structure"
+      }
+    },
+    {
+      "local_id": "BLK-006",
+      "name": "å®½å¸¦éä¿¡è½½è·",
+      "type": "Block",
+      "package": "02_Structure",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "è´è´£ç¨æ·æ³¢æãé¦çµæ³¢æãé¢çèµæºãä¸å¡æ°æ®è½¬ååé¾è·¯è´¨éç®¡çã",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "BLK-006",
+        "external_id": null,
+        "package": "02_Structure"
+      }
+    },
+    {
+      "local_id": "BLK-007",
+      "name": "æä¸æ°å­å¤çå¨",
+      "type": "Block",
+      "package": "02_Structure",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "å®ææä¸äº¤æ¢ãç¼å­ãåè®®å¤çãQoSæ è®°ãè·¯ç±è¡¨ä¸ååä¸å¡è½¬åã",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "BLK-007",
+        "external_id": null,
+        "package": "02_Structure"
+      }
+    },
+    {
+      "local_id": "BLK-008",
+      "name": "ç¨æ·æå¡é¾è·¯å¤©çº¿",
+      "type": "Block",
+      "package": "02_Structure",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "é¢åç¨æ·ç»ç«¯å½¢æå¯è°æ³¢æï¼æ¯ææ¥å¥ãæ³¢æåæ¢åé¾è·¯è´¨éä¿æã",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "BLK-008",
+        "external_id": null,
+        "package": "02_Structure"
+      }
+    },
+    {
+      "local_id": "BLK-009",
+      "name": "é¦çµé¾è·¯ç»ç«¯",
+      "type": "Block",
+      "package": "02_Structure",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "è¿æ¥å«æä¸é¦çµç½å³ç«ï¼æ¿è½½åä¼ æ°æ®ãç½å³æ§å¶åé¾è·¯ç¶æä¸æ¥ã",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "BLK-009",
+        "external_id": null,
+        "package": "02_Structure"
+      }
+    },
+    {
+      "local_id": "BLK-010",
+      "name": "æé´é¾è·¯ç»ç«¯",
+      "type": "Block",
+      "package": "02_Structure",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "æä¾å«æé´æ°æ®äº¤æ¢ãç©ºé´è·¯ç±è½¬åãé¾è·¯ç¶æä¸æ¥åæéç»è¡è½åã",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "BLK-010",
+        "external_id": null,
+        "package": "02_Structure"
+      }
+    },
+    {
+      "local_id": "BLK-011",
+      "name": "å«æå¹³å°ä¸æå¡åç³»ç»",
+      "type": "Block",
+      "package": "02_Structure",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "æä¾ä¾éçµãç­æ§ãå§¿è½¨æ§ãæå¡ç®¡çãæ¶é´åæ­¥åå¥åº·çæµè½åã",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "BLK-011",
+        "external_id": null,
+        "package": "02_Structure"
+      }
+    },
+    {
+      "local_id": "BLK-012",
+      "name": "å°é¢æ®µ",
+      "type": "Block",
+      "package": "02_Structure",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "ç±é¦çµç½å³ç«ãç½ç»è¿è¥æ§å¶ä¸­å¿ãä»»å¡è¿æ§ä¸­å¿åå¤é¨ç½ç»æ¥å£ç»æã",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "BLK-012",
+        "external_id": null,
+        "package": "02_Structure"
+      }
+    },
+    {
+      "local_id": "BLK-013",
+      "name": "é¦çµç½å³ç«",
+      "type": "Block",
+      "package": "02_Structure",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "å®æå«æé¦çµæ¥å¥ãä¸å¡åä¼ ãç½å³éæ©ãç«é´åååæ ¸å¿ç½äºèã",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "BLK-013",
+        "external_id": null,
+        "package": "02_Structure"
+      }
+    },
+    {
+      "local_id": "BLK-014",
+      "name": "ç½ç»è¿è¥æ§å¶ä¸­å¿",
+      "type": "Block",
+      "package": "02_Structure",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "æ§è¡èµæºè°åº¦ãé¾è·¯çæµãä¸å¡ç­ç¥ãç½ç»ç¶æç®¡çåå®å¨ç­ç¥éç½®ã",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "BLK-014",
+        "external_id": null,
+        "package": "02_Structure"
+      }
+    },
+    {
+      "local_id": "BLK-015",
+      "name": "ä»»å¡è¿æ§ä¸­å¿",
+      "type": "Block",
+      "package": "02_Structure",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "å¤çé¥æµé¥æ§ãå¥åº·ç®¡çãåè­¦å¤ç½®ãè¿è¡è®¡åãæåç»´æ¤åå¨è½¨éç½®ã",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "BLK-015",
+        "external_id": null,
+        "package": "02_Structure"
+      }
+    },
+    {
+      "local_id": "BLK-016",
+      "name": "ç¨æ·æ®µ",
+      "type": "Block",
+      "package": "02_Structure",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "ç±å®½å¸¦ç¨æ·ç»ç«¯ãè®¤è¯æ¥å¥åç¨æ·ä¸å¡ä¼è¯ç»æã",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "BLK-016",
+        "external_id": null,
+        "package": "02_Structure"
+      }
+    },
+    {
+      "local_id": "BLK-017",
+      "name": "å®½å¸¦ç¨æ·ç»ç«¯",
+      "type": "Block",
+      "package": "02_Structure",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "å®æç¨æ·ä¾§æ³¨åãè®¤è¯ãæ³¢æè·è¸ªãæ°æ®æ¶åãç¶æä¸æ¥åä¸å¡ä¿æã",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "BLK-017",
+        "external_id": null,
+        "package": "02_Structure"
+      }
+    },
+    {
+      "local_id": "BLK-018",
+      "name": "å¤é¨äºèç½ä¸æ ¸å¿ç½",
+      "type": "Block",
+      "package": "02_Structure",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "ä½ä¸ºç³»ç»å¤é¨ç½ç»è¾¹çï¼æ¿è½½äºèç½ä¸å¡ãæ ¸å¿ç½ç­ç¥åå¤é¨è¿è¥æ¥å£ã",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "BLK-018",
+        "external_id": null,
+        "package": "02_Structure"
+      }
+    },
+    {
+      "local_id": "UC-001",
+      "name": "å¼å¯¼æ»ä½éæ±æ¾æ¸",
+      "type": "UseCase",
+      "package": "03_Behavior",
+      "metaclass": "UseCase",
+      "stereotype": "",
+      "documentation": "æ»ä½è®¾è®¡å¸ä¸AIå±åæç¡®ä»»å¡ç®æ ãè¾¹çãææ ãäº¤ä»ç©åå¾ç¡®è®¤åè®¾ã",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "UC-001",
+        "external_id": null,
+        "package": "03_Behavior"
+      }
+    },
+    {
+      "local_id": "UC-002",
+      "name": "å¼å±æåº§è¦çä¸å®¹éè®¾è®¡",
+      "type": "UseCase",
+      "package": "03_Behavior",
+      "metaclass": "UseCase",
+      "stereotype": "",
+      "documentation": "æ ¹æ®100é¢æåº§è§æ¨¡ãè½¨éæåãæå¡åºååä¸å¡æ¨¡åå¼å±è¦çãå®¹éåå¯è§æ§è®¾è®¡ã",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "UC-002",
+        "external_id": null,
+        "package": "03_Behavior"
+      }
+    },
+    {
+      "local_id": "UC-003",
+      "name": "å»ºç«ç¨æ·å®½å¸¦ä¼è¯",
+      "type": "UseCase",
+      "package": "03_Behavior",
+      "metaclass": "UseCase",
+      "stereotype": "",
+      "documentation": "ç¨æ·ç»ç«¯å®æè®¤è¯ãå«æéæ©ãæ³¢ææ¥å¥ãæ¿è½½å»ºç«åä¸å¡ä¼è¯ä¿æã",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "UC-003",
+        "external_id": null,
+        "package": "03_Behavior"
+      }
+    },
+    {
+      "local_id": "UC-004",
+      "name": "æ§è¡å«æåæ¢ä¸ä¸å¡ä¿æ",
+      "type": "UseCase",
+      "package": "03_Behavior",
+      "metaclass": "UseCase",
+      "stereotype": "",
+      "documentation": "å¨å«æå¯è§æ§ååæé¾è·¯è´¨éä¸éæ¶æ§è¡æ³¢æ/å«æ/ç½å³åæ¢å¹¶ä¿æä¸å¡è¿ç»­ã",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "UC-004",
+        "external_id": null,
+        "package": "03_Behavior"
+      }
+    },
+    {
+      "local_id": "UC-005",
+      "name": "å®æé¦çµåä¼ ä¸æ ¸å¿ç½äºè",
+      "type": "UseCase",
+      "package": "03_Behavior",
+      "metaclass": "UseCase",
+      "stereotype": "",
+      "documentation": "å«æéè¿é¦çµç½å³ç«å®æäºèç½ä¸å¡åä¼ ãæ ¸å¿ç½äºèåç«é´ååã",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "UC-005",
+        "external_id": null,
+        "package": "03_Behavior"
+      }
+    },
+    {
+      "local_id": "UC-006",
+      "name": "æ§è¡æé´è·¯ç±è½¬å",
+      "type": "UseCase",
+      "package": "03_Behavior",
+      "metaclass": "UseCase",
+      "stereotype": "",
+      "documentation": "ç©ºé´æ®µæ ¹æ®é¾è·¯ç¶æãæ¥å¡åç®çç½å³æ§è¡æé´è·¯ç±åæ°æ®è½¬åã",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "UC-006",
+        "external_id": null,
+        "package": "03_Behavior"
+      }
+    },
+    {
+      "local_id": "UC-007",
+      "name": "è°åº¦æ³¢æé¢è°±ç½å³èµæº",
+      "type": "UseCase",
+      "package": "03_Behavior",
+      "metaclass": "UseCase",
+      "stereotype": "",
+      "documentation": "ç½ç»è¿è¥æ§å¶ä¸­å¿æ ¹æ®ä¸å¡éæ±åèµæºç¶æè°åº¦æ³¢æãé¢è°±ãç½å³åæé´é¾è·¯ã",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "UC-007",
+        "external_id": null,
+        "package": "03_Behavior"
+      }
+    },
+    {
+      "local_id": "UC-008",
+      "name": "å¤ç½®æéåè­¦ä¸ç½ç»éæ",
+      "type": "UseCase",
+      "package": "03_Behavior",
+      "metaclass": "UseCase",
+      "stereotype": "",
+      "documentation": "ç³»ç»åç°å¼å¸¸åå®æåè­¦åçº§ãéç¦»ãèµæºéæãæ¢å¤ç¡®è®¤åè¿ç»´é­ç¯ã",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "UC-008",
+        "external_id": null,
+        "package": "03_Behavior"
+      }
+    },
+    {
+      "local_id": "UC-009",
+      "name": "åæ­¥MagicDrawå·¥ç¨",
+      "type": "UseCase",
+      "package": "03_Behavior",
+      "metaclass": "UseCase",
+      "stereotype": "",
+      "documentation": "AIçæSysMLææ¬ãåç´ ãå³ç³»åå¸å±åéè¿Bridgeæ¨éå°MagicDrawå¹¶åæ¾ç»æã",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "UC-009",
+        "external_id": null,
+        "package": "03_Behavior"
+      }
+    },
+    {
+      "local_id": "IF-001",
+      "name": "ç¨æ·æå¡é¾è·¯æ¥å£",
+      "type": "Interface",
+      "package": "04_Interfaces",
+      "metaclass": "Interface",
+      "stereotype": "SysML::PortsAndFlows::InterfaceBlock",
+      "documentation": "è¿æ¥å®½å¸¦ç¨æ·ç»ç«¯ä¸ç¨æ·æå¡é¾è·¯å¤©çº¿ï¼æ¿è½½ä¸å¡æ°æ®ãè®¤è¯ãæ¥å¥ç¶æåé¾è·¯æµéã",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "IF-001",
+        "external_id": null,
+        "package": "04_Interfaces"
+      }
+    },
+    {
+      "local_id": "IF-002",
+      "name": "é¦çµé¾è·¯æ¥å£",
+      "type": "Interface",
+      "package": "04_Interfaces",
+      "metaclass": "Interface",
+      "stereotype": "SysML::PortsAndFlows::InterfaceBlock",
+      "documentation": "è¿æ¥é¦çµé¾è·¯ç»ç«¯ä¸é¦çµç½å³ç«ï¼æ¿è½½ä¸å¡åä¼ ãç½å³æ§å¶ãé¾è·¯ç¶æååæ­¥ä¿¡æ¯ã",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "IF-002",
+        "external_id": null,
+        "package": "04_Interfaces"
+      }
+    },
+    {
+      "local_id": "IF-003",
+      "name": "æé´é¾è·¯æ¥å£",
+      "type": "Interface",
+      "package": "04_Interfaces",
+      "metaclass": "Interface",
+      "stereotype": "SysML::PortsAndFlows::InterfaceBlock",
+      "documentation": "è¿æ¥æé´é¾è·¯ç»ç«¯ï¼æ¿è½½ç©ºé´è·¯ç±ãä¸å¡è½¬åãé¾è·¯ç¶æåæéç»è¡ä¿¡æ¯ã",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "IF-003",
+        "external_id": null,
+        "package": "04_Interfaces"
+      }
+    },
+    {
+      "local_id": "IF-004",
+      "name": "é¥æµé¥æ§æ¥å£",
+      "type": "Interface",
+      "package": "04_Interfaces",
+      "metaclass": "Interface",
+      "stereotype": "SysML::PortsAndFlows::InterfaceBlock",
+      "documentation": "è¿æ¥ä»»å¡è¿æ§ä¸­å¿ä¸å«æå¹³å°/è½½è·ï¼æ¿è½½é¥æµãé¥æ§ãå¥åº·ç¶æåå¨è½¨éç½®ã",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "IF-004",
+        "external_id": null,
+        "package": "04_Interfaces"
+      }
+    },
+    {
+      "local_id": "IF-005",
+      "name": "ç½ç»ç®¡çååæ¥å£",
+      "type": "Interface",
+      "package": "04_Interfaces",
+      "metaclass": "Interface",
+      "stereotype": "SysML::PortsAndFlows::InterfaceBlock",
+      "documentation": "è¿æ¥ç½ç»è¿è¥æ§å¶ä¸­å¿ä¸ç©ºé´æ®µãç½å³ç«ï¼æ¿è½½èµæºç­ç¥ãé¾è·¯ç¶æåè°åº¦æä»¤ã",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "IF-005",
+        "external_id": null,
+        "package": "04_Interfaces"
+      }
+    },
+    {
+      "local_id": "IF-006",
+      "name": "ç½å³æ ¸å¿ç½æ¥å£",
+      "type": "Interface",
+      "package": "04_Interfaces",
+      "metaclass": "Interface",
+      "stereotype": "SysML::PortsAndFlows::InterfaceBlock",
+      "documentation": "è¿æ¥é¦çµç½å³ç«ä¸å¤é¨äºèç½/æ ¸å¿ç½ï¼æ¿è½½ä¸å¡è½¬åãç­ç¥æ§å¶åè¿ç»´ç¶æã",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "IF-006",
+        "external_id": null,
+        "package": "04_Interfaces"
+      }
+    },
+    {
+      "local_id": "IF-007",
+      "name": "æ¶é´é¢çä¸æåæ¥å£",
+      "type": "Interface",
+      "package": "04_Interfaces",
+      "metaclass": "Interface",
+      "stereotype": "SysML::PortsAndFlows::InterfaceBlock",
+      "documentation": "è¿æ¥ä»»å¡è¿æ§ãå«æå¹³å°åç½ç»æ§å¶ï¼æ¿è½½æ¶é´åæ­¥ãé¢çåºåãæååè½¨éé¢æ¥ã",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "IF-007",
+        "external_id": null,
+        "package": "04_Interfaces"
+      }
+    },
+    {
+      "local_id": "IF-008",
+      "name": "å®å¨è®¤è¯ä¸å¯é¥æ¥å£",
+      "type": "Interface",
+      "package": "04_Interfaces",
+      "metaclass": "Interface",
+      "stereotype": "SysML::PortsAndFlows::InterfaceBlock",
+      "documentation": "è¿æ¥ç¨æ·ç»ç«¯ãç½ç»æ§å¶åå®å¨ç­ç¥ï¼æ¿è½½é´æãå¯é¥æ´æ°åä¸å¡éç¦»æ§å¶ã",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "IF-008",
+        "external_id": null,
+        "package": "04_Interfaces"
+      }
+    },
+    {
+      "local_id": "IF-009",
+      "name": "MagicDraw Bridgeæ¥å£",
+      "type": "Interface",
+      "package": "04_Interfaces",
+      "metaclass": "Interface",
+      "stereotype": "SysML::PortsAndFlows::InterfaceBlock",
+      "documentation": "æ¿è½½SysMLå·¥ç¨äº¤æ¢åãå¯¼å¥ç¶æãåå»ºåç´ æ°ãå³ç³»æ°åå¸å±åä¼ ã",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "IF-009",
+        "external_id": null,
+        "package": "04_Interfaces"
+      }
+    },
+    {
+      "local_id": "ACT-001",
+      "name": "æ»ä½éæ±æ¾æ¸ä¸åºçº¿ç¡®è®¤æµç¨",
+      "type": "Activity",
+      "package": "03_Behavior",
+      "metaclass": "Activity",
+      "stereotype": "",
+      "documentation": "AIå¼å¯¼æ»ä½è®¾è®¡å¸æç¡®æå¡ç®æ ãè¾¹çãææ ãåè®¾ãäº¤ä»ç©åMagicDrawåæ­¥ç­ç¥ã",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "ACT-001",
+        "external_id": null,
+        "package": "03_Behavior"
+      }
+    },
+    {
+      "local_id": "ACT-002",
+      "name": "æåº§æåä¸è¦çåææµç¨",
+      "type": "Activity",
+      "package": "03_Behavior",
+      "metaclass": "Activity",
+      "stereotype": "",
+      "documentation": "å®ä¹è½¨éå£³å±å100é¢å«æåå¸ï¼è®¡ç®å¯è§æ§ãè¦ççãéè®¿ååæ¢æºä¼ã",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "ACT-002",
+        "external_id": null,
+        "package": "03_Behavior"
+      }
+    },
+    {
+      "local_id": "ACT-003",
+      "name": "é¾è·¯é¢ç®ä¸å®¹éæ ¡æ ¸æµç¨",
+      "type": "Activity",
+      "package": "03_Behavior",
+      "metaclass": "Activity",
+      "stereotype": "",
+      "documentation": "æ ¡æ ¸ç¨æ·é¾è·¯ãé¦çµé¾è·¯ãæé´é¾è·¯çEIRPãG/TãC/N0ãååãæ¶å»¶åä½éã",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "ACT-003",
+        "external_id": null,
+        "package": "03_Behavior"
+      }
+    },
+    {
+      "local_id": "ACT-004",
+      "name": "ç¨æ·æ¥å¥ä¸ä¼è¯å»ºç«æµç¨",
+      "type": "Activity",
+      "package": "03_Behavior",
+      "metaclass": "Activity",
+      "stereotype": "",
+      "documentation": "å®æç»ç«¯æ³¨åãè®¤è¯é´æãå«æéæ©ãæ³¢æå»ºç«ãæ¿è½½éç½®åä¸å¡ä¼è¯ç¡®è®¤ã",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "ACT-004",
+        "external_id": null,
+        "package": "03_Behavior"
+      }
+    },
+    {
+      "local_id": "ACT-005",
+      "name": "æé´è·¯ç±ä¸åæ¢æµç¨",
+      "type": "Activity",
+      "package": "03_Behavior",
+      "metaclass": "Activity",
+      "stereotype": "",
+      "documentation": "æ ¹æ®å«æå¯è§æ§ãé¾è·¯ç¶æåç®æ ç½å³æ§è¡æé´è·¯ç±æ´æ°ãæ³¢æåæ¢åä¸å¡ä¿æã",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "ACT-005",
+        "external_id": null,
+        "package": "03_Behavior"
+      }
+    },
+    {
+      "local_id": "ACT-006",
+      "name": "ç½å³éæ©ä¸é¦çµåä¼ æµç¨",
+      "type": "Activity",
+      "package": "03_Behavior",
+      "metaclass": "Activity",
+      "stereotype": "",
+      "documentation": "éæ©å¯è§ç½å³ï¼å»ºç«é¦çµé¾è·¯ï¼å®æä¸å¡åä¼ ãæ ¸å¿ç½äºèåç«é´ååã",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "ACT-006",
+        "external_id": null,
+        "package": "03_Behavior"
+      }
+    },
+    {
+      "local_id": "ACT-007",
+      "name": "ç½ç»èµæºè°åº¦æµç¨",
+      "type": "Activity",
+      "package": "03_Behavior",
+      "metaclass": "Activity",
+      "stereotype": "",
+      "documentation": "æ ¹æ®ä¸å¡ä¼åçº§ãèµæºä½éãæ¥å¡ç¶æåç­ç¥çº¦æè°åº¦æ³¢æãé¢è°±ãç½å³åè·¯ç±ã",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "ACT-007",
+        "external_id": null,
+        "package": "03_Behavior"
+      }
+    },
+    {
+      "local_id": "ACT-008",
+      "name": "æéæ£æµéç¦»æ¢å¤æµç¨",
+      "type": "Activity",
+      "package": "03_Behavior",
+      "metaclass": "Activity",
+      "stereotype": "",
+      "documentation": "å®æå¼å¸¸æ£æµãåè­¦åçº§ãéç¦»ãé¾è·¯/è·¯ç±/ç½å³éæãæ¢å¤ç¡®è®¤åè¿ç»´è®°å½ã",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "ACT-008",
+        "external_id": null,
+        "package": "03_Behavior"
+      }
+    },
+    {
+      "local_id": "ACT-009",
+      "name": "MagicDrawå·¥ç¨åæ­¥æµç¨",
+      "type": "Activity",
+      "package": "03_Behavior",
+      "metaclass": "Activity",
+      "stereotype": "",
+      "documentation": "æåSysMLåç´ ãå³ç³»ãåååå¸å±ï¼è°ç¨Bridgeï¼æ¥æ¶MagicDrawåå»º/å¤ç¨ç»æã",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "ACT-009",
+        "external_id": null,
+        "package": "03_Behavior"
+      }
+    },
+    {
+      "local_id": "CON-001",
+      "name": "æåº§è§æ¨¡çº¦æ",
+      "type": "ConstraintBlock",
+      "package": "05_Constraints",
+      "metaclass": "Class",
+      "stereotype": "SysML::ConstraintBlocks::ConstraintBlock",
+      "documentation": "numSatellites = 100ï¼è½¨éé¢æ°éãé¢åå«ææ°åå¤ä»½ç­ç¥åºä¸è¦çåå®¹éç®æ ä¸è´ã",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "CON-001",
+        "external_id": null,
+        "package": "05_Constraints"
+      }
+    },
+    {
+      "local_id": "CON-002",
+      "name": "è½¨éå£³å±ä¸è¦ççº¦æ",
+      "type": "ConstraintBlock",
+      "package": "05_Constraints",
+      "metaclass": "Class",
+      "stereotype": "SysML::ConstraintBlocks::ConstraintBlock",
+      "documentation": "è½¨éé«åº¦ãå¾è§ãæå°ä»°è§ãè¦ççãåæ¢é´éåæå¡ç²åºåºæ»¡è¶³ä»»å¡åé¢è¦æ±ã",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "CON-002",
+        "external_id": null,
+        "package": "05_Constraints"
+      }
+    },
+    {
+      "local_id": "CON-003",
+      "name": "å®¹éååçº¦æ",
+      "type": "ConstraintBlock",
+      "package": "05_Constraints",
+      "metaclass": "Class",
+      "stereotype": "SysML::ConstraintBlocks::ConstraintBlock",
+      "documentation": "ç¨æ·å¹¶åæ°ãåç¨æ·éçãæ»ååãæ³¢æå®¹éåç½å³åä¼ è½ååºæ»¡è¶³ä¸å¡æ¨¡åã",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "CON-003",
+        "external_id": null,
+        "package": "05_Constraints"
+      }
+    },
+    {
+      "local_id": "CON-004",
+      "name": "ä¸å¡æ¶å»¶çº¦æ",
+      "type": "ConstraintBlock",
+      "package": "05_Constraints",
+      "metaclass": "Class",
+      "stereotype": "SysML::ConstraintBlocks::ConstraintBlock",
+      "documentation": "ç«¯å°ç«¯æ¶å»¶ãæé´è½¬åæ¶å»¶ãç½å³åä¼ æ¶å»¶ååæ¢ä¸­æ­æ¶é´åºæ»¡è¶³å®½å¸¦ä¸å¡ç­çº§ã",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "CON-004",
+        "external_id": null,
+        "package": "05_Constraints"
+      }
+    },
+    {
+      "local_id": "CON-005",
+      "name": "é¾è·¯é¢ç®çº¦æ",
+      "type": "ConstraintBlock",
+      "package": "05_Constraints",
+      "metaclass": "Class",
+      "stereotype": "SysML::ConstraintBlocks::ConstraintBlock",
+      "documentation": "ç¨æ·é¾è·¯ãé¦çµé¾è·¯åæé´é¾è·¯çEIRPãG/TãC/N0ãé¨è¡°ä½éåç¼ç è°å¶åºæ»¡è¶³é¾è·¯é¢ç®ã",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "CON-005",
+        "external_id": null,
+        "package": "05_Constraints"
+      }
+    },
+    {
+      "local_id": "CON-006",
+      "name": "ç½å³å¯è§ä¸åæ¢çº¦æ",
+      "type": "ConstraintBlock",
+      "package": "05_Constraints",
+      "metaclass": "Class",
+      "stereotype": "SysML::ConstraintBlocks::ConstraintBlock",
+      "documentation": "å¯è§ç½å³æ°éãç«é´åæ¢ãåä¼ å®¹éåå°çåå¸åºæ»¡è¶³æå¡è¿ç»­æ§åå®¹éç®æ ã",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "CON-006",
+        "external_id": null,
+        "package": "05_Constraints"
+      }
+    },
+    {
+      "local_id": "CON-007",
+      "name": "å¯ç¨æ§å¯é æ§çº¦æ",
+      "type": "ConstraintBlock",
+      "package": "05_Constraints",
+      "metaclass": "Class",
+      "stereotype": "SysML::ConstraintBlocks::ConstraintBlock",
+      "documentation": "å«æãè½½è·ãç½å³ãé¾è·¯åæ§å¶ä¸­å¿çå¯ç¨æ§ãåä½åæéæ¢å¤æ¶é´åºæ»¡è¶³æ»ä½å¯é æ§ç®æ ã",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "CON-007",
+        "external_id": null,
+        "package": "05_Constraints"
+      }
+    },
+    {
+      "local_id": "CON-008",
+      "name": "é¢è°±å®å¨åè§çº¦æ",
+      "type": "ConstraintBlock",
+      "package": "05_Constraints",
+      "metaclass": "Class",
+      "stereotype": "SysML::ConstraintBlocks::ConstraintBlock",
+      "documentation": "é¢çä½¿ç¨ãåå°åçãå¹²æ°åè°ãè®¤è¯å å¯ãä¸å¡éç¦»åæ§å¶é¢ä¿æ¤åºæ»¡è¶³åè§ä¸å®å¨ç®æ ã",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "CON-008",
+        "external_id": null,
+        "package": "05_Constraints"
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "local_id": "REL-001",
+      "name": "REL-001",
+      "type": "contains",
+      "package": "06_Traceability",
+      "metaclass": "Association",
+      "stereotype": "CompositeAssociation",
+      "source": "BLK-001",
+      "source_name": "ä½è½¨å®½å¸¦å«æäºèç½ç³»ç»",
+      "target": "BLK-002",
+      "target_name": "ç©ºé´æ®µ",
+      "documentation": "ç³»ç»è¾¹çåå«ç©ºé´æ®µ"
+    },
+    {
+      "local_id": "REL-002",
+      "name": "REL-002",
+      "type": "contains",
+      "package": "06_Traceability",
+      "metaclass": "Association",
+      "stereotype": "CompositeAssociation",
+      "source": "BLK-001",
+      "source_name": "ä½è½¨å®½å¸¦å«æäºèç½ç³»ç»",
+      "target": "BLK-012",
+      "target_name": "å°é¢æ®µ",
+      "documentation": "ç³»ç»è¾¹çåå«å°é¢æ®µ"
+    },
+    {
+      "local_id": "REL-003",
+      "name": "REL-003",
+      "type": "contains",
+      "package": "06_Traceability",
+      "metaclass": "Association",
+      "stereotype": "CompositeAssociation",
+      "source": "BLK-001",
+      "source_name": "ä½è½¨å®½å¸¦å«æäºèç½ç³»ç»",
+      "target": "BLK-016",
+      "target_name": "ç¨æ·æ®µ",
+      "documentation": "ç³»ç»è¾¹çåå«ç¨æ·æ®µ"
+    },
+    {
+      "local_id": "REL-004",
+      "name": "REL-004",
+      "type": "contains",
+      "package": "06_Traceability",
+      "metaclass": "Association",
+      "stereotype": "CompositeAssociation",
+      "source": "BLK-001",
+      "source_name": "ä½è½¨å®½å¸¦å«æäºèç½ç³»ç»",
+      "target": "BLK-018",
+      "target_name": "å¤é¨äºèç½ä¸æ ¸å¿ç½",
+      "documentation": "ç³»ç»è¾¹çè¿æ¥å¤é¨äºèç½ä¸æ ¸å¿ç½"
+    },
+    {
+      "local_id": "REL-005",
+      "name": "REL-005",
+      "type": "contains",
+      "package": "06_Traceability",
+      "metaclass": "Association",
+      "stereotype": "CompositeAssociation",
+      "source": "BLK-002",
+      "source_name": "ç©ºé´æ®µ",
+      "target": "BLK-003",
+      "target_name": "100é¢ä½è½¨éä¿¡æåº§",
+      "documentation": "ç©ºé´æ®µåå«100é¢ä½è½¨éä¿¡æåº§"
+    },
+    {
+      "local_id": "REL-006",
+      "name": "REL-006",
+      "type": "contains",
+      "package": "06_Traceability",
+      "metaclass": "Association",
+      "stereotype": "CompositeAssociation",
+      "source": "BLK-003",
+      "source_name": "100é¢ä½è½¨éä¿¡æåº§",
+      "target": "BLK-004",
+      "target_name": "è½¨éé¢ä¸æåº§æå",
+      "documentation": "æåº§åå«è½¨éé¢ä¸æåå®ä¹"
+    },
+    {
+      "local_id": "REL-007",
+      "name": "REL-007",
+      "type": "contains",
+      "package": "06_Traceability",
+      "metaclass": "Association",
+      "stereotype": "CompositeAssociation",
+      "source": "BLK-003",
+      "source_name": "100é¢ä½è½¨éä¿¡æåº§",
+      "target": "BLK-005",
+      "target_name": "ä½è½¨éä¿¡å«æ",
+      "documentation": "æåº§ç±ä½è½¨éä¿¡å«æç»æ"
+    },
+    {
+      "local_id": "REL-008",
+      "name": "REL-008",
+      "type": "contains",
+      "package": "06_Traceability",
+      "metaclass": "Association",
+      "stereotype": "CompositeAssociation",
+      "source": "BLK-005",
+      "source_name": "ä½è½¨éä¿¡å«æ",
+      "target": "BLK-006",
+      "target_name": "å®½å¸¦éä¿¡è½½è·",
+      "documentation": "åæåå«å®½å¸¦éä¿¡è½½è·"
+    },
+    {
+      "local_id": "REL-009",
+      "name": "REL-009",
+      "type": "contains",
+      "package": "06_Traceability",
+      "metaclass": "Association",
+      "stereotype": "CompositeAssociation",
+      "source": "BLK-005",
+      "source_name": "ä½è½¨éä¿¡å«æ",
+      "target": "BLK-007",
+      "target_name": "æä¸æ°å­å¤çå¨",
+      "documentation": "åæåå«æä¸æ°å­å¤çå¨"
+    },
+    {
+      "local_id": "REL-010",
+      "name": "REL-010",
+      "type": "contains",
+      "package": "06_Traceability",
+      "metaclass": "Association",
+      "stereotype": "CompositeAssociation",
+      "source": "BLK-005",
+      "source_name": "ä½è½¨éä¿¡å«æ",
+      "target": "BLK-008",
+      "target_name": "ç¨æ·æå¡é¾è·¯å¤©çº¿",
+      "documentation": "åæåå«ç¨æ·æå¡é¾è·¯å¤©çº¿"
+    },
+    {
+      "local_id": "REL-011",
+      "name": "REL-011",
+      "type": "contains",
+      "package": "06_Traceability",
+      "metaclass": "Association",
+      "stereotype": "CompositeAssociation",
+      "source": "BLK-005",
+      "source_name": "ä½è½¨éä¿¡å«æ",
+      "target": "BLK-009",
+      "target_name": "é¦çµé¾è·¯ç»ç«¯",
+      "documentation": "åæåå«é¦çµé¾è·¯ç»ç«¯"
+    },
+    {
+      "local_id": "REL-012",
+      "name": "REL-012",
+      "type": "contains",
+      "package": "06_Traceability",
+      "metaclass": "Association",
+      "stereotype": "CompositeAssociation",
+      "source": "BLK-005",
+      "source_name": "ä½è½¨éä¿¡å«æ",
+      "target": "BLK-010",
+      "target_name": "æé´é¾è·¯ç»ç«¯",
+      "documentation": "åæåå«æé´é¾è·¯ç»ç«¯"
+    },
+    {
+      "local_id": "REL-013",
+      "name": "REL-013",
+      "type": "contains",
+      "package": "06_Traceability",
+      "metaclass": "Association",
+      "stereotype": "CompositeAssociation",
+      "source": "BLK-005",
+      "source_name": "ä½è½¨éä¿¡å«æ",
+      "target": "BLK-011",
+      "target_name": "å«æå¹³å°ä¸æå¡åç³»ç»",
+      "documentation": "åæåå«å¹³å°ä¸æå¡åç³»ç»"
+    },
+    {
+      "local_id": "REL-014",
+      "name": "REL-014",
+      "type": "contains",
+      "package": "06_Traceability",
+      "metaclass": "Association",
+      "stereotype": "CompositeAssociation",
+      "source": "BLK-012",
+      "source_name": "å°é¢æ®µ",
+      "target": "BLK-013",
+      "target_name": "é¦çµç½å³ç«",
+      "documentation": "å°é¢æ®µåå«é¦çµç½å³ç«"
+    },
+    {
+      "local_id": "REL-015",
+      "name": "REL-015",
+      "type": "contains",
+      "package": "06_Traceability",
+      "metaclass": "Association",
+      "stereotype": "CompositeAssociation",
+      "source": "BLK-012",
+      "source_name": "å°é¢æ®µ",
+      "target": "BLK-014",
+      "target_name": "ç½ç»è¿è¥æ§å¶ä¸­å¿",
+      "documentation": "å°é¢æ®µåå«ç½ç»è¿è¥æ§å¶ä¸­å¿"
+    },
+    {
+      "local_id": "REL-016",
+      "name": "REL-016",
+      "type": "contains",
+      "package": "06_Traceability",
+      "metaclass": "Association",
+      "stereotype": "CompositeAssociation",
+      "source": "BLK-012",
+      "source_name": "å°é¢æ®µ",
+      "target": "BLK-015",
+      "target_name": "ä»»å¡è¿æ§ä¸­å¿",
+      "documentation": "å°é¢æ®µåå«ä»»å¡è¿æ§ä¸­å¿"
+    },
+    {
+      "local_id": "REL-017",
+      "name": "REL-017",
+      "type": "contains",
+      "package": "06_Traceability",
+      "metaclass": "Association",
+      "stereotype": "CompositeAssociation",
+      "source": "BLK-016",
+      "source_name": "ç¨æ·æ®µ",
+      "target": "BLK-017",
+      "target_name": "å®½å¸¦ç¨æ·ç»ç«¯",
+      "documentation": "ç¨æ·æ®µåå«å®½å¸¦ç¨æ·ç»ç«¯"
+    },
+    {
+      "local_id": "REL-018",
+      "name": "REL-018",
+      "type": "satisfy",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Satisfy",
+      "source": "BLK-001",
+      "source_name": "ä½è½¨å®½å¸¦å«æäºèç½ç³»ç»",
+      "target": "REQ-001",
+      "target_name": "æåº§ä»»å¡ä¸æå¡ç®æ ",
+      "documentation": "ç³»ç»æ»¡è¶³æåº§ä»»å¡ä¸æå¡ç®æ "
+    },
+    {
+      "local_id": "REL-019",
+      "name": "REL-019",
+      "type": "satisfy",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Satisfy",
+      "source": "BLK-001",
+      "source_name": "ä½è½¨å®½å¸¦å«æäºèç½ç³»ç»",
+      "target": "REQ-002",
+      "target_name": "ç³»ç»è¾¹çä¸å¤é¨åä¸æ¹",
+      "documentation": "ç³»ç»æ ¹æ¨¡åçå®æ»ä½è¾¹çä¸å¤é¨åä¸æ¹"
+    },
+    {
+      "local_id": "REL-020",
+      "name": "REL-020",
+      "type": "satisfy",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Satisfy",
+      "source": "BLK-003",
+      "source_name": "100é¢ä½è½¨éä¿¡æåº§",
+      "target": "REQ-003",
+      "target_name": "100é¢å«ææåº§è§æ¨¡",
+      "documentation": "100é¢ä½è½¨éä¿¡æåº§æ»¡è¶³è§æ¨¡éæ±"
+    },
+    {
+      "local_id": "REL-021",
+      "name": "REL-021",
+      "type": "satisfy",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Satisfy",
+      "source": "BLK-004",
+      "source_name": "è½¨éé¢ä¸æåº§æå",
+      "target": "REQ-004",
+      "target_name": "è½¨éè¦çä¸æå¡è¿ç»­æ§",
+      "documentation": "è½¨éæåæ»¡è¶³è¦çä¸æå¡è¿ç»­æ§éæ±"
+    },
+    {
+      "local_id": "REL-022",
+      "name": "REL-022",
+      "type": "satisfy",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Satisfy",
+      "source": "BLK-006",
+      "source_name": "å®½å¸¦éä¿¡è½½è·",
+      "target": "REQ-005",
+      "target_name": "ç¨æ·é¾è·¯å®¹éä¸æå¡è´¨é",
+      "documentation": "å®½å¸¦éä¿¡è½½è·æ»¡è¶³ç¨æ·å®¹éä¸QoSéæ±"
+    },
+    {
+      "local_id": "REL-023",
+      "name": "REL-023",
+      "type": "satisfy",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Satisfy",
+      "source": "BLK-013",
+      "source_name": "é¦çµç½å³ç«",
+      "target": "REQ-006",
+      "target_name": "é¦çµé¾è·¯ä¸ç½å³æ¥å¥",
+      "documentation": "é¦çµç½å³ç«æ»¡è¶³é¦çµé¾è·¯ä¸ç½å³æ¥å¥éæ±"
+    },
+    {
+      "local_id": "REL-024",
+      "name": "REL-024",
+      "type": "satisfy",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Satisfy",
+      "source": "BLK-010",
+      "source_name": "æé´é¾è·¯ç»ç«¯",
+      "target": "REQ-007",
+      "target_name": "æé´é¾è·¯ä¸ç©ºé´è·¯ç±",
+      "documentation": "æé´é¾è·¯ç»ç«¯æ»¡è¶³ç©ºé´è·¯ç±éæ±"
+    },
+    {
+      "local_id": "REL-025",
+      "name": "REL-025",
+      "type": "satisfy",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Satisfy",
+      "source": "BLK-017",
+      "source_name": "å®½å¸¦ç¨æ·ç»ç«¯",
+      "target": "REQ-008",
+      "target_name": "ç¨æ·ç»ç«¯æ¥å¥ä¸é´æ",
+      "documentation": "ç¨æ·ç»ç«¯æ»¡è¶³æ¥å¥ä¸é´æéæ±"
+    },
+    {
+      "local_id": "REL-026",
+      "name": "REL-026",
+      "type": "satisfy",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Satisfy",
+      "source": "BLK-014",
+      "source_name": "ç½ç»è¿è¥æ§å¶ä¸­å¿",
+      "target": "REQ-009",
+      "target_name": "ç½ç»ç®¡çä¸èµæºè°åº¦",
+      "documentation": "ç½ç»è¿è¥æ§å¶ä¸­å¿æ»¡è¶³èµæºè°åº¦éæ±"
+    },
+    {
+      "local_id": "REL-027",
+      "name": "REL-027",
+      "type": "satisfy",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Satisfy",
+      "source": "BLK-015",
+      "source_name": "ä»»å¡è¿æ§ä¸­å¿",
+      "target": "REQ-010",
+      "target_name": "é¥æµé¥æ§ä¸å¨è½¨è¿ç»´",
+      "documentation": "ä»»å¡è¿æ§ä¸­å¿æ»¡è¶³é¥æµé¥æ§ä¸å¨è½¨è¿ç»´éæ±"
+    },
+    {
+      "local_id": "REL-028",
+      "name": "REL-028",
+      "type": "satisfy",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Satisfy",
+      "source": "BLK-015",
+      "source_name": "ä»»å¡è¿æ§ä¸­å¿",
+      "target": "REQ-011",
+      "target_name": "æéå¤ç½®ä¸å®å¨éç¦»",
+      "documentation": "ä»»å¡è¿æ§ä¸­å¿çµå¼æéå¤ç½®ä¸å®å¨éç¦»é­ç¯"
+    },
+    {
+      "local_id": "REL-029",
+      "name": "REL-029",
+      "type": "satisfy",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Satisfy",
+      "source": "BLK-014",
+      "source_name": "ç½ç»è¿è¥æ§å¶ä¸­å¿",
+      "target": "REQ-012",
+      "target_name": "ä¿¡æ¯å®å¨ä¸ä¸å¡éç¦»",
+      "documentation": "ç½ç»è¿è¥æ§å¶ä¸­å¿æ»¡è¶³ä¿¡æ¯å®å¨ä¸ä¸å¡éç¦»éæ±"
+    },
+    {
+      "local_id": "REL-030",
+      "name": "REL-030",
+      "type": "satisfy",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Satisfy",
+      "source": "BLK-006",
+      "source_name": "å®½å¸¦éä¿¡è½½è·",
+      "target": "REQ-013",
+      "target_name": "é¢è°±åè§ä¸çµç£å¼å®¹",
+      "documentation": "éä¿¡è½½è·è®¾è®¡æ»¡è¶³é¢è°±åè§ä¸çµç£å¼å®¹éæ±"
+    },
+    {
+      "local_id": "REL-031",
+      "name": "REL-031",
+      "type": "satisfy",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Satisfy",
+      "source": "IF-009",
+      "source_name": "MagicDraw Bridgeæ¥å£",
+      "target": "REQ-014",
+      "target_name": "æ¨¡åä¸è´æ§ä¸MagicDrawäº¤ä»",
+      "documentation": "Bridgeæ¥å£æ»¡è¶³æ¨¡åä¸è´æ§ä¸MagicDrawäº¤ä»éæ±"
+    },
+    {
+      "local_id": "REL-032",
+      "name": "REL-032",
+      "type": "trace",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Trace",
+      "source": "REQ-001",
+      "source_name": "æåº§ä»»å¡ä¸æå¡ç®æ ",
+      "target": "UC-001",
+      "target_name": "å¼å¯¼æ»ä½éæ±æ¾æ¸",
+      "documentation": "ä»»å¡ç®æ è¿½æº¯å°æ»ä½éæ±æ¾æ¸ç¨ä¾"
+    },
+    {
+      "local_id": "REL-033",
+      "name": "REL-033",
+      "type": "trace",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Trace",
+      "source": "REQ-002",
+      "source_name": "ç³»ç»è¾¹çä¸å¤é¨åä¸æ¹",
+      "target": "UC-001",
+      "target_name": "å¼å¯¼æ»ä½éæ±æ¾æ¸",
+      "documentation": "ç³»ç»è¾¹çè¿½æº¯å°æ»ä½éæ±æ¾æ¸ç¨ä¾"
+    },
+    {
+      "local_id": "REL-034",
+      "name": "REL-034",
+      "type": "trace",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Trace",
+      "source": "REQ-003",
+      "source_name": "100é¢å«ææåº§è§æ¨¡",
+      "target": "UC-002",
+      "target_name": "å¼å±æåº§è¦çä¸å®¹éè®¾è®¡",
+      "documentation": "100é¢æåº§è§æ¨¡è¿½æº¯å°è¦çå®¹éè®¾è®¡ç¨ä¾"
+    },
+    {
+      "local_id": "REL-035",
+      "name": "REL-035",
+      "type": "trace",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Trace",
+      "source": "REQ-004",
+      "source_name": "è½¨éè¦çä¸æå¡è¿ç»­æ§",
+      "target": "UC-002",
+      "target_name": "å¼å±æåº§è¦çä¸å®¹éè®¾è®¡",
+      "documentation": "è¦çè¿ç»­æ§è¿½æº¯å°è¦çå®¹éè®¾è®¡ç¨ä¾"
+    },
+    {
+      "local_id": "REL-036",
+      "name": "REL-036",
+      "type": "trace",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Trace",
+      "source": "REQ-005",
+      "source_name": "ç¨æ·é¾è·¯å®¹éä¸æå¡è´¨é",
+      "target": "UC-003",
+      "target_name": "å»ºç«ç¨æ·å®½å¸¦ä¼è¯",
+      "documentation": "ç¨æ·é¾è·¯å®¹éè¿½æº¯å°ç¨æ·å®½å¸¦ä¼è¯ç¨ä¾"
+    },
+    {
+      "local_id": "REL-037",
+      "name": "REL-037",
+      "type": "trace",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Trace",
+      "source": "REQ-005",
+      "source_name": "ç¨æ·é¾è·¯å®¹éä¸æå¡è´¨é",
+      "target": "UC-004",
+      "target_name": "æ§è¡å«æåæ¢ä¸ä¸å¡ä¿æ",
+      "documentation": "QoSåä¸å¡ä¿æè¿½æº¯å°åæ¢ç¨ä¾"
+    },
+    {
+      "local_id": "REL-038",
+      "name": "REL-038",
+      "type": "trace",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Trace",
+      "source": "REQ-006",
+      "source_name": "é¦çµé¾è·¯ä¸ç½å³æ¥å¥",
+      "target": "UC-005",
+      "target_name": "å®æé¦çµåä¼ ä¸æ ¸å¿ç½äºè",
+      "documentation": "é¦çµé¾è·¯éæ±è¿½æº¯å°é¦çµåä¼ ç¨ä¾"
+    },
+    {
+      "local_id": "REL-039",
+      "name": "REL-039",
+      "type": "trace",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Trace",
+      "source": "REQ-007",
+      "source_name": "æé´é¾è·¯ä¸ç©ºé´è·¯ç±",
+      "target": "UC-006",
+      "target_name": "æ§è¡æé´è·¯ç±è½¬å",
+      "documentation": "æé´é¾è·¯éæ±è¿½æº¯å°ç©ºé´è·¯ç±ç¨ä¾"
+    },
+    {
+      "local_id": "REL-040",
+      "name": "REL-040",
+      "type": "trace",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Trace",
+      "source": "REQ-008",
+      "source_name": "ç¨æ·ç»ç«¯æ¥å¥ä¸é´æ",
+      "target": "UC-003",
+      "target_name": "å»ºç«ç¨æ·å®½å¸¦ä¼è¯",
+      "documentation": "ç¨æ·æ¥å¥é´æè¿½æº¯å°ç¨æ·å®½å¸¦ä¼è¯ç¨ä¾"
+    },
+    {
+      "local_id": "REL-041",
+      "name": "REL-041",
+      "type": "trace",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Trace",
+      "source": "REQ-009",
+      "source_name": "ç½ç»ç®¡çä¸èµæºè°åº¦",
+      "target": "UC-007",
+      "target_name": "è°åº¦æ³¢æé¢è°±ç½å³èµæº",
+      "documentation": "ç½ç»è°åº¦éæ±è¿½æº¯å°èµæºè°åº¦ç¨ä¾"
+    },
+    {
+      "local_id": "REL-042",
+      "name": "REL-042",
+      "type": "trace",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Trace",
+      "source": "REQ-010",
+      "source_name": "é¥æµé¥æ§ä¸å¨è½¨è¿ç»´",
+      "target": "UC-008",
+      "target_name": "å¤ç½®æéåè­¦ä¸ç½ç»éæ",
+      "documentation": "å¨è½¨è¿ç»´éæ±è¿½æº¯å°æéåè­¦ä¸éæç¨ä¾"
+    },
+    {
+      "local_id": "REL-043",
+      "name": "REL-043",
+      "type": "trace",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Trace",
+      "source": "REQ-011",
+      "source_name": "æéå¤ç½®ä¸å®å¨éç¦»",
+      "target": "UC-008",
+      "target_name": "å¤ç½®æéåè­¦ä¸ç½ç»éæ",
+      "documentation": "æéå¤ç½®éæ±è¿½æº¯å°æéåè­¦ä¸éæç¨ä¾"
+    },
+    {
+      "local_id": "REL-044",
+      "name": "REL-044",
+      "type": "trace",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Trace",
+      "source": "REQ-012",
+      "source_name": "ä¿¡æ¯å®å¨ä¸ä¸å¡éç¦»",
+      "target": "UC-007",
+      "target_name": "è°åº¦æ³¢æé¢è°±ç½å³èµæº",
+      "documentation": "å®å¨éç¦»éæ±è¿½æº¯å°èµæºè°åº¦åç­ç¥æ§å¶ç¨ä¾"
+    },
+    {
+      "local_id": "REL-045",
+      "name": "REL-045",
+      "type": "trace",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Trace",
+      "source": "REQ-013",
+      "source_name": "é¢è°±åè§ä¸çµç£å¼å®¹",
+      "target": "UC-002",
+      "target_name": "å¼å±æåº§è¦çä¸å®¹éè®¾è®¡",
+      "documentation": "é¢è°±åè§éæ±è¿½æº¯å°è¦çå®¹éè®¾è®¡ç¨ä¾"
+    },
+    {
+      "local_id": "REL-046",
+      "name": "REL-046",
+      "type": "trace",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Trace",
+      "source": "REQ-014",
+      "source_name": "æ¨¡åä¸è´æ§ä¸MagicDrawäº¤ä»",
+      "target": "UC-009",
+      "target_name": "åæ­¥MagicDrawå·¥ç¨",
+      "documentation": "æ¨¡åäº¤ä»éæ±è¿½æº¯å°MagicDrawåæ­¥ç¨ä¾"
+    },
+    {
+      "local_id": "REL-047",
+      "name": "REL-047",
+      "type": "refine",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Refine",
+      "source": "UC-001",
+      "source_name": "å¼å¯¼æ»ä½éæ±æ¾æ¸",
+      "target": "ACT-001",
+      "target_name": "æ»ä½éæ±æ¾æ¸ä¸åºçº¿ç¡®è®¤æµç¨",
+      "documentation": "éæ±æ¾æ¸ç¨ä¾ç»åä¸ºåºçº¿ç¡®è®¤æµç¨"
+    },
+    {
+      "local_id": "REL-048",
+      "name": "REL-048",
+      "type": "refine",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Refine",
+      "source": "UC-002",
+      "source_name": "å¼å±æåº§è¦çä¸å®¹éè®¾è®¡",
+      "target": "ACT-002",
+      "target_name": "æåº§æåä¸è¦çåææµç¨",
+      "documentation": "è¦çå®¹éè®¾è®¡ç¨ä¾ç»åä¸ºæåº§æåä¸è¦çåææµç¨"
+    },
+    {
+      "local_id": "REL-049",
+      "name": "REL-049",
+      "type": "refine",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Refine",
+      "source": "UC-002",
+      "source_name": "å¼å±æåº§è¦çä¸å®¹éè®¾è®¡",
+      "target": "ACT-003",
+      "target_name": "é¾è·¯é¢ç®ä¸å®¹éæ ¡æ ¸æµç¨",
+      "documentation": "è¦çå®¹éè®¾è®¡ç¨ä¾ç»åä¸ºé¾è·¯é¢ç®ä¸å®¹éæ ¡æ ¸æµç¨"
+    },
+    {
+      "local_id": "REL-050",
+      "name": "REL-050",
+      "type": "refine",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Refine",
+      "source": "UC-003",
+      "source_name": "å»ºç«ç¨æ·å®½å¸¦ä¼è¯",
+      "target": "ACT-004",
+      "target_name": "ç¨æ·æ¥å¥ä¸ä¼è¯å»ºç«æµç¨",
+      "documentation": "ç¨æ·å®½å¸¦ä¼è¯ç¨ä¾ç»åä¸ºç¨æ·æ¥å¥æµç¨"
+    },
+    {
+      "local_id": "REL-051",
+      "name": "REL-051",
+      "type": "refine",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Refine",
+      "source": "UC-004",
+      "source_name": "æ§è¡å«æåæ¢ä¸ä¸å¡ä¿æ",
+      "target": "ACT-005",
+      "target_name": "æé´è·¯ç±ä¸åæ¢æµç¨",
+      "documentation": "åæ¢ä¸ä¸å¡ä¿æç¨ä¾ç»åä¸ºæé´è·¯ç±ä¸åæ¢æµç¨"
+    },
+    {
+      "local_id": "REL-052",
+      "name": "REL-052",
+      "type": "refine",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Refine",
+      "source": "UC-005",
+      "source_name": "å®æé¦çµåä¼ ä¸æ ¸å¿ç½äºè",
+      "target": "ACT-006",
+      "target_name": "ç½å³éæ©ä¸é¦çµåä¼ æµç¨",
+      "documentation": "é¦çµåä¼ ç¨ä¾ç»åä¸ºç½å³éæ©ä¸é¦çµæµç¨"
+    },
+    {
+      "local_id": "REL-053",
+      "name": "REL-053",
+      "type": "refine",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Refine",
+      "source": "UC-006",
+      "source_name": "æ§è¡æé´è·¯ç±è½¬å",
+      "target": "ACT-005",
+      "target_name": "æé´è·¯ç±ä¸åæ¢æµç¨",
+      "documentation": "æé´è·¯ç±ç¨ä¾ç»åä¸ºç©ºé´è·¯ç±ä¸åæ¢æµç¨"
+    },
+    {
+      "local_id": "REL-054",
+      "name": "REL-054",
+      "type": "refine",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Refine",
+      "source": "UC-007",
+      "source_name": "è°åº¦æ³¢æé¢è°±ç½å³èµæº",
+      "target": "ACT-007",
+      "target_name": "ç½ç»èµæºè°åº¦æµç¨",
+      "documentation": "èµæºè°åº¦ç¨ä¾ç»åä¸ºç½ç»èµæºè°åº¦æµç¨"
+    },
+    {
+      "local_id": "REL-055",
+      "name": "REL-055",
+      "type": "refine",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Refine",
+      "source": "UC-008",
+      "source_name": "å¤ç½®æéåè­¦ä¸ç½ç»éæ",
+      "target": "ACT-008",
+      "target_name": "æéæ£æµéç¦»æ¢å¤æµç¨",
+      "documentation": "æéåè­¦ä¸éæç¨ä¾ç»åä¸ºæ£æµéç¦»æ¢å¤æµç¨"
+    },
+    {
+      "local_id": "REL-056",
+      "name": "REL-056",
+      "type": "refine",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Refine",
+      "source": "UC-009",
+      "source_name": "åæ­¥MagicDrawå·¥ç¨",
+      "target": "ACT-009",
+      "target_name": "MagicDrawå·¥ç¨åæ­¥æµç¨",
+      "documentation": "MagicDrawåæ­¥ç¨ä¾ç»åä¸ºå·¥ç¨åæ­¥æµç¨"
+    },
+    {
+      "local_id": "REL-057",
+      "name": "REL-057",
+      "type": "allocate",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Allocations::Allocate",
+      "source": "IF-001",
+      "source_name": "ç¨æ·æå¡é¾è·¯æ¥å£",
+      "target": "BLK-008",
+      "target_name": "ç¨æ·æå¡é¾è·¯å¤©çº¿",
+      "documentation": "ç¨æ·æå¡é¾è·¯æ¥å£åéå°ç¨æ·æå¡é¾è·¯å¤©çº¿"
+    },
+    {
+      "local_id": "REL-058",
+      "name": "REL-058",
+      "type": "allocate",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Allocations::Allocate",
+      "source": "IF-001",
+      "source_name": "ç¨æ·æå¡é¾è·¯æ¥å£",
+      "target": "BLK-017",
+      "target_name": "å®½å¸¦ç¨æ·ç»ç«¯",
+      "documentation": "ç¨æ·æå¡é¾è·¯æ¥å£åéå°å®½å¸¦ç¨æ·ç»ç«¯"
+    },
+    {
+      "local_id": "REL-059",
+      "name": "REL-059",
+      "type": "allocate",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Allocations::Allocate",
+      "source": "IF-002",
+      "source_name": "é¦çµé¾è·¯æ¥å£",
+      "target": "BLK-009",
+      "target_name": "é¦çµé¾è·¯ç»ç«¯",
+      "documentation": "é¦çµé¾è·¯æ¥å£åéå°é¦çµé¾è·¯ç»ç«¯"
+    },
+    {
+      "local_id": "REL-060",
+      "name": "REL-060",
+      "type": "allocate",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Allocations::Allocate",
+      "source": "IF-002",
+      "source_name": "é¦çµé¾è·¯æ¥å£",
+      "target": "BLK-013",
+      "target_name": "é¦çµç½å³ç«",
+      "documentation": "é¦çµé¾è·¯æ¥å£åéå°é¦çµç½å³ç«"
+    },
+    {
+      "local_id": "REL-061",
+      "name": "REL-061",
+      "type": "allocate",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Allocations::Allocate",
+      "source": "IF-003",
+      "source_name": "æé´é¾è·¯æ¥å£",
+      "target": "BLK-010",
+      "target_name": "æé´é¾è·¯ç»ç«¯",
+      "documentation": "æé´é¾è·¯æ¥å£åéå°æé´é¾è·¯ç»ç«¯"
+    },
+    {
+      "local_id": "REL-062",
+      "name": "REL-062",
+      "type": "allocate",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Allocations::Allocate",
+      "source": "IF-004",
+      "source_name": "é¥æµé¥æ§æ¥å£",
+      "target": "BLK-011",
+      "target_name": "å«æå¹³å°ä¸æå¡åç³»ç»",
+      "documentation": "é¥æµé¥æ§æ¥å£åéå°å«æå¹³å°ä¸æå¡åç³»ç»"
+    },
+    {
+      "local_id": "REL-063",
+      "name": "REL-063",
+      "type": "allocate",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Allocations::Allocate",
+      "source": "IF-004",
+      "source_name": "é¥æµé¥æ§æ¥å£",
+      "target": "BLK-015",
+      "target_name": "ä»»å¡è¿æ§ä¸­å¿",
+      "documentation": "é¥æµé¥æ§æ¥å£åéå°ä»»å¡è¿æ§ä¸­å¿"
+    },
+    {
+      "local_id": "REL-064",
+      "name": "REL-064",
+      "type": "allocate",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Allocations::Allocate",
+      "source": "IF-005",
+      "source_name": "ç½ç»ç®¡çååæ¥å£",
+      "target": "BLK-014",
+      "target_name": "ç½ç»è¿è¥æ§å¶ä¸­å¿",
+      "documentation": "ç½ç»ç®¡çååæ¥å£åéå°ç½ç»è¿è¥æ§å¶ä¸­å¿"
+    },
+    {
+      "local_id": "REL-065",
+      "name": "REL-065",
+      "type": "allocate",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Allocations::Allocate",
+      "source": "IF-005",
+      "source_name": "ç½ç»ç®¡çååæ¥å£",
+      "target": "BLK-006",
+      "target_name": "å®½å¸¦éä¿¡è½½è·",
+      "documentation": "ç½ç»ç®¡çååæ¥å£åéå°éä¿¡è½½è·èµæºæ§å¶"
+    },
+    {
+      "local_id": "REL-066",
+      "name": "REL-066",
+      "type": "allocate",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Allocations::Allocate",
+      "source": "IF-006",
+      "source_name": "ç½å³æ ¸å¿ç½æ¥å£",
+      "target": "BLK-013",
+      "target_name": "é¦çµç½å³ç«",
+      "documentation": "ç½å³æ ¸å¿ç½æ¥å£åéå°é¦çµç½å³ç«"
+    },
+    {
+      "local_id": "REL-067",
+      "name": "REL-067",
+      "type": "allocate",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Allocations::Allocate",
+      "source": "IF-006",
+      "source_name": "ç½å³æ ¸å¿ç½æ¥å£",
+      "target": "BLK-018",
+      "target_name": "å¤é¨äºèç½ä¸æ ¸å¿ç½",
+      "documentation": "ç½å³æ ¸å¿ç½æ¥å£è¿æ¥å¤é¨äºèç½ä¸æ ¸å¿ç½"
+    },
+    {
+      "local_id": "REL-068",
+      "name": "REL-068",
+      "type": "allocate",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Allocations::Allocate",
+      "source": "IF-007",
+      "source_name": "æ¶é´é¢çä¸æåæ¥å£",
+      "target": "BLK-015",
+      "target_name": "ä»»å¡è¿æ§ä¸­å¿",
+      "documentation": "æ¶é´é¢çä¸æåæ¥å£åéå°ä»»å¡è¿æ§ä¸­å¿"
+    },
+    {
+      "local_id": "REL-069",
+      "name": "REL-069",
+      "type": "allocate",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Allocations::Allocate",
+      "source": "IF-007",
+      "source_name": "æ¶é´é¢çä¸æåæ¥å£",
+      "target": "BLK-011",
+      "target_name": "å«æå¹³å°ä¸æå¡åç³»ç»",
+      "documentation": "æ¶é´é¢çä¸æåæ¥å£åéå°å«æå¹³å°"
+    },
+    {
+      "local_id": "REL-070",
+      "name": "REL-070",
+      "type": "allocate",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Allocations::Allocate",
+      "source": "IF-008",
+      "source_name": "å®å¨è®¤è¯ä¸å¯é¥æ¥å£",
+      "target": "BLK-014",
+      "target_name": "ç½ç»è¿è¥æ§å¶ä¸­å¿",
+      "documentation": "å®å¨è®¤è¯ä¸å¯é¥æ¥å£åéå°ç½ç»è¿è¥æ§å¶ä¸­å¿"
+    },
+    {
+      "local_id": "REL-071",
+      "name": "REL-071",
+      "type": "allocate",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Allocations::Allocate",
+      "source": "IF-008",
+      "source_name": "å®å¨è®¤è¯ä¸å¯é¥æ¥å£",
+      "target": "BLK-017",
+      "target_name": "å®½å¸¦ç¨æ·ç»ç«¯",
+      "documentation": "å®å¨è®¤è¯ä¸å¯é¥æ¥å£åéå°ç¨æ·ç»ç«¯"
+    },
+    {
+      "local_id": "REL-072",
+      "name": "REL-072",
+      "type": "allocate",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Allocations::Allocate",
+      "source": "IF-009",
+      "source_name": "MagicDraw Bridgeæ¥å£",
+      "target": "BLK-001",
+      "target_name": "ä½è½¨å®½å¸¦å«æäºèç½ç³»ç»",
+      "documentation": "Bridgeæ¥å£åéå°SysMLå·¥ç¨æ ¹æ¨¡å"
+    },
+    {
+      "local_id": "REL-073",
+      "name": "REL-073",
+      "type": "verify",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Verify",
+      "source": "CON-001",
+      "source_name": "æåº§è§æ¨¡çº¦æ",
+      "target": "REQ-003",
+      "target_name": "100é¢å«ææåº§è§æ¨¡",
+      "documentation": "æåº§è§æ¨¡çº¦æéªè¯100é¢å«æéæ±"
+    },
+    {
+      "local_id": "REL-074",
+      "name": "REL-074",
+      "type": "verify",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Verify",
+      "source": "CON-002",
+      "source_name": "è½¨éå£³å±ä¸è¦ççº¦æ",
+      "target": "REQ-004",
+      "target_name": "è½¨éè¦çä¸æå¡è¿ç»­æ§",
+      "documentation": "è½¨éå£³å±ä¸è¦ççº¦æéªè¯è¦çè¿ç»­æ§éæ±"
+    },
+    {
+      "local_id": "REL-075",
+      "name": "REL-075",
+      "type": "verify",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Verify",
+      "source": "CON-003",
+      "source_name": "å®¹éååçº¦æ",
+      "target": "REQ-005",
+      "target_name": "ç¨æ·é¾è·¯å®¹éä¸æå¡è´¨é",
+      "documentation": "å®¹éååçº¦æéªè¯ç¨æ·é¾è·¯å®¹ééæ±"
+    },
+    {
+      "local_id": "REL-076",
+      "name": "REL-076",
+      "type": "verify",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Verify",
+      "source": "CON-004",
+      "source_name": "ä¸å¡æ¶å»¶çº¦æ",
+      "target": "REQ-005",
+      "target_name": "ç¨æ·é¾è·¯å®¹éä¸æå¡è´¨é",
+      "documentation": "ä¸å¡æ¶å»¶çº¦æéªè¯QoSéæ±"
+    },
+    {
+      "local_id": "REL-077",
+      "name": "REL-077",
+      "type": "verify",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Verify",
+      "source": "CON-005",
+      "source_name": "é¾è·¯é¢ç®çº¦æ",
+      "target": "REQ-005",
+      "target_name": "ç¨æ·é¾è·¯å®¹éä¸æå¡è´¨é",
+      "documentation": "é¾è·¯é¢ç®çº¦æéªè¯ç¨æ·é¾è·¯è´¨ééæ±"
+    },
+    {
+      "local_id": "REL-078",
+      "name": "REL-078",
+      "type": "verify",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Verify",
+      "source": "CON-005",
+      "source_name": "é¾è·¯é¢ç®çº¦æ",
+      "target": "REQ-006",
+      "target_name": "é¦çµé¾è·¯ä¸ç½å³æ¥å¥",
+      "documentation": "é¾è·¯é¢ç®çº¦æéªè¯é¦çµé¾è·¯éæ±"
+    },
+    {
+      "local_id": "REL-079",
+      "name": "REL-079",
+      "type": "verify",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Verify",
+      "source": "CON-005",
+      "source_name": "é¾è·¯é¢ç®çº¦æ",
+      "target": "REQ-007",
+      "target_name": "æé´é¾è·¯ä¸ç©ºé´è·¯ç±",
+      "documentation": "é¾è·¯é¢ç®çº¦æéªè¯æé´é¾è·¯éæ±"
+    },
+    {
+      "local_id": "REL-080",
+      "name": "REL-080",
+      "type": "verify",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Verify",
+      "source": "CON-006",
+      "source_name": "ç½å³å¯è§ä¸åæ¢çº¦æ",
+      "target": "REQ-006",
+      "target_name": "é¦çµé¾è·¯ä¸ç½å³æ¥å¥",
+      "documentation": "ç½å³å¯è§ä¸åæ¢çº¦æéªè¯ç½å³æ¥å¥éæ±"
+    },
+    {
+      "local_id": "REL-081",
+      "name": "REL-081",
+      "type": "verify",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Verify",
+      "source": "CON-007",
+      "source_name": "å¯ç¨æ§å¯é æ§çº¦æ",
+      "target": "REQ-010",
+      "target_name": "é¥æµé¥æ§ä¸å¨è½¨è¿ç»´",
+      "documentation": "å¯ç¨æ§å¯é æ§çº¦æéªè¯å¨è½¨è¿ç»´éæ±"
+    },
+    {
+      "local_id": "REL-082",
+      "name": "REL-082",
+      "type": "verify",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Verify",
+      "source": "CON-007",
+      "source_name": "å¯ç¨æ§å¯é æ§çº¦æ",
+      "target": "REQ-011",
+      "target_name": "æéå¤ç½®ä¸å®å¨éç¦»",
+      "documentation": "å¯ç¨æ§å¯é æ§çº¦æéªè¯æéå¤ç½®éæ±"
+    },
+    {
+      "local_id": "REL-083",
+      "name": "REL-083",
+      "type": "verify",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Verify",
+      "source": "CON-008",
+      "source_name": "é¢è°±å®å¨åè§çº¦æ",
+      "target": "REQ-012",
+      "target_name": "ä¿¡æ¯å®å¨ä¸ä¸å¡éç¦»",
+      "documentation": "é¢è°±å®å¨åè§çº¦æéªè¯ä¿¡æ¯å®å¨éæ±"
+    },
+    {
+      "local_id": "REL-084",
+      "name": "REL-084",
+      "type": "verify",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Verify",
+      "source": "CON-008",
+      "source_name": "é¢è°±å®å¨åè§çº¦æ",
+      "target": "REQ-013",
+      "target_name": "é¢è°±åè§ä¸çµç£å¼å®¹",
+      "documentation": "é¢è°±å®å¨åè§çº¦æéªè¯é¢è°±åè§éæ±"
+    }
+  ],
+  "diagram_layout": {
+    "schema": "ai-mbse.diagram-layout.v1",
+    "diagram_name": "AI_MBSE_Trace_View",
+    "layout_source": "backend",
+    "width": 1660,
+    "height": 2357,
+    "nodes": [
+      {
+        "id": "ACT-001",
+        "element_id": "ACT-001",
+        "name": "æ»ä½éæ±æ¾æ¸ä¸åºçº¿ç¡®è®¤æµç¨",
+        "label": "ACT-001 - æ»ä½éæ±æ¾æ¸ä¸åºçº¿ç¡®è®¤æµç¨",
+        "type": "Activity",
+        "stereotype_label": "«activity»",
+        "shape": "rect",
+        "column": 0,
+        "row": 0,
+        "x": 70,
+        "y": 80,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "ACT-002",
+        "element_id": "ACT-002",
+        "name": "æåº§æåä¸è¦çåææµç¨",
+        "label": "ACT-002 - æåº§æåä¸è¦çåææµç¨",
+        "type": "Activity",
+        "stereotype_label": "«activity»",
+        "shape": "rect",
+        "column": 0,
+        "row": 1,
+        "x": 70,
+        "y": 205,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "ACT-003",
+        "element_id": "ACT-003",
+        "name": "é¾è·¯é¢ç®ä¸å®¹éæ ¡æ ¸æµç¨",
+        "label": "ACT-003 - é¾è·¯é¢ç®ä¸å®¹éæ ¡æ ¸æµç¨",
+        "type": "Activity",
+        "stereotype_label": "«activity»",
+        "shape": "rect",
+        "column": 0,
+        "row": 2,
+        "x": 70,
+        "y": 330,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "ACT-004",
+        "element_id": "ACT-004",
+        "name": "ç¨æ·æ¥å¥ä¸ä¼è¯å»ºç«æµç¨",
+        "label": "ACT-004 - ç¨æ·æ¥å¥ä¸ä¼è¯å»ºç«æµç¨",
+        "type": "Activity",
+        "stereotype_label": "«activity»",
+        "shape": "rect",
+        "column": 0,
+        "row": 3,
+        "x": 70,
+        "y": 455,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "ACT-005",
+        "element_id": "ACT-005",
+        "name": "æé´è·¯ç±ä¸åæ¢æµç¨",
+        "label": "ACT-005 - æé´è·¯ç±ä¸åæ¢æµç¨",
+        "type": "Activity",
+        "stereotype_label": "«activity»",
+        "shape": "rect",
+        "column": 0,
+        "row": 4,
+        "x": 70,
+        "y": 580,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "ACT-006",
+        "element_id": "ACT-006",
+        "name": "ç½å³éæ©ä¸é¦çµåä¼ æµç¨",
+        "label": "ACT-006 - ç½å³éæ©ä¸é¦çµåä¼ æµç¨",
+        "type": "Activity",
+        "stereotype_label": "«activity»",
+        "shape": "rect",
+        "column": 0,
+        "row": 5,
+        "x": 70,
+        "y": 705,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "ACT-007",
+        "element_id": "ACT-007",
+        "name": "ç½ç»èµæºè°åº¦æµç¨",
+        "label": "ACT-007 - ç½ç»èµæºè°åº¦æµç¨",
+        "type": "Activity",
+        "stereotype_label": "«activity»",
+        "shape": "rect",
+        "column": 0,
+        "row": 6,
+        "x": 70,
+        "y": 830,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "ACT-008",
+        "element_id": "ACT-008",
+        "name": "æéæ£æµéç¦»æ¢å¤æµç¨",
+        "label": "ACT-008 - æéæ£æµéç¦»æ¢å¤æµç¨",
+        "type": "Activity",
+        "stereotype_label": "«activity»",
+        "shape": "rect",
+        "column": 0,
+        "row": 7,
+        "x": 70,
+        "y": 955,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "ACT-009",
+        "element_id": "ACT-009",
+        "name": "MagicDrawå·¥ç¨åæ­¥æµç¨",
+        "label": "ACT-009 - MagicDrawå·¥ç¨åæ­¥æµç¨",
+        "type": "Activity",
+        "stereotype_label": "«activity»",
+        "shape": "rect",
+        "column": 0,
+        "row": 8,
+        "x": 70,
+        "y": 1080,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "BLK-001",
+        "element_id": "BLK-001",
+        "name": "ä½è½¨å®½å¸¦å«æäºèç½ç³»ç»",
+        "label": "BLK-001 - ä½è½¨å®½å¸¦å«æäºèç½ç³»ç»",
+        "type": "Block",
+        "stereotype_label": "«block»",
+        "shape": "rect",
+        "column": 1,
+        "row": 0,
+        "x": 330,
+        "y": 80,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "BLK-002",
+        "element_id": "BLK-002",
+        "name": "ç©ºé´æ®µ",
+        "label": "BLK-002 - ç©ºé´æ®µ",
+        "type": "Block",
+        "stereotype_label": "«block»",
+        "shape": "rect",
+        "column": 1,
+        "row": 1,
+        "x": 330,
+        "y": 205,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "BLK-003",
+        "element_id": "BLK-003",
+        "name": "100é¢ä½è½¨éä¿¡æåº§",
+        "label": "BLK-003 - 100é¢ä½è½¨éä¿¡æåº§",
+        "type": "Block",
+        "stereotype_label": "«block»",
+        "shape": "rect",
+        "column": 1,
+        "row": 2,
+        "x": 330,
+        "y": 330,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "BLK-004",
+        "element_id": "BLK-004",
+        "name": "è½¨éé¢ä¸æåº§æå",
+        "label": "BLK-004 - è½¨éé¢ä¸æåº§æå",
+        "type": "Block",
+        "stereotype_label": "«block»",
+        "shape": "rect",
+        "column": 1,
+        "row": 3,
+        "x": 330,
+        "y": 455,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "BLK-005",
+        "element_id": "BLK-005",
+        "name": "ä½è½¨éä¿¡å«æ",
+        "label": "BLK-005 - ä½è½¨éä¿¡å«æ",
+        "type": "Block",
+        "stereotype_label": "«block»",
+        "shape": "rect",
+        "column": 1,
+        "row": 4,
+        "x": 330,
+        "y": 580,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "BLK-006",
+        "element_id": "BLK-006",
+        "name": "å®½å¸¦éä¿¡è½½è·",
+        "label": "BLK-006 - å®½å¸¦éä¿¡è½½è·",
+        "type": "Block",
+        "stereotype_label": "«block»",
+        "shape": "rect",
+        "column": 1,
+        "row": 5,
+        "x": 330,
+        "y": 705,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "BLK-007",
+        "element_id": "BLK-007",
+        "name": "æä¸æ°å­å¤çå¨",
+        "label": "BLK-007 - æä¸æ°å­å¤çå¨",
+        "type": "Block",
+        "stereotype_label": "«block»",
+        "shape": "rect",
+        "column": 1,
+        "row": 6,
+        "x": 330,
+        "y": 830,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "BLK-008",
+        "element_id": "BLK-008",
+        "name": "ç¨æ·æå¡é¾è·¯å¤©çº¿",
+        "label": "BLK-008 - ç¨æ·æå¡é¾è·¯å¤©çº¿",
+        "type": "Block",
+        "stereotype_label": "«block»",
+        "shape": "rect",
+        "column": 1,
+        "row": 7,
+        "x": 330,
+        "y": 955,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "BLK-009",
+        "element_id": "BLK-009",
+        "name": "é¦çµé¾è·¯ç»ç«¯",
+        "label": "BLK-009 - é¦çµé¾è·¯ç»ç«¯",
+        "type": "Block",
+        "stereotype_label": "«block»",
+        "shape": "rect",
+        "column": 1,
+        "row": 8,
+        "x": 330,
+        "y": 1080,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "BLK-010",
+        "element_id": "BLK-010",
+        "name": "æé´é¾è·¯ç»ç«¯",
+        "label": "BLK-010 - æé´é¾è·¯ç»ç«¯",
+        "type": "Block",
+        "stereotype_label": "«block»",
+        "shape": "rect",
+        "column": 1,
+        "row": 9,
+        "x": 330,
+        "y": 1205,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "BLK-011",
+        "element_id": "BLK-011",
+        "name": "å«æå¹³å°ä¸æå¡åç³»ç»",
+        "label": "BLK-011 - å«æå¹³å°ä¸æå¡åç³»ç»",
+        "type": "Block",
+        "stereotype_label": "«block»",
+        "shape": "rect",
+        "column": 1,
+        "row": 10,
+        "x": 330,
+        "y": 1330,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "BLK-012",
+        "element_id": "BLK-012",
+        "name": "å°é¢æ®µ",
+        "label": "BLK-012 - å°é¢æ®µ",
+        "type": "Block",
+        "stereotype_label": "«block»",
+        "shape": "rect",
+        "column": 1,
+        "row": 11,
+        "x": 330,
+        "y": 1455,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "BLK-013",
+        "element_id": "BLK-013",
+        "name": "é¦çµç½å³ç«",
+        "label": "BLK-013 - é¦çµç½å³ç«",
+        "type": "Block",
+        "stereotype_label": "«block»",
+        "shape": "rect",
+        "column": 1,
+        "row": 12,
+        "x": 330,
+        "y": 1580,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "BLK-014",
+        "element_id": "BLK-014",
+        "name": "ç½ç»è¿è¥æ§å¶ä¸­å¿",
+        "label": "BLK-014 - ç½ç»è¿è¥æ§å¶ä¸­å¿",
+        "type": "Block",
+        "stereotype_label": "«block»",
+        "shape": "rect",
+        "column": 1,
+        "row": 13,
+        "x": 330,
+        "y": 1705,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "BLK-015",
+        "element_id": "BLK-015",
+        "name": "ä»»å¡è¿æ§ä¸­å¿",
+        "label": "BLK-015 - ä»»å¡è¿æ§ä¸­å¿",
+        "type": "Block",
+        "stereotype_label": "«block»",
+        "shape": "rect",
+        "column": 1,
+        "row": 14,
+        "x": 330,
+        "y": 1830,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "BLK-016",
+        "element_id": "BLK-016",
+        "name": "ç¨æ·æ®µ",
+        "label": "BLK-016 - ç¨æ·æ®µ",
+        "type": "Block",
+        "stereotype_label": "«block»",
+        "shape": "rect",
+        "column": 1,
+        "row": 15,
+        "x": 330,
+        "y": 1955,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "BLK-017",
+        "element_id": "BLK-017",
+        "name": "å®½å¸¦ç¨æ·ç»ç«¯",
+        "label": "BLK-017 - å®½å¸¦ç¨æ·ç»ç«¯",
+        "type": "Block",
+        "stereotype_label": "«block»",
+        "shape": "rect",
+        "column": 1,
+        "row": 16,
+        "x": 330,
+        "y": 2080,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "BLK-018",
+        "element_id": "BLK-018",
+        "name": "å¤é¨äºèç½ä¸æ ¸å¿ç½",
+        "label": "BLK-018 - å¤é¨äºèç½ä¸æ ¸å¿ç½",
+        "type": "Block",
+        "stereotype_label": "«block»",
+        "shape": "rect",
+        "column": 1,
+        "row": 17,
+        "x": 330,
+        "y": 2205,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "REQ-001",
+        "element_id": "REQ-001",
+        "name": "æåº§ä»»å¡ä¸æå¡ç®æ ",
+        "label": "REQ-001 - æåº§ä»»å¡ä¸æå¡ç®æ ",
+        "type": "Requirement",
+        "stereotype_label": "«requirement»",
+        "shape": "rect",
+        "column": 2,
+        "row": 0,
+        "x": 590,
+        "y": 80,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "REQ-002",
+        "element_id": "REQ-002",
+        "name": "ç³»ç»è¾¹çä¸å¤é¨åä¸æ¹",
+        "label": "REQ-002 - ç³»ç»è¾¹çä¸å¤é¨åä¸æ¹",
+        "type": "Requirement",
+        "stereotype_label": "«requirement»",
+        "shape": "rect",
+        "column": 2,
+        "row": 1,
+        "x": 590,
+        "y": 205,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "REQ-003",
+        "element_id": "REQ-003",
+        "name": "100é¢å«ææåº§è§æ¨¡",
+        "label": "REQ-003 - 100é¢å«ææåº§è§æ¨¡",
+        "type": "Requirement",
+        "stereotype_label": "«requirement»",
+        "shape": "rect",
+        "column": 2,
+        "row": 2,
+        "x": 590,
+        "y": 330,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "REQ-004",
+        "element_id": "REQ-004",
+        "name": "è½¨éè¦çä¸æå¡è¿ç»­æ§",
+        "label": "REQ-004 - è½¨éè¦çä¸æå¡è¿ç»­æ§",
+        "type": "Requirement",
+        "stereotype_label": "«requirement»",
+        "shape": "rect",
+        "column": 2,
+        "row": 3,
+        "x": 590,
+        "y": 455,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "REQ-005",
+        "element_id": "REQ-005",
+        "name": "ç¨æ·é¾è·¯å®¹éä¸æå¡è´¨é",
+        "label": "REQ-005 - ç¨æ·é¾è·¯å®¹éä¸æå¡è´¨é",
+        "type": "Requirement",
+        "stereotype_label": "«requirement»",
+        "shape": "rect",
+        "column": 2,
+        "row": 4,
+        "x": 590,
+        "y": 580,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "REQ-006",
+        "element_id": "REQ-006",
+        "name": "é¦çµé¾è·¯ä¸ç½å³æ¥å¥",
+        "label": "REQ-006 - é¦çµé¾è·¯ä¸ç½å³æ¥å¥",
+        "type": "Requirement",
+        "stereotype_label": "«requirement»",
+        "shape": "rect",
+        "column": 2,
+        "row": 5,
+        "x": 590,
+        "y": 705,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "REQ-007",
+        "element_id": "REQ-007",
+        "name": "æé´é¾è·¯ä¸ç©ºé´è·¯ç±",
+        "label": "REQ-007 - æé´é¾è·¯ä¸ç©ºé´è·¯ç±",
+        "type": "Requirement",
+        "stereotype_label": "«requirement»",
+        "shape": "rect",
+        "column": 2,
+        "row": 6,
+        "x": 590,
+        "y": 830,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "REQ-008",
+        "element_id": "REQ-008",
+        "name": "ç¨æ·ç»ç«¯æ¥å¥ä¸é´æ",
+        "label": "REQ-008 - ç¨æ·ç»ç«¯æ¥å¥ä¸é´æ",
+        "type": "Requirement",
+        "stereotype_label": "«requirement»",
+        "shape": "rect",
+        "column": 2,
+        "row": 7,
+        "x": 590,
+        "y": 955,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "REQ-009",
+        "element_id": "REQ-009",
+        "name": "ç½ç»ç®¡çä¸èµæºè°åº¦",
+        "label": "REQ-009 - ç½ç»ç®¡çä¸èµæºè°åº¦",
+        "type": "Requirement",
+        "stereotype_label": "«requirement»",
+        "shape": "rect",
+        "column": 2,
+        "row": 8,
+        "x": 590,
+        "y": 1080,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "REQ-010",
+        "element_id": "REQ-010",
+        "name": "é¥æµé¥æ§ä¸å¨è½¨è¿ç»´",
+        "label": "REQ-010 - é¥æµé¥æ§ä¸å¨è½¨è¿ç»´",
+        "type": "Requirement",
+        "stereotype_label": "«requirement»",
+        "shape": "rect",
+        "column": 2,
+        "row": 9,
+        "x": 590,
+        "y": 1205,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "REQ-011",
+        "element_id": "REQ-011",
+        "name": "æéå¤ç½®ä¸å®å¨éç¦»",
+        "label": "REQ-011 - æéå¤ç½®ä¸å®å¨éç¦»",
+        "type": "Requirement",
+        "stereotype_label": "«requirement»",
+        "shape": "rect",
+        "column": 2,
+        "row": 10,
+        "x": 590,
+        "y": 1330,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "REQ-012",
+        "element_id": "REQ-012",
+        "name": "ä¿¡æ¯å®å¨ä¸ä¸å¡éç¦»",
+        "label": "REQ-012 - ä¿¡æ¯å®å¨ä¸ä¸å¡éç¦»",
+        "type": "Requirement",
+        "stereotype_label": "«requirement»",
+        "shape": "rect",
+        "column": 2,
+        "row": 11,
+        "x": 590,
+        "y": 1455,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "REQ-013",
+        "element_id": "REQ-013",
+        "name": "é¢è°±åè§ä¸çµç£å¼å®¹",
+        "label": "REQ-013 - é¢è°±åè§ä¸çµç£å¼å®¹",
+        "type": "Requirement",
+        "stereotype_label": "«requirement»",
+        "shape": "rect",
+        "column": 2,
+        "row": 12,
+        "x": 590,
+        "y": 1580,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "REQ-014",
+        "element_id": "REQ-014",
+        "name": "æ¨¡åä¸è´æ§ä¸MagicDrawäº¤ä»",
+        "label": "REQ-014 - æ¨¡åä¸è´æ§ä¸MagicDrawäº¤ä»",
+        "type": "Requirement",
+        "stereotype_label": "«requirement»",
+        "shape": "rect",
+        "column": 2,
+        "row": 13,
+        "x": 590,
+        "y": 1705,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "UC-001",
+        "element_id": "UC-001",
+        "name": "å¼å¯¼æ»ä½éæ±æ¾æ¸",
+        "label": "UC-001 - å¼å¯¼æ»ä½éæ±æ¾æ¸",
+        "type": "UseCase",
+        "stereotype_label": "«use case»",
+        "shape": "ellipse",
+        "column": 3,
+        "row": 0,
+        "x": 850,
+        "y": 80,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "UC-002",
+        "element_id": "UC-002",
+        "name": "å¼å±æåº§è¦çä¸å®¹éè®¾è®¡",
+        "label": "UC-002 - å¼å±æåº§è¦çä¸å®¹éè®¾è®¡",
+        "type": "UseCase",
+        "stereotype_label": "«use case»",
+        "shape": "ellipse",
+        "column": 3,
+        "row": 1,
+        "x": 850,
+        "y": 205,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "UC-003",
+        "element_id": "UC-003",
+        "name": "å»ºç«ç¨æ·å®½å¸¦ä¼è¯",
+        "label": "UC-003 - å»ºç«ç¨æ·å®½å¸¦ä¼è¯",
+        "type": "UseCase",
+        "stereotype_label": "«use case»",
+        "shape": "ellipse",
+        "column": 3,
+        "row": 2,
+        "x": 850,
+        "y": 330,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "UC-004",
+        "element_id": "UC-004",
+        "name": "æ§è¡å«æåæ¢ä¸ä¸å¡ä¿æ",
+        "label": "UC-004 - æ§è¡å«æåæ¢ä¸ä¸å¡ä¿æ",
+        "type": "UseCase",
+        "stereotype_label": "«use case»",
+        "shape": "ellipse",
+        "column": 3,
+        "row": 3,
+        "x": 850,
+        "y": 455,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "UC-005",
+        "element_id": "UC-005",
+        "name": "å®æé¦çµåä¼ ä¸æ ¸å¿ç½äºè",
+        "label": "UC-005 - å®æé¦çµåä¼ ä¸æ ¸å¿ç½äºè",
+        "type": "UseCase",
+        "stereotype_label": "«use case»",
+        "shape": "ellipse",
+        "column": 3,
+        "row": 4,
+        "x": 850,
+        "y": 580,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "UC-006",
+        "element_id": "UC-006",
+        "name": "æ§è¡æé´è·¯ç±è½¬å",
+        "label": "UC-006 - æ§è¡æé´è·¯ç±è½¬å",
+        "type": "UseCase",
+        "stereotype_label": "«use case»",
+        "shape": "ellipse",
+        "column": 3,
+        "row": 5,
+        "x": 850,
+        "y": 705,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "UC-007",
+        "element_id": "UC-007",
+        "name": "è°åº¦æ³¢æé¢è°±ç½å³èµæº",
+        "label": "UC-007 - è°åº¦æ³¢æé¢è°±ç½å³èµæº",
+        "type": "UseCase",
+        "stereotype_label": "«use case»",
+        "shape": "ellipse",
+        "column": 3,
+        "row": 6,
+        "x": 850,
+        "y": 830,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "UC-008",
+        "element_id": "UC-008",
+        "name": "å¤ç½®æéåè­¦ä¸ç½ç»éæ",
+        "label": "UC-008 - å¤ç½®æéåè­¦ä¸ç½ç»éæ",
+        "type": "UseCase",
+        "stereotype_label": "«use case»",
+        "shape": "ellipse",
+        "column": 3,
+        "row": 7,
+        "x": 850,
+        "y": 955,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "UC-009",
+        "element_id": "UC-009",
+        "name": "åæ­¥MagicDrawå·¥ç¨",
+        "label": "UC-009 - åæ­¥MagicDrawå·¥ç¨",
+        "type": "UseCase",
+        "stereotype_label": "«use case»",
+        "shape": "ellipse",
+        "column": 3,
+        "row": 8,
+        "x": 850,
+        "y": 1080,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "IF-001",
+        "element_id": "IF-001",
+        "name": "ç¨æ·æå¡é¾è·¯æ¥å£",
+        "label": "IF-001 - ç¨æ·æå¡é¾è·¯æ¥å£",
+        "type": "Interface",
+        "stereotype_label": "«interface»",
+        "shape": "soft",
+        "column": 4,
+        "row": 0,
+        "x": 1110,
+        "y": 80,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "IF-002",
+        "element_id": "IF-002",
+        "name": "é¦çµé¾è·¯æ¥å£",
+        "label": "IF-002 - é¦çµé¾è·¯æ¥å£",
+        "type": "Interface",
+        "stereotype_label": "«interface»",
+        "shape": "soft",
+        "column": 4,
+        "row": 1,
+        "x": 1110,
+        "y": 205,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "IF-003",
+        "element_id": "IF-003",
+        "name": "æé´é¾è·¯æ¥å£",
+        "label": "IF-003 - æé´é¾è·¯æ¥å£",
+        "type": "Interface",
+        "stereotype_label": "«interface»",
+        "shape": "soft",
+        "column": 4,
+        "row": 2,
+        "x": 1110,
+        "y": 330,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "IF-004",
+        "element_id": "IF-004",
+        "name": "é¥æµé¥æ§æ¥å£",
+        "label": "IF-004 - é¥æµé¥æ§æ¥å£",
+        "type": "Interface",
+        "stereotype_label": "«interface»",
+        "shape": "soft",
+        "column": 4,
+        "row": 3,
+        "x": 1110,
+        "y": 455,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "IF-005",
+        "element_id": "IF-005",
+        "name": "ç½ç»ç®¡çååæ¥å£",
+        "label": "IF-005 - ç½ç»ç®¡çååæ¥å£",
+        "type": "Interface",
+        "stereotype_label": "«interface»",
+        "shape": "soft",
+        "column": 4,
+        "row": 4,
+        "x": 1110,
+        "y": 580,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "IF-006",
+        "element_id": "IF-006",
+        "name": "ç½å³æ ¸å¿ç½æ¥å£",
+        "label": "IF-006 - ç½å³æ ¸å¿ç½æ¥å£",
+        "type": "Interface",
+        "stereotype_label": "«interface»",
+        "shape": "soft",
+        "column": 4,
+        "row": 5,
+        "x": 1110,
+        "y": 705,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "IF-007",
+        "element_id": "IF-007",
+        "name": "æ¶é´é¢çä¸æåæ¥å£",
+        "label": "IF-007 - æ¶é´é¢çä¸æåæ¥å£",
+        "type": "Interface",
+        "stereotype_label": "«interface»",
+        "shape": "soft",
+        "column": 4,
+        "row": 6,
+        "x": 1110,
+        "y": 830,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "IF-008",
+        "element_id": "IF-008",
+        "name": "å®å¨è®¤è¯ä¸å¯é¥æ¥å£",
+        "label": "IF-008 - å®å¨è®¤è¯ä¸å¯é¥æ¥å£",
+        "type": "Interface",
+        "stereotype_label": "«interface»",
+        "shape": "soft",
+        "column": 4,
+        "row": 7,
+        "x": 1110,
+        "y": 955,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "IF-009",
+        "element_id": "IF-009",
+        "name": "MagicDraw Bridgeæ¥å£",
+        "label": "IF-009 - MagicDraw Bridgeæ¥å£",
+        "type": "Interface",
+        "stereotype_label": "«interface»",
+        "shape": "soft",
+        "column": 4,
+        "row": 8,
+        "x": 1110,
+        "y": 1080,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "CON-001",
+        "element_id": "CON-001",
+        "name": "æåº§è§æ¨¡çº¦æ",
+        "label": "CON-001 - æåº§è§æ¨¡çº¦æ",
+        "type": "ConstraintBlock",
+        "stereotype_label": "«constraint»",
+        "shape": "rect",
+        "column": 5,
+        "row": 0,
+        "x": 1370,
+        "y": 80,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "CON-002",
+        "element_id": "CON-002",
+        "name": "è½¨éå£³å±ä¸è¦ççº¦æ",
+        "label": "CON-002 - è½¨éå£³å±ä¸è¦ççº¦æ",
+        "type": "ConstraintBlock",
+        "stereotype_label": "«constraint»",
+        "shape": "rect",
+        "column": 5,
+        "row": 1,
+        "x": 1370,
+        "y": 205,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "CON-003",
+        "element_id": "CON-003",
+        "name": "å®¹éååçº¦æ",
+        "label": "CON-003 - å®¹éååçº¦æ",
+        "type": "ConstraintBlock",
+        "stereotype_label": "«constraint»",
+        "shape": "rect",
+        "column": 5,
+        "row": 2,
+        "x": 1370,
+        "y": 330,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "CON-004",
+        "element_id": "CON-004",
+        "name": "ä¸å¡æ¶å»¶çº¦æ",
+        "label": "CON-004 - ä¸å¡æ¶å»¶çº¦æ",
+        "type": "ConstraintBlock",
+        "stereotype_label": "«constraint»",
+        "shape": "rect",
+        "column": 5,
+        "row": 3,
+        "x": 1370,
+        "y": 455,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "CON-005",
+        "element_id": "CON-005",
+        "name": "é¾è·¯é¢ç®çº¦æ",
+        "label": "CON-005 - é¾è·¯é¢ç®çº¦æ",
+        "type": "ConstraintBlock",
+        "stereotype_label": "«constraint»",
+        "shape": "rect",
+        "column": 5,
+        "row": 4,
+        "x": 1370,
+        "y": 580,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "CON-006",
+        "element_id": "CON-006",
+        "name": "ç½å³å¯è§ä¸åæ¢çº¦æ",
+        "label": "CON-006 - ç½å³å¯è§ä¸åæ¢çº¦æ",
+        "type": "ConstraintBlock",
+        "stereotype_label": "«constraint»",
+        "shape": "rect",
+        "column": 5,
+        "row": 5,
+        "x": 1370,
+        "y": 705,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "CON-007",
+        "element_id": "CON-007",
+        "name": "å¯ç¨æ§å¯é æ§çº¦æ",
+        "label": "CON-007 - å¯ç¨æ§å¯é æ§çº¦æ",
+        "type": "ConstraintBlock",
+        "stereotype_label": "«constraint»",
+        "shape": "rect",
+        "column": 5,
+        "row": 6,
+        "x": 1370,
+        "y": 830,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "CON-008",
+        "element_id": "CON-008",
+        "name": "é¢è°±å®å¨åè§çº¦æ",
+        "label": "CON-008 - é¢è°±å®å¨åè§çº¦æ",
+        "type": "ConstraintBlock",
+        "stereotype_label": "«constraint»",
+        "shape": "rect",
+        "column": 5,
+        "row": 7,
+        "x": 1370,
+        "y": 955,
+        "width": 220,
+        "height": 72
+      }
+    ],
+    "edges": [
+      {
+        "id": "REL-001",
+        "relationship_id": "REL-001",
+        "source": "BLK-001",
+        "target": "BLK-002",
+        "type": "contains",
+        "label": "contains",
+        "points": [
+          {
+            "x": 426,
+            "y": 152
+          },
+          {
+            "x": 474,
+            "y": 152
+          },
+          {
+            "x": 406,
+            "y": 205
+          },
+          {
+            "x": 454,
+            "y": 205
+          }
+        ],
+        "label_x": 440,
+        "label_y": 172
+      },
+      {
+        "id": "REL-002",
+        "relationship_id": "REL-002",
+        "source": "BLK-001",
+        "target": "BLK-012",
+        "type": "contains",
+        "label": "contains",
+        "points": [
+          {
+            "x": 433,
+            "y": 152
+          },
+          {
+            "x": 481,
+            "y": 152
+          },
+          {
+            "x": 399,
+            "y": 1455
+          },
+          {
+            "x": 447,
+            "y": 1455
+          }
+        ],
+        "label_x": 440,
+        "label_y": 797
+      },
+      {
+        "id": "REL-003",
+        "relationship_id": "REL-003",
+        "source": "BLK-001",
+        "target": "BLK-016",
+        "type": "contains",
+        "label": "contains",
+        "points": [
+          {
+            "x": 440,
+            "y": 152
+          },
+          {
+            "x": 488,
+            "y": 152
+          },
+          {
+            "x": 392,
+            "y": 1955
+          },
+          {
+            "x": 440,
+            "y": 1955
+          }
+        ],
+        "label_x": 440,
+        "label_y": 1047
+      },
+      {
+        "id": "REL-004",
+        "relationship_id": "REL-004",
+        "source": "BLK-001",
+        "target": "BLK-018",
+        "type": "contains",
+        "label": "contains",
+        "points": [
+          {
+            "x": 447,
+            "y": 152
+          },
+          {
+            "x": 399,
+            "y": 152
+          },
+          {
+            "x": 481,
+            "y": 2205
+          },
+          {
+            "x": 433,
+            "y": 2205
+          }
+        ],
+        "label_x": 440,
+        "label_y": 1172
+      },
+      {
+        "id": "REL-005",
+        "relationship_id": "REL-005",
+        "source": "BLK-002",
+        "target": "BLK-003",
+        "type": "contains",
+        "label": "contains",
+        "points": [
+          {
+            "x": 454,
+            "y": 277
+          },
+          {
+            "x": 406,
+            "y": 277
+          },
+          {
+            "x": 474,
+            "y": 330
+          },
+          {
+            "x": 426,
+            "y": 330
+          }
+        ],
+        "label_x": 440,
+        "label_y": 297
+      },
+      {
+        "id": "REL-006",
+        "relationship_id": "REL-006",
+        "source": "BLK-003",
+        "target": "BLK-004",
+        "type": "contains",
+        "label": "contains",
+        "points": [
+          {
+            "x": 426,
+            "y": 402
+          },
+          {
+            "x": 474,
+            "y": 402
+          },
+          {
+            "x": 406,
+            "y": 455
+          },
+          {
+            "x": 454,
+            "y": 455
+          }
+        ],
+        "label_x": 440,
+        "label_y": 422
+      },
+      {
+        "id": "REL-007",
+        "relationship_id": "REL-007",
+        "source": "BLK-003",
+        "target": "BLK-005",
+        "type": "contains",
+        "label": "contains",
+        "points": [
+          {
+            "x": 433,
+            "y": 402
+          },
+          {
+            "x": 481,
+            "y": 402
+          },
+          {
+            "x": 399,
+            "y": 580
+          },
+          {
+            "x": 447,
+            "y": 580
+          }
+        ],
+        "label_x": 440,
+        "label_y": 485
+      },
+      {
+        "id": "REL-008",
+        "relationship_id": "REL-008",
+        "source": "BLK-005",
+        "target": "BLK-006",
+        "type": "contains",
+        "label": "contains",
+        "points": [
+          {
+            "x": 440,
+            "y": 652
+          },
+          {
+            "x": 488,
+            "y": 652
+          },
+          {
+            "x": 392,
+            "y": 705
+          },
+          {
+            "x": 440,
+            "y": 705
+          }
+        ],
+        "label_x": 440,
+        "label_y": 672
+      },
+      {
+        "id": "REL-009",
+        "relationship_id": "REL-009",
+        "source": "BLK-005",
+        "target": "BLK-007",
+        "type": "contains",
+        "label": "contains",
+        "points": [
+          {
+            "x": 447,
+            "y": 652
+          },
+          {
+            "x": 399,
+            "y": 652
+          },
+          {
+            "x": 481,
+            "y": 830
+          },
+          {
+            "x": 433,
+            "y": 830
+          }
+        ],
+        "label_x": 440,
+        "label_y": 735
+      },
+      {
+        "id": "REL-010",
+        "relationship_id": "REL-010",
+        "source": "BLK-005",
+        "target": "BLK-008",
+        "type": "contains",
+        "label": "contains",
+        "points": [
+          {
+            "x": 454,
+            "y": 652
+          },
+          {
+            "x": 406,
+            "y": 652
+          },
+          {
+            "x": 474,
+            "y": 955
+          },
+          {
+            "x": 426,
+            "y": 955
+          }
+        ],
+        "label_x": 440,
+        "label_y": 797
+      },
+      {
+        "id": "REL-011",
+        "relationship_id": "REL-011",
+        "source": "BLK-005",
+        "target": "BLK-009",
+        "type": "contains",
+        "label": "contains",
+        "points": [
+          {
+            "x": 426,
+            "y": 652
+          },
+          {
+            "x": 474,
+            "y": 652
+          },
+          {
+            "x": 406,
+            "y": 1080
+          },
+          {
+            "x": 454,
+            "y": 1080
+          }
+        ],
+        "label_x": 440,
+        "label_y": 860
+      },
+      {
+        "id": "REL-012",
+        "relationship_id": "REL-012",
+        "source": "BLK-005",
+        "target": "BLK-010",
+        "type": "contains",
+        "label": "contains",
+        "points": [
+          {
+            "x": 433,
+            "y": 652
+          },
+          {
+            "x": 481,
+            "y": 652
+          },
+          {
+            "x": 399,
+            "y": 1205
+          },
+          {
+            "x": 447,
+            "y": 1205
+          }
+        ],
+        "label_x": 440,
+        "label_y": 922
+      },
+      {
+        "id": "REL-013",
+        "relationship_id": "REL-013",
+        "source": "BLK-005",
+        "target": "BLK-011",
+        "type": "contains",
+        "label": "contains",
+        "points": [
+          {
+            "x": 440,
+            "y": 652
+          },
+          {
+            "x": 488,
+            "y": 652
+          },
+          {
+            "x": 392,
+            "y": 1330
+          },
+          {
+            "x": 440,
+            "y": 1330
+          }
+        ],
+        "label_x": 440,
+        "label_y": 985
+      },
+      {
+        "id": "REL-014",
+        "relationship_id": "REL-014",
+        "source": "BLK-012",
+        "target": "BLK-013",
+        "type": "contains",
+        "label": "contains",
+        "points": [
+          {
+            "x": 447,
+            "y": 1527
+          },
+          {
+            "x": 399,
+            "y": 1527
+          },
+          {
+            "x": 481,
+            "y": 1580
+          },
+          {
+            "x": 433,
+            "y": 1580
+          }
+        ],
+        "label_x": 440,
+        "label_y": 1547
+      },
+      {
+        "id": "REL-015",
+        "relationship_id": "REL-015",
+        "source": "BLK-012",
+        "target": "BLK-014",
+        "type": "contains",
+        "label": "contains",
+        "points": [
+          {
+            "x": 454,
+            "y": 1527
+          },
+          {
+            "x": 406,
+            "y": 1527
+          },
+          {
+            "x": 474,
+            "y": 1705
+          },
+          {
+            "x": 426,
+            "y": 1705
+          }
+        ],
+        "label_x": 440,
+        "label_y": 1610
+      },
+      {
+        "id": "REL-016",
+        "relationship_id": "REL-016",
+        "source": "BLK-012",
+        "target": "BLK-015",
+        "type": "contains",
+        "label": "contains",
+        "points": [
+          {
+            "x": 426,
+            "y": 1527
+          },
+          {
+            "x": 474,
+            "y": 1527
+          },
+          {
+            "x": 406,
+            "y": 1830
+          },
+          {
+            "x": 454,
+            "y": 1830
+          }
+        ],
+        "label_x": 440,
+        "label_y": 1672
+      },
+      {
+        "id": "REL-017",
+        "relationship_id": "REL-017",
+        "source": "BLK-016",
+        "target": "BLK-017",
+        "type": "contains",
+        "label": "contains",
+        "points": [
+          {
+            "x": 433,
+            "y": 2027
+          },
+          {
+            "x": 481,
+            "y": 2027
+          },
+          {
+            "x": 399,
+            "y": 2080
+          },
+          {
+            "x": 447,
+            "y": 2080
+          }
+        ],
+        "label_x": 440,
+        "label_y": 2047
+      },
+      {
+        "id": "REL-018",
+        "relationship_id": "REL-018",
+        "source": "BLK-001",
+        "target": "REQ-001",
+        "type": "satisfy",
+        "label": "satisfy",
+        "points": [
+          {
+            "x": 550,
+            "y": 116
+          },
+          {
+            "x": 598,
+            "y": 116
+          },
+          {
+            "x": 542,
+            "y": 116
+          },
+          {
+            "x": 590,
+            "y": 116
+          }
+        ],
+        "label_x": 570,
+        "label_y": 110
+      },
+      {
+        "id": "REL-019",
+        "relationship_id": "REL-019",
+        "source": "BLK-001",
+        "target": "REQ-002",
+        "type": "satisfy",
+        "label": "satisfy",
+        "points": [
+          {
+            "x": 550,
+            "y": 123
+          },
+          {
+            "x": 598,
+            "y": 123
+          },
+          {
+            "x": 542,
+            "y": 234
+          },
+          {
+            "x": 590,
+            "y": 234
+          }
+        ],
+        "label_x": 570,
+        "label_y": 172
+      },
+      {
+        "id": "REL-020",
+        "relationship_id": "REL-020",
+        "source": "BLK-003",
+        "target": "REQ-003",
+        "type": "satisfy",
+        "label": "satisfy",
+        "points": [
+          {
+            "x": 550,
+            "y": 380
+          },
+          {
+            "x": 598,
+            "y": 380
+          },
+          {
+            "x": 542,
+            "y": 352
+          },
+          {
+            "x": 590,
+            "y": 352
+          }
+        ],
+        "label_x": 570,
+        "label_y": 360
+      },
+      {
+        "id": "REL-021",
+        "relationship_id": "REL-021",
+        "source": "BLK-004",
+        "target": "REQ-004",
+        "type": "satisfy",
+        "label": "satisfy",
+        "points": [
+          {
+            "x": 550,
+            "y": 477
+          },
+          {
+            "x": 598,
+            "y": 477
+          },
+          {
+            "x": 542,
+            "y": 505
+          },
+          {
+            "x": 590,
+            "y": 505
+          }
+        ],
+        "label_x": 570,
+        "label_y": 485
+      },
+      {
+        "id": "REL-022",
+        "relationship_id": "REL-022",
+        "source": "BLK-006",
+        "target": "REQ-005",
+        "type": "satisfy",
+        "label": "satisfy",
+        "points": [
+          {
+            "x": 550,
+            "y": 734
+          },
+          {
+            "x": 598,
+            "y": 734
+          },
+          {
+            "x": 542,
+            "y": 623
+          },
+          {
+            "x": 590,
+            "y": 623
+          }
+        ],
+        "label_x": 570,
+        "label_y": 672
+      },
+      {
+        "id": "REL-023",
+        "relationship_id": "REL-023",
+        "source": "BLK-013",
+        "target": "REQ-006",
+        "type": "satisfy",
+        "label": "satisfy",
+        "points": [
+          {
+            "x": 550,
+            "y": 1616
+          },
+          {
+            "x": 598,
+            "y": 1616
+          },
+          {
+            "x": 542,
+            "y": 741
+          },
+          {
+            "x": 590,
+            "y": 741
+          }
+        ],
+        "label_x": 570,
+        "label_y": 1172
+      },
+      {
+        "id": "REL-024",
+        "relationship_id": "REL-024",
+        "source": "BLK-010",
+        "target": "REQ-007",
+        "type": "satisfy",
+        "label": "satisfy",
+        "points": [
+          {
+            "x": 550,
+            "y": 1248
+          },
+          {
+            "x": 598,
+            "y": 1248
+          },
+          {
+            "x": 542,
+            "y": 859
+          },
+          {
+            "x": 590,
+            "y": 859
+          }
+        ],
+        "label_x": 570,
+        "label_y": 1047
+      },
+      {
+        "id": "REL-025",
+        "relationship_id": "REL-025",
+        "source": "BLK-017",
+        "target": "REQ-008",
+        "type": "satisfy",
+        "label": "satisfy",
+        "points": [
+          {
+            "x": 550,
+            "y": 2130
+          },
+          {
+            "x": 598,
+            "y": 2130
+          },
+          {
+            "x": 542,
+            "y": 977
+          },
+          {
+            "x": 590,
+            "y": 977
+          }
+        ],
+        "label_x": 570,
+        "label_y": 1547
+      },
+      {
+        "id": "REL-026",
+        "relationship_id": "REL-026",
+        "source": "BLK-014",
+        "target": "REQ-009",
+        "type": "satisfy",
+        "label": "satisfy",
+        "points": [
+          {
+            "x": 550,
+            "y": 1727
+          },
+          {
+            "x": 598,
+            "y": 1727
+          },
+          {
+            "x": 542,
+            "y": 1130
+          },
+          {
+            "x": 590,
+            "y": 1130
+          }
+        ],
+        "label_x": 570,
+        "label_y": 1422
+      },
+      {
+        "id": "REL-027",
+        "relationship_id": "REL-027",
+        "source": "BLK-015",
+        "target": "REQ-010",
+        "type": "satisfy",
+        "label": "satisfy",
+        "points": [
+          {
+            "x": 550,
+            "y": 1859
+          },
+          {
+            "x": 598,
+            "y": 1859
+          },
+          {
+            "x": 542,
+            "y": 1248
+          },
+          {
+            "x": 590,
+            "y": 1248
+          }
+        ],
+        "label_x": 570,
+        "label_y": 1547
+      },
+      {
+        "id": "REL-028",
+        "relationship_id": "REL-028",
+        "source": "BLK-015",
+        "target": "REQ-011",
+        "type": "satisfy",
+        "label": "satisfy",
+        "points": [
+          {
+            "x": 550,
+            "y": 1866
+          },
+          {
+            "x": 598,
+            "y": 1866
+          },
+          {
+            "x": 542,
+            "y": 1366
+          },
+          {
+            "x": 590,
+            "y": 1366
+          }
+        ],
+        "label_x": 570,
+        "label_y": 1610
+      },
+      {
+        "id": "REL-029",
+        "relationship_id": "REL-029",
+        "source": "BLK-014",
+        "target": "REQ-012",
+        "type": "satisfy",
+        "label": "satisfy",
+        "points": [
+          {
+            "x": 550,
+            "y": 1748
+          },
+          {
+            "x": 598,
+            "y": 1748
+          },
+          {
+            "x": 542,
+            "y": 1484
+          },
+          {
+            "x": 590,
+            "y": 1484
+          }
+        ],
+        "label_x": 570,
+        "label_y": 1610
+      },
+      {
+        "id": "REL-030",
+        "relationship_id": "REL-030",
+        "source": "BLK-006",
+        "target": "REQ-013",
+        "type": "satisfy",
+        "label": "satisfy",
+        "points": [
+          {
+            "x": 550,
+            "y": 755
+          },
+          {
+            "x": 598,
+            "y": 755
+          },
+          {
+            "x": 542,
+            "y": 1602
+          },
+          {
+            "x": 590,
+            "y": 1602
+          }
+        ],
+        "label_x": 570,
+        "label_y": 1172
+      },
+      {
+        "id": "REL-031",
+        "relationship_id": "REL-031",
+        "source": "IF-009",
+        "target": "REQ-014",
+        "type": "satisfy",
+        "label": "satisfy",
+        "points": [
+          {
+            "x": 1110,
+            "y": 1102
+          },
+          {
+            "x": 984,
+            "y": 1102
+          },
+          {
+            "x": 936,
+            "y": 1755
+          },
+          {
+            "x": 810,
+            "y": 1755
+          }
+        ],
+        "label_x": 960,
+        "label_y": 1422
+      },
+      {
+        "id": "REL-032",
+        "relationship_id": "REL-032",
+        "source": "REQ-001",
+        "target": "UC-001",
+        "type": "trace",
+        "label": "trace",
+        "points": [
+          {
+            "x": 810,
+            "y": 109
+          },
+          {
+            "x": 858,
+            "y": 109
+          },
+          {
+            "x": 802,
+            "y": 123
+          },
+          {
+            "x": 850,
+            "y": 123
+          }
+        ],
+        "label_x": 830,
+        "label_y": 110
+      },
+      {
+        "id": "REL-033",
+        "relationship_id": "REL-033",
+        "source": "REQ-002",
+        "target": "UC-001",
+        "type": "trace",
+        "label": "trace",
+        "points": [
+          {
+            "x": 810,
+            "y": 241
+          },
+          {
+            "x": 858,
+            "y": 241
+          },
+          {
+            "x": 802,
+            "y": 116
+          },
+          {
+            "x": 850,
+            "y": 116
+          }
+        ],
+        "label_x": 830,
+        "label_y": 172
+      },
+      {
+        "id": "REL-034",
+        "relationship_id": "REL-034",
+        "source": "REQ-003",
+        "target": "UC-002",
+        "type": "trace",
+        "label": "trace",
+        "points": [
+          {
+            "x": 810,
+            "y": 373
+          },
+          {
+            "x": 858,
+            "y": 373
+          },
+          {
+            "x": 802,
+            "y": 234
+          },
+          {
+            "x": 850,
+            "y": 234
+          }
+        ],
+        "label_x": 830,
+        "label_y": 297
+      },
+      {
+        "id": "REL-035",
+        "relationship_id": "REL-035",
+        "source": "REQ-004",
+        "target": "UC-002",
+        "type": "trace",
+        "label": "trace",
+        "points": [
+          {
+            "x": 810,
+            "y": 505
+          },
+          {
+            "x": 858,
+            "y": 505
+          },
+          {
+            "x": 802,
+            "y": 227
+          },
+          {
+            "x": 850,
+            "y": 227
+          }
+        ],
+        "label_x": 830,
+        "label_y": 360
+      },
+      {
+        "id": "REL-036",
+        "relationship_id": "REL-036",
+        "source": "REQ-005",
+        "target": "UC-003",
+        "type": "trace",
+        "label": "trace",
+        "points": [
+          {
+            "x": 810,
+            "y": 602
+          },
+          {
+            "x": 858,
+            "y": 602
+          },
+          {
+            "x": 802,
+            "y": 380
+          },
+          {
+            "x": 850,
+            "y": 380
+          }
+        ],
+        "label_x": 830,
+        "label_y": 485
+      },
+      {
+        "id": "REL-037",
+        "relationship_id": "REL-037",
+        "source": "REQ-005",
+        "target": "UC-004",
+        "type": "trace",
+        "label": "trace",
+        "points": [
+          {
+            "x": 810,
+            "y": 609
+          },
+          {
+            "x": 858,
+            "y": 609
+          },
+          {
+            "x": 802,
+            "y": 498
+          },
+          {
+            "x": 850,
+            "y": 498
+          }
+        ],
+        "label_x": 830,
+        "label_y": 547
+      },
+      {
+        "id": "REL-038",
+        "relationship_id": "REL-038",
+        "source": "REQ-006",
+        "target": "UC-005",
+        "type": "trace",
+        "label": "trace",
+        "points": [
+          {
+            "x": 810,
+            "y": 741
+          },
+          {
+            "x": 858,
+            "y": 741
+          },
+          {
+            "x": 802,
+            "y": 616
+          },
+          {
+            "x": 850,
+            "y": 616
+          }
+        ],
+        "label_x": 830,
+        "label_y": 672
+      },
+      {
+        "id": "REL-039",
+        "relationship_id": "REL-039",
+        "source": "REQ-007",
+        "target": "UC-006",
+        "type": "trace",
+        "label": "trace",
+        "points": [
+          {
+            "x": 810,
+            "y": 873
+          },
+          {
+            "x": 858,
+            "y": 873
+          },
+          {
+            "x": 802,
+            "y": 734
+          },
+          {
+            "x": 850,
+            "y": 734
+          }
+        ],
+        "label_x": 830,
+        "label_y": 797
+      },
+      {
+        "id": "REL-040",
+        "relationship_id": "REL-040",
+        "source": "REQ-008",
+        "target": "UC-003",
+        "type": "trace",
+        "label": "trace",
+        "points": [
+          {
+            "x": 810,
+            "y": 1005
+          },
+          {
+            "x": 858,
+            "y": 1005
+          },
+          {
+            "x": 802,
+            "y": 352
+          },
+          {
+            "x": 850,
+            "y": 352
+          }
+        ],
+        "label_x": 830,
+        "label_y": 672
+      },
+      {
+        "id": "REL-041",
+        "relationship_id": "REL-041",
+        "source": "REQ-009",
+        "target": "UC-007",
+        "type": "trace",
+        "label": "trace",
+        "points": [
+          {
+            "x": 810,
+            "y": 1102
+          },
+          {
+            "x": 858,
+            "y": 1102
+          },
+          {
+            "x": 802,
+            "y": 880
+          },
+          {
+            "x": 850,
+            "y": 880
+          }
+        ],
+        "label_x": 830,
+        "label_y": 985
+      },
+      {
+        "id": "REL-042",
+        "relationship_id": "REL-042",
+        "source": "REQ-010",
+        "target": "UC-008",
+        "type": "trace",
+        "label": "trace",
+        "points": [
+          {
+            "x": 810,
+            "y": 1234
+          },
+          {
+            "x": 858,
+            "y": 1234
+          },
+          {
+            "x": 802,
+            "y": 998
+          },
+          {
+            "x": 850,
+            "y": 998
+          }
+        ],
+        "label_x": 830,
+        "label_y": 1110
+      },
+      {
+        "id": "REL-043",
+        "relationship_id": "REL-043",
+        "source": "REQ-011",
+        "target": "UC-008",
+        "type": "trace",
+        "label": "trace",
+        "points": [
+          {
+            "x": 810,
+            "y": 1366
+          },
+          {
+            "x": 858,
+            "y": 1366
+          },
+          {
+            "x": 802,
+            "y": 991
+          },
+          {
+            "x": 850,
+            "y": 991
+          }
+        ],
+        "label_x": 830,
+        "label_y": 1172
+      },
+      {
+        "id": "REL-044",
+        "relationship_id": "REL-044",
+        "source": "REQ-012",
+        "target": "UC-007",
+        "type": "trace",
+        "label": "trace",
+        "points": [
+          {
+            "x": 810,
+            "y": 1498
+          },
+          {
+            "x": 858,
+            "y": 1498
+          },
+          {
+            "x": 802,
+            "y": 859
+          },
+          {
+            "x": 850,
+            "y": 859
+          }
+        ],
+        "label_x": 830,
+        "label_y": 1172
+      },
+      {
+        "id": "REL-045",
+        "relationship_id": "REL-045",
+        "source": "REQ-013",
+        "target": "UC-002",
+        "type": "trace",
+        "label": "trace",
+        "points": [
+          {
+            "x": 810,
+            "y": 1630
+          },
+          {
+            "x": 858,
+            "y": 1630
+          },
+          {
+            "x": 802,
+            "y": 227
+          },
+          {
+            "x": 850,
+            "y": 227
+          }
+        ],
+        "label_x": 830,
+        "label_y": 922
+      },
+      {
+        "id": "REL-046",
+        "relationship_id": "REL-046",
+        "source": "REQ-014",
+        "target": "UC-009",
+        "type": "trace",
+        "label": "trace",
+        "points": [
+          {
+            "x": 810,
+            "y": 1727
+          },
+          {
+            "x": 858,
+            "y": 1727
+          },
+          {
+            "x": 802,
+            "y": 1130
+          },
+          {
+            "x": 850,
+            "y": 1130
+          }
+        ],
+        "label_x": 830,
+        "label_y": 1422
+      },
+      {
+        "id": "REL-047",
+        "relationship_id": "REL-047",
+        "source": "UC-001",
+        "target": "ACT-001",
+        "type": "refine",
+        "label": "refine",
+        "points": [
+          {
+            "x": 850,
+            "y": 109
+          },
+          {
+            "x": 615,
+            "y": 109
+          },
+          {
+            "x": 525,
+            "y": 123
+          },
+          {
+            "x": 290,
+            "y": 123
+          }
+        ],
+        "label_x": 570,
+        "label_y": 110
+      },
+      {
+        "id": "REL-048",
+        "relationship_id": "REL-048",
+        "source": "UC-002",
+        "target": "ACT-002",
+        "type": "refine",
+        "label": "refine",
+        "points": [
+          {
+            "x": 850,
+            "y": 241
+          },
+          {
+            "x": 615,
+            "y": 241
+          },
+          {
+            "x": 525,
+            "y": 241
+          },
+          {
+            "x": 290,
+            "y": 241
+          }
+        ],
+        "label_x": 570,
+        "label_y": 235
+      },
+      {
+        "id": "REL-049",
+        "relationship_id": "REL-049",
+        "source": "UC-002",
+        "target": "ACT-003",
+        "type": "refine",
+        "label": "refine",
+        "points": [
+          {
+            "x": 850,
+            "y": 248
+          },
+          {
+            "x": 615,
+            "y": 248
+          },
+          {
+            "x": 525,
+            "y": 359
+          },
+          {
+            "x": 290,
+            "y": 359
+          }
+        ],
+        "label_x": 570,
+        "label_y": 297
+      },
+      {
+        "id": "REL-050",
+        "relationship_id": "REL-050",
+        "source": "UC-003",
+        "target": "ACT-004",
+        "type": "refine",
+        "label": "refine",
+        "points": [
+          {
+            "x": 850,
+            "y": 380
+          },
+          {
+            "x": 615,
+            "y": 380
+          },
+          {
+            "x": 525,
+            "y": 477
+          },
+          {
+            "x": 290,
+            "y": 477
+          }
+        ],
+        "label_x": 570,
+        "label_y": 422
+      },
+      {
+        "id": "REL-051",
+        "relationship_id": "REL-051",
+        "source": "UC-004",
+        "target": "ACT-005",
+        "type": "refine",
+        "label": "refine",
+        "points": [
+          {
+            "x": 850,
+            "y": 477
+          },
+          {
+            "x": 615,
+            "y": 477
+          },
+          {
+            "x": 525,
+            "y": 630
+          },
+          {
+            "x": 290,
+            "y": 630
+          }
+        ],
+        "label_x": 570,
+        "label_y": 547
+      },
+      {
+        "id": "REL-052",
+        "relationship_id": "REL-052",
+        "source": "UC-005",
+        "target": "ACT-006",
+        "type": "refine",
+        "label": "refine",
+        "points": [
+          {
+            "x": 850,
+            "y": 609
+          },
+          {
+            "x": 615,
+            "y": 609
+          },
+          {
+            "x": 525,
+            "y": 748
+          },
+          {
+            "x": 290,
+            "y": 748
+          }
+        ],
+        "label_x": 570,
+        "label_y": 672
+      },
+      {
+        "id": "REL-053",
+        "relationship_id": "REL-053",
+        "source": "UC-006",
+        "target": "ACT-005",
+        "type": "refine",
+        "label": "refine",
+        "points": [
+          {
+            "x": 850,
+            "y": 741
+          },
+          {
+            "x": 615,
+            "y": 741
+          },
+          {
+            "x": 525,
+            "y": 616
+          },
+          {
+            "x": 290,
+            "y": 616
+          }
+        ],
+        "label_x": 570,
+        "label_y": 672
+      },
+      {
+        "id": "REL-054",
+        "relationship_id": "REL-054",
+        "source": "UC-007",
+        "target": "ACT-007",
+        "type": "refine",
+        "label": "refine",
+        "points": [
+          {
+            "x": 850,
+            "y": 873
+          },
+          {
+            "x": 615,
+            "y": 873
+          },
+          {
+            "x": 525,
+            "y": 859
+          },
+          {
+            "x": 290,
+            "y": 859
+          }
+        ],
+        "label_x": 570,
+        "label_y": 860
+      },
+      {
+        "id": "REL-055",
+        "relationship_id": "REL-055",
+        "source": "UC-008",
+        "target": "ACT-008",
+        "type": "refine",
+        "label": "refine",
+        "points": [
+          {
+            "x": 850,
+            "y": 1005
+          },
+          {
+            "x": 615,
+            "y": 1005
+          },
+          {
+            "x": 525,
+            "y": 977
+          },
+          {
+            "x": 290,
+            "y": 977
+          }
+        ],
+        "label_x": 570,
+        "label_y": 985
+      },
+      {
+        "id": "REL-056",
+        "relationship_id": "REL-056",
+        "source": "UC-009",
+        "target": "ACT-009",
+        "type": "refine",
+        "label": "refine",
+        "points": [
+          {
+            "x": 850,
+            "y": 1102
+          },
+          {
+            "x": 615,
+            "y": 1102
+          },
+          {
+            "x": 525,
+            "y": 1130
+          },
+          {
+            "x": 290,
+            "y": 1130
+          }
+        ],
+        "label_x": 570,
+        "label_y": 1110
+      },
+      {
+        "id": "REL-057",
+        "relationship_id": "REL-057",
+        "source": "IF-001",
+        "target": "BLK-008",
+        "type": "allocate",
+        "label": "allocate",
+        "points": [
+          {
+            "x": 1110,
+            "y": 109
+          },
+          {
+            "x": 875,
+            "y": 109
+          },
+          {
+            "x": 785,
+            "y": 998
+          },
+          {
+            "x": 550,
+            "y": 998
+          }
+        ],
+        "label_x": 830,
+        "label_y": 547
+      },
+      {
+        "id": "REL-058",
+        "relationship_id": "REL-058",
+        "source": "IF-001",
+        "target": "BLK-017",
+        "type": "allocate",
+        "label": "allocate",
+        "points": [
+          {
+            "x": 1110,
+            "y": 116
+          },
+          {
+            "x": 875,
+            "y": 116
+          },
+          {
+            "x": 785,
+            "y": 2116
+          },
+          {
+            "x": 550,
+            "y": 2116
+          }
+        ],
+        "label_x": 830,
+        "label_y": 1110
+      },
+      {
+        "id": "REL-059",
+        "relationship_id": "REL-059",
+        "source": "IF-002",
+        "target": "BLK-009",
+        "type": "allocate",
+        "label": "allocate",
+        "points": [
+          {
+            "x": 1110,
+            "y": 248
+          },
+          {
+            "x": 875,
+            "y": 248
+          },
+          {
+            "x": 785,
+            "y": 1109
+          },
+          {
+            "x": 550,
+            "y": 1109
+          }
+        ],
+        "label_x": 830,
+        "label_y": 672
+      },
+      {
+        "id": "REL-060",
+        "relationship_id": "REL-060",
+        "source": "IF-002",
+        "target": "BLK-013",
+        "type": "allocate",
+        "label": "allocate",
+        "points": [
+          {
+            "x": 1110,
+            "y": 255
+          },
+          {
+            "x": 875,
+            "y": 255
+          },
+          {
+            "x": 785,
+            "y": 1602
+          },
+          {
+            "x": 550,
+            "y": 1602
+          }
+        ],
+        "label_x": 830,
+        "label_y": 922
+      },
+      {
+        "id": "REL-061",
+        "relationship_id": "REL-061",
+        "source": "IF-003",
+        "target": "BLK-010",
+        "type": "allocate",
+        "label": "allocate",
+        "points": [
+          {
+            "x": 1110,
+            "y": 352
+          },
+          {
+            "x": 875,
+            "y": 352
+          },
+          {
+            "x": 785,
+            "y": 1255
+          },
+          {
+            "x": 550,
+            "y": 1255
+          }
+        ],
+        "label_x": 830,
+        "label_y": 797
+      },
+      {
+        "id": "REL-062",
+        "relationship_id": "REL-062",
+        "source": "IF-004",
+        "target": "BLK-011",
+        "type": "allocate",
+        "label": "allocate",
+        "points": [
+          {
+            "x": 1110,
+            "y": 484
+          },
+          {
+            "x": 875,
+            "y": 484
+          },
+          {
+            "x": 785,
+            "y": 1373
+          },
+          {
+            "x": 550,
+            "y": 1373
+          }
+        ],
+        "label_x": 830,
+        "label_y": 922
+      },
+      {
+        "id": "REL-063",
+        "relationship_id": "REL-063",
+        "source": "IF-004",
+        "target": "BLK-015",
+        "type": "allocate",
+        "label": "allocate",
+        "points": [
+          {
+            "x": 1110,
+            "y": 491
+          },
+          {
+            "x": 875,
+            "y": 491
+          },
+          {
+            "x": 785,
+            "y": 1866
+          },
+          {
+            "x": 550,
+            "y": 1866
+          }
+        ],
+        "label_x": 830,
+        "label_y": 1172
+      },
+      {
+        "id": "REL-064",
+        "relationship_id": "REL-064",
+        "source": "IF-005",
+        "target": "BLK-014",
+        "type": "allocate",
+        "label": "allocate",
+        "points": [
+          {
+            "x": 1110,
+            "y": 623
+          },
+          {
+            "x": 875,
+            "y": 623
+          },
+          {
+            "x": 785,
+            "y": 1734
+          },
+          {
+            "x": 550,
+            "y": 1734
+          }
+        ],
+        "label_x": 830,
+        "label_y": 1172
+      },
+      {
+        "id": "REL-065",
+        "relationship_id": "REL-065",
+        "source": "IF-005",
+        "target": "BLK-006",
+        "type": "allocate",
+        "label": "allocate",
+        "points": [
+          {
+            "x": 1110,
+            "y": 630
+          },
+          {
+            "x": 875,
+            "y": 630
+          },
+          {
+            "x": 785,
+            "y": 727
+          },
+          {
+            "x": 550,
+            "y": 727
+          }
+        ],
+        "label_x": 830,
+        "label_y": 672
+      },
+      {
+        "id": "REL-066",
+        "relationship_id": "REL-066",
+        "source": "IF-006",
+        "target": "BLK-013",
+        "type": "allocate",
+        "label": "allocate",
+        "points": [
+          {
+            "x": 1110,
+            "y": 727
+          },
+          {
+            "x": 875,
+            "y": 727
+          },
+          {
+            "x": 785,
+            "y": 1630
+          },
+          {
+            "x": 550,
+            "y": 1630
+          }
+        ],
+        "label_x": 830,
+        "label_y": 1172
+      },
+      {
+        "id": "REL-067",
+        "relationship_id": "REL-067",
+        "source": "IF-006",
+        "target": "BLK-018",
+        "type": "allocate",
+        "label": "allocate",
+        "points": [
+          {
+            "x": 1110,
+            "y": 734
+          },
+          {
+            "x": 875,
+            "y": 734
+          },
+          {
+            "x": 785,
+            "y": 2248
+          },
+          {
+            "x": 550,
+            "y": 2248
+          }
+        ],
+        "label_x": 830,
+        "label_y": 1485
+      },
+      {
+        "id": "REL-068",
+        "relationship_id": "REL-068",
+        "source": "IF-007",
+        "target": "BLK-015",
+        "type": "allocate",
+        "label": "allocate",
+        "points": [
+          {
+            "x": 1110,
+            "y": 866
+          },
+          {
+            "x": 875,
+            "y": 866
+          },
+          {
+            "x": 785,
+            "y": 1866
+          },
+          {
+            "x": 550,
+            "y": 1866
+          }
+        ],
+        "label_x": 830,
+        "label_y": 1360
+      },
+      {
+        "id": "REL-069",
+        "relationship_id": "REL-069",
+        "source": "IF-007",
+        "target": "BLK-011",
+        "type": "allocate",
+        "label": "allocate",
+        "points": [
+          {
+            "x": 1110,
+            "y": 873
+          },
+          {
+            "x": 875,
+            "y": 873
+          },
+          {
+            "x": 785,
+            "y": 1359
+          },
+          {
+            "x": 550,
+            "y": 1359
+          }
+        ],
+        "label_x": 830,
+        "label_y": 1110
+      },
+      {
+        "id": "REL-070",
+        "relationship_id": "REL-070",
+        "source": "IF-008",
+        "target": "BLK-014",
+        "type": "allocate",
+        "label": "allocate",
+        "points": [
+          {
+            "x": 1110,
+            "y": 1005
+          },
+          {
+            "x": 875,
+            "y": 1005
+          },
+          {
+            "x": 785,
+            "y": 1727
+          },
+          {
+            "x": 550,
+            "y": 1727
+          }
+        ],
+        "label_x": 830,
+        "label_y": 1360
+      },
+      {
+        "id": "REL-071",
+        "relationship_id": "REL-071",
+        "source": "IF-008",
+        "target": "BLK-017",
+        "type": "allocate",
+        "label": "allocate",
+        "points": [
+          {
+            "x": 1110,
+            "y": 977
+          },
+          {
+            "x": 875,
+            "y": 977
+          },
+          {
+            "x": 785,
+            "y": 2130
+          },
+          {
+            "x": 550,
+            "y": 2130
+          }
+        ],
+        "label_x": 830,
+        "label_y": 1547
+      },
+      {
+        "id": "REL-072",
+        "relationship_id": "REL-072",
+        "source": "IF-009",
+        "target": "BLK-001",
+        "type": "allocate",
+        "label": "allocate",
+        "points": [
+          {
+            "x": 1110,
+            "y": 1109
+          },
+          {
+            "x": 875,
+            "y": 1109
+          },
+          {
+            "x": 785,
+            "y": 123
+          },
+          {
+            "x": 550,
+            "y": 123
+          }
+        ],
+        "label_x": 830,
+        "label_y": 610
+      },
+      {
+        "id": "REL-073",
+        "relationship_id": "REL-073",
+        "source": "CON-001",
+        "target": "REQ-003",
+        "type": "verify",
+        "label": "verify",
+        "points": [
+          {
+            "x": 1370,
+            "y": 116
+          },
+          {
+            "x": 1135,
+            "y": 116
+          },
+          {
+            "x": 1045,
+            "y": 366
+          },
+          {
+            "x": 810,
+            "y": 366
+          }
+        ],
+        "label_x": 1090,
+        "label_y": 235
+      },
+      {
+        "id": "REL-074",
+        "relationship_id": "REL-074",
+        "source": "CON-002",
+        "target": "REQ-004",
+        "type": "verify",
+        "label": "verify",
+        "points": [
+          {
+            "x": 1370,
+            "y": 248
+          },
+          {
+            "x": 1135,
+            "y": 248
+          },
+          {
+            "x": 1045,
+            "y": 484
+          },
+          {
+            "x": 810,
+            "y": 484
+          }
+        ],
+        "label_x": 1090,
+        "label_y": 360
+      },
+      {
+        "id": "REL-075",
+        "relationship_id": "REL-075",
+        "source": "CON-003",
+        "target": "REQ-005",
+        "type": "verify",
+        "label": "verify",
+        "points": [
+          {
+            "x": 1370,
+            "y": 380
+          },
+          {
+            "x": 1135,
+            "y": 380
+          },
+          {
+            "x": 1045,
+            "y": 602
+          },
+          {
+            "x": 810,
+            "y": 602
+          }
+        ],
+        "label_x": 1090,
+        "label_y": 485
+      },
+      {
+        "id": "REL-076",
+        "relationship_id": "REL-076",
+        "source": "CON-004",
+        "target": "REQ-005",
+        "type": "verify",
+        "label": "verify",
+        "points": [
+          {
+            "x": 1370,
+            "y": 477
+          },
+          {
+            "x": 1135,
+            "y": 477
+          },
+          {
+            "x": 1045,
+            "y": 630
+          },
+          {
+            "x": 810,
+            "y": 630
+          }
+        ],
+        "label_x": 1090,
+        "label_y": 547
+      },
+      {
+        "id": "REL-077",
+        "relationship_id": "REL-077",
+        "source": "CON-005",
+        "target": "REQ-005",
+        "type": "verify",
+        "label": "verify",
+        "points": [
+          {
+            "x": 1370,
+            "y": 609
+          },
+          {
+            "x": 1135,
+            "y": 609
+          },
+          {
+            "x": 1045,
+            "y": 623
+          },
+          {
+            "x": 810,
+            "y": 623
+          }
+        ],
+        "label_x": 1090,
+        "label_y": 610
+      },
+      {
+        "id": "REL-078",
+        "relationship_id": "REL-078",
+        "source": "CON-005",
+        "target": "REQ-006",
+        "type": "verify",
+        "label": "verify",
+        "points": [
+          {
+            "x": 1370,
+            "y": 616
+          },
+          {
+            "x": 1135,
+            "y": 616
+          },
+          {
+            "x": 1045,
+            "y": 741
+          },
+          {
+            "x": 810,
+            "y": 741
+          }
+        ],
+        "label_x": 1090,
+        "label_y": 672
+      },
+      {
+        "id": "REL-079",
+        "relationship_id": "REL-079",
+        "source": "CON-005",
+        "target": "REQ-007",
+        "type": "verify",
+        "label": "verify",
+        "points": [
+          {
+            "x": 1370,
+            "y": 623
+          },
+          {
+            "x": 1135,
+            "y": 623
+          },
+          {
+            "x": 1045,
+            "y": 859
+          },
+          {
+            "x": 810,
+            "y": 859
+          }
+        ],
+        "label_x": 1090,
+        "label_y": 735
+      },
+      {
+        "id": "REL-080",
+        "relationship_id": "REL-080",
+        "source": "CON-006",
+        "target": "REQ-006",
+        "type": "verify",
+        "label": "verify",
+        "points": [
+          {
+            "x": 1370,
+            "y": 755
+          },
+          {
+            "x": 1135,
+            "y": 755
+          },
+          {
+            "x": 1045,
+            "y": 727
+          },
+          {
+            "x": 810,
+            "y": 727
+          }
+        ],
+        "label_x": 1090,
+        "label_y": 735
+      },
+      {
+        "id": "REL-081",
+        "relationship_id": "REL-081",
+        "source": "CON-007",
+        "target": "REQ-010",
+        "type": "verify",
+        "label": "verify",
+        "points": [
+          {
+            "x": 1370,
+            "y": 852
+          },
+          {
+            "x": 1135,
+            "y": 852
+          },
+          {
+            "x": 1045,
+            "y": 1255
+          },
+          {
+            "x": 810,
+            "y": 1255
+          }
+        ],
+        "label_x": 1090,
+        "label_y": 1047
+      },
+      {
+        "id": "REL-082",
+        "relationship_id": "REL-082",
+        "source": "CON-007",
+        "target": "REQ-011",
+        "type": "verify",
+        "label": "verify",
+        "points": [
+          {
+            "x": 1370,
+            "y": 859
+          },
+          {
+            "x": 1135,
+            "y": 859
+          },
+          {
+            "x": 1045,
+            "y": 1373
+          },
+          {
+            "x": 810,
+            "y": 1373
+          }
+        ],
+        "label_x": 1090,
+        "label_y": 1110
+      },
+      {
+        "id": "REL-083",
+        "relationship_id": "REL-083",
+        "source": "CON-008",
+        "target": "REQ-012",
+        "type": "verify",
+        "label": "verify",
+        "points": [
+          {
+            "x": 1370,
+            "y": 991
+          },
+          {
+            "x": 1135,
+            "y": 991
+          },
+          {
+            "x": 1045,
+            "y": 1491
+          },
+          {
+            "x": 810,
+            "y": 1491
+          }
+        ],
+        "label_x": 1090,
+        "label_y": 1235
+      },
+      {
+        "id": "REL-084",
+        "relationship_id": "REL-084",
+        "source": "CON-008",
+        "target": "REQ-013",
+        "type": "verify",
+        "label": "verify",
+        "points": [
+          {
+            "x": 1370,
+            "y": 998
+          },
+          {
+            "x": 1135,
+            "y": 998
+          },
+          {
+            "x": 1045,
+            "y": 1609
+          },
+          {
+            "x": 810,
+            "y": 1609
+          }
+        ],
+        "label_x": 1090,
+        "label_y": 1297
+      }
+    ]
+  }
+}

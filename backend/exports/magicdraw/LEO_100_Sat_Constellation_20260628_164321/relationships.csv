@@ -1,0 +1,16 @@
+﻿local_id,name,type,package,metaclass,stereotype,source,source_name,target,target_name,documentation
+REL-001,REL-001,satisfy,06_Traceability,Dependency,SysML::Requirements::Satisfy,REQ-001,星座规模需求,BLK-001,LEO 星座系统,星座规模需求由整个LEO星座系统满足。
+REL-002,REL-002,refine,06_Traceability,Dependency,SysML::Requirements::Refine,REQ-002,全球覆盖需求,UC-001,提供全球互联网接入,全球覆盖需求细化为提供全球互联网接入用例。
+REL-003,REL-003,refine,06_Traceability,Dependency,SysML::Requirements::Refine,REQ-002,全球覆盖需求,CON-001,轨道与覆盖约束,覆盖需求通过轨道与覆盖约束进行细化。
+REL-004,REL-004,trace,06_Traceability,Dependency,SysML::Requirements::Trace,REQ-003,用户链路性能需求,IF-003,用户链路接口,用户链路性能需求追溯到用户链路接口设计。
+REL-005,REL-005,refine,06_Traceability,Dependency,SysML::Requirements::Refine,REQ-003,用户链路性能需求,CON-002,链路预算约束,用户链路性能需求通过链路预算约束进行细化。
+REL-006,REL-006,satisfy,06_Traceability,Dependency,SysML::Requirements::Satisfy,REQ-004,星座构建与部署需求,ACT-001,星座部署与在轨组网,部署时间需求由星座部署活动满足。
+REL-007,REL-007,contains,06_Traceability,Association,CompositeAssociation,BLK-001,LEO 星座系统,BLK-002,卫星,星座系统包含多颗卫星。
+REL-008,REL-008,contains,06_Traceability,Association,CompositeAssociation,BLK-001,LEO 星座系统,BLK-003,地面网关,星座系统包含地面网关。
+REL-009,REL-009,contains,06_Traceability,Association,CompositeAssociation,BLK-001,LEO 星座系统,BLK-004,用户终端,星座系统包含用户终端。
+REL-010,REL-010,trace,06_Traceability,Dependency,SysML::Requirements::Trace,UC-001,提供全球互联网接入,BLK-001,LEO 星座系统,全球接入用例由整个星座系统作为主执行者。
+REL-011,REL-011,dependency,06_Traceability,Dependency,Dependency,IF-001,星间链路接口 (ISL),BLK-002,卫星,星间链路接口被卫星使用。
+REL-012,REL-012,dependency,06_Traceability,Dependency,Dependency,IF-002,馈电链路接口 (GSL),BLK-002,卫星,馈电链路接口连接卫星与网关。
+REL-013,REL-013,dependency,06_Traceability,Dependency,Dependency,IF-003,用户链路接口,BLK-002,卫星,用户链路接口连接卫星与用户终端。
+REL-014,REL-014,refine,06_Traceability,Dependency,SysML::Requirements::Refine,ACT-002,通信服务执行活动,UC-001,提供全球互联网接入,通信服务执行活动描述了全球接入用例的内部行为。
+REL-015,REL-015,allocate,06_Traceability,Dependency,SysML::Allocations::Allocate,CON-001,轨道与覆盖约束,ACT-001,星座部署与在轨组网,轨道约束分配给星座部署活动，影响部署策略。

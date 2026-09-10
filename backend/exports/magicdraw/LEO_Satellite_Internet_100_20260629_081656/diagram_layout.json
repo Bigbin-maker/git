@@ -1,0 +1,1025 @@
+{
+  "schema": "ai-mbse.diagram-layout.v1",
+  "diagram_name": "AI_MBSE_Trace_View",
+  "layout_source": "backend",
+  "width": 1660,
+  "height": 1107,
+  "nodes": [
+    {
+      "id": "ACT-001",
+      "element_id": "ACT-001",
+      "name": "用户入网与认证流程",
+      "label": "ACT-001 - 用户入网与认证流程",
+      "type": "Activity",
+      "stereotype_label": "«activity»",
+      "shape": "rect",
+      "column": 0,
+      "row": 0,
+      "x": 70,
+      "y": 80,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "ACT-002",
+      "element_id": "ACT-002",
+      "name": "动态路由与星间切换流程",
+      "label": "ACT-002 - 动态路由与星间切换流程",
+      "type": "Activity",
+      "stereotype_label": "«activity»",
+      "shape": "rect",
+      "column": 0,
+      "row": 1,
+      "x": 70,
+      "y": 205,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "ACT-003",
+      "element_id": "ACT-003",
+      "name": "馈电链路切换流程",
+      "label": "ACT-003 - 馈电链路切换流程",
+      "type": "Activity",
+      "stereotype_label": "«activity»",
+      "shape": "rect",
+      "column": 0,
+      "row": 2,
+      "x": 70,
+      "y": 330,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "ACT-004",
+      "element_id": "ACT-004",
+      "name": "轨道维持与相位调整流程",
+      "label": "ACT-004 - 轨道维持与相位调整流程",
+      "type": "Activity",
+      "stereotype_label": "«activity»",
+      "shape": "rect",
+      "column": 0,
+      "row": 3,
+      "x": 70,
+      "y": 455,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "BLK-001",
+      "element_id": "BLK-001",
+      "name": "卫星平台",
+      "label": "BLK-001 - 卫星平台",
+      "type": "Block",
+      "stereotype_label": "«block»",
+      "shape": "rect",
+      "column": 1,
+      "row": 0,
+      "x": 330,
+      "y": 80,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "BLK-002",
+      "element_id": "BLK-002",
+      "name": "地面关口站",
+      "label": "BLK-002 - 地面关口站",
+      "type": "Block",
+      "stereotype_label": "«block»",
+      "shape": "rect",
+      "column": 1,
+      "row": 1,
+      "x": 330,
+      "y": 205,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "BLK-003",
+      "element_id": "BLK-003",
+      "name": "用户终端",
+      "label": "BLK-003 - 用户终端",
+      "type": "Block",
+      "stereotype_label": "«block»",
+      "shape": "rect",
+      "column": 1,
+      "row": 2,
+      "x": 330,
+      "y": 330,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "BLK-004",
+      "element_id": "BLK-004",
+      "name": "地面运控中心",
+      "label": "BLK-004 - 地面运控中心",
+      "type": "Block",
+      "stereotype_label": "«block»",
+      "shape": "rect",
+      "column": 1,
+      "row": 3,
+      "x": 330,
+      "y": 455,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "BLK-005",
+      "element_id": "BLK-005",
+      "name": "星间激光通信终端",
+      "label": "BLK-005 - 星间激光通信终端",
+      "type": "Block",
+      "stereotype_label": "«block»",
+      "shape": "rect",
+      "column": 1,
+      "row": 4,
+      "x": 330,
+      "y": 580,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "BLK-006",
+      "element_id": "BLK-006",
+      "name": "用户链路相控阵天线",
+      "label": "BLK-006 - 用户链路相控阵天线",
+      "type": "Block",
+      "stereotype_label": "«block»",
+      "shape": "rect",
+      "column": 1,
+      "row": 5,
+      "x": 330,
+      "y": 705,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "BLK-007",
+      "element_id": "BLK-007",
+      "name": "馈电链路天线",
+      "label": "BLK-007 - 馈电链路天线",
+      "type": "Block",
+      "stereotype_label": "«block»",
+      "shape": "rect",
+      "column": 1,
+      "row": 6,
+      "x": 330,
+      "y": 830,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "REQ-001",
+      "element_id": "REQ-001",
+      "name": "星座覆盖与轨道要求",
+      "label": "REQ-001 - 星座覆盖与轨道要求",
+      "type": "Requirement",
+      "stereotype_label": "«requirement»",
+      "shape": "rect",
+      "column": 2,
+      "row": 0,
+      "x": 590,
+      "y": 80,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "REQ-002",
+      "element_id": "REQ-002",
+      "name": "系统总容量要求",
+      "label": "REQ-002 - 系统总容量要求",
+      "type": "Requirement",
+      "stereotype_label": "«requirement»",
+      "shape": "rect",
+      "column": 2,
+      "row": 1,
+      "x": 590,
+      "y": 205,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "REQ-003",
+      "element_id": "REQ-003",
+      "name": "端到端时延要求",
+      "label": "REQ-003 - 端到端时延要求",
+      "type": "Requirement",
+      "stereotype_label": "«requirement»",
+      "shape": "rect",
+      "column": 2,
+      "row": 2,
+      "x": 590,
+      "y": 330,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "REQ-004",
+      "element_id": "REQ-004",
+      "name": "单用户峰值速率要求",
+      "label": "REQ-004 - 单用户峰值速率要求",
+      "type": "Requirement",
+      "stereotype_label": "«requirement»",
+      "shape": "rect",
+      "column": 2,
+      "row": 3,
+      "x": 590,
+      "y": 455,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "REQ-005",
+      "element_id": "REQ-005",
+      "name": "系统可用性要求",
+      "label": "REQ-005 - 系统可用性要求",
+      "type": "Requirement",
+      "stereotype_label": "«requirement»",
+      "shape": "rect",
+      "column": 2,
+      "row": 4,
+      "x": 590,
+      "y": 580,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "REQ-006",
+      "element_id": "REQ-006",
+      "name": "单星质量约束",
+      "label": "REQ-006 - 单星质量约束",
+      "type": "Requirement",
+      "stereotype_label": "«requirement»",
+      "shape": "rect",
+      "column": 2,
+      "row": 5,
+      "x": 590,
+      "y": 705,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "REQ-007",
+      "element_id": "REQ-007",
+      "name": "单星功耗约束",
+      "label": "REQ-007 - 单星功耗约束",
+      "type": "Requirement",
+      "stereotype_label": "«requirement»",
+      "shape": "rect",
+      "column": 2,
+      "row": 6,
+      "x": 590,
+      "y": 830,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "REQ-008",
+      "element_id": "REQ-008",
+      "name": "设计寿命要求",
+      "label": "REQ-008 - 设计寿命要求",
+      "type": "Requirement",
+      "stereotype_label": "«requirement»",
+      "shape": "rect",
+      "column": 2,
+      "row": 7,
+      "x": 590,
+      "y": 955,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "UC-001",
+      "element_id": "UC-001",
+      "name": "提供互联网接入服务",
+      "label": "UC-001 - 提供互联网接入服务",
+      "type": "UseCase",
+      "stereotype_label": "«use case»",
+      "shape": "ellipse",
+      "column": 3,
+      "row": 0,
+      "x": 850,
+      "y": 80,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "UC-002",
+      "element_id": "UC-002",
+      "name": "支持行业专网与移动平台",
+      "label": "UC-002 - 支持行业专网与移动平台",
+      "type": "UseCase",
+      "stereotype_label": "«use case»",
+      "shape": "ellipse",
+      "column": 3,
+      "row": 1,
+      "x": 850,
+      "y": 205,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "UC-003",
+      "element_id": "UC-003",
+      "name": "基站回传与ISP接入",
+      "label": "UC-003 - 基站回传与ISP接入",
+      "type": "UseCase",
+      "stereotype_label": "«use case»",
+      "shape": "ellipse",
+      "column": 3,
+      "row": 2,
+      "x": 850,
+      "y": 330,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "UC-004",
+      "element_id": "UC-004",
+      "name": "星座管理与轨道控制",
+      "label": "UC-004 - 星座管理与轨道控制",
+      "type": "UseCase",
+      "stereotype_label": "«use case»",
+      "shape": "ellipse",
+      "column": 3,
+      "row": 3,
+      "x": 850,
+      "y": 455,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "UC-005",
+      "element_id": "UC-005",
+      "name": "用户终端自动入网",
+      "label": "UC-005 - 用户终端自动入网",
+      "type": "UseCase",
+      "stereotype_label": "«use case»",
+      "shape": "ellipse",
+      "column": 3,
+      "row": 4,
+      "x": 850,
+      "y": 580,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "IF-001",
+      "element_id": "IF-001",
+      "name": "星间激光链路接口",
+      "label": "IF-001 - 星间激光链路接口",
+      "type": "Interface",
+      "stereotype_label": "«interface»",
+      "shape": "soft",
+      "column": 4,
+      "row": 0,
+      "x": 1110,
+      "y": 80,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "IF-002",
+      "element_id": "IF-002",
+      "name": "用户链路射频接口",
+      "label": "IF-002 - 用户链路射频接口",
+      "type": "Interface",
+      "stereotype_label": "«interface»",
+      "shape": "soft",
+      "column": 4,
+      "row": 1,
+      "x": 1110,
+      "y": 205,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "IF-003",
+      "element_id": "IF-003",
+      "name": "馈电链路射频接口",
+      "label": "IF-003 - 馈电链路射频接口",
+      "type": "Interface",
+      "stereotype_label": "«interface»",
+      "shape": "soft",
+      "column": 4,
+      "row": 2,
+      "x": 1110,
+      "y": 330,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "IF-004",
+      "element_id": "IF-004",
+      "name": "测控链路接口",
+      "label": "IF-004 - 测控链路接口",
+      "type": "Interface",
+      "stereotype_label": "«interface»",
+      "shape": "soft",
+      "column": 4,
+      "row": 3,
+      "x": 1110,
+      "y": 455,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "IF-005",
+      "element_id": "IF-005",
+      "name": "地面光纤互联接口",
+      "label": "IF-005 - 地面光纤互联接口",
+      "type": "Interface",
+      "stereotype_label": "«interface»",
+      "shape": "soft",
+      "column": 4,
+      "row": 4,
+      "x": 1110,
+      "y": 580,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "CON-001",
+      "element_id": "CON-001",
+      "name": "单星质量预算约束",
+      "label": "CON-001 - 单星质量预算约束",
+      "type": "ConstraintBlock",
+      "stereotype_label": "«constraint»",
+      "shape": "rect",
+      "column": 5,
+      "row": 0,
+      "x": 1370,
+      "y": 80,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "CON-002",
+      "element_id": "CON-002",
+      "name": "单星功率预算约束",
+      "label": "CON-002 - 单星功率预算约束",
+      "type": "ConstraintBlock",
+      "stereotype_label": "«constraint»",
+      "shape": "rect",
+      "column": 5,
+      "row": 1,
+      "x": 1370,
+      "y": 205,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "CON-003",
+      "element_id": "CON-003",
+      "name": "单星成本约束",
+      "label": "CON-003 - 单星成本约束",
+      "type": "ConstraintBlock",
+      "stereotype_label": "«constraint»",
+      "shape": "rect",
+      "column": 5,
+      "row": 2,
+      "x": 1370,
+      "y": 330,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "CON-004",
+      "element_id": "CON-004",
+      "name": "全系统建设成本约束",
+      "label": "CON-004 - 全系统建设成本约束",
+      "type": "ConstraintBlock",
+      "stereotype_label": "«constraint»",
+      "shape": "rect",
+      "column": 5,
+      "row": 3,
+      "x": 1370,
+      "y": 455,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "CON-005",
+      "element_id": "CON-005",
+      "name": "指向精度约束",
+      "label": "CON-005 - 指向精度约束",
+      "type": "ConstraintBlock",
+      "stereotype_label": "«constraint»",
+      "shape": "rect",
+      "column": 5,
+      "row": 4,
+      "x": 1370,
+      "y": 580,
+      "width": 220,
+      "height": 72
+    }
+  ],
+  "edges": [
+    {
+      "id": "REL-001",
+      "relationship_id": "REL-001",
+      "source": "REQ-001",
+      "target": "BLK-001",
+      "type": "satisfy",
+      "label": "satisfy",
+      "points": [
+        {
+          "x": 590,
+          "y": 102
+        },
+        {
+          "x": 542,
+          "y": 102
+        },
+        {
+          "x": 598,
+          "y": 130
+        },
+        {
+          "x": 550,
+          "y": 130
+        }
+      ],
+      "label_x": 570,
+      "label_y": 110
+    },
+    {
+      "id": "REL-002",
+      "relationship_id": "REL-002",
+      "source": "REQ-002",
+      "target": "BLK-006",
+      "type": "satisfy",
+      "label": "satisfy",
+      "points": [
+        {
+          "x": 590,
+          "y": 234
+        },
+        {
+          "x": 542,
+          "y": 234
+        },
+        {
+          "x": 598,
+          "y": 748
+        },
+        {
+          "x": 550,
+          "y": 748
+        }
+      ],
+      "label_x": 570,
+      "label_y": 485
+    },
+    {
+      "id": "REL-003",
+      "relationship_id": "REL-003",
+      "source": "REQ-003",
+      "target": "BLK-005",
+      "type": "satisfy",
+      "label": "satisfy",
+      "points": [
+        {
+          "x": 590,
+          "y": 366
+        },
+        {
+          "x": 542,
+          "y": 366
+        },
+        {
+          "x": 598,
+          "y": 616
+        },
+        {
+          "x": 550,
+          "y": 616
+        }
+      ],
+      "label_x": 570,
+      "label_y": 485
+    },
+    {
+      "id": "REL-004",
+      "relationship_id": "REL-004",
+      "source": "REQ-004",
+      "target": "UC-001",
+      "type": "trace",
+      "label": "trace",
+      "points": [
+        {
+          "x": 810,
+          "y": 498
+        },
+        {
+          "x": 858,
+          "y": 498
+        },
+        {
+          "x": 802,
+          "y": 109
+        },
+        {
+          "x": 850,
+          "y": 109
+        }
+      ],
+      "label_x": 830,
+      "label_y": 297
+    },
+    {
+      "id": "REL-005",
+      "relationship_id": "REL-005",
+      "source": "REQ-005",
+      "target": "UC-004",
+      "type": "trace",
+      "label": "trace",
+      "points": [
+        {
+          "x": 810,
+          "y": 630
+        },
+        {
+          "x": 858,
+          "y": 630
+        },
+        {
+          "x": 802,
+          "y": 477
+        },
+        {
+          "x": 850,
+          "y": 477
+        }
+      ],
+      "label_x": 830,
+      "label_y": 547
+    },
+    {
+      "id": "REL-006",
+      "relationship_id": "REL-006",
+      "source": "REQ-006",
+      "target": "CON-001",
+      "type": "refine",
+      "label": "refine",
+      "points": [
+        {
+          "x": 810,
+          "y": 727
+        },
+        {
+          "x": 1045,
+          "y": 727
+        },
+        {
+          "x": 1135,
+          "y": 130
+        },
+        {
+          "x": 1370,
+          "y": 130
+        }
+      ],
+      "label_x": 1090,
+      "label_y": 422
+    },
+    {
+      "id": "REL-007",
+      "relationship_id": "REL-007",
+      "source": "CON-001",
+      "target": "BLK-001",
+      "type": "allocate",
+      "label": "allocate",
+      "points": [
+        {
+          "x": 1370,
+          "y": 109
+        },
+        {
+          "x": 1026,
+          "y": 109
+        },
+        {
+          "x": 894,
+          "y": 123
+        },
+        {
+          "x": 550,
+          "y": 123
+        }
+      ],
+      "label_x": 960,
+      "label_y": 110
+    },
+    {
+      "id": "REL-008",
+      "relationship_id": "REL-008",
+      "source": "REQ-007",
+      "target": "CON-002",
+      "type": "refine",
+      "label": "refine",
+      "points": [
+        {
+          "x": 810,
+          "y": 866
+        },
+        {
+          "x": 1045,
+          "y": 866
+        },
+        {
+          "x": 1135,
+          "y": 241
+        },
+        {
+          "x": 1370,
+          "y": 241
+        }
+      ],
+      "label_x": 1090,
+      "label_y": 547
+    },
+    {
+      "id": "REL-009",
+      "relationship_id": "REL-009",
+      "source": "CON-002",
+      "target": "BLK-001",
+      "type": "allocate",
+      "label": "allocate",
+      "points": [
+        {
+          "x": 1370,
+          "y": 248
+        },
+        {
+          "x": 1026,
+          "y": 248
+        },
+        {
+          "x": 894,
+          "y": 109
+        },
+        {
+          "x": 550,
+          "y": 109
+        }
+      ],
+      "label_x": 960,
+      "label_y": 172
+    },
+    {
+      "id": "REL-010",
+      "relationship_id": "REL-010",
+      "source": "REQ-008",
+      "target": "BLK-001",
+      "type": "satisfy",
+      "label": "satisfy",
+      "points": [
+        {
+          "x": 590,
+          "y": 1005
+        },
+        {
+          "x": 542,
+          "y": 1005
+        },
+        {
+          "x": 598,
+          "y": 102
+        },
+        {
+          "x": 550,
+          "y": 102
+        }
+      ],
+      "label_x": 570,
+      "label_y": 547
+    },
+    {
+      "id": "REL-011",
+      "relationship_id": "REL-011",
+      "source": "IF-001",
+      "target": "BLK-005",
+      "type": "dependency",
+      "label": "dependency",
+      "points": [
+        {
+          "x": 1110,
+          "y": 102
+        },
+        {
+          "x": 875,
+          "y": 102
+        },
+        {
+          "x": 785,
+          "y": 630
+        },
+        {
+          "x": 550,
+          "y": 630
+        }
+      ],
+      "label_x": 830,
+      "label_y": 360
+    },
+    {
+      "id": "REL-012",
+      "relationship_id": "REL-012",
+      "source": "IF-002",
+      "target": "BLK-006",
+      "type": "dependency",
+      "label": "dependency",
+      "points": [
+        {
+          "x": 1110,
+          "y": 234
+        },
+        {
+          "x": 875,
+          "y": 234
+        },
+        {
+          "x": 785,
+          "y": 748
+        },
+        {
+          "x": 550,
+          "y": 748
+        }
+      ],
+      "label_x": 830,
+      "label_y": 485
+    },
+    {
+      "id": "REL-013",
+      "relationship_id": "REL-013",
+      "source": "IF-003",
+      "target": "BLK-007",
+      "type": "dependency",
+      "label": "dependency",
+      "points": [
+        {
+          "x": 1110,
+          "y": 366
+        },
+        {
+          "x": 875,
+          "y": 366
+        },
+        {
+          "x": 785,
+          "y": 866
+        },
+        {
+          "x": 550,
+          "y": 866
+        }
+      ],
+      "label_x": 830,
+      "label_y": 610
+    },
+    {
+      "id": "REL-014",
+      "relationship_id": "REL-014",
+      "source": "ACT-001",
+      "target": "UC-005",
+      "type": "refine",
+      "label": "refine",
+      "points": [
+        {
+          "x": 290,
+          "y": 123
+        },
+        {
+          "x": 525,
+          "y": 123
+        },
+        {
+          "x": 615,
+          "y": 609
+        },
+        {
+          "x": 850,
+          "y": 609
+        }
+      ],
+      "label_x": 570,
+      "label_y": 360
+    },
+    {
+      "id": "REL-015",
+      "relationship_id": "REL-015",
+      "source": "ACT-002",
+      "target": "UC-001",
+      "type": "refine",
+      "label": "refine",
+      "points": [
+        {
+          "x": 290,
+          "y": 255
+        },
+        {
+          "x": 525,
+          "y": 255
+        },
+        {
+          "x": 615,
+          "y": 102
+        },
+        {
+          "x": 850,
+          "y": 102
+        }
+      ],
+      "label_x": 570,
+      "label_y": 172
+    },
+    {
+      "id": "REL-016",
+      "relationship_id": "REL-016",
+      "source": "BLK-001",
+      "target": "BLK-005",
+      "type": "contains",
+      "label": "contains",
+      "points": [
+        {
+          "x": 426,
+          "y": 152
+        },
+        {
+          "x": 474,
+          "y": 152
+        },
+        {
+          "x": 406,
+          "y": 580
+        },
+        {
+          "x": 454,
+          "y": 580
+        }
+      ],
+      "label_x": 440,
+      "label_y": 360
+    },
+    {
+      "id": "REL-017",
+      "relationship_id": "REL-017",
+      "source": "BLK-001",
+      "target": "BLK-006",
+      "type": "contains",
+      "label": "contains",
+      "points": [
+        {
+          "x": 433,
+          "y": 152
+        },
+        {
+          "x": 481,
+          "y": 152
+        },
+        {
+          "x": 399,
+          "y": 705
+        },
+        {
+          "x": 447,
+          "y": 705
+        }
+      ],
+      "label_x": 440,
+      "label_y": 422
+    },
+    {
+      "id": "REL-018",
+      "relationship_id": "REL-018",
+      "source": "BLK-001",
+      "target": "BLK-007",
+      "type": "contains",
+      "label": "contains",
+      "points": [
+        {
+          "x": 440,
+          "y": 152
+        },
+        {
+          "x": 488,
+          "y": 152
+        },
+        {
+          "x": 392,
+          "y": 830
+        },
+        {
+          "x": 440,
+          "y": 830
+        }
+      ],
+      "label_x": 440,
+      "label_y": 485
+    }
+  ]
+}

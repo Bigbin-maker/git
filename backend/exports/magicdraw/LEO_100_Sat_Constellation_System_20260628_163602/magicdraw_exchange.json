@@ -1,0 +1,1131 @@
+{
+  "schema": "ai-mbse.magicdraw.exchange.v1",
+  "generated_at": "2026-06-28T08:36:02Z",
+  "project_path": "",
+  "root_package": "LEO_100_Sat_Constellation_System",
+  "diagram_name": "AI_MBSE_Trace_View",
+  "instructions": [
+    "Create or reuse root package.",
+    "Create nested packages from each element or relationship package field when provided.",
+    "Create SysML/UML elements by local_id and stereotype.",
+    "Create relationships after all element ids are resolved.",
+    "Use diagram_layout as the single source of truth for MagicDraw and frontend canvas placement.",
+    "Store ai_mbse_id and source_requirement as tagged values when available."
+  ],
+  "elements": [
+    {
+      "local_id": "REQ-001",
+      "name": "星座规模与轨道要求",
+      "type": "Requirement",
+      "package": "01_Requirements",
+      "metaclass": "Class",
+      "stereotype": "SysML::Requirements::Requirement",
+      "documentation": "星座由100颗低轨卫星组成，部署在多个轨道面，实现全球覆盖。轨道高度700-1200km，倾角≥80°以保证极地覆盖。基于对话“100颗卫星组成的低轨卫星总体方案”的核心目标。",
+      "source_requirement": "REQ-001",
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "REQ-001",
+        "external_id": null,
+        "package": "01_Requirements"
+      }
+    },
+    {
+      "local_id": "REQ-002",
+      "name": "通信服务性能",
+      "type": "Requirement",
+      "package": "01_Requirements",
+      "metaclass": "Class",
+      "stereotype": "SysML::Requirements::Requirement",
+      "documentation": "系统应提供下行速率不低于100Mbps、上行速率不低于20Mbps的单用户通信能力，端到端时延≤50ms（星间+网关）。假设为宽带互联网星座。",
+      "source_requirement": "REQ-002",
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "REQ-002",
+        "external_id": null,
+        "package": "01_Requirements"
+      }
+    },
+    {
+      "local_id": "REQ-003",
+      "name": "卫星平台通用能力",
+      "type": "Requirement",
+      "package": "01_Requirements",
+      "metaclass": "Class",
+      "stereotype": "SysML::Requirements::Requirement",
+      "documentation": "单星质量≤500kg，太阳翼输出功率≥2kW，具备自主轨道保持和避碰能力，设计寿命5-7年，寿命末期主动降轨。基于低轨小型通信卫星典型能力假设。",
+      "source_requirement": "REQ-003",
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "REQ-003",
+        "external_id": null,
+        "package": "01_Requirements"
+      }
+    },
+    {
+      "local_id": "REQ-004",
+      "name": "星间链路要求",
+      "type": "Requirement",
+      "package": "01_Requirements",
+      "metaclass": "Class",
+      "stereotype": "SysML::Requirements::Requirement",
+      "documentation": "卫星需配备星间激光通信终端，实现相邻轨道面内及面间高速互联，单链路速率≥10Gbps，具备路由和故障恢复能力。",
+      "source_requirement": "REQ-004",
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "REQ-004",
+        "external_id": null,
+        "package": "01_Requirements"
+      }
+    },
+    {
+      "local_id": "BLK-001",
+      "name": "低轨宽带卫星星座系统",
+      "type": "Block",
+      "package": "02_SystemContext",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "总体系统上下文块，由空间段、地面段和用户段组成。空间段包含100颗LEO卫星，地面段包含信关站和运控中心，用户段包含各类用户终端。",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "BLK-001",
+        "external_id": null,
+        "package": "02_SystemContext"
+      }
+    },
+    {
+      "local_id": "BLK-002",
+      "name": "空间段_LEO_Satellite",
+      "type": "Block",
+      "package": "02_SystemContext",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "单颗LEO卫星平台，含有效载荷（通信转发器、星间激光终端、星上处理器）、平台（电源、姿态控制、推进、数管），以及基于REQ-003的约束。",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "BLK-002",
+        "external_id": null,
+        "package": "02_SystemContext"
+      }
+    },
+    {
+      "local_id": "BLK-003",
+      "name": "地面段_Ground_Segment",
+      "type": "Block",
+      "package": "02_SystemContext",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "地面信关站（联网接入Internet）、卫星测控中心、星座管理及网络控制中心。",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "BLK-003",
+        "external_id": null,
+        "package": "02_SystemContext"
+      }
+    },
+    {
+      "local_id": "BLK-004",
+      "name": "用户段_User_Terminal",
+      "type": "Block",
+      "package": "02_SystemContext",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "相控阵天线用户终端（固定/移动），支持上、下行数据通信。",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "BLK-004",
+        "external_id": null,
+        "package": "02_SystemContext"
+      }
+    },
+    {
+      "local_id": "UC-001",
+      "name": "全球宽带通信服务",
+      "type": "UseCase",
+      "package": "03_UseCases",
+      "metaclass": "UseCase",
+      "stereotype": "",
+      "documentation": "使用户通过终端接入星座，获得互联网接入服务。覆盖需求REQ-001、REQ-002。",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "UC-001",
+        "external_id": null,
+        "package": "03_UseCases"
+      }
+    },
+    {
+      "local_id": "UC-002",
+      "name": "星座运维管理",
+      "type": "UseCase",
+      "package": "03_UseCases",
+      "metaclass": "UseCase",
+      "stereotype": "",
+      "documentation": "运营方通过地面段对星座进行遥测、遥控、轨道管理、配置更新和故障处理。",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "UC-002",
+        "external_id": null,
+        "package": "03_UseCases"
+      }
+    },
+    {
+      "local_id": "IF-001",
+      "name": "星间激光链路接口",
+      "type": "Interface",
+      "package": "04_Interfaces",
+      "metaclass": "Interface",
+      "stereotype": "SysML::PortsAndFlows::InterfaceBlock",
+      "documentation": "卫星之间高速通信接口，采用1550nm激光，支持网状拓扑，包含捕获跟踪瞄准（PAT）和调制解调。满足REQ-004。",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "IF-001",
+        "external_id": null,
+        "package": "04_Interfaces"
+      }
+    },
+    {
+      "local_id": "IF-002",
+      "name": "星地Ka馈电链路接口",
+      "type": "Interface",
+      "package": "04_Interfaces",
+      "metaclass": "Interface",
+      "stereotype": "SysML::PortsAndFlows::InterfaceBlock",
+      "documentation": "卫星与信关站之间的射频馈电链路，下行27.5-30GHz，上行17.7-20.2GHz，支持多波束。满足高吞吐回传需求。",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "IF-002",
+        "external_id": null,
+        "package": "04_Interfaces"
+      }
+    },
+    {
+      "local_id": "IF-003",
+      "name": "用户链路接口",
+      "type": "Interface",
+      "package": "04_Interfaces",
+      "metaclass": "Interface",
+      "stereotype": "SysML::PortsAndFlows::InterfaceBlock",
+      "documentation": "卫星与用户终端之间的服务链路，采用Ku/Ka频段，支持相控阵波束跳变。满足REQ-002。",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "IF-003",
+        "external_id": null,
+        "package": "04_Interfaces"
+      }
+    },
+    {
+      "local_id": "ACT-001",
+      "name": "星座部署与初始化活动",
+      "type": "Activity",
+      "package": "05_Activities",
+      "metaclass": "Activity",
+      "stereotype": "",
+      "documentation": "描述通过一箭多星方式分批将100颗卫星送入轨道，经在轨测试后组网形成工作星座的工作流。假设采用猎鹰9等火箭。",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "ACT-001",
+        "external_id": null,
+        "package": "05_Activities"
+      }
+    },
+    {
+      "local_id": "ACT-002",
+      "name": "星上数据转发处理",
+      "type": "Activity",
+      "package": "05_Activities",
+      "metaclass": "Activity",
+      "stereotype": "",
+      "documentation": "卫星接收用户上行信号，经过星上基带交换或再生处理，通过星间链路路由至合适落地信关站的信号流活动。",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "ACT-002",
+        "external_id": null,
+        "package": "05_Activities"
+      }
+    },
+    {
+      "local_id": "CON-001",
+      "name": "链路预算与功率约束",
+      "type": "ConstraintBlock",
+      "package": "06_Constraints",
+      "metaclass": "Class",
+      "stereotype": "SysML::ConstraintBlocks::ConstraintBlock",
+      "documentation": "保证星地、星间链路在给定发射功率、天线增益、传输损耗条件下满足Eb/N0门限。基于通信链路计算公式，参数待定。",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "CON-001",
+        "external_id": null,
+        "package": "06_Constraints"
+      }
+    },
+    {
+      "local_id": "CON-002",
+      "name": "轨道覆盖与几何约束",
+      "type": "ConstraintBlock",
+      "package": "06_Constraints",
+      "metaclass": "Class",
+      "stereotype": "SysML::ConstraintBlocks::ConstraintBlock",
+      "documentation": "约束卫星轨道要素、相位分布，使100颗卫星满足全球任一点至少x°仰角下可见1颗以上卫星的概率≥99%。由REQ-001细化。",
+      "source_requirement": null,
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "CON-002",
+        "external_id": null,
+        "package": "06_Constraints"
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "local_id": "REL-001",
+      "name": "REL-001",
+      "type": "contains",
+      "package": "06_Traceability",
+      "metaclass": "Association",
+      "stereotype": "CompositeAssociation",
+      "source": "BLK-001",
+      "source_name": "低轨宽带卫星星座系统",
+      "target": "BLK-002",
+      "target_name": "空间段_LEO_Satellite",
+      "documentation": "系统包含100个LEO卫星实例"
+    },
+    {
+      "local_id": "REL-002",
+      "name": "REL-002",
+      "type": "contains",
+      "package": "06_Traceability",
+      "metaclass": "Association",
+      "stereotype": "CompositeAssociation",
+      "source": "BLK-001",
+      "source_name": "低轨宽带卫星星座系统",
+      "target": "BLK-003",
+      "target_name": "地面段_Ground_Segment",
+      "documentation": "系统包含地面段"
+    },
+    {
+      "local_id": "REL-003",
+      "name": "REL-003",
+      "type": "contains",
+      "package": "06_Traceability",
+      "metaclass": "Association",
+      "stereotype": "CompositeAssociation",
+      "source": "BLK-001",
+      "source_name": "低轨宽带卫星星座系统",
+      "target": "BLK-004",
+      "target_name": "用户段_User_Terminal",
+      "documentation": "系统包含用户段"
+    },
+    {
+      "local_id": "REL-004",
+      "name": "REL-004",
+      "type": "satisfy",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Satisfy",
+      "source": "REQ-001",
+      "source_name": "星座规模与轨道要求",
+      "target": "BLK-002",
+      "target_name": "空间段_LEO_Satellite",
+      "documentation": "规模与轨道要求由空间段满足"
+    },
+    {
+      "local_id": "REL-005",
+      "name": "REL-005",
+      "type": "satisfy",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Satisfy",
+      "source": "REQ-002",
+      "source_name": "通信服务性能",
+      "target": "UC-001",
+      "target_name": "全球宽带通信服务",
+      "documentation": "通信性能由全球宽带通信服务用例实现"
+    },
+    {
+      "local_id": "REL-006",
+      "name": "REL-006",
+      "type": "satisfy",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Satisfy",
+      "source": "REQ-003",
+      "source_name": "卫星平台通用能力",
+      "target": "BLK-002",
+      "target_name": "空间段_LEO_Satellite",
+      "documentation": "平台通用能力分配到卫星平台块"
+    },
+    {
+      "local_id": "REL-007",
+      "name": "REL-007",
+      "type": "allocate",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Allocations::Allocate",
+      "source": "REQ-004",
+      "source_name": "星间链路要求",
+      "target": "IF-001",
+      "target_name": "星间激光链路接口",
+      "documentation": "星间链路要求分配给星间激光链路接口"
+    },
+    {
+      "local_id": "REL-008",
+      "name": "REL-008",
+      "type": "dependency",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "Dependency",
+      "source": "IF-001",
+      "source_name": "星间激光链路接口",
+      "target": "IF-002",
+      "target_name": "星地Ka馈电链路接口",
+      "documentation": "星间链路需与馈电链路协同完成星空地路由"
+    },
+    {
+      "local_id": "REL-009",
+      "name": "REL-009",
+      "type": "verify",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Verify",
+      "source": "CON-001",
+      "source_name": "链路预算与功率约束",
+      "target": "IF-001",
+      "target_name": "星间激光链路接口",
+      "documentation": "链路预算约束用于验证星间接口设计"
+    },
+    {
+      "local_id": "REL-010",
+      "name": "REL-010",
+      "type": "verify",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Verify",
+      "source": "CON-001",
+      "source_name": "链路预算与功率约束",
+      "target": "IF-002",
+      "target_name": "星地Ka馈电链路接口",
+      "documentation": "链路预算约束用于验证馈电接口设计"
+    },
+    {
+      "local_id": "REL-011",
+      "name": "REL-011",
+      "type": "verify",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Verify",
+      "source": "CON-001",
+      "source_name": "链路预算与功率约束",
+      "target": "IF-003",
+      "target_name": "用户链路接口",
+      "documentation": "链路预算约束用于验证用户链路接口设计"
+    },
+    {
+      "local_id": "REL-012",
+      "name": "REL-012",
+      "type": "derivereqt",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Trace",
+      "source": "CON-002",
+      "source_name": "轨道覆盖与几何约束",
+      "target": "REQ-001",
+      "target_name": "星座规模与轨道要求",
+      "documentation": "覆盖约束衍生自轨道需求"
+    },
+    {
+      "local_id": "REL-013",
+      "name": "REL-013",
+      "type": "allocate",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Allocations::Allocate",
+      "source": "ACT-001",
+      "source_name": "星座部署与初始化活动",
+      "target": "BLK-002",
+      "target_name": "空间段_LEO_Satellite",
+      "documentation": "部署活动最终将卫星送入工作轨道"
+    },
+    {
+      "local_id": "REL-014",
+      "name": "REL-014",
+      "type": "trace",
+      "package": "06_Traceability",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Trace",
+      "source": "UC-002",
+      "source_name": "星座运维管理",
+      "target": "BLK-003",
+      "target_name": "地面段_Ground_Segment",
+      "documentation": "运维用例关联地面段"
+    }
+  ],
+  "diagram_layout": {
+    "schema": "ai-mbse.diagram-layout.v1",
+    "diagram_name": "AI_MBSE_Trace_View",
+    "layout_source": "backend",
+    "width": 1660,
+    "height": 607,
+    "nodes": [
+      {
+        "id": "ACT-001",
+        "element_id": "ACT-001",
+        "name": "星座部署与初始化活动",
+        "label": "ACT-001 - 星座部署与初始化活动",
+        "type": "Activity",
+        "stereotype_label": "«activity»",
+        "shape": "rect",
+        "column": 0,
+        "row": 0,
+        "x": 70,
+        "y": 80,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "ACT-002",
+        "element_id": "ACT-002",
+        "name": "星上数据转发处理",
+        "label": "ACT-002 - 星上数据转发处理",
+        "type": "Activity",
+        "stereotype_label": "«activity»",
+        "shape": "rect",
+        "column": 0,
+        "row": 1,
+        "x": 70,
+        "y": 205,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "BLK-001",
+        "element_id": "BLK-001",
+        "name": "低轨宽带卫星星座系统",
+        "label": "BLK-001 - 低轨宽带卫星星座系统",
+        "type": "Block",
+        "stereotype_label": "«block»",
+        "shape": "rect",
+        "column": 1,
+        "row": 0,
+        "x": 330,
+        "y": 80,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "BLK-002",
+        "element_id": "BLK-002",
+        "name": "空间段_LEO_Satellite",
+        "label": "BLK-002 - 空间段_LEO_Satellite",
+        "type": "Block",
+        "stereotype_label": "«block»",
+        "shape": "rect",
+        "column": 1,
+        "row": 1,
+        "x": 330,
+        "y": 205,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "BLK-003",
+        "element_id": "BLK-003",
+        "name": "地面段_Ground_Segment",
+        "label": "BLK-003 - 地面段_Ground_Segment",
+        "type": "Block",
+        "stereotype_label": "«block»",
+        "shape": "rect",
+        "column": 1,
+        "row": 2,
+        "x": 330,
+        "y": 330,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "BLK-004",
+        "element_id": "BLK-004",
+        "name": "用户段_User_Terminal",
+        "label": "BLK-004 - 用户段_User_Terminal",
+        "type": "Block",
+        "stereotype_label": "«block»",
+        "shape": "rect",
+        "column": 1,
+        "row": 3,
+        "x": 330,
+        "y": 455,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "REQ-001",
+        "element_id": "REQ-001",
+        "name": "星座规模与轨道要求",
+        "label": "REQ-001 - 星座规模与轨道要求",
+        "type": "Requirement",
+        "stereotype_label": "«requirement»",
+        "shape": "rect",
+        "column": 2,
+        "row": 0,
+        "x": 590,
+        "y": 80,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "REQ-002",
+        "element_id": "REQ-002",
+        "name": "通信服务性能",
+        "label": "REQ-002 - 通信服务性能",
+        "type": "Requirement",
+        "stereotype_label": "«requirement»",
+        "shape": "rect",
+        "column": 2,
+        "row": 1,
+        "x": 590,
+        "y": 205,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "REQ-003",
+        "element_id": "REQ-003",
+        "name": "卫星平台通用能力",
+        "label": "REQ-003 - 卫星平台通用能力",
+        "type": "Requirement",
+        "stereotype_label": "«requirement»",
+        "shape": "rect",
+        "column": 2,
+        "row": 2,
+        "x": 590,
+        "y": 330,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "REQ-004",
+        "element_id": "REQ-004",
+        "name": "星间链路要求",
+        "label": "REQ-004 - 星间链路要求",
+        "type": "Requirement",
+        "stereotype_label": "«requirement»",
+        "shape": "rect",
+        "column": 2,
+        "row": 3,
+        "x": 590,
+        "y": 455,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "UC-001",
+        "element_id": "UC-001",
+        "name": "全球宽带通信服务",
+        "label": "UC-001 - 全球宽带通信服务",
+        "type": "UseCase",
+        "stereotype_label": "«use case»",
+        "shape": "ellipse",
+        "column": 3,
+        "row": 0,
+        "x": 850,
+        "y": 80,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "UC-002",
+        "element_id": "UC-002",
+        "name": "星座运维管理",
+        "label": "UC-002 - 星座运维管理",
+        "type": "UseCase",
+        "stereotype_label": "«use case»",
+        "shape": "ellipse",
+        "column": 3,
+        "row": 1,
+        "x": 850,
+        "y": 205,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "IF-001",
+        "element_id": "IF-001",
+        "name": "星间激光链路接口",
+        "label": "IF-001 - 星间激光链路接口",
+        "type": "Interface",
+        "stereotype_label": "«interface»",
+        "shape": "soft",
+        "column": 4,
+        "row": 0,
+        "x": 1110,
+        "y": 80,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "IF-002",
+        "element_id": "IF-002",
+        "name": "星地Ka馈电链路接口",
+        "label": "IF-002 - 星地Ka馈电链路接口",
+        "type": "Interface",
+        "stereotype_label": "«interface»",
+        "shape": "soft",
+        "column": 4,
+        "row": 1,
+        "x": 1110,
+        "y": 205,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "IF-003",
+        "element_id": "IF-003",
+        "name": "用户链路接口",
+        "label": "IF-003 - 用户链路接口",
+        "type": "Interface",
+        "stereotype_label": "«interface»",
+        "shape": "soft",
+        "column": 4,
+        "row": 2,
+        "x": 1110,
+        "y": 330,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "CON-001",
+        "element_id": "CON-001",
+        "name": "链路预算与功率约束",
+        "label": "CON-001 - 链路预算与功率约束",
+        "type": "ConstraintBlock",
+        "stereotype_label": "«constraint»",
+        "shape": "rect",
+        "column": 5,
+        "row": 0,
+        "x": 1370,
+        "y": 80,
+        "width": 220,
+        "height": 72
+      },
+      {
+        "id": "CON-002",
+        "element_id": "CON-002",
+        "name": "轨道覆盖与几何约束",
+        "label": "CON-002 - 轨道覆盖与几何约束",
+        "type": "ConstraintBlock",
+        "stereotype_label": "«constraint»",
+        "shape": "rect",
+        "column": 5,
+        "row": 1,
+        "x": 1370,
+        "y": 205,
+        "width": 220,
+        "height": 72
+      }
+    ],
+    "edges": [
+      {
+        "id": "REL-001",
+        "relationship_id": "REL-001",
+        "source": "BLK-001",
+        "target": "BLK-002",
+        "type": "contains",
+        "label": "contains",
+        "points": [
+          {
+            "x": 426,
+            "y": 152
+          },
+          {
+            "x": 474,
+            "y": 152
+          },
+          {
+            "x": 406,
+            "y": 205
+          },
+          {
+            "x": 454,
+            "y": 205
+          }
+        ],
+        "label_x": 440,
+        "label_y": 172
+      },
+      {
+        "id": "REL-002",
+        "relationship_id": "REL-002",
+        "source": "BLK-001",
+        "target": "BLK-003",
+        "type": "contains",
+        "label": "contains",
+        "points": [
+          {
+            "x": 433,
+            "y": 152
+          },
+          {
+            "x": 481,
+            "y": 152
+          },
+          {
+            "x": 399,
+            "y": 330
+          },
+          {
+            "x": 447,
+            "y": 330
+          }
+        ],
+        "label_x": 440,
+        "label_y": 235
+      },
+      {
+        "id": "REL-003",
+        "relationship_id": "REL-003",
+        "source": "BLK-001",
+        "target": "BLK-004",
+        "type": "contains",
+        "label": "contains",
+        "points": [
+          {
+            "x": 440,
+            "y": 152
+          },
+          {
+            "x": 488,
+            "y": 152
+          },
+          {
+            "x": 392,
+            "y": 455
+          },
+          {
+            "x": 440,
+            "y": 455
+          }
+        ],
+        "label_x": 440,
+        "label_y": 297
+      },
+      {
+        "id": "REL-004",
+        "relationship_id": "REL-004",
+        "source": "REQ-001",
+        "target": "BLK-002",
+        "type": "satisfy",
+        "label": "satisfy",
+        "points": [
+          {
+            "x": 590,
+            "y": 123
+          },
+          {
+            "x": 542,
+            "y": 123
+          },
+          {
+            "x": 598,
+            "y": 234
+          },
+          {
+            "x": 550,
+            "y": 234
+          }
+        ],
+        "label_x": 570,
+        "label_y": 172
+      },
+      {
+        "id": "REL-005",
+        "relationship_id": "REL-005",
+        "source": "REQ-002",
+        "target": "UC-001",
+        "type": "satisfy",
+        "label": "satisfy",
+        "points": [
+          {
+            "x": 810,
+            "y": 255
+          },
+          {
+            "x": 858,
+            "y": 255
+          },
+          {
+            "x": 802,
+            "y": 102
+          },
+          {
+            "x": 850,
+            "y": 102
+          }
+        ],
+        "label_x": 830,
+        "label_y": 172
+      },
+      {
+        "id": "REL-006",
+        "relationship_id": "REL-006",
+        "source": "REQ-003",
+        "target": "BLK-002",
+        "type": "satisfy",
+        "label": "satisfy",
+        "points": [
+          {
+            "x": 590,
+            "y": 352
+          },
+          {
+            "x": 542,
+            "y": 352
+          },
+          {
+            "x": 598,
+            "y": 255
+          },
+          {
+            "x": 550,
+            "y": 255
+          }
+        ],
+        "label_x": 570,
+        "label_y": 297
+      },
+      {
+        "id": "REL-007",
+        "relationship_id": "REL-007",
+        "source": "REQ-004",
+        "target": "IF-001",
+        "type": "allocate",
+        "label": "allocate",
+        "points": [
+          {
+            "x": 810,
+            "y": 484
+          },
+          {
+            "x": 936,
+            "y": 484
+          },
+          {
+            "x": 984,
+            "y": 123
+          },
+          {
+            "x": 1110,
+            "y": 123
+          }
+        ],
+        "label_x": 960,
+        "label_y": 297
+      },
+      {
+        "id": "REL-008",
+        "relationship_id": "REL-008",
+        "source": "IF-001",
+        "target": "IF-002",
+        "type": "dependency",
+        "label": "dependency",
+        "points": [
+          {
+            "x": 1220,
+            "y": 152
+          },
+          {
+            "x": 1268,
+            "y": 152
+          },
+          {
+            "x": 1172,
+            "y": 205
+          },
+          {
+            "x": 1220,
+            "y": 205
+          }
+        ],
+        "label_x": 1220,
+        "label_y": 172
+      },
+      {
+        "id": "REL-009",
+        "relationship_id": "REL-009",
+        "source": "CON-001",
+        "target": "IF-001",
+        "type": "verify",
+        "label": "verify",
+        "points": [
+          {
+            "x": 1370,
+            "y": 123
+          },
+          {
+            "x": 1322,
+            "y": 123
+          },
+          {
+            "x": 1378,
+            "y": 109
+          },
+          {
+            "x": 1330,
+            "y": 109
+          }
+        ],
+        "label_x": 1350,
+        "label_y": 110
+      },
+      {
+        "id": "REL-010",
+        "relationship_id": "REL-010",
+        "source": "CON-001",
+        "target": "IF-002",
+        "type": "verify",
+        "label": "verify",
+        "points": [
+          {
+            "x": 1370,
+            "y": 130
+          },
+          {
+            "x": 1322,
+            "y": 130
+          },
+          {
+            "x": 1378,
+            "y": 227
+          },
+          {
+            "x": 1330,
+            "y": 227
+          }
+        ],
+        "label_x": 1350,
+        "label_y": 172
+      },
+      {
+        "id": "REL-011",
+        "relationship_id": "REL-011",
+        "source": "CON-001",
+        "target": "IF-003",
+        "type": "verify",
+        "label": "verify",
+        "points": [
+          {
+            "x": 1370,
+            "y": 102
+          },
+          {
+            "x": 1322,
+            "y": 102
+          },
+          {
+            "x": 1378,
+            "y": 380
+          },
+          {
+            "x": 1330,
+            "y": 380
+          }
+        ],
+        "label_x": 1350,
+        "label_y": 235
+      },
+      {
+        "id": "REL-012",
+        "relationship_id": "REL-012",
+        "source": "CON-002",
+        "target": "REQ-001",
+        "type": "derivereqt",
+        "label": "derivereqt",
+        "points": [
+          {
+            "x": 1370,
+            "y": 234
+          },
+          {
+            "x": 1135,
+            "y": 234
+          },
+          {
+            "x": 1045,
+            "y": 123
+          },
+          {
+            "x": 810,
+            "y": 123
+          }
+        ],
+        "label_x": 1090,
+        "label_y": 172
+      },
+      {
+        "id": "REL-013",
+        "relationship_id": "REL-013",
+        "source": "ACT-001",
+        "target": "BLK-002",
+        "type": "allocate",
+        "label": "allocate",
+        "points": [
+          {
+            "x": 290,
+            "y": 116
+          },
+          {
+            "x": 338,
+            "y": 116
+          },
+          {
+            "x": 282,
+            "y": 241
+          },
+          {
+            "x": 330,
+            "y": 241
+          }
+        ],
+        "label_x": 310,
+        "label_y": 172
+      },
+      {
+        "id": "REL-014",
+        "relationship_id": "REL-014",
+        "source": "UC-002",
+        "target": "BLK-003",
+        "type": "trace",
+        "label": "trace",
+        "points": [
+          {
+            "x": 850,
+            "y": 248
+          },
+          {
+            "x": 724,
+            "y": 248
+          },
+          {
+            "x": 676,
+            "y": 359
+          },
+          {
+            "x": 550,
+            "y": 359
+          }
+        ],
+        "label_x": 700,
+        "label_y": 297
+      }
+    ]
+  }
+}

@@ -1,0 +1,45 @@
+﻿local_id,name,type,package,metaclass,stereotype,documentation,source_requirement,status
+REQ-001,全球宽带互联网接入服务,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,系统应提供全球宽带互联网接入，兼顾IoT回传与轻量专线服务。,REQ-001,candidate
+REQ-002,用户下行速率,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,单用户下行峰值速率应不低于100 Mbps。,REQ-001,candidate
+REQ-003,回传速率,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,回传链路速率应不低于500 Mbps（专线或高价值用户）。,REQ-001,candidate
+REQ-004,端到端时延,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,用户终端至地面互联网出口的端到端时延应≤30 ms。,REQ-004,candidate
+REQ-005,系统可用度,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,系统全年可用度应不低于99.5%。,REQ-005,candidate
+REQ-006,覆盖范围,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,系统覆盖区域为南北纬60°以内，重点服务中低纬度人口密集区。,REQ-001,candidate
+REQ-007,无感移动性切换,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,终端跨波束和跨星切换时保持IP地址不变，实现无感切换。,REQ-001,candidate
+REQ-008,星间链路自愈,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,星间链路中断时应自动重路由，保证业务连续性。,REQ-008,candidate
+REQ-009,信关站冗余切换,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,单个信关站失效时，业务应无缝切换到邻近信关站。,REQ-009,candidate
+REQ-010,单星容量需求,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,单星容量需支持目标市场并发用户数（具体数值待确认，暂定百万级并发设计）。,REQ-001,candidate
+BLK-001,卫星,Block,02_Structure,Class,SysML::Blocks::Block,低轨卫星平台，包含再生式通信载荷、4条激光星间链路、多波束相控阵用户天线、2路Ka馈电链路、电推进模块等，质量约500kg，功率≥2kW。,,candidate
+BLK-002,信关站,Block,02_Structure,Class,SysML::Blocks::Block,地面信关站，通过Ka频段与卫星通信，具备同时连接4~6颗卫星能力，以光纤接入互联网骨干。,,candidate
+BLK-003,用户终端,Block,02_Structure,Class,SysML::Blocks::Block,电控相控阵平板天线用户终端，等效口径约30cm，功耗<50W，支持自动寻星和波束跟踪。,,candidate
+BLK-004,网络运营中心,Block,02_Structure,Class,SysML::Blocks::Block,集中式网络运营中心（NOC），负责资源编排、SDN路径管理、遥测遥控和用户策略控制。,,candidate
+BLK-005,星座系统,Block,02_Structure,Class,SysML::Blocks::Block,由100颗卫星构成的Walker低轨星座，含10个轨道面，每面10颗工作星及1颗备份星。,,candidate
+UC-001,提供宽带互联网接入,UseCase,03_Behavior,UseCase,,终端用户通过卫星系统获得全球宽带互联网接入服务，包含IoT回传和轻量专线场景。,REQ-001,candidate
+UC-002,管理用户移动性,UseCase,03_Behavior,UseCase,,处理终端位置更新、波束间和星间切换，维持IP地址不变，确保业务不中断。,REQ-007,candidate
+UC-003,故障处理与网络自愈,UseCase,03_Behavior,UseCase,,检测星间链路或信关站故障，触发自动重路由或站间切换，恢复业务。,REQ-008,candidate
+UC-004,卫星在轨管理,UseCase,03_Behavior,UseCase,,遥测遥控、轨道保持、相位管理、故障诊断与软件上注等运维操作。,,candidate
+IF-001,星间激光链路接口,Interface,04_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,卫星间高速激光通信接口，支持同轨前后向和异轨左右向共4条链路，实现栅格网络。,,candidate
+IF-002,用户链路接口,Interface,04_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,卫星与用户终端之间的Ka频段空口，基于5G NR NTN，采用相控阵跳波束，支持自适应调制编码。,,candidate
+IF-003,馈电链路接口,Interface,04_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,卫星与信关站之间的Ka频段馈电链路，每星支持2路同时连接。,,candidate
+IF-004,信关站地面网络接口,Interface,04_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,信关站通过光纤或大容量回传链路接入地面互联网骨干或云服务。,,candidate
+ACT-001,用户接入与数据传输,Activity,03_Behavior,Activity,,从终端开机扫描导频，完成同步与随机接入，卫星分配波束与资源，建立PDU会话，经星间/信关站路由至互联网出口。,UC-001,candidate
+ACT-002,卫星切换流程,Activity,03_Behavior,Activity,,终端上报测量，源卫星与目标卫星协商资源，源卫星转发缓存数据，完成无损切换。,UC-002,candidate
+ACT-003,星间链路重路由,Activity,03_Behavior,Activity,,当星间链路中断时，分布式路由协议自动计算新路径，更新转发表，恢复数据转发。,UC-003,candidate
+CON-001,端到端时延约束,ConstraintBlock,05_Constraints,Class,SysML::ConstraintBlocks::ConstraintBlock,用户面时延=星上处理+星间传输+馈电+地面网络≤30ms。,REQ-004,candidate
+CON-002,系统可用度约束,ConstraintBlock,05_Constraints,Class,SysML::ConstraintBlocks::ConstraintBlock,系统可用性=MTBF/(MTBF+MTTR)≥99.5%，考虑卫星、信关站和链路冗余。,REQ-005,candidate
+CON-003,覆盖区域约束,ConstraintBlock,05_Constraints,Class,SysML::ConstraintBlocks::ConstraintBlock,星座相对几何与天线扫描角保证南北纬60°以内全域覆盖。,REQ-006,candidate
+CON-004,单星资源约束,ConstraintBlock,05_Constraints,Class,SysML::ConstraintBlocks::ConstraintBlock,单星质量≤500kg，太阳翼输出功率≥2kW，载荷功耗约1.2kW。,,candidate
+CON-005,用户终端功耗约束,ConstraintBlock,05_Constraints,Class,SysML::ConstraintBlocks::ConstraintBlock,用户终端最大功耗<50W，并满足户外安装环境要求。,,candidate
+ACTOR-001,终端用户,Actor,00_Actors,Class,SysML::Blocks::Block,使用卫星互联网接入服务的最终消费者，可能通过各类用户终端获得宽带连接。,,candidate
+ACTOR-002,运营操作员,Actor,00_Actors,Class,SysML::Blocks::Block,负责卫星在轨管理、网络监控与运维操作的专业人员。,,candidate
+IBD-BLK-001,卫星,Block,02_Structure,Class,SysML::Blocks::Block,低轨卫星平台，包含再生式通信载荷、4条激光星间链路、多波束相控阵用户天线、2路Ka馈电链路、电推进模块等，质量约500kg，功率≥2kW。,,existing
+IBD-BLK-002,信关站,Block,02_Structure,Class,SysML::Blocks::Block,地面信关站，通过Ka频段与卫星通信，具备同时连接4~6颗卫星能力，以光纤接入互联网骨干。,,existing
+IBD-BLK-003,用户终端,Block,02_Structure,Class,SysML::Blocks::Block,电控相控阵平板天线用户终端，等效口径约30cm，功耗<50W，支持自动寻星和波束跟踪。,,existing
+IBD-BLK-004,网络运营中心,Block,02_Structure,Class,SysML::Blocks::Block,集中式网络运营中心（NOC），负责资源编排、SDN路径管理、遥测遥控和用户策略控制。,,existing
+IBD-IF-001,星间激光链路接口,Interface,04_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,卫星间高速激光通信接口，支持同轨前后向和异轨左右向共4条链路，实现栅格网络。,,existing
+IBD-IF-002,用户链路接口,Interface,04_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,卫星与用户终端之间的Ka频段空口，基于5G NR NTN，采用相控阵跳波束，支持自适应调制编码。,,existing
+IBD-IF-003,馈电链路接口,Interface,04_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,卫星与信关站之间的Ka频段馈电链路，每星支持2路同时连接。,,existing
+IBD-IF-004,信关站地面网络接口,Interface,04_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,信关站通过光纤或大容量回传链路接入地面互联网骨干或云服务。,,existing
+IBD-BLK-005,地面网络接入单元,Block,02_Structure,Class,SysML::Blocks::Block,提供光纤或大容量回传接口，通过标准以太网或OTN接入互联网骨干或云服务。,,candidate
+IBD-BLK-006,站控管理单元,Block,02_Structure,Class,SysML::Blocks::Block,信关站本地监控、配置管理、故障检测及冗余切换控制，与网络运营中心（NOC）交互。,,candidate
+IBD-BLK-007,电源与热控单元,Block,02_Structure,Class,SysML::Blocks::Block,为信关站各设备提供稳定电源，并进行环境温度控制。,,candidate

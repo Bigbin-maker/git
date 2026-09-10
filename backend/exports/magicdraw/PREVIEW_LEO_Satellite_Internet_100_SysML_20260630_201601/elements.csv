@@ -1,0 +1,39 @@
+﻿local_id,name,type,package,metaclass,stereotype,documentation,source_requirement,status
+REQ-001,星座规模要求,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,空间段由100颗低轨卫星组成，实现宽带互联网覆盖。,REQ-001,candidate
+REQ-002,轨道配置要求,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,轨道高度约550 km，倾角53°，采用Walker星座10个轨道面×10星/面，以兼顾中低纬度人口密集区覆盖。,REQ-001,candidate
+REQ-003,星间链路要求,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,每颗卫星须配备星间链路，优先采用激光终端，支持同轨前后向及邻轨左右向全连接Mesh组网。,REQ-003,candidate
+REQ-004,地面关口站规模要求,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,初期部署20-30个全球分布式地面关口站，连接至陆地光纤汇聚点。,REQ-004,candidate
+REQ-005,单星下行容量要求,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,单颗卫星下行通信容量不低于20 Gbps。,REQ-005,candidate
+REQ-006,单星上行容量要求,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,单颗卫星上行通信容量不低于5 Gbps。,REQ-006,candidate
+REQ-007,星座总容量要求,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,星座总通信容量初期不小于2 Tbps。,REQ-005,candidate
+REQ-008,端到端时延要求,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,中低纬度典型场景端到端通信时延小于40 ms（星间路由条件下）。,REQ-008,candidate
+REQ-009,系统可用度要求,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,系统可用度不低于99.9%，需考虑Ku频段雨衰等链路降级因素。,REQ-009,candidate
+REQ-010,用户链路频段要求,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,卫星与用户终端之间采用Ku频段，支持快速波束赋形与切换。,REQ-010,candidate
+REQ-011,馈电链路频段要求,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,卫星与地面关口站之间采用Ka频段馈电链路，独立于用户链路。,REQ-011,candidate
+REQ-012,通信体制兼容性要求,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,用户链路协议栈需兼容3GPP NTN标准，支持现有4G/5G终端演进，并支持DVB-S2X/RCS2透明或再生双模。,REQ-012,candidate
+REQ-013,星上处理能力要求,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,卫星须具备星上再生处理和路由能力，实现星间数据交换和移动性管理。,REQ-003,candidate
+REQ-014,切换性能要求,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,卫星或波束切换引起的空口中断时间应小于50 ms，支持软切换。,REQ-008,candidate
+REQ-015,终端类型支持要求,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,系统应支持固定终端、车载/船载动中通终端接入，并可扩展支持直连手机（IoT-NTN）。,REQ-015,candidate
+BLK-001,LEO卫星互联网系统,Block,02_Blocks,Class,SysML::Blocks::Block,顶层系统，包含空间段卫星星座、地面关口站、用户终端、核心网及运营支撑系统，实现全球低轨宽带通信。,,candidate
+BLK-002,卫星,Block,02_Blocks,Class,SysML::Blocks::Block,200-300 kg级小卫星平台，搭载通信载荷、激光星间终端、电推进、三轴稳定控制系统及太阳翼电源（约2 kW）。,,candidate
+BLK-003,通信载荷,Block,02_Blocks,Class,SysML::Blocks::Block,包括Ku频段相控阵用户天线（4波束）、Ka频段馈电天线（2波束）、星上再生处理单元、路由交换模块。,,candidate
+BLK-004,卫星平台,Block,02_Blocks,Class,SysML::Blocks::Block,提供姿轨控、推进（电推进）、电源（太阳翼+蓄电池）、热控、结构等基础服务。,,candidate
+BLK-005,激光星间链路终端,Block,02_Blocks,Class,SysML::Blocks::Block,每星配备4套激光终端，用于同轨前后向和邻轨左右向星间链路。,,candidate
+BLK-006,地面关口站,Block,02_Blocks,Class,SysML::Blocks::Block,全球分布20-30个信关站，包含Ka频段馈电天线、基带处理、路由交换及与核心网对接设备。,,candidate
+BLK-007,用户终端,Block,02_Blocks,Class,SysML::Blocks::Block,支持Ku频段，可工作于固定或移动平台，兼容3GPP NTN协议，具有相控阵或机械跟踪天线。,,candidate
+BLK-008,核心网,Block,02_Blocks,Class,SysML::Blocks::Block,基于5G核心网或演进分组核心网，提供移动性管理、会话管理、计费、认证及与公共互联网互联功能。,,candidate
+UC-001,终端初始接入与注册,UseCase,03_UseCases,UseCase,,用户终端开机后接收卫星广播星历与波束信息，选择最佳波束，执行随机接入、鉴权与注册，附着至网络。,REQ-012,candidate
+UC-002,用户数据通信,UseCase,03_UseCases,UseCase,,终端通过卫星星座及地面关口站访问互联网或私有网络，支持上下行数据传输，可经星间链路路由。,REQ-005,candidate
+UC-003,星间路由与波束切换,UseCase,03_UseCases,UseCase,,基于链路状态的星间路由协议实时更新拓扑，终端在跨越波束或卫星时执行软切换，中断<50 ms。,REQ-014,candidate
+UC-004,馈电链路切换与关口站分集,UseCase,03_UseCases,UseCase,,卫星过境时在不同关口站间或同一关口站不同馈电波束间无缝切换，保障馈电链路连续。,REQ-004,candidate
+UC-005,星座维护与补网发射,UseCase,03_UseCases,UseCase,,每年约10%卫星替代发射，入轨后自主组网，确保星座容量和服务连续性满足要求。,REQ-001,candidate
+IF-001,用户链路接口 (Uu/Air Interface),Interface,04_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,卫星通信载荷与用户终端之间的Ku频段空口接口，采用3GPP NTN或DVB-S2X/RCS2协议，支持波束赋形与波束切换。,REQ-010,candidate
+IF-002,馈电链路接口 (Feeder Link),Interface,04_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,卫星通信载荷与地面关口站之间的Ka频段接口，支持多星多波束接入和软切换。,REQ-011,candidate
+IF-003,星间链路接口 (ISL),Interface,04_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,卫星之间激光通信接口，每星4条链路，支持高速数据中继和分布式路由。,REQ-003,candidate
+IF-004,N6核心网接口,Interface,04_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,地面关口站与5G核心网(UPF)之间的互联接口，承载用户面数据及部分控制面信令，遵从3GPP N6规范。,REQ-012,candidate
+IF-005,测控/运控链路接口,Interface,04_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,卫星平台与地面运控中心之间的遥测遥控接口，可通过馈电链路带内或独立S频段实现。,,candidate
+ACT-001,终端开机接入流程,Activity,05_Activities,Activity,,建模终端开机后，依次执行广播接收、星历解析、波束选择、随机接入、鉴权、注册的完整流程。,UC-001,candidate
+ACT-002,星间路由与切换流程,Activity,05_Activities,Activity,,建模星间链路状态收集、路由计算、切换决策（基于测量报告）及切换执行，保证中断时间约束。,UC-003,candidate
+CON-001,轨道高度与可用度约束,ConstraintBlock,06_Constraints,Class,SysML::ConstraintBlocks::ConstraintBlock,轨道高度约550 km，结合Ku/Ka频段雨衰模型，满足99.9%可用度需保证链路余量≥3 dB。以WMO降雨区域统计数据为输入。,REQ-009,candidate
+CON-002,星间链路拓扑连接约束,ConstraintBlock,06_Constraints,Class,SysML::ConstraintBlocks::ConstraintBlock,每星必须维持与同轨前后、邻轨左右至少一颗卫星的激光链路，建链时间与跟踪精度满足星间路由收敛时间要求。,REQ-003,candidate
+CON-003,端到端时延预算约束,ConstraintBlock,06_Constraints,Class,SysML::ConstraintBlocks::ConstraintBlock,端到端时延 = 用户链路时延 + 星间路由时延 + 馈电链路时延 + 地面网络时延，合计<40 ms（中低纬度），需分配至各段并验证。,REQ-008,candidate

@@ -1,0 +1,961 @@
+{
+  "schema": "ai-mbse.diagram-layout.v1",
+  "diagram_name": "AI_MBSE_Trace_View",
+  "layout_source": "backend",
+  "width": 1660,
+  "height": 857,
+  "nodes": [
+    {
+      "id": "ACT-001",
+      "element_id": "ACT-001",
+      "name": "Launch and Orbit Insertion",
+      "label": "ACT-001 - Launch and Orbit Insertion",
+      "type": "Activity",
+      "stereotype_label": "«activity»",
+      "shape": "rect",
+      "column": 0,
+      "row": 0,
+      "x": 70,
+      "y": 80,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "ACT-002",
+      "element_id": "ACT-002",
+      "name": "Constellation Phasing",
+      "label": "ACT-002 - Constellation Phasing",
+      "type": "Activity",
+      "stereotype_label": "«activity»",
+      "shape": "rect",
+      "column": 0,
+      "row": 1,
+      "x": 70,
+      "y": 205,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "ACT-003",
+      "element_id": "ACT-003",
+      "name": "Routine Operations",
+      "label": "ACT-003 - Routine Operations",
+      "type": "Activity",
+      "stereotype_label": "«activity»",
+      "shape": "rect",
+      "column": 0,
+      "row": 2,
+      "x": 70,
+      "y": 330,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "BLK-001",
+      "element_id": "BLK-001",
+      "name": "LEO Constellation System",
+      "label": "BLK-001 - LEO Constellation System",
+      "type": "Block",
+      "stereotype_label": "«block»",
+      "shape": "rect",
+      "column": 1,
+      "row": 0,
+      "x": 330,
+      "y": 80,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "BLK-002",
+      "element_id": "BLK-002",
+      "name": "Satellite Platform",
+      "label": "BLK-002 - Satellite Platform",
+      "type": "Block",
+      "stereotype_label": "«block»",
+      "shape": "rect",
+      "column": 1,
+      "row": 1,
+      "x": 330,
+      "y": 205,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "BLK-003",
+      "element_id": "BLK-003",
+      "name": "Communication Payload",
+      "label": "BLK-003 - Communication Payload",
+      "type": "Block",
+      "stereotype_label": "«block»",
+      "shape": "rect",
+      "column": 1,
+      "row": 2,
+      "x": 330,
+      "y": 330,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "BLK-004",
+      "element_id": "BLK-004",
+      "name": "Ground Segment",
+      "label": "BLK-004 - Ground Segment",
+      "type": "Block",
+      "stereotype_label": "«block»",
+      "shape": "rect",
+      "column": 1,
+      "row": 3,
+      "x": 330,
+      "y": 455,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "BLK-005",
+      "element_id": "BLK-005",
+      "name": "Inter-Satellite Link Terminal",
+      "label": "BLK-005 - Inter-Satellite Link Terminal",
+      "type": "Block",
+      "stereotype_label": "«block»",
+      "shape": "rect",
+      "column": 1,
+      "row": 4,
+      "x": 330,
+      "y": 580,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "BLK-006",
+      "element_id": "BLK-006",
+      "name": "Launch Segment",
+      "label": "BLK-006 - Launch Segment",
+      "type": "Block",
+      "stereotype_label": "«block»",
+      "shape": "rect",
+      "column": 1,
+      "row": 5,
+      "x": 330,
+      "y": 705,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "REQ-001",
+      "element_id": "REQ-001",
+      "name": "Satellite Count",
+      "label": "REQ-001 - Satellite Count",
+      "type": "Requirement",
+      "stereotype_label": "«requirement»",
+      "shape": "rect",
+      "column": 2,
+      "row": 0,
+      "x": 590,
+      "y": 80,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "REQ-002",
+      "element_id": "REQ-002",
+      "name": "Global Coverage",
+      "label": "REQ-002 - Global Coverage",
+      "type": "Requirement",
+      "stereotype_label": "«requirement»",
+      "shape": "rect",
+      "column": 2,
+      "row": 1,
+      "x": 590,
+      "y": 205,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "REQ-003",
+      "element_id": "REQ-003",
+      "name": "Revisit Time",
+      "label": "REQ-003 - Revisit Time",
+      "type": "Requirement",
+      "stereotype_label": "«requirement»",
+      "shape": "rect",
+      "column": 2,
+      "row": 2,
+      "x": 590,
+      "y": 330,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "REQ-004",
+      "element_id": "REQ-004",
+      "name": "Intersatellite Link Capability",
+      "label": "REQ-004 - Intersatellite Link Capability",
+      "type": "Requirement",
+      "stereotype_label": "«requirement»",
+      "shape": "rect",
+      "column": 2,
+      "row": 3,
+      "x": 590,
+      "y": 455,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "REQ-005",
+      "element_id": "REQ-005",
+      "name": "Single Satellite Mass Limit",
+      "label": "REQ-005 - Single Satellite Mass Limit",
+      "type": "Requirement",
+      "stereotype_label": "«requirement»",
+      "shape": "rect",
+      "column": 2,
+      "row": 4,
+      "x": 590,
+      "y": 580,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "REQ-006",
+      "element_id": "REQ-006",
+      "name": "Constellation Lifetime",
+      "label": "REQ-006 - Constellation Lifetime",
+      "type": "Requirement",
+      "stereotype_label": "«requirement»",
+      "shape": "rect",
+      "column": 2,
+      "row": 5,
+      "x": 590,
+      "y": 705,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "UC-001",
+      "element_id": "UC-001",
+      "name": "Provide Global Communication Service",
+      "label": "UC-001 - Provide Global Communication Service",
+      "type": "UseCase",
+      "stereotype_label": "«use case»",
+      "shape": "ellipse",
+      "column": 3,
+      "row": 0,
+      "x": 850,
+      "y": 80,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "UC-002",
+      "element_id": "UC-002",
+      "name": "Deploy and Maintain Constellation",
+      "label": "UC-002 - Deploy and Maintain Constellation",
+      "type": "UseCase",
+      "stereotype_label": "«use case»",
+      "shape": "ellipse",
+      "column": 3,
+      "row": 1,
+      "x": 850,
+      "y": 205,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "UC-003",
+      "element_id": "UC-003",
+      "name": "Operate Satellite Bus",
+      "label": "UC-003 - Operate Satellite Bus",
+      "type": "UseCase",
+      "stereotype_label": "«use case»",
+      "shape": "ellipse",
+      "column": 3,
+      "row": 2,
+      "x": 850,
+      "y": 330,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "UC-004",
+      "element_id": "UC-004",
+      "name": "Manage Payload",
+      "label": "UC-004 - Manage Payload",
+      "type": "UseCase",
+      "stereotype_label": "«use case»",
+      "shape": "ellipse",
+      "column": 3,
+      "row": 3,
+      "x": 850,
+      "y": 455,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "IF-001",
+      "element_id": "IF-001",
+      "name": "Satellite-to-Satellite Interface",
+      "label": "IF-001 - Satellite-to-Satellite Interface",
+      "type": "Interface",
+      "stereotype_label": "«interface»",
+      "shape": "soft",
+      "column": 4,
+      "row": 0,
+      "x": 1110,
+      "y": 80,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "IF-002",
+      "element_id": "IF-002",
+      "name": "Satellite-to-Ground Interface",
+      "label": "IF-002 - Satellite-to-Ground Interface",
+      "type": "Interface",
+      "stereotype_label": "«interface»",
+      "shape": "soft",
+      "column": 4,
+      "row": 1,
+      "x": 1110,
+      "y": 205,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "IF-003",
+      "element_id": "IF-003",
+      "name": "Bus-Payload Interface",
+      "label": "IF-003 - Bus-Payload Interface",
+      "type": "Interface",
+      "stereotype_label": "«interface»",
+      "shape": "soft",
+      "column": 4,
+      "row": 2,
+      "x": 1110,
+      "y": 330,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "CON-001",
+      "element_id": "CON-001",
+      "name": "Orbital Constraints",
+      "label": "CON-001 - Orbital Constraints",
+      "type": "ConstraintBlock",
+      "stereotype_label": "«constraint»",
+      "shape": "rect",
+      "column": 5,
+      "row": 0,
+      "x": 1370,
+      "y": 80,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "CON-002",
+      "element_id": "CON-002",
+      "name": "Power Budget",
+      "label": "CON-002 - Power Budget",
+      "type": "ConstraintBlock",
+      "stereotype_label": "«constraint»",
+      "shape": "rect",
+      "column": 5,
+      "row": 1,
+      "x": 1370,
+      "y": 205,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "CON-003",
+      "element_id": "CON-003",
+      "name": "Mass Budget",
+      "label": "CON-003 - Mass Budget",
+      "type": "ConstraintBlock",
+      "stereotype_label": "«constraint»",
+      "shape": "rect",
+      "column": 5,
+      "row": 2,
+      "x": 1370,
+      "y": 330,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "CON-004",
+      "element_id": "CON-004",
+      "name": "Cost Ceiling",
+      "label": "CON-004 - Cost Ceiling",
+      "type": "ConstraintBlock",
+      "stereotype_label": "«constraint»",
+      "shape": "rect",
+      "column": 5,
+      "row": 3,
+      "x": 1370,
+      "y": 455,
+      "width": 220,
+      "height": 72
+    }
+  ],
+  "edges": [
+    {
+      "id": "REL-001",
+      "relationship_id": "REL-001",
+      "source": "REQ-001",
+      "target": "BLK-001",
+      "type": "satisfy",
+      "label": "satisfy",
+      "points": [
+        {
+          "x": 590,
+          "y": 102
+        },
+        {
+          "x": 542,
+          "y": 102
+        },
+        {
+          "x": 598,
+          "y": 130
+        },
+        {
+          "x": 550,
+          "y": 130
+        }
+      ],
+      "label_x": 570,
+      "label_y": 110
+    },
+    {
+      "id": "REL-002",
+      "relationship_id": "REL-002",
+      "source": "REQ-002",
+      "target": "UC-001",
+      "type": "trace",
+      "label": "trace",
+      "points": [
+        {
+          "x": 810,
+          "y": 234
+        },
+        {
+          "x": 858,
+          "y": 234
+        },
+        {
+          "x": 802,
+          "y": 123
+        },
+        {
+          "x": 850,
+          "y": 123
+        }
+      ],
+      "label_x": 830,
+      "label_y": 172
+    },
+    {
+      "id": "REL-003",
+      "relationship_id": "REL-003",
+      "source": "REQ-004",
+      "target": "BLK-005",
+      "type": "satisfy",
+      "label": "satisfy",
+      "points": [
+        {
+          "x": 590,
+          "y": 491
+        },
+        {
+          "x": 542,
+          "y": 491
+        },
+        {
+          "x": 598,
+          "y": 616
+        },
+        {
+          "x": 550,
+          "y": 616
+        }
+      ],
+      "label_x": 570,
+      "label_y": 547
+    },
+    {
+      "id": "REL-004",
+      "relationship_id": "REL-004",
+      "source": "REQ-005",
+      "target": "CON-003",
+      "type": "refine",
+      "label": "refine",
+      "points": [
+        {
+          "x": 810,
+          "y": 623
+        },
+        {
+          "x": 1045,
+          "y": 623
+        },
+        {
+          "x": 1135,
+          "y": 359
+        },
+        {
+          "x": 1370,
+          "y": 359
+        }
+      ],
+      "label_x": 1090,
+      "label_y": 485
+    },
+    {
+      "id": "REL-005",
+      "relationship_id": "REL-005",
+      "source": "BLK-001",
+      "target": "BLK-002",
+      "type": "contains",
+      "label": "contains",
+      "points": [
+        {
+          "x": 454,
+          "y": 152
+        },
+        {
+          "x": 406,
+          "y": 152
+        },
+        {
+          "x": 474,
+          "y": 205
+        },
+        {
+          "x": 426,
+          "y": 205
+        }
+      ],
+      "label_x": 440,
+      "label_y": 172
+    },
+    {
+      "id": "REL-006",
+      "relationship_id": "REL-006",
+      "source": "BLK-001",
+      "target": "BLK-004",
+      "type": "contains",
+      "label": "contains",
+      "points": [
+        {
+          "x": 426,
+          "y": 152
+        },
+        {
+          "x": 474,
+          "y": 152
+        },
+        {
+          "x": 406,
+          "y": 455
+        },
+        {
+          "x": 454,
+          "y": 455
+        }
+      ],
+      "label_x": 440,
+      "label_y": 297
+    },
+    {
+      "id": "REL-007",
+      "relationship_id": "REL-007",
+      "source": "BLK-001",
+      "target": "BLK-006",
+      "type": "contains",
+      "label": "contains",
+      "points": [
+        {
+          "x": 433,
+          "y": 152
+        },
+        {
+          "x": 481,
+          "y": 152
+        },
+        {
+          "x": 399,
+          "y": 705
+        },
+        {
+          "x": 447,
+          "y": 705
+        }
+      ],
+      "label_x": 440,
+      "label_y": 422
+    },
+    {
+      "id": "REL-008",
+      "relationship_id": "REL-008",
+      "source": "BLK-002",
+      "target": "BLK-003",
+      "type": "contains",
+      "label": "contains",
+      "points": [
+        {
+          "x": 440,
+          "y": 277
+        },
+        {
+          "x": 488,
+          "y": 277
+        },
+        {
+          "x": 392,
+          "y": 330
+        },
+        {
+          "x": 440,
+          "y": 330
+        }
+      ],
+      "label_x": 440,
+      "label_y": 297
+    },
+    {
+      "id": "REL-009",
+      "relationship_id": "REL-009",
+      "source": "BLK-002",
+      "target": "BLK-005",
+      "type": "contains",
+      "label": "contains",
+      "points": [
+        {
+          "x": 447,
+          "y": 277
+        },
+        {
+          "x": 399,
+          "y": 277
+        },
+        {
+          "x": 481,
+          "y": 580
+        },
+        {
+          "x": 433,
+          "y": 580
+        }
+      ],
+      "label_x": 440,
+      "label_y": 422
+    },
+    {
+      "id": "REL-010",
+      "relationship_id": "REL-010",
+      "source": "IF-001",
+      "target": "BLK-005",
+      "type": "allocate",
+      "label": "allocate",
+      "points": [
+        {
+          "x": 1110,
+          "y": 130
+        },
+        {
+          "x": 875,
+          "y": 130
+        },
+        {
+          "x": 785,
+          "y": 602
+        },
+        {
+          "x": 550,
+          "y": 602
+        }
+      ],
+      "label_x": 830,
+      "label_y": 360
+    },
+    {
+      "id": "REL-011",
+      "relationship_id": "REL-011",
+      "source": "IF-002",
+      "target": "BLK-004",
+      "type": "allocate",
+      "label": "allocate",
+      "points": [
+        {
+          "x": 1110,
+          "y": 227
+        },
+        {
+          "x": 875,
+          "y": 227
+        },
+        {
+          "x": 785,
+          "y": 505
+        },
+        {
+          "x": 550,
+          "y": 505
+        }
+      ],
+      "label_x": 830,
+      "label_y": 360
+    },
+    {
+      "id": "REL-012",
+      "relationship_id": "REL-012",
+      "source": "IF-002",
+      "target": "BLK-002",
+      "type": "allocate",
+      "label": "allocate",
+      "points": [
+        {
+          "x": 1110,
+          "y": 234
+        },
+        {
+          "x": 875,
+          "y": 234
+        },
+        {
+          "x": 785,
+          "y": 248
+        },
+        {
+          "x": 550,
+          "y": 248
+        }
+      ],
+      "label_x": 830,
+      "label_y": 235
+    },
+    {
+      "id": "REL-013",
+      "relationship_id": "REL-013",
+      "source": "IF-003",
+      "target": "BLK-002",
+      "type": "allocate",
+      "label": "allocate",
+      "points": [
+        {
+          "x": 1110,
+          "y": 366
+        },
+        {
+          "x": 875,
+          "y": 366
+        },
+        {
+          "x": 785,
+          "y": 241
+        },
+        {
+          "x": 550,
+          "y": 241
+        }
+      ],
+      "label_x": 830,
+      "label_y": 297
+    },
+    {
+      "id": "REL-014",
+      "relationship_id": "REL-014",
+      "source": "IF-003",
+      "target": "BLK-003",
+      "type": "allocate",
+      "label": "allocate",
+      "points": [
+        {
+          "x": 1110,
+          "y": 373
+        },
+        {
+          "x": 875,
+          "y": 373
+        },
+        {
+          "x": 785,
+          "y": 359
+        },
+        {
+          "x": 550,
+          "y": 359
+        }
+      ],
+      "label_x": 830,
+      "label_y": 360
+    },
+    {
+      "id": "REL-015",
+      "relationship_id": "REL-015",
+      "source": "ACT-001",
+      "target": "BLK-006",
+      "type": "allocate",
+      "label": "allocate",
+      "points": [
+        {
+          "x": 290,
+          "y": 130
+        },
+        {
+          "x": 338,
+          "y": 130
+        },
+        {
+          "x": 282,
+          "y": 727
+        },
+        {
+          "x": 330,
+          "y": 727
+        }
+      ],
+      "label_x": 310,
+      "label_y": 422
+    },
+    {
+      "id": "REL-016",
+      "relationship_id": "REL-016",
+      "source": "ACT-002",
+      "target": "BLK-002",
+      "type": "allocate",
+      "label": "allocate",
+      "points": [
+        {
+          "x": 290,
+          "y": 227
+        },
+        {
+          "x": 338,
+          "y": 227
+        },
+        {
+          "x": 282,
+          "y": 255
+        },
+        {
+          "x": 330,
+          "y": 255
+        }
+      ],
+      "label_x": 310,
+      "label_y": 235
+    },
+    {
+      "id": "REL-017",
+      "relationship_id": "REL-017",
+      "source": "ACT-003",
+      "target": "UC-001",
+      "type": "refine",
+      "label": "refine",
+      "points": [
+        {
+          "x": 290,
+          "y": 359
+        },
+        {
+          "x": 525,
+          "y": 359
+        },
+        {
+          "x": 615,
+          "y": 123
+        },
+        {
+          "x": 850,
+          "y": 123
+        }
+      ],
+      "label_x": 570,
+      "label_y": 235
+    },
+    {
+      "id": "REL-018",
+      "relationship_id": "REL-018",
+      "source": "CON-001",
+      "target": "BLK-001",
+      "type": "refine",
+      "label": "refine",
+      "points": [
+        {
+          "x": 1370,
+          "y": 116
+        },
+        {
+          "x": 1026,
+          "y": 116
+        },
+        {
+          "x": 894,
+          "y": 116
+        },
+        {
+          "x": 550,
+          "y": 116
+        }
+      ],
+      "label_x": 960,
+      "label_y": 110
+    },
+    {
+      "id": "REL-019",
+      "relationship_id": "REL-019",
+      "source": "REQ-003",
+      "target": "CON-001",
+      "type": "derivereqt",
+      "label": "derivereqt",
+      "points": [
+        {
+          "x": 810,
+          "y": 373
+        },
+        {
+          "x": 1045,
+          "y": 373
+        },
+        {
+          "x": 1135,
+          "y": 109
+        },
+        {
+          "x": 1370,
+          "y": 109
+        }
+      ],
+      "label_x": 1090,
+      "label_y": 235
+    },
+    {
+      "id": "REL-020",
+      "relationship_id": "REL-020",
+      "source": "REQ-006",
+      "target": "BLK-001",
+      "type": "satisfy",
+      "label": "satisfy",
+      "points": [
+        {
+          "x": 590,
+          "y": 755
+        },
+        {
+          "x": 542,
+          "y": 755
+        },
+        {
+          "x": 598,
+          "y": 102
+        },
+        {
+          "x": 550,
+          "y": 102
+        }
+      ],
+      "label_x": 570,
+      "label_y": 422
+    }
+  ]
+}

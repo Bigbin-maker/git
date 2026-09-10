@@ -1,0 +1,37 @@
+﻿local_id,name,type,package,metaclass,stereotype,documentation,source_requirement,status
+REQ-001,星座规模要求,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,卫星互联网由100颗工作星组成，不含备份星（备份星可额外发射）。依据AI基线方案，待确认。,REQ-001,candidate
+REQ-002,轨道高度要求,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,轨道高度范围1100~1300 km，兼顾覆盖与通信延迟。依据AI参考基线。,REQ-002,candidate
+REQ-003,轨道倾角要求,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,倾角约80°~90°，采用极轨或近极轨以实现含极地全球覆盖。依据AI参考基线。,REQ-003,candidate
+REQ-004,轨道面构型要求,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,10个轨道面，每面10颗卫星均匀分布，形成Walker/玫瑰构型，保证多重覆盖。,REQ-004,candidate
+REQ-005,全球覆盖含极地要求,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,系统需提供全球无缝覆盖，包括极地地区。依据AI参考基线。,REQ-005,candidate
+REQ-006,多重覆盖要求,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,全球任意点至少保证2~4重卫星覆盖，仰角≥10°。依据AI参考基线。,REQ-006,candidate
+REQ-007,星间链路要求,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,每颗卫星配置4条激光星间链路（同轨前后、异轨左右），形成空间网络。可选用射频备份。,REQ-007,candidate
+REQ-008,用户链路要求,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,用户链路使用Ku/Ka频段，提供多点波束，支持星上再生或透明转发模式。,REQ-008,candidate
+REQ-009,馈电链路要求,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,馈电链路使用Ka/Q/V频段，每星1~2个馈电波束，连接地面信关站。,REQ-009,candidate
+REQ-010,地面信关站数量与分布要求,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,全球部署约20~30个信关站，可依托陆地/海底光缆落地，支持跨国部署。,REQ-010,candidate
+REQ-011,系统总吞吐量要求,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,系统总吞吐量2~5 Tbps，单星吞吐量约20~50 Gbps。依据AI参考基线。,REQ-011,candidate
+REQ-012,用户单向时延要求,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,用户至信关站落地单向时延30~50 ms（不含地面网络延迟）。,REQ-012,candidate
+REQ-013,网络可用度要求,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,系统设计及路由保证网络可用度不低于99.9%。,REQ-013,candidate
+REQ-014,发射部署方式要求,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,采用一箭多星方式（如单次发射10~20星），分批次完成部署。,REQ-014,candidate
+REQ-015,空间碎片减缓要求,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,卫星具备在轨推进及自主离轨能力，满足25年碎片减缓规则。,REQ-015,candidate
+UC-001,提供全球互联网接入服务,UseCase,02_UseCases,UseCase,,系统核心用例：为全球授权用户终端提供互联网接入，包括覆盖极地、支持多种终端。,,proposed
+UC-002,星间路由与组网,UseCase,02_UseCases,UseCase,,通过星间激光链路实现空间组网和数据包路由，支持时间确定性或自主路由。,,proposed
+UC-003,馈电链路落地与地面网络对接,UseCase,02_UseCases,UseCase,,管理馈电链路连接信关站，将用户流量落地至地面互联网，支持信关站间切换。,,proposed
+UC-004,星座发射部署与在轨维护,UseCase,02_UseCases,UseCase,,包括卫星批量发射、轨道部署、备份星管理及寿命末期离轨操作。,,proposed
+BLK-001,卫星互联网星座系统,Block,03_Blocks,Class,SysML::Blocks::Block,顶层系统模块，包含100颗卫星、星间链路及地面段。,,proposed
+BLK-002,卫星,Block,03_Blocks,Class,SysML::Blocks::Block,单个低轨卫星平台，携带星间链路载荷、用户链路载荷、馈电链路载荷、路由处理及推进系统。,,proposed
+BLK-003,地面段,Block,03_Blocks,Class,SysML::Blocks::Block,包含网络控制中心、卫星管理中心、信关站和核心网接口等。,,proposed
+BLK-004,星间链路子系统,Block,03_Blocks,Class,SysML::Blocks::Block,实现激光星间链路，含光学天线、调制解调及指向控制，支持4条链路。,,proposed
+BLK-005,用户链路子系统,Block,03_Blocks,Class,SysML::Blocks::Block,Ku/Ka频段用户波束生成与处理子系统，支持多点波束和再生/透明转发。,,proposed
+BLK-006,馈电链路子系统,Block,03_Blocks,Class,SysML::Blocks::Block,Ka/Q/V频段馈电天线与处理单元，提供星地馈电连接。,,proposed
+IF-001,用户链路射频接口,Interface,04_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,卫星与用户终端之间的Ku/Ka频段射频接口，包含多点波束和协议处理。,,proposed
+IF-002,馈电链路射频接口,Interface,04_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,卫星与信关站之间的Ka/Q/V频段馈电射频接口。,,proposed
+IF-003,星间激光链路接口,Interface,04_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,卫星间激光通信接口，实现高速数据中继与路由。,,proposed
+IF-004,地面核心网接口,Interface,04_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,信关站与地面互联网之间BGP对等互联接口。,,proposed
+ACT-001,用户终端接入与端到端通信流程,Activity,05_Activities,Activity,,描述用户终端通过卫星星座建立会话、数据传输及切换的完整活动流。,,proposed
+ACT-002,星上路由决策与交换流程,Activity,05_Activities,Activity,,描述卫星根据路由表进行数据包转发、ISL选择及拥塞控制的动态行为。,,proposed
+ACT-003,信关站切换与地面落地流程,Activity,05_Activities,Activity,,描述馈电链路在信关站间切换、流量重路由及地面核心网对接的活动。,,proposed
+CON-001,网络可用度约束,ConstraintBlock,06_Constraints,Class,SysML::ConstraintBlocks::ConstraintBlock,施加系统可用度≥99.9%的约束，要求通过冗余设计及路由机制满足。,,proposed
+CON-002,用户单向时延约束,ConstraintBlock,06_Constraints,Class,SysML::ConstraintBlocks::ConstraintBlock,约束用户至地面信关站单向时延在30~50 ms内。,,proposed
+CON-003,轨道高度范围约束,ConstraintBlock,06_Constraints,Class,SysML::ConstraintBlocks::ConstraintBlock,轨道高度约束为1100~1300 km，确保覆盖与延迟特性。,,proposed
+CON-004,轨道倾角范围约束,ConstraintBlock,06_Constraints,Class,SysML::ConstraintBlocks::ConstraintBlock,倾角约束为80°~90°，保证极地覆盖。,,proposed

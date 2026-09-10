@@ -1,0 +1,91 @@
+﻿local_id,name,type,package,metaclass,stereotype,documentation,source_requirement,status
+REQ-001,全球宽带通信服务,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,系统应提供全球（含极地）低延迟、高带宽的互联网接入服务，支持移动和固定终端。,REQ-001,candidate
+REQ-002,单用户下行速率,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,单用户下行速率应不低于100 Mbps。,REQ-001,candidate
+REQ-003,端到端延迟,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,系统端到端通信延迟应不超过30 ms。,REQ-001,candidate
+REQ-004,系统可用性,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,系统可用性应不低于99.5%。,REQ-001,candidate
+REQ-005,星座规模,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,空间段由100颗低轨卫星组成。,REQ-005,candidate
+REQ-006,轨道构型,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,卫星应采用高度约550 km、倾角53°的轨道，分布在10个轨道面，每个轨道面10颗卫星，均匀分布并相互形成规则覆盖。,REQ-005,candidate
+REQ-007,卫星平台基本约束,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,单颗卫星质量约150 kg，功耗400 W，三轴稳定姿控精度≤0.05°，设计寿命5～7年，采用电推进系统。,REQ-005,candidate
+REQ-008,通信载荷配置,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,每颗卫星须配置Ka频段多波束相控阵用户链路天线（16～32波束）、2条10 Gbps星间激光链路、Ka/Q/V频段馈电链路（可动抛物面天线，单星馈电容量≥2 Gbps）。,REQ-005,candidate
+REQ-009,地面段组成,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,地面段应包括5个信关站（全球分布）、3个测控站和1个运控中心，支持星座管理、数据中继与地面网络互联。,REQ-009,candidate
+REQ-010,用户终端类型,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,用户终端应采用平板相控阵天线，自动跟踪卫星切换，功耗约10 W，并能集成Wi-Fi/移动网络。,REQ-010,candidate
+REQ-011,单星故障覆盖冗余,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,当单颗卫星失效时，相邻卫星应通过相位调整覆盖其服务缝隙，确保服务连续性。,REQ-001,candidate
+REQ-012,成本上限,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,单星研制成本不超过50万美元，发射成本不超过50万美元（一箭多星）。,REQ-012,candidate
+REQ-013,频率规则合规,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,系统须遵循ITU无线电规则，完成Ku/Ka等频段国际协调。,REQ-013,candidate
+REQ-014,星座覆盖验收条件,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,覆盖区域内95%地点在24小时内至少可见一颗仰角≥25°的卫星，且单用户速率满足设定指标。,REQ-001,candidate
+BLK-001,空间段,Block,02_Structure,Class,SysML::Blocks::Block,包含所有100颗低轨卫星的星座整体，实现全球覆盖服务。,,candidate
+BLK-002,单颗卫星,Block,02_Structure,Class,SysML::Blocks::Block,组成星座的基本卫星单元，包含平台、载荷等子系统。,,candidate
+BLK-003,卫星平台,Block,02_Structure,Class,SysML::Blocks::Block,提供结构、供电、姿轨控、推进、热控等基础服务，质量约150 kg，功耗400 W，三轴稳定，电推进。,,candidate
+BLK-004,通信载荷,Block,02_Structure,Class,SysML::Blocks::Block,执行用户链路、星间链路和馈电链路的通信任务，包含天线、射频前端和基带处理。,,candidate
+BLK-005,用户链路天线（多波束相控阵）,Block,02_Structure,Class,SysML::Blocks::Block,Ka频段相控阵天线，每星产生16～32个可跳变波束，服务地面用户终端。,,candidate
+BLK-006,星间链路终端（激光）,Block,02_Structure,Class,SysML::Blocks::Block,两个激光通信终端，前后各一，提供10 Gbps星间中继链路。,,candidate
+BLK-007,馈电链路天线,Block,02_Structure,Class,SysML::Blocks::Block,Ka/Q/V频段可动抛物面天线，与地面信关站建立馈电链路，单星容量≥2 Gbps。,,candidate
+BLK-008,地面段,Block,02_Structure,Class,SysML::Blocks::Block,包含信关站、测控站和星座管理中心，支持星座运行和与地面网络互联。,,candidate
+BLK-009,信关站,Block,02_Structure,Class,SysML::Blocks::Block,共5个，全球分布，通过光纤互连，与多颗可视卫星同时建立馈电链路。,,candidate
+BLK-010,测控站,Block,02_Structure,Class,SysML::Blocks::Block,3个全球分布的S频段TT&C站，支持卫星遥控、遥测与软件上注。,,candidate
+BLK-011,运控中心,Block,02_Structure,Class,SysML::Blocks::Block,统一负责轨道规划、碰撞预警、资源调度和故障管理。,,candidate
+BLK-012,用户段,Block,02_Structure,Class,SysML::Blocks::Block,包含各类用户终端，使用平板相控阵天线，支持移动/固定宽带接入。,,candidate
+BLK-013,用户终端设备,Block,02_Structure,Class,SysML::Blocks::Block,平板相控阵天线终端，自动跟踪卫星，功率约10 W，提供Wi-Fi/移动网络接口。,,candidate
+UC-001,提供全球宽带接入,UseCase,03_UseCases,UseCase,,系统为授权用户提供连续的互联网接入服务，支持移动和固定使用场景。,,candidate
+UC-002,管理星座运行,UseCase,03_UseCases,UseCase,,运控中心执行轨道维持、相位调整、碰撞预警、故障恢复等任务，保证星座服务能力。,,candidate
+UC-003,建立与维护用户通信链路,UseCase,03_UseCases,UseCase,,卫星与用户终端之间动态建立Ka频段波束连接，实现数据收发和跨星切换。,,candidate
+UC-004,处理卫星故障与覆盖恢复,UseCase,03_UseCases,UseCase,,单颗卫星失效时，相邻卫星及地面系统协同调整覆盖与路由，保持服务连续性。,,candidate
+UC-005,部署卫星入轨与组网,UseCase,03_UseCases,UseCase,,卫星发射入轨后完成展开、初始检测、电推相位调整和星间/馈电链路激活。,,candidate
+UC-006,卫星离轨处置,UseCase,03_UseCases,UseCase,,卫星寿命末期执行主动离轨，确保25年内再入大气层，满足空间碎片减缓要求。,,candidate
+IF-001,用户链路无线接口,Interface,04_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,Ka频段相控阵无线接口，连接卫星用户链路天线与用户终端，支持波束跳变和多用户接入。,,candidate
+IF-002,馈电链路无线接口,Interface,04_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,Ka/Q/V频段无线接口，实现卫星与地面信关站之间的高速数据中继。,,candidate
+IF-003,测控链路无线接口,Interface,04_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,S频段无线接口，用于卫星与测控站之间的遥测、遥控和软件上注。,,candidate
+IF-004,星间激光链路接口,Interface,04_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,星间激光通信接口，速率10 Gbps，连接相邻卫星前后向，支持中继组网。,,candidate
+IF-005,地面网络接口,Interface,04_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,信关站与地面光纤网络之间的标准接口，实现互联网交换与数据互联。,,candidate
+IF-006,用户终端网络接口,Interface,04_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,用户终端提供给最终用户设备的Wi-Fi或有线网络接入接口。,,candidate
+ACT-001,卫星入轨与部署流程,Activity,05_Activities,Activity,,卫星从星箭分离到进入预定轨道的活动序列，包括太阳翼展开、初始姿态捕获、电推相位调整和健康检查。,,candidate
+ACT-002,在轨测试与激活流程,Activity,05_Activities,Activity,,完成平台和载荷的功能与性能测试，然后激活星间链路和馈电链路，加入网络路由。,,candidate
+ACT-003,正常服务与路由管理流程,Activity,05_Activities,Activity,,用户终端发现卫星、波束分配、建立连接、数据传输以及跨星切换和星座级路由管理。,,candidate
+ACT-004,故障处理与覆盖恢复流程,Activity,05_Activities,Activity,,监测卫星或信关站故障，触发相邻卫星覆盖调整、星间链路重路由等恢复操作。,,candidate
+CON-001,成本约束,ConstraintBlock,06_Constraints,Class,SysML::ConstraintBlocks::ConstraintBlock,单星研制成本≤500k美元，发射成本≤500k美元，总星座预算须满足此上限。,,candidate
+CON-002,空间碎片减缓约束,ConstraintBlock,06_Constraints,Class,SysML::ConstraintBlocks::ConstraintBlock,卫星设计须确保任务结束后25年内再入大气层，满足IADC空间碎片减缓指南。,,candidate
+CON-003,ITU频率协调约束,ConstraintBlock,06_Constraints,Class,SysML::ConstraintBlocks::ConstraintBlock,系统使用的Ku/Ka频段须经国际电信联盟协调并符合各国频率监管要求。,,candidate
+CON-004,覆盖验收约束,ConstraintBlock,06_Constraints,Class,SysML::ConstraintBlocks::ConstraintBlock,星座交付验收时，覆盖区域95%地点须在24小时内至少可见一颗仰角≥25°的卫星，且单用户速率达标。,,candidate
+ACTOR-001,终端用户,Actor,00_Actors,Actor,,使用卫星宽带互联网服务的个人、企业或移动平台（飞机、船舶等）。,,candidate
+ACTOR-002,星座运维人员,Actor,00_Actors,Actor,,通过运控中心执行星座日常管理、故障处理、软件上注等操作的专业人员与自动化系统。,,candidate
+ACTOR-003,发射服务方,Actor,00_Actors,Actor,,提供一箭多星发射、星箭分离与初始轨道部署的外部组织。,,candidate
+IBD-BLK-001,空间段,Block,02_Structure,Class,SysML::Blocks::Block,包含所有100颗低轨卫星的星座整体，实现全球覆盖服务。,,existing
+IBD-BLK-002,地面段,Block,02_Structure,Class,SysML::Blocks::Block,包含信关站、测控站和星座管理中心，支持星座运行和与地面网络互联。,,existing
+IBD-BLK-003,用户段,Block,02_Structure,Class,SysML::Blocks::Block,包含各类用户终端，使用平板相控阵天线，支持移动/固定宽带接入。,,existing
+IBD-IF-001,用户链路无线接口,Interface,04_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,Ka频段相控阵无线接口，连接卫星用户链路天线与用户终端，支持波束跳变和多用户接入。,,existing
+IBD-IF-002,馈电链路无线接口,Interface,04_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,Ka/Q/V频段无线接口，实现卫星与地面信关站之间的高速数据中继。,,existing
+IBD-IF-003,测控链路无线接口,Interface,04_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,S频段无线接口，用于卫星与测控站之间的遥测、遥控和软件上注。,,existing
+IBD-IF-004,地面网络接口,Interface,04_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,信关站与地面光纤网络之间的标准接口，实现互联网交换与数据互联。,,existing
+IBD-IF-BLK-003-001,卫星平台输入接口,Interface,04_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,接入 卫星平台 的外部任务、数据、信号、控制或资源输入。,,candidate
+IBD-BLK-BLK-003-001,结构接入与整形单元,Block,02_Structure,Class,SysML::Blocks::Block,完成 结构 相关输入接入、格式整形、初步校核或信号调理。,,candidate
+IBD-BLK-BLK-003-002,供电处理单元,Block,02_Structure,Class,SysML::Blocks::Block,承担 供电 相关核心处理、转换、分析或计算职责。,,candidate
+IBD-BLK-BLK-003-003,姿轨控控制管理单元,Block,02_Structure,Class,SysML::Blocks::Block,执行 姿轨控 相关模式控制、参数配置、调度或策略管理。,,candidate
+IBD-BLK-BLK-003-004,推进执行输出单元,Block,02_Structure,Class,SysML::Blocks::Block,将内部处理结果转换为 推进 相关输出、转发、执行或服务交付。,,candidate
+IBD-IF-BLK-003-002,卫星平台输出接口,Interface,04_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,对外交付 卫星平台 的处理结果、业务数据、状态或服务输出。,,candidate
+IBD-BLK-BLK-003-005,状态监测与保护单元,Block,02_Structure,Class,SysML::Blocks::Block,采集 卫星平台 内部状态、健康遥测、告警和保护动作。,,candidate
+IBD-IF-BLK-003-003,平台资源接口,Interface,04_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,连接供电、热控、时间同步、遥测遥控或平台支撑资源。,,candidate
+IBD-IF-BLK-010-001,测控站输入接口,Interface,04_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,接入 测控站 的外部任务、数据、信号、控制或资源输入。,,candidate
+IBD-BLK-BLK-010-001,3个全球分布的S频段接入与整形单元,Block,02_Structure,Class,SysML::Blocks::Block,完成 3个全球分布的S频段 相关输入接入、格式整形、初步校核或信号调理。,,candidate
+IBD-BLK-BLK-010-002,卫星遥控处理单元,Block,02_Structure,Class,SysML::Blocks::Block,承担 卫星遥控 相关核心处理、转换、分析或计算职责。,,candidate
+IBD-BLK-BLK-010-003,遥测控制管理单元,Block,02_Structure,Class,SysML::Blocks::Block,执行 遥测 相关模式控制、参数配置、调度或策略管理。,,candidate
+IBD-BLK-BLK-010-004,软件上注执行输出单元,Block,02_Structure,Class,SysML::Blocks::Block,将内部处理结果转换为 软件上注 相关输出、转发、执行或服务交付。,,candidate
+IBD-IF-BLK-010-002,测控站输出接口,Interface,04_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,对外交付 测控站 的处理结果、业务数据、状态或服务输出。,,candidate
+IBD-BLK-BLK-010-005,状态监测与保护单元,Block,02_Structure,Class,SysML::Blocks::Block,采集 测控站 内部状态、健康遥测、告警和保护动作。,,candidate
+IBD-IF-BLK-010-003,平台资源接口,Interface,04_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,连接供电、热控、时间同步、遥测遥控或平台支撑资源。,,candidate
+IBD-IF-BLK-011-001,运控中心输入接口,Interface,04_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,接入 运控中心 的外部任务、数据、信号、控制或资源输入。,,candidate
+IBD-BLK-BLK-011-001,统一负责轨道规划接入与整形单元,Block,02_Structure,Class,SysML::Blocks::Block,完成 统一负责轨道规划 相关输入接入、格式整形、初步校核或信号调理。,,candidate
+IBD-BLK-BLK-011-002,碰撞预警处理单元,Block,02_Structure,Class,SysML::Blocks::Block,承担 碰撞预警 相关核心处理、转换、分析或计算职责。,,candidate
+IBD-BLK-BLK-011-003,资源调度控制管理单元,Block,02_Structure,Class,SysML::Blocks::Block,执行 资源调度 相关模式控制、参数配置、调度或策略管理。,,candidate
+IBD-BLK-BLK-011-004,故障执行输出单元,Block,02_Structure,Class,SysML::Blocks::Block,将内部处理结果转换为 故障 相关输出、转发、执行或服务交付。,,candidate
+IBD-IF-BLK-011-002,运控中心输出接口,Interface,04_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,对外交付 运控中心 的处理结果、业务数据、状态或服务输出。,,candidate
+IBD-BLK-BLK-011-005,状态监测与保护单元,Block,02_Structure,Class,SysML::Blocks::Block,采集 运控中心 内部状态、健康遥测、告警和保护动作。,,candidate
+IBD-IF-BLK-011-003,平台资源接口,Interface,04_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,连接供电、热控、时间同步、遥测遥控或平台支撑资源。,,candidate
+BHV-ACT-005,接收100颗低轨宽带卫星互联网系统任务输入,Activity,03_Behavior,Activity,,接收100颗低轨宽带卫星互联网系统任务输入是根据当前模型补充的候选行为步骤。,,candidate
+BHV-ACT-006,解析任务目标与约束,Activity,03_Behavior,Activity,,解析任务目标与约束是根据当前模型补充的候选行为步骤。,,candidate
+BHV-STATE-001,待命与任务接收状态,Activity,03_Behavior,Activity,,100颗低轨宽带卫星互联网系统在待命与任务接收状态下的运行行为和约束。,,candidate
+BHV-STATE-002,资源配置状态,Activity,03_Behavior,Activity,,100颗低轨宽带卫星互联网系统在资源配置状态下的运行行为和约束。,,candidate
+BHV-STATE-003,业务运行状态,Activity,03_Behavior,Activity,,100颗低轨宽带卫星互联网系统在业务运行状态下的运行行为和约束。,,candidate
+BHV-STATE-004,降级重构状态,Activity,03_Behavior,Activity,,100颗低轨宽带卫星互联网系统在降级重构状态下的运行行为和约束。,,candidate
+BHV-STATE-005,故障处置与恢复状态,Activity,03_Behavior,Activity,,100颗低轨宽带卫星互联网系统在故障处置与恢复状态下的运行行为和约束。,,candidate
+IBD-BLK-004,基带调制解调器,Block,02_Structure,Class,SysML::Blocks::Block,实现物理层调制解调、信道编解码、同步和错误控制，提供与星上路由器的数字化数据接口。,,candidate
+IBD-BLK-005,天线校准单元,Block,02_Structure,Class,SysML::Blocks::Block,执行相控阵天线通道的幅相校准、温度补偿和健康监测，确保波束赋形精度。,,candidate

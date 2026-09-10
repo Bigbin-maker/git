@@ -1,0 +1,45 @@
+﻿local_id,name,type,package,metaclass,stereotype,documentation,source_requirement,status
+REQ-001,通信星座顶层任务需求,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,系统应提供全球宽带窄带物联通信服务，同时具备星基ADS-B/AIS监测能力。,REQ-001,accepted
+REQ-002,覆盖与回访时间需求,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,对地覆盖范围±60°纬度，单用户最小通信仰角10°，物联网服务回访时间小于15分钟，宽带服务需满足实时要求。,REQ-001,accepted
+REQ-003,卫星寿命需求,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,卫星在轨服务寿命应达到5至7年。,REQ-001,accepted
+REQ-004,星座规模与备份需求,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,系统由100颗卫星组成（含在轨备份星），保证网络可用性。,REQ-001,accepted
+REQ-005,轨道参数需求,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,采用低地球轨道（LEO），高度550-650 km，倾角约55°，可采用Walker Delta构型。,REQ-001,accepted
+REQ-006,卫星质量约束,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,单星湿质量不得超过300 kg，以满足一箭多星发射的运载能力限制。,REQ-006,accepted
+REQ-007,平台功率约束,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,卫星平台峰值功耗应不大于600 W，太阳翼必须提供充裕的初始功率保障。,REQ-007,accepted
+REQ-008,成本约束,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,单星成本应低于500万美元，整个星座制造与发射总预算控制在8亿美元以内。,REQ-008,accepted
+REQ-009,空间碎片减缓需求,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,必须满足25年离轨规则，任务结束后通过自然衰减与电推进加速，确保离轨时间小于5年。,REQ-009,accepted
+REQ-010,星间链路能力需求,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,星座中部分卫星应配备激光星间链路终端，实现骨干互联并减少对关口站的依赖。,REQ-001,accepted
+REQ-011,ADS-B/AIS监测需求,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,卫星应具备接收1090 MHz ADS-B信号和162 MHz AIS信号的能力，用于航空与海事监视。,REQ-001,accepted
+BLK-001,LEO通信星座系统,Block,02_Structure,Class,SysML::Blocks::Block,整个百颗低轨卫星星座及其配套地面系统的最高层级块。,,accepted
+BLK-002,卫星,Block,02_Structure,Class,SysML::Blocks::Block,星座中的单颗卫星，包括平台与有效载荷。,,accepted
+BLK-003,卫星平台,Block,02_Structure,Class,SysML::Blocks::Block,提供结构、电源、姿控、推进、热控和星务管理等基础服务。,,accepted
+BLK-004,有效载荷,Block,02_Structure,Class,SysML::Blocks::Block,卫星上完成任务功能的设备集合，包含通信载荷、ISL终端和ADS-B/AIS接收机。,,accepted
+BLK-005,通信载荷,Block,02_Structure,Class,SysML::Blocks::Block,采用软件定义无线电架构，支持Ka频段用户链路（相控阵）多波束和V频段馈电链路，兼容DVB-S2X/5G NTN协议。,,accepted
+BLK-006,星间链路终端,Block,02_Structure,Class,SysML::Blocks::Block,激光通信终端，提供50-100 Mbps星间链路，用于骨干互联。,,accepted
+BLK-007,ADS-B/AIS接收机,Block,02_Structure,Class,SysML::Blocks::Block,接收1090 MHz ADS-B和162 MHz AIS信号，实现航空和海事监视。,,accepted
+BLK-008,电源分系统,Block,02_Structure,Class,SysML::Blocks::Block,包含两翼可展开GaAs三结太阳翼（初期输出>1 kW）和锂离子蓄电池组（30 Ah）。,,accepted
+BLK-009,姿轨控分系统,Block,02_Structure,Class,SysML::Blocks::Block,由反作用轮、磁力矩器、星敏感器和陀螺组成，指向精度0.05°，结合电推进实现轨道维持。,,accepted
+BLK-010,电推进系统,Block,02_Structure,Class,SysML::Blocks::Block,霍尔推力器，提供70 mN推力，比冲1600 s，用于轨道保持、相位调整和离轨。,,accepted
+BLK-011,地面段,Block,02_Structure,Class,SysML::Blocks::Block,包含关口站、测控与网络控制中心、应用数据处理中心。,,accepted
+BLK-012,关口站,Block,02_Structure,Class,SysML::Blocks::Block,全球部署6-8个，提供Ka/V频段馈电链路接入，连接核心网。,,accepted
+BLK-013,测控与网络控制中心,Block,02_Structure,Class,SysML::Blocks::Block,负责卫星S频段测控、星座管理、任务规划和故障处置。,,accepted
+BLK-014,应用数据中心,Block,02_Structure,Class,SysML::Blocks::Block,云平台处理对地物联数据，支持百万终端接入。,,accepted
+UC-001,提供全球通信服务,UseCase,03_Behavior,UseCase,,用户终端通过卫星星座接入网络，实现宽带和窄带物联通信。,,accepted
+UC-002,监测航空与海事目标,UseCase,03_Behavior,UseCase,,利用卫星上的ADS-B/AIS接收机收集飞机和船舶的位置和状态信息。,,accepted
+UC-003,部署与构建星座,UseCase,03_Behavior,UseCase,,分批发射卫星，通过电推进进行轨道转移和相位展开，形成目标Walker构型。,,accepted
+UC-004,在轨维护与故障恢复,UseCase,03_Behavior,UseCase,,利用备份星和轨道机动策略替换故障工作星，保持星座服务能力。,,accepted
+UC-005,执行轨道维持与离轨,UseCase,03_Behavior,UseCase,,实施轨道半长轴维持，满足规避要求；任务结束后加速离轨，遵守碎片减缓规则。,,accepted
+IF-001,Ka用户链路接口,Interface,04_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,卫星与用户终端之间的Ka频段上下行链路，基于相控阵多波束。,,accepted
+IF-002,V馈电链路接口,Interface,04_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,卫星与地面关口站之间的V频段点波束馈电链路。,,accepted
+IF-003,S测控链路接口,Interface,04_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,卫星与测控中心之间的S频段遥测、遥控与测距链路。,,accepted
+IF-004,激光星间链路接口,Interface,04_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,配备激光终端的卫星之间进行50-100 Mbps双向通信。,,accepted
+IF-005,ADS-B射频接收接口,Interface,04_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,卫星接收1090 MHz广播式自动相关监视信号的空中接口。,,accepted
+IF-006,AIS射频接收接口,Interface,04_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,卫星接收162 MHz船舶自动识别系统信号的空中接口。,,accepted
+ACT-001,端到端通信服务流程,Activity,03_Behavior,Activity,,描述用户终端经卫星、星间链路（可选）、关口站到达核心网的通信数据流，对应对话中的mermaid图。,,accepted
+ACT-002,星座部署与相位展开流程,Activity,03_Behavior,Activity,,描述一箭多星入轨、电推进升轨/降轨、相位分离至形成目标Walker构型的全过程。,,accepted
+ACT-003,故障星替换与重构流程,Activity,03_Behavior,Activity,,描述检测到工作星故障后，备份星通过轨道机动介入服务的过程。,,accepted
+CON-001,卫星质量预算约束块,ConstraintBlock,05_Constraints,Class,SysML::ConstraintBlocks::ConstraintBlock,约束湿质量 ≤ 300 kg，关联卫星设计参数与运载能力。,,accepted
+CON-002,功率预算约束块,ConstraintBlock,05_Constraints,Class,SysML::ConstraintBlocks::ConstraintBlock,约束平台峰值功耗 ≤ 600 W，且太阳翼容量满足负载和充电需求。,,accepted
+CON-003,轨道高度与倾角约束块,ConstraintBlock,05_Constraints,Class,SysML::ConstraintBlocks::ConstraintBlock,约束轨道高度在550-650 km范围内，倾角约为55°。,,accepted
+CON-004,总成本约束块,ConstraintBlock,05_Constraints,Class,SysML::ConstraintBlocks::ConstraintBlock,约束整个星座的全生命周期成本不超过8亿美元。,,accepted
+CON-005,离轨时间约束块,ConstraintBlock,05_Constraints,Class,SysML::ConstraintBlocks::ConstraintBlock,约束任务结束后再入时间 ≤ 5年，满足空间碎片减缓要求。,,accepted

@@ -1,0 +1,71 @@
+﻿local_id,name,type,package,metaclass,stereotype,documentation,source_requirement,status
+REQ-001,轨道高度与倾角,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,卫星轨道高度应在500-1200 km范围内，倾角类型（极轨/倾斜轨道）待定。,REQ-001,candidate
+REQ-002,星座规模与分布,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,空间段由100颗卫星组成；是否采用多层、每个轨道面卫星数量及覆盖重数（如全球≥2重覆盖）待确认。,REQ-002,candidate
+REQ-003,通信频段与链路类型,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,应确定使用频段（Ka/Ku/Q/V），并明确星地用户链路及是否包含星间链路。,REQ-003,candidate
+REQ-004,系统容量与时延,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,需定义单星吞吐量、系统总容量目标，以及端到端时延目标（如30ms或50ms）和系统可用度（如99.5%）。,REQ-004,candidate
+REQ-005,系统边界与外部接口,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,系统是否仅包含空间段，还是也包含地面信关站、运营支撑系统；需明确与互联网骨干网、导航增强、遥测遥控网等外部系统的接口关系。,REQ-005,candidate
+REQ-006,通信标准兼容,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,应考虑是否兼容5G NTN、DVB-S2X等已有通信标准。,REQ-006,candidate
+REQ-007,业务链路模式,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,主要业务链路应为：用户终端→卫星→信关站→互联网；并需澄清星间路由、星上处理/透明转发选择及是否支持应急通信、广播/多播等。,REQ-007,candidate
+REQ-008,卫星平台约束,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,单星质量、功耗、成本、部署方式（如一箭多星）等约束需确定。,REQ-008,candidate
+REQ-009,验收标准,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,覆盖区域、终端仰角、最低速率等验收准则待明确。,REQ-009,candidate
+BLK-001,低轨卫星互联网系统,Block,02_System_Structure,Class,SysML::Blocks::Block,系统顶层上下文，包含空间段（100颗卫星）、地面信关站、用户终端及运营支撑系统（依据REQ-005）。,,candidate
+BLK-002,卫星,Block,02_System_Structure,Class,SysML::Blocks::Block,低轨道通信卫星，携带通信载荷、星间链路终端、星地链路终端，参与路由与波束管理。,,candidate
+BLK-003,信关站,Block,02_System_Structure,Class,SysML::Blocks::Block,地面关口站，连接卫星与地面骨干网，处理馈电链路。,,candidate
+BLK-004,用户终端,Block,02_System_Structure,Class,SysML::Blocks::Block,各种类型终端：动中通、固定站、手持终端等。,,candidate
+IF-001,星地用户链路接口,Interface,03_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,卫星与用户终端之间的通信接口，承载用户数据与信令，频段待定。,REQ-003,candidate
+IF-002,星间链路接口,Interface,03_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,卫星之间的通信接口，用于星间路由与数据中继，待确认是否实施。,REQ-003,candidate
+IF-003,馈电链路接口,Interface,03_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,卫星与信关站之间的通信接口，传输汇聚业务数据。,REQ-005,candidate
+UC-001,配置星座参数,UseCase,04_UseCases,UseCase,,系统运营者根据轨道高度、倾角、卫星分布等设定星座配置。,,candidate
+UC-002,提供全球通信服务,UseCase,04_UseCases,UseCase,,为用户终端提供宽带接入，包括端到端数据传输，满足覆盖和容量需求。,,candidate
+UC-003,管理星间路由,UseCase,04_UseCases,UseCase,,当存在星间链路时，系统执行数据包路由与切换。,,candidate
+ACT-001,用户终端到互联网的通信流程,Activity,05_Activities,Activity,,典型业务行为：用户终端发送数据→卫星接收→（可能星间转发）→信关站→地面骨干网→互联网；反向亦然。根据目前澄清，假设透明转发模式。,REQ-007,candidate
+CON-001,端到端时延约束,ConstraintBlock,06_Constraints,Class,SysML::ConstraintBlocks::ConstraintBlock,系统端到端通信时延应不超过待定值（如30ms或50ms），需考虑传播与处理时延。,REQ-004,candidate
+CON-002,单星质量功耗约束,ConstraintBlock,06_Constraints,Class,SysML::ConstraintBlocks::ConstraintBlock,单星质量、功耗、成本等限制，数值待用户提供。,REQ-008,candidate
+ACTOR-001,用户,Actor,00_Actors,Class,SysML::Blocks::Block,最终用户通过终端使用互联网接入服务。,,candidate
+ACTOR-002,星座运营者,Actor,00_Actors,Class,SysML::Blocks::Block,负责配置和监督星座运行。,,candidate
+ACTOR-003,互联网骨干网,Actor,00_Actors,Class,SysML::Blocks::Block,外部互联网基础设施，提供上连接入。,,candidate
+ACTOR-004,导航增强系统,Actor,00_Actors,Class,SysML::Blocks::Block,外部导航增强信号源或服务。,,candidate
+ACTOR-005,遥测遥控网,Actor,00_Actors,Class,SysML::Blocks::Block,地面TT&C网络，用于卫星状态监测与控制。,,candidate
+IBD-BLK-001,卫星,Block,02_Structure,Class,SysML::Blocks::Block,低轨道通信卫星，包含通信载荷、星间/星地终端，数量100颗。,,candidate
+IBD-BLK-002,信关站,Block,02_Structure,Class,SysML::Blocks::Block,地面关口站，连接卫星与地面骨干网，负责馈电链路。,,candidate
+IBD-BLK-003,用户终端,Block,02_Structure,Class,SysML::Blocks::Block,各类用户接入设备（动中通、固定、手持等），通过星地链路接入卫星。,,candidate
+IBD-BLK-004,运营支撑系统,Block,02_Structure,Class,SysML::Blocks::Block,地面运营控制中心，负责星座管理、路由配置、性能监控等。,,candidate
+IBD-IF-001,星地用户链路接口,Interface,04_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,卫星与用户终端之间的射频/基带接口。,,candidate
+IBD-IF-002,星间链路接口,Interface,04_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,卫星之间的激光/微波接口，用于互联。,,candidate
+IBD-IF-003,馈电链路接口,Interface,04_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,卫星与信关站之间的高速链路。,,candidate
+IBD-IF-004,互联网接入接口,Interface,04_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,信关站与互联网骨干网的外部接口。,,candidate
+IBD-IF-005,导航增强接口,Interface,04_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,系统与导航增强系统的接口（可能通过星上载荷或信关站）。,,candidate
+IBD-IF-006,遥测遥控接口,Interface,04_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,与地面TT&C网络的接口，通常通过专用频段或信关站。,,candidate
+IBD-IF-BLK-002-001,卫星输入接口,Interface,04_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,接入 卫星 的外部任务、数据、信号、控制或资源输入。,,candidate
+IBD-BLK-BLK-002-001,携带通信载荷接入与整形单元,Block,02_Structure,Class,SysML::Blocks::Block,完成 携带通信载荷 相关输入接入、格式整形、初步校核或信号调理。,,candidate
+IBD-BLK-BLK-002-002,星间链路终端处理单元,Block,02_Structure,Class,SysML::Blocks::Block,承担 星间链路终端 相关核心处理、转换、分析或计算职责。,,candidate
+IBD-BLK-BLK-002-003,星地链路终端控制管理单元,Block,02_Structure,Class,SysML::Blocks::Block,执行 星地链路终端 相关模式控制、参数配置、调度或策略管理。,,candidate
+IBD-BLK-BLK-002-004,路由执行输出单元,Block,02_Structure,Class,SysML::Blocks::Block,将内部处理结果转换为 路由 相关输出、转发、执行或服务交付。,,candidate
+IBD-IF-BLK-002-002,卫星输出接口,Interface,04_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,对外交付 卫星 的处理结果、业务数据、状态或服务输出。,,candidate
+IBD-BLK-BLK-002-005,状态监测与保护单元,Block,02_Structure,Class,SysML::Blocks::Block,采集 卫星 内部状态、健康遥测、告警和保护动作。,,candidate
+IBD-IF-BLK-002-003,平台资源接口,Interface,04_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,连接供电、热控、时间同步、遥测遥控或平台支撑资源。,,candidate
+IBD-IF-BLK-003-001,信关站输入接口,Interface,04_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,接入 信关站 的外部任务、数据、信号、控制或资源输入。,,candidate
+IBD-BLK-BLK-003-001,地面关口站接入与整形单元,Block,02_Structure,Class,SysML::Blocks::Block,完成 地面关口站 相关输入接入、格式整形、初步校核或信号调理。,,candidate
+IBD-BLK-BLK-003-002,连接卫星处理单元,Block,02_Structure,Class,SysML::Blocks::Block,承担 连接卫星 相关核心处理、转换、分析或计算职责。,,candidate
+IBD-BLK-BLK-003-003,地面骨干网控制管理单元,Block,02_Structure,Class,SysML::Blocks::Block,执行 地面骨干网 相关模式控制、参数配置、调度或策略管理。,,candidate
+IBD-BLK-BLK-003-004,处理馈电链路执行输出单元,Block,02_Structure,Class,SysML::Blocks::Block,将内部处理结果转换为 处理馈电链路 相关输出、转发、执行或服务交付。,,candidate
+IBD-IF-BLK-003-002,信关站输出接口,Interface,04_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,对外交付 信关站 的处理结果、业务数据、状态或服务输出。,,candidate
+IBD-BLK-BLK-003-005,状态监测与保护单元,Block,02_Structure,Class,SysML::Blocks::Block,采集 信关站 内部状态、健康遥测、告警和保护动作。,,candidate
+IBD-IF-BLK-003-003,平台资源接口,Interface,04_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,连接供电、热控、时间同步、遥测遥控或平台支撑资源。,,candidate
+IBD-IF-BLK-004-001,用户终端输入接口,Interface,04_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,接入 用户终端 的外部任务、数据、信号、控制或资源输入。,,candidate
+IBD-BLK-BLK-004-001,各种类型终端接入与整形单元,Block,02_Structure,Class,SysML::Blocks::Block,完成 各种类型终端 相关输入接入、格式整形、初步校核或信号调理。,,candidate
+IBD-BLK-BLK-004-002,动中通处理单元,Block,02_Structure,Class,SysML::Blocks::Block,承担 动中通 相关核心处理、转换、分析或计算职责。,,candidate
+IBD-BLK-BLK-004-003,固定站控制管理单元,Block,02_Structure,Class,SysML::Blocks::Block,执行 固定站 相关模式控制、参数配置、调度或策略管理。,,candidate
+IBD-BLK-BLK-004-004,手持终端等执行输出单元,Block,02_Structure,Class,SysML::Blocks::Block,将内部处理结果转换为 手持终端等 相关输出、转发、执行或服务交付。,,candidate
+IBD-IF-BLK-004-002,用户终端输出接口,Interface,04_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,对外交付 用户终端 的处理结果、业务数据、状态或服务输出。,,candidate
+IBD-BLK-BLK-004-005,状态监测与保护单元,Block,02_Structure,Class,SysML::Blocks::Block,采集 用户终端 内部状态、健康遥测、告警和保护动作。,,candidate
+IBD-IF-BLK-004-003,平台资源接口,Interface,04_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,连接供电、热控、时间同步、遥测遥控或平台支撑资源。,,candidate
+IBD-BLK-SAT-CONST,空间段（100颗卫星）,Block,02_System_Structure,Class,SysML::Blocks::Block,由100颗低轨通信卫星组成的星座，每颗卫星具备通信载荷、星间链路终端和星地链路终端，共同提供全球覆盖。,,candidate
+IBD-BLK-GW,地面信关站,Block,02_System_Structure,Class,SysML::Blocks::Block,地面关口站，通过馈电链路与卫星连接，将用户业务接入地面骨干网。,,candidate
+IBD-BLK-UT,用户终端,Block,02_System_Structure,Class,SysML::Blocks::Block,多种用户终端类型（动中通、固定站、手持终端等），通过星地用户链路接入卫星网络。,,candidate
+IBD-BLK-OSS,运营支撑系统,Block,02_System_Structure,Class,SysML::Blocks::Block,系统运营管理核心，负责星座控制、网络管理、计费、安全等功能。,,candidate
+IBD-BLK-EXTNET,外部网络（互联网骨干网等）,Block,02_System_Structure,Class,SysML::Blocks::Block,外部系统，包括互联网骨干网、导航增强系统、遥测遥控网络等，与信关站互联。,,candidate
+IBD-IF-FEEDER,馈电链路接口,Interface,03_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,卫星与信关站之间的通信接口，承载汇聚业务数据。,,candidate
+IBD-IF-USER,星地用户链路接口,Interface,03_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,卫星与用户终端之间的通信接口，提供宽带接入。,,candidate
+IBD-IF-MGMT,管理接口,Interface,03_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,运营支撑系统与信关站、卫星星座之间的监控与管理接口。,,candidate
+IBD-IF-EXT,外部网络接口,Interface,03_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,信关站与外部互联网骨干网等外部系统的连接接口。,,candidate

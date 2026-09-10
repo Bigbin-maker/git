@@ -1,0 +1,92 @@
+
+  [32m[1mVITE[22m v5.4.21[39m  [2mready in [0m[1m329[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5173[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://198.18.0.1:[1m5173[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://192.168.3.52:[1m5173[22m/[39m
+[2m17:33:38[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/ChatWorkbench.tsx[22m
+[2m18:35:07[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.tsx, /src/pages/RequirementAnalysis.tsx, /src/pages/SimulationMock.tsx, /src/pages/ChatWorkbench.tsx, /src/pages/Dashboard.tsx, /src/pages/ModelGeneration.tsx, /src/pages/ImpactAnalysis.tsx, /src/pages/ValidationReview.tsx, /src/components/UploadPanel.tsx, /src/components/RequirementTable.tsx[22m
+[2m18:36:55[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/LayoutShell.tsx[22m
+[2m18:36:59[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.tsx[22m
+[2m18:37:12[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Dashboard.tsx[22m
+[2m18:37:23[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/styles.css[22m
+[2m18:37:53[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/SimulationMock.tsx[22m
+[2m18:40:35[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/SatelliteDesign.tsx[22m
+[2m18:40:40[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/SimulationMock.tsx[22m
+[2m18:50:46[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.tsx, /src/pages/RequirementAnalysis.tsx, /src/pages/SimulationMock.tsx, /src/pages/ChatWorkbench.tsx, /src/pages/Dashboard.tsx, /src/pages/ModelGeneration.tsx, /src/pages/ImpactAnalysis.tsx, /src/pages/ValidationReview.tsx, /src/components/UploadPanel.tsx, /src/components/RequirementTable.tsx, /src/pages/SatelliteDesign.tsx[22m
+[2m18:50:54[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/LayoutShell.tsx[22m
+[2m18:51:00[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Dashboard.tsx[22m
+[2m18:51:24[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/ModelGeneration.tsx[22m
+[2m18:52:24[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.tsx, /src/pages/RequirementAnalysis.tsx, /src/pages/SimulationMock.tsx, /src/pages/ChatWorkbench.tsx, /src/pages/Dashboard.tsx, /src/pages/ModelGeneration.tsx, /src/pages/ImpactAnalysis.tsx, /src/pages/ValidationReview.tsx, /src/components/UploadPanel.tsx, /src/components/RequirementTable.tsx, /src/pages/SatelliteDesign.tsx[22m
+[2m18:52:28[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/ModelGeneration.tsx[22m
+[2m19:31:45[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/SimulationMock.tsx[22m
+[2m19:33:29[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/LayoutShell.tsx[22m
+[2m19:33:36[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Dashboard.tsx[22m
+[2m19:56:51[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/ChatWorkbench.tsx[22m
+[2m20:05:01[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.tsx, /src/pages/RequirementAnalysis.tsx, /src/pages/SimulationMock.tsx, /src/pages/ChatWorkbench.tsx, /src/pages/Dashboard.tsx, /src/pages/ModelGeneration.tsx, /src/pages/ImpactAnalysis.tsx, /src/pages/ValidationReview.tsx, /src/components/UploadPanel.tsx, /src/components/RequirementTable.tsx, /src/pages/SatelliteDesign.tsx[22m
+[2m20:05:52[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/SimulationMock.tsx[22m
+[2m20:05:58[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.tsx, /src/pages/RequirementAnalysis.tsx, /src/pages/SimulationMock.tsx, /src/pages/ChatWorkbench.tsx, /src/pages/Dashboard.tsx, /src/pages/ModelGeneration.tsx, /src/pages/ImpactAnalysis.tsx, /src/pages/ValidationReview.tsx, /src/components/UploadPanel.tsx, /src/components/RequirementTable.tsx, /src/pages/SatelliteDesign.tsx[22m
+[2m20:35:38[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.tsx[22m
+[2m20:35:45[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/LayoutShell.tsx[22m
+[2m20:35:50[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/ChatWorkbench.tsx[22m
+[2m20:35:59[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.tsx, /src/pages/RequirementAnalysis.tsx, /src/pages/SimulationMock.tsx, /src/pages/ChatWorkbench.tsx, /src/pages/Dashboard.tsx, /src/pages/ModelGeneration.tsx, /src/pages/ImpactAnalysis.tsx, /src/pages/ValidationReview.tsx, /src/components/UploadPanel.tsx, /src/components/RequirementTable.tsx, /src/pages/SatelliteDesign.tsx[22m
+[2m20:36:45[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/SatelliteDesign.tsx[22m
+[2m20:37:26[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Dashboard.tsx[22m
+[2m20:37:36[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/styles.css[22m
+[2m20:38:49[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/SimulationMock.tsx[22m
+[2m20:39:19[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/ModelGeneration.tsx[22m
+[2m20:39:32[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Dashboard.tsx[22m
+[2m20:40:55[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/LayoutShell.tsx[22m
+[2m20:41:00[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/ModelGeneration.tsx[22m
+[2m09:53:50[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/ModelGeneration.tsx[22m
+[2m09:54:54[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/ModelGeneration.tsx[22m
+[2m09:55:04[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/ModelGeneration.tsx[22m
+[2m09:55:28[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/styles.css[22m
+[2m10:03:11[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/ModelGeneration.tsx[22m
+[2m14:58:06[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/ModelGeneration.tsx[22m
+[2m14:58:14[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.tsx, /src/pages/RequirementAnalysis.tsx, /src/pages/SimulationMock.tsx, /src/pages/ChatWorkbench.tsx, /src/pages/Dashboard.tsx, /src/pages/ImpactAnalysis.tsx, /src/pages/ValidationReview.tsx, /src/components/UploadPanel.tsx, /src/components/RequirementTable.tsx, /src/pages/ModelGeneration.tsx[22m
+[2m14:58:57[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/styles.css[22m
+[2m15:01:56[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/ModelGeneration.tsx[22m
+[2m15:09:05[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/TraceGraph.tsx[22m
+[2m15:12:00[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/ModelGeneration.tsx[22m
+[2m15:12:17[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/ModelGeneration.tsx[22m
+[2m15:12:39[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/ModelGeneration.tsx[22m
+[2m15:13:59[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/ModelGeneration.tsx[22m
+[2m15:14:17[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/ModelGeneration.tsx[22m
+[2m15:14:39[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/ModelGeneration.tsx[22m
+[2m15:15:47[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/styles.css[22m
+[2m15:15:57[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/styles.css[22m
+[2m16:06:59[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.tsx, /src/pages/RequirementAnalysis.tsx, /src/pages/SimulationMock.tsx, /src/pages/ChatWorkbench.tsx, /src/pages/Dashboard.tsx, /src/pages/ImpactAnalysis.tsx, /src/pages/ValidationReview.tsx, /src/components/UploadPanel.tsx, /src/components/RequirementTable.tsx, /src/pages/ModelGeneration.tsx[22m
+[2m16:10:15[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.tsx[22m
+[2m16:11:05[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/LayoutShell.tsx[22m
+[2m16:11:24[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/styles.css[22m
+[2m16:53:32[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.tsx[22m
+[2m16:53:55[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/LayoutShell.tsx[22m
+[2m16:54:21[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Dashboard.tsx[22m
+[2m16:54:43[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/ChatWorkbench.tsx[22m
+[2m16:54:50[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/ImpactAnalysis.tsx[22m
+[2m16:54:50[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/ValidationReview.tsx[22m
+[2m16:54:59[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.tsx, /src/pages/RequirementAnalysis.tsx, /src/pages/SimulationMock.tsx, /src/pages/ChatWorkbench.tsx, /src/pages/Dashboard.tsx, /src/components/UploadPanel.tsx, /src/components/RequirementTable.tsx, /src/pages/ModelGeneration.tsx, /src/pages/ModelGeneration1.tsx[22m
+[2m16:55:58[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/UploadPanel.tsx[22m
+[2m16:55:58[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/src/components/UploadPanel.tsx[22m Could not Fast Refresh ("demoRequirementText" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[2m16:55:58[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/RequirementAnalysis.tsx[22m
+[2m17:04:05[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.tsx[22m
+[2m17:04:29[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/LayoutShell.tsx[22m
+[2m17:04:52[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Dashboard.tsx[22m
+[2m17:05:03[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/ChatWorkbench.tsx[22m
+[2m17:05:03[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/RequirementAnalysis.tsx[22m
+[2m17:05:03[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/ModelGeneration.tsx[22m
+[2m17:05:03[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/LogPanel.tsx[22m
+[2m17:05:03[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/UploadPanel.tsx[22m
+[2m17:05:03[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/RequirementTable.tsx[22m
+[2m17:05:03[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/HumanReviewPanel.tsx[22m
+[2m17:05:03[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/ModelElementTable.tsx[22m
+[2m17:05:55[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.tsx, /src/pages/SimulationMock.tsx, /src/pages/Dashboard.tsx, /src/pages/ModelGeneration1.tsx[22m
+[2m17:06:44[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/TraceGraph.tsx[22m
+[2m17:08:43[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/LayoutShell.tsx[22m
+[2m17:08:54[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Dashboard.tsx[22m
+[2m17:09:02[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/ModelGeneration1.tsx[22m
+[2m17:27:57[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/ModelGeneration1.tsx[22m
+[2m17:35:56[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/ModelGeneration1.tsx[22m
+[2m17:43:10[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/ModelGeneration1.tsx[22m
+[2m17:43:23[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/ModelGeneration1.tsx[22m

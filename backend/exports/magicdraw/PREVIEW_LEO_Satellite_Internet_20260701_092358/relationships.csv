@@ -1,0 +1,24 @@
+﻿local_id,name,type,package,metaclass,stereotype,source,source_name,target,target_name,documentation
+REL-001,REL-001,satisfy,06_Traceability,Dependency,SysML::Requirements::Satisfy,REQ-001,Service Target,UC-001,Provide Broadband Internet Access,服务目标需求由提供宽带接入用例满足。
+REL-002,REL-002,satisfy,06_Traceability,Dependency,SysML::Requirements::Satisfy,REQ-002,User Data Rate,UC-001,Provide Broadband Internet Access,用户速率需求由接入用例满足。
+REL-003,REL-003,satisfy,06_Traceability,Dependency,SysML::Requirements::Satisfy,REQ-004,End-to-End Latency,UC-001,Provide Broadband Internet Access,时延需求由接入和路由用例共同满足。
+REL-004,REL-004,satisfy,06_Traceability,Dependency,SysML::Requirements::Satisfy,REQ-004,End-to-End Latency,UC-002,Inter-Satellite Routing,时延需求也由星间路由用例满足。
+REL-005,REL-005,satisfy,06_Traceability,Dependency,SysML::Requirements::Satisfy,REQ-008,Inter-Satellite Link,UC-002,Inter-Satellite Routing,星间链路需求由星间路由用例实现。
+REL-006,REL-006,satisfy,06_Traceability,Dependency,SysML::Requirements::Satisfy,REQ-012,On-Board Processing,UC-002,Inter-Satellite Routing,星上再生处理需求由路由用例满足。
+REL-007,REL-007,trace,06_Traceability,Dependency,SysML::Requirements::Trace,REQ-007,Constellation Configuration,BLK-001,LEO Constellation System,星座构型需求追溯到系统整体块。
+REL-008,REL-008,refine,06_Traceability,Dependency,SysML::Requirements::Refine,REQ-005,Orbit Altitude,CON-002,Orbit and Coverage Constraint,轨道高度需求细化为覆盖约束。
+REL-009,REL-009,refine,06_Traceability,Dependency,SysML::Requirements::Refine,REQ-011,Satellite Platform Constraints,CON-001,Mass and Power Budget,卫星平台约束细化为质量功耗预算。
+REL-010,REL-010,allocate,06_Traceability,Dependency,SysML::Allocations::Allocate,IF-001,User Link Interface,BLK-007,User Terminal,用户链路接口分配到用户终端块。
+REL-011,REL-011,allocate,06_Traceability,Dependency,SysML::Allocations::Allocate,IF-001,User Link Interface,BLK-004,Payload,用户链路接口分配到卫星载荷块。
+REL-012,REL-012,allocate,06_Traceability,Dependency,SysML::Allocations::Allocate,IF-002,Feeder Link Interface,BLK-004,Payload,馈电链路接口分配到载荷块。
+REL-013,REL-013,allocate,06_Traceability,Dependency,SysML::Allocations::Allocate,IF-002,Feeder Link Interface,BLK-006,Gateway Station,馈电链路接口分配到信关站块。
+REL-014,REL-014,allocate,06_Traceability,Dependency,SysML::Allocations::Allocate,IF-003,Inter-Satellite Link Interface,BLK-004,Payload,星间链路接口分配到载荷块。
+REL-015,REL-015,allocate,06_Traceability,Dependency,SysML::Allocations::Allocate,IF-004,Ground Network Interface,BLK-006,Gateway Station,地面网络接口分配到信关站块。
+REL-016,REL-016,refine,06_Traceability,Dependency,SysML::Requirements::Refine,ACT-001,User Registration and Beam Handover,UC-001,Provide Broadband Internet Access,注册与切换活动细化接入用例。
+REL-017,REL-017,refine,06_Traceability,Dependency,SysML::Requirements::Refine,ACT-002,Route Update and Data Forwarding,UC-002,Inter-Satellite Routing,路由更新活动细化星间路由用例。
+REL-018,REL-018,refine,06_Traceability,Dependency,SysML::Requirements::Refine,ACT-003,Constellation Maintenance Activity,UC-003,Constellation Management,维护活动细化星座管理用例。
+REL-019,REL-019,verify,06_Traceability,Dependency,SysML::Requirements::Verify,CON-004,End-to-End Latency Budget,REQ-004,End-to-End Latency,时延预算约束用于验证时延需求。
+REL-020,REL-020,contains,06_Traceability,Association,CompositeAssociation,BLK-001,LEO Constellation System,BLK-002,Space Segment,系统包含太空段。
+REL-021,REL-021,contains,06_Traceability,Association,CompositeAssociation,BLK-001,LEO Constellation System,BLK-005,Ground Segment,系统包含地面段。
+REL-022,REL-022,contains,06_Traceability,Association,CompositeAssociation,BLK-002,Space Segment,BLK-003,Satellite,太空段包含卫星。
+REL-023,REL-023,contains,06_Traceability,Association,CompositeAssociation,BLK-003,Satellite,BLK-004,Payload,卫星包含载荷。

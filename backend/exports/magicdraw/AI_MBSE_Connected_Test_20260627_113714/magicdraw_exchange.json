@@ -1,0 +1,56 @@
+{
+  "schema": "ai-mbse.magicdraw.exchange.v1",
+  "generated_at": "2026-06-27T03:37:14Z",
+  "project_path": "",
+  "root_package": "AI_MBSE_Connected_Test",
+  "instructions": [
+    "Create or reuse root package.",
+    "Create SysML/UML elements by local_id and stereotype.",
+    "Create relationships after all element ids are resolved.",
+    "Store ai_mbse_id and source_requirement as tagged values when available."
+  ],
+  "elements": [
+    {
+      "local_id": "REQ-CONNECT-001",
+      "name": "ConnectedRequirement",
+      "type": "Requirement",
+      "metaclass": "Class",
+      "stereotype": "SysML::Requirements::Requirement",
+      "documentation": "Connected bridge import test",
+      "source_requirement": "REQ-CONNECT-001",
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "REQ-CONNECT-001",
+        "external_id": null
+      }
+    },
+    {
+      "local_id": "BLK-CONNECT-001",
+      "name": "ConnectedBlock",
+      "type": "Block",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "Connected bridge import test",
+      "source_requirement": "REQ-CONNECT-001",
+      "status": "candidate",
+      "tags": {
+        "ai_mbse_id": "BLK-CONNECT-001",
+        "external_id": null
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "local_id": "REL-CONNECT-001",
+      "name": "REL-CONNECT-001",
+      "type": "Trace",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Trace",
+      "source": "REQ-CONNECT-001",
+      "source_name": "ConnectedRequirement",
+      "target": "BLK-CONNECT-001",
+      "target_name": "ConnectedBlock",
+      "documentation": "Connected bridge trace"
+    }
+  ]
+}

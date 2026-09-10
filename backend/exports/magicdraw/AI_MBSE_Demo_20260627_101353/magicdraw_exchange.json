@@ -1,0 +1,610 @@
+{
+  "schema": "ai-mbse.magicdraw.exchange.v1",
+  "generated_at": "2026-06-27T02:13:53Z",
+  "project_path": "",
+  "root_package": "AI_MBSE_Demo",
+  "instructions": [
+    "Create or reuse root package.",
+    "Create SysML/UML elements by local_id and stereotype.",
+    "Create relationships after all element ids are resolved.",
+    "Store ai_mbse_id and source_requirement as tagged values when available."
+  ],
+  "elements": [
+    {
+      "local_id": "BLK-001",
+      "name": "宽带通信系统",
+      "type": "Block",
+      "metaclass": "Class",
+      "stereotype": "SysML::Blocks::Block",
+      "documentation": "负责宽带业务接入、链路管理、业务调度和状态监测的系统级模块。",
+      "source_requirement": "REQ-001",
+      "status": "committed",
+      "tags": {
+        "ai_mbse_id": "BLK-001",
+        "external_id": "2e55b19a-8911-4c39-9b41-465d812c489a"
+      }
+    },
+    {
+      "local_id": "REQ-001",
+      "name": "低轨卫星互联网总体方案生成",
+      "type": "Requirement",
+      "metaclass": "Class",
+      "stereotype": "SysML::Requirements::Requirement",
+      "documentation": "生成一个由100颗低轨道（LEO）卫星组成的卫星互联网总体方案，需涵盖星座设计、网络架构、链路预算、地面段、用户段及运营模式等关键要素。",
+      "source_requirement": "REQ-001",
+      "status": "committed",
+      "tags": {
+        "ai_mbse_id": "REQ-001",
+        "external_id": "50d84092-c1f5-4a25-a288-444e68ea2897"
+      }
+    },
+    {
+      "local_id": "UC-001",
+      "name": "低轨卫星互联网总体方案生成",
+      "type": "UseCase",
+      "metaclass": "UseCase",
+      "stereotype": "",
+      "documentation": "围绕“低轨卫星互联网总体方案生成”展开的用户或系统行为场景。",
+      "source_requirement": "REQ-001",
+      "status": "committed",
+      "tags": {
+        "ai_mbse_id": "UC-001",
+        "external_id": "9e110141-de8f-4335-af85-5b9e223bd374"
+      }
+    },
+    {
+      "local_id": "IF-001",
+      "name": "低轨卫星互联网总体方案生成接口",
+      "type": "Interface",
+      "metaclass": "Interface",
+      "stereotype": "SysML::PortsAndFlows::InterfaceBlock",
+      "documentation": "支撑“低轨卫星互联网总体方案生成”的数据、控制或状态交互接口。",
+      "source_requirement": "REQ-001",
+      "status": "committed",
+      "tags": {
+        "ai_mbse_id": "IF-001",
+        "external_id": "eef1d73c-3961-4bab-8c39-2052261620d6"
+      }
+    },
+    {
+      "local_id": "ACT-001",
+      "name": "低轨卫星互联网总体方案生成流程",
+      "type": "Activity",
+      "metaclass": "Activity",
+      "stereotype": "",
+      "documentation": "描述“低轨卫星互联网总体方案生成”从触发、处理到反馈的核心流程。",
+      "source_requirement": "REQ-001",
+      "status": "committed",
+      "tags": {
+        "ai_mbse_id": "ACT-001",
+        "external_id": "958990c8-e0ba-4147-8a95-3ad25b012d64"
+      }
+    },
+    {
+      "local_id": "REQ-002",
+      "name": "用户接入状态实时监测与链路质量告警",
+      "type": "Requirement",
+      "metaclass": "Class",
+      "stereotype": "SysML::Requirements::Requirement",
+      "documentation": "系统应支持对用户接入状态进行实时监测，并在链路质量下降时进行告警。",
+      "source_requirement": "REQ-002",
+      "status": "committed",
+      "tags": {
+        "ai_mbse_id": "REQ-002",
+        "external_id": "45578658-261e-42f2-b2b0-bb12b64278d7"
+      }
+    },
+    {
+      "local_id": "UC-002",
+      "name": "用户接入状态实时监测与链路质量告警",
+      "type": "UseCase",
+      "metaclass": "UseCase",
+      "stereotype": "",
+      "documentation": "围绕“用户接入状态实时监测与链路质量告警”展开的用户或系统行为场景。",
+      "source_requirement": "REQ-002",
+      "status": "committed",
+      "tags": {
+        "ai_mbse_id": "UC-002",
+        "external_id": "c85dd63f-8489-4fe5-8d77-3ee9c9d9ce48"
+      }
+    },
+    {
+      "local_id": "IF-002",
+      "name": "用户接入状态实时监测与链路质量告警接口",
+      "type": "Interface",
+      "metaclass": "Interface",
+      "stereotype": "SysML::PortsAndFlows::InterfaceBlock",
+      "documentation": "支撑“用户接入状态实时监测与链路质量告警”的数据、控制或状态交互接口。",
+      "source_requirement": "REQ-002",
+      "status": "committed",
+      "tags": {
+        "ai_mbse_id": "IF-002",
+        "external_id": "6c19175f-0dec-48e1-92d3-9bcc72456f13"
+      }
+    },
+    {
+      "local_id": "ACT-002",
+      "name": "用户接入状态实时监测与链路质量告警流程",
+      "type": "Activity",
+      "metaclass": "Activity",
+      "stereotype": "",
+      "documentation": "描述“用户接入状态实时监测与链路质量告警”从触发、处理到反馈的核心流程。",
+      "source_requirement": "REQ-002",
+      "status": "committed",
+      "tags": {
+        "ai_mbse_id": "ACT-002",
+        "external_id": "4984a5d8-f379-4029-997f-d48b9a02a234"
+      }
+    },
+    {
+      "local_id": "REQ-003",
+      "name": "基于业务优先级的资源调度与传输保障",
+      "type": "Requirement",
+      "metaclass": "Class",
+      "stereotype": "SysML::Requirements::Requirement",
+      "documentation": "系统应支持根据业务优先级进行资源调度，并保障关键业务的传输质量。",
+      "source_requirement": "REQ-003",
+      "status": "committed",
+      "tags": {
+        "ai_mbse_id": "REQ-003",
+        "external_id": "024a7ad8-a607-494b-a524-8ed234d26338"
+      }
+    },
+    {
+      "local_id": "UC-003",
+      "name": "基于业务优先级的资源调度与传输保障",
+      "type": "UseCase",
+      "metaclass": "UseCase",
+      "stereotype": "",
+      "documentation": "围绕“基于业务优先级的资源调度与传输保障”展开的用户或系统行为场景。",
+      "source_requirement": "REQ-003",
+      "status": "committed",
+      "tags": {
+        "ai_mbse_id": "UC-003",
+        "external_id": "6866be05-620d-4abc-8cd3-74f2d05140c3"
+      }
+    },
+    {
+      "local_id": "IF-003",
+      "name": "基于业务优先级的资源调度与传输保障接口",
+      "type": "Interface",
+      "metaclass": "Interface",
+      "stereotype": "SysML::PortsAndFlows::InterfaceBlock",
+      "documentation": "支撑“基于业务优先级的资源调度与传输保障”的数据、控制或状态交互接口。",
+      "source_requirement": "REQ-003",
+      "status": "committed",
+      "tags": {
+        "ai_mbse_id": "IF-003",
+        "external_id": "ec88f3e6-9efe-4ac7-b0e8-831f99301edd"
+      }
+    },
+    {
+      "local_id": "ACT-003",
+      "name": "基于业务优先级的资源调度与传输保障流程",
+      "type": "Activity",
+      "metaclass": "Activity",
+      "stereotype": "",
+      "documentation": "描述“基于业务优先级的资源调度与传输保障”从触发、处理到反馈的核心流程。",
+      "source_requirement": "REQ-003",
+      "status": "committed",
+      "tags": {
+        "ai_mbse_id": "ACT-003",
+        "external_id": "871b4c7b-548a-4092-ace8-6891ec81579c"
+      }
+    },
+    {
+      "local_id": "REQ-004",
+      "name": "外部网络管理系统数据接口",
+      "type": "Requirement",
+      "metaclass": "Class",
+      "stereotype": "SysML::Requirements::Requirement",
+      "documentation": "系统应提供与外部网络管理系统的数据接口，用于状态同步和运维管理。",
+      "source_requirement": "REQ-004",
+      "status": "committed",
+      "tags": {
+        "ai_mbse_id": "REQ-004",
+        "external_id": "631b7e7a-9e8e-40c9-80b4-cad156d4bad6"
+      }
+    },
+    {
+      "local_id": "UC-004",
+      "name": "外部网络管理系统数据接口",
+      "type": "UseCase",
+      "metaclass": "UseCase",
+      "stereotype": "",
+      "documentation": "围绕“外部网络管理系统数据接口”展开的用户或系统行为场景。",
+      "source_requirement": "REQ-004",
+      "status": "committed",
+      "tags": {
+        "ai_mbse_id": "UC-004",
+        "external_id": "690588f9-11bf-4f71-9ea3-09611855e89a"
+      }
+    },
+    {
+      "local_id": "IF-004",
+      "name": "外部网络管理系统数据接口接口",
+      "type": "Interface",
+      "metaclass": "Interface",
+      "stereotype": "SysML::PortsAndFlows::InterfaceBlock",
+      "documentation": "支撑“外部网络管理系统数据接口”的数据、控制或状态交互接口。",
+      "source_requirement": "REQ-004",
+      "status": "committed",
+      "tags": {
+        "ai_mbse_id": "IF-004",
+        "external_id": "145a994a-05e9-4e76-85ff-dbb2caedde9d"
+      }
+    },
+    {
+      "local_id": "ACT-004",
+      "name": "外部网络管理系统数据接口流程",
+      "type": "Activity",
+      "metaclass": "Activity",
+      "stereotype": "",
+      "documentation": "描述“外部网络管理系统数据接口”从触发、处理到反馈的核心流程。",
+      "source_requirement": "REQ-004",
+      "status": "committed",
+      "tags": {
+        "ai_mbse_id": "ACT-004",
+        "external_id": "442c3932-9a57-409d-a6b6-f8222e614b7f"
+      }
+    },
+    {
+      "local_id": "REQ-005",
+      "name": "核心业务流程建模与追溯分析",
+      "type": "Requirement",
+      "metaclass": "Class",
+      "stereotype": "SysML::Requirements::Requirement",
+      "documentation": "系统应支持对核心业务流程进行建模、追溯和变更影响分析。",
+      "source_requirement": "REQ-005",
+      "status": "committed",
+      "tags": {
+        "ai_mbse_id": "REQ-005",
+        "external_id": "f83ecfea-c1b8-42ae-83cf-ab62e24e81e8"
+      }
+    },
+    {
+      "local_id": "UC-005",
+      "name": "核心业务流程建模与追溯分析",
+      "type": "UseCase",
+      "metaclass": "UseCase",
+      "stereotype": "",
+      "documentation": "围绕“核心业务流程建模与追溯分析”展开的用户或系统行为场景。",
+      "source_requirement": "REQ-005",
+      "status": "committed",
+      "tags": {
+        "ai_mbse_id": "UC-005",
+        "external_id": "433a678e-585c-4609-bd19-150ab14d6ff2"
+      }
+    },
+    {
+      "local_id": "IF-005",
+      "name": "核心业务流程建模与追溯分析接口",
+      "type": "Interface",
+      "metaclass": "Interface",
+      "stereotype": "SysML::PortsAndFlows::InterfaceBlock",
+      "documentation": "支撑“核心业务流程建模与追溯分析”的数据、控制或状态交互接口。",
+      "source_requirement": "REQ-005",
+      "status": "committed",
+      "tags": {
+        "ai_mbse_id": "IF-005",
+        "external_id": "39423451-fb60-43e6-bff6-01d11ff96d04"
+      }
+    },
+    {
+      "local_id": "ACT-005",
+      "name": "核心业务流程建模与追溯分析流程",
+      "type": "Activity",
+      "metaclass": "Activity",
+      "stereotype": "",
+      "documentation": "描述“核心业务流程建模与追溯分析”从触发、处理到反馈的核心流程。",
+      "source_requirement": "REQ-005",
+      "status": "committed",
+      "tags": {
+        "ai_mbse_id": "ACT-005",
+        "external_id": "405b8020-2caf-43b8-b399-195ecd35b3cb"
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "local_id": "REL-001",
+      "name": "REL-001",
+      "type": "trace",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Trace",
+      "source": "REQ-001",
+      "source_name": "低轨卫星互联网总体方案生成",
+      "target": "UC-001",
+      "target_name": "低轨卫星互联网总体方案生成",
+      "documentation": "需求追溯到用例"
+    },
+    {
+      "local_id": "REL-002",
+      "name": "REL-002",
+      "type": "allocate",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Allocations::Allocate",
+      "source": "UC-001",
+      "source_name": "低轨卫星互联网总体方案生成",
+      "target": "BLK-001",
+      "target_name": "宽带通信系统",
+      "documentation": "用例分配到系统模块"
+    },
+    {
+      "local_id": "REL-003",
+      "name": "REL-003",
+      "type": "trace",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Trace",
+      "source": "UC-001",
+      "source_name": "低轨卫星互联网总体方案生成",
+      "target": "IF-001",
+      "target_name": "低轨卫星互联网总体方案生成接口",
+      "documentation": "用例追溯到接口"
+    },
+    {
+      "local_id": "REL-004",
+      "name": "REL-004",
+      "type": "connect",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Trace",
+      "source": "IF-001",
+      "source_name": "低轨卫星互联网总体方案生成接口",
+      "target": "BLK-001",
+      "target_name": "宽带通信系统",
+      "documentation": "接口关联到系统模块"
+    },
+    {
+      "local_id": "REL-005",
+      "name": "REL-005",
+      "type": "refine",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Trace",
+      "source": "UC-001",
+      "source_name": "低轨卫星互联网总体方案生成",
+      "target": "ACT-001",
+      "target_name": "低轨卫星互联网总体方案生成流程",
+      "documentation": "用例细化为活动流程"
+    },
+    {
+      "local_id": "REL-006",
+      "name": "REL-006",
+      "type": "trace",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Trace",
+      "source": "REQ-002",
+      "source_name": "用户接入状态实时监测与链路质量告警",
+      "target": "UC-002",
+      "target_name": "用户接入状态实时监测与链路质量告警",
+      "documentation": "需求追溯到用例"
+    },
+    {
+      "local_id": "REL-007",
+      "name": "REL-007",
+      "type": "allocate",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Allocations::Allocate",
+      "source": "UC-002",
+      "source_name": "用户接入状态实时监测与链路质量告警",
+      "target": "BLK-001",
+      "target_name": "宽带通信系统",
+      "documentation": "用例分配到系统模块"
+    },
+    {
+      "local_id": "REL-008",
+      "name": "REL-008",
+      "type": "trace",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Trace",
+      "source": "UC-002",
+      "source_name": "用户接入状态实时监测与链路质量告警",
+      "target": "IF-002",
+      "target_name": "用户接入状态实时监测与链路质量告警接口",
+      "documentation": "用例追溯到接口"
+    },
+    {
+      "local_id": "REL-009",
+      "name": "REL-009",
+      "type": "connect",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Trace",
+      "source": "IF-002",
+      "source_name": "用户接入状态实时监测与链路质量告警接口",
+      "target": "BLK-001",
+      "target_name": "宽带通信系统",
+      "documentation": "接口关联到系统模块"
+    },
+    {
+      "local_id": "REL-010",
+      "name": "REL-010",
+      "type": "refine",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Trace",
+      "source": "UC-002",
+      "source_name": "用户接入状态实时监测与链路质量告警",
+      "target": "ACT-002",
+      "target_name": "用户接入状态实时监测与链路质量告警流程",
+      "documentation": "用例细化为活动流程"
+    },
+    {
+      "local_id": "REL-011",
+      "name": "REL-011",
+      "type": "trace",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Trace",
+      "source": "REQ-003",
+      "source_name": "基于业务优先级的资源调度与传输保障",
+      "target": "UC-003",
+      "target_name": "基于业务优先级的资源调度与传输保障",
+      "documentation": "需求追溯到用例"
+    },
+    {
+      "local_id": "REL-012",
+      "name": "REL-012",
+      "type": "allocate",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Allocations::Allocate",
+      "source": "UC-003",
+      "source_name": "基于业务优先级的资源调度与传输保障",
+      "target": "BLK-001",
+      "target_name": "宽带通信系统",
+      "documentation": "用例分配到系统模块"
+    },
+    {
+      "local_id": "REL-013",
+      "name": "REL-013",
+      "type": "trace",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Trace",
+      "source": "UC-003",
+      "source_name": "基于业务优先级的资源调度与传输保障",
+      "target": "IF-003",
+      "target_name": "基于业务优先级的资源调度与传输保障接口",
+      "documentation": "用例追溯到接口"
+    },
+    {
+      "local_id": "REL-014",
+      "name": "REL-014",
+      "type": "connect",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Trace",
+      "source": "IF-003",
+      "source_name": "基于业务优先级的资源调度与传输保障接口",
+      "target": "BLK-001",
+      "target_name": "宽带通信系统",
+      "documentation": "接口关联到系统模块"
+    },
+    {
+      "local_id": "REL-015",
+      "name": "REL-015",
+      "type": "refine",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Trace",
+      "source": "UC-003",
+      "source_name": "基于业务优先级的资源调度与传输保障",
+      "target": "ACT-003",
+      "target_name": "基于业务优先级的资源调度与传输保障流程",
+      "documentation": "用例细化为活动流程"
+    },
+    {
+      "local_id": "REL-016",
+      "name": "REL-016",
+      "type": "trace",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Trace",
+      "source": "REQ-004",
+      "source_name": "外部网络管理系统数据接口",
+      "target": "UC-004",
+      "target_name": "外部网络管理系统数据接口",
+      "documentation": "需求追溯到用例"
+    },
+    {
+      "local_id": "REL-017",
+      "name": "REL-017",
+      "type": "allocate",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Allocations::Allocate",
+      "source": "UC-004",
+      "source_name": "外部网络管理系统数据接口",
+      "target": "BLK-001",
+      "target_name": "宽带通信系统",
+      "documentation": "用例分配到系统模块"
+    },
+    {
+      "local_id": "REL-018",
+      "name": "REL-018",
+      "type": "trace",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Trace",
+      "source": "UC-004",
+      "source_name": "外部网络管理系统数据接口",
+      "target": "IF-004",
+      "target_name": "外部网络管理系统数据接口接口",
+      "documentation": "用例追溯到接口"
+    },
+    {
+      "local_id": "REL-019",
+      "name": "REL-019",
+      "type": "connect",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Trace",
+      "source": "IF-004",
+      "source_name": "外部网络管理系统数据接口接口",
+      "target": "BLK-001",
+      "target_name": "宽带通信系统",
+      "documentation": "接口关联到系统模块"
+    },
+    {
+      "local_id": "REL-020",
+      "name": "REL-020",
+      "type": "refine",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Trace",
+      "source": "UC-004",
+      "source_name": "外部网络管理系统数据接口",
+      "target": "ACT-004",
+      "target_name": "外部网络管理系统数据接口流程",
+      "documentation": "用例细化为活动流程"
+    },
+    {
+      "local_id": "REL-021",
+      "name": "REL-021",
+      "type": "trace",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Trace",
+      "source": "REQ-005",
+      "source_name": "核心业务流程建模与追溯分析",
+      "target": "UC-005",
+      "target_name": "核心业务流程建模与追溯分析",
+      "documentation": "需求追溯到用例"
+    },
+    {
+      "local_id": "REL-022",
+      "name": "REL-022",
+      "type": "allocate",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Allocations::Allocate",
+      "source": "UC-005",
+      "source_name": "核心业务流程建模与追溯分析",
+      "target": "BLK-001",
+      "target_name": "宽带通信系统",
+      "documentation": "用例分配到系统模块"
+    },
+    {
+      "local_id": "REL-023",
+      "name": "REL-023",
+      "type": "trace",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Trace",
+      "source": "UC-005",
+      "source_name": "核心业务流程建模与追溯分析",
+      "target": "IF-005",
+      "target_name": "核心业务流程建模与追溯分析接口",
+      "documentation": "用例追溯到接口"
+    },
+    {
+      "local_id": "REL-024",
+      "name": "REL-024",
+      "type": "connect",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Trace",
+      "source": "IF-005",
+      "source_name": "核心业务流程建模与追溯分析接口",
+      "target": "BLK-001",
+      "target_name": "宽带通信系统",
+      "documentation": "接口关联到系统模块"
+    },
+    {
+      "local_id": "REL-025",
+      "name": "REL-025",
+      "type": "refine",
+      "metaclass": "Dependency",
+      "stereotype": "SysML::Requirements::Trace",
+      "source": "UC-005",
+      "source_name": "核心业务流程建模与追溯分析",
+      "target": "ACT-005",
+      "target_name": "核心业务流程建模与追溯分析流程",
+      "documentation": "用例细化为活动流程"
+    }
+  ]
+}

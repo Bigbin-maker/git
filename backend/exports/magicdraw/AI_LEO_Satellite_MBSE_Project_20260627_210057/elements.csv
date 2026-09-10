@@ -1,0 +1,42 @@
+﻿local_id,name,type,metaclass,stereotype,documentation,source_requirement,status
+REQ-001,星座总体任务目标,Requirement,Class,SysML::Requirements::Requirement,形成满足覆盖、容量、时延和可靠性约束的低轨宽带卫星互联网总体方案。,REQ-001,candidate
+REQ-002,轨道覆盖与服务连续性,Requirement,Class,SysML::Requirements::Requirement,星座应支持目标区域连续覆盖、可见性计算、切换策略和覆盖盲区识别。,REQ-002,candidate
+REQ-003,载荷容量与链路质量,Requirement,Class,SysML::Requirements::Requirement,系统应满足用户接入容量、链路预算、波束调度和服务质量保障要求。,REQ-003,candidate
+REQ-004,星间链路与路由,Requirement,Class,SysML::Requirements::Requirement,卫星应支持星间链路组网、路由更新、链路状态监测和故障重构。,REQ-004,candidate
+REQ-005,馈电链路与地面站接入,Requirement,Class,SysML::Requirements::Requirement,地面段应提供馈电站接入、回传链路、站间协同和网关资源管理。,REQ-005,candidate
+REQ-006,用户终端接入,Requirement,Class,SysML::Requirements::Requirement,用户段应支持终端注册、认证、接入状态监测和业务会话保持。,REQ-006,candidate
+REQ-007,网络管理与资源调度,Requirement,Class,SysML::Requirements::Requirement,系统应根据业务优先级、链路状态和资源余量进行动态调度。,REQ-007,candidate
+REQ-008,遥测遥控与运行维护,Requirement,Class,SysML::Requirements::Requirement,运控系统应支持遥测采集、遥控指令、状态评估和运维闭环。,REQ-008,candidate
+REQ-009,故障告警与安全隔离,Requirement,Class,SysML::Requirements::Requirement,系统应识别链路、载荷、地面站和网络异常，并支持告警分级与隔离策略。,REQ-009,candidate
+REQ-010,模型一致性与可追溯,Requirement,Class,SysML::Requirements::Requirement,SysML工程应保证需求、结构、行为、接口和约束之间可追溯，并能同步到MagicDraw。,REQ-010,candidate
+BLK-001,低轨宽带卫星互联网系统,Block,Class,SysML::Blocks::Block,系统级根模块，来自对话输入：我是卫星总体设计师，请围绕一个100颗低轨宽带卫星互联网系统，引导我完成总体需求、系统边界、功能链路、接口、行为流程和约束条件，并生成可推送到MagicDraw的完整SysML工程。 已根据对话上下文生成低轨宽带卫星互联网SysML工程：4,,candidate
+BLK-002,空间段,Block,Class,SysML::Blocks::Block,由低轨卫星、载荷、星间链路终端和星上处理资源组成。,,candidate
+BLK-003,低轨通信卫星,Block,Class,SysML::Blocks::Block,承担载荷承载、星上处理、星间互联和遥测遥控功能。,,candidate
+BLK-004,宽带通信载荷,Block,Class,SysML::Blocks::Block,负责波束覆盖、频率资源、链路收发和用户数据处理。,,candidate
+BLK-005,星间链路终端,Block,Class,SysML::Blocks::Block,提供卫星间数据交换、路由转发和链路状态上报。,,candidate
+BLK-006,地面段,Block,Class,SysML::Blocks::Block,提供馈电站、网关、网络管理和运控支撑能力。,,candidate
+BLK-007,馈电网关站,Block,Class,SysML::Blocks::Block,负责卫星到地面核心网的馈电接入、回传和站间协同。,,candidate
+BLK-008,用户终端,Block,Class,SysML::Blocks::Block,完成用户侧注册、认证、数据收发和状态上报。,,candidate
+BLK-009,网络管理中心,Block,Class,SysML::Blocks::Block,执行资源调度、链路监测、业务策略和网络状态管理。,,candidate
+BLK-010,任务运控中心,Block,Class,SysML::Blocks::Block,处理遥测遥控、健康管理、告警处置和运行计划。,,candidate
+UC-001,生成星座总体方案,UseCase,UseCase,,总体设计师输入任务、覆盖、容量和约束后生成可评审的星座方案。,,candidate
+UC-002,执行覆盖与链路分析,UseCase,UseCase,,对轨道覆盖、链路预算、波束资源和时延指标进行联合分析。,,candidate
+UC-003,完成用户业务接入,UseCase,UseCase,,用户终端接入卫星网络并保持业务会话与链路质量。,,candidate
+UC-004,调度网络资源,UseCase,UseCase,,网络管理中心按业务优先级和资源状态进行动态调度。,,candidate
+UC-005,处理故障告警,UseCase,UseCase,,系统发现异常后触发告警、隔离、重构和运维闭环。,,candidate
+UC-006,同步MagicDraw工程,UseCase,UseCase,,AI生成SysML文本和结构后通过Bridge推送到MagicDraw并回显结果。,,candidate
+IF-001,用户接入接口,Interface,Interface,SysML::PortsAndFlows::InterfaceBlock,连接用户终端与宽带通信载荷，承载业务数据、认证与接入状态。,,candidate
+IF-002,星间链路接口,Interface,Interface,SysML::PortsAndFlows::InterfaceBlock,连接星间链路终端，承载路由、业务转发和链路状态信息。,,candidate
+IF-003,馈电回传接口,Interface,Interface,SysML::PortsAndFlows::InterfaceBlock,连接卫星空间段与馈电网关站，承载馈电数据和网关控制。,,candidate
+IF-004,网络管理接口,Interface,Interface,SysML::PortsAndFlows::InterfaceBlock,连接网络管理中心与空间段、地面段，承载资源策略和状态同步。,,candidate
+IF-005,遥测遥控接口,Interface,Interface,SysML::PortsAndFlows::InterfaceBlock,连接任务运控中心与卫星，承载遥测、遥控、健康状态和操作指令。,,candidate
+IF-006,MagicDraw Bridge接口,Interface,Interface,SysML::PortsAndFlows::InterfaceBlock,承载SysML工程交换包、导入状态、创建元素数和关系数回传。,,candidate
+ACT-001,需求理解与方案生成流程,Activity,Activity,,AI解析设计对话、抽取任务约束、生成候选SysML工程骨架。,,candidate
+ACT-002,覆盖链路联合分析流程,Activity,Activity,,执行覆盖、链路预算、容量校核和服务质量评估。,,candidate
+ACT-003,用户接入与会话保持流程,Activity,Activity,,完成终端注册、认证、卫星选择、链路建立和业务保持。,,candidate
+ACT-004,资源调度与路由更新流程,Activity,Activity,,根据链路状态和业务优先级更新波束、网关和路由资源。,,candidate
+ACT-005,故障检测与告警闭环流程,Activity,Activity,,完成故障检测、告警分级、隔离处置、重构和恢复确认。,,candidate
+ACT-006,MagicDraw工程同步流程,Activity,Activity,,打包SysML元素与关系，调用Bridge，接收MagicDraw创建结果。,,candidate
+CON-001,覆盖连续性约束,ConstraintBlock,Class,SysML::ConstraintBlocks::ConstraintBlock,coverageRatio >= 95%，单点服务中断时间受控。,,candidate
+CON-002,链路预算约束,ConstraintBlock,Class,SysML::ConstraintBlocks::ConstraintBlock,EIRP、G/T、C/N0、吞吐量和时延满足任务剖面要求。,,candidate
+CON-003,资源调度约束,ConstraintBlock,Class,SysML::ConstraintBlocks::ConstraintBlock,业务优先级、频谱、波束、网关和星间链路资源满足冲突约束。,,candidate

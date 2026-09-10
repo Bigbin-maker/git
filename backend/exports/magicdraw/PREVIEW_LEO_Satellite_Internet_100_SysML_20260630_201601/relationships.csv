@@ -1,0 +1,35 @@
+﻿local_id,name,type,package,metaclass,stereotype,source,source_name,target,target_name,documentation
+REL-001,REL-001,satisfy,06_Traceability,Dependency,SysML::Requirements::Satisfy,REQ-001,星座规模要求,BLK-001,LEO卫星互联网系统,星座规模要求由顶层系统Block满足。
+REL-002,REL-002,allocate,06_Traceability,Dependency,SysML::Allocations::Allocate,REQ-002,轨道配置要求,BLK-002,卫星,轨道配置要求分配给卫星Block，影响其轨道与星座设计参数。
+REL-003,REL-003,allocate,06_Traceability,Dependency,SysML::Allocations::Allocate,REQ-003,星间链路要求,BLK-005,激光星间链路终端,星间链路要求分配给激光星间链路终端Block。
+REL-004,REL-004,allocate,06_Traceability,Dependency,SysML::Allocations::Allocate,REQ-004,地面关口站规模要求,BLK-006,地面关口站,关口站规模要求分配给地面关口站Block。
+REL-005,REL-005,satisfy,06_Traceability,Dependency,SysML::Requirements::Satisfy,REQ-005,单星下行容量要求,BLK-003,通信载荷,单星下行容量由通信载荷Block满足。
+REL-006,REL-006,satisfy,06_Traceability,Dependency,SysML::Requirements::Satisfy,REQ-006,单星上行容量要求,BLK-003,通信载荷,单星上行容量由通信载荷Block满足。
+REL-007,REL-007,satisfy,06_Traceability,Dependency,SysML::Requirements::Satisfy,REQ-007,星座总容量要求,BLK-001,LEO卫星互联网系统,星座总容量由整个系统Block汇聚满足。
+REL-008,REL-008,refine,06_Traceability,Dependency,SysML::Requirements::Refine,REQ-008,端到端时延要求,CON-003,端到端时延预算约束,端到端时延要求由时延预算约束Block进一步细化。
+REL-009,REL-009,refine,06_Traceability,Dependency,SysML::Requirements::Refine,REQ-009,系统可用度要求,CON-001,轨道高度与可用度约束,可用度要求由轨道高度与链路余量约束细化。
+REL-010,REL-010,trace,06_Traceability,Dependency,SysML::Requirements::Trace,REQ-010,用户链路频段要求,IF-001,用户链路接口 (Uu/Air Interface),用户链路频段要求追踪至用户链路接口定义。
+REL-011,REL-011,trace,06_Traceability,Dependency,SysML::Requirements::Trace,REQ-011,馈电链路频段要求,IF-002,馈电链路接口 (Feeder Link),馈电链路频段要求追踪至馈电链路接口定义。
+REL-012,REL-012,trace,06_Traceability,Dependency,SysML::Requirements::Trace,REQ-012,通信体制兼容性要求,IF-001,用户链路接口 (Uu/Air Interface),通信体制兼容性要求追踪至用户链路接口和N6接口。
+REL-013,REL-013,trace,06_Traceability,Dependency,SysML::Requirements::Trace,REQ-012,通信体制兼容性要求,IF-004,N6核心网接口,兼容性要求同样体现在N6核心网接口上。
+REL-014,REL-014,allocate,06_Traceability,Dependency,SysML::Allocations::Allocate,REQ-013,星上处理能力要求,BLK-003,通信载荷,星上处理能力要求分配给通信载荷Block。
+REL-015,REL-015,trace,06_Traceability,Dependency,SysML::Requirements::Trace,REQ-014,切换性能要求,UC-003,星间路由与波束切换,切换性能要求追踪至星间路由与波束切换用例。
+REL-016,REL-016,allocate,06_Traceability,Dependency,SysML::Allocations::Allocate,REQ-015,终端类型支持要求,BLK-007,用户终端,终端类型支持要求分配给用户终端Block。
+REL-017,REL-017,trace,06_Traceability,Dependency,SysML::Requirements::Trace,UC-001,终端初始接入与注册,IF-001,用户链路接口 (Uu/Air Interface),初始接入用例需要用户链路接口支持。
+REL-018,REL-018,trace,06_Traceability,Dependency,SysML::Requirements::Trace,UC-002,用户数据通信,IF-002,馈电链路接口 (Feeder Link),数据通信用例通过馈电链路接口与关口站交互。
+REL-019,REL-019,trace,06_Traceability,Dependency,SysML::Requirements::Trace,UC-002,用户数据通信,IF-003,星间链路接口 (ISL),数据通信可能经由星间链路中继。
+REL-020,REL-020,trace,06_Traceability,Dependency,SysML::Requirements::Trace,UC-003,星间路由与波束切换,IF-003,星间链路接口 (ISL),星间路由用例依赖星间链路接口。
+REL-021,REL-021,trace,06_Traceability,Dependency,SysML::Requirements::Trace,UC-004,馈电链路切换与关口站分集,IF-002,馈电链路接口 (Feeder Link),馈电链路切换用例依赖馈电链路接口。
+REL-022,REL-022,trace,06_Traceability,Dependency,SysML::Requirements::Trace,UC-005,星座维护与补网发射,BLK-001,LEO卫星互联网系统,星座维护用例影响整个系统Block的组成与运行。
+REL-023,REL-023,derivereqt,06_Traceability,Dependency,SysML::Requirements::Trace,CON-001,轨道高度与可用度约束,REQ-002,轨道配置要求,可用度约束可导出对轨道高度和倾角的进一步细化需求。
+REL-024,REL-024,dependency,06_Traceability,Dependency,Dependency,CON-002,星间链路拓扑连接约束,BLK-005,激光星间链路终端,星间链路拓扑约束依赖于激光终端的配置和性能。
+REL-025,REL-025,verify,06_Traceability,Dependency,SysML::Requirements::Verify,CON-003,端到端时延预算约束,REQ-008,端到端时延要求,时延预算约束用于验证端到端时延需求。
+REL-026,REL-026,trace,06_Traceability,Dependency,SysML::Requirements::Trace,ACT-001,终端开机接入流程,UC-001,终端初始接入与注册,接入流程活动实现了初始接入用例的行为。
+REL-027,REL-027,trace,06_Traceability,Dependency,SysML::Requirements::Trace,ACT-002,星间路由与切换流程,UC-003,星间路由与波束切换,切换流程活动实现了星间路由与波束切换用例。
+REL-028,REL-028,contains,06_Traceability,Association,CompositeAssociation,BLK-002,卫星,BLK-003,通信载荷,卫星包含通信载荷。
+REL-029,REL-029,contains,06_Traceability,Association,CompositeAssociation,BLK-002,卫星,BLK-004,卫星平台,卫星包含卫星平台。
+REL-030,REL-030,contains,06_Traceability,Association,CompositeAssociation,BLK-002,卫星,BLK-005,激光星间链路终端,卫星包含激光星间链路终端。
+REL-031,REL-031,contains,06_Traceability,Association,CompositeAssociation,BLK-001,LEO卫星互联网系统,BLK-002,卫星,系统包含100颗卫星。
+REL-032,REL-032,contains,06_Traceability,Association,CompositeAssociation,BLK-001,LEO卫星互联网系统,BLK-006,地面关口站,系统包含20-30个地面关口站。
+REL-033,REL-033,contains,06_Traceability,Association,CompositeAssociation,BLK-001,LEO卫星互联网系统,BLK-007,用户终端,系统包含用户终端。
+REL-034,REL-034,contains,06_Traceability,Association,CompositeAssociation,BLK-001,LEO卫星互联网系统,BLK-008,核心网,系统包含核心网。

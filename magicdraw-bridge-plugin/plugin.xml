@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin
+	id="com.ai_mbse.magicdraw.bridge"
+	name="AI MBSE MagicDraw Bridge"
+	version="0.3.2"
+	provider-name="AI-MBSE-Demo"
+	ownClassloader="true"
+	class-lookup="LocalFirst"
+	class="com.ai_mbse.magicdraw.bridge.AiMbseBridgePlugin">
+
+	<requires>
+		<api version="1.0"/>
+	</requires>
+
+	<runtime>
+		<library name="ai-mbse-magicdraw-bridge.jar"/>
+	</runtime>
+</plugin>

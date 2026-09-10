@@ -1,0 +1,18 @@
+﻿local_id,name,type,package,metaclass,stereotype,documentation,source_requirement,status
+REQ-001,星座规模与轨道要求,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,星座应由100颗低轨卫星组成，轨道高度范围为500-1500km，建议典型取550km，以确保全球覆盖和低延迟。,REQ-001,candidate
+REQ-002,全球覆盖与服务可用性,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,星座应实现地面任意点至少一颗卫星可见的连续覆盖，可用性不低于99.5%。,REQ-002,candidate
+REQ-003,星间链路通信能力,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,卫星应具备星间激光或射频链路，支持空间组网与中继，单链路数据率不低于1 Gbps。,REQ-003,candidate
+REQ-004,卫星平台质量约束,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,单颗卫星发射质量不超过250kg，以适应一箭多星发射需求。,REQ-004,candidate
+REQ-005,系统寿命与可靠性,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,单颗卫星设计寿命不低于5年，并具备在轨故障自主恢复能力。,REQ-005,candidate
+REQ-006,地面测控与运行管理,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,应建立地面运行控制中心，支持星座遥测遥控、任务规划及碰撞预警。,REQ-006,candidate
+BLK-001,LEO卫星星座系统,Block,02_System_Structure,Class,SysML::Blocks::Block,100颗低轨卫星组成的整体星座系统，是提供全球通信服务的核心资产。,,candidate
+BLK-002,单颗通信卫星,Block,02_System_Structure,Class,SysML::Blocks::Block,星座中的基本单元，包含平台（电源、姿控、推进等）和有效载荷（星间、星地通信终端）。,,candidate
+BLK-003,地面用户终端,Block,02_System_Structure,Class,SysML::Blocks::Block,地面用户的通信设备，支持与过顶卫星建立链路。,,candidate
+BLK-004,地面运行控制中心,Block,02_System_Structure,Class,SysML::Blocks::Block,负责星座管理、任务规划、卫星遥测分析与指令上注的地面设施。,,candidate
+UC-001,提供全球通信接入,UseCase,03_UseCases,UseCase,,用户通过地面终端向卫星发起通信请求，卫星星座提供端到端连接。,REQ-002,candidate
+UC-002,星座运行监控,UseCase,03_UseCases,UseCase,,地面操作员通过控制中心监控卫星健康、调整星座构型并下发指令。,REQ-006,candidate
+IF-001,星地馈电链路接口,Interface,04_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,卫星与地面关口站之间的射频链路，用于按需回传与用户数据出口。,,candidate
+IF-002,星间链路接口,Interface,04_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,相邻卫星之间的激光通信链路，实现星上数据包路由。,REQ-003,candidate
+ACT-001,端到端通信服务建立,Activity,05_Activities,Activity,,从用户终端发起呼叫，经接入卫星、星间路由、落地卫星至地面网关的完整通信建立流程。,UC-001,candidate
+CON-001,链路预算约束,ConstraintBlock,06_Constraints,Class,SysML::ConstraintBlocks::ConstraintBlock,约束卫星通信链路满足最小Eb/N0门槛，考虑发射功率、天线增益、自由空间损耗、大气衰减等参数。,,candidate
+CON-002,卫星质量约束,ConstraintBlock,06_Constraints,Class,SysML::ConstraintBlocks::ConstraintBlock,s.t. 单星湿质量 + 燃料 ≤ 250kg，用于发射选择与成本模型。,REQ-004,candidate

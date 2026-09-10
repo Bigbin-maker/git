@@ -1,0 +1,10 @@
+﻿local_id,name,type,metaclass,stereotype,documentation,source_requirement,status
+BLK-001,宽带通信系统,Block,Class,SysML::Blocks::Block,负责宽带业务接入、链路管理、业务调度和状态监测的系统级模块。,REQ-001,candidate
+REQ-001,用户接入能力,Requirement,Class,SysML::Requirements::Requirement,系统应支持宽带用户终端接入认证、接入状态管理和在线状态监测。,REQ-001,candidate
+UC-001,用户接入,UseCase,UseCase,,围绕“用户接入能力”展开的用户或系统行为场景。,REQ-001,candidate
+IF-001,用户接入接口,Interface,Interface,SysML::PortsAndFlows::InterfaceBlock,支撑“用户接入能力”的数据、控制或状态交互接口。,REQ-001,candidate
+ACT-001,用户接入流程,Activity,Activity,,描述“用户接入能力”从触发、处理到反馈的核心流程。,REQ-001,candidate
+REQ-002,链路资源管理能力,Requirement,Class,SysML::Requirements::Requirement,系统应支持链路资源分配、链路质量监测和资源状态维护。,REQ-002,candidate
+UC-002,链路资源管理,UseCase,UseCase,,围绕“链路资源管理能力”展开的用户或系统行为场景。,REQ-002,candidate
+IF-002,链路资源管理接口,Interface,Interface,SysML::PortsAndFlows::InterfaceBlock,支撑“链路资源管理能力”的数据、控制或状态交互接口。,REQ-002,candidate
+ACT-002,链路资源管理流程,Activity,Activity,,描述“链路资源管理能力”从触发、处理到反馈的核心流程。,REQ-002,candidate

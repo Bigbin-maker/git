@@ -1,0 +1,3 @@
+﻿local_id,name,type,metaclass,stereotype,documentation,source_requirement,status
+REQ-MD-001,卫星任务需求,Requirement,Class,SysML::Requirements::Requirement,支持卫星总体设计演示,,candidate
+BLK-MD-001,卫星系统,Block,Class,SysML::Blocks::Block,MagicDraw 导入测试块,,candidate

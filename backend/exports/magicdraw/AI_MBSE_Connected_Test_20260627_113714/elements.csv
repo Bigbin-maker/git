@@ -1,0 +1,3 @@
+﻿local_id,name,type,metaclass,stereotype,documentation,source_requirement,status
+REQ-CONNECT-001,ConnectedRequirement,Requirement,Class,SysML::Requirements::Requirement,Connected bridge import test,REQ-CONNECT-001,candidate
+BLK-CONNECT-001,ConnectedBlock,Block,Class,SysML::Blocks::Block,Connected bridge import test,REQ-CONNECT-001,candidate

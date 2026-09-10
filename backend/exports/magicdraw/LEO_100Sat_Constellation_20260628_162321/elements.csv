@@ -1,0 +1,27 @@
+﻿local_id,name,type,package,metaclass,stereotype,documentation,source_requirement,status
+REQ-001,Satellite Count,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,星座必须由100颗工作卫星组成。,REQ-001,candidate
+REQ-002,Global Coverage,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,星座应实现全球连续覆盖，含极区。,REQ-002,candidate
+REQ-003,Revisit Time,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,全球任意地点最大重访时间不超过3小时。,REQ-003,candidate
+REQ-004,Intersatellite Link Capability,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,卫星间应具备高速激光星间链路，单链路速率≥10 Gbps。,REQ-004,candidate
+REQ-005,Single Satellite Mass Limit,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,每颗卫星发射湿重不超过500 kg。,REQ-005,candidate
+REQ-006,Constellation Lifetime,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,星座系统设计寿命不少于7年。,REQ-006,candidate
+BLK-001,LEO Constellation System,Block,02_Architecture,Class,SysML::Blocks::Block,低轨卫星星座系统，包含空间段、地面段和发射段。,,candidate
+BLK-002,Satellite Platform,Block,02_Architecture,Class,SysML::Blocks::Block,单颗卫星平台，由结构、热控、电源、姿轨控、推进、星务等子系统构成。,,candidate
+BLK-003,Communication Payload,Block,02_Architecture,Class,SysML::Blocks::Block,通信有效载荷，支持Ka频段多波束、星上处理与交换。,,candidate
+BLK-004,Ground Segment,Block,02_Architecture,Class,SysML::Blocks::Block,地面段，包括任务控制中心、遥测遥控站和业务关口站。,,candidate
+BLK-005,Inter-Satellite Link Terminal,Block,02_Architecture,Class,SysML::Blocks::Block,星间激光通信终端，实现双向高速数据和测距。,,candidate
+BLK-006,Launch Segment,Block,02_Architecture,Class,SysML::Blocks::Block,发射服务，提供运载火箭与发射场支持。,,candidate
+UC-001,Provide Global Communication Service,UseCase,03_UseCases,UseCase,,为全球用户终端提供宽带通信服务。,,candidate
+UC-002,Deploy and Maintain Constellation,UseCase,03_UseCases,UseCase,,通过多次发射将卫星送入轨道，并进行轨道维持与相位保持。,,candidate
+UC-003,Operate Satellite Bus,UseCase,03_UseCases,UseCase,,地面系统对卫星平台进行遥测、遥控与故障处理。,,candidate
+UC-004,Manage Payload,UseCase,03_UseCases,UseCase,,配置、调度和监控通信载荷资源。,,candidate
+IF-001,Satellite-to-Satellite Interface,Interface,04_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,星间激光通信接口，支持双向高速数据、测距和网络路由。,,candidate
+IF-002,Satellite-to-Ground Interface,Interface,04_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,星地测控与业务数据接口，采用S/Ka频段。,,candidate
+IF-003,Bus-Payload Interface,Interface,04_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,卫星平台与通信载荷之间的电气、数据、热控接口。,,candidate
+ACT-001,Launch and Orbit Insertion,Activity,05_Activities,Activity,,运载火箭将卫星送入转移轨道并完成轨道圆化和部署。,,candidate
+ACT-002,Constellation Phasing,Activity,05_Activities,Activity,,通过轨道机动调整卫星相位，建立并维持目标构型。,,candidate
+ACT-003,Routine Operations,Activity,05_Activities,Activity,,日常在轨管理、载荷任务调度和通信服务提供。,,candidate
+CON-001,Orbital Constraints,ConstraintBlock,06_Constraints,Class,SysML::ConstraintBlocks::ConstraintBlock,轨道高度500-600 km，倾角53°，Walker星座10/10/1构型。,,candidate
+CON-002,Power Budget,ConstraintBlock,06_Constraints,Class,SysML::ConstraintBlocks::ConstraintBlock,单星平均功率≤2 kW，峰值≤3 kW。,,candidate
+CON-003,Mass Budget,ConstraintBlock,06_Constraints,Class,SysML::ConstraintBlocks::ConstraintBlock,单星湿重≤500 kg。,,candidate
+CON-004,Cost Ceiling,ConstraintBlock,06_Constraints,Class,SysML::ConstraintBlocks::ConstraintBlock,星座建设和5年运营总成本≤20亿美元。,,candidate

@@ -1,0 +1,21 @@
+﻿local_id,name,type,package,metaclass,stereotype,source,source_name,target,target_name,documentation
+REL-001,REL-001,satisfy,06_Traceability,Dependency,SysML::Requirements::Satisfy,REQ-001,Satellite Count,BLK-001,LEO Constellation System,卫星数量需求由星座系统满足。
+REL-002,REL-002,trace,06_Traceability,Dependency,SysML::Requirements::Trace,REQ-002,Global Coverage,UC-001,Provide Global Communication Service,全球覆盖需求追踪到提供全球通信服务用例。
+REL-003,REL-003,satisfy,06_Traceability,Dependency,SysML::Requirements::Satisfy,REQ-004,Intersatellite Link Capability,BLK-005,Inter-Satellite Link Terminal,星间链路能力需求由星间链路终端满足。
+REL-004,REL-004,refine,06_Traceability,Dependency,SysML::Requirements::Refine,REQ-005,Single Satellite Mass Limit,CON-003,Mass Budget,卫星质量需求细化为质量预算约束。
+REL-005,REL-005,contains,06_Traceability,Association,CompositeAssociation,BLK-001,LEO Constellation System,BLK-002,Satellite Platform,星座系统包含卫星平台。
+REL-006,REL-006,contains,06_Traceability,Association,CompositeAssociation,BLK-001,LEO Constellation System,BLK-004,Ground Segment,星座系统包含地面段。
+REL-007,REL-007,contains,06_Traceability,Association,CompositeAssociation,BLK-001,LEO Constellation System,BLK-006,Launch Segment,星座系统包含发射段。
+REL-008,REL-008,contains,06_Traceability,Association,CompositeAssociation,BLK-002,Satellite Platform,BLK-003,Communication Payload,卫星平台包含通信载荷。
+REL-009,REL-009,contains,06_Traceability,Association,CompositeAssociation,BLK-002,Satellite Platform,BLK-005,Inter-Satellite Link Terminal,卫星平台包含星间链路终端。
+REL-010,REL-010,allocate,06_Traceability,Dependency,SysML::Allocations::Allocate,IF-001,Satellite-to-Satellite Interface,BLK-005,Inter-Satellite Link Terminal,星间接口分配给星间链路终端。
+REL-011,REL-011,allocate,06_Traceability,Dependency,SysML::Allocations::Allocate,IF-002,Satellite-to-Ground Interface,BLK-004,Ground Segment,星地接口的地面部分分配给地面段。
+REL-012,REL-012,allocate,06_Traceability,Dependency,SysML::Allocations::Allocate,IF-002,Satellite-to-Ground Interface,BLK-002,Satellite Platform,星地接口的星上部分分配给卫星平台。
+REL-013,REL-013,allocate,06_Traceability,Dependency,SysML::Allocations::Allocate,IF-003,Bus-Payload Interface,BLK-002,Satellite Platform,平台-载荷接口分配给卫星平台作为载体。
+REL-014,REL-014,allocate,06_Traceability,Dependency,SysML::Allocations::Allocate,IF-003,Bus-Payload Interface,BLK-003,Communication Payload,平台-载荷接口分配给通信载荷。
+REL-015,REL-015,allocate,06_Traceability,Dependency,SysML::Allocations::Allocate,ACT-001,Launch and Orbit Insertion,BLK-006,Launch Segment,发射入轨活动分配给发射段。
+REL-016,REL-016,allocate,06_Traceability,Dependency,SysML::Allocations::Allocate,ACT-002,Constellation Phasing,BLK-002,Satellite Platform,相位调整活动分配给卫星平台推进分系统。
+REL-017,REL-017,refine,06_Traceability,Dependency,SysML::Requirements::Refine,ACT-003,Routine Operations,UC-001,Provide Global Communication Service,日常操作活动细化全球通信服务用例。
+REL-018,REL-018,refine,06_Traceability,Dependency,SysML::Requirements::Refine,CON-001,Orbital Constraints,BLK-001,LEO Constellation System,轨道约束细化星座系统设计参数。
+REL-019,REL-019,derivereqt,06_Traceability,Dependency,SysML::Requirements::Trace,REQ-003,Revisit Time,CON-001,Orbital Constraints,重访时间需求派生出轨道约束。
+REL-020,REL-020,satisfy,06_Traceability,Dependency,SysML::Requirements::Satisfy,REQ-006,Constellation Lifetime,BLK-001,LEO Constellation System,星座寿命需求由星座系统满足。

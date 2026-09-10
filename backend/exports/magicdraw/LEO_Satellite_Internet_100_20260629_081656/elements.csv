@@ -1,0 +1,35 @@
+﻿local_id,name,type,package,metaclass,stereotype,documentation,source_requirement,status
+REQ-001,星座覆盖与轨道要求,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,采用10轨道面，每面10星，轨道高度550km，倾角53°，覆盖纬度±60°，任意用户平均仰角>25°，单星覆盖间隙<30秒,REQ-001,accepted
+REQ-002,系统总容量要求,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,全系统总吞吐量不低于2 Tbps（100星×20 Gbps）,REQ-002,accepted
+REQ-003,端到端时延要求,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,星间激光Mesh网络提供端到端时延<30ms，跨国路由<50ms,REQ-003,accepted
+REQ-004,单用户峰值速率要求,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,下行峰值150 Mbps，上行峰值40 Mbps,REQ-004,accepted
+REQ-005,系统可用性要求,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,单关口站区域可用性≥99.9%，全球综合可用度≥99.5%,REQ-005,accepted
+REQ-006,单星质量约束,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,卫星总质量（含推进剂）≤250 kg,REQ-006,accepted
+REQ-007,单星功耗约束,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,卫星平均功耗≤2 kW，峰值发电能力>6 kW,REQ-007,accepted
+REQ-008,设计寿命要求,Requirement,01_Requirements,Class,SysML::Requirements::Requirement,卫星设计寿命7年，退役后25年内离轨,REQ-008,accepted
+BLK-001,卫星平台,Block,02_Blocks,Class,SysML::Blocks::Block,250kg级低轨卫星，包含结构、电源、推进、姿控、热控、星上处理等子系统，搭载激光星间终端和Ka/Q/V天线,,accepted
+BLK-002,地面关口站,Block,02_Blocks,Class,SysML::Blocks::Block,全球部署15个关口站，支持Q/V频段馈电链路，通过地面光纤互联，提供互联网回传,,accepted
+BLK-003,用户终端,Block,02_Blocks,Class,SysML::Blocks::Block,Ka频段平板天线用户终端，等效口径约0.75m，支持固定或便携安装，通过APP自对准入网,,accepted
+BLK-004,地面运控中心,Block,02_Blocks,Class,SysML::Blocks::Block,包含卫星运控中心(SOC)和网络管理中心(NOC)，异地备份，基于云计算架构实现自动化星座调度,,accepted
+BLK-005,星间激光通信终端,Block,02_Blocks,Class,SysML::Blocks::Block,每星配备4条激光链路终端，同轨前后各1条，异轨左右各1条，速率100 Gbps/束,,accepted
+BLK-006,用户链路相控阵天线,Block,02_Blocks,Class,SysML::Blocks::Block,Ka频段16波束相控阵天线，支持跳波束，单星总吞吐量>20 Gbps,,accepted
+BLK-007,馈电链路天线,Block,02_Blocks,Class,SysML::Blocks::Block,Q/V频段馈电天线，每星2个独立波束，用于与关口站通信,,accepted
+UC-001,提供互联网接入服务,UseCase,03_UseCases,UseCase,,为用户终端提供宽带互联网连接，包括网页浏览、流媒体、文件传输等,,accepted
+UC-002,支持行业专网与移动平台,UseCase,03_UseCases,UseCase,,为航空、海事、应急通信等提供专用网络连接，支持移动平台无缝切换,,accepted
+UC-003,基站回传与ISP接入,UseCase,03_UseCases,UseCase,,为偏远地区基站提供回传链路，或为中小型ISP提供互联网接入,,accepted
+UC-004,星座管理与轨道控制,UseCase,03_UseCases,UseCase,,轨道维持、相位调整、碰撞规避、故障隔离与网络重路由等运行管理,,accepted
+UC-005,用户终端自动入网,UseCase,03_UseCases,UseCase,,通过APP或自动程序完成天线对准、鉴权、IP地址分配和链接建立,,accepted
+IF-001,星间激光链路接口,Interface,04_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,卫星之间通过激光终端建立的高速双向链路，速率100 Gbps，用于Mesh组网和数据中继,,accepted
+IF-002,用户链路射频接口,Interface,04_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,Ka频段用户波束空口，下行19.7-20.2GHz，上行29.5-30.0GHz，采用DVB-S2X/OFDMA,,accepted
+IF-003,馈电链路射频接口,Interface,04_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,Q/V频段馈电链路，下行40GHz，上行50GHz，连接卫星与关口站,,accepted
+IF-004,测控链路接口,Interface,04_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,S波段全向测控备份，同时在Ka/Q频段内实现带内测控,,accepted
+IF-005,地面光纤互联接口,Interface,04_Interfaces,Interface,SysML::PortsAndFlows::InterfaceBlock,关口站之间通过高速地面光纤实现互联，提供星地回传的后端连接,,accepted
+ACT-001,用户入网与认证流程,Activity,05_Activities,Activity,,用户终端开机后自动搜索卫星信标，完成频率同步、身份鉴权、业务通道建立,,accepted
+ACT-002,动态路由与星间切换流程,Activity,05_Activities,Activity,,基于星间链路状态和用户位置变化，实时计算最优路径，执行跨星或跨光束切换,,accepted
+ACT-003,馈电链路切换流程,Activity,05_Activities,Activity,,当卫星运动导致馈电波束离开当前关口站时，无缝切换至下一关口站，保证回传连续性,,accepted
+ACT-004,轨道维持与相位调整流程,Activity,05_Activities,Activity,,运控中心定期评估轨道漂移，上注电推指令进行轨道修正和相位保持,,accepted
+CON-001,单星质量预算约束,ConstraintBlock,06_Constraints,Class,SysML::ConstraintBlocks::ConstraintBlock,m_sat ≤ 250 kg，涵盖所有在轨交付状态硬件与推进剂,,accepted
+CON-002,单星功率预算约束,ConstraintBlock,06_Constraints,Class,SysML::ConstraintBlocks::ConstraintBlock,P_avg ≤ 2 kW，且太阳翼发电能力 ≥6 kW以满足峰值与裕量,,accepted
+CON-003,单星成本约束,ConstraintBlock,06_Constraints,Class,SysML::ConstraintBlocks::ConstraintBlock,Cost_per_sat ≤ $500k（不含发射与保险）,,accepted
+CON-004,全系统建设成本约束,ConstraintBlock,06_Constraints,Class,SysML::ConstraintBlocks::ConstraintBlock,Total_Capex ≤ $500M，包含卫星制造、地面段建设，不含发射与保险,,accepted
+CON-005,指向精度约束,ConstraintBlock,06_Constraints,Class,SysML::ConstraintBlocks::ConstraintBlock,姿态确定与控制精度 ≤0.05°，满足激光星间链路捕获跟踪要求,,accepted

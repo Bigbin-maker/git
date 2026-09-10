@@ -1,0 +1,9 @@
+{
+  "schema": "ai-mbse.magicdraw.exchange.v1",
+  "root_package": "LEO_100_Satellite_Constellation",
+  "project_path": "",
+  "payload": "magicdraw_exchange.json",
+  "diagram_layout": "diagram_layout.json",
+  "elements": "elements.csv",
+  "relationships": "relationships.csv"
+}

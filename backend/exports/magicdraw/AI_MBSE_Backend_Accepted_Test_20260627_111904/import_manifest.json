@@ -1,0 +1,8 @@
+{
+  "schema": "ai-mbse.magicdraw.exchange.v1",
+  "root_package": "AI_MBSE_Backend_Accepted_Test",
+  "project_path": "",
+  "payload": "magicdraw_exchange.json",
+  "elements": "elements.csv",
+  "relationships": "relationships.csv"
+}

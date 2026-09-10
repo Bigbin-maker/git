@@ -1,0 +1,2 @@
+﻿local_id,name,type,metaclass,stereotype,source,source_name,target,target_name,documentation
+REL-FINAL-001,REL-FINAL-001,Trace,Dependency,SysML::Requirements::Trace,REQ-FINAL-001,FinalRequirement,BLK-FINAL-001,FinalBlock,Final bridge trace
